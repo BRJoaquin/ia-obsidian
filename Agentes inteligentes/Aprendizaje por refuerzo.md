@@ -43,3 +43,4 @@ El aprendizaje por refuerzo y el aprendizaje supervisado son dos enfoques difere
 - ver [[Señal de recompensa]]
 - ver [[Función de valor]]
 - ver [[Modelo de ambiente]]
+

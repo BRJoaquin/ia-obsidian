@@ -28,3 +28,7 @@ El aprendizaje por refuerzo y el aprendizaje supervisado son dos enfoques difere
 
 -   Aprendizaje supervisado: La generalización se basa en la calidad y cantidad de datos etiquetados disponibles y en cómo de bien el modelo pueda aprender a partir de ellos. Los modelos de aprendizaje supervisado pueden sufrir de sobreajuste si se entrenan demasiado en datos de entrenamiento ruidosos o limitados.
 -   Aprendizaje por refuerzo: La generalización en el aprendizaje por refuerzo depende de la capacidad del agente para explorar y aprender de diferentes estados y situaciones en el entorno. El agente debe equilibrar la [[Exploración]] de nuevas acciones con la [[Explotación]] de las acciones conocidas para maximizar las recompensas.
+
+# Exploracion vs Explotacion
+
+> [!quote]

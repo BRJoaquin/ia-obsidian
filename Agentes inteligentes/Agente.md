@@ -2,3 +2,6 @@ Es la entidad inteligente, como un programa de computadora o un robot, que reali
 
 > [!quote]
 > A learning agent must be able to sense the state of its environment to some extent and must be able to take actions that affect the state. The agent also must have a goal or goals relating to the state of the environment.
+
+![[Pasted image 20230404203109.png]]
+![[Pasted image 20230404203140.png]]

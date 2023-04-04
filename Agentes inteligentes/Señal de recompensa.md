@@ -2,4 +2,5 @@ Una "reward signal" o señal de recompensa es una retroalimentación que el agen
 
 El propósito principal del aprendizaje por refuerzo es que el agente aprenda a tomar decisiones que maximicen la suma total de recompensas a lo largo del tiempo. Las señales de recompensa proporcionan información sobre la calidad de las acciones realizadas y ayudan al agente a mejorar su política (estrategia de toma de decisiones) a través de la experiencia y la interacción con el entorno.
 
+> [!quote]
 > 

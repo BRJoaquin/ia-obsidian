@@ -90,3 +90,4 @@ En resumen, esta fórmula selecciona la acción $a$ que tiene el mayor valor est
 ## Épsilon-greedy ($\epsilon$-greedy)
 
 
+

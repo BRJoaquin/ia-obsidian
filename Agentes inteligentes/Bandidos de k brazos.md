@@ -68,3 +68,4 @@ Donde:
 
 > Observacion: A medida que crece el denominador, $Q_t(a)$ converge a $q^∗(a)$, gracias a la [[Ley de los grandes números]].
 
+> Observacion 2: Si el division es 0 entonces $Q_t(a)$ es 

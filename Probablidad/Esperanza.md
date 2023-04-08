@@ -1,4 +1,4 @@
-En matemáticas, la esperanza (o media) o valor esperado ($\mu$) es un concepto central en teoría de probabilidad y estadística. Se utiliza para predecir el resultado promedio de un experimento aleatorio que se repite muchas veces, asumiendo que las probabilidades de los distintos resultados son conocidas.
+En matemáticas, la esperanza o valor esperado ($\mu$) o medida aritmética es un concepto central en teoría de probabilidad y estadística. Se utiliza para predecir el resultado promedio de un experimento aleatorio que se repite muchas veces, asumiendo que las probabilidades de los distintos resultados son conocidas.
 
 La esperanza, que se denota generalmente por E(X) o μ, es un resumen numérico de la distribución de probabilidad de una variable aleatoria X. Se calcula como el promedio ponderado de los posibles valores de la variable, utilizando sus respectivas probabilidades como pesos.
 
@@ -12,3 +12,15 @@ En el caso de una variable aleatoria continua, la esperanza se define a través 
 
 $$E(X) = ∫ x * f(x) dx$$
 Donde $f(x)$ es la función de densidad de probabilidad de la variable aleatoria X.
+
+# Sinónimos
+
+Además de la "esperanza" y el "valor esperado", que son los términos más comúnmente utilizados en estadística, existen algunos otros sinónimos que se utilizan ocasionalmente, tales como:
+
+-   Media de probabilidad
+-   Promedio ponderado
+-   Valor medio / 
+-   Valor medio esperado
+-   Promedio esperado
+
+Aunque estos términos no son tan comunes como "esperanza" y "valor esperado", se refieren al mismo concepto estadístico.

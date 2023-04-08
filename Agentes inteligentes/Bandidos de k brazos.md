@@ -129,3 +129,10 @@ La ventaja de los métodos ε-greedy sobre los métodos greedy depende de la tar
 
 ### ¿Por qué el greedy en la figura 2.2 (promedio de recompensa) se queda estancado en 1?
 
+El método greedy se estanca en un valor promedio de recompensa de aproximadamente 1 en lugar de llegar al mejor posible de alrededor de 1.55 debido a su enfoque en la explotación y su falta de exploración.
+
+En las primeras etapas, el método greedy selecciona acciones basadas únicamente en la recompensa más alta observada hasta ese momento. Sin embargo, si las primeras muestras de recompensa de la acción óptima resultan ser bajas por casualidad, el método greedy no volverá a explorar esa acción porque siempre seleccionará la acción con la recompensa más alta conocida.
+
+Como resultado, el método greedy puede quedarse atrapado en acciones subóptimas que parecían ser las mejores según las observaciones iniciales pero que no lo son en realidad. Al no explorar otras acciones, el método greedy pierde la oportunidad de descubrir y aprovechar la acción óptima, lo que lleva a un rendimiento estancado en un nivel inferior al máximo posible.
+
+> Cabe mencionar que este valor es específico para el conjunto de problemas de prueba utilizado en el estudio y no es una constante universal para todos los problemas de bandidos de k brazos. En otros problemas, el mejor promedio de recompensa posible podría ser diferente, dependiendo de las distribuciones de recompensa y las características del problema.

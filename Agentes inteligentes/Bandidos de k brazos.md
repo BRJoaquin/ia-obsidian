@@ -180,3 +180,5 @@ Aquí, $\alpha$ es un parámetro en el rango (0, 1] que determina qué tan rápi
 
 > Es importante que el agente siga explorando para adaptarse a los cambios en las recompensas. Los métodos de aprendizaje por refuerzo que son adecuados para problemas estacionarios, como el promedio simple, pueden no ser lo suficientemente sensibles a los cambios en un problema no estacionario.
 
+## Valores iniciales optimistas
+

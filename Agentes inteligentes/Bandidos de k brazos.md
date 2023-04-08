@@ -121,6 +121,8 @@ Llevamos a la practica este ambiente junto a múltiples estrategias / [[Polític
 
 Este capítulo compara los métodos de acción-valor greedy y ε-greedy en un conjunto de 2000 problemas de bandidos de k brazos (k = 10) generados aleatoriamente. Los valores de acción y las recompensas se seleccionaron utilizando distribuciones normales. Se realizaron 1000 pasos de tiempo para cada problema y se repitió el proceso en 2000 ejecuciones independientes para obtener el comportamiento promedio del algoritmo de aprendizaje.
 
+![[Pasted image 20230408133224.png]]
+
 La Figura 2.2 compara un método greedy con dos métodos ε-greedy (ε = 0.01 y ε = 0.1). El método greedy mostró una mejora inicial más rápida, pero luego se estancó en un nivel inferior en comparación con los métodos ε-greedy. La razón de este estancamiento es que el método greedy a menudo quedaba atrapado en acciones subóptimas. Por otro lado, los métodos ε-greedy continuaron explorando y mejoraron sus posibilidades de reconocer la acción óptima.
 
 La ventaja de los métodos ε-greedy sobre los métodos greedy depende de la tarea. Si la varianza de la recompensa fuera mayor o si el problema fuera no estacionario (es decir, los valores verdaderos de las acciones cambian con el tiempo), los métodos ε-greedy tendrían un mejor rendimiento en comparación con el método greedy. En general, el aprendizaje por refuerzo requiere un equilibrio entre exploración y explotación, y el método ε-greedy es una forma de lograr ese equilibrio en diferentes escenarios.

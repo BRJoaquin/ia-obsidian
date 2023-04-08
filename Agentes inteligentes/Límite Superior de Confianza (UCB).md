@@ -15,3 +15,10 @@ Otra forma de elegir C es mediante la optimización empírica, es decir, proband
 
 En resumen, elegir el valor óptimo de C para el algoritmo UCB es un proceso empírico y depende de la naturaleza del problema y de la cantidad de datos disponibles.
 
+# Explicacion
+
+La ecuación del UCB, que incluye el término $\sqrt{\frac{\ln t}{N_t(a)}}$, se basa en la idea de que a medida que un agente toma más decisiones y recibe más recompensas, se vuelve más seguro sobre cuáles son las mejores acciones a tomar. Por lo tanto, el término $\sqrt{\frac{\ln t}{N_t(a)}}$ tiene en cuenta la cantidad de veces que una acción ha sido seleccionada, y cuanto más se ha seleccionado, menor es la contribución de este término a la selección de la acción.
+
+Por otro lado, el término $\ln t$ crece muy lentamente a medida que aumenta el número de pasos $t$, lo que significa que con el tiempo se tiene en cuenta cada vez menos la exploración y se da más importancia a la explotación. Esto tiene sentido, ya que a medida que se toman más decisiones, se tiene más información sobre qué acciones tienen mayores recompensas y se debe explotar esta información para maximizar las ganancias a largo plazo.
+
+En resumen, el término $\sqrt{\frac{\ln t}{N_t(a)}}$ es una forma de equilibrar la exploración y la explotación a medida que el agente recibe más información y se vuelve más seguro en su elección de acciones.

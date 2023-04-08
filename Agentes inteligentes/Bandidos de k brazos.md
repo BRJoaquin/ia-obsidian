@@ -219,3 +219,10 @@ En el contexto de los k-brazos bandidos, el algoritmo UCB ha demostrado ser efec
 
 ![[Pasted image 20230408154654.png]]
 
+Si la constante C en la fórmula de UCB es muy baja, el algoritmo UCB tenderá a explotar los brazos que han sido seleccionados con frecuencia en lugar de explorar otros brazos que no han sido seleccionados con tanta frecuencia. Esto puede llevar a una convergencia prematura a una suboptimalidad local.
+
+> Puede parecer greedy
+
+Por otro lado, si la constante C es muy alta, el algoritmo UCB se centrará demasiado en la exploración en lugar de explotar los brazos que ya han sido seleccionados con éxito. Esto puede llevar a un exceso de exploración y una convergencia lenta a la óptima.
+
+Por lo tanto, es importante elegir cuidadosamente el valor de C para equilibrar la exploración y la explotación en un problema de aprendizaje por refuerzo. La elección de C dependerá de las características específicas del problema y puede requerir experimentación y ajuste.

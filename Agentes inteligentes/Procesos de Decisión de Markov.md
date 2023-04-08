@@ -79,7 +79,7 @@ $$
 
 # Episodios
 
-
+Un episodio es una secuencia finita de interacciones entre un agente y su entorno. Un episodio comienza en un estado inicial y termina cuando el agente alcanza un estado terminal o se cumple cierta condición, como alcanzar un límite de tiempo o un número máximo de pasos. Los problemas de aprendizaje por refuerzo se pueden categorizar en dos tipos: episódicos y continuos. En los problemas episódicos, las interacciones ocurren en episodios **separados** y **discretos**, mientras que en los problemas **continuos**, las interacciones no tienen un punto final claro y pueden extenderse indefinidamente.
 
 
 # Retorno

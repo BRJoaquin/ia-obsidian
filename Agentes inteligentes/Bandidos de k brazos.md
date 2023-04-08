@@ -65,3 +65,5 @@ Donde:
 -   $\mathbb{I}(A_i=a)$ es una función indicadora que toma el valor 1 si $A_i=a$, y 0 en caso contrario.
 -   La primera suma es sobre todos los tiempos $i$ anteriores a $t$ en los que se tomó la acción $a$.
 -   La segunda suma es sobre todos los tiempos $i$ anteriores a $t$ en los que se tomaron acciones.
+
+> Observacion: A medida que crece el denominador, $Q_t(a)$ converge a $q^∗(a)$, gracias a la ley de los grandes numeros.

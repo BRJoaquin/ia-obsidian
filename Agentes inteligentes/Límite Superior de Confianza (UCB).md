@@ -22,3 +22,11 @@ La ecuación del UCB, que incluye el término $\sqrt{\frac{\ln t}{N_t(a)}}$, se 
 Por otro lado, el término $\ln t$ crece muy lentamente a medida que aumenta el número de pasos $t$, lo que significa que con el tiempo se tiene en cuenta cada vez menos la exploración y se da más importancia a la explotación. Esto tiene sentido, ya que a medida que se toman más decisiones, se tiene más información sobre qué acciones tienen mayores recompensas y se debe explotar esta información para maximizar las ganancias a largo plazo.
 
 En resumen, el término $\sqrt{\frac{\ln t}{N_t(a)}}$ es una forma de equilibrar la exploración y la explotación a medida que el agente recibe más información y se vuelve más seguro en su elección de acciones.
+
+## Problemas no estacionarios
+
+El UCB es un algoritmo de selección de acciones que funciona bien en problemas estacionarios ([[Recompensa#Estacionaria]]), pero puede tener dificultades en problemas no estacionarios. Esto se debe a que la incertidumbre asociada a cada acción puede cambiar a lo largo del tiempo en un problema no estacionario, y el UCB no tiene en cuenta estos cambios.
+
+En problemas no estacionarios, puede ser útil utilizar métodos que den mayor importancia a los datos más recientes. Por ejemplo, una posibilidad es utilizar un promedio ponderado de los valores de recompensa, en el que los datos más recientes tienen un peso mayor. Otro enfoque es utilizar un parámetro de tasa de aprendizaje que disminuye con el tiempo, de modo que los cambios en la estimación de los valores de recompensa sean cada vez menores.
+
+En general, el UCB puede funcionar bien en problemas no estacionarios si se utiliza en combinación con otros métodos que tengan en cuenta la evolución de la incertidumbre a lo largo del tiempo.

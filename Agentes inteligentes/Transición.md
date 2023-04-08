@@ -2,12 +2,12 @@
 Las transiciones en un Proceso de Decisión de Markov (MDP) describen cómo cambia el entorno y cómo evolucionan los estados cuando el agente realiza acciones. Las transiciones son fundamentales en un MDP, ya que conectan los estados y las acciones, proporcionando información sobre la dinámica del entorno. A continuación, se detallan algunos aspectos relacionados con las transiciones en un MDP:
 
 1.  Probabilidades de transición: Las transiciones en un MDP se representan mediante probabilidades de transición. Estas probabilidades indican la probabilidad de pasar de un estado a otro, dado que el agente ha tomado una acción específica. Las probabilidades de transición se denotan comúnmente como $P(s'|s, a)$, donde $s$ es el estado actual, $a$ es la acción realizada y $s'$ es el estado siguiente.
-    
+
 2.  Matriz de transición: En MDP con estados y acciones discretas y finitas, las probabilidades de transición se pueden organizar en una matriz de transición. Cada fila de la matriz corresponde a un estado y cada columna a una acción. El elemento en la posición $(s, a, s')$ de la matriz indica la probabilidad de pasar del estado $s$ al estado $s'$, dado que se ha tomado la acción $a$.
-    
+
 3.  Propiedad de Markov: Las transiciones en un MDP deben cumplir con la propiedad de Markov. Esto significa que la probabilidad de transición entre estados sólo depende del estado actual y la acción tomada, y no de la historia de estados y acciones previas. En otras palabras, el futuro del proceso de decisión es independiente de su pasado, dado el estado presente y la acción seleccionada.
-    
+
 4.  Deterministas y estocásticos: Las transiciones en un MDP pueden ser deterministas o estocásticas. En un MDP determinista, la realización de una acción en un estado conduce siempre al mismo estado siguiente. Por otro lado, en un MDP estocástico, la realización de una acción en un estado puede conducir a diferentes estados siguientes con ciertas probabilidades. Los MDP estocásticos son más comunes en la práctica, ya que capturan la incertidumbre y la variabilidad en el comportamiento del entorno.
-    
+
 
 En resumen, las transiciones en un MDP describen cómo cambian los estados cuando el agente realiza acciones y cómo evoluciona el entorno a lo largo del tiempo. Las transiciones se representan mediante probabilidades de transición que satisfacen la propiedad de Markov y pueden ser deterministas o estocásticas. Las transiciones son cruciales en un MDP, ya que proporcionan información sobre la dinámica del entorno y permiten al agente anticipar las consecuencias de sus acciones y planificar su estrategia óptima.

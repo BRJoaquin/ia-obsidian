@@ -3,9 +3,9 @@ Un Proceso de Decisión de Markov (MDP, por sus siglas en inglés) es un modelo 
 El MDP se compone de cuatro elementos principales:
 
 1.  Estados: son las diferentes situaciones o configuraciones en las que puede encontrarse el agente dentro del entorno. Véase [[Estado]]
-2.  Acciones: son las posibles decisiones o movimientos que el agente puede realizar en cada estado. Vease [[Acción]]
-3.  Transiciones: son las probabilidades de pasar de un estado a otro, dada una acción específica.
-4.  Recompensas: son los puntos o beneficios que el agente recibe al realizar acciones en el entorno.
+2.  Acciones: son las posibles decisiones o movimientos que el agente puede realizar en cada estado. Véase [[Acción]]
+3.  Transiciones: son las probabilidades de pasar de un estado a otro, dada una acción específica. Véase [[Transición]]
+4.  Recompensas: son los puntos o beneficios que el agente recibe al realizar acciones en el entorno. Véase [[Recompensa]]
 
 El agente toma decisiones basándose en su conocimiento actual del entorno y las recompensas asociadas a las acciones. El objetivo del agente es encontrar una política óptima, que es una estrategia para seleccionar acciones en cada estado de manera que maximice el valor total de las recompensas a lo largo del tiempo.
 

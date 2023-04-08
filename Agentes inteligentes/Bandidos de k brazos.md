@@ -107,6 +107,6 @@ The 10-armed Testbed es un problema de prueba comúnmente utilizado para evaluar
 
 2.  En cada intento, cuando se selecciona una acción, se obtiene una recompensa real a partir de una distribución normal con media igual al valor verdadero de la acción seleccionada y varianza igual a uno. Estas recompensas reales son desconocidas para el algoritmo de aprendizaje y son generadas de forma aleatoria.
 
-> Al ser 
+> Al ser una accion estocastica [[Recompensa/]]
 
 3.  El objetivo del algoritmo de aprendizaje es estimar los valores verdaderos de las 10 acciones a partir de las recompensas obtenidas en los intentos previos. El algoritmo debe equilibrar la exploración de acciones menos probables con la explotación de las acciones más prometedoras, para encontrar el valor verdadero más alto (valor óptimo) en el menor número de intentos posibles.

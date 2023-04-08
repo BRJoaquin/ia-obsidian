@@ -103,3 +103,6 @@ $$
 # Factor de descuento
 
 El factor de descuento $\gamma$ (gamma) es un número entre 0 y 1. Si $\gamma = 0$, el agente solo considera las recompensas inmediatas y no tiene en cuenta las recompensas futuras. Si $\gamma = 1$, el agente considera todas las recompensas futuras por igual y busca maximizar el retorno total a lo largo del tiempo. **Valores intermedios de $\gamma$ permiten al agente equilibrar la importancia de las recompensas inmediatas y futuras.**
+
+> Si $\gamma = 0$, el agente es **miope**: sólo le importa maximizar las recompensas inmediatas.
+

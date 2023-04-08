@@ -59,6 +59,8 @@ Estas probabilidades describen cómo el entorno cambia de un estado a otro dada 
 $$\Large p(s'|s, a) = \text{Pr}({S_t = s' | S_{t-1} = s, A_{t-1} = a}) = \sum_{r \in \mathcal{R}}p(s', r|s, a)$$
 > Básicamente, que probabilidad tengo que estando en el estado $s$ y haciendo la acción $a$ termine en $s'$
 
+> [!q]
+
 ## Recompensas esperadas para pares estado-acción
 
 Las recompensas esperadas para los pares estado-acción se denotan como 

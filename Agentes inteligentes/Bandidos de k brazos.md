@@ -89,9 +89,5 @@ En resumen, esta fórmula selecciona la acción $a$ que tiene el mayor valor est
 
 ## Épsilon-greedy ($\epsilon$-greedy)
 
-La selección de acciones codiciosa (greedy) siempre explota el conocimiento actual para maximizar la recompensa inmediata; no dedica tiempo a probar acciones aparentemente inferiores para ver si podrían ser mejores. 
 
-Una alternativa simple es comportarse codiciosamente la mayor parte del tiempo, pero de vez en cuando, con una pequeña probabilidad "ε", seleccionar al azar entre todas las acciones con igual probabilidad, independientemente de las estimaciones del valor de las acciones. 
-
-Llamamos a los métodos que utilizan esta regla de selección de acciones casi codiciosa "métodos ε-greedy". Una ventaja de estos métodos es que, a medida que el número de pasos aumenta, cada acción será muestreada un número infinito de veces, asegurando que todos los $Q_t(a)$ converjan a $q⇤(a). Esto, por supuesto, implica que la probabilidad de seleccionar la acción óptima converge a más de 1-ε, es decir, a una certeza cercana. Estas son solo garantías asintóticas.
 

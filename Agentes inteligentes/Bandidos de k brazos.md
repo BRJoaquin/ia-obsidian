@@ -193,6 +193,6 @@ Vease: [[Valores Iniciales Optimistas]]
 
 ![[Pasted image 20230408150213.png]]
 
-El libro compara greedy con valores iniciales optimistas (+5) con un un $\epsilon$-greedy sin valores iniciales optmistas.
+El libro compara greedy con valores iniciales optimistas (+5) con un un $\epsilon$-greedy sin valores iniciales optimistas.
 
-Dentro de las primeras ~100 iteracion vemos que performa pero el greedy pero es porque se fomenta mucho la exploracion en etapas tempranas.
+Dentro de las primeras ~100 steps vemos que performa peor el greedy pero es porque se fomenta mucho la exploración en etapas tempranas.

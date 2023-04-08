@@ -18,4 +18,8 @@ Hay varias estrategias y algoritmos para abordar el problema de los bandidos de 
 
 # Funcion valor
 
-La función de valor se refiere a la función de valor de acción, ya que no hay estados distintos en este problema y sólo se consideran las acciones (brazos). La función de valor de acción para un bandido multi-brazo, denotada como `$Q(a)$`, estima el valor esperado de la recompensa al seleccionar una acción específica (tirar de un brazo particular).
+La función de valor se refiere a la función de valor de acción, ya que no hay estados distintos en este problema y sólo se consideran las acciones (brazos). La función de valor de acción para un bandido multi-brazo, denotada como $Q(a)$, estima el valor esperado de la recompensa al seleccionar una acción específica (tirar de un brazo particular).
+
+$$
+Q(a) = \mathbb{E}[R_t | A_t = a]
+$$

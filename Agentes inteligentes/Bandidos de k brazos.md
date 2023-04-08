@@ -207,3 +207,12 @@ Dentro de las primeras ~100 steps vemos que performa peor el greedy pero es porq
 
 Vease: [[Límite Superior de Confianza (UCB)]]
 
+En el caso de los k-brazos bandidos, el algoritmo UCB (Upper Confidence Bound) utiliza un término de bonificación para fomentar la exploración de las acciones menos seleccionadas. La selección de acciones se realiza mediante la fórmula:
+
+$$A_t = argmax_{a} \bigg[Q_t(a) + c\sqrt{\frac{\ln t}{N_t(a)}}\bigg]$$
+
+Donde $Q_t(a)$ es la estimación del valor de la acción a en el tiempo t, $N_t(a)$ es el número de veces que la acción a ha sido seleccionada hasta el tiempo t, y $c$ es un parámetro que controla la cantidad de exploración.
+
+La fórmula utiliza un término de bonificación $c\sqrt{\frac{\ln t}{N_t(a)}}$ que se suma a la estimación $Q_t(a)$ para cada acción a. Este término refleja la incertidumbre en la estimación de la recompensa de la acción a y se hace más grande cuanto menos veces se ha seleccionado la acción. El parámetro $c$ controla la cantidad de exploración, ya que si se elige un valor más alto, se favorecerá la selección de acciones menos exploradas.
+
+En el contexto de los k-brazos bandidos, el algoritmo UCB ha demostrado ser efectivo para equilibrar la exploración y la explotación de los brazos, permitiendo una convergencia rápida a la acción óptima. Sin embargo, su rendimiento puede verse afectado en problemas no estacionarios, donde la recompensa de los brazos puede cambiar con el tiempo.

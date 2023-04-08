@@ -247,3 +247,5 @@ En resumen, los algoritmos de banda gradiente son una alternativa a los métodos
 ## Comparación de métodos 
 
 ![[Pasted image 20230408154921.png]]
+
+En resumen, para comparar el desempeño de los diferentes algoritmos en el problema de los 10 brazos del bandit se utilizó una curva de aprendizaje para cada algoritmo con diferentes valores de parámetros. En lugar de mostrar todas las curvas juntas, se realizó un estudio de parámetros que resume el valor promedio de cada curva sobre los 1000 pasos del problema, lo que permite una comparación más sencilla. En la gráfica de este estudio se observa que todos los algoritmos tienen una forma de "U invertida" en su desempeño, y que todos ellos funcionan mejor en un valor intermedio de sus parámetros.

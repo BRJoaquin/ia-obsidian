@@ -164,4 +164,15 @@ Aquí, $Q_n(a)$ es la estimación del valor de acción $a$ después de $n$ obser
 ### Problemas no estacionarios
 
 
+Para problemas no estacionarios (ver [[Recompensa#Estacionaria]]), las propiedades del entorno cambian con el tiempo. Para aplicar el algoritmo ε-greedy en tales problemas, es necesario adaptar el algoritmo para responder a estos cambios y actualizar las estimaciones de manera más sensible. Una forma de hacerlo es mediante el uso de un promedio ponderado en lugar de un promedio simple para actualizar las estimaciones de los valores de acción.
+
+En lugar de usar la fórmula de actualización de la implementación incremental estándar:
+
+Q_{n+1}(a) = Q_n(a) + \frac{1}{n+1} [R_{n+1} - Q_n(a)]
+
+Usamos un promedio ponderado con un factor de descuento \alpha:
+
+Q_{n+1}(a) = Q_n(a) + \alpha [R_{n+1} - Q_n(a)]
+
+Aquí, \alpha es un parámetro en el rango (0, 1] que determina qué tan rápido el agente olvida las recompensas pasadas y se adapta a los cambios en el entorno. Puedes copiar este texto y pegarlo en un editor que admita LaTeX para verlo correctamente.
 

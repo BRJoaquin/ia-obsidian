@@ -201,3 +201,7 @@ Dentro de las primeras ~100 steps vemos que performa peor el greedy pero es porq
 > El uso de valores iniciales optimistas es una técnica sencilla que puede ser efectiva en problemas estacionarios, pero no es un enfoque útil para fomentar la exploración en general. Además, no es adecuado para problemas no estacionarios, ya que su impulso para la exploración es temporal. Si la tarea cambia, este método no puede ayudar.
 
 ![[Pasted image 20230408151355.png]]
+
+
+## UCB
+

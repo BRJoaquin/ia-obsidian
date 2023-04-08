@@ -31,4 +31,4 @@ $$
 > 5. $a$: Es una acción específica en el conjunto de acciones disponibles. En el problema de los k-bandidos, corresponde a un brazo particular del bandido multi-brazo.
 > 6. El símbolo | indica que estamos calculando el valor esperado de la recompensa $R_t$ condicionado al hecho de que el agente ha seleccionado la acción $a$ en el tiempo $t$ (es decir, $A_t = a$). En otras palabras, estamos calculando el valor esperado de la recompensa cuando se elige la acción $a$ y se conoce la información sobre la acción seleccionada.
 > 
-> Entonces, la fórmula �(�)=�[��∣��=�]Q(a)=E[Rt​∣At​=a] nos dice que la función de valor de acción �(�)Q(a) es igual al valor esperado de la recompensa ��Rt​, dado que el agente seleccionó la acción �a (tiró del brazo �a) en el tiempo �t.
+> Entonces, la fórmula nos dice que la función de valor de acción $Q(a)$ es igual al valor esperado de la recompensa $R_t​$, dado que el agente seleccionó la acción $a$ (tiró del brazo $a$) en el tiempo $t$.

@@ -27,6 +27,6 @@ En resumen, el término $\sqrt{\frac{\ln t}{N_t(a)}}$ es una forma de equilibrar
 
 El UCB es un algoritmo de selección de acciones que funciona bien en problemas estacionarios ([[Recompensa#Estacionaria]]), pero puede tener dificultades en problemas no estacionarios. Esto se debe a que la incertidumbre asociada a cada acción puede cambiar a lo largo del tiempo en un problema no estacionario, y el UCB no tiene en cuenta estos cambios.
 
-En problemas no estacionarios, puede ser útil utilizar métodos que den mayor importancia a los datos más recientes. Por ejemplo, una posibilidad es utilizar un promedio ponderado de los valores de recompensa, en el que los datos más recientes tienen un peso mayor. Otro enfoque es utilizar un parámetro de tasa de aprendizaje que disminuye con el tiempo, de modo que los cambios en la estimación de los valores de recompensa sean cada vez menores.
+En problemas no estacionarios ([[Recompensa#No Estacionaria]]), puede ser útil utilizar métodos que den mayor importancia a los datos más recientes. Por ejemplo, una posibilidad es utilizar un promedio ponderado de los valores de recompensa, en el que los datos más recientes tienen un peso mayor. Otro enfoque es utilizar un parámetro de tasa de aprendizaje que disminuye con el tiempo, de modo que los cambios en la estimación de los valores de recompensa sean cada vez menores.
 
 En general, el UCB puede funcionar bien en problemas no estacionarios si se utiliza en combinación con otros métodos que tengan en cuenta la evolución de la incertidumbre a lo largo del tiempo.

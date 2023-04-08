@@ -52,9 +52,9 @@ En el instante $t$, llamamos acción **greedy** a una [[Acción]] a que tiene m�
 > Observación: Puede haber mas de una acción greedy.
 
 
-# Métodos Action-Valor
+# Métodos Acción-Valor
 
-Los métodos action-value estiman $Q_t(a)$ y usan esas estimaciones para seleccionar las acciones a ejecutar. La forma mas sencilla de computar la estimacion $Q_t(a)$ es calcular el promedio de recompensas obtenidas al seguir la accion a:
+Los métodos acción-valor estiman $Q_t(a)$ y usan esas estimaciones para seleccionar las acciones a ejecutar. La forma mas sencilla de computar la estimación $Q_t(a)$ es calcular el promedio de recompensas obtenidas al seguir la acción a:
 
 $$Q_t(a) = \frac{\sum_{i=1}^{t-1} R_i \cdot \mathbb{I}(A_i=a)}{\sum_{i=1}^{t-1} \mathbb{I}(A_i=a)}$$
 Donde:
@@ -68,9 +68,9 @@ Donde:
 
 > Observacion: A medida que crece el denominador, $Q_t(a)$ converge a $q^∗(a)$, gracias a la [[Ley de los grandes números]].
 
-> Observacion 2: Si el division es 0 entonces $Q_t(a)$ es 0 tambien.
+> Observación 2: Si el división es 0 entonces $Q_t(a)$ es 0 también.
 
 
-## Accion greedy
+## Acción greedy
 
-En este caso la acción greedy seria tomar 
+En este caso la acción greedy seria tomar aquella accion que 

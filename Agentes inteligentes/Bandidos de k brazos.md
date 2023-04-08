@@ -240,7 +240,7 @@ La actualización de los valores de acción se realiza mediante el gradiente de 
 
 En resumen, los algoritmos de banda gradiente son una alternativa a los métodos de selección de acción basados en probabilidad, que utilizan una aproximación lineal de los valores de acción y se actualizan continuamente mediante el gradiente de la función objetivo. 
 
-> [!warning]
+> [!check]
 > Estos algoritmos pueden adaptarse rápidamente a los cambios en el entorno, lo que los hace adecuados para problemas no estacionarios.**
 
 

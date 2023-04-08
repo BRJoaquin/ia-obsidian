@@ -226,3 +226,6 @@ Si la constante C en la fórmula de UCB es muy baja, el algoritmo UCB tenderá a
 Por otro lado, si la constante C es muy alta, el algoritmo UCB se centrará demasiado en la exploración en lugar de explotar los brazos que ya han sido seleccionados con éxito. Esto puede llevar a un exceso de exploración y una convergencia lenta a la óptima.
 
 Por lo tanto, es importante elegir cuidadosamente el valor de C para equilibrar la exploración y la explotación en un problema de aprendizaje por refuerzo. La elección de C dependerá de las características específicas del problema y puede requerir experimentación y ajuste.
+
+## Comparación de metodos 
+

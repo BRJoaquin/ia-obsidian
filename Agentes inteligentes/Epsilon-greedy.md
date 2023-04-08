@@ -1,6 +1,6 @@
 Epsilon-greedy es un algoritmo de selección de acciones en el aprendizaje por refuerzo que equilibra la exploración y la explotación en un entorno desconocido. En este algoritmo, la política de selección de acciones se divide en dos partes:
 
--   Exploración: Con una probabilidad $epsilon$ se selecciona una acción al azar, independientemente de su valor estimado.
--   Explotación: Con una probabilidad $1 - epsilon$ se selecciona la acción con el mayor valor estimado.
+-   Exploración: Con una probabilidad $\epsilon$ se selecciona una acción al azar, independientemente de su valor estimado.
+-   Explotación: Con una probabilidad $1 - \epsilon$ se selecciona la acción con el mayor valor estimado.
 
-De esta manera, el algoritmo se asegura de explorar nuevas acciones con cierta probabilidad para aprender más sobre el entorno, mientras que también explota la información ya conocida para obtener recompensas inmediatas. La tasa de exploración $epsilon$ se ajusta de acuerdo con el nivel de incertidumbre del agente en el entorno: cuanto más incierto sea el entorno, mayor será $epsilon$ para fomentar la exploración; mientras que en entornos más estables y predecibles, $epsilon$ puede ser menor para explotar más la información disponible.
+De esta manera, el algoritmo se asegura de explorar nuevas acciones con cierta probabilidad para aprender más sobre el entorno, mientras que también explota la información ya conocida para obtener recompensas inmediatas. La tasa de exploración $\\\epsilon$ se ajusta de acuerdo con el nivel de incertidumbre del agente en el entorno: cuanto más incierto sea el entorno, mayor será $\\\epsilon$ para fomentar la exploración; mientras que en entornos más estables y predecibles, $\\\epsilon$ puede ser menor para explotar más la información disponible.

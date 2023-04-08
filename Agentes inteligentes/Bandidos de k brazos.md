@@ -149,5 +149,14 @@ $$Q_{n+1}(a) = Q_n(a) + \frac{1}{n+1} [R_{n+1} - Q_n(a)]$$
 
 Aquí, $Q_n(a)$ es la estimación del valor de acción $a$ después de $n$ observaciones, y $R_{n+1}$ es la recompensa observada en el paso $n+1$. Esta fórmula ajusta la estimación actual de $Q_n(a)$ en función de la diferencia entre la última recompensa observada y la estimación actual, ponderada por la fracción $\frac{1}{n+1}$. La implementación incremental es computacionalmente eficiente y evita el almacenamiento de todas las recompensas anteriores.
 
-## Pseudocodigo
+## Pseudo-código
+
+1.  Inicializar, para cada $a = 1, \dots, k$:
+    -   $Q(a) \leftarrow 0$
+    -   $N(a) \leftarrow 0$
+2.  Repetir:
+    -   $A \leftarrow \begin{cases} \text{una acción al azar} & \text{con probabilidad } \epsilon \ \underset{a}{\operatorname{arg,max}}, Q(a) & \text{con probabilidad } 1 - \epsilon \end{cases}$
+    -   $R \leftarrow \text{bandido}(A)$
+    -   $N(A) \leftarrow N(A) + 1$
+    -   $Q(A) \leftarrow Q(A) + \frac{1}{N(A)} [R - Q(A)]$
 

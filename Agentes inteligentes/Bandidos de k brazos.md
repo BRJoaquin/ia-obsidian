@@ -73,7 +73,7 @@ Donde:
 
 ## Acción greedy
 
-En este caso la acción greedy seria tomar aquella accion que tenga la mayor estimacion $Q_t(a)$. Es decir:
+En este caso la acción greedy seria tomar aquella acción que tenga la mayor estimación $Q_t(a)$. Es decir:
 
 $$A_t = \arg\max_a Q_t(a)$$
 Donde:
@@ -83,3 +83,7 @@ Donde:
 -   $\arg\max_a$ se lee como "el valor de $a$ que maximiza".
 
 En resumen, esta fórmula selecciona la acción $a$ que tiene el mayor valor estimado en el tiempo $t$ como la acción óptima en ese momento.
+
+> En caso de haber mas de una max se puede desempatar de forma aleatoria.
+
+

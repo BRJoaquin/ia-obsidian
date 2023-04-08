@@ -238,7 +238,10 @@ En lugar de utilizar una regla de selección de acción basada en la probabilida
 
 La actualización de los valores de acción se realiza mediante el gradiente de la función objetivo, que se deriva de la función de recompensa y de la política blanda. El gradiente indica la dirección y la magnitud del cambio de los valores de acción en cada paso. Como resultado, los valores de acción se actualizan continuamente, lo que permite a los algoritmos de banda gradiente adaptarse rápidamente a los cambios en el entorno.
 
-En resumen, los algoritmos de banda gradiente son una alternativa a los métodos de selección de acción basados en probabilidad, que utilizan una aproximación lineal de los valores de acción y se actualizan continuamente mediante el gradiente de la función objetivo. Estos algoritmos pueden adaptarse rápidamente a los cambios en el entorno, lo que los hace adecuados para problemas no estacionarios.
+En resumen, los algoritmos de banda gradiente son una alternativa a los métodos de selección de acción basados en probabilidad, que utilizan una aproximación lineal de los valores de acción y se actualizan continuamente mediante el gradiente de la función objetivo. 
+
+> [!warning]
+> Estos algoritmos pueden adaptarse rápidamente a los cambios en el entorno, lo que los hace adecuados para problemas no estacionarios.**
 
 
 ## Comparación de métodos 

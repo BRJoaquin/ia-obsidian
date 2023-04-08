@@ -4,11 +4,15 @@ La recompensa y el castigo son señales que el agente recibe del entorno como re
 
 Una recompensa **estocástica** es aquella que puede cambiar en cada iteración o episodio. Por ejemplo, en un juego de ajedrez, la recompensa puede ser la victoria o la derrota, pero si el oponente cambia de estrategia en cada juego, la recompensa será estocástica.
 
+# No estocástica
+
 Por otro lado, una recompensa **no estocástica** es aquella que no cambia en cada iteración o episodio. Por ejemplo, en un juego de damas, la recompensa puede ser el número de piezas capturadas, que no cambia de un juego a otro.
 
 # Estacionaria
 
 Una recompensa **estacionaria** es aquella que no cambia con el tiempo. Por ejemplo, en un juego de ajedrez, la recompensa por ganar siempre es la misma, independientemente de cuánto tiempo lleve el juego.
+
+# No Estacionaria
 
 Una recompensa **no estacionaria** es aquella que cambia con el tiempo. Por ejemplo, en un juego de fútbol, la recompensa por marcar un gol puede ser mayor al inicio del partido que en los últimos minutos, ya que el tiempo restante influye en la importancia del gol.
 

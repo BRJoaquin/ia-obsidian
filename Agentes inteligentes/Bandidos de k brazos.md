@@ -182,3 +182,6 @@ Aquí, $\alpha$ es un parámetro en el rango (0, 1] que determina qué tan rápi
 
 ## Valores iniciales optimistas
 
+Vease: [[Valores Iniciales Optimistas]]
+
+]

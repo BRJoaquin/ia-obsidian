@@ -16,3 +16,4 @@ Hay varias estrategias y algoritmos para abordar el problema de los bandidos de 
 > El problema de los K brazos es un problema no asociativo, es decir el agente no necesita aprender a asociar diferentes situaciones o estados del entorno con acciones específicas. En otras palabras, el agente no necesita aprender una política que mapee los estados a las acciones, como en el caso de problemas de aprendizaje por refuerzo más generales.
 
 
+# Funcion valor

@@ -25,7 +25,7 @@ Q(a) = \mathbb{E}[R_t | A_t = a]
 $$
 > Donde:
 > 1.  $Q(a)$: Esta es la función de valor de acción que estima el valor esperado de la recompensa al seleccionar una acción específica, en este caso, la acción $a$ (tirar del brazo $a$ en el bandido multi-brazo).
-> 2. $\mathbb{E}$: Este es el símbolo matemático que representa la esperanza matemática o el valor esperado. Se utiliza para calcular el promedio ponderado de una variable aleatoria en función de sus probabilidades.
+> 2. $\mathbb{E}$: Este es el símbolo matemático que representa la [[Esperanza]] matemática o el valor esperado. Se utiliza para calcular el promedio ponderado de una variable aleatoria en función de sus probabilidades.
 > 3. $R_t$​: Esta es la recompensa que el agente recibe en el tiempo $t$ después de realizar una acción. Es una variable aleatoria que representa la recompensa que se obtiene al seleccionar una acción específica. Su valor puede variar dependiendo de la distribución de recompensas asociada con la acción.
 > 4. $A_t$ Esta es la acción que el agente selecciona en el tiempo $t$. En el contexto del problema de los k-bandidos, ��At​ representa el brazo que el agente elige tirar en el paso �t.
 > 5. �a: Es una acción específica en el conjunto de acciones disponibles. En el problema de los k-bandidos, corresponde a un brazo particular del bandido multi-brazo.

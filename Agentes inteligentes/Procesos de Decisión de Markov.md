@@ -84,7 +84,7 @@ $$
 Luego, podemos sustituir esta probabilidad condicional en la expresión de la recompensa esperada:
 
 $$\Large
-r(s, a, s') = \sum_{r \in \mathcal{R}} r \cdot \frac{p(s', r | s, a)}{ p(s', | s, a)}
+r(s, a, s') = \sum_{r \in \mathcal{R}} r \cdot \frac{p(s', r | s, a)}{ p(s' | s, a)}
 $$
 
 Esta expresión permite calcular la recompensa esperada $r(s, a, s')$ utilizando la función de probabilidad conjunta de transición y recompensa $p(s', r|s, a)$.

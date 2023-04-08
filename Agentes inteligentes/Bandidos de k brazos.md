@@ -150,16 +150,4 @@ $$Q_{n+1}(a) = Q_n(a) + \frac{1}{n+1} [R_{n+1} - Q_n(a)]$$
 Aquí, $Q_n(a)$ es la estimación del valor de acción $a$ después de $n$ observaciones, y $R_{n+1}$ es la recompensa observada en el paso $n+1$. Esta fórmula ajusta la estimación actual de $Q_n(a)$ en función de la diferencia entre la última recompensa observada y la estimación actual, ponderada por la fracción $\frac{1}{n+1}$. La implementación incremental es computacionalmente eficiente y evita el almacenamiento de todas las recompensas anteriores.
 
 ## Pseudocodigo
-```
-Inicializar Q(a) para todas las acciones a
-Establecer epsilon (ε) como el factor de exploración
 
-Para cada episodio o paso en el tiempo:
-  1. Generar un número aleatorio r en el rango [0, 1]
-  2. Si r < ε (caso de exploración):
-       Seleccionar una acción a aleatoriamente entre todas las acciones posibles
-  3. De lo contrario (caso de explotación):
-       Seleccionar la acción a con el valor más alto de Q(a)
-  4. Tomar la acción a y observar la recompensa R
-  5. Actualizar el valor de Q(a) usando la implementación incremental, como:
-       Q(a) = Q(a) + (1 / número de veces que se tomó la acción a) * (R - Q(a))

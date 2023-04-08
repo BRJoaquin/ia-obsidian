@@ -232,9 +232,9 @@ Por lo tanto, es importante elegir cuidadosamente el valor de C para equilibrar 
 > [!warning]
 > Al parecer no lo vimos
 
-Los algoritmos de banda gradiente (Gradient Bandit Algorithms) son una familia de métodos de aprendizaje por refuerzo que utilizan una aproximación lineal de los valores de acción. A diferencia de los métodos anteriores, estos algoritmos aprenden un valor de acción para cada acción y se actualizan de forma continua, en lugar de actualizar solo la acción elegida en cada paso.
+Los algoritmos de banda gradiente (Gradient Bandit Algorithms) son una familia de métodos de aprendizaje por refuerzo que utilizan una aproximación lineal de los valores de acción. **A diferencia de los métodos anteriores, estos algoritmos aprenden un valor de acción para cada acción y se actualizan de forma continua, en lugar de actualizar solo la acción elegida en cada paso.**
 
-En lugar de utilizar una regla de selección de acción basada en la probabilidad, como la regla epsilon-greedy, los algoritmos de banda gradiente utilizan una política blanda que selecciona las acciones en función de su valor de acción estimado. La probabilidad de seleccionar una acción está determinada por una función de softmax, que mapea los valores de acción en probabilidades de selección. Esta función introduce un parámetro de temperatura, que controla la explotación versus la exploración.
+En lugar de utilizar una regla de selección de acción basada en la probabilidad, como la regla epsilon-greedy, los algoritmos de banda gradiente utilizan una política blanda que selecciona las acciones en función de su valor de acción estimado. La probabilidad de seleccionar una acción está determinada por una función de **softmax**, que mapea los valores de acción en probabilidades de selección. Esta función introduce un parámetro de **temperatura**, que controla la explotación versus la exploración.
 
 La actualización de los valores de acción se realiza mediante el gradiente de la función objetivo, que se deriva de la función de recompensa y de la política blanda. El gradiente indica la dirección y la magnitud del cambio de los valores de acción en cada paso. Como resultado, los valores de acción se actualizan continuamente, lo que permite a los algoritmos de banda gradiente adaptarse rápidamente a los cambios en el entorno.
 

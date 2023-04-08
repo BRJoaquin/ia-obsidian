@@ -1,0 +1,1 @@
+Épsilon (ε) es una letra griega que se utiliza a menudo en matemáticas y física para representar un número muy pequeño o un límite infinitesimal. En matemáticas, a menudo se utiliza para representar el error de aproximación en un cálculo numérico o la cantidad que se acerca a cero en una sucesión o serie.

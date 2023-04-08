@@ -129,10 +129,10 @@ La ventaja de los métodos ε-greedy sobre los métodos greedy depende de la tar
 
 ### ¿Por qué el greedy en la figura 2.2 (promedio de recompensa) se queda estancado?
 
-El método greedy se estanca en un valor promedio de recompensa de aproximadamente 1 en lugar de llegar al mejor posible de alrededor de 1.55 debido a su enfoque en la explotación y su falta de exploración.
+El enfoque greedy queda estancado en el promedio de recompensa debido a su falta de exploración y enfoque en la explotación. Al seleccionar siempre la acción con la recompensa más alta observada hasta ese momento, el método greedy tiende a explotar prematuramente la información limitada que ha adquirido en las primeras etapas.
 
-En las primeras etapas, el método greedy selecciona acciones basadas únicamente en la recompensa más alta observada hasta ese momento. Sin embargo, si las primeras muestras de recompensa de la acción óptima resultan ser bajas por casualidad, el método greedy no volverá a explorar esa acción porque siempre seleccionará la acción con la recompensa más alta conocida.
+Si el método greedy selecciona una acción subóptima con una recompensa inicial alta por casualidad, es probable que siga eligiendo esa acción en lugar de explorar otras. Debido a que el método greedy no dedica tiempo a explorar otras acciones, puede perderse la acción óptima si sus muestras iniciales resultaron ser bajas en comparación con las acciones subóptimas.
 
-Como resultado, el método greedy puede quedarse atrapado en acciones subóptimas que parecían ser las mejores según las observaciones iniciales pero que no lo son en realidad. Al no explorar otras acciones, el método greedy pierde la oportunidad de descubrir y aprovechar la acción óptima, lo que lleva a un rendimiento estancado en un nivel inferior al máximo posible.
+Esta falta de exploración lleva a que el método greedy quede atrapado en acciones subóptimas, lo que resulta en un estancamiento en el promedio de recompensa en lugar de alcanzar el máximo posible. Por otro lado, los métodos ε-greedy equilibran la exploración y la explotación, lo que les permite descubrir y aprovechar las acciones óptimas a lo largo del tiempo y alcanzar un rendimiento más cercano al óptimo.
 
 > Cabe mencionar que este valor es específico para el conjunto de problemas de prueba utilizado en el estudio y no es una constante universal para todos los problemas de bandidos de k brazos. En otros problemas, el mejor promedio de recompensa posible podría ser diferente, dependiendo de las distribuciones de recompensa y las características del problema.

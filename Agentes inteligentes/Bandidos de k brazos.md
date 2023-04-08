@@ -177,5 +177,7 @@ Usamos un promedio ponderado con un factor de descuento $\alpha$:
 
 $$Q_{n+1}(a) = Q_n(a) + \alpha [R_{n+1} - Q_n(a)]$$
 
-Aquí, $\alpha$ es un parámetro en el rango (0, 1] que determina qué tan rápido el agente olvida las recompensas pasadas y se adapta a los cambios en el entorno.
+Aquí, $\alpha$ es un parámetro en el rango (0, 1] que determina qué tan rápido el agente olvida las recompensas pasadas y se adapta a los cambios en el entorno. Un valor de $\alpha$ más cercano a 1 hará que el agente se adapte más rápidamente a los cambios, pero también lo hará más sensible al ruido en las recompensas.
+
+> Es importante que el agente siga explorando para adaptarse a los cambios en las recompensas. Los métodos de aprendizaje por refuerzo que son adecuados para problemas estacionarios, como el promedio simple, pueden no ser lo suficientemente sensibles a los cambios en un problema no estacionario.
 

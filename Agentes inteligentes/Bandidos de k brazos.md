@@ -205,3 +205,5 @@ Dentro de las primeras ~100 steps vemos que performa peor el greedy pero es porq
 
 ## UCB
 
+Vease: [[Límite Superior de Confianza (UCB)]]
+

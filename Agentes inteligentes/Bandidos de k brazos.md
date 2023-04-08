@@ -47,6 +47,8 @@ $q^*(a)$ es el valor de acción "verdadero" o "desconocido" que el agente intent
 
 # Accion greedy
 
-En el instante $t$, llamamos accion **greedy** a una [[Accion]] a que tiene maximo valor estimado $Q_t(a)$. Y es el caso de la [[Explotación]].
+En el instante $t$, llamamos accion **greedy** a una [[Acción]] a que tiene maximo valor estimado $Q_t(a)$. Y es el caso de la [[Explotación]].
 
-> Observacion: Puede haber m´as de una accioon greedy.
+> Observacion: Puede haber mas de una accioon greedy.
+
+

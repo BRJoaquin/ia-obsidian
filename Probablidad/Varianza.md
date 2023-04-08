@@ -1,4 +1,4 @@
-La varianza es una medida de la dispersión de una distribución de probabilidad. En estadística y probabilidad, la varianza mide cuánto se alejan los valores de una variable aleatoria de su valor esperado o "mean".
+La varianza ($\sigma^2$) es una medida de la dispersión de una distribución de probabilidad. En estadística y probabilidad, la varianza mide cuánto se alejan los valores de una variable aleatoria de su valor esperado o "mean".
 
 Formalmente, si tenemos una variable aleatoria $X$ con media $mu$ (es decir, $E(X) = mu$), entonces la varianza de $X$, denotada por $Var(X)$, se calcula como:
 

@@ -11,3 +11,6 @@ El agente toma decisiones basándose en su conocimiento actual del entorno y las
 
 Un aspecto clave de los MDP es que tienen **la propiedad de Markov**, lo que significa que **el estado actual del entorno contiene toda la información necesaria para decidir la acción óptima**, sin importar cómo llegamos a ese estado. En otras palabras, el pasado no importa y sólo necesitamos considerar el estado presente para tomar decisiones.
 
+> [!quote]
+> Thus MDPs involve delayed reward and the need to tradeoff immediate and delayed reward.
+

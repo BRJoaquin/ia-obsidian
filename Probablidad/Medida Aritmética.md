@@ -2,7 +2,8 @@ La medida aritmética es una medida estadística de tendencia central que se cal
 
 Formalmente, si tenemos un conjunto de $n$ valores $x1, x2, ..., xn$, entonces la medida aritmética se calcula como:
 
-$$Media aritmética = (x1 + x2 + ... + xn) / n$$
+$$\text{Media aritmética} = \frac{x_1 + x_2 + \cdots + x_n}{n}
+$$
 
 La medida aritmética es una medida importante en la estadística y es ampliamente utilizada en el análisis de datos. Se utiliza para resumir y describir un conjunto de datos numéricos, y proporciona una medida de tendencia central que representa la "ubicación" típica de los valores en el conjunto. La medida aritmética también se utiliza como base para otros cálculos estadísticos, como la desviación estándar, la varianza y la correlación.
 

@@ -106,3 +106,5 @@ El factor de descuento $\gamma$ (gamma) es un número entre 0 y 1. Si $\gamma = 
 
 > Si $\gamma = 0$, el agente es **miope**: sólo le importa maximizar las recompensas inmediatas.
 
+# Políticas y funciones de valor
+

@@ -60,7 +60,8 @@ $$\Large p(s'|s, a) = \text{Pr}({S_t = s' | S_{t-1} = s, A_{t-1} = a}) = \sum_{r
 > Básicamente, que probabilidad tengo que estando en el estado $s$ y haciendo la acción $a$ termine en $s'$
 
 > [!question]
-> ¿Que pasa si las transiciones son determinısticas?
+> **¿Que pasa si las transiciones son determinısticas?**
+> En un problema determinístico, cada acción en un estado particular siempre llevará al agente al mismo estado siguiente. No hay incertidumbre en la transición. En este caso, las probabilidades de transición se vuelven 1 para el estado siguiente y 0 para todos los demás estados. La notación para esto sería:
 > $$ p(s' | s, a) = \begin{cases} 1, & \text{si } s' \text{ es el estado siguiente determinado por } (s, a) \\ 0, & \text{en cualquier otro caso} \end{cases} $$
 
 ## Recompensas esperadas para pares estado-acción

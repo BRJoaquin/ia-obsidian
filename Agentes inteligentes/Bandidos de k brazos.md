@@ -32,3 +32,18 @@ $$
 > 6. El símbolo | indica que estamos calculando el valor esperado de la recompensa $R_t$ condicionado al hecho de que el agente ha seleccionado la acción $a$ en el tiempo $t$ (es decir, $A_t = a$). En otras palabras, estamos calculando el valor esperado de la recompensa cuando se elige la acción $a$ y se conoce la información sobre la acción seleccionada.
 > 
 > Entonces, la fórmula nos dice que la función de valor de acción $Q(a)$ es igual al valor esperado de la recompensa $R_t​$, dado que el agente seleccionó la acción $a$ (tiró del brazo $a$) en el tiempo $t$.
+
+## Valor optimo
+
+En el contexto del problema de los k-bandidos, $q^*(a)* representa el valor óptimo de la acción �a, es decir, el valor esperado de la recompensa si se selecciona la acción �a (tirar del brazo �a) y se conoce la verdadera distribución de recompensas.
+
+$$
+q^*(a) = \mathbb{E}[R_t | A_t = a]
+$$
+
+
+�∗(�)q∗(a) es el valor de acción "verdadero" o "desconocido" que el agente intenta aprender o estimar a través de sus interacciones con el entorno. La función de valor de acción que el agente estima, �(�)Q(a), es una aproximación de �∗(�)q∗(a) basada en la experiencia del agente.
+
+El objetivo del agente es mejorar sus estimaciones de los valores de acción, �(�)Q(a), de manera que se aproximen cada vez más a los valores óptimos verdaderos, �∗(�)q∗(a). A medida que el agente explora y explota las acciones en el entorno, sus estimaciones de �(�)Q(a) se actualizarán y, en teoría, convergerán a �∗(�)q∗(a).
+
+Entonces, en resumen, �∗(�)q∗(a) es el valor óptimo de la acción �a en el problema de los k-bandidos y está asociado con la función de valor de acción �(�)Q(a) que el agente aprende y estima a través de sus interacciones con el entorno. El objetivo del agente es mejorar sus estimaciones �(�)Q(a) para que se aproximen a �∗(�)q∗(a) y, así, maximizar sus recompensas acumuladas a lo largo del tiempo.

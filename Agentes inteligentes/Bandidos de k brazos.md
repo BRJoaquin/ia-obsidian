@@ -13,12 +13,12 @@ Hay varias estrategias y algoritmos para abordar el problema de los bandidos de 
 
 > En el caso teórico, es posible que los brazos ofrezcan recompensas positivas en promedio, lo que permitiría ganar a lo largo del tiempo si el agente selecciona correctamente las palancas. La clave en este problema teórico es cómo el agente aprende a tomar decisiones óptimas, equilibrando la exploración y la explotación para maximizar sus ganancias.
 
-> El problema de los K brazos es un problema no asociativo, es decir el agente no necesita aprender a asociar diferentes situaciones o estados del entorno con acciones específicas. En otras palabras, el agente no necesita aprender una política que mapee los estados a las acciones, como en el caso de problemas de aprendizaje por refuerzo más generales.
+> El problema de los K brazos es un problema no asociativo, es decir el agente no necesita aprender a asociar diferentes situaciones o estados del entorno con acciones específicas. En otras palabras, el agente no necesita aprender una [[Política]] que mapee los estados a las acciones, como en el caso de problemas de aprendizaje por refuerzo más generales.
 
 
 # Funcion valor
 
-La función de valor se refiere a la función de valor de acción, ya que no hay estados distintos en este problema y sólo se consideran las acciones (brazos). La función de valor de acción para un bandido multi-brazo, denotada como $Q(a)$, estima el valor esperado de la recompensa al seleccionar una acción específica (tirar de un brazo particular).
+La [[Función de valor]] se refiere a la función de valor de acción, ya que no hay estados distintos en este problema y sólo se consideran las acciones (brazos). La función de valor de acción para un bandido multi-brazo, denotada como $Q(a)$, estima el valor esperado de la recompensa al seleccionar una acción específica (tirar de un brazo particular).
 
 $$
 Q(a) = \mathbb{E}[R_t | A_t = a]
@@ -35,7 +35,7 @@ $$
 
 ## Valor optimo
 
-En el contexto del problema de los k-bandidos, $q^*(a)$ representa el valor óptimo de la acción $a$, es decir, el valor esperado de la recompensa si se selecciona la acción $a$ (tirar del brazo $a$) y **se conoce la verdadera distribución de recompensas**.
+En el contexto del problema de los k-bandidos, $q^*(a)$ representa el valor óptimo de la acción $a$, es decir, el valor esperado de la [[Recompensa]] si se selecciona la acción $a$ (tirar del brazo $a$) y **se conoce la verdadera distribución de recompensas**.
 
 $$
 q^*(a) = \mathbb{E}[R_t | A_t = a]

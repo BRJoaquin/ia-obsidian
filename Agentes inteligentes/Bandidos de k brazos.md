@@ -165,6 +165,8 @@ Aquí, $Q_n(a)$ es la estimación del valor de acción $a$ después de $n$ obser
 
 El problema de los k-bandidos como lo venimos planteando es un problema estacionario. Es decir su función de valor-acción no cambia con el tiempo (steps). Por lo cual vale la pena mencionar que ocurre en otros problemas no estacionarios que queramos 
 
+> Para ilustrar un problema de k-bandidos no estacionario, considera un conjunto de 10 máquinas tragamonedas (k = 10) en un casino. Al principio, cada máquina tiene una distribución de recompensa diferente asociada con ella. A medida que pasa el tiempo, el casino decide cambiar las probabilidades de las máquinas para mantener a los jugadores interesados y ajustar sus ganancias. Estos cambios pueden ser graduales o repentinos, pero el resultado es que las distribuciones de recompensa de las máquinas cambian con el tiempo, y el algoritmo de aprendizaje por refuerzo debe adaptarse a estos cambios.
+
 Para problemas no estacionarios (ver [[Recompensa#Estacionaria]]), las propiedades del entorno cambian con el tiempo. Para aplicar el algoritmo ε-greedy en tales problemas, es necesario adaptar el algoritmo para responder a estos cambios y actualizar las estimaciones de manera más sensible. Una forma de hacerlo es mediante el uso de un **promedio ponderado** en lugar de un promedio simple para actualizar las estimaciones de los valores de acción.
 
 En lugar de usar la fórmula de actualización de la implementación incremental estándar:
@@ -176,3 +178,4 @@ Usamos un promedio ponderado con un factor de descuento $\alpha$:
 $$Q_{n+1}(a) = Q_n(a) + \alpha [R_{n+1} - Q_n(a)]$$
 
 Aquí, $\alpha$ es un parámetro en el rango (0, 1] que determina qué tan rápido el agente olvida las recompensas pasadas y se adapta a los cambios en el entorno.
+

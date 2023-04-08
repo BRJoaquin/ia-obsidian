@@ -14,3 +14,4 @@ Una de las formas más comunes de elegir C es mediante la utilización de la [[D
 Otra forma de elegir C es mediante la optimización empírica, es decir, probando diferentes valores de C y eligiendo el que mejor funciona para un problema específico. En general, se recomienda comenzar con un valor bajo de C y aumentarlo gradualmente a medida que se recopilan más datos y se reduce la incertidumbre en las estimaciones de la recompensa.
 
 En resumen, elegir el valor óptimo de C para el algoritmo UCB es un proceso empírico y depende de la naturaleza del problema y de la cantidad de datos disponibles.
+

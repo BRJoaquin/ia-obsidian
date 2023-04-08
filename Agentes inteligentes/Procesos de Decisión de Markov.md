@@ -59,7 +59,9 @@ Estas probabilidades describen cómo el entorno cambia de un estado a otro dada 
 $$\Large p(s'|s, a) = \text{Pr}({S_t = s' | S_{t-1} = s, A_{t-1} = a}) = \sum_{r \in \mathcal{R}}p(s', r|s, a)$$
 > Básicamente, que probabilidad tengo que estando en el estado $s$ y haciendo la acción $a$ termine en $s'$
 
-> [!q]
+> [!question]
+> ¿Que pasa si las transiciones son determinısticas?
+> $$ p(s' | s, a) = \begin{cases} 1, & \text{si } s' \text{ es el estado siguiente determinado por } (s, a) \\ 0, & \text{en cualquier otro caso} \end{cases} $$
 
 ## Recompensas esperadas para pares estado-acción
 

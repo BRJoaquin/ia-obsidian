@@ -9,4 +9,5 @@ El MDP se compone de cuatro elementos principales:
 
 El agente toma decisiones basándose en su conocimiento actual del entorno y las recompensas asociadas a las acciones. El objetivo del agente es encontrar una política óptima ([[Política#Política optima]]), que es una estrategia para seleccionar acciones en cada estado de manera que maximice el valor total de las recompensas a lo largo del tiempo.
 
-Un aspecto clave de los MDP es que tienen la propiedad de Markov, lo que significa que el estado actual del entorno contiene toda la información necesaria para decidir la acción óptima, sin importar cómo llegamos a ese estado. En otras palabras, el pasado no importa y sólo necesitamos considerar el estado presente para tomar decisiones. Esto hace que los MDP sean particularmente útiles para modelar problemas de decisión en una amplia variedad de campos, como la inteligencia artificial, la economía, la robótica y la investigación operativa.
+Un aspecto clave de los MDP es que tienen **la propiedad de Markov**, lo que significa que **el estado actual del entorno contiene toda la información necesaria para decidir la acción óptima**, sin importar cómo llegamos a ese estado. En otras palabras, el pasado no importa y sólo necesitamos considerar el estado presente para tomar decisiones.
+

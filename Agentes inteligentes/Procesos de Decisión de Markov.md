@@ -68,3 +68,23 @@ $$\Large r(s, a) = \mathbb{E}[R_t | S_{t-1} = s, A_{t-1} = a] = \sum_{r \in \mat
 
 Las recompensas esperadas para los pares estado-acción-siguiente estado se denotan como $$\Large r(s, a, s') = \mathbb{E}[R_t | S_{t-1} = s, A_{t-1} = a, S_t = s']$$
 Esta expresión representa la recompensa promedio que se espera recibir cuando se toma la acción $a$ estando en el estado $s$ y se llega al estado $s'$. Esta información es útil cuando se necesita considerar la recompensa específica asociada con un estado siguiente en lugar de solo la recompensa promedio para un par estado-acción.
+
+Para calcular la recompensa esperada $r(s, a, s')$ con la función de probabilidad conjunta de transición y recompensa, $p(s', r|s, a)$, se puede utilizar la definición de valor esperado. La expresión es la siguiente:
+
+$$
+r(s, a, s') = \mathbb{E}[R_t | S_{t-1} = s, A_{t-1} = a, S_t = s'] = \sum_{r \in \mathcal{R}} r \cdot p(r | s, a, s')
+\]
+
+Para obtener la probabilidad condicional $p(r | s, a, s')$, podemos utilizar la función de probabilidad conjunta de transición y recompensa, $p(s', r|s, a)$, y aplicar la regla de Bayes:
+
+$$
+p(r | s, a, s') = \frac{p(s', r | s, a)}{\sum_{r' \in \mathcal{R}} p(s', r' | s, a)}
+\]
+
+Luego, podemos sustituir esta probabilidad condicional en la expresión de la recompensa esperada:
+
+$$
+r(s, a, s') = \sum_{r \in \mathcal{R}} r \cdot \frac{p(s', r | s, a)}{\sum_{r' \in \mathcal{R}} p(s', r' | s, a)}
+\]
+
+Esta expresión permite calcular la recompensa esperada $r(s, a, s')$ utilizando la función de probabilidad conjunta de transición y recompensa $p(s', r|s, a)$.

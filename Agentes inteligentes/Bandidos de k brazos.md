@@ -143,3 +143,8 @@ Esta falta de exploración lleva a que el método greedy quede atrapado en accio
 
 ## Implementación incremental
 
+La implementación incremental es una forma eficiente de actualizar estimaciones de valores de acción en algoritmos de aprendizaje por refuerzo. En lugar de recalcular la media de todas las recompensas observadas, la implementación incremental utiliza una fórmula recursiva para actualizar la estimación en cada paso:
+
+$$Q_{n+1}(a) = Q_n(a) + \frac{1}{n+1} [R_{n+1} - Q_n(a)]$$
+
+Aquí, $Q_n(a)$ es la estimación del valor de acción $a$ después de $n$ observaciones, y $R_{n+1}$ es la recompensa observada en el paso $n+1$. Esta fórmula ajusta la estimación actual de $Q_n(a)$ en función de la diferencia entre la última recompensa observada y la estimación actual, ponderada por la fracción $\frac{1}{n+1}$. La implementación incremental es computacionalmente eficiente y evita el almacenamiento de todas las recompensas anteriores.

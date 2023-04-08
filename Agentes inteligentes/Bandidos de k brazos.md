@@ -95,7 +95,6 @@ En resumen, esta fórmula selecciona la acción $a$ que tiene el mayor valor est
 Vease: [[Epsilon-greedy]]
 
 
-
 # The 10-armed Testbed
 
 The 10-armed Testbed es un problema de prueba comúnmente utilizado para evaluar algoritmos de aprendizaje por refuerzo en el contexto del problema de los k brazos bandidos (multi-armed bandit problem).

@@ -113,4 +113,4 @@ The 10-armed Testbed es un problema de prueba comúnmente utilizado para evaluar
 
 ## Practica 
 
-Llevamos a la practica este ambiente junto a múltiples estrategias.
+Llevamos a la practica este ambiente junto a múltiples estrategias / [[Política]]. Se pueden ver los detalles en [[Practico K bandidos armados]]

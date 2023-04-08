@@ -89,5 +89,6 @@ En resumen, esta fórmula selecciona la acción $a$ que tiene el mayor valor est
 
 ## Épsilon-greedy ($\epsilon$-greedy)
 
-
+> [!quote]
+> Greedy action selection always exploits current knowledge to maximize immediate reward; it spends no time at all sampling apparently inferior actions to see if they might really be better. A simple alternative is to behave greedily most of the time, but every once in a while, say with small probability ", instead select randomly from among all the actions with equal probability, independently of the action-value estimates. We call methods using this near-greedy action selection rule "-greedy methods. An advantage of these methods is that, in the limit as the number of steps increases, every action will be sampled an infinite number of times, thus ensuring that all the $Q_t(a)$ converge to $q⇤(a)$. This of course implies that the probability of selecting the optimal action converges to greater than 1 ", that is, to near certainty. These are just asymptotic guarantees, however, and say little about the practical e↵ectiveness of the methods.
 

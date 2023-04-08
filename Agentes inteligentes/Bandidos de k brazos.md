@@ -73,4 +73,6 @@ Donde:
 
 ## Acción greedy
 
-En este caso la acción greedy seria tomar aquella accion que 
+En este caso la acción greedy seria tomar aquella accion que tenga la mayor estimacion $Q_t(a)$. Es decir:
+
+$$At . = argmax a Qt(a),

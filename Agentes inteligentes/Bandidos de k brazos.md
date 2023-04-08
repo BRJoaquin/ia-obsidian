@@ -35,7 +35,7 @@ $$
 
 ## Valor optimo
 
-En el contexto del problema de los k-bandidos, $q^*(a)* representa el valor óptimo de la acción �a, es decir, el valor esperado de la recompensa si se selecciona la acción �a (tirar del brazo �a) y se conoce la verdadera distribución de recompensas.
+En el contexto del problema de los k-bandidos, $q^*(a)$ representa el valor óptimo de la acción $a$, es decir, el valor esperado de la recompensa si se selecciona la acción $a$ (tirar del brazo $a$) y **se conoce la verdadera distribución de recompensas**.
 
 $$
 q^*(a) = \mathbb{E}[R_t | A_t = a]

@@ -45,3 +45,7 @@ $q^*(a)$ es el valor de acción "verdadero" o "desconocido" que el agente intent
 
 **El objetivo del agente es mejorar sus estimaciones de los valores de acción, $Q(a)$, de manera que se aproximen cada vez más a los valores óptimos verdaderos, $q^*(a)$. A medida que el agente explora y explota las acciones en el entorno, sus estimaciones de $Q(a)$ se actualizarán y, en teoría, convergerán a $q^*(a)$.**
 
+# Accion greedy
+
+En el instante t, llamamos acci´on greedy a una acci´on a que tiene m´aximo valor estimado Qt(a). 
+> Observacion: Puede haber m´as de una accioon greedy.

@@ -156,7 +156,7 @@ Aquí, $Q_n(a)$ es la estimación del valor de acción $a$ después de $n$ obser
     -   $N(a) \leftarrow 0$
 2.  Repetir:
     -   $$A \leftarrow \begin{cases} 
-      \text{una acción al azar} & \text{con probabilidad } \epsilon \\ \underset{a}{\operatorname{arg,max}}, Q(a) & \text{con probabilidad } 1 - \epsilon \end{cases}$$
+      \text{una acción al azar} & \text{con probabilidad } \epsilon \\ \underset{a}{\operatorname{argmax} Q(a)} & \text{con probabilidad } 1 - \epsilon \end{cases}$$
     -   $R \leftarrow \text{bandido}(A)$
     -   $N(A) \leftarrow N(A) + 1$
     -   $Q(A) \leftarrow Q(A) + \frac{1}{N(A)} [R - Q(A)]$

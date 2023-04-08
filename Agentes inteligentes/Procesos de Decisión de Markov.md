@@ -69,6 +69,14 @@ $$\Large p(s'|s, a) = \text{Pr}({S_t = s' | S_{t-1} = s, A_{t-1} = a}) = \sum_{r
 Las recompensas esperadas para los pares estado-acción se denotan como 
 $$\Large r(s, a) = \mathbb{E}[R_t | S_{t-1} = s, A_{t-1} = a] = \sum_{r \in \mathcal{R}}r\sum_{s' \in \mathcal{S}}p(s', r|s, a)$$Esta expresión representa la recompensa promedio que se espera recibir cuando se toma la acción $a$ estando en el estado $s$. Estos valores ayudan al agente a determinar qué acciones son preferibles en un estado dado para maximizar las recompensas a lo largo del tiempo.
 
+> [!question]
+> **¿Que pasa si las transiciones son determinısticas?**
+> En un problema determinístico, la recompensa para un par estado-acción específico es siempre la misma, ya que no hay incertidumbre en la recompensa. Esto significa que la recompensa esperada para un par estado-acción es simplemente la recompensa fija asociada con ese par. La notación para esto sería:
+> $$
+r(s, a) = r_{fija}(s, a)
+$$
+
+
 ## Recompensas esperadas para pares estado-acción-siguiente estado
 
 Las recompensas esperadas para los pares estado-acción-siguiente estado se denotan como $$\Large r(s, a, s') = \mathbb{E}[R_t | S_{t-1} = s, A_{t-1} = a, S_t = s']$$

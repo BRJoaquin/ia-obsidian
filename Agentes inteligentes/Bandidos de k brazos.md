@@ -23,3 +23,4 @@ La función de valor se refiere a la función de valor de acción, ya que no hay
 $$
 Q(a) = \mathbb{E}[R_t | A_t = a]
 $$
+Donde: 

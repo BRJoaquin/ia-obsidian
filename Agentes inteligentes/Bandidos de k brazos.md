@@ -227,7 +227,7 @@ Por otro lado, si la constante C es muy alta, el algoritmo UCB se centrará dema
 
 Por lo tanto, es importante elegir cuidadosamente el valor de C para equilibrar la exploración y la explotación en un problema de aprendizaje por refuerzo. La elección de C dependerá de las características específicas del problema y puede requerir experimentación y ajuste.
 
-## Metodos basados en grandite
+## Métodos basados en gradiente
 
 > [!warning]
 > Al parecer no lo vimos

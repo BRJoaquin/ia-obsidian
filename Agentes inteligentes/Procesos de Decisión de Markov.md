@@ -2,8 +2,8 @@ Un Proceso de Decisión de Markov (MDP, por sus siglas en inglés) es un modelo 
 
 El MDP se compone de cuatro elementos principales:
 
-1.  Estados: son las diferentes situaciones o configuraciones en las que puede encontrarse el agente dentro del entorno.
-2.  Acciones: son las posibles decisiones o movimientos que el agente puede realizar en cada estado.
+1.  Estados: son las diferentes situaciones o configuraciones en las que puede encontrarse el agente dentro del entorno. Véase [[Estado]]
+2.  Acciones: son las posibles decisiones o movimientos que el agente puede realizar en cada estado. Vease [[Acción]]
 3.  Transiciones: son las probabilidades de pasar de un estado a otro, dada una acción específica.
 4.  Recompensas: son los puntos o beneficios que el agente recibe al realizar acciones en el entorno.
 

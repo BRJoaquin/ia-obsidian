@@ -14,6 +14,8 @@ Los estados en un MDP deben cumplir con la propiedad de Markov, lo que significa
 
 # Estados terminales 
 
-: En algunos MDP, puede haber estados terminales o "absorbentes" que, una vez alcanzados, finalizan el proceso de decisión. Estos estados pueden representar el logro de un objetivo, como llegar a un destino en un problema de navegación, o el fracaso en una tarea, como caer en un pozo en un problema de aprendizaje por refuerzo.
-    
-5.  Estados iniciales: Los estados iniciales son aquellos desde los cuales comienza el agente en un MDP. Puede haber un único estado inicial, o el agente puede comenzar en diferentes estados iniciales según las condiciones del problema.
+En algunos MDP, puede haber estados terminales o "absorbentes" que, una vez alcanzados, finalizan el proceso de decisión. Estos estados pueden representar el logro de un objetivo, como llegar a un destino en un problema de navegación, o el fracaso en una tarea, como caer en un pozo en un problema de aprendizaje por refuerzo.
+
+# Estados iniciales
+
+Los estados iniciales son aquellos desde los cuales comienza el agente en un MDP. Puede haber un único estado inicial, o el agente puede comenzar en diferentes estados iniciales según las condiciones del problema.

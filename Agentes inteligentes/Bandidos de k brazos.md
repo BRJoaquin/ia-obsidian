@@ -94,3 +94,4 @@ En resumen, esta fórmula selecciona la acción $a$ que tiene el mayor valor est
 
 Vease: [[Epsilon-greedy]]
 
+# The 10-armed Testbed

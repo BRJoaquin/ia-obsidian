@@ -192,3 +192,7 @@ Vease: [[Valores Iniciales Optimistas]]
 
 
 ![[Pasted image 20230408150213.png]]
+
+El libro compara greedy con valores iniciales optimistas (+5) con un un $\epsilon$-greedy sin valores iniciales optmistas.
+
+Dentro de las pri

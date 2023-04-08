@@ -102,7 +102,7 @@ The 10-armed Testbed es un problema de prueba comúnmente utilizado para evaluar
 
 
 1.  Para cada una de las 10 acciones posibles, se selecciona un valor verdadero (o valor óptimo) de forma aleatoria a partir de una distribución normal con media cero y varianza uno. Estos valores verdaderos son desconocidos para el algoritmo de aprendizaje.
-> O sea, se elije el $q^*$ al azar para cada uno de los brazos, pero de tal forma que no se alejen mucho del valor 0. Aquellas que tengan un valor optimio menor a cero (2,6,7,8 y 10) son aquellas que a la larga 
+> O sea, se elije el $q^*$ al azar para cada uno de los brazos, pero de tal forma que no se alejen mucho del valor 0. Aquellas que tengan un valor optimo menor a cero (2,6,7,8 y 10) son aquellas que a la larga pierdo dinero, mientras que las otras son las que gano dinero. Aquella con mayor valor optimo (3 en este caso) es aquella accion que tengo que encontrar para
 2.  En cada intento, cuando se selecciona una acción, se obtiene una recompensa real a partir de una distribución normal con media igual al valor verdadero de la acción seleccionada y varianza igual a uno. Estas recompensas reales son desconocidas para el algoritmo de aprendizaje y son generadas de forma aleatoria.
 
 3.  El objetivo del algoritmo de aprendizaje es estimar los valores verdaderos de las 10 acciones a partir de las recompensas obtenidas en los intentos previos. El algoritmo debe equilibrar la exploración de acciones menos probables con la explotación de las acciones más prometedoras, para encontrar el valor verdadero más alto (valor óptimo) en el menor número de intentos posibles.

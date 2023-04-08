@@ -1,8 +1,8 @@
 La desviación estándar es una medida estadística que indica la cantidad de variación o dispersión en un conjunto de datos. Se calcula como la raíz cuadrada de la [[Varianza]], que es la media de los cuadrados de las diferencias entre cada valor y la media.
 
-**La desviación estándar nos puede indicar la cantidad de dispersión o variación que existe en los datos**. Si la desviación estándar es baja, significa que los datos están muy agrupados alrededor de la media y hay poca variabilidad en el conjunto de datos. Si la desviación estándar es alta, significa que los datos están más dispersos y hay más variabilidad en el conjunto de datos.
+**La desviación estándar nos puede indicar la cantidad de dispersión o variación que existe en los datos**. Si la desviación estándar es baja, significa que los datos están muy agrupados **alrededor de la media** y hay poca variabilidad en el conjunto de datos. Si la desviación estándar es alta, significa que los datos están más dispersos y hay más variabilidad en el conjunto de datos.
 
-La desviación estándar se puede leer como una medida de la variabilidad en los datos. Si la desviación estándar es grande en comparación con la media, significa que los datos están más dispersos. Si la desviación estándar es pequeña en comparación con la media, significa que los datos están más agrupados.
+La desviación estándar se puede leer como una medida de la variabilidad en los datos. Si la desviación estándar es grande en comparación con la [[, significa que los datos están más dispersos. Si la desviación estándar es pequeña en comparación con la media, significa que los datos están más agrupados.
 
 La desviación estándar se relaciona con otras medidas estadísticas, como la media y la mediana. Por ejemplo, si los datos tienen una distribución normal, entonces la media, la mediana y la moda son iguales, y la desviación estándar se puede utilizar para medir la variabilidad de los datos en torno a la media. En general, cuanto mayor sea la desviación estándar, mayor será la dispersión de los datos alrededor de la media.
 

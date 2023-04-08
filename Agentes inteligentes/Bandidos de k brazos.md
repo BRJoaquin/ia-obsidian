@@ -188,4 +188,7 @@ Vease: [[Valores Iniciales Optimistas]]
 > Initial action values can also be used as a simple way to encourage exploration. Suppose that instead of setting the initial action values to zero, as we did in the 10-armed testbed, we set them all to +5. Recall that the q⇤(a) in this problem are selected from a normal distribution with mean 0 and variance 1. An initial estimate of +5 is thus wildly optimistic. But this optimism encourages action-value methods to explore. Whichever actions are initially selected, the reward is less than the starting estimates; the learner switches to other actions, being “disappointed” with the rewards it is receiving. The result is that all actions are tried several times before the value estimates converge. The system does a fair amount of exploration even if greedy actions are selected all the time.
 
 
-> La idea principal es fomentar la exploración inicial engañado con una estimación optimista. De esta manera explorara incluso habiendo usado la mejor acción varias veces, 
+> La idea principal es fomentar la exploración inicial engañado con una estimación optimista. De esta manera explorara incluso habiendo usado la mejor acción varias veces.
+
+
+![[Pasted image 20230408150213.png]]

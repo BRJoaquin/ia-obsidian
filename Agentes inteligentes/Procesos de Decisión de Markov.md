@@ -89,3 +89,8 @@ El retorno es una medida del **valor acumulado** de las recompensas que un agent
 $$ \Large
 G_t = R_{t+1} + \gamma R_{t+2} + \gamma^2 R_{t+3} + \cdots = \sum_{k=0}^{\infty} \gamma^k R_{t+k+1}
 $$
+# Factor de descuento
+
+El factor de descuento $\gamma$ (gamma) es un número entre 0 y 1. Si $\gamma = 0$, el agente solo considera las recompensas inmediatas y no tiene en cuenta las recompensas futuras. Si $\gamma = 1$, el agente considera todas las recompensas futuras por igual y busca maximizar el retorno total a lo largo del tiempo. **Valores intermedios de $\gamma$ permiten al agente equilibrar la importancia de las recompensas inmediatas y futuras.**
+
+En resumen, los episodios representan secuencias finitas de interacciones entre un agente y su entorno, y los retornos miden el valor acumulado de las recompensas que un agente recibe durante un episodio. El objetivo del agente en el aprendizaje por refuerzo es aprender una política que maximice estos retornos.

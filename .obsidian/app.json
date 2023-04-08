@@ -1,4 +1,9 @@
 {
   "attachmentFolderPath": "recursos",
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "spellcheckLanguages": [
+    "en-US",
+    "es-AR"
+  ],
+  "spellcheck": true
 }

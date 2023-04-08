@@ -161,3 +161,7 @@ Aquí, $Q_n(a)$ es la estimación del valor de acción $a$ después de $n$ obser
     -   $N(A) \leftarrow N(A) + 1$
     -   $Q(A) \leftarrow Q(A) + \frac{1}{N(A)} [R - Q(A)]$
 
+### Problemas no estacionarios
+
+
+

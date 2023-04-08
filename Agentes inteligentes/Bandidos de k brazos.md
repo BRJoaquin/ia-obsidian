@@ -4,8 +4,8 @@ El problema se describe de la siguiente manera: se tiene una máquina con k pala
 
 Este problema ilustra el dilema fundamental de la exploración versus la explotación en el aprendizaje por refuerzo:
 
--   Exploración: El agente debe jalar diferentes palancas para obtener información sobre las distribuciones de recompensa y descubrir cuál es la mejor opción.
--   Explotación: Una vez que el agente tiene alguna información, debe jalar la palanca que cree que proporcionará la mayor recompensa en función de lo que ha aprendido.
+-   [[Exploración]]: El agente debe jalar diferentes palancas para obtener información sobre las distribuciones de recompensa y descubrir cuál es la mejor opción.
+-   [[Explotación]]: Una vez que el agente tiene alguna información, debe jalar la palanca que cree que proporcionará la mayor recompensa en función de lo que ha aprendido.
 
 El desafío en el problema de los bandidos de k brazos es equilibrar la exploración y la explotación de manera eficiente. Si el agente explora demasiado, pierde oportunidades de obtener recompensas más altas de las palancas que ya ha identificado como buenas. Por otro lado, si el agente explota demasiado pronto, puede perderse mejores opciones que aún no ha descubierto.
 

@@ -55,8 +55,13 @@ La expresión completa garantiza que las probabilidades de todas las combinacion
 
 # Otras probabilidades
 
-1.  **Probabilidades de transición de estados (state-transition probabilities):** Estas probabilidades describen cómo el entorno cambia de un estado a otro dada una acción específica. Se denotan como $p(s'|s, a)$, que representa la probabilidad de pasar del estado $s$ al estado $s'$ al realizar la acción $a$. Estas probabilidades son fundamentales en el MDP, ya que caracterizan la dinámica del entorno y cómo este responde a las acciones del agente.
+## Probabilidades de transición de estados (state-transition probabilities)
 
-2.  **Recompensas esperadas para pares estado-acción (expected rewards for state-action pairs):** Las recompensas esperadas para los pares estado-acción se denotan como $R(s, a) = \mathbb{E}[R_t | S_{t-1} = s, A_{t-1} = a]$. Esta expresión representa la recompensa promedio que se espera recibir cuando se toma la acción $a$ estando en el estado $s$. Estos valores ayudan al agente a determinar qué acciones son preferibles en un estado dado para maximizar las recompensas a lo largo del tiempo.
+Estas probabilidades describen cómo el entorno cambia de un estado a otro dada una acción específica. Se denotan como $p(s'|s, a)$, que representa la probabilidad de pasar del estado $s$ al estado $s'$ al realizar la acción $a$. Estas probabilidades son fundamentales en el MDP, ya que caracterizan la dinámica del entorno y cómo este responde a las acciones del agente.
 
-3.  **Recompensas esperadas para pares estado-acción-siguiente estado (expected rewards for state-action-next-state):** Las recompensas esperadas para los pares estado-acción-siguiente estado se denotan como $R(s, a, s') = \mathbb{E}[R_t | S_{t-1} = s, A_{t-1} = a, S_t = s']$. Esta expresión representa la recompensa promedio que se espera recibir cuando se toma la acción $a$ estando en el estado $s$ y se llega al estado $s'$. Esta información es útil cuando se necesita considerar la recompensa específica asociada con un estado siguiente en lugar de solo la recompensa promedio para un par estado-acción.
+
+
+
+3.  **Recompensas esperadas para pares estado-acción (expected rewards for state-action pairs):** Las recompensas esperadas para los pares estado-acción se denotan como $R(s, a) = \mathbb{E}[R_t | S_{t-1} = s, A_{t-1} = a]$. Esta expresión representa la recompensa promedio que se espera recibir cuando se toma la acción $a$ estando en el estado $s$. Estos valores ayudan al agente a determinar qué acciones son preferibles en un estado dado para maximizar las recompensas a lo largo del tiempo.
+
+4.  **Recompensas esperadas para pares estado-acción-siguiente estado (expected rewards for state-action-next-state):** Las recompensas esperadas para los pares estado-acción-siguiente estado se denotan como $R(s, a, s') = \mathbb{E}[R_t | S_{t-1} = s, A_{t-1} = a, S_t = s']$. Esta expresión representa la recompensa promedio que se espera recibir cuando se toma la acción $a$ estando en el estado $s$ y se llega al estado $s'$. Esta información es útil cuando se necesita considerar la recompensa específica asociada con un estado siguiente en lugar de solo la recompensa promedio para un par estado-acción.

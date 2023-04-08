@@ -92,6 +92,12 @@ G_t = R_{t+1} + \gamma R_{t+2} + \gamma^2 R_{t+3} + \cdots = \sum_{k=0}^{\infty}
 $$
 ## En problemas continuos
 
+En problemas continuos de aprendizaje por refuerzo, las interacciones entre el agente y el entorno no se dividen en episodios separados y discretos, sino que se extienden indefinidamente en el tiempo. En tales casos, el concepto de retorno también se aplica, pero se debe tener cuidado al elegir el factor de descuento $\gamma$.
+
+El retorno en el tiempo $t$ en un problema continuo se calcula de manera similar al caso episódico:
+$$\Large
+G_t = R_{t+1} + \gamma R_{t+2} + \gamma^2 R_{t+3} + \cdots = \sum_{k=0}^{\infty} \gamma^k R_{t+k+1}
+$$
 
 
 # Factor de descuento

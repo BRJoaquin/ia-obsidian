@@ -12,3 +12,16 @@ El repositorio [https://github.com/openai/gym](https://github.com/openai/gym) es
 
 El repositorio contiene la implementación de la plataforma OpenAI Gym, que permite a los desarrolladores crear y evaluar algoritmos de aprendizaje por refuerzo en una variedad de entornos, incluyendo problemas de control de robots, juegos, problemas de toma de decisiones y muchos otros.
 
+# Objetivos
+
+Demostrar entendimiento sobre K-Armed Bandits, implementar varios algoritmos vistos en el curso teórico y comparar su performance en un mismo problema (ambiente).
+
+### A entregar:
+
+-   Implementación de agente arbitrario.
+-   Implementación de agente epsilon-greedy.
+-   Implementación de agente epsilon-greedy optimista.
+-   Implementación de agente upper confidence bound.
+-   Grafique la evolución de las recompensas (reward) a lo largo del tiempo para cada algoritmo, promediado sobre 2000 ejecuciones.
+-   Escriba un reporte sobre sus implementaciones comparando los distintos agentes implementados.
+

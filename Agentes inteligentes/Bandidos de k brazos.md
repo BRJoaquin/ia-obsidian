@@ -52,3 +52,5 @@ En el instante $t$, llamamos accion **greedy** a una [[Acción]] a que tiene max
 > Observacion: Puede haber mas de una accioon greedy.
 
 
+# Metodos Action-Valor
+

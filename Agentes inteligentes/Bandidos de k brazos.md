@@ -110,3 +110,7 @@ The 10-armed Testbed es un problema de prueba comúnmente utilizado para evaluar
 > Al ser una [[Recompensa#Estocástica]], esta definida por una distribución normal (podría ser otra) para modelar el problema.
 
 3.  El objetivo del algoritmo de aprendizaje es estimar los valores verdaderos de las 10 acciones a partir de las recompensas obtenidas en los intentos previos. El algoritmo debe equilibrar la exploración de acciones menos probables con la explotación de las acciones más prometedoras, para encontrar el valor verdadero más alto (valor óptimo) en el menor número de intentos posibles.
+
+## Practica 
+
+Llevamos a la practica este ambiente junto a múltiples estrategias.

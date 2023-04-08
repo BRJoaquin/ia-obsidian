@@ -30,7 +30,7 @@ En algunos casos, el conjunto de acciones disponibles puede variar según el est
 
 # Probabilidad condicional
 
-$$p(s', r|s, a) = \text{Pr}({S_t = s', R_t = r | S_{t-1} = s, A_{t-1} = a})$$Representa la probabilidad conjunta de transición y recompensa en un Proceso de Decisión de Markov (MDP). Vamos a desglosar esta notación:
+$$\large{p(s', r|s, a) = \text{Pr}({S_t = s', R_t = r | S_{t-1} = s, A_{t-1} = a})}$$Representa la probabilidad conjunta de transición y recompensa en un Proceso de Decisión de Markov (MDP). Vamos a desglosar esta notación:
 
 -   $s$: el estado actual en el tiempo $t-1$.
 -   $a$: la acción tomada por el agente en el tiempo $t-1$.

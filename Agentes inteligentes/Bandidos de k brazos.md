@@ -54,3 +54,4 @@ En el instante $t$, llamamos accion **greedy** a una [[Acción]] a que tiene max
 
 # Metodos Action-Valor
 
+$$Q_t(a) = \frac{\sum_{i=1}^{t-1} R_i \cdot \mathbb{I}(A_i=a)}{\sum_{i=1}^{t-1} \mathbb{I}(A_i=a)}$$

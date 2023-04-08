@@ -60,7 +60,8 @@ La expresión completa garantiza que las probabilidades de todas las combinacion
 Estas probabilidades describen cómo el entorno cambia de un estado a otro dada una acción específica. Se denotan como $p(s'|s, a)$, que representa la probabilidad de pasar del estado $s$ al estado $s'$ al realizar la acción $a$. Estas probabilidades son fundamentales en el MDP, ya que caracterizan la dinámica del entorno y cómo este responde a las acciones del agente.
 
 
-$$p(s'|s, a) = \text{Pr}({S_t = s' | S_{t-1} = s, A_{t-1} = a})$$
+$$p(s'|s, a) = \text{Pr}({S_t = s' | S_{t-1} = s, A_{t-1} = a}) = \sum_{r \in \mathcal{R}}p(s', r|s, a)$$
+> Basicamente, que probabilidad tengo que estando en el estado $$
 
 3.  **Recompensas esperadas para pares estado-acción (expected rewards for state-action pairs):** Las recompensas esperadas para los pares estado-acción se denotan como $R(s, a) = \mathbb{E}[R_t | S_{t-1} = s, A_{t-1} = a]$. Esta expresión representa la recompensa promedio que se espera recibir cuando se toma la acción $a$ estando en el estado $s$. Estos valores ayudan al agente a determinar qué acciones son preferibles en un estado dado para maximizar las recompensas a lo largo del tiempo.
 

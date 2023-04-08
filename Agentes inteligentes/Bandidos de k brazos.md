@@ -127,7 +127,7 @@ La Figura 2.2 compara un método greedy con dos métodos ε-greedy (ε = 0.01 y 
 
 La ventaja de los métodos ε-greedy sobre los métodos greedy depende de la tarea. Si la varianza de la recompensa fuera mayor o si el problema fuera no estacionario (es decir, los valores verdaderos de las acciones cambian con el tiempo), los métodos ε-greedy tendrían un mejor rendimiento en comparación con el método greedy. En general, el aprendizaje por refuerzo requiere un equilibrio entre exploración y explotación, y el método ε-greedy es una forma de lograr ese equilibrio en diferentes escenarios.
 
-### ¿Por qué el greedy en la figura 2.2 (promedio de recompensa) se queda estancado?
+### ¿Por qué el greedy en la figura 2.2 se queda estancado?
 
 El enfoque greedy queda estancado en el promedio de recompensa debido a su falta de exploración y enfoque en la explotación. Al seleccionar siempre la acción con la recompensa más alta observada hasta ese momento, el método greedy tiende a explotar prematuramente la información limitada que ha adquirido en las primeras etapas.
 
@@ -136,3 +136,7 @@ Si el método greedy selecciona una acción subóptima con una recompensa inicia
 Esta falta de exploración lleva a que el método greedy quede atrapado en acciones subóptimas, lo que resulta en un estancamiento en el promedio de recompensa en lugar de alcanzar el máximo posible. Por otro lado, los métodos ε-greedy equilibran la exploración y la explotación, lo que les permite descubrir y aprovechar las acciones óptimas a lo largo del tiempo y alcanzar un rendimiento más cercano al óptimo.
 
 > Cabe mencionar que este valor es específico para el conjunto de problemas de prueba utilizado en el estudio y no es una constante universal para todos los problemas de bandidos de k brazos. En otros problemas, el mejor promedio de recompensa posible podría ser diferente, dependiendo de las distribuciones de recompensa y las características del problema.
+
+El estancamiento del método greedy en el porcentaje de acción óptima se debe a su falta de exploración y enfoque en la explotación. Al seleccionar siempre la acción con la recompensa más alta observada hasta ese momento, el método greedy tiende a explotar prematuramente la información limitada que ha adquirido en las primeras etapas.
+
+Esta falta de exploración lleva a que el método greedy quede atrapado en acciones subóptimas y no encuentre la acción óptima en una proporción significativa de las tareas. Por lo tanto, el porcentaje de acción óptima para el método greedy se estanca en un nivel inferior al que podrían alcanzar los métodos ε-greedy, que equilibran la exploración y la explotación y continúan buscando la acción óptima durante todo el proceso de aprendizaje.

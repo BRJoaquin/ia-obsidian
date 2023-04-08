@@ -83,3 +83,5 @@ Un episodio es una secuencia finita de interacciones entre un agente y su entorn
 
 
 # Retorno
+
+El retorno es una medida del valor acumulado de las recompensas que un agente recibe durante un episodio. El objetivo del agente en el aprendizaje por refuerzo es maximizar este retorno. En muchos casos, se utiliza un factor de descuento, denotado como $\gamma$, para darle más peso a las recompensas inmediatas en comparación con las recompensas futuras. El retorno en el tiempo $t$, denotado como $G_t$, se calcula como:

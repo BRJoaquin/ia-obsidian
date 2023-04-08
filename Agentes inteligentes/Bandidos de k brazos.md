@@ -87,6 +87,5 @@ En resumen, esta fórmula selecciona la acción $a$ que tiene el mayor valor est
 > En caso de haber mas de una max se puede desempatar de forma aleatoria.
 
 
-## epsilon-greedy ($epsilon$-)
+## Epsilon-greedy ($\epsilon$-greedy)
 
-$\epsilon$ 

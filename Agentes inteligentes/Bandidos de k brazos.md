@@ -66,7 +66,7 @@ Donde:
 -   La primera suma es sobre todos los tiempos $i$ anteriores a $t$ en los que se tomó la acción $a$.
 -   La segunda suma es sobre todos los tiempos $i$ anteriores a $t$ en los que se tomaron acciones.
 
-> Observacion: A medida que crece el denominador, $Q_t(a)$ converge a $q^∗(a)$, gracias a la [[Ley de los grandes números]].
+> Observación: A medida que crece el denominador, $Q_t(a)$ converge a $q^∗(a)$, gracias a la [[Ley de los grandes números]].
 
 > Observación 2: Si el división es 0 entonces $Q_t(a)$ es 0 también.
 

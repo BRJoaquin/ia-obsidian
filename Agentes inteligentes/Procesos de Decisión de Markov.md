@@ -71,20 +71,20 @@ Esta expresión representa la recompensa promedio que se espera recibir cuando s
 
 Para calcular la recompensa esperada $r(s, a, s')$ con la función de probabilidad conjunta de transición y recompensa, $p(s', r|s, a)$, se puede utilizar la definición de valor esperado. La expresión es la siguiente:
 
-$$
+$$\Large
 r(s, a, s') = \mathbb{E}[R_t | S_{t-1} = s, A_{t-1} = a, S_t = s'] = \sum_{r \in \mathcal{R}} r \cdot p(r | s, a, s')
-\]
+$$
 
 Para obtener la probabilidad condicional $p(r | s, a, s')$, podemos utilizar la función de probabilidad conjunta de transición y recompensa, $p(s', r|s, a)$, y aplicar la regla de Bayes:
 
-$$
+$$\Large
 p(r | s, a, s') = \frac{p(s', r | s, a)}{\sum_{r' \in \mathcal{R}} p(s', r' | s, a)}
-\]
+$$
 
 Luego, podemos sustituir esta probabilidad condicional en la expresión de la recompensa esperada:
 
-$$
+$$\Large
 r(s, a, s') = \sum_{r \in \mathcal{R}} r \cdot \frac{p(s', r | s, a)}{\sum_{r' \in \mathcal{R}} p(s', r' | s, a)}
-\]
+$$
 
 Esta expresión permite calcular la recompensa esperada $r(s, a, s')$ utilizando la función de probabilidad conjunta de transición y recompensa $p(s', r|s, a)$.

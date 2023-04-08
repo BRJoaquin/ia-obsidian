@@ -14,3 +14,4 @@ Un aspecto clave de los MDP es que tienen **la propiedad de Markov**, lo que sig
 > [!quote]
 > Thus MDPs involve delayed reward and the need to tradeoff immediate and delayed reward.
 
+![[Pasted image 20230408171531.png]]

@@ -163,6 +163,7 @@ Aquí, $Q_n(a)$ es la estimación del valor de acción $a$ después de $n$ obser
 
 ### Problemas no estacionarios
 
+El problema de los k-bandidos como lo venimos planteando es un problema estacionario. Es decir su funcion de valor-accion no cambia con el tiempo (steps). Por lo cual vale la pena mecionar que ocurre en otros problemas no et
 
 Para problemas no estacionarios (ver [[Recompensa#Estacionaria]]), las propiedades del entorno cambian con el tiempo. Para aplicar el algoritmo ε-greedy en tales problemas, es necesario adaptar el algoritmo para responder a estos cambios y actualizar las estimaciones de manera más sensible. Una forma de hacerlo es mediante el uso de un **promedio ponderado** en lugar de un promedio simple para actualizar las estimaciones de los valores de acción.
 

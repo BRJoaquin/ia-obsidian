@@ -54,6 +54,6 @@ En el instante $t$, llamamos accion **greedy** a una [[Acción]] a que tiene max
 
 # Metodos Action-Valor
 
-
+Los metodos action-value estiman $Q_t(a)$ y usan esas estimaciones para seleccionar las acciones a ejecutar. La forma mas sencilla de computar la estimacion $Q_t(a)$ es calcular el promedio de recompensas obtenidas al seguir la accion a:
 
 $$Q_t(a) = \frac{\sum_{i=1}^{t-1} R_i \cdot \mathbb{I}(A_i=a)}{\sum_{i=1}^{t-1} \mathbb{I}(A_i=a)}$$

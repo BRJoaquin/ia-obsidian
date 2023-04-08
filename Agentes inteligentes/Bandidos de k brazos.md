@@ -42,7 +42,7 @@ q^*(a) = \mathbb{E}[R_t | A_t = a]
 $$
 
 
-�∗(�)q∗(a) es el valor de acción "verdadero" o "desconocido" que el agente intenta aprender o estimar a través de sus interacciones con el entorno. La función de valor de acción que el agente estima, �(�)Q(a), es una aproximación de �∗(�)q∗(a) basada en la experiencia del agente.
+$q^*(a)$ es el valor de acción "verdadero" o "desconocido" que el agente intenta aprender o estimar a través de sus interacciones con el entorno. La función de valor de acción que el agente estima, $Q(a)$, es una aproximación de �∗(�)q∗(a) basada en la experiencia del agente.
 
 El objetivo del agente es mejorar sus estimaciones de los valores de acción, �(�)Q(a), de manera que se aproximen cada vez más a los valores óptimos verdaderos, �∗(�)q∗(a). A medida que el agente explora y explota las acciones en el entorno, sus estimaciones de �(�)Q(a) se actualizarán y, en teoría, convergerán a �∗(�)q∗(a).
 

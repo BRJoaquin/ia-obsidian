@@ -29,8 +29,7 @@ La notación comúnmente utilizada para representar el conjunto de estados, acci
 En algunos casos, el conjunto de acciones disponibles puede variar según el estado en el que se encuentre el agente. En tales situaciones, se utiliza la notación $\mathcal{A}(s)$ para representar el conjunto de acciones disponibles en el estado $s$.
 
 # Probabilidad condicional
-
-$$p(s', r|s, a) = \text{Pr}({S_t = s', R_t = r | S_{t-1} = s, A_{t-1} = a})$$Representa la probabilidad conjunta de transición y recompensa en un Proceso de Decisión de Markov (MDP). Vamos a desglosar esta notación:
+$$\Large p(s', r|s, a) = \text{Pr}({S_t = s', R_t = r | S_{t-1} = s, A_{t-1} = a})$$Representa la probabilidad conjunta de transición y recompensa en un Proceso de Decisión de Markov (MDP). Vamos a desglosar esta notación:
 
 -   $s$: el estado actual en el tiempo $t-1$.
 -   $a$: la acción tomada por el agente en el tiempo $t-1$.
@@ -67,4 +66,5 @@ $$\Large r(s, a) = \mathbb{E}[R_t | S_{t-1} = s, A_{t-1} = a] = \sum_{r \in \mat
 
 ## Recompensas esperadas para pares estado-acción-siguiente estado
 
-Las recompensas esperadas para los pares estado-acción-siguiente estado se denotan como $$\Large r(s, a, s') = \mathbb{E}[R_t | S_{t-1} = s, A_{t-1} = a, S_t = s']$$. Esta expresión representa la recompensa promedio que se espera recibir cuando se toma la acción $a$ estando en el estado $s$ y se llega al estado $s'$. Esta información es útil cuando se necesita considerar la recompensa específica asociada con un estado siguiente en lugar de solo la recompensa promedio para un par estado-acción.
+Las recompensas esperadas para los pares estado-acción-siguiente estado se denotan como $$\Large r(s, a, s') = \mathbb{E}[R_t | S_{t-1} = s, A_{t-1} = a, S_t = s']$$
+Esta expresión representa la recompensa promedio que se espera recibir cuando se toma la acción $a$ estando en el estado $s$ y se llega al estado $s'$. Esta información es útil cuando se necesita considerar la recompensa específica asociada con un estado siguiente en lugar de solo la recompensa promedio para un par estado-acción.

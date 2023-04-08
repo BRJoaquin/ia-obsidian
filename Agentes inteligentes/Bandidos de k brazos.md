@@ -127,7 +127,7 @@ La Figura 2.2 compara un método greedy con dos métodos ε-greedy (ε = 0.01 y 
 
 La ventaja de los métodos ε-greedy sobre los métodos greedy depende de la tarea. Si la varianza de la recompensa fuera mayor o si el problema fuera no estacionario (es decir, los valores verdaderos de las acciones cambian con el tiempo), los métodos ε-greedy tendrían un mejor rendimiento en comparación con el método greedy. En general, el aprendizaje por refuerzo requiere un equilibrio entre exploración y explotación, y el método ε-greedy es una forma de lograr ese equilibrio en diferentes escenarios.
 
-### ¿Por qué el greedy en la figura 2.2 (promedio de recompensa) se queda estancado en 1?
+### ¿Por qué el greedy en la figura 2.2 (promedio de recompensa) se queda estancado?
 
 El método greedy se estanca en un valor promedio de recompensa de aproximadamente 1 en lugar de llegar al mejor posible de alrededor de 1.55 debido a su enfoque en la explotación y su falta de exploración.
 

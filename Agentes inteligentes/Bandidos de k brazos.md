@@ -236,16 +236,6 @@ Los algoritmos de banda gradiente (Gradient Bandit Algorithms) son una familia d
 
 En lugar de utilizar una regla de selección de acción basada en la probabilidad, como la regla epsilon-greedy, los algoritmos de banda gradiente utilizan una política blanda que selecciona las acciones en función de su valor de acción estimado. La probabilidad de seleccionar una acción está determinada por una función de **softmax**, que mapea los valores de acción en probabilidades de selección. Esta función introduce un parámetro de **temperatura**, que controla la explotación versus la exploración.
 
-La ecuación de la función Softmax con temperatura T es la siguiente:
-
-$$P(a) = \frac{e^{Q(a)/T}}{\sum_{b=1}^{k}e^{Q(b)/T}}$$
-
-donde:
-
--   a es la acción actual
--   k es el número total de acciones
--   Q(a) es la preferencia o valor de la acción actual
-
 La actualización de los valores de acción se realiza mediante el gradiente de la función objetivo, que se deriva de la función de recompensa y de la política blanda. El gradiente indica la dirección y la magnitud del cambio de los valores de acción en cada paso. Como resultado, los valores de acción se actualizan continuamente, lo que permite a los algoritmos de banda gradiente adaptarse rápidamente a los cambios en el entorno.
 
 En resumen, los algoritmos de banda gradiente son una alternativa a los métodos de selección de acción basados en probabilidad, que utilizan una aproximación lineal de los valores de acción y se actualizan continuamente mediante el gradiente de la función objetivo. Estos algoritmos pueden adaptarse rápidamente a los cambios en el entorno, lo que los hace adecuados para problemas no estacionarios.

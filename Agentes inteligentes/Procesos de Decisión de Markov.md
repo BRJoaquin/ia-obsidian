@@ -16,3 +16,4 @@ Un aspecto clave de los MDP es que tienen **la propiedad de Markov**, lo que sig
 
 ![[Pasted image 20230408171531.png]]
 
+In a finite MDP, the sets of states, actions, and rewards (S, A, and R) all have a finite number of elements. In this case, the random variables Rt and St have well defined discrete probability distributions dependent only on the preceding state and action. That is, for particular values of these random variables, s0 2 S and r 2 R, there is a probability of those values occurring at time t, given particular values of the preceding state and action:

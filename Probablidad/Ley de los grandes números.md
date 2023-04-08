@@ -12,4 +12,4 @@ Donde:
 -   $\mu$ es el valor esperado de las variables aleatorias.
 -   $\varepsilon$ es un valor de error permitido.
 
-En resumen, esta fórmula establece que la probabilidad de que la diferencia entre la media aritmética de las variables aleatorias y el valor esperado sea mayor o igual que un cierto valor de error tiende a cero a medida que el número de variables aleatorias se acerca al infinito.
+En resumen, la ley de los grandes números establece que, a medida que se realizan más pruebas, la media de los resultados converge en el valor esperado, lo que significa que los resultados de una gran cantidad de pruebas se aproximan cada vez más a la probabilidad teórica o esperada de un evento. La ley de los grandes números es uno de los fundamentos de la estadística y tiene aplicaciones en áreas como la física, la economía, la ingeniería y las ciencias sociales.

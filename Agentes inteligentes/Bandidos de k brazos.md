@@ -13,3 +13,4 @@ Hay varias estrategias y algoritmos para abordar el problema de los bandidos de 
 
 > En el caso teórico, es posible que los brazos ofrezcan recompensas positivas en promedio, lo que permitiría ganar a lo largo del tiempo si el agente selecciona correctamente las palancas. La clave en este problema teórico es cómo el agente aprende a tomar decisiones óptimas, equilibrando la exploración y la explotación para maximizar sus ganancias.
 
+> El pr

@@ -1,6 +1,8 @@
 
 UCB son las siglas de "Upper Confidence Bound" (Límite Superior de Confianza, en español). Es un algoritmo utilizado en el aprendizaje por refuerzo para equilibrar la explotación de las acciones con la exploración de nuevas acciones. 
 
-En UCB, se utiliza una función de selección de acción que toma en cuenta tanto la estimación actual de la recompensa de una acción $Q_t(a)$ como la incertidumbre asociada con esa estimación. La función de selección de acción utiliza un término de bonificación para acciones que aún no se han seleccionado con frecuencia, lo que fomenta la exploración. El término de bonificación se calcula en función de la varianza de la estimación de la recompensa de una acción y de cuántas veces se ha seleccionado esa acción. El algoritmo UCB ha demostrado ser efectivo en una amplia gama de problemas de aprendizaje por refuerzo.
+En UCB, se utiliza una función de selección de acción que toma en cuenta tanto la estimación actual de la recompensa de una acción ($Q_t(a)$) como la incertidumbre asociada con esa estimación ($\sqrt{\frac{c\ln t}{N_t(a)}}$). 
+
+La función de selección de acción utiliza un término de bonificación para acciones que aún no se han seleccionado con frecuencia, lo que fomenta la exploración. El término de bonificación se calcula en función de la varianza de la estimación de la recompensa de una acción y de cuántas veces se ha seleccionado esa acción. El algoritmo UCB ha demostrado ser efectivo en una amplia gama de problemas de aprendizaje por refuerzo.
 
 $$A_t = \arg\max_a \left(Q_t(a) + c\sqrt{\frac{\ln t}{N_t(a)}}\right)$$

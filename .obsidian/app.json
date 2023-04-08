@@ -2,7 +2,6 @@
   "attachmentFolderPath": "recursos",
   "alwaysUpdateLinks": true,
   "spellcheckLanguages": [
-    "en-US",
     "es-AR"
   ],
   "spellcheck": true

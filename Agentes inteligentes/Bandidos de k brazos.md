@@ -47,14 +47,14 @@ $q^*(a)$ es el valor de acción "verdadero" o "desconocido" que el agente intent
 
 # Acción greedy
 
-En el instante $t$, llamamos accion **greedy** a una [[Acción]] a que tiene maximo valor estimado $Q_t(a)$. Y es el caso de la [[Explotación]].
+En el instante $t$, llamamos acción **greedy** a una [[Acción]] a que tiene máximo valor estimado $Q_t(a)$. Y es el caso de la [[Explotación]].
 
-> Observacion: Puede haber mas de una accioon greedy.
+> Observación: Puede haber mas de una acción greedy.
 
 
-# Metodos Action-Valor
+# Métodos Action-Valor
 
-Los metodos action-value estiman $Q_t(a)$ y usan esas estimaciones para seleccionar las acciones a ejecutar. La forma mas sencilla de computar la estimacion $Q_t(a)$ es calcular el promedio de recompensas obtenidas al seguir la accion a:
+Los métodos action-value estiman $Q_t(a)$ y usan esas estimaciones para seleccionar las acciones a ejecutar. La forma mas sencilla de computar la estimacion $Q_t(a)$ es calcular el promedio de recompensas obtenidas al seguir la accion a:
 
 $$Q_t(a) = \frac{\sum_{i=1}^{t-1} R_i \cdot \mathbb{I}(A_i=a)}{\sum_{i=1}^{t-1} \mathbb{I}(A_i=a)}$$
 Donde:

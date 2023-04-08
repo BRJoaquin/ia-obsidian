@@ -98,7 +98,7 @@ El retorno en el tiempo $t$ en un problema continuo se calcula de manera similar
 $$\Large
 G_t = R_{t+1} + \gamma R_{t+2} + \gamma^2 R_{t+3} + \cdots = \sum_{k=0}^{\infty} \gamma^k R_{t+k+1}
 $$
-
+> En problemas continuos, el uso de un factor de descuento $\gamma < 1$ es importante para garantizar la convergencia de la suma infinita.
 
 # Factor de descuento
 

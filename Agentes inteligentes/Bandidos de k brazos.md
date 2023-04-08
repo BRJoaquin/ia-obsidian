@@ -217,3 +217,5 @@ La fórmula utiliza un término de bonificación $c\sqrt{\frac{\ln t}{N_t(a)}}$ 
 
 En el contexto de los k-brazos bandidos, el algoritmo UCB ha demostrado ser efectivo para equilibrar la exploración y la explotación de los brazos, permitiendo una convergencia rápida a la acción óptima. **Sin embargo, su rendimiento puede verse afectado en problemas no estacionario**s, donde la recompensa de los brazos puede cambiar con el tiempo.
 
+![[Pasted image 20230408154654.png]]
+

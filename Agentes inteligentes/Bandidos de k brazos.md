@@ -140,3 +140,6 @@ Esta falta de exploración lleva a que el método greedy quede atrapado en accio
 El estancamiento del método greedy en el porcentaje de acción óptima se debe a su falta de exploración y enfoque en la explotación. Al seleccionar siempre la acción con la recompensa más alta observada hasta ese momento, el método greedy tiende a explotar prematuramente la información limitada que ha adquirido en las primeras etapas.
 
 Esta falta de exploración lleva a que el método greedy quede atrapado en acciones subóptimas y no encuentre la acción óptima en una proporción significativa de las tareas. Por lo tanto, el porcentaje de acción óptima para el método greedy se estanca en un nivel inferior al que podrían alcanzar los métodos ε-greedy, que equilibran la exploración y la explotación y continúan buscando la acción óptima durante todo el proceso de aprendizaje.
+
+## Implementación incremental
+

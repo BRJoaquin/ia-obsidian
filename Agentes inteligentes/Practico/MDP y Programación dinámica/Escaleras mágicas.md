@@ -67,4 +67,17 @@ $$
 $$\large
 v_\pi(4) = 0
 $$
+Luego de despejar nos queda:
 
+$$\large
+v_\pi(1) = -5
+$$
+$$\large
+v_\pi(2) = -2
+$$
+$$\large
+v_\pi(3) = -1
+$$
+$$\large
+v_\pi(4) = 0
+$$

@@ -93,7 +93,7 @@ $$
 
 El modelo cambia ya que ahora "la probabilidad de llegar mágicamente al piso 4 por esperar en los descansos es de 0.3".
 
-> Se asume 
+> Se asume que las posibilidades 0.5 del anterior modelo pasan a 0.35
 
 ```mermaid
 graph TD

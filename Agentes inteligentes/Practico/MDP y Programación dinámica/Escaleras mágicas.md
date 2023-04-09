@@ -11,8 +11,11 @@ graph TD
     B -->|E, 2 min, 0.5 prob| D
     C -->|E, 1.5 min, 0.5 prob| A
     C -->|E, 1.5 min, 0.5 prob| D
+    C -->|S, 1 min, 0.5 prob| D
 ```
 > El piso 4 se considera una estado terminal
+> E = Esperar
+> S = Subir
 
 
 # 2 - Cálculos analíticos

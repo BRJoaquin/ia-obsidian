@@ -84,4 +84,17 @@ $$
 
 ## c - Política “siempre esperar" con modificaciones
 
-El modelo cambia 
+El modelo cambia ya que ahora "la probabilidad de llegar mágicamente al piso 4 por esperar en los descansos es de 0.3"
+
+```mermaid
+graph LR
+    A(Piso 1) -->|Subir, 1.0| B(Piso 2)
+    A -->|Esperar, 0.35| A
+    A -->|Esperar, 0.3| D(Piso 4)
+    B -->|Subir, 1.0| C(Piso 3)
+    B -->|Esperar, 0.35| C
+    B -->|Esperar, 0.3| D
+    C -->|Esperar, 0.35| A
+    C -->|Esperar, 0.3| D
+    C -->|Subir, 1.0| D
+```

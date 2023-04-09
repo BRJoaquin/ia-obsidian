@@ -21,4 +21,4 @@ graph TD
 
 ## Calcule la utilidad esperada de la política “siempre esperar"
 
-
+$$\large v_\pi(1) = 0.5[-2 + 1 \times v_\pi(1) + 0.5[-2 + 1 \times v_\pi(4)] $$

@@ -94,7 +94,7 @@ $$
 El modelo cambia ya que ahora "la probabilidad de llegar mágicamente al piso 4 por esperar en los descansos es de 0.3".
 
 > Se asume que las posibilidades 0.5 del anterior modelo pasan a 0.35.
-> Tambien se asume que la nueva posibilidad 
+> También se asume que la nueva posibilidad de llegar al piso 4 no tiene peso/costo alguno
 
 ```mermaid
 graph TD
@@ -108,7 +108,7 @@ graph TD
     A -->|E, 2 , 0.35| D
     A -->|E, 0, 0.3| D
     
-    B -->|S, 1, 1| C(Piso 3)
+    B -->|S, 1, 1| C
     B -->|E, 2 , 0.35| C
     B -->|E, 2 , 0.35| D
     B -->|E, 0, 0.3| D

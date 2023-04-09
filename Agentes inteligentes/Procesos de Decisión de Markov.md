@@ -110,12 +110,13 @@ El factor de descuento $\gamma$ (gamma) es un número entre 0 y 1. Si $\gamma = 
 
 ```mermaid
 graph TD
-    A[Piso 1] -->|3 min| B[Piso 2]
-    A -->|2 min, 0.5 prob| A
-    A -->|2 min, 0.5 prob| D[Piso 4]
-    B -->|1 min| C[Piso 3]
-    B -->|2 min, 0.5 prob| C
-    B -->|2 min, 0.5 prob| D
-    C -->|1.5 min, 0.5 prob| A
-    C -->|1.5 min, 0.5 prob| D
+    A[Piso 1] -->|Subir, 3 min| B[Piso 2]
+    A -->|Quedarse, 2 min, 0.5 prob| A
+    A -->|Quedarse, 2 min, 0.5 prob| D[Piso 4]
+    B -->|Subir, 1 min| C[Piso 3]
+    B -->|Quedarse, 2 min, 0.5 prob| C
+    B -->|Quedarse, 2 min, 0.5 prob| D
+    C -->|Quedarse, 1.5 min, 0.5 prob| A
+    C -->|Quedarse, 1.5 min, 0.5 prob| D
+
 ```

@@ -89,10 +89,12 @@ El modelo cambia ya que ahora "la probabilidad de llegar mágicamente al piso 4 
 ```mermaid
 graph TD
     A(Piso 1) -->|Subir, 1.0| B(Piso 2)
-    A -->|Esperar, 0.35| A
+    A -->|Esperar, 2 min, 0.35 prob| A
+    A -->|Esperar, 2 min, 0.35 prob| D[Piso 4]
     A -->|Esperar, 0.3| D(Piso 4)
     B -->|Subir, 1.0| C(Piso 3)
-    B -->|Esperar, 0.35| C
+    B -->|Esperar, 2 min, 0.35 prob| C
+    B -->|Esperar, 2 min, 0.35 prob| D
     B -->|Esperar, 0.3| D
     C -->|Esperar, 0.35| A
     C -->|Esperar, 0.3| D
@@ -108,3 +110,14 @@ $$
 v_\pi(2) = 1 \cdot \left[ 0.35 \cdot (2 + v_\pi(3)) + 0.3 \cdot (2 + v_\pi(4)) \right]
 $$
 
+```mermaid
+graph TD
+    A[Piso 1] -->|Subir, 3 min| B[Piso 2]
+    A -->|Esperar, 2 min, 0.5 prob| A
+    A -->|Esperar, 2 min, 0.5 prob| D[Piso 4]
+    B -->|Subir, 1 min| C[Piso 3]
+    B -->|Esperar, 2 min, 0.5 prob| C
+    B -->|Esperar, 2 min, 0.5 prob| D
+    C -->|Esperar, 1.5 min, 0.5 prob| A
+    C -->|Esperar, 1.5 min, 0.5 prob| D
+```

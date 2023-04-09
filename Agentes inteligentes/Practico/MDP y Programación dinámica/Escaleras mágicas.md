@@ -4,16 +4,16 @@
 ```mermaid
 graph TD
     A[Piso 1] -->|S, 3 | B[Piso 2]
-    A -->|E, 2 min, 0.5| A
-    A -->|E, 2 min, 0.5| D[Piso 4]
-    B -->|S, 1 min| C[Piso 3]
-    B -->|E, 2 min, 0.5| C
-    B -->|E, 2 min, 0.5| D
-    C -->|E, 1.5 min, 0.5| A
-    C -->|E, 1.5 min, 0.5| D
-    C -->|S, 1 min| D
+    A -->|E, 2 , 0.5| A
+    A -->|E, 2 , 0.5| D[Piso 4]
+    B -->|S, 1 | C[Piso 3]
+    B -->|E, 2 , 0.5| C
+    B -->|E, 2 , 0.5| D
+    C -->|E, 1.5 , 0.5| A
+    C -->|E, 1.5 , 0.5| D
+    C -->|S, 1 | D
 ```
-> El piso 4 se considera una estado terminal
+> El piso 4 se considera una estado teral
 > E = Esperar
 > S = Subir
 
@@ -65,7 +65,7 @@ $$\large
 v_\pi(2) = 1[-1 + 1 \times v_\pi(3)]
 $$
 $$\large
-v_\pi(3) = 1[-1 + 1 \times v_\pi(3)]
+v_\pi(3) = 1[-1 + 1 \times v_\pi(4)]
 $$
 $$\large
 v_\pi(4) = 0

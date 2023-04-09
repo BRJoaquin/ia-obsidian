@@ -12,6 +12,8 @@ graph TD
     C -->|Esperar, 1.5 min, 0.5 prob| A
     C -->|Esperar, 1.5 min, 0.5 prob| D
 ```
+> El piso 4 se considera una estado terminal
+
 
 # Cálculos analíticos
 

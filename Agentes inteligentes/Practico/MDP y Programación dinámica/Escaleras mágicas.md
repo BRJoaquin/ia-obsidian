@@ -20,12 +20,13 @@ graph TD
 > Nota: Se considera (gamma) $\gamma$ = 1 para todos los ejercicios
 
 Para resolver los siguiente problemas se utiliza la función de Bellman
+$$\Large
+v_\pi(s) = \sum_{a} \pi(a|s) \sum_{s', r} p(s', r | s, a) \left[ r + \gamma \cdot E_\pi[G_{t+1} | S_{t+1} = s'] \right]
+$$
 
-## Calcule la utilidad esperada de la política “siempre esperar"
+## Política “siempre esperar"
 
-
-
-Aplicando la función de Bellman calculamos el valor de cada estado.
+Aplicando la función de Bellman calculamos el valor de cada estado. 
 $$\large v_\pi(1) = 0.5[-2 + 1 \times v_\pi(1)] + 0.5[-2 + 1 \times v_\pi(4)] $$
 $$\large
 v_\pi(2) = 0.5[-2 + 1 \times v_\pi(3)] + 0.5[-2 + 1 \times v_\pi(4)]

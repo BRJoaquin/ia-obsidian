@@ -94,8 +94,8 @@ graph TD
     A(Piso 1) -->|S, 1.0| B(Piso 2)
     A -->|E, 2 , 0.35| A
     A -->|E, 2 , 0.35| D[Piso 4]
-    A -->|E, 0.3| D(Piso 4)
-    B -->|E, 1.0| C(Piso 3)
+    A -->|E, 0, 0.3| D(Piso 4)
+    B -->|S, 1.0| C(Piso 3)
     B -->|E, 2 , 0.35| C
     B -->|E, 2 , 0.35| D
     B -->|E, 0.3| D

@@ -118,5 +118,4 @@ graph TD
     B -->|Quedarse, 2 min, 0.5 prob| D
     C -->|Quedarse, 1.5 min, 0.5 prob| A
     C -->|Quedarse, 1.5 min, 0.5 prob| D
-
 ```

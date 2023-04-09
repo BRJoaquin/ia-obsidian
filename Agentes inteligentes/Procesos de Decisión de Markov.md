@@ -108,3 +108,5 @@ El factor de descuento $\gamma$ (gamma) es un número entre 0 y 1. Si $\gamma = 
 
 # Políticas y funciones de valor
 
+```mermaid
+```

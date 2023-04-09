@@ -52,3 +52,9 @@ $$
 $$\large 
 v_\pi(4) = 0 
 $$
+
+## Política “siempre subir"
+
+$$\large
+v_\pi(1) = 1[-3 + 1 \times v_\pi(2)] 
+$$

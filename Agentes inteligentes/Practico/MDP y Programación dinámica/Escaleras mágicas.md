@@ -58,3 +58,13 @@ $$
 $$\large
 v_\pi(1) = 1[-3 + 1 \times v_\pi(2)] 
 $$
+$$\large
+v_\pi(2) = 1[-1 + 1 \times v_\pi(3)]
+$$
+$$\large
+v_\pi(3) = 1[-1 + 1 \times v_\pi(3)]
+$$
+$$\large
+v_\pi(4) = 0
+$$
+

@@ -15,5 +15,7 @@ graph TD
 
 # Cálculos analíticos
 
+> Nota: Se considera (gamma) $\gamma$ = 1 para todos los ejercicios
+
 ## Calcule la utilidad esperada de la política “siempre esperar"
 

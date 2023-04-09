@@ -6,12 +6,12 @@ graph TD
     A[Piso 1] -->|S, 3, 1| B[Piso 2]
     A -->|E, 2 , 0.5| A
     A -->|E, 2 , 0.5| D[Piso 4]
-    B -->|S, 1 | C[Piso 3]
+    B -->|S, 1 , 1| C[Piso 3]
     B -->|E, 2 , 0.5| C
     B -->|E, 2 , 0.5| D
+    C -->|S, 1 , 1| D
     C -->|E, 1.5 , 0.5| A
     C -->|E, 1.5 , 0.5| D
-    C -->|S, 1 | D
 ```
 > El piso 4 se considera una estado terminal
 > E = Esperar

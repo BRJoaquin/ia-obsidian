@@ -87,7 +87,7 @@ $$
 El modelo cambia ya que ahora "la probabilidad de llegar mágicamente al piso 4 por esperar en los descansos es de 0.3"
 
 ```mermaid
-graph LR
+graph TD
     A(Piso 1) -->|Subir, 1.0| B(Piso 2)
     A -->|Esperar, 0.35| A
     A -->|Esperar, 0.3| D(Piso 4)

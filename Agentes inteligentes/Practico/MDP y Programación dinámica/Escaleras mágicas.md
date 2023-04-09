@@ -26,7 +26,7 @@ $$
 
 ## Política “siempre esperar"
 
-Aplicando la función de Bellman calculamos el valor de cada estado. 
+Aplicando la función de Bellman calculamos el valor de cada estado. Hay que tener en cuenta de que 1) nuestra politica 
 $$\large v_\pi(1) = 0.5[-2 + 1 \times v_\pi(1)] + 0.5[-2 + 1 \times v_\pi(4)] $$
 $$\large
 v_\pi(2) = 0.5[-2 + 1 \times v_\pi(3)] + 0.5[-2 + 1 \times v_\pi(4)]

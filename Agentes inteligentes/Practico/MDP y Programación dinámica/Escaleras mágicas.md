@@ -98,3 +98,13 @@ graph TD
     C -->|Esperar, 0.3| D
     C -->|Subir, 1.0| D
 ```
+
+$$\large
+v_\pi(1) = 1 \cdot \left[ 0.35 \cdot (2 + v_\pi(1)) + 0.3 \cdot (2 + v_\pi(4)) \right]
+$$
+
+
+$$
+v_\pi(2) = 1 \cdot \left[ 0.35 \cdot (2 + v_\pi(3)) + 0.3 \cdot (2 + v_\pi(4)) \right]
+$$
+

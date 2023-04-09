@@ -40,3 +40,15 @@ $$
 > $v_\pi(4) = 0$ ya que es estado final
 
 Luego de despejar nos queda:
+$$\large 
+v_\pi(1) = -4 
+$$
+$$\large 
+v_\pi(2) = -4 
+$$
+$$\large 
+v_\pi(3) = -4 
+$$
+$$\large 
+v_\pi(4) = 0 
+$$

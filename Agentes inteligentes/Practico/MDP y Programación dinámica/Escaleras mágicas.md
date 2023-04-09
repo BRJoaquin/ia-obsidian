@@ -24,7 +24,7 @@ graph TD
 Aplicando la función de Bellman calculamos el valor de cada estado.
 $$\large v_\pi(1) = 0.5[-2 + 1 \times v_\pi(1) + 0.5[-2 + 1 \times v_\pi(4)] $$
 $$\large
-v_\pi(2) = 0.5[-2 + 1 \times E_\pi[G_{t+1} | S_{t+1} = 3]] + 0.5[-2 + 1 \times E_\pi[G_{t+1} | S_{t+1} = 4]]
+v_\pi(2) = 0.5[-2 + 1 \times v_\pi(3) + 0.5[-2 + 1 \times v_\pi(4)
 $$
 $$\large
 v_\pi(3) = 0.5[-2.5 + 1 \times E_\pi[G_{t+1} | S_{t+1} = 1]] + 0.5[-1.5 + 1 \times E_\pi[G_{t+1} | S_{t+1} = 4]]

@@ -21,3 +21,4 @@ graph TD
 
 ## Calcule la utilidad esperada de la política “siempre esperar"
 
+

@@ -3,10 +3,14 @@
 
 ```mermaid
 graph TD
-    A[Piso 1] -->|S, 3, 1| B[Piso 2]
+	A[Piso 1]
+	B[Piso 2]
+	C[Piso 3]
+	D[Piso 4]
+    A -->|S, 3, 1| B
     A -->|E, 2 , 0.5| A
-    A -->|E, 2 , 0.5| D[Piso 4]
-    B -->|S, 1 , 1| C[Piso 3]
+    A -->|E, 2 , 0.5| D
+    B -->|S, 1 , 1| C
     B -->|E, 2 , 0.5| C
     B -->|E, 2 , 0.5| D
     C -->|S, 1 , 1| D

@@ -4,13 +4,13 @@
 ```mermaid
 graph TD
     A[Piso 1] -->|Subir, 3 min| B[Piso 2]
-    A -->|Esperar, 2 min, 0.5 prob| A
-    A -->|Esperar, 2 min, 0.5 prob| D[Piso 4]
+    A -->|E, 2 min, 0.5 prob| A
+    A -->|E, 2 min, 0.5 prob| D[Piso 4]
     B -->|Subir, 1 min| C[Piso 3]
-    B -->|Esperar, 2 min, 0.5 prob| C
-    B -->|Esperar, 2 min, 0.5 prob| D
-    C -->|Esperar, 1.5 min, 0.5 prob| A
-    C -->|Esperar, 1.5 min, 0.5 prob| D
+    B -->|E, 2 min, 0.5 prob| C
+    B -->|E, 2 min, 0.5 prob| D
+    C -->|E, 1.5 min, 0.5 prob| A
+    C -->|E, 1.5 min, 0.5 prob| D
 ```
 > El piso 4 se considera una estado terminal
 
@@ -89,16 +89,16 @@ El modelo cambia ya que ahora "la probabilidad de llegar mágicamente al piso 4 
 ```mermaid
 graph TD
     A(Piso 1) -->|Subir, 1.0| B(Piso 2)
-    A -->|Esperar, 2 min, 0.35 prob| A
-    A -->|Esperar, 2 min, 0.35 prob| D[Piso 4]
-    A -->|Esperar, 0.3| D(Piso 4)
+    A -->|E, 2 min, 0.35 prob| A
+    A -->|E, 2 min, 0.35 prob| D[Piso 4]
+    A -->|E, 0.3| D(Piso 4)
     B -->|Subir, 1.0| C(Piso 3)
-    B -->|Esperar, 2 min, 0.35 prob| C
-    B -->|Esperar, 2 min, 0.35 prob| D
-    B -->|Esperar, 0.3| D
-    C -->|Esperar, 1.5 min, 0.35 prob| A
-    C -->|Esperar, 1.5 min, 0.35 prob| D
-    C -->|Esperar, 0.3| D
+    B -->|E, 2 min, 0.35 prob| C
+    B -->|E, 2 min, 0.35 prob| D
+    B -->|E, 0.3| D
+    C -->|E, 1.5 min, 0.35 prob| A
+    C -->|E, 1.5 min, 0.35 prob| D
+    C -->|E, 0.3| D
     C -->|Subir, 1.0| D
 ```
 

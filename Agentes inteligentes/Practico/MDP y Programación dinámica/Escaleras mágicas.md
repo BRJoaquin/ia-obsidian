@@ -1,5 +1,5 @@
 
-# Modele el problema con un grafo con transiciones de probabilidad
+# 1 - Modele el problema con un grafo con transiciones de probabilidad
 
 ```mermaid
 graph TD
@@ -15,7 +15,7 @@ graph TD
 > El piso 4 se considera una estado terminal
 
 
-# Cálculos analíticos
+# 2 - Cálculos analíticos
 
 > Nota: Se considera (gamma) $\gamma$ = 1 para todos los ejercicios
 
@@ -24,7 +24,7 @@ $$\Large
 v_\pi(s) = \sum_{a} \pi(a|s) \sum_{s', r} p(s', r | s, a) \left[ r + \gamma \cdot E_\pi[G_{t+1} | S_{t+1} = s'] \right]
 $$
 
-## Política “siempre esperar"
+## a - Política “siempre esperar"
 
 Aplicando la función de Bellman calculamos el valor de cada estado. Hay que tener en cuenta de que 1) nuestra política es determinista (siempre esperar) 2) tenemos $\gamma$ = 1
 $$\large v_\pi(1) = 0.5[-2 + 1 \times v_\pi(1)] + 0.5[-2 + 1 \times v_\pi(4)] $$
@@ -53,7 +53,7 @@ $$\large
 v_\pi(4) = 0 
 $$
 
-## Política “siempre subir"
+## b - Política “siempre subir"
 
 $$\large
 v_\pi(1) = 1[-3 + 1 \times v_\pi(2)] 
@@ -82,3 +82,6 @@ $$\large
 v_\pi(4) = 0
 $$
 
+## c - Política “siempre esperar" con modificaciones
+
+El modelo cambia 

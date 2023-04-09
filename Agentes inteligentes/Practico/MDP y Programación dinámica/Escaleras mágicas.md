@@ -39,3 +39,4 @@ v_\pi(4) = 0
 $$
 > $v_\pi(4) = 0$ ya que es estado final
 
+Luego de despejar nos queda:

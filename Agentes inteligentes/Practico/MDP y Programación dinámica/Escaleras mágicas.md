@@ -191,5 +191,11 @@ v_3(4) = 0
 $$
 
 
-## b) Mejora de politica (una iteracion)
+## b) Mejora de política (una iteración)
 
+$$
+\begin{aligned}
+q_{\pi}(1, \text{subir}) &= -3 + v_1(2) = -3 -1 = -4 \\
+q_{\pi}(1, \text{esperar}) &= -2\cdot 0.7 + 0.7\cdot v_1(1) + 0.3\cdot v_1(4) = -1.4 - 2.1 = -3.5
+\end{aligned}
+$$

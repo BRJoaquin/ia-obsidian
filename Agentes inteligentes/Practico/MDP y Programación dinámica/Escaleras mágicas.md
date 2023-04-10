@@ -93,8 +93,6 @@ $$
 
 El modelo cambia ya que ahora "la probabilidad de llegar mágicamente al piso 4 por esperar en los descansos es de 0.3".
 
-> Se asume que las posibilidades 0.5 del anterior modelo pasan a 0.35.
-> También se asume que la nueva posibilidad de llegar al piso 4 no tiene peso/costo alguno
 
 ```mermaid
 graph TD
@@ -104,38 +102,15 @@ graph TD
 	D[Piso 4]
 	
     A -->|S, 3, 1| B
-    A -->|E, 2 , 0.35| A
-    A -->|E, 2 , 0.35| D
-    A -->|E, 0, 0.3| D
+    A -->|E, 2 , 0.7| A
+    A -->|E, 2 , 0.3| D
     
     B -->|S, 1, 1| C
-    B -->|E, 2 , 0.35| C
+    B -->|E, 2 , 0.| C
     B -->|E, 2 , 0.35| D
-    B -->|E, 0, 0.3| D
     
 	C -->|S, 1, 1| D
     C -->|E, 1.5 , 0.35| A
     C -->|E, 1.5 , 0.35| D
     C -->|E, 0, 0.3| D
 ```
-
-$$\large
-v_\pi(1) = 1 \cdot \left[ 0.35 \cdot (2 + v_\pi(1)) + 0.35 \cdot (2 + v_\pi(4)) + 0.3 \cdot (0 + v_\pi(4)) \right]
-$$
-$$\large
-v_\pi(1) = 1 \cdot \left[ 0.35 \cdot (2 + v_\pi(1)) + 0.35 \cdot (2 + v_\pi(4)) + 0.3 \cdot (0 + v_\pi(4)) \right]
-$$
-$$\large
-v_\pi(3) = 1 \cdot \left[ 0.35 \cdot (1.5 + v_\pi(1)) + 0.35 \cdot (1.5 + v_\pi(4)) + 0.3 \cdot (0 + v_\pi(4)) \right]
-$$
-$$\large
-v_\pi(4) = 0
-$$
-
-
-Entonces, los valores de los estados para la política "siempre esperar" son:
-
--  $v_\pi(1) \approx 1.077$
--  $v_\pi(2) \approx 1.016$
--  $v_\pi(3) \approx 0.901$
--  $v_\pi(4) = 0$

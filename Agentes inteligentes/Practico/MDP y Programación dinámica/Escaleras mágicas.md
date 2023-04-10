@@ -132,7 +132,7 @@ $$\large
 v_\pi(1) \approx -6.667
 $$
 $$\large
-v_\pi(2) = -2
+v_\pi(2) \approx -6.802
 $$
 $$\large
 v_\pi(3) \approx -6.867

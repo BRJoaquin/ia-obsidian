@@ -145,7 +145,7 @@ $$
 
 ## a) Evaluación política "siempre subir"
 
-> Tomamos el valor de la política inicialmente como cero. 
+> Tomamos el valor de la política inicialmente como cero. $v_0(s) = 0$
 
 ### Iteración 1
 

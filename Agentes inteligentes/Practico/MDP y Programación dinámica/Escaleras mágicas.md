@@ -143,4 +143,19 @@ $$
 
 # 3) Evaluación y mejora de política
 
-## a) Evaluacion poli
+## a) Evaluación política "siempre subir"
+
+Aplicando la 
+
+$$
+v_1(1) = \mathbb{E}[R_t | S_{t-1} = 1, A_{t-1} = \text{subir}] = 3 + v_0(2) = 3
+$$
+$$
+v_1(2) = \mathbb{E}[R_t | S_{t-1} = 2, A_{t-1} = \text{subir}] = 1 + v_0(3) = 1
+$$
+$$
+v_1(3) = \mathbb{E}[R_t | S_{t-1} = 3, A_{t-1} = \text{subir}] = 1 + v_0(4) = 1
+$$
+$$
+v_1(4) = 0
+$$

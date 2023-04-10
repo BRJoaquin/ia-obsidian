@@ -114,9 +114,23 @@ graph TD
     C -->|E, 1.5 , 0.3| D
 ```
 
-$$
+$$\large
 v_\pi(1) = 0.7 \cdot (2 + v_\pi(1)) + 0.3 \cdot (2 + v_\pi(4))
 $$
-$$
+$$\large
 v_\pi(2) = 0.7 \cdot (2 + v_\pi(3)) + 0.3 \cdot (2 + v_\pi(4))
+$$
+$$\large
+v_\pi(3) = 0.7 \cdot (2.5 + v_\pi(1)) + 0.3 \cdot (1.5 + v_\pi(4))
+$$
+$$\large
+v_\pi(4) = 0
+$$
+Si despejamos
+
+$$
+v_\pi(1) = 0.7 \cdot (2 + v_\pi(1))
+$$
+$$
+v_\pi(1) = \frac{2 \cdot 0.7}{1 - 0.7} = \frac{1.4}{0.3} \approx 4.667
 $$

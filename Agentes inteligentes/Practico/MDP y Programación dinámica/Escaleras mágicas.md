@@ -135,7 +135,7 @@ $$\large
 v_\pi(2) = -2
 $$
 $$\large
-v_\pi(3) = -1
+v_\pi(3) \approx 6.867
 $$
 $$\large
 v_\pi(4) = 0

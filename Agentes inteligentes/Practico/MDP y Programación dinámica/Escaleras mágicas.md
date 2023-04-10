@@ -129,7 +129,7 @@ $$
 Si despejamos
 
 $$\large
-v_\pi(1) = -5
+v_\pi(1) \approx 6.667
 $$
 $$\large
 v_\pi(2) = -2

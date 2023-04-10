@@ -122,7 +122,6 @@ graph TD
 $$\large
 v_\pi(1) = 1 \cdot \left[ 0.35 \cdot (2 + v_\pi(1)) + 0.35 \cdot (2 + v_\pi(4)) + 0.3 \cdot (0 + v_\pi(4)) \right]
 $$
-
 $$\large
 v_\pi(1) = 1 \cdot \left[ 0.35 \cdot (2 + v_\pi(1)) + 0.35 \cdot (2 + v_\pi(4)) + 0.3 \cdot (0 + v_\pi(4)) \right]
 $$
@@ -136,7 +135,7 @@ $$
 
 Entonces, los valores de los estados para la política "siempre esperar" son:
 
--   $v_\pi(1) \approx 1.077$
--   $v_\pi(2) \approx 1.016$
--   $v_\pi(3) \approx 0.901$
+-  $v_\pi(1) \approx 1.077$
+-  $v_\pi(2) \approx 1.016$
+-  $v_\pi(3) \approx 0.901$
 -  $v_\pi(4) = 0$

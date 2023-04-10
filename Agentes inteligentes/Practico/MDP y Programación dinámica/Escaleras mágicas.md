@@ -134,3 +134,9 @@ v_\pi(4) = 0
 $$
 
 
+Entonces, los valores de los estados para la política "siempre esperar" son:
+
+-   $v_\pi(1) \approx 1.077$
+-   $v_\pi(2) \approx 1.016$
+-   $v_\pi(3) \approx 0.901$
+-  $v_\pi(4) = 0$

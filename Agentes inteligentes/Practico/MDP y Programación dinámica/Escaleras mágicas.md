@@ -7,15 +7,15 @@ graph TD
 	B[Piso 2]
 	C[Piso 3]
 	D[Piso 4]
-    A -->|S, 3, 1| B
-    A -->|E, 2 , 0.5| A
-    A -->|E, 2 , 0.5| D
-    B -->|S, 1 , 1| C
-    B -->|E, 2 , 0.5| C
-    B -->|E, 2 , 0.5| D
-    C -->|S, 1 , 1| D
-    C -->|E, 2.5 , 0.5| A
-    C -->|E, 1.5 , 0.5| D
+    A -->|S, -3, 1| B
+    A -->|E, -2 , 0.5| A
+    A -->|E, -2 , 0.5| D
+    B -->|S, -1 , 1| C
+    B -->|E, -2 , 0.5| C
+    B -->|E, -2 , 0.5| D
+    C -->|S, -1 , 1| D
+    C -->|E, -2.5 , 0.5| A
+    C -->|E, -1.5 , 0.5| D
 ```
 > El piso 4 se considera una estado terminal
 > E = Esperar
@@ -101,17 +101,17 @@ graph TD
 	C[Piso 3]
 	D[Piso 4]
 	
-    A -->|S, 3, 1| B
-    A -->|E, 2 , 0.7| A
-    A -->|E, 2 , 0.3| D
+    A -->|S, -3, 1| B
+    A -->|E, -2 , 0.7| A
+    A -->|E, -2 , 0.3| D
     
-    B -->|S, 1, 1| C
-    B -->|E, 2 , 0.7| C
-    B -->|E, 2 , 0.3| D
+    B -->|S, -1, 1| C
+    B -->|E, -2 , 0.7| C
+    B -->|E, -2 , 0.3| D
     
-	C -->|S, 1, 1| D
-    C -->|E, 2.5 , 0.7| A
-    C -->|E, 1.5 , 0.3| D
+	C -->|S, -1, 1| D
+    C -->|E, -2.5 , 0.7| A
+    C -->|E, -1.5 , 0.3| D
 ```
 
 $$\large
@@ -150,13 +150,13 @@ $$
 ### Iteración 1
 
 $$
-v_1(1) = \mathbb{E}[R_t | S_{t-1} = 1, A_{t-1} = \text{subir}] = 3 + v_0(2) = 3
+v_1(1) = \mathbb{E}[R_t | S_{t-1} = 1, A_{t-1} = \text{subir}] = -3 + v_0(2) = -3
 $$
 $$
-v_1(2) = \mathbb{E}[R_t | S_{t-1} = 2, A_{t-1} = \text{subir}] = 1 + v_0(3) = 1
+v_1(2) = \mathbb{E}[R_t | S_{t-1} = 2, A_{t-1} = \text{subir}] = -1 + v_0(3) = -1
 $$
 $$
-v_1(3) = \mathbb{E}[R_t | S_{t-1} = 3, A_{t-1} = \text{subir}] = 1 + v_0(4) = 1
+v_1(3) = \mathbb{E}[R_t | S_{t-1} = 3, A_{t-1} = \text{subir}] = -1 + v_0(4) = -1
 $$
 $$
 v_1(4) = 0

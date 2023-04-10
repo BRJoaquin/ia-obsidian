@@ -14,7 +14,7 @@ graph TD
     B -->|E, 2 , 0.5| C
     B -->|E, 2 , 0.5| D
     C -->|S, 1 , 1| D
-    C -->|E, 1.5 , 0.5| A
+    C -->|E, 2.5 , 0.5| A
     C -->|E, 1.5 , 0.5| D
 ```
 > El piso 4 se considera una estado terminal

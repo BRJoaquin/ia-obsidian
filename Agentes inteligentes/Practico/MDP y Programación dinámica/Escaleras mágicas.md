@@ -178,7 +178,7 @@ $$
 ### Iteración 3
 
 $$
-v_3(1) = \mathbb{E}[R_t | S_{t-1} = 1, A_{t-1} = \text{subir}] = 3 + v_2(2) = 3 + 2 = 5
+v_3(1) = \mathbb{E}[R_t | S_{t-1} = 1, A_{t-1} = \text{subir}] = -3 + v_2(2) = -3 - 2 = -5
 $$
 $$
 v_3(2) = \mathbb{E}[R_t | S_{t-1} = 2, A_{t-1} = \text{subir}] = 1 + v_2(3) = 1 + 1 = 2
@@ -191,10 +191,3 @@ v_3(4) = 0
 $$
 
 
-
-$$
-\begin{aligned}
-q_{\pi}(1, \text{subir}) &= \mathbb{E}[R_t + \gamma v_{\pi}(S_t) | S_{t-1} = 1, A_{t-1} = \text{subir}] = 3 + v_3(2) = 3 + 2 = 5 \\
-q_{\pi}(1, \text{esperar}) &= \mathbb{E}[R_t + \gamma v_{\pi}(S_t) | S_{t-1} = 1, A_{t-1} = \text{esperar}] = 2\cdot 0.5 + 0.5\cdot v_3(1) + 0.5\cdot v_3(4) = 1 + 0 = 1
-\end{aligned}
-$$

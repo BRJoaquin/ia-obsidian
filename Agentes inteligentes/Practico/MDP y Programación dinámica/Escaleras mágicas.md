@@ -164,13 +164,13 @@ $$
 ### Iteración 2
 
 $$
-v_2(1) = \mathbb{E}[R_t | S_{t-1} = 1, A_{t-1} = \text{subir}] = 3 + v_1(2) = 3 + 1 = 4
+v_2(1) = \mathbb{E}[R_t | S_{t-1} = 1, A_{t-1} = \text{subir}] = -3 + v_1(2) = -3 - 1 = -4
 $$
 $$
-v_2(2) = \mathbb{E}[R_t | S_{t-1} = 2, A_{t-1} = \text{subir}] = 1 + v_1(3) = 1 + 1 = 2
+v_2(2) = \mathbb{E}[R_t | S_{t-1} = 2, A_{t-1} = \text{subir}] = -1 + v_1(3) = -1 - 1 = 2
 $$
 $$
-v_2(3) = \mathbb{E}[R_t | S_{t-1} = 3, A_{t-1} = \text{subir}] = 1 + v_1(4) = 1 + 0 = 1
+v_2(3) = \mathbb{E}[R_t | S_{t-1} = 3, A_{t-1} = \text{subir}] = -1 - v_1(4) = -1 + 0 = 1
 $$
 $$
 v_2(4) = 0

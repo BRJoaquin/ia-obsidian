@@ -145,7 +145,7 @@ $$
 
 ## a) Evaluación política "siempre subir"
 
-Aplicando las ecuaciones de Bellman, tenemos:
+> Tomamos el valor de la política inicialmente como cero. 
 
 ### Iteración 1
 

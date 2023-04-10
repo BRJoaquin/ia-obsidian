@@ -191,3 +191,5 @@ v_3(4) = 0
 $$
 
 
+## b) Mejora de politica (una iteracion)
+

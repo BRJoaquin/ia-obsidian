@@ -119,4 +119,10 @@ graph TD
     C -->|E, 0, 0.3| D
 ```
 
+$$\large
+v_\pi(1) = 1 \cdot \left[ 0.35 \cdot (2 + v_\pi(1)) + 0.35 \cdot (2 + v_\pi(4)) + 0.3 \cdot (0 + v_\pi(4)) \right]
+$$
 
+$$\large
+v_\pi(1) = 1 \cdot \left[ 0.35 \cdot (2 + v_\pi(1)) + 0.35 \cdot (2 + v_\pi(4)) + 0.3 \cdot (0 + v_\pi(4)) \right]
+$$

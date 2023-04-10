@@ -202,10 +202,7 @@ $$
 
 
 $$
-\begin{aligned}
-q_{\pi}(1, \text{esperar}) = 0.5 \left[-2 + \gamma v_\pi(1)\right] + 0.5 \left[-2 + \gamma v_\pi(4)\right] \\
-q_{\pi}(1, \text{esperar}) = -3
-\end{aligned}
+q_{\pi}(1, \text{esperar}) = 0.5 \left[-2 + \gamma v_\pi(1)\right] + 0.5 \left[-2 + \gamma v_\pi(4)\right]
 $$
 
 $$

@@ -135,9 +135,6 @@ $$
 v_\pi(1) = \frac{2 \cdot 0.7}{1 - 0.7} = \frac{1.4}{0.3} \approx 4.667
 $$
 $$
-v_\pi(2) = 0.7 \cdot (2 + v_\pi(3))
-$$
-$$
 v_\pi(3) = 0.7 \cdot (2.5 + v_\pi(1))
 $$
 $$
@@ -146,9 +143,10 @@ $$
 $$
 v_\pi(2) = 0.7 \cdot (2 + 5.017) \approx 0.7 \cdot 7.017 \approx 4.912
 $$
+
 Entonces, los valores de los estados para la política "siempre esperar" son:
 
 -  $v_\pi(1) \approx 4.667$
 -  $v_\pi(2) \approx 4.912$
 -  $v_\pi(3) \approx 5.017$
--  $v_\pi(3) \approx 5.017$
+-  $v_\pi(4) = 0$

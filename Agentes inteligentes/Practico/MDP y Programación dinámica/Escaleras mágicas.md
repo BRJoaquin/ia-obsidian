@@ -115,13 +115,13 @@ graph TD
 ```
 
 $$\large
-v_\pi(1) = 0.7 \cdot (2 + v_\pi(1)) + 0.3 \cdot (2 + v_\pi(4))
+v_\pi(1) = 0.7 \cdot (-2 + v_\pi(1)) + 0.3 \cdot (-2 + v_\pi(4))
 $$
 $$\large
-v_\pi(2) = 0.7 \cdot (2 + v_\pi(3)) + 0.3 \cdot (2 + v_\pi(4))
+v_\pi(2) = 0.7 \cdot (-2 + v_\pi(3)) + 0.3 \cdot (-2 + v_\pi(4))
 $$
 $$\large
-v_\pi(3) = 0.7 \cdot (2.5 + v_\pi(1)) + 0.3 \cdot (1.5 + v_\pi(4))
+v_\pi(3) = 0.7 \cdot (-2.5 + v_\pi(1)) + 0.3 \cdot (-1.5 + v_\pi(4))
 $$
 $$\large
 v_\pi(4) = 0

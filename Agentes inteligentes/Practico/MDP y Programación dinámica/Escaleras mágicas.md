@@ -140,3 +140,7 @@ $$
 $$\large
 v_\pi(4) = 0
 $$
+
+# Evaluacion y 
+
+#

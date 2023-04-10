@@ -145,7 +145,9 @@ $$
 
 ## a) Evaluación política "siempre subir"
 
-Aplicando la 
+Aplicando las ecuaciones de Bellman, tenemos:
+
+### Iteración 1
 
 $$
 v_1(1) = \mathbb{E}[R_t | S_{t-1} = 1, A_{t-1} = \text{subir}] = 3 + v_0(2) = 3
@@ -159,3 +161,5 @@ $$
 $$
 v_1(4) = 0
 $$
+### Iteración 2
+

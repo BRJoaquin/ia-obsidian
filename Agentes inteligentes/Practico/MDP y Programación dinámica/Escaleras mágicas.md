@@ -270,3 +270,30 @@ v_2(4) = 0
 $$
 
 ### Iteración 3
+
+
+# 4) Value Iteration
+
+Para ello trateremos de converjer las siguientes funciones:
+$$\large
+\begin{aligned}
+v_{k+1}(1) &= \max_{a \in \{S, E\}} \left\{ \sum_{s', r} p(s', r | 1, a) (r + \gamma v_k(s')) \right\} \\
+&= \max \left\{ -3 + v_k(2), 0.5 \cdot (-2 )  + (-2) \cdot 0.5 \right\}
+\end{aligned}
+$$
+$$\large
+\begin{aligned}
+v_{k+1}(2) &= \max_{a \in \{S, E\}} \left\{ \sum_{s', r} p(s', r | 2, a) (r + \gamma v_k(s')) \right\} \\
+&= \max \left\{ -1 + v_k(3), -2 \cdot 0.5 + (-2) \cdot 0.5 \right\}
+\end{aligned}
+$$
+
+$$\large
+\begin{aligned}
+v_{k+1}(3) &= \max_{a \in \{S, E\}} \left\{ \sum_{s', r} p(s', r | 3, a) (r + \gamma v_k(s')) \right\} \\
+&= \max \left\{ -1 + v_k(4), -2.5 \cdot 0.5 + (-1.5) \cdot 0.5 \right\}
+\end{aligned}
+$$
+$$\large
+v_{k+1}(4) = 0
+$$

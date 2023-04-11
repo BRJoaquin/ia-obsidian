@@ -194,27 +194,22 @@ $$
 ## b) Mejora de política (una iteración)
 
 $$
-\begin{aligned}
-q_{\pi}(1, \text{subir}) &= -3 + v_3(2) = -3 -2 = -5 \\
-q_{\pi}(1, \text{esperar}) &= -2\cdot 0.5 + 0.5\cdot v_3(1) + 0.5\cdot v_3(4) = -1 - 2.5 = -3.5
-\end{aligned}
+q_{\pi}(1, \text{subir}) = 1 \left[-3 + \gamma v_\pi(2)\right]
 $$
-
+$$
+q_{\pi}(1, \text{subir}) = -5
+$$
 $$
 q_{\pi}(1, \text{esperar}) = 0.5 \left[-2 + \gamma v_\pi(1)\right] + 0.5 \left[-2 + \gamma v_\pi(4)\right]
 $$
-
 $$
-
+q_{\pi}(1, \text{esperar}) = -4.5
 $$
-
-
-La nueva política espera en el estado 1.
+***
 $$
-\begin{aligned}
-q_{\pi}(2, \text{subir}) &= -1 + v_3(3) = -1 -1 = -2 \\
-q_{\pi}(2, \text{esperar}) &= -2\cdot 0.5 + 0.5\cdot v_3(3) + 0.5\cdot v_3(4) = -1 + 0 = -1
-\end{aligned}
+q_{\pi}(2, \text{subir}) = 1 \left[-1 + \gamma v_\pi(3)\right]
 $$
-
-
+$$
+q_{\pi}(2, \text{esperar}) = 0.5 \left[-2 + \gamma v_\pi(2)\right] + 0.5 \left[-2 + \gamma v_\pi(4)\right]
+$$
+***

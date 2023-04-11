@@ -145,6 +145,8 @@ $$
 
 ## a) Evaluación política "siempre subir"
 
+### Iteración 0
+
 > Tomamos el valor de la política inicialmente como cero. $v_0(s) = 0$
 
 ### Iteración 1
@@ -237,4 +239,24 @@ $$
 > Piso 2: subir
 > Piso 3: subir
 
+## Evaluamos la nueva política
 
+### Iteración 0
+
+> Tomamos el valor de la política inicialmente como cero. $v_0(s) = 0$
+
+### Iteración 1
+
+
+$$
+v_1(1) = 0.5[-2 + v_0(1)] + 0.5[-2 + v_0(4)] = -2
+$$
+$$
+v_1(2) = -1 + v_0(3) = -1
+
+$$
+
+### Iteración 2
+
+
+### Iteración 3

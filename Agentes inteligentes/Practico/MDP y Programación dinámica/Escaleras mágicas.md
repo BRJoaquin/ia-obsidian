@@ -189,7 +189,7 @@ $$
 $$
 v_3(4) = 0
 $$
-
+> Coincide con nuestro calculo en el punto 2-b
 
 ## b) Mejora de política (una iteración)
 
@@ -210,6 +210,31 @@ $$
 q_{\pi}(2, \text{subir}) = 1 \left[-1 + \gamma v_\pi(3)\right]
 $$
 $$
+q_{\pi}(2, \text{subir}) = -2
+$$
+$$
 q_{\pi}(2, \text{esperar}) = 0.5 \left[-2 + \gamma v_\pi(2)\right] + 0.5 \left[-2 + \gamma v_\pi(4)\right]
 $$
+$$
+q_{\pi}(2, \text{esperar}) = -3
+$$
 ***
+$$
+q_{\pi}(3, \text{subir}) = 1 \left[-1 + \gamma v_\pi(4)\right]
+$$
+$$
+q_{\pi}(3, \text{subir}) = -1
+$$
+$$
+q_{\pi}(3, \text{esperar}) = 0.5 \left[-2.5 + \gamma v_\pi(1)\right] + 0.5 \left[-1.5 + \gamma v_\pi(4)\right]
+$$
+$$
+q_{\pi}(3, \text{esperar}) = -4.5
+$$
+
+> Por ende mi nueva política:
+> Piso 1: esperar
+> Piso 2: subir
+> Piso 3: subir
+
+

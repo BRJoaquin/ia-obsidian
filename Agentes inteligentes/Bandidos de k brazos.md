@@ -16,7 +16,7 @@ Hay varias estrategias y algoritmos para abordar el problema de los bandidos de 
 > El problema de los K brazos es un problema no asociativo, es decir el agente no necesita aprender a asociar diferentes situaciones o estados del entorno con acciones específicas. En otras palabras, el agente no necesita aprender una [[Política]] que mapee los estados a las acciones, como en el caso de problemas de aprendizaje por refuerzo más generales.
 
 
-# Funcion valor
+# Función valor
 
 La [[Función de valor]] se refiere a la función de valor de acción, ya que no hay estados distintos en este problema y sólo se consideran las acciones (brazos). La función de valor de acción para un bandido multi-brazo, denotada como $Q(a)$, estima el valor esperado de la [[Recompensa]] al seleccionar una acción específica (tirar de un brazo particular).
 

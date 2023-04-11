@@ -310,3 +310,8 @@ v_1(3) = -1 \\
 v_1(4) = 0 
 \end{aligned}
 $$
+Para las siguientes iteraciones nos valimos `hojas de calculo` para facilitar los calculos. Como resultado tenemos:
+
+![[Pasted image 20230411184536.png]]
+
+Donde $v_1(1) \xrightarrow{} -4$

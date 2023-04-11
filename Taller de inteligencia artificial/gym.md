@@ -35,6 +35,7 @@ env.render()
 ```
 8. Cerrar el entorno: Cuando termines de trabajar con el entorno, asegúrate de cerrarlo usando la función `close()`:
    ```python
+env.close()
 
 ```
 

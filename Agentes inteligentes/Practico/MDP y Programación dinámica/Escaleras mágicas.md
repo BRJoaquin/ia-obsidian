@@ -268,7 +268,6 @@ v_2(3) = -1 + v_1(4) = -1 \\
 v_2(4) = 0
 \end{align}
 $$
-
 ### Iteración 3
 
 
@@ -287,7 +286,6 @@ v_{k+1}(2) &= \max_{a \in \{S, E\}} \left\{ \sum_{s', r} p(s', r | 2, a) (r + \g
 &= \max \left\{ -1 + v_k(3), 0.5 \cdot (-2 + v_k(3) )  + 0.5 \cdot (-2 + v_k(4)) \right\}
 \end{aligned}
 $$
-
 $$\large
 \begin{aligned}
 v_{k+1}(3) &= \max_{a \in \{S, E\}} \left\{ \sum_{s', r} p(s', r | 3, a) (r + \gamma v_k(s')) \right\} \\

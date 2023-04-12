@@ -271,6 +271,8 @@ $$
 ### Iteración 3
 
 
+
+
 # 4) Value Iteration
 
 Para ello traeremos de converger las siguientes funciones:

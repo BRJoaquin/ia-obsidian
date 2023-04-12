@@ -247,7 +247,6 @@ $$
 
 ### Iteración 1
 
-
 $$\Large
 \begin{align}
 v_1(1) = 0.5[-2 + v_0(1)] + 0.5[-2 + v_0(4)] = -2 \\
@@ -256,7 +255,6 @@ v_1(3) = -1 + v_0(4) = -1 \\
 v_1(4) = 0
 \end{align}
 $$
-
 
 ### Iteración 2
 
@@ -268,9 +266,56 @@ v_2(3) = -1 + v_1(4) = -1 \\
 v_2(4) = 0
 \end{align}
 $$
-### Iteración 3
+### Siguientes itereaciones
 
+![[Pasted image 20230411223337.png]]
 
+Donde $v_1(1) \xrightarrow{} -4$
+
+> Es mejor policy porque se cumple que para todo valor de estado es mejor que la anterior.
+
+## c) Mejora de política (segunda iteración)
+
+$$
+q_{\pi}(1, \text{subir}) = 1 \left[-3 + \gamma v_\pi(2)\right]
+$$
+$$
+q_{\pi}(1, \text{subir}) = -5
+$$
+$$
+q_{\pi}(1, \text{esperar}) = 0.5 \left[-2 + \gamma v_\pi(1)\right] + 0.5 \left[-2 + \gamma v_\pi(4)\right]
+$$
+$$
+q_{\pi}(1, \text{esperar}) = -4
+$$
+***
+$$
+q_{\pi}(2, \text{subir}) = 1 \left[-1 + \gamma v_\pi(3)\right]
+$$
+$$
+q_{\pi}(2, \text{subir}) = -2
+$$
+$$
+q_{\pi}(2, \text{esperar}) = 0.5 \left[-2 + \gamma v_\pi(2)\right] + 0.5 \left[-2 + \gamma v_\pi(4)\right]
+$$
+$$
+q_{\pi}(2, \text{esperar}) = -3
+$$
+***
+$$
+q_{\pi}(3, \text{subir}) = 1 \left[-1 + \gamma v_\pi(4)\right]
+$$
+$$
+q_{\pi}(3, \text{subir}) = -1
+$$
+$$
+q_{\pi}(3, \text{esperar}) = 0.5 \left[-2.5 + \gamma v_\pi(1)\right] + 0.5 \left[-1.5 + \gamma v_\pi(4)\right]
+$$
+$$
+q_{\pi}(3, \text{esperar}) = -4
+$$
+
+> Se ve que ahora no policy converge ya que no hago ningun cambio nuevo con repsecto a la anterior (de forma)
 
 
 # 4) Value Iteration

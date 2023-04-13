@@ -315,7 +315,7 @@ $$
 q_{\pi}(3, \text{esperar}) = -4
 $$
 
-> Se ve que ahora no policy converge ya que no hago ningun cambio nuevo con repsecto a la anterior (de forma)
+> Se ve que ahora no policy converge ya que no hago ningún cambio nuevo con respecto a la anterior (de forma greedy)
 
 
 # 4) Value Iteration

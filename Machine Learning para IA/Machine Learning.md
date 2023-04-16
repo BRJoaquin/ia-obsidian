@@ -10,9 +10,9 @@ Una definición más formal sería: el aprendizaje automático es una rama de la
 
 2.  **Algoritmo**: Es el proceso o conjunto de reglas matemáticas que un modelo de aprendizaje automático utiliza para aprender de los datos de entrenamiento y ajustar sus parámetros.
 
-3.  **Entrenamiento**: Proceso mediante el cual un modelo de aprendizaje automático ajusta sus parámetros internos para mejorar su capacidad de realizar predicciones a partir de los datos de entrenamiento.
+3.  **[[Entrenamiento]]**: Proceso mediante el cual un modelo de aprendizaje automático ajusta sus parámetros internos para mejorar su capacidad de realizar predicciones a partir de los datos de entrenamiento.
 
-4.  **Validación**: Proceso de evaluar el rendimiento de un modelo de aprendizaje automático utilizando un conjunto de datos separado de los datos de entrenamiento. La validación ayuda a detectar si el modelo está sobreajustado o si generaliza bien a nuevos datos.
+4.  **[[Validación]]**: Proceso de evaluar el rendimiento de un modelo de aprendizaje automático utilizando un conjunto de datos separado de los datos de entrenamiento. La validación ayuda a detectar si el modelo está sobreajustado o si generaliza bien a nuevos datos.
 
 5.  **[[Sobreajuste (Overfitting)]]**: Situación en la que un modelo de aprendizaje automático se ajusta demasiado a los datos de entrenamiento y no generaliza bien a nuevos ejemplos.
 
@@ -20,19 +20,19 @@ Una definición más formal sería: el aprendizaje automático es una rama de la
 
 7.  **[[Función de pérdida]]**: Medida cuantitativa de cuán lejos están las predicciones del modelo de los resultados reales. El objetivo del entrenamiento es minimizar esta función.
 
-8.  **Gradiente descendente**: Método de optimización utilizado para minimizar la función de pérdida ajustando iterativamente los parámetros del modelo en función del gradiente (derivada) de la función de pérdida.
+8.  **[[Gradiente descendente]]**: Método de optimización utilizado para minimizar la función de pérdida ajustando iterativamente los parámetros del modelo en función del gradiente (derivada) de la función de pérdida.
 
 9.  **[[Aprendizaje supervisado]]**: Tipo de aprendizaje automático en el que el modelo se entrena con datos etiquetados, es decir, con ejemplos de entradas y las salidas correspondientes. Ejemplos de tareas de aprendizaje supervisado incluyen clasificación y regresión.
 
 10.  **[[Aprendizaje no supervisado]]**: Tipo de aprendizaje automático en el que el modelo se entrena con datos no etiquetados, es decir, solo con ejemplos de entradas sin las salidas correspondientes. El objetivo es encontrar estructuras o patrones ocultos en los datos. Ejemplos de tareas de aprendizaje no supervisado incluyen agrupamiento (clustering) y reducción de dimensionalidad.
 
-11.  **Aprendizaje por refuerzo**: Tipo de aprendizaje automático en el que un agente aprende a tomar decisiones a través de interacciones con su entorno. El agente recibe retroalimentación en forma de recompensas o castigos y busca maximizar la recompensa acumulada a lo largo del tiempo.
+11.  [[Aprendizaje por refuerzo]]: Tipo de aprendizaje automático en el que un agente aprende a tomar decisiones a través de interacciones con su entorno. El agente recibe retroalimentación en forma de recompensas o castigos y busca maximizar la recompensa acumulada a lo largo del tiempo.
 
-12.  **Clasificación**: Tarea de aprendizaje supervisado en la que un modelo predice a qué categoría pertenece una entrada dada. Por ejemplo, clasificar correos electrónicos como spam o no spam.
+12.  **[[Clasificación]]**: Tarea de aprendizaje supervisado en la que un modelo predice a qué categoría pertenece una entrada dada. Por ejemplo, clasificar correos electrónicos como spam o no spam.
 
 13.  **[[Regresión]]**: Tarea de aprendizaje supervisado en la que un modelo predice un valor continuo a partir de una entrada dada. Por ejemplo, predecir el precio de una casa basado en sus características.
 
-14.  **Agrupamiento (Clustering)**: Tarea de aprendizaje no supervisado en la que un modelo divide un conjunto de datos en grupos o clústeres basados en la similitud entre los ejemplos.
+14.  **Agrupamiento ([[Clustering]])**: Tarea de aprendizaje no supervisado en la que un modelo divide un conjunto de datos en grupos o clústeres basados en la similitud entre los ejemplos.
 
 15.  **[[Reducción de dimensionalidad]]**: Tarea de aprendizaje no supervisado en la que un modelo reduce la cantidad de variables (dimensiones) en un conjunto de datos, manteniendo la mayor cantidad de información posible. Ejemplos de técnicas de reducción de dimensionalidad incluyen PCA (Análisis de componentes principales) y t-SNE.
 

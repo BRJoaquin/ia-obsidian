@@ -3,6 +3,7 @@ En términos sencillos, el machine learning (aprendizaje automático) es un proc
 Una definición más formal sería: el aprendizaje automático es una rama de la inteligencia artificial que se centra en el desarrollo de algoritmos y modelos matemáticos que permiten a las máquinas mejorar su desempeño en una tarea específica a través de la exposición a datos y la identificación de patrones en ellos.
 
 ![[Pasted image 20230416182840.png]]
+![[clasificacion-de-machine-learning.webp]]
 
 # Algunos conceptos básicos
 

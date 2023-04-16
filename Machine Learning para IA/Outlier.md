@@ -1,0 +1,3 @@
+![[Pasted image 20230416192828.png]]
+
+Un outlier, también conocido como valor atípico o anomalía, es una observación que se desvía significativamente de las demás observaciones en un conjunto de datos. Los outliers pueden ser causados por errores en la recolección de datos, variabilidad natural en los datos, o eventos raros y no representativos. En muchos casos, los outliers pueden afectar negativamente el rendimiento de los modelos de aprendizaje automático, ya que pueden sesgar los parámetros del modelo y reducir la capacidad de generalización del modelo a nuevos datos.

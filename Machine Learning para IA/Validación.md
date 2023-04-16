@@ -1,0 +1,5 @@
+La validación es un proceso importante en el [[Machine Learning]] que permite evaluar el rendimiento de un modelo y garantizar que el modelo generalice bien a datos no vistos previamente. El objetivo principal de la validación es detectar problemas como el [[Sobreajuste (Overfitting)]] o el subajuste (underfitting) y seleccionar el mejor modelo posible ([[Seleccion de modelos]]) para el problema en cuestión.
+
+Hay varias técnicas de validación, siendo las más comunes la [[Validación cruzada (Cross-validation)]] y la división entre conjuntos de entrenamiento y prueba ([[Train-test split]]).
+
+La validación es esencial para evitar el sobreajuste y seleccionar el mejor modelo en función de su capacidad de generalización. Además, la validación también puede utilizarse para ajustar [[, seleccionar características relevantes y comparar diferentes algoritmos de aprendizaje automático.

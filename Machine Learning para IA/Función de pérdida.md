@@ -22,12 +22,14 @@ Para la clasificación multiclase:
 $$\Large
 \text{CE} = - \sum_{i=1}^n \sum_{j=1}^c y_{ij} \log(\hat{y}_{ij})
 $$
-Donde $y_ij
-$ es la etiqueta real y ŷ_ij es la probabilidad predicha para la clase j en el ejemplo i.
+Donde $y_{ij}$ es la etiqueta real y $ŷ_{ij}$ es la probabilidad predicha para la clase $j$ en el ejemplo $i$.
 
 3.  **Función de pérdida hinge (Hinge Loss)**: Se utiliza principalmente en máquinas de vectores de soporte (SVM) para problemas de clasificación. La función de pérdida hinge mide el margen entre las predicciones del modelo y las etiquetas reales y busca maximizar este margen.
-    
-    Hinge Loss = max(0, 1 - y_i * ŷ_i), donde y_i es la etiqueta real (-1 o 1) y ŷ_i es la predicción del modelo.
+
+$$\Large
+\text{Hinge Loss} = \max(0, 1 - y_i \hat{y}_i)
+$$
+Donde $y_i$ es la etiqueta real (-1 o 1) y $ŷ_i$ es la predicción del modelo.
 
 4. **La función de pérdida 0-1**: también conocida como pérdida de clasificación errónea, es una función de pérdida utilizada en problemas de clasificación. Esta función de pérdida asigna un valor de 1 cuando la predicción del modelo es incorrecta y un valor de 0 cuando la predicción es correcta.
 

@@ -34,6 +34,6 @@ Donde $y_i$ es la etiqueta real (-1 o 1) y $ŷ_i$ es la predicción del modelo.
 4. **La función de pérdida 0-1**: también conocida como pérdida de clasificación errónea, es una función de pérdida utilizada en problemas de clasificación. Esta función de pérdida asigna un valor de 1 cuando la predicción del modelo es incorrecta y un valor de 0 cuando la predicción es correcta.
 5. RSS (error cuadratico medio
 6. rmse (residual ..
-7. 
+7. MAE (relacionada con la mediana, no el promedio)
 
 Estas son solo algunas funciones de pérdida comunes, y hay muchas otras que se utilizan en diferentes situaciones y para diferentes tipos de modelos. La elección de la función de pérdida adecuada es esencial para garantizar que el modelo aprenda a hacer predicciones precisas y que el proceso de optimización se realice de manera efectiva.

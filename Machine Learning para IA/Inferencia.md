@@ -1,0 +1,7 @@
+La inferencia en [[Machine Learning]] se refiere al proceso de utilizar un modelo de Machine Learning entrenado para hacer predicciones o clasificaciones sobre nuevos datos de entrada que no se utilizaron en el entrenamiento del modelo.
+
+Una vez que un modelo de Machine Learning ha sido entrenado con un conjunto de datos de entrenamiento, se puede utilizar para hacer predicciones o clasificaciones sobre nuevos datos de entrada. Este proceso se llama inferencia.
+
+Durante la inferencia, el modelo utiliza los patrones y relaciones aprendidos durante el entrenamiento para hacer predicciones o clasificaciones sobre los nuevos datos de entrada. Dependiendo del tipo de modelo de Machine Learning y del problema que se está abordando, la inferencia puede implicar la manipulación de vectores de características, la evaluación de modelos estadísticos, la propagación hacia delante en una red neuronal o la ejecución de otro tipo de algoritmo.
+
+En resumen, la inferencia en Machine Learning es la aplicación de un modelo de aprendizaje automático entrenado para hacer predicciones o clasificaciones sobre nuevos datos de entrada. Es una parte fundamental del ciclo de vida del Machine Learning y permite que los modelos de Machine Learning se utilicen en aplicaciones del mundo real.

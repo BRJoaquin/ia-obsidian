@@ -13,6 +13,8 @@ El sesgo inductivo puede manifestarse de varias formas, como:
 
 Es importante tener en cuenta el sesgo inductivo al seleccionar y ajustar algoritmos de aprendizaje automático para un problema específico. La elección del algoritmo adecuado y la comprensión de sus suposiciones y restricciones pueden ser fundamentales para lograr un buen rendimiento y una generalización efectiva en aplicaciones del mundo real.
 
+![[Pasted image 20230422152658.png]]
+
 # Ejemplo
 
 Claro, consideremos un problema de clasificación muy simple con dos características y dos clases. Imagina que tenemos un conjunto de datos que consta de puntos en un plano bidimensional, y nuestro objetivo es entrenar un modelo para clasificar nuevos puntos en una de las dos clases.

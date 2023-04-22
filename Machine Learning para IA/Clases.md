@@ -1,0 +1,5 @@
+En el contexto del [[Machine Learning]] y la [[Clasificación]], las clases se refieren a las distintas categorías o grupos en los que se pueden dividir los ejemplos de un conjunto de datos. Estas categorías son mutuamente excluyentes y representan la variable objetivo en problemas de clasificación. El objetivo principal de un algoritmo de clasificación es aprender a asignar correctamente nuevos ejemplos no vistos a una de estas clases, utilizando el conocimiento adquirido a partir de un conjunto de datos de entrenamiento etiquetado.
+
+Por ejemplo, en un problema de clasificación de correos electrónicos como spam o no spam, las clases serían "spam" y "no spam". En un problema de clasificación de imágenes de dígitos escritos a mano, las clases serían los dígitos del 0 al 9.
+
+Es importante notar que las clases pueden variar en número y naturaleza según el problema de clasificación en cuestión. Un problema de clasificación binaria tiene dos clases, mientras que un problema de clasificación multiclase tiene tres o más clases.

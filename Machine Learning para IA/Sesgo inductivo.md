@@ -28,3 +28,7 @@ Ahora, supongamos que la relación real entre las características y las clases 
 En resumen, el sesgo inductivo se refiere a las suposiciones inherentes que un algoritmo de aprendizaje automático hace sobre la estructura de los datos y las relaciones subyacentes. Estas suposiciones afectan la capacidad del algoritmo para aprender y generalizar a partir de los datos. En este ejemplo, la regresión logística tiene un sesgo inductivo que favorece las fronteras de decisión lineales, mientras que el árbol de decisión tiene un sesgo inductivo que favorece las fronteras de decisión basadas en reglas simples.
 
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EuBBz3bI-aA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+> [!quote]
+> Correction: [4:06](https://www.youtube.com/watch?v=EuBBz3bI-aA&t=246s) I say that the difference in fits between the training dataset and the testing dataset is called Variance. However, I should have said that the difference is a consequence of variance. Technically, variance refers to the amount by which the predictions would change if we fit the model to a different training data set.

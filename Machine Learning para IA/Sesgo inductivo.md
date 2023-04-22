@@ -1,4 +1,4 @@
-El sesgo inductivo en el [[Machine Learning]] se refiere a las suposiciones y restricciones que un algoritmo de aprendizaje hace al intentar aprender un [[Modelo]] a partir de los datos. Estas suposiciones guían el proceso de aprendizaje y afectan la selección del modelo final entre las posibles hipótesis que explican los datos. Todos los algoritmos de aprendizaje automático tienen cierto nivel de sesgo inductivo, ya que es necesario para reducir la complejidad de la búsqueda de soluciones y encontrar una [[Hipotesis]] que se ajuste a los datos observados.
+El sesgo inductivo en el [[Machine Learning]] se refiere a las suposiciones y restricciones que un algoritmo de aprendizaje hace al intentar aprender un [[Modelo (Hipotesis)]] a partir de los datos. Estas suposiciones guían el proceso de aprendizaje y afectan la selección del modelo final entre las posibles hipótesis que explican los datos. Todos los algoritmos de aprendizaje automático tienen cierto nivel de sesgo inductivo, ya que es necesario para reducir la complejidad de la búsqueda de soluciones y encontrar una [[Modelo (Hipotesis)]] que se ajuste a los datos observados.
 
 El sesgo inductivo puede manifestarse de varias formas, como:
 
@@ -42,7 +42,7 @@ Un algoritmo con un sesgo inductivo alto tiende a hacer suposiciones más simpli
 
 Un modelo con alta varianza es más flexible y puede ajustarse mejor a los datos de entrenamiento, pero también es más susceptible al [[Sobreajuste (Overfitting)]]. El sobreajuste ocurre cuando un modelo se ajusta demasiado a los datos de entrenamiento, incluyendo el [[Ruido]] y las fluctuaciones aleatorias en los datos, lo que resulta en un rendimiento deficiente en datos no vistos.
 
-**El objetivo en el aprendizaje automático es encontrar un equilibrio óptimo entre sesgo y varianza para lograr un buen rendimiento en datos no vistos**. Un [[Modelo]] con un sesgo inductivo y una varianza adecuados podrá capturar la estructura subyacente de los datos sin ajustarse demasiado a las fluctuaciones aleatorias y al ruido en los datos de entrenamiento.
+**El objetivo en el aprendizaje automático es encontrar un equilibrio óptimo entre sesgo y varianza para lograr un buen rendimiento en datos no vistos**. Un [[Modelo (Hipotesis)]] con un sesgo inductivo y una varianza adecuados podrá capturar la estructura subyacente de los datos sin ajustarse demasiado a las fluctuaciones aleatorias y al ruido en los datos de entrenamiento.
 
 En resumen, el sesgo inductivo y la varianza están relacionados en el aprendizaje automático, y el equilibrio entre estos dos aspectos es crucial para lograr un buen rendimiento en datos no vistos. Un modelo que equilibra bien el sesgo inductivo y la varianza será capaz de generalizar bien a partir de los datos de entrenamiento y proporcionar predicciones precisas en datos no vistos.
 

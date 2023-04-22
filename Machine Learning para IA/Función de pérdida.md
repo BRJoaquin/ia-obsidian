@@ -53,3 +53,5 @@ donde $y_i$ es el valor real, ŷ_i es$ $la predicción del modelo, $n$ es el nú
 El $MAE$ es menos sensible a los valores atípicos que el $RMSE$, ya que no eleva al cuadrado las diferencias antes de calcular el promedio.
 
 Estas son solo algunas funciones de pérdida comunes, y hay muchas otras que se utilizan en diferentes situaciones y para diferentes tipos de modelos. La elección de la función de pérdida adecuada es esencial para garantizar que el modelo aprenda a hacer predicciones precisas y que el proceso de optimización se realice de manera efectiva.
+
+

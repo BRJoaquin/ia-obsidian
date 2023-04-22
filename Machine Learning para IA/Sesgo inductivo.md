@@ -32,3 +32,18 @@ En resumen, el sesgo inductivo se refiere a las suposiciones inherentes que un a
 
 > [!quote]
 > Correction: [4:06](https://www.youtube.com/watch?v=EuBBz3bI-aA&t=246s) I say that the difference in fits between the training dataset and the testing dataset is called Variance. However, I should have said that the difference is a consequence of variance. Technically, variance refers to the amount by which the predictions would change if we fit the model to a different training data set.
+
+
+# Sesgo vs Varianza
+
+La relación entre el sesgo inductivo y la [[Machine Learning para IA/Varianza]] es un aspecto clave en el aprendizaje automático y se refiere al equilibrio que un modelo necesita lograr para generalizar bien en datos no vistos. El sesgo inductivo y la varianza están relacionados con el concepto de "compromiso entre sesgo y varianza" (bias-variance trade-off), que busca encontrar un equilibrio óptimo entre estos dos aspectos en un modelo de aprendizaje automático.
+
+El sesgo inductivo se refiere a las suposiciones que un algoritmo de aprendizaje automático hace sobre la estructura subyacente de los datos. Un algoritmo con un sesgo inductivo alto tiende a hacer suposiciones más simplificadas y específicas sobre los datos, lo que puede resultar en un modelo menos flexible y menos sensible a la variabilidad en los datos. Esto puede llevar a un subajuste del modelo, donde el modelo no capta la complejidad real de los datos y no se ajusta bien a los datos de entrenamiento.
+
+Por otro lado, la varianza se refiere a la sensibilidad del modelo a pequeñas fluctuaciones en los datos de entrenamiento. Un modelo con alta varianza es más flexible y puede ajustarse mejor a los datos de entrenamiento, pero también es más susceptible al sobreajuste. El sobreajuste ocurre cuando un modelo se ajusta demasiado a los datos de entrenamiento, incluyendo el ruido y las fluctuaciones aleatorias en los datos, lo que resulta en un rendimiento deficiente en datos no vistos.
+
+El objetivo en el aprendizaje automático es encontrar un equilibrio óptimo entre sesgo y varianza para lograr un buen rendimiento en datos no vistos. Un modelo con un sesgo inductivo y una varianza adecuados podrá capturar la estructura subyacente de los datos sin ajustarse demasiado a las fluctuaciones aleatorias y al ruido en los datos de entrenamiento.
+
+En resumen, el sesgo inductivo y la varianza están relacionados en el aprendizaje automático, y el equilibrio entre estos dos aspectos es crucial para lograr un buen rendimiento en datos no vistos. Un modelo que equilibra bien el sesgo inductivo y la varianza será capaz de generalizar bien a partir de los datos de entrenamiento y proporcionar predicciones precisas en datos no vistos.
+![[Pasted image 20230422134004.png]]
+![[Pasted image 20230422133954.png]]

@@ -1,4 +1,4 @@
-La desviación estándar es una medida estadística que indica la cantidad de variación o dispersión en un conjunto de datos. Se calcula como la raíz cuadrada de la [[Varianza]], que es la media de los cuadrados de las diferencias entre cada valor y la media.
+La desviación estándar es una medida estadística que indica la cantidad de variación o dispersión en un conjunto de datos. Se calcula como la raíz cuadrada de la [[Probablidad/Varianza]], que es la media de los cuadrados de las diferencias entre cada valor y la media.
 
 **La desviación estándar nos puede indicar la cantidad de dispersión o variación que existe en los datos**. Si la desviación estándar es baja, significa que los datos están muy agrupados **alrededor de la media** ([[Esperanza]])y hay poca variabilidad en el conjunto de datos. Si la desviación estándar es alta, significa que los datos están más dispersos y hay más variabilidad en el conjunto de datos.
 

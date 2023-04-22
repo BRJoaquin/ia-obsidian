@@ -4,9 +4,9 @@ El objetivo del aprendizaje no supervisado es desarrollar modelos capaces de com
 
 Algunas técnicas y tareas comunes en el aprendizaje no supervisado incluyen:
 
-1.  **Agrupamiento ([[Clustering]])**: El objetivo es dividir un conjunto de datos en grupos o clústeres basados en la similitud entre los ejemplos. Los algoritmos de agrupamiento, como K-means, DBSCAN y agrupamiento jerárquico, buscan identificar y agrupar puntos de datos similares sin conocer previamente las categorías.
+1.  **Agrupamiento** ([[Clustering]]): El objetivo es dividir un conjunto de datos en grupos o clústeres basados en la similitud entre los ejemplos. Los algoritmos de agrupamiento, como K-means, DBSCAN y agrupamiento jerárquico, buscan identificar y agrupar puntos de datos similares sin conocer previamente las categorías.
 
-2.  **[[Reducción de dimensionalidad]]**: El propósito es reducir la cantidad de variables (dimensiones) en un conjunto de datos, manteniendo la mayor cantidad de información posible. Esto puede simplificar la representación de los datos y mejorar la eficiencia de otros algoritmos de aprendizaje automático. Ejemplos de técnicas de reducción de dimensionalidad incluyen PCA (Análisis de componentes principales), t-SNE y autoencoders.
+2.  Reducción de dimensionalidad ([[Reducción de dimensionalidad]]): El propósito es reducir la cantidad de variables (dimensiones) en un conjunto de datos, manteniendo la mayor cantidad de información posible. Esto puede simplificar la representación de los datos y mejorar la eficiencia de otros algoritmos de aprendizaje automático. Ejemplos de técnicas de reducción de dimensionalidad incluyen PCA (Análisis de componentes principales), t-SNE y autoencoders.
 
 3.  **Detección de anomalías**: La tarea consiste en identificar ejemplos que difieren significativamente del resto de los datos. Estos puntos pueden ser errores, eventos raros o comportamientos inusuales que podrían ser de interés. Algunos algoritmos de detección de anomalías incluyen Isolation Forest y LOF (Local Outlier Factor).
 

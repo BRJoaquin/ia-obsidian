@@ -4,7 +4,7 @@ El clustering es útil en situaciones donde no se dispone de datos etiquetados, 
 
 Algunos algoritmos de clustering populares incluyen:
 
-1.  **K-means**: Es un algoritmo iterativo que busca minimizar la suma de las distancias al cuadrado entre los puntos de datos y sus respectivos centroides de clúster. El algoritmo comienza asignando aleatoriamente K centroides y luego los actualiza iterativamente hasta alcanzar la convergencia. K-means es sensible a la elección inicial de los centroides y al valor de K.
+1.  **K-means**: Es un algoritmo iterativo que busca minimizar la suma de las distancias al cuadrado entre los puntos de datos y sus respectivos centroides de clúster. El algoritmo comienza asignando aleatoriamente K centroides y luego los actualiza iterativamente hasta alcanzar la convergencia. K-means es sensible a la elección inicial de los centroides y al valor de K. Vease [[K-means]]
 
 2.  **DBSCAN (Density-Based Spatial Clustering of Applications with Noise)**: Es un algoritmo de clustering basado en densidad que agrupa puntos de datos cercanos en clústeres y trata a los puntos menos densos como ruido. DBSCAN no requiere especificar el número de clústeres, pero necesita parámetros de radio y densidad mínima para determinar qué puntos de datos están conectados.
 

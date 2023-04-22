@@ -1,4 +1,4 @@
-El sobreajuste (overfitting) es un problema común en el [[Machine Learning]] y la estadística que ocurre cuando un modelo es demasiado complejo y se ajusta muy bien a los datos de entrenamiento, pero no generaliza bien a nuevos datos no vistos. En otras palabras, el modelo aprende tanto el ruido como las relaciones subyacentes en los datos de entrenamiento, lo que resulta en un rendimiento deficiente en el conjunto de prueba o en datos reales.
+El sobreajuste (overfitting) es un problema común en el [[Machine Learning]] y la estadística que ocurre cuando un modelo es demasiado complejo y se ajusta muy bien a los datos de entrenamiento, pero no generaliza bien a nuevos datos no vistos. En otras palabras, el modelo aprende tanto el [[Ruido]] como las relaciones subyacentes en los datos de entrenamiento, lo que resulta en un rendimiento deficiente en el conjunto de prueba o en datos reales.
 
 El sobreajuste puede deberse a varias razones, como:
 

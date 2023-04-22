@@ -8,7 +8,7 @@ Algunas técnicas y tareas comunes en el aprendizaje supervisado incluyen:
 
 1.  **[[Clasificación]]**
 
-2.  **[[Regresión]]**
+2.  **[[Regresión lineal]]**
 
 3.  **Métricas de evaluación**: Para evaluar el rendimiento de un modelo de aprendizaje supervisado, se utilizan métricas de evaluación específicas. Para tareas de clasificación, algunas métricas comunes incluyen precisión, exhaustividad (recall), F1-score y área bajo la curva ROC (AUC-ROC). Para tareas de regresión, se utilizan métricas como el error cuadrático medio (MSE), el error absoluto medio (MAE) y el coeficiente de determinación (R²).
 

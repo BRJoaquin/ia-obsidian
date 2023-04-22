@@ -1,4 +1,4 @@
-El entrenamiento es una etapa clave en el proceso de [[Machine Learning]], en la que un modelo ajusta sus parámetros internos para aprender a realizar una tarea específica, como [[Clasificación]], [[Regresión]] o [[Clustering]]. Durante el entrenamiento, el modelo utiliza un conjunto de datos de entrenamiento, que contiene ejemplos de entradas y, en el caso del [[Aprendizaje supervisado]], las salidas correspondientes.
+El entrenamiento es una etapa clave en el proceso de [[Machine Learning]], en la que un modelo ajusta sus parámetros internos para aprender a realizar una tarea específica, como [[Clasificación]], [[Regresión lineal]] o [[Clustering]]. Durante el entrenamiento, el modelo utiliza un conjunto de datos de entrenamiento, que contiene ejemplos de entradas y, en el caso del [[Aprendizaje supervisado]], las salidas correspondientes.
 
 El proceso de entrenamiento generalmente involucra los siguientes pasos:
 

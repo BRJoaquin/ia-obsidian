@@ -31,7 +31,7 @@ Una definición más formal sería: el aprendizaje automático es una rama de la
 
 12.  **[[Clasificación]]**: Tarea de aprendizaje supervisado en la que un modelo predice a qué categoría pertenece una entrada dada. Por ejemplo, clasificar correos electrónicos como spam o no spam.
 
-13.  **[[Regresión]]**: Tarea de aprendizaje supervisado en la que un modelo predice un valor continuo a partir de una entrada dada. Por ejemplo, predecir el precio de una casa basado en sus características.
+13.  **[[Regresión lineal]]**: Tarea de aprendizaje supervisado en la que un modelo predice un valor continuo a partir de una entrada dada. Por ejemplo, predecir el precio de una casa basado en sus características.
 
 14.  **Agrupamiento ([[Clustering]])**: Tarea de aprendizaje no supervisado en la que un modelo divide un conjunto de datos en grupos o clústeres basados en la similitud entre los ejemplos.
 

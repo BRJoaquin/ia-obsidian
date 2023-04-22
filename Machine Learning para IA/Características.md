@@ -1,0 +1,2 @@
+
+Son los atributos o variables independientes que describen cada ejemplo en un conjunto de datos y que se utilizan para realizar predicciones en el aprendizaje automático. Las características pueden ser numéricas (como la edad, el peso o el ingreso) o categóricas (como el color, la marca o el tipo de material). En un problema de aprendizaje automático, las características forman la base para entrenar y evaluar modelos, ya que proporcionan información relevante sobre el fenómeno de interés.

@@ -26,3 +26,5 @@ Supongamos que tenemos dos algoritmos de aprendizaje automático para resolver e
 Ahora, supongamos que la relación real entre las características y las clases en nuestros datos no es lineal, sino que sigue una forma más compleja, como un círculo. La regresión logística, debido a su sesgo inductivo, no podrá capturar esta relación, ya que solo puede aprender límites de decisión lineales. Por otro lado, un árbol de decisión podría capturar la relación de manera más efectiva, ya que su sesgo inductivo permite aprender límites de decisión más flexibles.
 
 En resumen, el sesgo inductivo se refiere a las suposiciones inherentes que un algoritmo de aprendizaje automático hace sobre la estructura de los datos y las relaciones subyacentes. Estas suposiciones afectan la capacidad del algoritmo para aprender y generalizar a partir de los datos. En este ejemplo, la regresión logística tiene un sesgo inductivo que favorece las fronteras de decisión lineales, mientras que el árbol de decisión tiene un sesgo inductivo que favorece las fronteras de decisión basadas en reglas simples.
+
+

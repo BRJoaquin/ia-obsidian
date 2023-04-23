@@ -9,3 +9,5 @@ P(A|B) = P(A ∩ B) / P(B)
 Donde P(A ∩ B) es la probabilidad de que ambos eventos A y B ocurran juntos (la probabilidad de la intersección de A y B) y P(B) es la probabilidad de que ocurra el evento B.
 
 Esta fórmula nos permite calcular la probabilidad de un evento A cuando tenemos información sobre la ocurrencia de otro evento B. La probabilidad condicional es fundamental en muchas áreas de aplicación de la estadística, como en inferencia estadística, toma de decisiones bajo incertidumbre y aprendizaje automático, entre otras.
+
+> Los dos eventos

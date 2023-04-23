@@ -50,7 +50,6 @@ Usando la información proporcionada:
 Sustituimos estos valores en la fórmula modificada:
 
 $$P(B_1 \mid A) = \frac{(0.01)(0.7)}{(0.01)(0.7) + (0.03)(0.3)}$$
-
 $$P(B_1 \mid A) \approx 0.4375$$
 
 Entonces, si un componente seleccionado al azar resulta ser defectuoso, hay aproximadamente un 43.75% de probabilidad de que haya sido producido por la máquina M1.

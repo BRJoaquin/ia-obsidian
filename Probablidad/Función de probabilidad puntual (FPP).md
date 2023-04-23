@@ -45,3 +45,18 @@ $$P(X=1) = \frac{2}{5}$$
 $$P(X=2) = \frac{3}{10} $$
 $$P(X=3) = \frac{1}{5}$$
 $$P(X=4) = \frac{1}{10}$$
+
+
+La FDA de la variable aleatoria $X$ es:
+
+$$\Large
+F_X(x) = \left\{
+\begin{array}{cl}
+  \frac{2}{5} & \text{si } x = 1 \\
+  \frac{7}{10} & \text{si } x = 2 \\
+  \frac{9}{10} & \text{si } x = 3 \\
+  1 & \text{si } x = 4
+\end{array}
+\right.
+
+$$

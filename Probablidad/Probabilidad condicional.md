@@ -2,12 +2,14 @@ La probabilidad condicional es un concepto fundamental en teoría de probabilida
 
 La probabilidad condicional de un evento A dado que un evento B ha ocurrido se denota como P(A|B) y se define como:
 
-```
-P(A|B) = P(A ∩ B) / P(B)
-```
+$$\Large P(A \mid B) = \frac{P(A \cap B)}{P(B)}$$
+
 
 Donde P(A ∩ B) es la probabilidad de que ambos eventos A y B ocurran juntos (la probabilidad de la intersección de A y B) y P(B) es la probabilidad de que ocurra el evento B.
 
 Esta fórmula nos permite calcular la probabilidad de un evento A cuando tenemos información sobre la ocurrencia de otro evento B. La probabilidad condicional es fundamental en muchas áreas de aplicación de la estadística, como en inferencia estadística, toma de decisiones bajo incertidumbre y aprendizaje automático, entre otras.
 
-> Los dos eventos
+> Los dos eventos son independientes si:
+> $$\Large P(A \mid B) = {P(A)}{P(B)}$$
+
+

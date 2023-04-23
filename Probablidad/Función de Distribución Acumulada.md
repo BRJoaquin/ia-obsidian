@@ -24,7 +24,7 @@ La función de distribución acumulada tiene las siguientes propiedades:
 
 # Ejemplo
 
-Supongamos que tenemos una variable aleatoria discreta $X$ que representa el número de fallos en un proceso de fabricación. La variable $X$ puede tomar valores en el conjunto ${0, 1, 2, 3}$ y tiene la siguiente función de probabilidad puntual (FPP):
+Supongamos que tenemos una variable aleatoria discreta $X$ que representa el número de fallos en un proceso de fabricación. La variable $X$ puede tomar valores en el conjunto ${0, 1, 2, 3}$ y tiene la siguiente [[Función de probabilidad puntual (FPP)]]:
 
 P(X=0) = 0.5
 P(X=1) = 0.3

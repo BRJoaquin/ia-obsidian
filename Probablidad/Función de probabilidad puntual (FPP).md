@@ -34,14 +34,14 @@ $$P(X=2) = \frac{3 \text{ bolas blancas}}{2 \text{ bolas rojas} + 3 \text{ bolas
 
 $$P(X=3) = \frac{3 \text{ bolas blancas}}{2 \text{ bolas rojas} + 3 \text{ bolas blancas}} \times \frac{2 \text{ bolas blancas}}{1 \text{ bola roja} + 3 \text{ bolas blancas}} \times \frac{2 \text{ bolas rojas}}{2 \text{ bolas rojas} + 1 \text{ bola blanca}} = \frac{3}{5} \times \frac{2}{4} \times \frac{2}{3} = \frac{1}{5}$$
 
-4.  **$X = 4$: Cuatro extracciones** Para que se requieran cuatro extracciones para sacar una bola roja, las tres primeras extracciones deben ser bolas blancas y la cuarta una roja. Sin embargo, esto no es posible en este caso, ya que solo hay tres bolas blancas en la urna. Por lo tanto, la probabilidad de que se requieran cuatro extracciones es 0:
+4.  **$X = 4$: Cuatro extracciones** Para que se requieran cuatro extracciones para sacar una bola roja, las tres primeras extracciones deben ser bolas blancas y la cuarta una roja:
 
-cssCopy code
-
-`P(X=4) = 0`
+$$P(X=4) = \frac{3 \text{ bolas blancas}}{2 \text{ bolas rojas} + 3 \text{ bolas blancas}} \times \frac{2 \text{ bolas blancas}}{1 \text{ bola roja} + 3 \text{ bolas blancas}} \times \frac{1 \text{ bola blanca}}{2 \text{ bolas rojas} + 1 \text{ bola blanca}} \times \frac{2 \text{ bolas rojas}}{2 \text{ bolas rojas}} = \frac{3}{5} \times \frac{2}{4} \times \frac{1}{3} \times 1 = \frac{1}{10}
+$$
 
 Entonces, la función de probabilidad puntual (FPP) de la variable aleatoria $X$ es:
 
-cssCopy code
-
-`P(X=1) = \frac{2}{5} P(X=2) = \frac{3}{10} P(X=3) = \frac{1}{5} P(X=4) = 0`
+$$P(X=1) = \frac{2}{5}$$
+$$P(X=2) = \frac{3}{10} $$
+$$P(X=3) = \frac{1}{5}$$
+$$P(X=4) = \frac{1}{10}$$

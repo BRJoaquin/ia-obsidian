@@ -14,3 +14,8 @@
 
 ## SARSA
 
+![[Pasted image 20230501222114.png]]
+
+## Q-Learning
+
+![[Pasted image 20230501222158.png]]

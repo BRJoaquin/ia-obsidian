@@ -48,10 +48,12 @@ El RMSE es una medida de error más interpretable que el RSS, ya que está en la
 
 7. **MAE (Mean Absolute Error)**: El error absoluto medio es otra medida de la discrepancia entre las predicciones del modelo y los valores reales. Es el promedio de las diferencias absolutas entre las predicciones del modelo y los valores reales.
 $$\Large MAE = (1/n) * Σ|y_i - ŷ_i| $$
-donde $y_i$ es el valor real, ŷ_i es$ $la predicción del modelo, $n$ es el número de ejemplos en el conjunto de datos y la suma se realiza sobre todos los ejemplos.
+donde $y_i$ es el valor real, $ŷ_i$ es la predicción del modelo, $n$ es el número de ejemplos en el conjunto de datos y la suma se realiza sobre todos los ejemplos.
 
 El $MAE$ es menos sensible a los valores atípicos que el $RMSE$, ya que no eleva al cuadrado las diferencias antes de calcular el promedio.
 
 Estas son solo algunas funciones de pérdida comunes, y hay muchas otras que se utilizan en diferentes situaciones y para diferentes tipos de modelos. La elección de la función de pérdida adecuada es esencial para garantizar que el modelo aprenda a hacer predicciones precisas y que el proceso de optimización se realice de manera efectiva.
+
+![[Pasted image 20230509113811.png]]
 
 

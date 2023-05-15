@@ -5,6 +5,8 @@ Una definición más formal sería: el aprendizaje automático es una rama de la
 ![[Pasted image 20230416182840.png]]
 ![[clasificacion-de-machine-learning.webp]]
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KytW151dpqU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 # Algunos conceptos básicos
 
 1.  **Datos de entrenamiento**: Conjunto de datos utilizado para enseñar a un modelo de aprendizaje automático a reconocer patrones y realizar predicciones. Estos datos incluyen ejemplos de entradas y las respuestas esperadas.

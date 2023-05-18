@@ -12,3 +12,6 @@ El sobreajuste puede deberse a varias razones, como:
 ![[Pasted image 20230416194702.png]]
 
 Detectar y prevenir el sobreajuste es fundamental para garantizar que los modelos de aprendizaje automático generalicen bien y tengan un buen rendimiento en datos no vistos y en aplicaciones del mundo real.
+
+
+![[Pasted image 20230518202102.png]]

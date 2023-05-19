@@ -32,5 +32,5 @@ Claro, considera el problema de predecir la altura de una persona basada en su e
 2.  Para mejorar tu modelo, decides aumentar su complejidad. Ahora utilizas un polinomio de grado 20 para capturar la relación entre la edad y la altura. Este modelo se ajusta casi perfectamente a tus datos de entrenamiento, pero cuando intentas usarlo en tus datos de prueba, se desempeña muy mal. En este caso, tu modelo tiene una alta varianza. Ha aprendido las peculiaridades y el ruido de tus datos de entrenamiento tan bien que no puede generalizar a nuevos datos.
 
 3.  Finalmente, decides utilizar un polinomio de grado 3. Este modelo no se ajusta tan perfectamente a los datos de entrenamiento como el polinomio de grado 20, pero se desempeña mucho mejor en los datos de prueba. Has encontrado un buen equilibrio entre el sesgo y la varianza.
-
+ 
 Este ejemplo ilustra el trade-off entre sesgo y varianza. Los modelos demasiado simples pueden tener un alto sesgo, mientras que los modelos demasiado complejos pueden tener una alta varianza. La clave está en encontrar un equilibrio entre ambos.

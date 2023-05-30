@@ -15,3 +15,5 @@ Algunas técnicas y tareas comunes en el aprendizaje supervisado incluyen:
 4.  [[Validación]] y selección de modelos: Para evitar el [[Sobreajuste (Overfitting)]] y garantizar que el modelo generalice bien a nuevos datos, se utiliza un proceso de validación, que consiste en dividir los datos en conjuntos de entrenamiento y validación (o utilizar validación cruzada) y comparar el rendimiento del modelo en ambos conjuntos. Además, se pueden explorar diferentes configuraciones de [[Hiperparámetros]] y modelos para seleccionar la mejor combinación.
 
 El aprendizaje supervisado es un enfoque ampliamente utilizado en aprendizaje automático y ha demostrado ser efectivo en una variedad de tareas y aplicaciones. **Sin embargo, requiere la disponibilidad de datos etiquetados, lo que puede ser costoso o difícil de obtener en algunos casos**.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oT3arRRB2Cw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

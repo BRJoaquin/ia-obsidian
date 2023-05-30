@@ -11,3 +11,5 @@ Algunas técnicas y tareas comunes en el aprendizaje no supervisado incluyen:
 3.  **Detección de anomalías**: La tarea consiste en identificar ejemplos que difieren significativamente del resto de los datos. Estos puntos pueden ser errores, eventos raros o comportamientos inusuales que podrían ser de interés. Algunos algoritmos de detección de anomalías incluyen Isolation Forest y LOF (Local Outlier Factor).
 
 4.  **Aprendizaje de representaciones**: A través del aprendizaje no supervisado, los modelos pueden aprender a generar representaciones compactas y significativas de los datos de entrada. Estas representaciones pueden ser útiles para mejorar el rendimiento en tareas de aprendizaje supervisado o por refuerzo. Ejemplos de algoritmos que aprenden representaciones incluyen autoencoders y Word2Vec.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oT3arRRB2Cw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

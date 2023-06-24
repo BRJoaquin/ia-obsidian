@@ -167,9 +167,9 @@ Una función de valor es una predicción del futuro valor esperado (recompensa a
 
 Existen dos tipos principales de funciones de valor:
 
-1. **Función de valor de estado $V^\pi(s)$**: Es la recompensa total esperada comenzando en el estado $s$, y luego siguiendo la política $\pi$. 
+1. **Función de valor de estado $V^\pi(s)$**: Es la recompensa total esperada comenzando en el estado $s$, y luego siguiendo la política $\pi$.  vease [[Función de valor de estado (V)]]
 
-2. **Función de valor de acción $Q^\pi(s, a)$**: Es la recompensa total esperada tomando la acción $a$ en el estado $s$, y luego siguiendo la política $\pi$.
+2. **Función de valor de acción $Q^\pi(s, a)$**: Es la recompensa total esperada tomando la acción $a$ en el estado $s$, y luego siguiendo la política $\pi$. vease [[Función de valor de acción (Q)]]
 
 Formalmente, estas funciones se definen como:
 
@@ -183,3 +183,5 @@ $$
 donde $E_\pi$ es la expectativa matemática bajo la política $\pi$ y $G_t$ es el retorno. 
 
 En el aprendizaje por refuerzo, las funciones de valor se utilizan para medir cuán bueno es un estado o una acción en términos de la cantidad de recompensa que el agente puede esperar obtener en el futuro.
+
+> De la defincion de estas funciones sale la [[Ecuación de Bellman]]

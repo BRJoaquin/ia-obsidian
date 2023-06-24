@@ -1,0 +1,5 @@
+La trayectoria se refiere a la secuencia de estados, acciones y recompensas que se experimentan durante la ejecución de una política.
+
+Más específicamente, una trayectoria es una secuencia de pares (s, a, r), donde s es un estado en el que se encuentra el agente, a es la acción que toma el agente en ese estado, y r es la recompensa que recibe el agente por tomar esa acción. Una trayectoria también puede denotarse como (s0, a0, r0, s1, a1, r1, ..., sn, an, rn), donde s0 es el estado inicial, ai es la acción tomada en el estado si, y ri es la recompensa recibida por tomar ai en el estado si.
+
+En el aprendizaje por refuerzo, una política óptima se busca a partir de la observación de múltiples trayectorias y la actualización de los valores de recompensa estimados para cada estado y acción. Por lo tanto, la trayectoria es una herramienta importante para el análisis y la evaluación de las políticas en los procesos de decisión de Markov.

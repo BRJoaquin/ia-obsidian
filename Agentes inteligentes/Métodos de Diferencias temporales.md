@@ -26,3 +26,4 @@ Existen varios algoritmos de Diferencias Temporales. Algunos de los más conocid
 
 Recuerda que en los algoritmos de diferencias temporales, al igual que en los métodos de Monte Carlo, se puede usar el muestreo para seleccionar acciones, y se pueden usar políticas ε-soft para asegurar la exploración continua.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AJiG3ykOxmY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

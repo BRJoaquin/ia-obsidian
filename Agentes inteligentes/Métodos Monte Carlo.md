@@ -83,8 +83,6 @@ Para cada episodio:
         $Q(S_t, A_t) \leftarrow Q(S_t, A_t) + (1/N(S_t, A_t)) * (G - Q(S_t, A_t))$
 
 
-
-
 # Métodos Monte Carlo de Control
 
 Para encontrar políticas óptimas, los métodos Monte Carlo utilizan generalización de la estrategia de iteración de política, alternando entre evaluación y mejora de la política. Estos métodos incluyen:

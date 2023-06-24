@@ -104,4 +104,7 @@ Los métodos Monte Carlo ofrecen una manera simple y poderosa de aprender de la 
 
 ![[Pasted image 20230624162713.png]]
 
+![[Pasted image 20230624163243.png]]
+
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/C3p2wI4RAi8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

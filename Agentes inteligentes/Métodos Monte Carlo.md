@@ -88,10 +88,20 @@ Para cada episodio:
 Para encontrar políticas óptimas, los métodos Monte Carlo utilizan generalización de la estrategia de iteración de política, alternando entre evaluación y mejora de la política. Estos métodos incluyen:
 
 - **Monte Carlo con Exploración inicial**: En este enfoque, cada par estado-acción es inicialmente explorado una cierta cantidad de veces antes de que el agente comience a explotar su conocimiento actual. Esto a veces se conoce como método de exploración optimista, porque inicialmente se asume que todas las acciones podrían ser óptimas. Una vez que se ha explorado cada par estado-acción suficientes veces, el agente pasa a una política greedy que siempre elige la acción que actualmente estima como la mejor.
-![[Pasted image 20230624162129.png]]
+  
+  ![[Pasted image 20230624162129.png]]
 
-- **Monte Carlo con $\epsilon$-greedy Policies**: Este método mejora la política volviéndola "greedy" con respecto a la función de valor actual con una probabilidad $1-\epsilon$, y selecciona una acción aleatoria con una probabilidad $\epsilon$.
-
-- **Monte Carlo con Soft Policies**: En este método, todas las acciones tienen una probabilidad no nula de ser seleccionadas, pero las acciones que se estiman como mejores tienen una mayor probabilidad.
+- **Monte Carlo con $\epsilon$-greedy**: Este método mejora la política volviéndola "greedy" con respecto a la función de valor actual con una probabilidad $1-\epsilon$, y selecciona una acción aleatoria con una probabilidad $\epsilon$.
+  
+  ![[Pasted image 20230624162437.png]]
 
 Los métodos Monte Carlo ofrecen una manera simple y poderosa de aprender de la interacción con el entorno sin requerir un modelo completo de las dinámicas del entorno. **Sin embargo, como requieren la finalización de episodios para realizar actualizaciones, pueden ser ineficientes o inaplicables en entornos con episodios muy largos o infinitos.**
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bpUszPiWM7o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+# Opcional: off-policy
+
+![[Pasted image 20230624162713.png]]
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/C3p2wI4RAi8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

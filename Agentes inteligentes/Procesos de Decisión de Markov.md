@@ -193,3 +193,6 @@ El Aprendizaje Reforzado tiene distintos métodos para estimar v∗ y q∗, de m
 Si conocemos la función p(s' , r | s, a), podremos usar métodos basados en un modelo (model-based); ej.: [[Programación dinámica]]. 
 
 Si no conocemos p(s' , r | s, a), deberemos usar metodos sin modelo (model-free); ej.: [[Monte Carlo]] y [[Diferencias temporales]].
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/B_lK-P68_Zc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

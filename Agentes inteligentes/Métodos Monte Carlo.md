@@ -89,7 +89,7 @@ Para cada episodio:
 
 Para encontrar políticas óptimas, los métodos Monte Carlo utilizan generalización de la estrategia de iteración de política, alternando entre evaluación y mejora de la política. Estos métodos incluyen:
 
-- **Monte Carlo con Exploración Constante**: Este es un enfoque simple en el que la política se mantiene estocástica con una probabilidad constante de exploración.
+- **Monte Carlo con Exploración inicial**: En este enfoque, cada par estado-acción es inicialmente explorado una cierta cantidad de veces antes de que el agente comience a explotar su conocimiento actual. Esto a veces se conoce como método de exploración optimista, porque inicialmente se asume que todas las acciones podrían ser óptimas. Una vez que se ha explorado cada par estado-acción suficientes veces, el agente pasa a una política greedy que siempre elige la acción que actualmente estima como la mejor.
 
 - **Monte Carlo con $\epsilon$-greedy Policies**: Este método mejora la política volviéndola "greedy" con respecto a la función de valor actual con una probabilidad $1-\epsilon$, y selecciona una acción aleatoria con una probabilidad $\epsilon$.
 

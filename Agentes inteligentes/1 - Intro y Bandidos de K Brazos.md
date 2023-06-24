@@ -9,4 +9,6 @@ Puntos clave:
 - [[Señal de recompensa]]
 - [[Función de valor]]
 - [[Modelo de ambiente]]
-- 
+- [[Bandidos de k brazos]]
+- [[Explotación]]
+- [[Exploración]]

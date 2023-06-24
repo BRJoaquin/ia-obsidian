@@ -1,0 +1,12 @@
+Puntos clave: 
+- [[Aprendizaje por refuerzo]]
+- [[Agente]]
+- [[Ambiente]]
+- [[Recompensa]]
+- [[Aprendizaje supervisado]]
+- [[Aprendizaje no supervisado]]
+- [[Política]]
+- [[Señal de recompensa]]
+- [[Función de valor]]
+- [[Modelo de ambiente]]
+- 

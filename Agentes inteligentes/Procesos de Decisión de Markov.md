@@ -104,12 +104,36 @@ El factor de descuento $\gamma$ (gamma) es un número entre 0 y 1. Si $\gamma = 
 
 > Si $\gamma = 0$, el agente es **miope**: sólo le importa maximizar las recompensas inmediatas.
 
-# Políticas y funciones de valor
+
+# Ejemplos
+
+## No estocástico
+
+Considera el siguiente ejemplo de un juego de cuadrícula. Un agente está en una cuadrícula de 3x3 y puede moverse en las cuatro direcciones: arriba, abajo, izquierda y derecha. A diferencia del ejemplo estocástico en este caso no hay incertidumbre en los movimientos del agente: si el agente decide moverse a la derecha, entonces definitivamente se moverá a la derecha. El objetivo del agente es moverse desde la esquina superior izquierda de la cuadrícula (estado (0,0)) a la esquina inferior derecha (estado (2,2)) en la menor cantidad de pasos posible. Recibe una recompensa de +1 cuando llega al estado objetivo y una recompensa de -1 por cada paso que da. Este es un ejemplo de un MDP determinista porque el próximo estado y la recompensa dependen completamente del estado actual y de la acción del agente sin ningún factor de aleatoriedad.
+
+## Estocástico
+ 
+Considera el siguiente ejemplo de un juego simplificado. Un agente se encuentra en una cuadrícula de 3x3, donde cada celda es un estado. El agente puede moverse en las cuatro direcciones: arriba, abajo, izquierda y derecha. Sin embargo, hay un factor estocástico: para cualquier movimiento que el agente intente hacer, hay una probabilidad del 80% de que tenga éxito y una probabilidad del 20% de que el agente se mueva en una dirección perpendicular al movimiento intentado (distribuido de manera uniforme entre las dos direcciones perpendiculares). Si el movimiento intentado llevaría al agente fuera de la cuadrícula, entonces el agente permanece en su ubicación actual.
+
+En una esquina de la cuadrícula (digamos, el estado (0,0)), hay una recompensa de +1, y en la esquina opuesta (estado (2,2)), hay una recompensa de -1. En todos los demás estados, la recompensa es 0. El juego termina cuando el agente llega a uno de los estados de recompensa.
+
+Este es un ejemplo de MDP porque el próximo estado y la recompensa dependen solo del estado actual y de la acción tomada por el agente, pero hay un factor de aleatoriedad debido a la posibilidad de que el movimiento del agente no tenga éxito.
+
+Aquí está la representación de este MDP:
 
 
-
-
-
-
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/my207WNoeyA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+```mermaid
+graph TB
+    A((0,0 +1)) -->|0.8| B((0,1))
+    A -->|0.1| C((1,0))
+    A -->|0.1| D((0,0))
+    B -->|0.8| E((0,2))
+    B -->|0.1| A
+    B -->|0.1| F((1,1))
+    E -->|0.1| B
+    E -->|0.8| G((1,2))
+    E -->|0.1| H((0,2 -1))
+    G -->|0.1| E
+    G -->|0.1| I((2,1))
+    G -->|0.8| H
+```

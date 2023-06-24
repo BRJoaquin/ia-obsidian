@@ -12,7 +12,7 @@ Cada uno de estos algoritmos tiene sus propias ventajas y desventajas, y se util
 
 ## Q-Learning
 
-El Q-learning es un método action-value que se utiliza para encontrar una política óptima en un [[Proceso de decisión de Markov (MDP)]]. Este método utiliza una [[Función de valor]] de acción Q que le permite al agente aprender a tomar decisiones óptimas sin requerir un modelo del entorno. Uno de los aspectos clave del Q-learning es que es un método "fuera de la política"([[Off-policy]]), lo que significa que puede aprender la [[Política optima]] independientemente de la política que está siguiendo el agente.
+El Q-learning es un método action-value que se utiliza para encontrar una política óptima en un [[Procesos de Decisión de Markov]]. Este método utiliza una [[Función de valor]] de acción Q que le permite al agente aprender a tomar decisiones óptimas sin requerir un modelo del entorno. Uno de los aspectos clave del Q-learning es que es un método "fuera de la política"([[Off-policy]]), lo que significa que puede aprender la [[Política optima]] independientemente de la política que está siguiendo el agente.
 
 ## SARSA (State-Action-Reward-State-Action)
 

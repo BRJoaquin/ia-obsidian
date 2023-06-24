@@ -108,3 +108,10 @@ El factor de descuento $\gamma$ (gamma) es un número entre 0 y 1. Si $\gamma = 
 
 # Políticas y funciones de valor
 
+
+
+
+
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/my207WNoeyA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

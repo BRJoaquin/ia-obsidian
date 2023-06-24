@@ -1,1 +1,7 @@
-accionar geerymente..
+El accionar "greedy" en el contexto del aprendizaje por refuerzo se refiere a una estrategia de selección de acciones en la cual el agente **elige la acción con el valor de recompensa más alto o el Q-valor más alto para un estado dado**. En otras palabras, el agente toma la acción que se considera óptima según su conocimiento actual.
+
+Cuando un agente actúa de forma "greedy", prioriza la [[Explotación]] de su conocimiento existente en lugar de explorar otras opciones posibles. Esto significa que el agente elige la acción que, según sus estimaciones, tiene la mayor probabilidad de generar la máxima recompensa en un estado determinado.
+
+La estrategia "greedy" puede ser útil cuando el agente ha aprendido a través del entrenamiento y tiene una buena estimación de las recompensas ([[Función de valor]]) esperadas para las diferentes acciones en diferentes estados. Sin embargo, también puede tener limitaciones, ya que puede llevar a una falta de [[Exploración]] y puede hacer que el **agente se quede atrapado en un óptimo local, sin descubrir mejores opciones a largo plazo**.
+
+Para abordar este problema, se suelen utilizar técnicas como el "epsilon-greedy" ([[Epsilon-greedy]]) en las que el agente realiza acciones "greedy" la mayor parte del tiempo, pero también tiene una probabilidad epsilon (ε) de explorar una acción aleatoria, lo que le permite descubrir nuevas opciones y evitar quedar atrapado en un óptimo local.

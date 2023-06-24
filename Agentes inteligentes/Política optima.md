@@ -1,0 +1,3 @@
+Se refiere a la mejor estrategia o plan de acción que un agente puede seguir para lograr sus objetivos o maximizar alguna medida de rendimiento. En otras palabras, es la estrategia que produce los mejores resultados posibles en función de las condiciones y restricciones del entorno, sin importar el tipo de problema o modelo que se esté utilizando.
+
+En el aprendizaje por refuerzo y la toma de decisiones, la política óptima es la que permite al agente maximizar la recompensa acumulada a lo largo del tiempo, lo que generalmente implica un equilibrio entre la explotación de las acciones conocidas como las más rentables y la exploración de nuevas acciones que podrían ser aún mejores.

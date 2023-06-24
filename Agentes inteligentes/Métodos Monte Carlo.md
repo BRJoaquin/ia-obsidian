@@ -103,6 +103,21 @@ Los métodos Monte Carlo ofrecen una manera simple y poderosa de aprender de la 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/bpUszPiWM7o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+
+# Ventajas
+
+1. **Flexibilidad**: Los métodos de Monte Carlo pueden aplicarse a una amplia variedad de problemas, ya que se basan en la generación de números aleatorios y no requieren suposiciones específicas sobre la distribución de los datos.
+2. **Precisión**: Con un número suficientemente grande de iteraciones o simulaciones, los métodos de Monte Carlo pueden proporcionar estimaciones precisas de cantidades desconocidas o difíciles de calcular.
+3. **Tratamiento de problemas complejos**: Los métodos de Monte Carlo pueden abordar problemas con múltiples variables y relaciones no lineales, lo que los hace especialmente útiles para modelar sistemas complejos.
+4. **Incorporación de incertidumbre**: Estos métodos permiten tener en cuenta la incertidumbre en los datos de entrada, lo que puede ser crucial para la toma de decisiones y la evaluación de riesgos.
+
+# Desventajas
+
+1. **Tiempo de cálculo**: En algunos casos, los métodos de Monte Carlo pueden requerir un tiempo de cálculo considerablemente largo, especialmente si se necesitan muchas iteraciones para obtener resultados precisos. Esto puede limitar su aplicabilidad en problemas que requieren respuestas rápidas.
+2. **Error de muestreo**: Existe la posibilidad de que los resultados obtenidos mediante métodos de Monte Carlo contengan un error de muestreo debido a la aleatoriedad inherente en la generación de números aleatorios. El tamaño de la muestra y la calidad de los generadores de números aleatorios pueden afectar la precisión de los resultados.
+3. **Convergencia lenta**: Algunas veces, los métodos de Monte Carlo pueden tener una convergencia lenta, lo que significa que se necesitan muchas iteraciones para obtener una estimación precisa. Esto puede ser problemático cuando se dispone de recursos computacionales limitados.
+4. **Dificultad para representar relaciones no lineales**: Si bien los métodos de Monte Carlo son adecuados para abordar problemas complejos, pueden enfrentar dificultades para representar relaciones no lineales complejas entre las variables.
+
 # Opcional: off-policy
 
 ![[Pasted image 20230624162713.png]]

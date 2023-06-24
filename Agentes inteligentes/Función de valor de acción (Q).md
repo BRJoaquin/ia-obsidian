@@ -11,4 +11,4 @@ donde:
 - $R_{t+1}$ es la recompensa inmediata después del tiempo $t$.
 - $\gamma$ es el factor de descuento, que determina cuánto se valora la recompensa inmediata en comparación con las recompensas futuras.
 
-La principal diferencia entre la función de valor de estado y la función de valor de acción es que la primera se refiere a estados, mientras que la última se refiere a pares estado-acción.
+La principal diferencia entre la [[Función de valor de estado (V)]] y la función de valor de acción es que la primera se refiere a estados, mientras que la última se refiere a pares estado-acción.

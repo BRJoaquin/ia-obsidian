@@ -5,6 +5,8 @@ La función de recompensa guía al agente en su proceso de aprendizaje. El objet
 
 En términos formales, una función de recompensa es una función R(s, a, s') que devuelve un número real que representa la recompensa inmediata recibida después de transitar del estado s al estado s' debido a la acción a.
 
+# Función Recompensa vs Función Valor
+
 **Uno de los principales objetivos de los algoritmos de aprendizaje por refuerzo es estimar de manera efectiva la función de recompensa óptima** y, por tanto, aprender cómo actuar para maximizar la recompensa acumulativa. Sin embargo, es importante destacar que no todos los algoritmos de aprendizaje por refuerzo estiman directamente la función de recompensa. En su lugar, a menudo estiman funciones de valor, que representan el valor esperado a largo plazo de estar en un estado o de tomar una acción en un estado.
 
 Aquí hay dos conceptos relacionados importantes:

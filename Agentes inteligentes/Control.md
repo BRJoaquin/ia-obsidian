@@ -9,7 +9,7 @@ Existen varios algoritmos de control en el aprendizaje por refuerzo, incluyendo:
 - [[Métodos de Diferencias temporales]] como Q-Learning y SARSA.
 - [[Métodos Monte Carlo]].
 - [[Actor-Critic]].
-- Algoritmos basados en la política, como el [[grad.
-- Algoritmos basados en el valor, como la Iteración de la Política y la Iteración del Valor.
+- Algoritmos basados en la política, como el Gradiente de la Política.
+- Algoritmos basados en el valor, como la [[Iteración de Valor (value iteration)]] y [[Iteración de Política (policy iteration)]].
 
-Todos estos métodos tienen el objetivo común de encontrar la política que maximice la recompensa acumulada a largo plazo del agente.
+**Todos estos métodos tienen el objetivo común de encontrar la política que maximice la recompensa acumulada a largo plazo del agente.**

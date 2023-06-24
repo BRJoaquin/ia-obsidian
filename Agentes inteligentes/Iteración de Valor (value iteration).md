@@ -54,3 +54,4 @@ Supongamos que el factor de descuento $\gamma$ es 1 para simplificar los cálcul
 - $V(A) = max\{0 + V(B), 0 + V(C)\} = max\{0, 0\} = 0$
 - $V(B) = max\{1 + V(C), 0 + V(C)\} = max\{1, 0\} = 1$
 - $V(C) = max\{0 + V(C), 0 + V(C)\} = max\{0, 0\} = 0$
+

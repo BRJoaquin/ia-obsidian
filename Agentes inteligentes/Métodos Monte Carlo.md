@@ -21,11 +21,69 @@ Existen principalmente dos enfoques de muestreo en los métodos Monte Carlo: mue
 
 # Algoritmos
 
-$$
-\begin{verbatim} 
-Inicializar, para todos s ∈ S, a: N(s) ← 0 V(s) ← valor arbitrario Para cada episodio hacer: Generar un episodio siguiendo π: S0, A0, R1, ..., ST-1, AT-1, RT G ← 0 Loop para cada paso del episodio, t = T-1, T-2, ..., 0: G ← γG + R_t+1 Si S_t no aparece en S0, S1, ..., S_t-1: N(S_t) ← N(S_t) + 1 V(S_t) ← V(S_t) + (1/N(S_t)) * (G - V(S_t))
-\end{verbatim}
-$$
+## Estimación de V (first visit)
+
+Inicializar, para todos $s \in S$:
+    $N(s) \leftarrow 0$
+    $V(s) \leftarrow$ valor arbitrario
+
+Para cada episodio:
+    Generar un episodio siguiendo $\pi$: $S_0, A_0, R_1, ..., S_{T-1}, A_{T-1}, R_T$
+    $G \leftarrow 0$
+    Loop para cada paso del episodio, $t = T-1, T-2, ..., 0$:
+        $G \leftarrow \gamma G + R_{t+1}$
+        Si $S_t$ no aparece en $S_0, S_1, ..., S_{t-1}$:
+            $N(S_t) \leftarrow N(S_t) + 1$
+            $V(S_t) \leftarrow V(S_t) + (1/N(S_t)) * (G - V(S_t))$
+
+> En los algoritmos de Monte Carlo, `N(s)` representa la cantidad de veces que el agente ha visitado el estado `s` durante la generación de episodios. Esto se utiliza para calcular el promedio de las recompensas retornadas para cada estado en el proceso de estimación de la función de valor `V(s)`. En otras palabras, se utiliza para determinar cuánto peso dar a una nueva actualización de la función de valor para un estado dado.
+
+
+## Estimación de V (every visit)
+
+Inicializar, para todos $s \in S$:
+    $N(s) \leftarrow 0$
+    $V(s) \leftarrow$ valor arbitrario
+
+Para cada episodio:
+    Generar un episodio siguiendo $\pi$: $S_0, A_0, R_1, ..., S_{T-1}, A_{T-1}, R_T$
+    $G \leftarrow 0$
+    Loop para cada paso del episodio, $t = T-1, T-2, ..., 0$:
+        $G \leftarrow \gamma G + R_{t+1}$
+        $N(S_t) \leftarrow N(S_t) + 1$
+        $V(S_t) \leftarrow V(S_t) + (1/N(S_t)) * (G - V(S_t))$
+
+## Estimación de Q (first visit)
+
+Inicializar, para todos $s \in S, a \in A$:
+    $N(s, a) \leftarrow 0$
+    $Q(s, a) \leftarrow$ valor arbitrario
+
+Para cada episodio:
+    Generar un episodio siguiendo $\pi$: $S_0, A_0, R_1, ..., S_{T-1}, A_{T-1}, R_T$
+    $G \leftarrow 0$
+    Loop para cada paso del episodio, $t = T-1, T-2, ..., 0$:
+        $G \leftarrow \gamma G + R_{t+1}$
+        Si la pareja $(S_t, A_t)$ no aparece en $(S_0, A_0), (S_1, A_1), ..., (S_{t-1}, A_{t-1})$:
+            $N(S_t, A_t) \leftarrow N(S_t, A_t) + 1$
+            $Q(S_t, A_t) \leftarrow Q(S_t, A_t) + (1/N(S_t, A_t)) * (G - Q(S_t, A_t))$
+
+## Estimación de Q (every visit)
+
+Inicializar, para todos $s \in S, a \in A$:
+    $N(s, a) \leftarrow 0$
+    $Q(s, a) \leftarrow$ valor arbitrario
+
+Para cada episodio:
+    Generar un episodio siguiendo $\pi$: $S_0, A_0, R_1, ..., S_{T-1}, A_{T-1}, R_T$
+    $G \leftarrow 0$
+    Loop para cada paso del episodio, $t = T-1, T-2, ..., 0$:
+        $G \leftarrow \gamma G + R_{t+1}$
+        $N(S_t, A_t) \leftarrow N(S_t, A_t) + 1$
+        $Q(S_t, A_t) \leftarrow Q(S_t, A_t) + (1/N(S_t, A_t)) * (G - Q(S_t, A_t))$
+
+
+
 
 # Métodos Monte Carlo de Control
 

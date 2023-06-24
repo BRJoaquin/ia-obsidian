@@ -194,7 +194,7 @@ Si conocemos la función p(s' , r | s, a), podremos usar métodos basados en un 
 
 Si no conocemos p(s' , r | s, a), deberemos usar metodos sin modelo (model-free); ej.: [[Monte Carlo]] y [[Diferencias temporales]].
 
-# Conceptos Asociados
+# Clasificaciones de algoritmos
 
 ### 1. Tabulares y Aproximados
 

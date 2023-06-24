@@ -92,7 +92,7 @@ Para encontrar políticas óptimas, los métodos Monte Carlo utilizan generaliza
   ![[Pasted image 20230624162129.png]]
 Libro:
 ![[Pasted image 20230624184050.png]]
-> La idea principal es que si o si se explore todos los pares SA
+> La idea principal es que si o si se explore todos los pares estato accion alguna vez
 
 - **Monte Carlo con $\epsilon$-greedy**: Este método mejora la política volviéndola "greedy" con respecto a la función de valor actual con una probabilidad $1-\epsilon$, y selecciona una acción aleatoria con una probabilidad $\epsilon$.
   

@@ -12,6 +12,8 @@ En resumen, el algoritmo de iteración de política comienza con una política i
 
 ![[Pasted image 20230624121042.png]]
 
+> Una seria desventaja de Policy Iteration es que hacer una evaluacion completa de $π_k$ en cada paso demora mucho tiempo.
+
 ### Ejemplo Sencillo
 
 Consideremos un MDP muy simple con tres estados (A, B y C) y dos posibles acciones en cada estado (1 y 2). Supongamos que las recompensas son 0 para todas las transiciones excepto para la acción 1 en el estado B, que tiene una recompensa de 1. Supongamos además que todas las acciones llevan al agente al estado C, excepto la acción 1 en el estado A, que lleva al agente al estado B.
@@ -27,10 +29,44 @@ graph LR
 
 ```
 
-Inicialmente, podríamos comenzar con una política aleatoria, donde el agente elige entre las dos acciones con igual probabilidad en cada estado.
 
-En la fase de evaluación de la política, calcularíamos la función de valor de estado para esta política. Esto podría hacerse, por ejemplo, mediante la iteración de valor, donde se inicia con una función de valor de estado inicial arbitraria y se actualiza iterativamente la función de valor de estado utilizando la ecuación de Bellman hasta que converja.
+Realicemos una iteración de política para este MDP. Empezaremos con una política aleatoria donde el agente elige cada acción con igual probabilidad (0.5) en cada estado.
 
-Una vez que tenemos la función de valor de estado para la política actual, podemos pasar a la fase de mejora de la política. En cada estado, seleccionaríamos la acción que maximiza la suma de la recompensa inmediata y el valor del estado sucesor.
+Primero, necesitamos inicializar la función de valor de estado $V(s)$ para cada estado. Podemos comenzar con cero para cada estado.
 
-Repetiríamos este proceso hasta que la política no cambie entre iteraciones. La política resultante sería la política óptima para este MDP.
+- $V(A) = 0$
+- $V(B) = 0$
+- $V(C) = 0$
+
+Luego, repetimos los siguientes pasos hasta que la política no cambie entre iteraciones:
+
+1. **Evaluación de la Política:** Resolvemos la ecuación de Bellman para la función de valor de estado con la política actual.
+
+2. **Mejora de la Política:** Actualizamos la política seleccionando la acción que maximiza la suma de la recompensa inmediata y el valor del estado sucesor en cada estado.
+
+
+Supongamos que el factor de descuento $\gamma$ es 1 para simplificar los cálculos.
+
+Primero, evaluamos la política actual:
+- $V(A) = 0.5 * [0 + V(B)] + 0.5 * [0 + V(C)] = 0$
+- $V(B) = 0.5 * [1 + V(C)] + 0.5 * [0 + V(C)] = 0.5$
+- $V(C) = 0.5 * [0 + V(C)] + 0.5 * [0 + V(C)] = 0$
+
+Luego, mejoramos la política actual. Para cada estado, seleccionamos la acción que maximiza la suma de la recompensa inmediata y el valor del estado sucesor:
+
+- En el estado A, la acción 1 lleva al estado B con una recompensa de 0 y la acción 2 lleva al estado C también con una recompensa de 0. Sin embargo, dado que $V(B) > V(C)$, seleccionamos la acción 1.
+
+- En el estado B, la acción 1 lleva al estado C con una recompensa de 1 y la acción 2 lleva al estado C con una recompensa de 0. Así que seleccionamos la acción 1.
+
+- En el estado C, ambas acciones mantienen al agente en el estado C con una recompensa de 0. Así que podemos seleccionar cualquier acción.
+
+Por lo tanto, la política mejorada sería:
+- $\pi(A) = \{1: 1, 2: 0\}$
+- $\pi(B) = \{1: 1, 2: 0\}$
+- $\pi(C) = \{1: 0.5, 2: 0.5\}$
+
+Repetiríamos este proceso hasta que la política no cambie entre iteraciones. En este caso, la política ya no cambiará en las iteraciones siguientes, por lo que hemos encontrado la política óptima.
+
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_j6pvGEchWU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

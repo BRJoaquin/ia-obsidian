@@ -9,3 +9,4 @@ Puntos clave:
 - [[Procesos de Decisión de Markov]]
 - [[Ecuación de Bellman]]
 - [[Iteración de Política (policy iteration)]]
+- [[Iteración de Valor (value iteration)]]

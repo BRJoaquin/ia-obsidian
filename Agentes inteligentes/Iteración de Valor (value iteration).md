@@ -87,6 +87,4 @@ Por lo tanto la politica optima es:
 - $\pi^*(B) = \{1: 1, 2: 0\}$
 - $\pi^*(C) = \{1: 0.5, 2: 0.5\}$
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/B_lK-P68_Zc?start=767" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3idKCA2IIEk?start=878" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

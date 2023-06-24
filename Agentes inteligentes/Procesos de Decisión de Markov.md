@@ -186,13 +186,13 @@ En el aprendizaje por refuerzo, las funciones de valor se utilizan para medir cu
 
 > De la defincion de estas funciones sale la [[Ecuación de Bellman]]
 
-## Politica optima
+## Política optima
 
 El Aprendizaje Reforzado tiene distintos métodos para estimar v∗ y q∗, de modo de usar esas estimaciones para encontrar buenas políticas. 
 
 Si conocemos la función p(s' , r | s, a), podremos usar métodos basados en un modelo (model-based); ej.: [[Programación dinámica]]. 
 
-Si no conocemos p(s' , r | s, a), deberemos usar metodos sin modelo (model-free); ej.: [[Monte Carlo]] y [[Diferencias temporales]].
+Si no conocemos p(s' , r | s, a), deberemos usar métodos sin modelo (model-free); ej.: [[Métodos Monte Carlo]] y [[Diferencias temporales]].
 
 # Clasificaciones de algoritmos
 

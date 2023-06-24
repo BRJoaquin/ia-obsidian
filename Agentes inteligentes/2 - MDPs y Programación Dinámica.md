@@ -8,5 +8,6 @@ Puntos clave:
 - [[Función de valor]]
 - [[Procesos de Decisión de Markov]]
 - [[Ecuación de Bellman]]
+- [[Programación dinámica]]
 - [[Iteración de Política (policy iteration)]]
 - [[Iteración de Valor (value iteration)]]

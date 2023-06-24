@@ -1,2 +1,10 @@
 Puntos clave:
-- 
+- [[Estado]]
+- [[Acción]]
+- [[Recompensa]]
+- [[Retorno]]
+- [[Episodio]]
+- [[Factor de descuento]]
+- [[Función de valor]]
+- [[Procesos de Decisión de Markov]]
+- [[Ecuación de Bellman]]

@@ -12,4 +12,4 @@ Puntos clave:
 - [[Bandidos de k brazos]]
 - [[Explotación]]
 - [[Exploración]]
-- [[Meto]]
+- [[Métodos action-value]]

@@ -11,6 +11,7 @@ Por otro lado, una recompensa **no estocástica** es aquella que no cambia en ca
 # Estacionaria
 
 Una recompensa **estacionaria** es aquella que no cambia con el tiempo. Por ejemplo, en un juego de ajedrez, la recompensa por ganar siempre es la misma, independientemente de cuánto tiempo lleve el juego.
+Vease [[Problemas estacionarios]]
 
 # No Estacionaria
 

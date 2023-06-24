@@ -12,11 +12,11 @@ Cada uno de estos algoritmos tiene sus propias ventajas y desventajas, y se util
 
 ## Q-Learning
 
-El Q-learning es un método action-value que se utiliza para encontrar una política óptima en un [[Proceso de decisión de Markov (MDP)]]. Este método utiliza una función de valor de acción Q que le permite al agente aprender a tomar decisiones óptimas sin requerir un modelo del entorno. Uno de los aspectos clave del Q-learning es que es un método "fuera de la política", lo que significa que puede aprender la política óptima independientemente de la política que está siguiendo el agente.
+El Q-learning es un método action-value que se utiliza para encontrar una política óptima en un [[Proceso de decisión de Markov (MDP)]]. Este método utiliza una [[Función de valor]] de acción Q que le permite al agente aprender a tomar decisiones óptimas sin requerir un modelo del entorno. Uno de los aspectos clave del Q-learning es que es un método "fuera de la política"([[Off-policy]]), lo que significa que puede aprender la [[Política optima]] independientemente de la política que está siguiendo el agente.
 
 ## SARSA (State-Action-Reward-State-Action)
 
-SARSA es un algoritmo de control on-policy para el aprendizaje por refuerzo. A diferencia del Q-learning, SARSA es un método "en la política", lo que significa que el agente aprende el valor de la política que está siguiendo actualmente. Una característica importante de SARSA es que tiene en cuenta tanto el estado y la acción actuales (S, A) como el siguiente estado y la siguiente acción (S', A') en su actualización.
+SARSA es un algoritmo de control [[On-Policy]] para el aprendizaje por refuerzo. A diferencia del Q-learning, SARSA es un método "en la política", lo que significa que el agente aprende el valor de la política que está siguiendo actualmente. Una característica importante de SARSA es que tiene en cuenta tanto el estado y la acción actuales (S, A) como el siguiente estado y la siguiente acción (S', A') en su actualización.
 
 ## Deep Q-Networks (DQN)
 

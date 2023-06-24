@@ -5,7 +5,7 @@ Estos métodos se utilizan para resolver problemas de decisión secuencial, dond
 
 - [[Q-learning]]
 - [[SARSA]] (State-Action-Reward-State-Action)
-- [[Deep Q-Networks (DQN)]]
+- [[Aprendizaje Profundo por Refuerzo]]
 
 Cada uno de estos algoritmos tiene sus propias ventajas y desventajas, y se utilizan en diferentes tipos de problemas. En las siguientes secciones, discutiremos cada uno de estos métodos en detalle.
 

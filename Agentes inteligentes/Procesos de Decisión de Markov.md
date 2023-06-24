@@ -185,3 +185,11 @@ donde $E_\pi$ es la expectativa matemática bajo la política $\pi$ y $G_t$ es e
 En el aprendizaje por refuerzo, las funciones de valor se utilizan para medir cuán bueno es un estado o una acción en términos de la cantidad de recompensa que el agente puede esperar obtener en el futuro.
 
 > De la defincion de estas funciones sale la [[Ecuación de Bellman]]
+
+## Politica optima
+
+El Aprendizaje Reforzado tiene distintos métodos para estimar v∗ y q∗, de modo de usar esas estimaciones para encontrar buenas políticas. 
+
+Si conocemos la función p(s' , r | s, a), podremos usar métodos basados en un modelo (model-based); ej.: [[Programación dinámica]]. 
+
+Si no conocemos p(s' , r | s, a), deberemos usar metodos sin modelo (model-free); ej.: Monte Carlo y diferencias temporales.

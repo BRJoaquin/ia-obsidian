@@ -39,6 +39,14 @@ $$
 Q^*(s, a) = \sum_{s', r} p(s', r|s, a) [r + \gamma \max_{a' \in A} Q^*(s', a')]
 $$
 
+> Para un problema especifico, resolver explıcitamente las ecuaciones de optimalidad de Bellman nos permitirıa encontrar una polıtica optima. 
+> Sin embargo, **esta estrategia rara vez es factible**, porque se apoya en tres suposiciones improbables en la practica: 
+> (1) conocemos con precisión las dinámicas del ambiente; 
+> (2) tenemos suficientes recursos computacionales; 
+> (3) el problema cumple con la propiedad de Markov. 
+> 
+> Por ejemplo, el backgammon cumple (1) y (3), pero no (2). Entonces, tardarıamos miles de anos en computar v∗ y q∗. **En consecuencia, necesitamos resolver en forma aproximada estas ecuaciones, para estimar v∗ y q∗.**
+
 Estas ecuaciones son la base de algoritmos como la [[Iteración de Valor (value iteration)]] y la [[Iteración de Política (policy iteration)]], así como el [[Q-learning]] y los métodos de [[Deep Q-Networks (DQN)]].
 
 Es importante entender que la ecuación de Bellman es fundamentalmente una ecuación de consistencia que define la relación que debe existir entre el valor de un estado (o un par estado-acción) y el valor de sus sucesores. No es una ecuación que uno resolvería numéricamente para obtener los valores de estado (aunque existen métodos para hacer precisamente eso, como la iteración de valor, que básicamente resuelve la ecuación de Bellman).

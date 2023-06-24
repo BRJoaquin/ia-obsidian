@@ -107,11 +107,27 @@ El factor de descuento $\gamma$ (gamma) es un número entre 0 y 1. Si $\gamma = 
 
 # Ejemplos
 
-## No estocástico
+## No estocástico (determinista)
 
 Considera el siguiente ejemplo de un juego de cuadrícula. Un agente está en una cuadrícula de 3x3 y puede moverse en las cuatro direcciones: arriba, abajo, izquierda y derecha. A diferencia del ejemplo estocástico en este caso no hay incertidumbre en los movimientos del agente: si el agente decide moverse a la derecha, entonces definitivamente se moverá a la derecha. El objetivo del agente es moverse desde la esquina superior izquierda de la cuadrícula (estado (0,0)) a la esquina inferior derecha (estado (2,2)) en la menor cantidad de pasos posible. Recibe una recompensa de +1 cuando llega al estado objetivo y una recompensa de -1 por cada paso que da. Este es un ejemplo de un MDP determinista porque el próximo estado y la recompensa dependen completamente del estado actual y de la acción del agente sin ningún factor de aleatoriedad.
 
-## Estocástico
+```mermaid
+graph TB
+    A((0,0)) --> B((0,1))
+    B --> C((0,2))
+    A --> D((1,0))
+    D --> E((1,1))
+    B --> E
+    E --> F((1,2))
+    C --> F
+    D --> G((2,0))
+    E --> H((2,1))
+    F --> I((2,2 +1))
+    G --> H
+    H --> I
+```
+
+## Estocástico (no determinista)
  
 Considera el siguiente ejemplo de un juego simplificado. Un agente se encuentra en una cuadrícula de 3x3, donde cada celda es un estado. El agente puede moverse en las cuatro direcciones: arriba, abajo, izquierda y derecha. Sin embargo, hay un factor estocástico: para cualquier movimiento que el agente intente hacer, hay una probabilidad del 80% de que tenga éxito y una probabilidad del 20% de que el agente se mueva en una dirección perpendicular al movimiento intentado (distribuido de manera uniforme entre las dos direcciones perpendiculares). Si el movimiento intentado llevaría al agente fuera de la cuadrícula, entonces el agente permanece en su ubicación actual.
 
@@ -137,3 +153,33 @@ graph TB
     G -->|0.1| I((2,1))
     G -->|0.8| H
 ```
+
+
+# Políticas en MDP
+
+Una [[Política]], denotada comúnmente por $\pi$, es una regla que le dice al agente qué acción tomar en cada estado. En otras palabras, una política es un mapeo de los estados a las probabilidades de seleccionar cada posible acción. Si el agente está siguiendo la política $\pi$ en el momento $t$, entonces $\pi(a|s)$ es la probabilidad de que $A_t=a$ si $S_t=s$.
+
+En términos más sencillos, la política es como el "plan de acción" del agente. Una política podría ser tan simple como "siempre elige la misma acción" o tan compleja como "elige la acción que maximiza la suma esperada de las futuras recompensas, teniendo en cuenta las acciones anteriores y las recompensas recibidas".
+
+### Funciones de Valor en MDP
+
+Una función de valor es una predicción del futuro valor esperado (recompensa a largo plazo) que se puede obtener desde un estado o desde una pareja estado-acción, bajo una política específica. 
+
+Existen dos tipos principales de funciones de valor:
+
+1. **Función de valor de estado $V^\pi(s)$**: Es la recompensa total esperada comenzando en el estado $s$, y luego siguiendo la política $\pi$. 
+
+2. **Función de valor de acción $Q^\pi(s, a)$**: Es la recompensa total esperada tomando la acción $a$ en el estado $s$, y luego siguiendo la política $\pi$.
+
+Formalmente, estas funciones se definen como:
+
+$$
+V^\pi(s) = E_\pi \left[G_t | S_t = s \right] 
+$$
+$$
+Q^\pi(s, a) = E_\pi \left[G_t | S_t = s, A_t = a \right]
+$$
+
+donde $E_\pi$ es la expectativa matemática bajo la política $\pi$ y $G_t$ es el retorno. 
+
+En el aprendizaje por refuerzo, las funciones de valor se utilizan para medir cuán bueno es un estado o una acción en términos de la cantidad de recompensa que el agente puede esperar obtener en el futuro.

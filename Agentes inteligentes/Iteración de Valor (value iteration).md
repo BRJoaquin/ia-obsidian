@@ -55,3 +55,35 @@ Supongamos que el factor de descuento $\gamma$ es 1 para simplificar los cálcul
 - $V(B) = max\{1 + V(C), 0 + V(C)\} = max\{1, 0\} = 1$
 - $V(C) = max\{0 + V(C), 0 + V(C)\} = max\{0, 0\} = 0$
 
+Continuaremos con las iteraciones hasta que la función de valor de estado deje de cambiar significativamente. Después de la primera iteración, las funciones de valor son:
+
+- $V(A) = 0$
+- $V(B) = 1$
+- $V(C) = 0$
+
+En la siguiente iteración, calculamos los nuevos valores para los estados:
+
+- $V(A) = max\{0 + V(B), 0 + V(C)\} = max\{1, 0\} = 1$
+- $V(B) = max\{1 + V(C), 0 + V(C)\} = max\{1, 0\} = 1$
+- $V(C) = max\{0 + V(C), 0 + V(C)\} = max\{0, 0\} = 0$
+
+Observamos que los valores para los estados A y B han cambiado, por lo que realizamos otra iteración:
+
+- $V(A) = max\{0 + V(B), 0 + V(C)\} = max\{1, 0\} = 1$
+- $V(B) = max\{1 + V(C), 0 + V(C)\} = max\{1, 0\} = 1$
+- $V(C) = max\{0 + V(C), 0 + V(C)\} = max\{0, 0\} = 0$
+
+Ahora, las funciones de valor no cambian, por lo que hemos llegado a la convergencia. Por último, extraemos la política óptima. Para cada estado, seleccionamos la acción que maximiza la suma de la recompensa inmediata y el valor del estado sucesor:
+
+- En el estado A, la acción 1 lleva al estado B con una recompensa de 0 y la acción 2 lleva al estado C también con una recompensa de 0. Sin embargo, dado que $V(B) > V(C)$, seleccionamos la acción 1.
+
+- En el estado B, la acción 1 lleva al estado C con una recompensa de 1 y la acción 2 lleva al estado C con una recompensa de 0. Así que seleccionamos la acción 1.
+
+- En el estado C, ambas acciones mantienen al agente en el estado C con una recompensa de 0. Así que podemos seleccionar cualquier acción.
+
+
+Por lo tanto la politica optima es:
+- $\pi^*(A) = \{1: 1, 2: 0\}$
+- $\pi^*(B) = \{1: 1, 2: 0\}$
+- $\pi^*(C) = \{1: 0.5, 2: 0.5\}$
+

@@ -1,0 +1,5 @@
+  
+La función de valor de estado $V(s)$ de una política $\pi$ es el valor esperado de la suma total de las recompensas futuras descontadas (vease [[Factor de descuento]])a partir del estado $s$, cuando se sigue la política $\pi$. Esta función mide cuánto "valor" tiene un estado en términos de la cantidad de recompensa que un agente puede esperar obtener en el futuro a partir de ese estado, siguiendo una política específica. En términos formales, la función de valor de estado se define como: $$ V^{\pi}(s) = E^{\pi}\left[ R_{t+1} + \gamma R_{t+2} + \gamma^2 R_{t+3} + \ldots | S_t = s \right] $$ donde: 
+- $E^{\pi}$ es el valor esperado dado que el agente sigue la política $\pi$. 
+- $R_{t+1}$ es la recompensa inmediata después del tiempo $t$.
+- $\gamma$ es el factor de descuento, que determina cuánto se valora la recompensa inmediata en comparación con las recompensas futuras.

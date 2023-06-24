@@ -1,4 +1,4 @@
-El factor de descuento es un parámetro que se utiliza para determinar el peso relativo de las recompensas futuras en relación con las recompensas inmediatas. También se conoce como tasa de descuento o factor de descuento temporal.
+El factor de descuento es un parámetro que se utiliza para **determinar el peso relativo de las recompensas futuras en relación con las recompensas inmediatas**. También se conoce como tasa de descuento o factor de descuento temporal.
 
 El factor de descuento se representa generalmente con el símbolo $\gamma$ (gamma) y toma valores entre 0 y 1, inclusive. Un valor de $\gamma$ igual a 0 significa que el agente solo se preocupa por las recompensas inmediatas y no tiene en cuenta las futuras. Por otro lado, un valor de $\gamma$ igual a 1 indica que el agente tiene en cuenta todas las recompensas futuras sin importar cuán lejanas estén en el tiempo.
 

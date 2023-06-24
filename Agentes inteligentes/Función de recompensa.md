@@ -9,7 +9,7 @@ En términos formales, una función de recompensa es una función R(s, a, s') qu
 
 Aquí hay dos conceptos relacionados importantes:
 
-- **Función de valor de estado**: Denotada como **V(s)**, es la recompensa total esperada a partir de un estado s, dado que el agente sigue una política específica. [[Función de valor de estado]]
+- **Función de valor de estado**: Denotada como **V(s)**, es la recompensa total esperada a partir de un estado s, dado que el agente sigue una política específica. [[Función de valor de estado (V)]]
   
 - **Función de valor de acción**: También conocida como función **Q**, denotada como Q(s, a), es la recompensa total esperada después de tomar una acción a en un estado s, dado que el agente sigue una política específica después de esa acción. [[Función de valor de acción (Q)]]
 

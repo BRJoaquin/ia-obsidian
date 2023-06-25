@@ -51,3 +51,16 @@ Imagina un escenario donde tienes un agente que está aprendiendo a jugar al aje
 - **Monte Carlo (MC)**: En este caso, el agente juega una partida completa de ajedrez, eligiendo acciones de acuerdo con su política actual. Al final de la partida, el agente recibe una recompensa (1 si ganó, -1 si perdió, 0 si es un empate). Entonces, el agente retrocede y actualiza el valor de todos los estados (es decir, las posiciones del tablero de ajedrez) que experimentó durante la partida en función de la recompensa obtenida. Si el agente ganó, todos los estados que llevan a la victoria aumentarán su valor, y si el agente perdió, todos los estados que llevaron a la derrota disminuirán su valor. En este caso, la actualización se basa en el resultado "real" o experimentado de la partida.
 
 - **Diferencias Temporales (TD Learning)**: Por otro lado, en TD Learning (específicamente, TD(0)), el agente no tiene que esperar hasta el final de la partida para hacer una actualización. Después de cada movimiento, el agente observa la recompensa inmediata (que podría ser 0 si la partida aún no ha terminado) y la estimación de valor del siguiente estado (la posición del tablero de ajedrez después de su movimiento), y utiliza esta información para actualizar el valor del estado actual. Esta actualización se basa en una estimación (la estimación de valor del estado siguiente), lo que permite al agente aprender más rápidamente porque no tiene que esperar hasta el final de la partida para hacer una actualización.
+
+
+# Sesgo y varianza con respecto a MC
+
+1. Sesgo:
+    - Monte Carlo: Los métodos de Monte Carlo no tienen sesgo inherente en las estimaciones de los valores de la función de valor. Debido a que se basan en la promediación de las recompensas obtenidas a lo largo de múltiples episodios, las estimaciones tienden a ser imparciales. Sin embargo, el sesgo puede introducirse debido a la función de promediación utilizada o a errores de muestreo en la recopilación de datos.
+      
+    - TD(0): Los métodos TD(0) pueden tener un sesgo inherente en las estimaciones de la función de valor. Esto se debe a que los valores se actualizan utilizando estimaciones basadas en el siguiente estado y la siguiente acción, en lugar de esperar hasta el final del episodio como en Monte Carlo. Este sesgo puede afectar las estimaciones de la función de valor, especialmente si hay errores sistemáticos en las transiciones de estado y las recompensas.
+      
+2. Varianza:
+    - Monte Carlo: Los métodos de Monte Carlo tienden a tener una mayor varianza en las estimaciones de la función de valor debido a que se basan en promedios de múltiples episodios. Esto se debe a que las estimaciones se ven afectadas por la variabilidad inherente en los resultados de cada episodio, especialmente cuando el número de episodios es limitado.
+      
+    - TD(0): Los métodos TD(0) tienen una varianza más baja en las estimaciones de la función de valor en comparación con Monte Carlo. Esto se debe a que los valores se actualizan a lo largo del tiempo en cada transición de estado, lo que permite una propagación más rápida de las actualizaciones de valores y una convergencia más rápida en entornos estacionarios.

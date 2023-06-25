@@ -1,6 +1,6 @@
 ![[Pasted image 20230625122840.png]]
 
-El aprendizaje profundo, o deep learning en inglés, es una rama del campo de la [[Inteligencia Artificial]] que se basa en la construcción y entrenamiento de [[Agentes inteligentes/Redes neuronales artificiales]] para aprender y realizar tareas específicas. Las redes neuronales artificiales son modelos matemáticos **inspirados** en el funcionamiento del cerebro humano, compuestos por capas de unidades interconectadas llamadas [[Neuronas Artificiales]].
+El aprendizaje profundo, o deep learning en inglés, es una rama del campo de la [[Inteligencia Artificial]] que se basa en la construcción y entrenamiento de [[Machine Learning para IA/Redes neuronales artificiales]] para aprender y realizar tareas específicas. Las redes neuronales artificiales son modelos matemáticos **inspirados** en el funcionamiento del cerebro humano, compuestos por capas de unidades interconectadas llamadas [[Neuronas Artificiales]].
 
 
 El término "profundo" en el aprendizaje profundo hace referencia a la estructura de **múltiples capas** en una [[Machine Learning para IA/Redes Neuronales Artificiales]]. Estas capas están **diseñadas para extraer automáticamente características y patrones complejos de los datos de entrada**, permitiendo que el modelo aprenda representaciones cada vez más abstractas a medida que avanza en las capas. En otras palabras, **las capas iniciales pueden detectar características simples como líneas y bordes, mientras que las capas más profundas pueden aprender representaciones más complejas como formas, objetos y conceptos**.
@@ -13,7 +13,7 @@ Para empezar a aprender y practicar el aprendizaje profundo, es recomendable ten
 
 # Conceptos clave
 
-1. [[Machine Learning para IA/Redes Neuronales Artificiales]]: Son modelos matemáticos inspirados en el funcionamiento del cerebro humano, compuestos por capas de unidades interconectadas llamadas neuronas. Las redes neuronales son la base del aprendizaje profundo.
+1. [[Redes Neuronales Artificiales]]: Son modelos matemáticos inspirados en el funcionamiento del cerebro humano, compuestos por capas de unidades interconectadas llamadas neuronas. Las redes neuronales son la base del aprendizaje profundo.
 
 2. [[Neuronas Artificiales]]: Son unidades fundamentales en una red neuronal artificial. Reciben entradas, las combinan mediante una función de activación y generan una salida. Estas salidas se propagan a través de la red para realizar cálculos y tomar decisiones.
 
@@ -21,7 +21,7 @@ Para empezar a aprender y practicar el aprendizaje profundo, es recomendable ten
 
 4. [[Función de Activación]]: Es una función que determina la salida de una neurona dado un conjunto de entradas. La función de activación introduce no linealidad en la red neuronal y permite modelar relaciones y patrones complejos en los datos.
 
-5. [[Retropropagación]] del error: Es un algoritmo utilizado para entrenar redes neuronales. Consiste en calcular el error entre las salidas predichas y las salidas reales, y luego propagar ese error hacia atrás a través de la red para ajustar los pesos de las conexiones mediante el gradiente descendente.
+5. [[Retropropagación del error]]: Es un algoritmo utilizado para entrenar redes neuronales. Consiste en calcular el error entre las salidas predichas y las salidas reales, y luego propagar ese error hacia atrás a través de la red para ajustar los pesos de las conexiones mediante el gradiente descendente.
 
 6. [[Aprendizaje supervisado]]: Es un tipo de entrenamiento en el que se proporciona a la red neuronal un conjunto de datos etiquetados, es decir, datos de entrada junto con las salidas deseadas. La red aprende a relacionar los datos de entrada con las salidas correspondientes, de manera que pueda realizar predicciones precisas en nuevos datos.
 

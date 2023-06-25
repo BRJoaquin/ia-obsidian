@@ -1,3 +1,12 @@
 Puntos clave:
 - [[Deep Learning]]
-- 
+- [[Regresión lineal]]
+- [[Regresión logística]]
+- [[Decenso de Gradiente]]
+- [[Perceptron]]
+- [[Perceptron Multicapa]]
+- [[Retropropagación del error]]
+- [[Funcion de Activacion]]
+- [[Redes Neuronales Convolucionales]]
+- [[Convolucion]]
+- [[Pooling]]

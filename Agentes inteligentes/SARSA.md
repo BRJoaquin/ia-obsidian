@@ -54,17 +54,12 @@ vease: [[N-steps TD]]
 
 N-step SARSA es una extensión del algoritmo SARSA original que considera una secuencia de n pasos en lugar de un solo paso para actualizar la función de valor de estado-acción Q(s, a). La idea es equilibrar entre el aprendizaje basado en un solo paso (como en SARSA y Q-Learning) y el aprendizaje basado en un episodio completo (como en el algoritmo de Monte Carlo).
 
+![[Pasted image 20230625102623.png]]
+
 En el algoritmo SARSA original, la actualización de la función de valor se basa en la recompensa inmediata y la estimación del siguiente valor de estado-acción. Sin embargo, en n-step SARSA, la actualización se basa en la suma de las recompensas de los próximos n pasos y la estimación del valor de estado-acción después de n pasos.
 
 Por lo tanto, el algoritmo n-step SARSA sigue estos pasos:
 
-1. Inicializa la función de valor de estado-acción Q(s, a).
-2. Para cada episodio:
-    - Inicializa y guarda el estado y la acción iniciales (S_0, A_0).
-    - Para cada paso del episodio hasta T:
-        - Realiza la acción A_t, observa la recompensa R_{t+1} y el estado siguiente S_{t+1}.
-        - Si el tiempo t+n es menor o igual a T, selecciona y guarda la acción A_{t+n} (si t+n es menor que T, se elige una acción según la política actual; si t+n es igual a T, entonces A_{t+n} es una acción terminal).
-        - Si el tiempo t+n es mayor o igual a T+1, se realiza la actualización de la función de valor utilizando la suma de las recompensas de los n pasos y la estimación de la función de valor en el paso t+n.
-3. Repite los pasos hasta que la política converja o se alcance un número máximo de episodios.
+![[Pasted image 20230625102639.png]]
 
 La ventaja de n-step SARSA es que puede aprender más rápidamente que el SARSA original porque utiliza más información para cada actualización. Sin embargo, también puede ser más complicado de implementar debido a la necesidad de gestionar una secuencia de n pasos, y el rendimiento puede depender de la elección correcta de n.

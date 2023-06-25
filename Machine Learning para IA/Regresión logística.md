@@ -22,18 +22,22 @@ La función $1/(1+e^{-z})$ es conocida como la función logística o [[Sigmoide]
 
 El aprendizaje se realiza utilizando el método de [[Máxima Verosimilitud]]. En resumen, este método trata de encontrar los parámetros del modelo que maximizan la probabilidad de los datos observados.
 
-### Evaluación
+# Evaluación
 
-El rendimiento de un modelo de Regresión Logística puede ser evaluado utilizando varias métricas, como la precisión, la curva ROC, el área bajo la curva ROC (AUC-ROC), la matriz de confusión, etc.
+El rendimiento de un modelo de Regresión Logística puede ser evaluado utilizando varias métricas, como la precisión, la [[Curva ROC]], el área bajo la curva ROC ([[AUC-ROC]]), la [[Matriz de confusion]], etc.
 
-### Ventajas
+# Ventajas
 
 - Puede proporcionar probabilidades para las predicciones.
 - Puede manejar relaciones no lineales.
 - Es simple y fácil de implementar.
 
-### Desventajas
+# Desventajas
 
 - No es capaz de manejar relaciones complejas.
 - Tiene dificultades con las variables categóricas con múltiples niveles.
 - Es sensible a la colinealidad en los datos.
+  
+# Regresión logística multinomial (Softmax)
+
+La regresión logística también se puede generalizar a problemas de clasificación con más de dos clases. Esto se conoce como regresión logística multinomial, o regresión Softmax. En lugar de modelar la probabilidad de que la observación pertenezca a una clase (como en la regresión logística binaria), la regresión logística multinomial modela la probabilidad de que la observación pertenezca a cada clase. Para un problema de clasificación con $K$ clases. vease

@@ -19,4 +19,9 @@ En el caso del Perceptrón Simple, la función de activación es una función de
 
 Los pesos y el sesgo del Perceptrón se ajustan durante el entrenamiento para minimizar la discrepancia entre las predicciones del Perceptrón y las etiquetas verdaderas. Esto se hace a través de un proceso iterativo en el que se ajustan los pesos en proporción al error cometido en las predicciones.
 
-Aunque el Perceptrón Simple es un modelo simple y no puede resolver problemas que no sean linealmente separables, fue la base para el desarrollo de las redes neuronales multicapa y los algoritmos de aprendizaje profundo, que son capaces de aprender representaciones más complejas y resolver problemas no lineales.
+Aunque el Perceptrón Simple es un modelo simple y no puede resolver problemas que no sean linealmente separables, fue la base para el desarrollo de las [[Perceptron Multicapa]] y los algoritmos de [[Deep Learning]], que son capaces de aprender representaciones más complejas y resolver problemas no lineales.
+
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uiJiZ3JDafY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+

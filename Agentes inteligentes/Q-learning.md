@@ -42,13 +42,17 @@ Un desafío en el Q-learning es que la tabla Q puede volverse muy grande si hay 
 
 # Double Q-learning
 
-Double Q-learning es una mejora del algoritmo de Q-learning estándar, que fue propuesto para abordar un problema de sobreestimación en Q-learning. En el Q-learning, se utilizan los valores Q estimados para seleccionar tanto la mejor acción como para calcular la recompensa estimada de esa acción. Este procedimiento puede llevar a sobreestimaciones sistemáticas de los valores Q, lo que a su vez puede conducir a una política subóptima.
+Double Q-learning es una mejora del algoritmo de Q-learning estándar, que fue propuesto para abordar un problema de sobreestimación en Q-learning. En el Q-learning, se utilizan los valores Q estimados para seleccionar tanto la mejor acción como para calcular la recompensa estimada de esa acción. **Este procedimiento puede llevar a sobreestimaciones sistemáticas de los valores Q, lo que a su vez puede conducir a una política subóptima**.
 
-El Double Q-learning intenta solucionar este problema al desacoplar la selección de acciones de la estimación de la recompensa de la acción. Para hacer esto, se utilizan dos redes de Q-learning independientes. Una red se utiliza para determinar la mejor acción para un estado dado (esta es la acción que maximiza el valor Q estimado), y luego la otra red se utiliza para estimar la recompensa de tomar esa acción. Al alternar entre las dos redes durante el proceso de aprendizaje, se puede reducir la sobreestimación de los valores Q.
+El problema de sobreestimación en Q-learning se produce debido a la forma en que se actualizan los valores Q. En cada paso, el Q-learning estima la recompensa futura para una acción utilizando el máximo valor Q entre todas las acciones posibles en el próximo estado. Si las estimaciones de los valores Q tienen algún error, y en la práctica a menudo lo tienen, especialmente al principio del proceso de aprendizaje, tomar el máximo sobreestima sistemáticamente el verdadero valor Q. Esto puede llevar a una política subóptima porque el agente puede preferir acciones que tienen estimaciones de valor Q sobreestimadas.
+
+El Double Q-learning intenta solucionar este problema al **desacoplar la selección de acciones de la estimación de la recompensa de la acción**. Para hacer esto, se utilizan dos redes de Q-learning independientes. **Una red se utiliza para determinar la mejor acción para un estado dado (esta es la acción que maximiza el valor Q estimado), y luego la otra red se utiliza para estimar la recompensa de tomar esa acción**. Al alternar entre las dos redes durante el proceso de aprendizaje, se puede reducir la sobreestimación de los valores Q.
 
 Aquí está la fórmula de actualización para el Double Q-learning:
 
+$$\large
 Q1(s, a) = Q1(s, a) + α * [r + γ * Q2(s', argmax_a Q1(s', a)) - Q1(s, a)]
+$$
 
 Donde:
 
@@ -59,11 +63,11 @@ Donde:
 - argmax_a Q1(s', a) es la acción que maximiza el valor Q según la primera red para el estado s'
 - α es la tasa de aprendizaje
 - γ es el factor de descuento
+  
+> [!warning]
+> Se van alternando es su actualización
 
 De esta manera, la actualización de los valores Q está desacoplada, lo que puede resultar en una convergencia más estable y una política más óptima en comparación con el Q-learning estándar. La técnica de Double Q-learning ha demostrado ser eficaz en una variedad de tareas y es una de las técnicas utilizadas en el algoritmo de Deep Q-Networks (DQN) que logró un rendimiento superhumano en muchos juegos de Atari.
-
-
-
 
 
 # Video

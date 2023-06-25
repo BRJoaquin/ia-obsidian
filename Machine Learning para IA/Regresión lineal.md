@@ -23,8 +23,6 @@ La regresión lineal es una técnica simple pero poderosa que se usa ampliamente
 
 # Estimación de coeficientes
 
-La regresión lineal estima los coeficientes (a veces también llamados "pesos" o "parámetros") de la ecuación de regresión al minimizar la suma de los cuadrados de los errores, también conocida como error cuadrático. Esto es conocido como el método de mínimos cuadrados ordinarios (Ordinary Least Squares, OLS).
-
 La regresión lineal simple tiene la siguiente forma:
 
 $$\Large
@@ -38,32 +36,16 @@ Donde:
 - $b$ es el coeficiente de la variable predictora $X$. Representa la pendiente de la línea, es decir, cuánto cambia $y$ por cada cambio unitario en $X$.
 - $\epsilon$ es el error, que es la diferencia entre la predicción del modelo y el valor real.
 
-La idea es encontrar los valores de $a$ y $b$ que minimizan la suma de los cuadrados de los errores ($\epsilon$). Esto se conoce como el método de [[Mínimos Cuadrados Ordinarios]] (Ordinary Least Squares, OLS).
+La idea es encontrar los valores de $a$ y $b$ que minimizan la suma de los cuadrados de los errores ($\epsilon$). Esto se conoce como el método de [[Mínimos Cuadrados Ordinarios]](Ordinary Least Squares, OLS).
 
 En un modelo de regresión lineal múltiple, donde hay más de una variable predictora, la ecuación se expande para incluir todos los predictores, pero la idea general sigue siendo la misma:
 
-$$\Larfgew
+$$\Large
 y = a + b_1X_1 + b_2X_2 + ... + b_nX_n + \epsilon
 $$
 
 Aquí, $X_1, X_2, ..., X_n$ son las variables predictoras y $b_1, b_2, ..., b_n$ son sus coeficientes respectivos.
 
-
-Donde:
-
-- $y$ es la variable objetivo.
-- $X$ es la variable predictora.
-- $a$ es la intersección o el coeficiente de sesgo.
-- $b$ es el coeficiente de la variable predictora $X$.
-- $\epsilon$ es el error, la diferencia entre la predicción del modelo y el valor real.
-
-El objetivo es encontrar los valores de $a$ y $b$ que minimizan la suma de los cuadrados de los errores ($\epsilon$).
-
-En la práctica, las bibliotecas de software de aprendizaje automático, como scikit-learn en Python, realizan estos cálculos automáticamente cuando se entrena un modelo de regresión lineal.
-
-Para un modelo de regresión lineal múltiple con más de una variable predictora, el proceso es similar pero implica operaciones de álgebra matricial. Los coeficientes se suelen estimar utilizando métodos numéricos, como el método de descenso del gradiente.
-
-Es importante tener en cuenta que estos métodos asumen que los errores están distribuidos normalmente y que las variables predictores no están altamente correlacionadas entre sí (una condición conocida como multicolinealidad). Si estas condiciones no se cumplen, las estimaciones de los coeficientes pueden ser inexactas.
 
 # Regresión lineal vs Regresión logística
 

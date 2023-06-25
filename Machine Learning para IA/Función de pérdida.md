@@ -8,7 +8,7 @@ Una función de pérdida, también conocida como función de costo o de error, e
 
 La elección de la función de pérdida adecuada depende del tipo de problema y del objetivo específico. Algunas funciones de pérdida comunes incluyen:
 
-1.  **Error cuadrático medio (MSE)**: Es una función de pérdida comúnmente utilizada para problemas de regresión. Mide la suma de las diferencias al cuadrado entre las predicciones del modelo y los valores reales. Un valor menor de MSE indica un mejor ajuste del modelo a los datos.
+1.  **Error cuadrático medio (MSE)**: Es una función de pérdida comúnmente utilizada para problemas de regresión. Mide la suma de las diferencias al cuadrado entre las predicciones del modelo y los valores reales. Un valor menor de MSE indica un mejor ajuste del modelo a los datos. vease [[MSE]]
 
 $$\Large
 \text{MSE} = \frac{1}{n} \sum_{i=1}^n (y_i - \hat{y}_i)^2
@@ -39,7 +39,8 @@ Donde $y_i$ es la etiqueta real (-1 o 1) y $ŷ_i$ es la predicción del modelo.
 
 4. **La función de pérdida 0-1**: también conocida como pérdida de clasificación errónea, es una función de pérdida utilizada en problemas de [[Clasificación]]. Esta función de pérdida asigna un valor de 1 cuando la predicción del modelo es incorrecta y un valor de 0 cuando la predicción es correcta.
    
-5.  **RSS (Residual Sum of Squares)**: La suma de los cuadrados de los residuos es una medida de la discrepancia entre los valores predichos por el modelo y los valores reales. Es la suma de las diferencias al cuadrado entre las predicciones del modelo y los valores reales.   $$\Large RSS = Σ(y_i - ŷ_i)^2$$donde $y_i$ es el valor real, $ŷ_i$ es la predicción del modelo y la suma se realiza sobre todos los ejemplos en el conjunto de datos.
+5.  **RSS (Residual Sum of Squares)**: La suma de los cuadrados de los residuos es una medida de la discrepancia entre los valores predichos por el modelo y los valores reales. Es la suma de las diferencias al cuadrado entre las predicciones del modelo y los valores reales.   vease 
+   $$\Large RSS = Σ(y_i - ŷ_i)^2$$donde $y_i$ es el valor real, $ŷ_i$ es la predicción del modelo y la suma se realiza sobre todos los ejemplos en el conjunto de datos.
    
 6. **RMSE (Root Mean Squared Error)**: El error cuadrático medio es otra medida de la discrepancia entre las predicciones del modelo y los valores reales. Es la raíz cuadrada del promedio de las diferencias al cuadrado entre las predicciones del modelo y los valores reales.
 $$\Large RMSE = sqrt((1/n) * Σ(y_i - ŷ_i)^2)$$donde $y_i$ es el valor real, $ŷ_i$ es la predicción del modelo, $n$ es el número de ejemplos en el conjunto de datos y la suma se realiza sobre todos los ejemplos.

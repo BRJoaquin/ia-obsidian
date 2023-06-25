@@ -45,9 +45,9 @@ Una definición más formal sería: el aprendizaje automático es una rama de la
 
 18.  [[Validación cruzada (Cross-validation)]]: Técnica utilizada para evaluar el rendimiento de un modelo de aprendizaje automático dividiendo el conjunto de datos en subconjuntos y realizando múltiples iteraciones de entrenamiento y validación.
 
-19.  **Redes neuronales artificiales**: Familia de modelos de aprendizaje automático inspirados en la estructura y funcionamiento del cerebro humano. Consisten en capas de nodos o neuronas interconectadas que procesan información y aprenden a realizar tareas complejas.
+19.  **Redes neuronales artificiales**: Familia de modelos de aprendizaje automático inspirados en la estructura y funcionamiento del cerebro humano. Consisten en capas de nodos o neuronas interconectadas que procesan información y aprenden a realizar tareas complejas. vease [[Redes Neuronales Artificiales]]
 
-20.  **Deep learning (Aprendizaje profundo)**: Subcampo del aprendizaje automático que se centra en el uso de redes neuronales artificiales con múltiples capas ocultas. Estos modelos son capaces de aprender representaciones jerárquicas de los datos y han demostrado un gran éxito en tareas como el procesamiento del lenguaje natural y la visión por computadora.
+20.  **Deep learning (Aprendizaje profundo)**: Subcampo del aprendizaje automático que se centra en el uso de redes neuronales artificiales con múltiples capas ocultas. Estos modelos son capaces de aprender representaciones jerárquicas de los datos y han demostrado un gran éxito en tareas como el procesamiento del lenguaje natural y la visión por computadora. [[Deep Learning]]
 
 21.  [[Hiperparámetros]]: Parámetros de un modelo de aprendizaje automático que no se aprenden durante el entrenamiento, sino que se ajustan manualmente o mediante técnicas de optimización. Ejemplos de hiperparámetros incluyen la tasa de aprendizaje, la cantidad de capas en una red neuronal y el número de árboles en un bosque aleatorio.
 

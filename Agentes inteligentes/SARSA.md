@@ -47,6 +47,40 @@ Tanto Q-learning como SARSA son algoritmos de aprendizaje por refuerzo que utili
 
 En general, la elección entre Q-learning y SARSA depende del problema específico, de las características del entorno y de la importancia de la exploración versus la explotación.
 
+## Cliff Walking
+
+![[Pasted image 20230625104944.png]]
+
+
+El ejemplo del Cliff Walking es un problema clásico de aprendizaje por refuerzo que se usa a menudo para ilustrar las diferencias entre diferentes algoritmos de aprendizaje por refuerzo, incluyendo SARSA y Q-Learning.
+
+### Descripción del Problema del Cliff Walking
+
+Imagina un agente que necesita llegar desde un punto de inicio a un punto de destino en una cuadrícula. Hay un acantilado en el medio. Si el agente se cae al acantilado, recibe una gran penalización y se reinicia al punto de inicio.
+
+- El punto de inicio está en la esquina inferior izquierda de la cuadrícula, y el punto de destino está en la esquina inferior derecha.
+- El agente puede moverse en cuatro direcciones: arriba, abajo, izquierda y derecha.
+- Cada movimiento recibe una recompensa de -1, excepto caer al acantilado, que recibe una recompensa de -100 y envía al agente de vuelta al inicio.
+- El episodio termina cuando el agente alcanza el punto de destino.
+
+### SARSA en el Problema del Cliff Walking
+
+SARSA es un algoritmo on-policy, lo que significa que sigue y mejora la misma política que está siendo aprendida. En el problema del Cliff Walking, SARSA tiende a aprender una política que evita el borde del acantilado y toma un camino seguro y largo hacia el objetivo.
+
+Esto es porque SARSA toma en consideración que está siguiendo una política ε-greedy durante el aprendizaje. La política ε-greedy significa que hay una pequeña posibilidad de que el agente tome una acción aleatoria en lugar de la acción óptima. Por lo tanto, el agente aprende a ser cauteloso con el acantilado porque sabe que podría caerse debido a la exploración aleatoria.
+
+### Q-Learning en el Problema del Cliff Walking
+
+Q-Learning, por otro lado, es un algoritmo off-policy. Aprende la política óptima asumiendo que siempre tomará la mejor acción posible sin tener en cuenta la política que está siguiendo durante el aprendizaje.
+
+En el problema del Cliff Walking, Q-Learning tiende a aprender la política que va por el camino más rápido y más peligroso al borde del acantilado. Esto se debe a que Q-Learning asume que siempre tomará la mejor acción y no caerá al acantilado.
+
+### Resumen
+
+Aunque ambos algoritmos pueden aprender a resolver el problema, a menudo se observa que SARSA es más seguro pero más lento, mientras que Q-Learning es más rápido pero más arriesgado. Esto es un reflejo de la diferencia entre los métodos on-policy y off-policy en el aprendizaje por refuerzo.
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AJiG3ykOxmY?start=1308" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 # N-step SARSA
 

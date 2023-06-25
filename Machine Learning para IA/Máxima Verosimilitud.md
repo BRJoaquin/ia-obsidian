@@ -1,13 +1,10 @@
-Softmax es una función de activación utilizada en el contexto del aprendizaje automático y las redes neuronales. Esta función toma un vector de números reales y produce un nuevo vector en el que cada elemento se encuentra en el rango de 0 a 1, y la suma de todos los elementos es igual a 1. Es decir, la función softmax mapea los valores de entrada en una distribución de probabilidad.
 
-Matemáticamente, la función softmax se define como:
+El método de **Máxima Verosimilitud** es un enfoque de estimación de parámetros en estadísticas y aprendizaje automático. El objetivo es encontrar los parámetros del modelo que maximizan la verosimilitud de los datos observados.
 
-softmax(x_i) = exp(x_i) / sum(exp(x_j)) para todo i
+La verosimilitud es la probabilidad de los datos observados dado un conjunto específico de parámetros del modelo. En términos matemáticos, si tenemos un conjunto de datos $D = \{x_1, x_2, ..., x_n\}$ y un modelo paramétrico con parámetros $\theta$, la verosimilitud se define como $L(\theta|D) = P(D|\theta)$.
 
-En esta fórmula, "x_i" es el valor de entrada en la posición i, "exp" es la función exponencial y la suma se realiza sobre todos los elementos del vector.
+El principio de la máxima verosimilitud establece que debemos elegir los parámetros $\theta$ que maximizan $L(\theta|D)$.
 
-La función softmax es utilizada comúnmente en problemas de clasificación multinomial, incluyendo la regresión logística multinomial. En la regresión logística multinomial, se busca clasificar una variable dependiente categórica con más de dos categorías utilizando una combinación lineal de variables independientes. La función softmax se aplica a la salida de la combinación lineal para obtener una distribución de probabilidad sobre las distintas categorías.
+En la práctica, a menudo es más fácil trabajar con la log-verosimilitud, que es simplemente el logaritmo de la verosimilitud. La maximización de la log-verosimilitud es equivalente a la maximización de la verosimilitud porque el logaritmo es una función monótona creciente.
 
-La relación entre softmax y la regresión logística multinomial radica en que la función softmax permite asignar probabilidades a cada una de las categorías de salida en un problema de clasificación multinomial. Cada elemento del vector de salida softmax representa la probabilidad de pertenecer a una categoría específica, y la suma de todas las probabilidades es igual a 1.
-
-En la regresión logística multinomial, se utiliza la función softmax como función de activación en la capa de salida de una red neuronal o como parte del modelo de regresión logística para estimar las probabilidades de pertenencia a cada clase. Esto permite realizar predicciones y tomar decisiones basadas en las probabilidades asignadas a cada categoría de salida.
+En el contexto del aprendizaje automático, la maximización de la verosimilitud puede interpretarse como un proceso de aprendizaje que ajusta los parámetros del modelo para hacer que los datos observados sean lo más probables posible bajo el modelo. Por ejemplo, en la [[Regresión logística]], utilizamos la maximización de la verosimilitud para encontrar los coeficientes que hacen que las clasificaciones observadas sean lo más probables posible.

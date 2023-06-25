@@ -8,3 +8,5 @@ El principio de la máxima verosimilitud establece que debemos elegir los parám
 En la práctica, a menudo es más fácil trabajar con la log-verosimilitud, que es simplemente el logaritmo de la verosimilitud. La maximización de la log-verosimilitud es equivalente a la maximización de la verosimilitud porque el logaritmo es una función monótona creciente.
 
 En el contexto del aprendizaje automático, la maximización de la verosimilitud puede interpretarse como un proceso de aprendizaje que ajusta los parámetros del modelo para hacer que los datos observados sean lo más probables posible bajo el modelo. Por ejemplo, en la [[Regresión logística]], utilizamos la maximización de la verosimilitud para encontrar los coeficientes que hacen que las clasificaciones observadas sean lo más probables posible.
+
+

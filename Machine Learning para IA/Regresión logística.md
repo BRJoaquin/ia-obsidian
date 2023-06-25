@@ -20,7 +20,28 @@ La función $1/(1+e^{-z})$ es conocida como la función logística o [[Sigmoide]
 
 # Aprendizaje
 
-El aprendizaje se realiza utilizando el método de [[Máxima Verosimilitud]]. En resumen, este método trata de encontrar los parámetros del modelo que maximizan la probabilidad de los datos observados.
+En la **Regresión Logística**, los pesos (o coeficientes) para las variables predictoras se ajustan durante el proceso de entrenamiento para minimizar la función de pérdida, que a menudo es la pérdida de [[Entropía Cruzada]] en este caso.
+
+El objetivo del ajuste de pesos es encontrar los valores que hacen que las predicciones del modelo se alineen lo más cerca posible de las etiquetas verdaderas de los datos de entrenamiento. 
+
+El ajuste de los pesos se realiza generalmente a través de un algoritmo de optimización, como el **descenso de gradiente**. En cada iteración del entrenamiento, el algoritmo de optimización calcula el gradiente de la función de pérdida con respecto a cada peso, y luego actualiza los pesos en la dirección que reduce la pérdida.
+
+Para un peso $w_i$ y una tasa de aprendizaje $\alpha$, la actualización de pesos puede expresarse como:
+
+$$\Large
+w_i := w_i - \alpha \frac{\partial L}{\partial w_i}
+$$
+
+donde:
+- $L$ es la función de pérdida.
+- $\frac{\partial L}{\partial w_i}$ es el gradiente de $L$ con respecto a $w_i$.
+
+El tamaño de la actualización depende del gradiente y de la tasa de aprendizaje. Una tasa de aprendizaje más alta resulta en cambios más grandes en los pesos, mientras que una tasa de aprendizaje más baja resulta en cambios más pequeños.
+
+Es importante destacar que el ajuste de los pesos debe hacerse de tal manera que el modelo generalice bien a los nuevos datos, no solo a los datos de entrenamiento. Para evitar el [[Sobreajuste (Overfitting)]], a menudo se utiliza alguna forma de regularización, que añade un término de penalización a la función de pérdida para limitar la magnitud de los pesos.
+
+vease: [[Método de Máxima Verosimilitud]]
+
 
 # Evaluación
 

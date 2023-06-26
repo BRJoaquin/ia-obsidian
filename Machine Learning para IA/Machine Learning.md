@@ -23,7 +23,7 @@ Una definición más formal sería: el aprendizaje automático es una rama de la
 
 7.  [[Función de pérdida]]: Medida cuantitativa de cuán lejos están las predicciones del modelo de los resultados reales. El objetivo del entrenamiento es minimizar esta función.
 
-8.  [[Gradiente descendente]]: Método de optimización utilizado para minimizar la función de pérdida ajustando iterativamente los parámetros del modelo en función del gradiente (derivada) de la función de pérdida.
+8.  [[Decenso de Gradiente]]: Método de optimización utilizado para minimizar la función de pérdida ajustando iterativamente los parámetros del modelo en función del gradiente (derivada) de la función de pérdida.
 
 9.  [[Aprendizaje supervisado]]: Tipo de aprendizaje automático en el que el modelo se entrena con datos etiquetados, es decir, con ejemplos de entradas y las salidas correspondientes. Ejemplos de tareas de aprendizaje supervisado incluyen clasificación y regresión.
    

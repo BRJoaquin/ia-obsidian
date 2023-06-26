@@ -19,6 +19,6 @@ donde:
 - $f$ es la función de activación.
 - $\cdot$ denota el producto escalar.
 
-En un MLP, la función de activación a menudo no es una función de umbral, sino una función no lineal como la función logística (o sigmoide), la función tangente hiperbólica o la función ReLU (Rectified Linear Unit).
+En un MLP, la función de activación a menudo no es una [[Función Umbral]], sino una función no lineal como la [[Función Sigmoide]] (o [[Sigmoide]]), la función tangente hiperbólica o la [[Función ReLu]] (Rectified Linear Unit).
 
-El MLP se entrena ajustando los pesos y los sesgos para minimizar una función de pérdida, a menudo utilizando un algoritmo de optimización como el descenso de gradiente. El proceso de entrenamiento se realiza a través de un proceso llamado **retropropagación**, que consiste en pasar el error de la salida hacia atrás a través de la red para ajustar los pesos y los sesgos.
+El MLP se entrena ajustando los pesos y los sesgos para minimizar una función de pérdida, a menudo utilizando un algoritmo de optimización como el [[Decenso de Gradiente]]. El proceso de entrenamiento se realiza a través de un proceso llamado **retropropagación**, que consiste en pasar el error de la salida hacia atrás a través de la red para ajustar los pesos y los sesgos.

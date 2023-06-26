@@ -20,7 +20,7 @@ La función $1/(1+e^{-z})$ es conocida como la función logística o [[Sigmoide]
 
 # Aprendizaje
 
-En la **Regresión Logística**, los pesos (o coeficientes) para las variables predictoras se ajustan durante el proceso de entrenamiento para minimizar la función de pérdida, que a menudo es la pérdida de [[Entropía Cruzada]] en este caso.
+En la **Regresión Logística**, los pesos (o coeficientes) para las variables predictoras se ajustan durante el proceso de entrenamiento para minimizar la función de pérdida, que a menudo es la pérdida de [[Entropía Cruzada binaria (log loss)]] en este caso.
 
 El objetivo del ajuste de pesos es encontrar los valores que hacen que las predicciones del modelo se alineen lo más cerca posible de las etiquetas verdaderas de los datos de entrenamiento. 
 

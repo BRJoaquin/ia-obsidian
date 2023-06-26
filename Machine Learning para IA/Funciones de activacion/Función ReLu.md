@@ -1,5 +1,5 @@
 
-La **ReLU** (Unidad Lineal Rectificada) es una [[Función de Activación]] muy comúnmente utilizada en las [[Redes Neuronales Artificiales]] y el [[Deep Learning]]. **Se ha convertido en la función de activación por defecto para muchos tipos de redes neuronales porque produce resultados muy buenos en la práctica y es computacionalmente eficiente**.
+La **ReLU** (Unidad Lineal Rectificada) es una [[Agentes inteligentes/Función de Activación]] muy comúnmente utilizada en las [[Redes Neuronales Artificiales]] y el [[Deep Learning]]. **Se ha convertido en la función de activación por defecto para muchos tipos de redes neuronales porque produce resultados muy buenos en la práctica y es computacionalmente eficiente**.
 
 ![[Pasted image 20230626090250.png]]
 

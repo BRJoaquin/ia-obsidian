@@ -1,4 +1,4 @@
-Softmax es una [[Función de Activación]] utilizada en el contexto del [[Machine Learning]] y las [[Redes Neuronales Artificiales]]. Esta función toma un vector de números reales y produce un nuevo vector en el que cada elemento se encuentra en el rango de 0 a 1, y la suma de todos los elementos es igual a 1. Es decir, la función softmax mapea los valores de entrada en una distribución de probabilidad.
+Softmax es una [[Agentes inteligentes/Función de Activación]] utilizada en el contexto del [[Machine Learning]] y las [[Redes Neuronales Artificiales]]. Esta función toma un vector de números reales y produce un nuevo vector en el que cada elemento se encuentra en el rango de 0 a 1, y la suma de todos los elementos es igual a 1. Es decir, la función softmax mapea los valores de entrada en una distribución de probabilidad.
 
 Matemáticamente, la función softmax se define como:
 $$\Large

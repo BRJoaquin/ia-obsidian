@@ -6,7 +6,7 @@ Puntos clave:
 - [[Perceptrón]]
 - [[Perceptrón Multicapa]]
 - [[Retropropagación del error]]
-- [[Funcion de Activacion]]
+- [[Función de Activación]]
 - [[Redes Neuronales Convolucionales]]
 - [[Convolucion]]
 - [[Pooling]]

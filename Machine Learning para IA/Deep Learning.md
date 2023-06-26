@@ -19,7 +19,7 @@ Para empezar a aprender y practicar el aprendizaje profundo, es recomendable ten
 
 3. [[Capas (DL)]]: Las redes neuronales se organizan en capas, que son conjuntos de neuronas. Las capas pueden ser de diferentes tipos, como capas de entrada, capas ocultas y capas de salida. Cada capa procesa la información y la pasa a la siguiente capa.
 
-4. [[Función de Activación]]: Es una función que determina la salida de una neurona dado un conjunto de entradas. La función de activación introduce no linealidad en la red neuronal y permite modelar relaciones y patrones complejos en los datos.
+4. [[Agentes inteligentes/Función de Activación]]: Es una función que determina la salida de una neurona dado un conjunto de entradas. La función de activación introduce no linealidad en la red neuronal y permite modelar relaciones y patrones complejos en los datos.
 
 5. [[Retropropagación del error]]: Es un algoritmo utilizado para entrenar redes neuronales. Consiste en calcular el error entre las salidas predichas y las salidas reales, y luego propagar ese error hacia atrás a través de la red para ajustar los pesos de las conexiones mediante el gradiente descendente.
 

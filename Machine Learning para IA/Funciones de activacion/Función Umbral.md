@@ -1,5 +1,5 @@
 
-La **Función Umbral**, también conocida como función escalón de Heaviside, es una [[Función de Activación]] que se utiliza en algunos modelos de [[Machine Learning]]. Es una función binaria que produce una salida de 1 si su entrada es mayor que un cierto valor de umbral y 0 en caso contrario.
+La **Función Umbral**, también conocida como función escalón de Heaviside, es una [[Agentes inteligentes/Función de Activación]] que se utiliza en algunos modelos de [[Machine Learning]]. Es una función binaria que produce una salida de 1 si su entrada es mayor que un cierto valor de umbral y 0 en caso contrario.
 
 En forma de ecuación, la función umbral se puede expresar como:
 

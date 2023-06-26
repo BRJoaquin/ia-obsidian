@@ -17,7 +17,7 @@ Para empezar a aprender y practicar el aprendizaje profundo, es recomendable ten
 
 2. [[Neuronas Artificiales]]: Son unidades fundamentales en una red neuronal artificial. Reciben entradas, las combinan mediante una función de activación y generan una salida. Estas salidas se propagan a través de la red para realizar cálculos y tomar decisiones.
 
-3. [[Capas (DL)]]: Las redes neuronales se organizan en capas, que son conjuntos de neuronas. Las capas pueden ser de diferentes tipos, como capas de entrada, capas ocultas y capas de salida. Cada capa procesa la información y la pasa a la siguiente capa.
+3. [[Capa (DL)]]: Las redes neuronales se organizan en capas, que son conjuntos de neuronas. Las capas pueden ser de diferentes tipos, como capas de entrada, capas ocultas y capas de salida. Cada capa procesa la información y la pasa a la siguiente capa.
 
 4. [[Agentes inteligentes/Función de Activación]]: Es una función que determina la salida de una neurona dado un conjunto de entradas. La función de activación introduce no linealidad en la red neuronal y permite modelar relaciones y patrones complejos en los datos.
 

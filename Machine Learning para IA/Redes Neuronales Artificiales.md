@@ -8,7 +8,7 @@ Las **Redes Neuronales Artificiales (ANN)** son una rama del aprendizaje automá
 
 # Estructura de las ANN
 
-Una ANN se compone de una serie de nodos interconectados llamados "neuronas" o "nodos" (vease [[Neuronas Artificiales]]). Estas neuronas se organizan en diferentes capas:
+Una ANN se compone de una serie de nodos interconectados llamados "neuronas" o "nodos" (vease [[Neuronas Artificiales]]). Estas neuronas se organizan en diferentes capas (vease [[Capa (DL)]]):
 
 1. **Capa de entrada**: Esta es la capa que recibe la entrada del exterior (por ejemplo, los datos de entrenamiento).
 

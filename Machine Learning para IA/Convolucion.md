@@ -1,4 +1,4 @@
-La convolución es un concepto matemático que tiene aplicaciones en muchas áreas, incluyendo la estadística, la física y la ingeniería eléctrica, pero se ha vuelto especialmente conocida en el campo de la inteligencia artificial y el aprendizaje profundo (deep learning) debido a su uso en las redes neuronales convolucionales (Convolutional Neural Networks, CNNs).
+La convolución es un concepto matemático que tiene aplicaciones en muchas áreas, incluyendo la estadística, la física y la ingeniería eléctrica, pero se ha vuelto especialmente conocida en el campo de la inteligencia artificial y el aprendizaje profundo (deep learning) debido a su uso en las [[Redes Neuronales Convolucionales]] (Convolutional Neural Networks, CNNs).
 
 De manera general, la convolución es una operación matemática que integra dos funciones para producir una tercera función. Se puede interpretar como el grado de superposición entre las dos funciones originales cuando una de ellas se invierte y se desplaza.
 

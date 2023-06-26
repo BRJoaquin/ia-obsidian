@@ -75,7 +75,6 @@ Las ANN pueden tener diversas arquitecturas, cada una de las cuales es adecuada 
 Estos son sólo algunos ejemplos de los tipos de redes neuronales que existen. Cada tipo tiene sus propias fortalezas y debilidades, y la elección del tipo de red a utilizar dependerá en gran medida de la tarea específica que se esté tratando de resolver.
 
 
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/MRIv2IwFTPg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uwbHOpp9xkc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

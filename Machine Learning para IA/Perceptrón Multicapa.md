@@ -1,6 +1,6 @@
 ![[Pasted image 20230626084514.png]]
 
-El **Perceptrón Multicapa (MLP, por sus siglas en inglés)** es una clase de red neuronal artificial feedforward (o adelante directa). Un MLP consta de al menos tres capas de nodos: una capa de entrada, una o más capas ocultas y una capa de salida.
+El **Perceptrón Multicapa (MLP, por sus siglas en inglés)** es un **tipo**  de [[Redes Neuronales Artificiales]] feedforward (o adelante directa). Un MLP consta de al menos tres capas de nodos: una capa de entrada, una o más capas ocultas y una capa de salida.
 
 **A diferencia del Perceptrón Simple, que solo puede separar linealmente los datos, el MLP puede distinguir datos que no son linealmente separables, gracias a la inclusión de una o más capas ocultas.**
 
@@ -13,8 +13,8 @@ y = f(\mathbf{w} \cdot \mathbf{x} + b)
 $$
 
 donde:
-- $\mathbf{w}$ es el vector de pesos.
-- $\mathbf{x}$ es el vector de entradas.
+- $\mathbf{w}$ es el **vector** de pesos.
+- $\mathbf{x}$ es el **vector** de entradas.
 - $b$ es el sesgo.
 - $f$ es la función de activación.
 - $\cdot$ denota el producto escalar.

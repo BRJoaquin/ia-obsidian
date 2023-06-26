@@ -1,4 +1,8 @@
+
+
 El **Perceptrón Simple** es uno de los algoritmos más simples de [[Machine Learning]], y es la base de las [[Redes Neuronales Artificiales]] y del [[Deep Learning]].
+
+![[Pasted image 20230626085610.png]]
 
 Un Perceptrón Simple toma un conjunto de entradas numéricas y las pondera de acuerdo a un conjunto de pesos, sumándolas luego para obtener una puntuación. Esta puntuación luego pasa a través de una [[Función de Activación]] para producir la salida.
 
@@ -15,7 +19,7 @@ donde:
 - $f$ es la función de activación.
 - $\cdot$ denota el producto escalar.
 
-En el caso del Perceptrón Simple, la función de activación es una función de umbral que produce 1 si la puntuación es positiva y 0 en caso contrario.
+En el caso del Perceptrón Simple, la función de activación es una [[Función Umbral]]que produce 1 si la puntuación es positiva y 0 en caso contrario.
 
 Los pesos y el sesgo del Perceptrón se ajustan durante el entrenamiento para minimizar la discrepancia entre las predicciones del Perceptrón y las etiquetas verdaderas. Esto se hace a través de un proceso iterativo en el que se ajustan los pesos en proporción al error cometido en las predicciones.
 

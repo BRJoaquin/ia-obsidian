@@ -36,6 +36,8 @@ donde:
 - $x(s)$ es un vector de características del estado $s$.
 - $w^T x(s)$ es el producto punto de $w$ y $x(s)$, que da un solo número (la estimación de la función de valor).
 
+![[Pasted image 20230704131732.png]]
+
 ## Aprendizaje
 
 El aprendizaje en este caso implica ajustar los pesos $w$ para minimizar la diferencia entre la estimación de la función de valor y el retorno real (en el caso de Montecarlo) o la estimación del próximo valor (en el caso de Diferencia Temporal). Esto se puede hacer con el algoritmo de Descenso de Gradiente Estocástico (SGD).
@@ -60,6 +62,8 @@ donde:
 La principal ventaja de la aproximación lineal es su simplicidad. Es fácil de implementar, y tiene propiedades de convergencia bien entendidas.
 
 Las desventajas son que puede no ser capaz de representar funciones de valor que no sean lineales en las características, y que la elección de las características puede tener un gran impacto en la calidad de la aproximación.
+
+
 
 # Método de Montecarlo con Descenso de Gradiente Estocástico (SGD)
 
@@ -94,6 +98,7 @@ En el aprendizaje por refuerzo, el método de Montecarlo con SGD se puede utiliz
 # Algoritmo Semi-Gradiente TD(0)
 
 ![[Pasted image 20230704124607.png]]
+![[Pasted image 20230704131517.png]]
 
 El algoritmo Semi-Gradiente TD(0) es una versión del algoritmo de Diferencia Temporal para la estimación de la función de valor $V$ que utiliza una aproximación de función y actualiza los parámetros en cada paso en lugar de al final del episodio. La actualización utiliza el gradiente de la función de valor estimada con respecto a los parámetros, pero solo la parte que depende de los parámetros que se están actualizando.
 

@@ -13,3 +13,5 @@ Existen varios algoritmos de control en el aprendizaje por refuerzo, incluyendo:
 - Algoritmos basados en el valor, como la [[Iteración de Valor (value iteration)]] y [[Iteración de Política (policy iteration)]].
 
 **Todos estos métodos tienen el objetivo común de encontrar la política que maximice la recompensa acumulada a largo plazo del agente.**
+
+![[Pasted image 20230704132203.png]]

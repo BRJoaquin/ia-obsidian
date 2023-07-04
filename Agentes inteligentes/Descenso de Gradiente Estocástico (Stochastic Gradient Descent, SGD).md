@@ -1,5 +1,7 @@
 El **Descenso de Gradiente Estocástico (SGD)** es una variante del algoritmo de [[Decenso de Gradiente]] que se utiliza comúnmente en el aprendizaje automático y las redes neuronales para optimizar una función objetivo que tiene la forma de una suma de otras funciones.
 
+![[Pasted image 20230704131123.png]]
+
 # ¿Cómo funciona?
 
 El algoritmo SGD funciona de la siguiente manera:
@@ -62,6 +64,8 @@ Las desventajas son que puede no ser capaz de representar funciones de valor que
 # Método de Montecarlo con Descenso de Gradiente Estocástico (SGD)
 
 > es importante de que este metodo es ortogonal, podemos combinarlo con otros metodos como MC y TD
+
+![[Pasted image 20230704131336.png]]
 
 ![[Pasted image 20230704105109.png]]
 

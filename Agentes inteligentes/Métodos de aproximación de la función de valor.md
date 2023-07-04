@@ -77,3 +77,8 @@ La función de pérdida MSVE penaliza más fuertemente las predicciones que est�
 Un aspecto importante a tener en cuenta es que el MSVE pondera los errores en cada estado por la probabilidad de visitar ese estado bajo la política que se está siguiendo. Esto significa que los estados que son visitados con frecuencia tendrán un mayor impacto en el valor de la MSVE.
 
 ![[Pasted image 20230704102127.png]]
+
+
+# Video
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Vky0WVh_FSk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 

@@ -23,3 +23,33 @@ La tasa de aprendizaje es un [[Hiperparámetros|hiperparamentro]] importante en 
 
 > quiero un v (^ techito) que minimice el error
 
+![[Pasted image 20230704104627.png]]
+
+> es importante de que este metodo es ortogonal, podemos combinarlo con otros metodos como MC y TD
+
+
+# Método de Montecarlo con Descenso de Gradiente Estocástico (SGD)
+
+![[Pasted image 20230704105109.png]]
+
+El método de Montecarlo con Descenso de Gradiente Estocástico (SGD) es una técnica de aprendizaje por refuerzo que se utiliza para estimar la función de valor de una política.
+
+## ¿Cómo funciona?
+
+1. Generar un episodio siguiendo la política actual.
+2. Por cada paso en el episodio:
+   1. Calcular la recompensa total desde el paso actual hasta el final del episodio (esto se conoce como retorno) ($G_t$).
+   2. Calcular el error entre el retorno y la estimación actual de la función de valor para el estado en el paso actual.
+   3. Actualizar los parámetros de la función de valor en la dirección que reduce el error. La magnitud de la actualización es proporcional a la tasa de aprendizaje y al gradiente del error con respecto a los parámetros.
+
+## Ventajas y Desventajas
+
+El método de Montecarlo con SGD tiene la ventaja de que es simple y no requiere un modelo del entorno. Además, es capaz de aprender de la experiencia directa, **sin necesidad de bootstraping (como en Temporal Difference learning)**.
+
+Sin embargo, **este método tiene la desventaja de que la estimación del retorno es ruidosa, especialmente al principio del episodio cuando la cantidad de datos es pequeña. Esto puede hacer que la convergencia sea lenta**.
+
+Además, el método de Montecarlo con SGD sólo puede aprender de los episodios completos, lo que significa que no puede ser utilizado en tareas de aprendizaje por refuerzo que no tienen un estado terminal claro.
+
+## Uso en Aprendizaje por Refuerzo
+
+En el aprendizaje por refuerzo, el método de Montecarlo con SGD se puede utilizar para estimar tanto la función de valor de estado $V(s)$ como la función de valor de acción $Q(s, a)$. El algoritmo es el mismo en ambos casos, excepto que para estimar $Q(s, a)$, los retornos se calculan a partir de las acciones en lugar de los estados.

@@ -42,9 +42,9 @@ El ajuste de los parámetros se realiza típicamente utilizando métodos de opti
 
 Los métodos de aproximación de base lineal utilizan una combinación lineal de características para representar la función de valor. La forma general de la función de valor aproximada es:
 
-$\hat{v}(s; w) = w_1 \cdot x_1(s) + w_2 \cdot x_2(s) + \ldots + w_n \cdot x(s)$
+$\hat{v}(s; w) = w_1 \cdot x_1(s) + w_2 \cdot x_2(s) + \ldots + w_n \cdot x_n(s)$
 
-donde $f_i(s)$ son las características del estado $s$, y $w_i$ son los parámetros del modelo. Los métodos de aproximación de base lineal son simples y eficientes, pero pueden ser limitados en su capacidad para representar funciones de valor complejas.
+donde $x_i(s)$ son las características del estado $s$, y $w_i$ son los parámetros del modelo. Los métodos de aproximación de base lineal son simples y eficientes, pero pueden ser limitados en su capacidad para representar funciones de valor complejas.
 
 # Métodos de Aproximación de Base no Lineal
 
@@ -70,11 +70,11 @@ donde:
 - $\pi$ es la política que se está siguiendo.
 - $d(s|\pi)$ es la distribución de estados bajo la política $\pi$.
 - $v_\pi(s)$ es el valor verdadero del estado $s$ bajo la política $\pi$.
-- $V(s; w)$ es la estimación del valor del estado $s$ por el modelo con parámetros $w$.
+- $\hat{v}(s; w)$ es la estimación del valor del estado $s$ por el modelo con parámetros $w$.
 
 La función de pérdida MSVE penaliza más fuertemente las predicciones que están lejos del valor real, debido al cuadrado de la diferencia. Por lo tanto, minimizar la MSVE tiende a hacer que el modelo se ajuste a los valores reales lo más cerca posible, en términos del error cuadrático medio.
 
-Un aspecto importante a tener en cuenta es que el MSVE pondera los errores en cada estado por la probabilidad de visitar ese estado bajo la política que se está siguiendo. Esto significa que los estados que son visitados con frecuencia tendrán un mayor impacto en el valor de la MSVE.
+Un aspecto importante a tener en cuenta es que el MSVE pondera los errores en cada estado por la probabilidad de visitar ese estado bajo la política que se está siguiendo. **Esto significa que los estados que son visitados con frecuencia tendrán un mayor impacto en el valor de la MSVE**.
 
 ![[Pasted image 20230704102127.png]]
 

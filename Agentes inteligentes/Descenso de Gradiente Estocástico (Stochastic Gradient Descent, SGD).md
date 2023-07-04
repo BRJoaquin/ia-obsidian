@@ -121,3 +121,15 @@ donde:
 ## Para estimar $q_{\pi}$
 
 ![[Pasted image 20230704125327.png]]
+
+
+### SARSA
+
+![[Pasted image 20230704125649.png]]
+
+
+### Q-learning
+
+![[Pasted image 20230704125938.png]]
+> Acá esta mal cuando toma una accion: A' es A y S' es S en realidad
+

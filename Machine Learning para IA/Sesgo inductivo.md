@@ -2,7 +2,7 @@ El sesgo inductivo en el [[Machine Learning]] se refiere a las suposiciones y re
 
 El sesgo inductivo puede manifestarse de varias formas, como:
 
-1.  **Suposiciones sobre la estructura del modelo**: Algunos algoritmos de aprendizaje automático hacen suposiciones específicas sobre la forma del modelo que se ajusta a los datos. Por ejemplo, la [[Regresión lineal]] asume que la relación entre las [[Características]] y la [[Variable objetivo]] es lineal, mientras que otros algoritmos pueden suponer que la relación es no lineal o que tiene cierta estructura específica.
+1.  **Suposiciones sobre la estructura del modelo**: Algunos algoritmos de aprendizaje automático hacen suposiciones específicas sobre la forma del modelo que se ajusta a los datos. Por ejemplo, la [[Regresión lineal]] asume que la relación entre las [[Machine Learning para IA/Características]] y la [[Variable objetivo]] es lineal, mientras que otros algoritmos pueden suponer que la relación es no lineal o que tiene cierta estructura específica.
 
 2.  **Suposiciones sobre la distribución de los datos**: Algunos algoritmos hacen suposiciones sobre la distribución de los datos de entrada, como la normalidad de los datos en el caso del análisis discriminante lineal.
 

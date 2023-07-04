@@ -1,4 +1,4 @@
-También conocida como variable dependiente o de salida, es la variable que se desea predecir o estimar en un problema de [[Machine Learning]]. La variable objetivo es el resultado que se espera obtener al aplicar el [[Modelo (Hipotesis)]] de aprendizaje automático a un conjunto de [[Características]] de entrada. En problemas de clasificación, la variable objetivo es discreta y representa las diferentes clases o categorías. En problemas de regresión, la variable objetivo es continua y puede tomar cualquier valor dentro de un rango específico.
+También conocida como variable dependiente o de salida, es la variable que se desea predecir o estimar en un problema de [[Machine Learning]]. La variable objetivo es el resultado que se espera obtener al aplicar el [[Modelo (Hipotesis)]] de aprendizaje automático a un conjunto de [[Machine Learning para IA/Características]] de entrada. En problemas de clasificación, la variable objetivo es discreta y representa las diferentes clases o categorías. En problemas de regresión, la variable objetivo es continua y puede tomar cualquier valor dentro de un rango específico.
 
 # Ejemplos
 

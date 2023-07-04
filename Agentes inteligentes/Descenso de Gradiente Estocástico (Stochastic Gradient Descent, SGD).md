@@ -17,6 +17,45 @@ La diferencia principal entre SGD y el descenso de gradiente estándar es que SG
 
 La tasa de aprendizaje es un [[Hiperparámetros|hiperparamentro]] importante en SGD. Una tasa de aprendizaje demasiado alta puede hacer que el algoritmo oscile alrededor del mínimo y nunca converja, mientras que una tasa de aprendizaje demasiado baja puede hacer que el algoritmo converja demasiado lentamente.
 
+# Ejemplo: aproximacion lineal de la función valor
+
+En la aproximación lineal de la función de valor, la función de valor se representa como una combinación lineal de características del estado y/o de la acción. Es decir:
+
+$$\Large
+\hat{v}(s; w) = w^T x(s)
+$$
+
+donde:
+
+- $\hat{v}(s; w)$ es la estimación de la función de valor del estado $s$ con parámetros $w$.
+- $w$ es un vector de pesos, uno para cada característica.
+- $x(s)$ es un vector de características del estado $s$.
+- $w^T x(s)$ es el producto punto de $w$ y $x(s)$, que da un solo número (la estimación de la función de valor).
+
+# Aprendizaje
+
+El aprendizaje en este caso implica ajustar los pesos $w$ para minimizar la diferencia entre la estimación de la función de valor y el retorno real (en el caso de Montecarlo) o la estimación del próximo valor (en el caso de Diferencia Temporal). Esto se puede hacer con el algoritmo de Descenso de Gradiente Estocástico (SGD).
+
+En cada paso del SGD, se calcula el gradiente del error con respecto a los pesos, y se actualizan los pesos en la dirección opuesta al gradiente. En el caso de una función lineal, el gradiente es simplemente el vector de características, por lo que la actualización de los pesos es:
+
+$$w \leftarrow w + \alpha (U_t - \hat{v}(s_t; w)) x(s_t)$$
+
+donde:
+
+- $w$ es el vector de pesos.
+- $\alpha$ es la tasa de aprendizaje.
+- $U_t$ es el retorno real o estimado. En caso de MC es $G_t$
+- $\hat{v}(s_t; w)$ es la estimación actual de la función de valor.
+- $x(s_t)$ es el vector de características del estado $s_t$.
+
+### Ventajas y Desventajas
+
+La principal ventaja de la aproximación lineal es su simplicidad. Es fácil de implementar, y tiene propiedades de convergencia bien entendidas.
+
+Las desventajas son que puede no ser capaz de representar funciones de valor que no sean lineales en las características, y que la elección de las características puede tener un gran impacto en la calidad de la aproximación.
+
+
+
 # Clase
 
 ![[Pasted image 20230704104210.png]]

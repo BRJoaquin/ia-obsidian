@@ -86,3 +86,28 @@ Además, el método de Montecarlo con SGD sólo puede aprender de los episodios 
 ## Uso en Aprendizaje por Refuerzo
 
 En el aprendizaje por refuerzo, el método de Montecarlo con SGD se puede utilizar para estimar tanto la función de valor de estado $V(s)$ como la función de valor de acción $Q(s, a)$. El algoritmo es el mismo en ambos casos, excepto que para estimar $Q(s, a)$, los retornos se calculan a partir de las acciones en lugar de los estados.
+
+# Algoritmo Semi-Gradiente TD(0)
+
+El algoritmo Semi-Gradiente TD(0) es una versión del algoritmo de Diferencia Temporal para la estimación de la función de valor $V$ que utiliza una aproximación de función y actualiza los parámetros en cada paso en lugar de al final del episodio. La actualización utiliza el gradiente de la función de valor estimada con respecto a los parámetros, pero solo la parte que depende de los parámetros que se están actualizando.
+
+El algoritmo puede describirse de la siguiente manera:
+
+1. Inicializar los pesos $w$ de manera aleatoria.
+2. Por cada episodio:
+    1. Inicializar el estado $s$.
+    2. Por cada paso del episodio:
+        1. Elegir una acción $a$ usando una política derivada de $\hat{v}(s; w)$ (por ejemplo, una política $\epsilon$-greedy).
+        2. Tomar la acción $a$, observar la recompensa $r$ y el próximo estado $s'$.
+        3. Calcular el objetivo de aprendizaje $U_t = r + \gamma \hat{v}(s'; w)$.
+        4. Actualizar los pesos en la dirección del semi-gradiente: $w \leftarrow w + \alpha (U_t - \hat{v}(s; w)) \nabla{\hat{v}}(s,w)$.
+        5. Actualizar el estado: $s \leftarrow s'$.
+    3. Repetir hasta que se cumpla una condición de finalización.
+
+donde:
+
+- $\hat{V}(s; w)$ es la estimación de la función de valor del estado $s$ con parámetros $w$.
+- $w$ es el vector de pesos.
+- $\alpha$ es la tasa de aprendizaje.
+- $U_t$ es el objetivo de aprendizaje, que es una combinación de la recompensa observada y la estimación de la función de valor del próximo estado (bootstrapping).
+- $\nabla{\hat{V}}(s,w)$ es el gradiente de la función de

@@ -10,10 +10,6 @@ Los métodos de aproximación de la función de valor pueden dividirse en dos ca
 
 2. **Métodos de Aproximación de la Función de Valor Acción-Valor (Q)**: Estos métodos tratan de aprender una función $Q(s, a; w)$ que estima el valor de una acción $a$ en un estado $s$ dada una representación de características $x(s, a)$ y un vector de parámetros $w$. Ejemplos de este tipo de métodos son el Q-Learning con Aproximación de la Función de Valor y el Aprendizaje Profundo por Refuerzo (DRL).
 
-# Aprendizaje Profundo por Refuerzo (DRL)
-
-Los métodos de Aprendizaje Profundo por Refuerzo (DRL) utilizan [[Redes Neuronales Artificiales]] para realizar la aproximación de la función de valor. Estas redes neuronales pueden manejar representaciones de características de alta dimensión y son capaces de aprender representaciones de características a partir de datos sin procesar, como imágenes. Ejemplos de DRL incluyen DQN (Deep Q-Network), A3C (Asynchronous Advantage Actor-Critic) y PPO (Proximal Policy Optimization).
-
 # Ventajas y Desventajas
 
 La principal ventaja de los métodos de aproximación de la función de valor es que pueden manejar espacios de estado y acción mucho más grandes que los métodos tabulares. También pueden manejar espacios de estado y acción continuos, mientras que los métodos tabulares sólo pueden manejar espacios discretos.
@@ -56,5 +52,28 @@ Los métodos de aproximación de base no lineal utilizan una combinación no lin
 
 Una forma común de realizar una aproximación de base no lineal es utilizar una red neuronal. La red neuronal toma las características del estado como entrada y produce una estimación de la función de valor como salida. Los parámetros del modelo son los pesos y los sesgos de la red neuronal.
 
-El uso de aproximaciones de base no lineal puede mejorar la capacidad de los métodos de aprendizaje por refuerzo para resolver problemas complejos. Sin embargo, estos métodos también pueden ser más difíciles de entrenar y requieren más recursos computacionales.```
+El uso de aproximaciones de base no lineal puede mejorar la capacidad de los métodos de aprendizaje por refuerzo para resolver problemas complejos. Sin embargo, estos métodos también pueden ser más difíciles de entrenar y requieren más recursos computacionales.
 
+# Error Cuadrático Medio del Valor (Mean Squared Value Error)
+
+El **Error Cuadrático Medio del Valor (MSVE)** es una función de pérdida comúnmente utilizada en el aprendizaje por refuerzo y en otros problemas de aprendizaje supervisado. 
+
+El MSVE mide la diferencia cuadrática media entre los valores reales (o deseados) y los valores predichos por el modelo de aprendizaje. En el contexto del aprendizaje por refuerzo, los "valores reales" suelen ser los retornos obtenidos siguiendo una política dada, y los "valores predichos" son las estimaciones de la función de valor por parte del modelo.
+
+Matemáticamente, el MSVE se define de la siguiente manera:
+
+$$VE(\pi) = \sum_{s \in S} d(s|\pi) [v_\pi(s) - V(s; w)]^2$$
+
+donde:
+
+- $S$ es el conjunto de todos los estados.
+- $\pi$ es la política que se está siguiendo.
+- $d(s|\pi)$ es la distribución de estados bajo la política $\pi$.
+- $v_\pi(s)$ es el valor verdadero del estado $s$ bajo la política $\pi$.
+- $V(s; w)$ es la estimación del valor del estado $s$ por el modelo con parámetros $w$.
+
+La función de pérdida MSVE penaliza más fuertemente las predicciones que están lejos del valor real, debido al cuadrado de la diferencia. Por lo tanto, minimizar la MSVE tiende a hacer que el modelo se ajuste a los valores reales lo más cerca posible, en términos del error cuadrático medio.
+
+Un aspecto importante a tener en cuenta es que el MSVE pondera los errores en cada estado por la probabilidad de visitar ese estado bajo la política que se está siguiendo. Esto significa que los estados que son visitados con frecuencia tendrán un mayor impacto en el valor de la MSVE.
+
+![[Pasted image 20230704102127.png]]

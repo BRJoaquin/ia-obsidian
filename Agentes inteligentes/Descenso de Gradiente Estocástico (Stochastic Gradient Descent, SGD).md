@@ -89,6 +89,8 @@ En el aprendizaje por refuerzo, el método de Montecarlo con SGD se puede utiliz
 
 # Algoritmo Semi-Gradiente TD(0)
 
+![[Pasted image 20230704124607.png]]
+
 El algoritmo Semi-Gradiente TD(0) es una versión del algoritmo de Diferencia Temporal para la estimación de la función de valor $V$ que utiliza una aproximación de función y actualiza los parámetros en cada paso en lugar de al final del episodio. La actualización utiliza el gradiente de la función de valor estimada con respecto a los parámetros, pero solo la parte que depende de los parámetros que se están actualizando.
 
 El algoritmo puede describirse de la siguiente manera:
@@ -97,7 +99,7 @@ El algoritmo puede describirse de la siguiente manera:
 2. Por cada episodio:
     1. Inicializar el estado $s$.
     2. Por cada paso del episodio:
-        1. Elegir una acción $a$ usando una política derivada de $\hat{v}(s; w)$ (por ejemplo, una política $\epsilon$-greedy).
+        1. Elegir una acción $a$ segun $\pi$
         2. Tomar la acción $a$, observar la recompensa $r$ y el próximo estado $s'$.
         3. Calcular el objetivo de aprendizaje $U_t = r + \gamma \hat{v}(s'; w)$.
         4. Actualizar los pesos en la dirección del semi-gradiente: $w \leftarrow w + \alpha (U_t - \hat{v}(s; w)) \nabla{\hat{v}}(s,w)$.
@@ -106,8 +108,16 @@ El algoritmo puede describirse de la siguiente manera:
 
 donde:
 
-- $\hat{V}(s; w)$ es la estimación de la función de valor del estado $s$ con parámetros $w$.
+- $\hat{v}(s; w)$ es la estimación de la función de valor del estado $s$ con parámetros $w$.
 - $w$ es el vector de pesos.
 - $\alpha$ es la tasa de aprendizaje.
-- $U_t$ es el objetivo de aprendizaje, que es una combinación de la recompensa observada y la estimación de la función de valor del próximo estado (bootstrapping).
-- $\nabla{\hat{V}}(s,w)$ es el gradiente de la función de
+- $U_t$ es el objetivo de aprendizaje, que es una combinación de la recompensa observada y la estimación de la función de valor del próximo estado (**bootstrapping**).
+- $\nabla{\hat{v}}(s,w)$ es el gradiente de la función de
+
+> Lo mas importante: $U_t$ no se deriva ya que podría ocurrir que cambio los pesos para que se acerquen a mi estimación, y no los pesos para que se acerquen a lo real.
+
+> TODOS los que utilizan bootstrap usan semi-gradiente
+
+## Para estimar $q_{\pi}$
+
+![[Pasted image 20230704125327.png]]

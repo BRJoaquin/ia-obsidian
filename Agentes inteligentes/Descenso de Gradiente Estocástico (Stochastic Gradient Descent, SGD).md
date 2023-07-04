@@ -38,8 +38,7 @@ El aprendizaje en este caso implica ajustar los pesos $w$ para minimizar la dife
 
 En cada paso del SGD, se calcula el gradiente del error con respecto a los pesos, y se actualizan los pesos en la dirección opuesta al gradiente. En el caso de una función lineal, el gradiente es simplemente el vector de características, por lo que la actualización de los pesos es:
 
-$$w \leftarrow w + \alpha (U_t - \hat{v}(s_t; w)) x(s_t)$$
-
+$$w \leftarrow w + \alpha (U_t - \hat{v}(s_t; w)) \nabla{\hat{v}}(s_t,w)$$
 donde:
 
 - $w$ es el vector de pesos.
@@ -48,12 +47,11 @@ donde:
 - $\hat{v}(s_t; w)$ es la estimación actual de la función de valor.
 - $x(s_t)$ es el vector de características del estado $s_t$.
 
-### Ventajas y Desventajas
+## Ventajas y Desventajas
 
 La principal ventaja de la aproximación lineal es su simplicidad. Es fácil de implementar, y tiene propiedades de convergencia bien entendidas.
 
 Las desventajas son que puede no ser capaz de representar funciones de valor que no sean lineales en las características, y que la elección de las características puede tener un gran impacto en la calidad de la aproximación.
-
 
 
 # Clase

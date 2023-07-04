@@ -42,7 +42,7 @@ El ajuste de los parámetros se realiza típicamente utilizando métodos de opti
 
 Los métodos de aproximación de base lineal utilizan una combinación lineal de características para representar la función de valor. La forma general de la función de valor aproximada es:
 
-$V(s; w) = w_1 \cdot f_1(s) + w_2 \cdot f_2(s) + \ldots + w_n \cdot f_n(s)$
+$\hat{v}(s; w) = w_1 \cdot f_1(s) + w_2 \cdot f_2(s) + \ldots + w_n \cdot f_n(s)$
 
 donde $f_i(s)$ son las características del estado $s$, y $w_i$ son los parámetros del modelo. Los métodos de aproximación de base lineal son simples y eficientes, pero pueden ser limitados en su capacidad para representar funciones de valor complejas.
 
@@ -62,7 +62,7 @@ El MSVE mide la diferencia cuadrática media entre los valores reales (o deseado
 
 Matemáticamente, el MSVE se define de la siguiente manera:
 
-$$VE(\pi) = \sum_{s \in S} d(s|\pi) [v_\pi(s) - V(s; w)]^2$$
+$$VE(\pi) = \sum_{s \in S} d(s|\pi) [v_\pi(s) - \hat{v}(s; w)]^2$$
 
 donde:
 

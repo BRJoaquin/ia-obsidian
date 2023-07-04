@@ -9,6 +9,8 @@ El algoritmo SGD funciona de la siguiente manera:
    1. Calcula el [[Grandiente]] de la función de error con respecto a los parámetros del modelo utilizando sólo ese punto de datos.
    2. Actualiza los parámetros (pesos) en la dirección **opuesta** al gradiente. La magnitud de la actualización es proporcional a la tasa de aprendizaje y al valor del gradiente.
 
+![[Pasted image 20230704104627.png]]
+
 # Diferencias entre SGD y Descenso de Gradiente
 
 La diferencia principal entre SGD y el descenso de gradiente estándar es que SGD **utiliza un solo punto de datos en cada actualización de los parámetros**, mientras que el descenso de gradiente estándar utiliza todos los puntos de datos. Esto hace que SGD sea más ruidoso, pero también más rápido y más capaz de escapar de mínimos locales en problemas no convexos.
@@ -17,7 +19,7 @@ La diferencia principal entre SGD y el descenso de gradiente estándar es que SG
 
 La tasa de aprendizaje es un [[Hiperparámetros|hiperparamentro]] importante en SGD. Una tasa de aprendizaje demasiado alta puede hacer que el algoritmo oscile alrededor del mínimo y nunca converja, mientras que una tasa de aprendizaje demasiado baja puede hacer que el algoritmo converja demasiado lentamente.
 
-# Ejemplo: aproximacion lineal de la función valor
+# Ejemplo: aproximación lineal de la función valor
 
 En la aproximación lineal de la función de valor, la función de valor se representa como una combinación lineal de características del estado y/o de la acción. Es decir:
 
@@ -32,7 +34,7 @@ donde:
 - $x(s)$ es un vector de características del estado $s$.
 - $w^T x(s)$ es el producto punto de $w$ y $x(s)$, que da un solo número (la estimación de la función de valor).
 
-# Aprendizaje
+## Aprendizaje
 
 El aprendizaje en este caso implica ajustar los pesos $w$ para minimizar la diferencia entre la estimación de la función de valor y el retorno real (en el caso de Montecarlo) o la estimación del próximo valor (en el caso de Diferencia Temporal). Esto se puede hacer con el algoritmo de Descenso de Gradiente Estocástico (SGD).
 
@@ -47,25 +49,19 @@ donde:
 - $\hat{v}(s_t; w)$ es la estimación actual de la función de valor.
 - $x(s_t)$ es el vector de características del estado $s_t$.
 
+> en el caso particular de funciones lineales, $\nabla{\hat{v}}(s,w) = x(s)$
+
+![[Pasted image 20230704113844.png]]
+
 ## Ventajas y Desventajas
 
 La principal ventaja de la aproximación lineal es su simplicidad. Es fácil de implementar, y tiene propiedades de convergencia bien entendidas.
 
 Las desventajas son que puede no ser capaz de representar funciones de valor que no sean lineales en las características, y que la elección de las características puede tener un gran impacto en la calidad de la aproximación.
 
-
-# Clase
-
-![[Pasted image 20230704104210.png]]
-
-> quiero un v (^ techito) que minimice el error
-
-![[Pasted image 20230704104627.png]]
+# Método de Montecarlo con Descenso de Gradiente Estocástico (SGD)
 
 > es importante de que este metodo es ortogonal, podemos combinarlo con otros metodos como MC y TD
-
-
-# Método de Montecarlo con Descenso de Gradiente Estocástico (SGD)
 
 ![[Pasted image 20230704105109.png]]
 

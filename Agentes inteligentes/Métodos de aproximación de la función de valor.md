@@ -42,7 +42,7 @@ El ajuste de los parámetros se realiza típicamente utilizando métodos de opti
 
 Los métodos de aproximación de base lineal utilizan una combinación lineal de características para representar la función de valor. La forma general de la función de valor aproximada es:
 
-$\hat{v}(s; w) = w_1 \cdot f_1(s) + w_2 \cdot f_2(s) + \ldots + w_n \cdot f_n(s)$
+$\hat{v}(s; w) = w_1 \cdot x_1(s) + w_2 \cdot x_2(s) + \ldots + w_n \cdot x(s)$
 
 donde $f_i(s)$ son las características del estado $s$, y $w_i$ son los parámetros del modelo. Los métodos de aproximación de base lineal son simples y eficientes, pero pueden ser limitados en su capacidad para representar funciones de valor complejas.
 

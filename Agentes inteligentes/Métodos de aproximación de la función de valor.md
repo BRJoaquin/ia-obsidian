@@ -6,7 +6,7 @@ Estos métodos se basan en **aprender una función aproximada que puede estimar 
 
 Los métodos de aproximación de la función de valor pueden dividirse en dos categorías principales, según si tratan de aproximar la función de valor estado-valor ($V$) o la función de valor acción-valor ($Q$):
 
-1. **Métodos de Aproximación de la Función de Valor Estado-Valor (V)**: Estos métodos tratan de aprender una función $V(s; w)$ que estima el valor de un estado $s$ dada una representación de características $x(s)$ y un vector de parámetros $w$. Ejemplos de este tipo de métodos son el [[Métodos de gradiente]] del [[MSE|error del cuadratico medio]] y el [[Actor-Critic]].
+1. **Métodos de Aproximación de la Función de Valor Estado-Valor (V)**: Estos métodos tratan de aprender una función $V(s; w)$ que estima el valor de un estado $s$ dada una representación de características $x(s)$ y un vector de parámetros $w$. Ejemplos de este tipo de métodos son el [[Descenso de Gradiente Estocástico (Stochastic Gradient Descent, SGD)]] y el [[Actor-Critic]].
 
 2. **Métodos de Aproximación de la Función de Valor Acción-Valor (Q)**: Estos métodos tratan de aprender una función $Q(s, a; w)$ que estima el valor de una acción $a$ en un estado $s$ dada una representación de características $x(s, a)$ y un vector de parámetros $w$. Ejemplos de este tipo de métodos son el Q-Learning con Aproximación de la Función de Valor y el Aprendizaje Profundo por Refuerzo (DRL).
 

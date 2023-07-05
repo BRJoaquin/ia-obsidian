@@ -13,7 +13,7 @@ El algoritmo Double Q-Learning es similar a Q-Learning con la diferencia de que 
    
 $$Q1(S, A) \leftarrow Q1(S, A) + \alpha \left[ R + \gamma Q2(S', \arg\max_a Q1(S', a)) - Q1(S, A) \right]$$
    
-   De lo contrario, actualiza Q2 utilizando la recompensa R y la estimación de Q1 para el estado y acción siguiente, es decir:
+De lo contrario, actualiza Q2 utilizando la recompensa R y la estimación de Q1 para el estado y acción siguiente, es decir:
   $$Q2(S, A) \leftarrow Q2(S, A) + \alpha \left[ R + \gamma Q1(S', \arg\max_a Q2(S', a)) - Q2(S, A) \right]$$
 
 Estas actualizaciones reducen la probabilidad de seleccionar acciones sobreestimadas y, por lo tanto, mitigar el Sesgo de Maximización.

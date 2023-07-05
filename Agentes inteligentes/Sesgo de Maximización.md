@@ -13,13 +13,17 @@ Aquí, $\max_{a'}Q(s', a')$ selecciona la acción que tiene la mayor estimación
 
 El sesgo de maximización puede reducirse o eliminarse utilizando algoritmos que separan la selección de la acción de la estimación del valor de la acción, como el algoritmo [[Double Q-Learning]].
 
-El Sesgo de Maximización no es exclusivo del algoritmo Q-Learning. En general, puede surgir en cualquier algoritmo de aprendizaje por refuerzo que use una función de valor para seleccionar acciones y actualizar esas mismas estimaciones de la función de valor.
+El Sesgo de Maximización no es exclusivo del algoritmo Q-Learning. En general, **puede surgir en cualquier algoritmo de aprendizaje por refuerzo que use una función de valor para seleccionar acciones y actualizar esas mismas estimaciones de la función de valor.**
 
 Por ejemplo, algoritmos basados en métodos de diferencias temporales (TD), como SARSA, también pueden experimentar este sesgo si utilizan la forma "maximizante" de SARSA, conocida como SARSA(max), que es similar a Q-learning en la forma en que se realiza la actualización Q.
 
 Además, otros algoritmos que utilizan bootstrapping y maximización en sus actualizaciones, como Expected SARSA y algunas formas de Actor-Critic, también pueden verse afectados por el Sesgo de Maximización.
 
-En su libro "Reinforcement Learning: An Introduction", Richard S. Sutton y Andrew G. Barto discuten el Sesgo de Maximización y cómo puede afectar los algoritmos de aprendizaje por refuerzo. Argumentan que los algoritmos que usan un proceso de maximización en su actualización, como el Q-Learning, pueden sufrir de Sesgo de Maximización. 
+**El Sesgo de Maximización es una propiedad del algoritmo Q-Learning en sí, y puede surgir tanto en la versión tabular como en la versión con función de aproximación**. 
+
+En ambos casos, el algoritmo utiliza la misma estimación del valor Q para determinar la mejor acción y para actualizar el valor de esa acción. Esto puede llevar a sobreestimaciones si las estimaciones del valor Q no son precisas, especialmente en las etapas iniciales del aprendizaje.
+
+Por lo tanto, tanto la versión tabular de Q-Learning como la versión con función de aproximación deben tener cuidado con el Sesgo de Maximización.
 
 En el caso del método de Monte Carlo, no hay una actualización basada en la maximización, ya que las actualizaciones se basan en el retorno real observado al final de un episodio y no en una estimación basada en la maximización. Por lo tanto, los métodos de Monte Carlo no sufren de este sesgo.
 

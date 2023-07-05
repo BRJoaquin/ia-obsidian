@@ -34,9 +34,15 @@ Los algoritmos que utilizan el bootstrapping de N pasos incluyen n-step TD, n-st
 
 Finalmente, es importante destacar que aunque el bootstrapping de N pasos puede reducir la varianza de las estimaciones de los valores en comparación con TD(0), todavía puede estar sujeto a un sesgo debido a la dependencia en las estimaciones de los valores para hacer las actualizaciones. Sin embargo, a medida que el algoritmo aprende y las estimaciones de los valores se vuelven más precisas, este sesgo se reduce.
 
-# Algortimos
+# Algoritmos
 
+## Estimar $v_\pi$
 
+![[Pasted image 20230705154902.png]]
+
+## Control $q_\pi$
+
+ver [[SARSA#N-step SARSA]]
 
 # Sesgo y Varianza en Métodos de Bootstrapping de N Pasos, TD y Monte Carlo
 
@@ -58,4 +64,6 @@ En el contexto de TD, Monte Carlo y bootstrapping de N pasos, el sesgo se refier
 
 - **Bootstrapping de N pasos:** La varianza de este método también depende de N. A medida que N aumenta y el método se aproxima a Monte Carlo, la varianza aumenta. A medida que N disminuye y el método se aproxima a TD, la varianza disminuye.
 
-En resumen, existe un compromiso entre sesgo y varianza en estos métodos. Monte Carlo tiene alta varianza pero no tiene sesgo. TD tiene bajo sesgo y baja varianza. Bootstrapping de N pasos proporciona un compromiso entre los dos, y la elección de N permite ajustar este compromiso.
+En resumen, existe un compromiso entre sesgo y varianza en estos métodos. Monte Carlo tiene alta varianza pero no tiene sesgo. TD tiene sesgo y baja varianza. Bootstrapping de N pasos proporciona un compromiso entre los dos, y la elección de N permite ajustar este compromiso.
+
+![[Pasted image 20230705155532.png]]

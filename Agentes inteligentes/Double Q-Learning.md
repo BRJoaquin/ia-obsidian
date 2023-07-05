@@ -17,3 +17,18 @@ De lo contrario, actualiza Q2 utilizando la recompensa R y la estimación de Q1 
   $$Q2(S, A) \leftarrow Q2(S, A) + \alpha \left[ R + \gamma Q1(S', \arg\max_a Q2(S', a)) - Q2(S, A) \right]$$
 
 Estas actualizaciones reducen la probabilidad de seleccionar acciones sobreestimadas y, por lo tanto, mitigar el Sesgo de Maximización.
+
+![[Pasted image 20230705153048.png]]
+
+![[Pasted image 20230705153107.png]]
+
+![[Pasted image 20230705152941.png]]
+
+
+Richard S. Sutton y Andrew G. Barto presentan Double Q-Learning en su libro  como una solución efectiva al Sesgo de Maximización que puede surgir en algoritmos como Q-Learning. 
+
+Destacan que Double Q-Learning, al mantener y actualizar dos funciones de valor Q independientes, reduce la sobreestimación sistemática de los valores Q que es común en Q-Learning. 
+
+Una función Q se utiliza para determinar la acción óptima y la otra para estimar el valor de esa acción. De esta manera, se evita la sobreestimación que surge del uso de la misma muestra para seleccionar la mejor acción y actualizar su valor. 
+
+Sutton y Barto también señalan que Double Q-Learning ha demostrado ser efectivo en una variedad de tareas y puede resultar en una mejora significativa en el rendimiento sobre Q-Learning en situaciones en las que el Sesgo de Maximización es un problema.

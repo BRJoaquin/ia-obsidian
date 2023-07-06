@@ -48,14 +48,9 @@ Una vez que se tiene un modelo, se pueden utilizar varias técnicas de planifica
 
 **Learning (Aprendiendo):** El "learning" se refiere a cómo el agente actualiza su conocimiento o su modelo del entorno en base a las observaciones y recompensas que recibe de sus acciones. En el caso de Dyna, esto implicaría actualizar la función de valor del agente y/o su modelo interno del entorno. El aprendizaje puede incluir tanto la actualización de la función de valor del agente directamente con base en las recompensas que recibe (como en Q-learning), como la actualización del modelo interno del entorno del agente, que luego puede usarse para la simulación y la planificación.
 
-
-## Actuando (acting)
-
-**Acting (Actuando):** En el contexto del aprendizaje por refuerzo y el enfoque Dyna, el "acting" se refiere a las acciones que el agente elige y lleva a cabo en el entorno para obtener recompensas. Esto incluye la selección de la acción, la interacción con el entorno para llevar a cabo la acción y la recepción de la recompensa y el siguiente estado del entorno.
-
 # Dyna
 
-Dyna es un marco de trabajo integrado que combina la planificación, la actuación y el aprendizaje para resolver problemas de aprendizaje por refuerzo. Se basa en la idea de que un agente puede beneficiarse de la combinación de experiencias directas y simuladas para mejorar su política de acciones. 
+Dyna es un marco de trabajo integrado que **combina la planificación, la actuación y el aprendizaje** para resolver problemas de aprendizaje por refuerzo. Se basa en la idea de que un agente puede beneficiarse de la combinación de experiencias directas y simuladas para mejorar su política de acciones. 
 
 ![[Pasted image 20230706100803.png]]
 
@@ -76,6 +71,8 @@ Uno de los principales desafíos de Dyna es que requiere un modelo del entorno p
 ## Cuando usarlo
 
 Dyna puede ser particularmente útil en entornos donde el agente puede beneficiarse de la "imaginación" o la simulación de acciones antes de realizarlas. Si el agente puede aprender un modelo preciso del entorno, y si el espacio de estado-acción es manejable, entonces Dyna puede permitir una mejora más rápida de la política que mediante la experiencia directa solamente. Además, Dyna puede ser beneficioso en entornos donde el agente puede realizar muchas simulaciones en cada paso de tiempo real.
+
+> Importante: si el costo de ejecutar una acción en el entorno real es caro, quizás nos conviene simularlo
 
 
 # Dyna-Q

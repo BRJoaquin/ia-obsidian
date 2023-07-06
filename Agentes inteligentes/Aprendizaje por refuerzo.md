@@ -28,7 +28,7 @@ Existen muchas otras formas de categorizar los enfoques en el aprendizaje por re
 
 1. **Temporal-Difference (TD) Learning vs Monte Carlo (MC) Methods:** En los [[Métodos de Diferencias temporales]], el agente actualiza sus estimaciones de la función de valor en cada paso, mientras que en los [[Métodos Monte Carlo]], el agente espera hasta el final de un episodio para actualizar sus estimaciones.
 
-2. **Value-Based vs Policy-Based:** En los métodos basados en valor, el agente busca aprender la función de valor óptima y deriva una política a partir de ella. En los métodos basados en políticas, el agente busca aprender directamente la política óptima (ver [[Gradiente de Política]]).
+2. **Value-Based (indirectos) vs Policy-Based(directos):** En los métodos basados en valor, el agente busca aprender la función de valor óptima y deriva una política a partir de ella. En los métodos basados en políticas, el agente busca aprender directamente la política óptima (ver [[Gradiente de Política]]).
 
 3. **Bootstrapping vs Non-Bootstrapping:** Bootstrapping implica actualizar las estimaciones de la función de valor basándose en otras estimaciones actuales de la función de valor (ver [[Bootstrapping]]. Los métodos de no bootstrapping, como Monte Carlo, sólo utilizan recompensas reales y no estimaciones para las actualizaciones.
    

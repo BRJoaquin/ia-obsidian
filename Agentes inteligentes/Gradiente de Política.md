@@ -55,6 +55,12 @@ Donde `β` es un paso de tamaño que se puede ajustar.
 
 Este algoritmo se llama REINFORCE con línea de base porque introduce una línea de base para reducir la varianza de la actualización de los parámetros, lo que puede mejorar la eficiencia del algoritmo.
 
+![[Pasted image 20230706151133.png]]
+
+# Métodos de actor-critico
+
+ver [[Método Actor-Critic]]
+
 # Cuando utilizar Gradiente de Política
 
 Los métodos de gradiente de política son particularmente útiles en ciertos contextos. Por ejemplo, cuando la política tiene una estructura que se puede aprovechar para facilitar el aprendizaje. Por ejemplo, si la política es una función lineal de los parámetros, entonces el gradiente de la política puede ser fácilmente calculado y utilizado para la optimización.
@@ -62,3 +68,10 @@ Los métodos de gradiente de política son particularmente útiles en ciertos co
 Además, los métodos de gradiente de política son útiles cuando se desea una política estocástica en lugar de una determinista. En algunos casos, una política estocástica puede ser más robusta a las perturbaciones y puede permitir la exploración continua del espacio de acción.
 
 En resumen, los métodos de gradiente de política son un enfoque directo para la optimización de la política en el aprendizaje por refuerzo. El algoritmo REINFORCE, y su extensión que incluye una línea de base, son ejemplos de este enfoque que utilizan la dirección del gradiente de la política para mejorar continuamente la política en términos del rendimiento esperado.
+
+
+# Videos
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/e20EY4tFC_Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/y3oqOjHilio" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

@@ -8,7 +8,7 @@ El objetivo del aprendizaje por refuerzo es encontrar la política óptima, es d
 Existen varios algoritmos de control en el aprendizaje por refuerzo, incluyendo:
 - [[Métodos de Diferencias temporales]] como Q-Learning y SARSA.
 - [[Métodos Monte Carlo]].
-- [[Actor-Critic]].
+- [[Método Actor-Critic]].
 - Algoritmos basados en la política, como el Gradiente de la Política.
 - Algoritmos basados en el valor, como la [[Iteración de Valor (value iteration)]] y [[Iteración de Política (policy iteration)]].
 

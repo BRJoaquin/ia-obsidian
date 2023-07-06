@@ -210,7 +210,7 @@ Por otro lado, los métodos aproximados se usan cuando el espacio de estados y/o
 
 Los métodos de aprendizaje por refuerzo model-free no asumen ninguna información previa sobre el entorno. Estos métodos aprenden directamente de la experiencia del agente, lo cual los hace más flexibles pero generalmente más lentos para converger.
 
-> Los métodos model-free incluyen algoritmos como [[Q-learning]], [[SARSA]], [[Actor-Critic]]
+> Los métodos model-free incluyen algoritmos como [[Q-learning]], [[SARSA]], [[Método Actor-Critic]]
 
 En contraste, los métodos model-based utilizan un modelo del entorno para planificar y mejorar la política del agente. Este modelo puede ser aprendido por el agente o ser proporcionado por el diseñador. Los métodos model-based pueden ser más eficientes que los model-free, pero requieren un modelo exacto o al menos aproximado del entorno.
 
@@ -224,7 +224,7 @@ Los métodos value-based se centran en aprender el valor de cada estado o par es
 
 Por otro lado, los métodos policy-based buscan directamente la política óptima sin necesidad de aprender primero los valores de los estados o pares estado-acción. Estos métodos pueden ser más efectivos en espacios de acciones continuas o cuando la política tiene una forma más simple que la función de valor.
 
-> Los algoritmos policy-based incluyen el [[Gradiente de Política]] y [[Actor-Critic]]
+> Los algoritmos policy-based incluyen el [[Gradiente de Política]] y [[Método Actor-Critic]]
 
 ### 4. On-Policy y Off-Policy
 

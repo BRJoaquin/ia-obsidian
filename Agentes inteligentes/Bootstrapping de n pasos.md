@@ -36,11 +36,13 @@ Finalmente, es importante destacar que aunque el bootstrapping de N pasos puede 
 
 # Algoritmos
 
-## Estimar $v_\pi$
+## Estimar
 
 ![[Pasted image 20230705154902.png]]
 
-## Control $q_\pi$
+![[Pasted image 20230706090835.png]]
+
+## Control
 
 ver [[SARSA#N-step SARSA]]
 

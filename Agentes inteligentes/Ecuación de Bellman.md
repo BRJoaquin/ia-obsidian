@@ -47,7 +47,7 @@ $$
 > 
 > Por ejemplo, el backgammon cumple (1) y (3), pero no (2). Entonces, tardarıamos miles de anos en computar v∗ y q∗. **En consecuencia, necesitamos resolver en forma aproximada estas ecuaciones, para estimar v∗ y q∗.**
 
-Estas ecuaciones son la base de algoritmos como la [[Iteración de Valor (value iteration)]] y la [[Iteración de Política (policy iteration)]], así como el [[Q-learning]] y los métodos de [[Aprendizaje Profundo por Refuerzo]].
+Estas ecuaciones son la base de algoritmos como la [[Iteración de Valor (value iteration)]] y la [[Iteración de Política (policy iteration)]], así como el [[Q-learning]] y los métodos de [[Aprendizaje Profundo por Refuerzo (DRL)]].
 
 Es importante entender que la ecuación de Bellman es fundamentalmente una ecuación de consistencia que define la relación que debe existir entre el valor de un estado (o un par estado-acción) y el valor de sus sucesores. No es una ecuación que uno resolvería numéricamente para obtener los valores de estado (aunque existen métodos para hacer precisamente eso, como la iteración de valor, que básicamente resuelve la ecuación de Bellman).
 

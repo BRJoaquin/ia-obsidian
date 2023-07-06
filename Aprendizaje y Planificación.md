@@ -21,7 +21,11 @@ Los modelos de distribución son más completos y permiten una planificación m�
 
 ![[Pasted image 20230706093057.png]]
 
-## Planificacion
+![[Pasted image 20230706094945.png]]
+
+## Planificación
+
+![[Pasted image 20230706095013.png]]
 
 Una vez que se tiene un modelo, se pueden utilizar varias técnicas de planificación, incluyendo:
 

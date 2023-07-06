@@ -7,4 +7,30 @@ repaso:
 https://vimeopro.com/universidadortfi/fi-7777-agentes-inteligentes-64806-agentes-inteligentes-2/video/839955084    
 
 
-]]]
+]]]gfgfggfgffgfdgfgdgfgfdgfadfdsafdasfsdafasfllllsdsddsdidfdsfdsffsdfasdsadasdasdas
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ijhk,hjkhjjhkhjkjkhjkkjljkjkhjkhkjhjkjlllljkhjhjkuiyuiyunm,nm,nm

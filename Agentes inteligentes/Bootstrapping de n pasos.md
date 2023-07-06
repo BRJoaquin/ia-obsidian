@@ -62,9 +62,9 @@ En el contexto de TD, Monte Carlo y bootstrapping de N pasos, el sesgo se refier
 
 - **Monte Carlo:** Aunque Monte Carlo no tiene sesgo, puede tener una alta varianza. Las estimaciones de los valores dependen de las recompensas individuales que pueden variar considerablemente de un episodio a otro. 
 
-- **TD:** TD(0) tiene menor varianza que Monte Carlo ya que las actualizaciones se basan en la recompensa inmediata más la estimación del valor del siguiente estado. Esto suaviza las actualizaciones y reduce su variabilidad en comparación con Monte Carlo.
+- **TD:** TD(0) tiene menor varianza que Monte Carlo ya que las actualizaciones se basan en la recompensa inmediata más la estimación del valor del siguiente estado. Esto suaviza las actualizaciones y reduce su variabilidad en comparación con Monte Carlo pero tiene mayor sesgo.
 
-- **Bootstrapping de N pasos:** La varianza de este método también depende de N. A medida que N aumenta y el método se aproxima a Monte Carlo, la varianza aumenta. A medida que N disminuye y el método se aproxima a TD, la varianza disminuye.
+- **Bootstrapping de N pasos:** La varianza de este método también depende de N. A medida que N aumenta y el método se aproxima a Monte Carlo, la varianza aumenta.
 
 En resumen, existe un compromiso entre sesgo y varianza en estos métodos. Monte Carlo tiene alta varianza pero no tiene sesgo. TD tiene sesgo y baja varianza. Bootstrapping de N pasos proporciona un compromiso entre los dos, y la elección de N permite ajustar este compromiso.
 

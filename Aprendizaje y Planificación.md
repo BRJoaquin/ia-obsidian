@@ -41,11 +41,22 @@ Una vez que se tiene un modelo, se pueden utilizar varias técnicas de planifica
   
   > Un ejemplo de planificación basada en prioridad podría ser un agente de aprendizaje por refuerzo que juega al ajedrez. El agente podría priorizar la actualización de los estados y acciones que han experimentado los mayores cambios de valor recientemente, con la idea de que estos son los movimientos más "interesantes" o "urgentes" para aprender.
 
-# Dinámica de Planificación
+
+# Aprendizaje (learning)
+
+![[Pasted image 20230706100054.png]]
+
+**Learning (Aprendiendo):** El "learning" se refiere a cómo el agente actualiza su conocimiento o su modelo del entorno en base a las observaciones y recompensas que recibe de sus acciones. En el caso de Dyna, esto implicaría actualizar la función de valor del agente y/o su modelo interno del entorno. El aprendizaje puede incluir tanto la actualización de la función de valor del agente directamente con base en las recompensas que recibe (como en Q-learning), como la actualización del modelo interno del entorno del agente, que luego puede usarse para la simulación y la planificación.
+
+# Dyna
 
 La dinámica de planificación es el proceso de cómo las actualizaciones de los valores de estado-acción (o estado) se propagan a través de la función de valor. Esto generalmente se realiza a través de un proceso iterativo, donde los valores se actualizan en función de los valores actuales y las recompensas esperadas del modelo.
 
-Este proceso puede verse como una propagación de información a través del espacio de estados y acciones. A medida que se obtiene nueva información, ya sea a través de la interacción directa con el entorno (aprendizaje) o a través de simulaciones del modelo (planificación), esta información se propaga a través de las actualizaciones de valor.
+Este proceso puede verse como una propagación de información a través del espacio de estados y acciones. A medida que se obtiene nueva información, ya sea a través de la interacción directa con el entorno (**aprendizaje**) o a través de simulaciones del modelo (**planificación**), esta información se propaga a través de las actualizaciones de valor.
+
+**Acting (Actuando):** En el contexto del aprendizaje por refuerzo y el enfoque Dyna, el "acting" se refiere a las acciones que el agente elige y lleva a cabo en el entorno para obtener recompensas. Esto incluye la selección de la acción, la interacción con el entorno para llevar a cabo la acción y la recepción de la recompensa y el siguiente estado del entorno.
+
+
 
 Uno de los desafíos clave en la dinámica de la planificación es decidir en qué orden se deben actualizar los estados y las acciones. Existen diferentes enfoques para esto, incluyendo:
 
@@ -68,3 +79,6 @@ El retroceso basado en la muestra es un enfoque de planificación en el que se a
 El retroceso basado en la heurística es un enfoque de planificación en el que se seleccionan estados y acciones para actualizar en función de una heurística. La heurística podría basarse, por ejemplo, en la magnitud de los cambios de valor recientes, la frecuencia con la que se ha visitado un estado o acción, o la "distancia" desde el estado y acción actual hasta el estado y acción que se está considerando para la actualización.
 
 En resumen, el capítulo 8 de Sutton y Barto se centra en cómo los agentes pueden usar modelos para mejorar su aprendizaje y toma de decisiones. Los modelos pueden ser de muestra o de distribución, y se pueden usar para planificación. La planificación puede ser por estado o con simulación de trayectorias, y puede seguir una dinámica que involucra la propagación de actualizaciones de valor a través del espacio de estado-acción. Los enfoques para la dinámica de la planificación incluyen la planificación aleatoria, la planificación con búsqueda en profundidad y la planificación basada en prioridad. El retroceso también juega un papel importante en la planificación, y puede ser completo, basado en la muestra o basado en la heurística.
+
+
+

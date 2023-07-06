@@ -3,32 +3,38 @@ En este capítulo, Sutton y Barto abordan el tema de cómo los agentes pueden ap
 
 # Modelos y Planificación
 
-En el contexto del aprendizaje por refuerzo, un modelo se utiliza para imitar el comportamiento del entorno. Los agentes que usan un modelo para guiar su aprendizaje y tomar decisiones se conocen como agentes basados en modelos. El proceso de usar un modelo para determinar cómo actuar se conoce como planificación. 
+## Modelo
 
-
+En el contexto del aprendizaje por refuerzo, un modelo se utiliza para imitar el comportamiento del [[Entorno]]. Los agentes que usan un modelo para guiar su aprendizaje y tomar decisiones se conocen como agentes basados en modelos ([[Model based]]). **El proceso de usar un modelo para determinar cómo actuar se conoce como planificación**. 
 
 Hay dos tipos principales de modelos: 
 
 1. **Modelos de muestra:** Generan una muestra representativa del siguiente estado y la recompensa dada una acción y un estado.
    
-   > Un ejemplo de modelo de muestra podría ser un agente de aprendizaje por refuerzo jugando a un juego de mesa como el ajedrez. En cada turno, el agente podría usar un modelo de muestra para generar un conjunto representativo de posibles movimientos (acciones) y sus consecuencias (siguientes estados y recompensas). Esto podría basarse en las reglas del juego y en la experiencia pasada del agente jugando al ajedrez.
-   > 
-   
+   > Un ejemplo de modelo de muestra podría ser un agente de aprendizaje por refuerzo jugando a un juego de mesa como el ajedrez. En cada turno, el agente podría usar un modelo de muestra para generar un conjunto representativo de posibles movimientos (acciones) y sus consecuencias (siguientes estados y recompensas). Esto podría basarse en las reglas del juego y en la experiencia pasada del agente jugando al ajedrez
+
 2. **Modelos de distribución:** Generan todas las posibles transiciones junto con su probabilidad. 
    
    > Un ejemplo de modelo de distribución podría ser un agente de aprendizaje por refuerzo que opera en un entorno de comercio de acciones. El agente podría tener un modelo de distribución que, dado un estado (por ejemplo, los precios de las acciones actuales) y una acción (por ejemplo, comprar o vender una acción), genera todas las posibles transiciones (por ejemplo, todos los posibles nuevos precios de las acciones y las recompensas asociadas), junto con sus probabilidades.
 
 Los modelos de distribución son más completos y permiten una planificación más precisa, pero también son más costosos de generar y utilizar. 
 
+![[Pasted image 20230706093057.png]]
+
+## Planificacion
+
 Una vez que se tiene un modelo, se pueden utilizar varias técnicas de planificación, incluyendo:
 
 - **Planificación por estado:** En este enfoque, el agente selecciona un estado y una acción, usa el modelo para determinar la recompensa y el siguiente estado, y luego realiza una actualización de los valores de estado-acción como en Q-learning o SARSA. 
   
   > Un ejemplo de planificación por estado podría ser un agente de aprendizaje por refuerzo jugando al ajedrez. En cada turno, el agente podría seleccionar un estado (una configuración del tablero de ajedrez) y una acción (un movimiento), usar su modelo para determinar la recompensa y el siguiente estado, y luego actualizar sus valores de estado-acción en consecuencia.
+  
 - **Planificación con simulación de trayectorias:** En este enfoque, el agente simula una trayectoria completa desde un estado inicial hasta un estado terminal, y luego realiza actualizaciones de valor a lo largo de esta trayectoria.
   
   > Un ejemplo de planificación con simulación de trayectorias podría ser un agente de aprendizaje por refuerzo que juega a un videojuego como Pac-Man. El agente podría comenzar en un estado inicial (la configuración inicial del laberinto y la posición de Pac-Man), simular una trayectoria completa hasta un estado terminal (por ejemplo, Pac-Man siendo capturado por un fantasma), y luego actualizar sus valores de estado-acción a lo largo de esta trayectoria.
+  
 -  **Planificación basada en prioridad:** En este enfoque, se dan prioridad a los estados y acciones para las actualizaciones basadas en alguna medida de "interés" o "urgencia". Por ejemplo, se podrían priorizar las actualizaciones para los estados y acciones que han experimentado los mayores cambios de valor recientemente.
+  
   > Un ejemplo de planificación basada en prioridad podría ser un agente de aprendizaje por refuerzo que juega al ajedrez. El agente podría priorizar la actualización de los estados y acciones que han experimentado los mayores cambios de valor recientemente, con la idea de que estos son los movimientos más "interesantes" o "urgentes" para aprender.
 
 # Dinámica de Planificación

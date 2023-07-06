@@ -9,9 +9,9 @@ Un modelo del entorno consta de dos componentes principales:
 
 Existen dos enfoques principales en el aprendizaje por refuerzo en función de si se utiliza un modelo del entorno:
 
-1.  Aprendizaje basado en modelo (model-based): En este enfoque, el agente aprende un modelo del entorno y utiliza este modelo para planificar y tomar decisiones. El agente actualiza y mejora su modelo a medida que adquiere experiencia y recibe retroalimentación del entorno real.
+1.  Aprendizaje basado en modelo ([[Model based]]: En este enfoque, el agente aprende un modelo del entorno y utiliza este modelo para planificar y tomar decisiones. El agente actualiza y mejora su modelo a medida que adquiere experiencia y recibe retroalimentación del entorno real.
 
-2.  Aprendizaje sin modelo (model-free): En este enfoque, el agente no utiliza un modelo del entorno y, en cambio, aprende directamente a tomar decisiones a través de la interacción y la experiencia en el entorno. El agente aprende la política óptima o las funciones de valor sin depender de un modelo explícito del entorno.
+2.  Aprendizaje sin modelo ([[Model free]]): En este enfoque, el agente no utiliza un modelo del entorno y, en cambio, aprende directamente a tomar decisiones a través de la interacción y la experiencia en el entorno. El agente aprende la política óptima o las funciones de valor sin depender de un modelo explícito del entorno.
 
 
 Cada enfoque tiene sus ventajas y desventajas. El aprendizaje basado en modelo suele ser más eficiente en términos de la cantidad de interacciones necesarias para aprender una política óptima, pero puede ser más complejo de implementar y computacionalmente costoso. El aprendizaje sin modelo es más simple y no requiere un modelo del entorno, pero puede necesitar más interacciones con el entorno para aprender la política óptima.

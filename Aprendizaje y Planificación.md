@@ -42,43 +42,32 @@ Una vez que se tiene un modelo, se pueden utilizar varias técnicas de planifica
   > Un ejemplo de planificación basada en prioridad podría ser un agente de aprendizaje por refuerzo que juega al ajedrez. El agente podría priorizar la actualización de los estados y acciones que han experimentado los mayores cambios de valor recientemente, con la idea de que estos son los movimientos más "interesantes" o "urgentes" para aprender.
 
 
-# Aprendizaje (learning)
+## Aprendizaje (learning)
 
 ![[Pasted image 20230706100054.png]]
 
 **Learning (Aprendiendo):** El "learning" se refiere a cómo el agente actualiza su conocimiento o su modelo del entorno en base a las observaciones y recompensas que recibe de sus acciones. En el caso de Dyna, esto implicaría actualizar la función de valor del agente y/o su modelo interno del entorno. El aprendizaje puede incluir tanto la actualización de la función de valor del agente directamente con base en las recompensas que recibe (como en Q-learning), como la actualización del modelo interno del entorno del agente, que luego puede usarse para la simulación y la planificación.
 
-# Dyna
 
-La dinámica de planificación es el proceso de cómo las actualizaciones de los valores de estado-acción (o estado) se propagan a través de la función de valor. Esto generalmente se realiza a través de un proceso iterativo, donde los valores se actualizan en función de los valores actuales y las recompensas esperadas del modelo.
-
-Este proceso puede verse como una propagación de información a través del espacio de estados y acciones. A medida que se obtiene nueva información, ya sea a través de la interacción directa con el entorno (**aprendizaje**) o a través de simulaciones del modelo (**planificación**), esta información se propaga a través de las actualizaciones de valor.
+## Actuando (acting)
 
 **Acting (Actuando):** En el contexto del aprendizaje por refuerzo y el enfoque Dyna, el "acting" se refiere a las acciones que el agente elige y lleva a cabo en el entorno para obtener recompensas. Esto incluye la selección de la acción, la interacción con el entorno para llevar a cabo la acción y la recepción de la recompensa y el siguiente estado del entorno.
 
+# Dyna
 
+Dyna es un marco de trabajo integrado que combina la planificación, la actuación y el aprendizaje para resolver problemas de aprendizaje por refuerzo. Se basa en la idea de que un agente puede beneficiarse de la combinación de experiencias directas y simuladas para mejorar su política de acciones. 
 
-Uno de los desafíos clave en la dinámica de la planificación es decidir en qué orden se deben actualizar los estados y las acciones. Existen diferentes enfoques para esto, incluyendo:
+![[Pasted image 20230706100803.png]]
 
-- **Planificación aleatoria:** En este enfoque, los estados y las acciones se seleccionan al azar para las actualizaciones. 
-- **Planificación con búsqueda en profundidad:** En este enfoque, se realiza una búsqueda completa desde un estado inicial hasta un estado terminal, actualizando todos los estados y acciones a lo largo del camino. 
-- **Planificación basada en prioridad:** En este enfoque, se dan prioridad a los estados y acciones para las actualizaciones basadas en alguna medida de "interés" o "urgencia". Por ejemplo, se podrían priorizar las actualizaciones para los estados y acciones que han experimentado los mayores cambios de valor recientemente.
+La **planificación** en Dyna se refiere a la utilización de un modelo interno del entorno para simular experiencias. Esto puede implicar la generación de transiciones simuladas (estado, acción, recompensa, estado siguiente) utilizando el modelo interno, y luego la actualización de las estimaciones de valor en base a estas transiciones simuladas. Las transiciones simuladas permiten al agente experimentar una variedad de posibles resultados sin tener que realizar acciones reales en el entorno. **Esto puede permitir una mejora más rápida de la política del agente, ya que puede "pensar en el futuro" y anticipar los resultados de las acciones antes de tomarlas**.
 
-La planificación puede ser costosa computacionalmente, especialmente en problemas con espacios de estado y acción muy grandes. Por lo tanto, es importante equilibrar el costo de la planificación con sus beneficio.
+El **actuar** en Dyna se refiere a la selección y realización de acciones en el entorno basándose en la política actual. La política se deriva generalmente de las estimaciones de valor actuales del agente, que pueden haber sido aprendidas tanto de experiencias directas como simuladas. Actuar en el entorno permite al agente obtener experiencias directas, que proporcionan información valiosa y a menudo necesaria para mejorar tanto el modelo del entorno como las estimaciones de valor.
 
-### 8.2.1 Retroceso completo
+El **aprendizaje** en Dyna se refiere a cómo el agente actualiza su conocimiento basándose en las experiencias que obtiene, tanto directas como simuladas. Esto puede implicar el aprendizaje de un modelo del entorno, que se utiliza para la planificación, y el aprendizaje de las estimaciones de valor, que se utilizan para la selección de acciones. El aprendizaje del modelo implica la actualización de las transiciones del modelo en función de las experiencias directas del agente. El aprendizaje de las estimaciones de valor puede implicar la actualización de las estimaciones en función de las recompensas recibidas y las estimaciones de valor del estado siguiente, tanto para las experiencias directas como las simuladas.
 
-El retroceso completo es un enfoque de planificación en el que se actualizan todos los estados y acciones que llevan al estado y acción actual. Esto es eficiente en términos de la cantidad de actualizaciones de valor necesarias para propagar un cambio de valor a través del espacio de estado-acción, pero puede ser costoso en términos de la cantidad de cálculos necesarios.
+Un aspecto central del enfoque Dyna es el bucle de realimentación entre la planificación, la actuación y el aprendizaje. El agente actúa en el entorno y aprende de las experiencias directas, lo que actualiza tanto el modelo del entorno como las estimaciones de valor. El agente también planifica utilizando el modelo del entorno para generar experiencias simuladas, de las cuales también aprende, actualizando las estimaciones de valor. Estas mejoras en las estimaciones de valor luego informan la política del agente, que influye en las acciones futuras que el agente seleccionará.
 
-### 8.2.2 Retroceso basado en la muestra
-
-El retroceso basado en la muestra es un enfoque de planificación en el que se actualiza un solo estado y acción que lleva al estado y acción actual. Este enfoque es menos costoso computacionalmente que el retroceso completo, pero puede requerir más actualizaciones de valor para propagar un cambio de valor a través del espacio de estado-acción. 
-
-### 8.2.3 Retroceso basado en la heurística
-
-El retroceso basado en la heurística es un enfoque de planificación en el que se seleccionan estados y acciones para actualizar en función de una heurística. La heurística podría basarse, por ejemplo, en la magnitud de los cambios de valor recientes, la frecuencia con la que se ha visitado un estado o acción, o la "distancia" desde el estado y acción actual hasta el estado y acción que se está considerando para la actualización.
-
-En resumen, el capítulo 8 de Sutton y Barto se centra en cómo los agentes pueden usar modelos para mejorar su aprendizaje y toma de decisiones. Los modelos pueden ser de muestra o de distribución, y se pueden usar para planificación. La planificación puede ser por estado o con simulación de trayectorias, y puede seguir una dinámica que involucra la propagación de actualizaciones de valor a través del espacio de estado-acción. Los enfoques para la dinámica de la planificación incluyen la planificación aleatoria, la planificación con búsqueda en profundidad y la planificación basada en prioridad. El retroceso también juega un papel importante en la planificación, y puede ser completo, basado en la muestra o basado en la heurística.
+En resumen, Dyna es un enfoque de aprendizaje por refuerzo que combina planificación, actuación y aprendizaje en un marco integrado. Utiliza un modelo del entorno para simular experiencias, aprende de las experiencias directas y simuladas para mejorar las estimaciones de valor y la política, y utiliza esta política para actuar en el entorno. Este ciclo de retroalimentación continua permite al agente mejorar continuamente su política y su rendimiento en el entorno.
 
 
 

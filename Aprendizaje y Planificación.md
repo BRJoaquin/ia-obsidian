@@ -50,11 +50,15 @@ Una vez que se tiene un modelo, se pueden utilizar varias técnicas de planifica
 
 # Dyna
 
+![[Pasted image 20230706105531.png]]
+
 Dyna es un marco de trabajo integrado que **combina la planificación, la actuación y el aprendizaje** para resolver problemas de aprendizaje por refuerzo. Se basa en la idea de que un agente puede beneficiarse de la combinación de experiencias directas y simuladas para mejorar su política de acciones. 
 
 ![[Pasted image 20230706100803.png]]
 
+
 La **planificación** en Dyna se refiere a la utilización de un modelo interno del entorno para simular experiencias. Esto puede implicar la generación de transiciones simuladas (estado, acción, recompensa, estado siguiente) utilizando el modelo interno, y luego la actualización de las estimaciones de valor en base a estas transiciones simuladas. Las transiciones simuladas permiten al agente experimentar una variedad de posibles resultados sin tener que realizar acciones reales en el entorno. **Esto puede permitir una mejora más rápida de la política del agente, ya que puede "pensar en el futuro" y anticipar los resultados de las acciones antes de tomarlas**.
+
 
 El **actuar** en Dyna se refiere a la selección y realización de acciones en el entorno basándose en la política actual. La política se deriva generalmente de las estimaciones de valor actuales del agente, que pueden haber sido aprendidas tanto de experiencias directas como simuladas. Actuar en el entorno permite al agente obtener experiencias directas, que proporcionan información valiosa y a menudo necesaria para mejorar tanto el modelo del entorno como las estimaciones de valor.
 
@@ -63,6 +67,8 @@ El **aprendizaje** en Dyna se refiere a cómo el agente actualiza su conocimient
 Un aspecto central del enfoque Dyna es el bucle de realimentación entre la planificación, la actuación y el aprendizaje. El agente actúa en el entorno y aprende de las experiencias directas, lo que actualiza tanto el modelo del entorno como las estimaciones de valor. El agente también planifica utilizando el modelo del entorno para generar experiencias simuladas, de las cuales también aprende, actualizando las estimaciones de valor. Estas mejoras en las estimaciones de valor luego informan la política del agente, que influye en las acciones futuras que el agente seleccionará.
 
 En resumen, Dyna es un enfoque de aprendizaje por refuerzo que combina planificación, actuación y aprendizaje en un marco integrado. Utiliza un modelo del entorno para simular experiencias, aprende de las experiencias directas y simuladas para mejorar las estimaciones de valor y la política, y utiliza esta política para actuar en el entorno. Este ciclo de retroalimentación continua permite al agente mejorar continuamente su política y su rendimiento en el entorno.
+
+![[Pasted image 20230706105952.png]]
 
 ## Desafíos
 
@@ -77,5 +83,4 @@ Dyna puede ser particularmente útil en entornos donde el agente puede beneficia
 
 # Dyna-Q
 
-
-
+![[Pasted image 20230706105923.png]]

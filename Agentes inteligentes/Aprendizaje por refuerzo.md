@@ -1,6 +1,32 @@
 El aprendizaje por refuerzo es un tipo de inteligencia artificial donde un [[Agente]] (como un programa de computadora o un robot) aprende a tomar decisiones en un [[Entorno]]
 al interactuar con él y recibir [[Recompensa]] o castigos según la calidad de sus [[Acción]]. El objetivo del agente es maximizar las recompensas a lo largo del tiempo, lo que le permite mejorar su comportamiento y tomar decisiones cada vez más efectivas en situaciones similares.
 
+# Caracteristicas
+
+En el aprendizaje por refuerzo, los enfoques pueden categorizarse en varias dimensiones. A continuación, se enumeran algunas de las categorías más importantes:
+
+1. **Model-free vs Model-based:** En los métodos model-free, el agente no tiene un modelo del entorno y aprende directamente a partir de la experiencia. En los métodos model-based, el agente tiene un modelo del entorno que utiliza para simular experiencias y aprender de ellas.
+
+2. **Online vs Offline:** En el aprendizaje online, el agente aprende mientras interactúa con el entorno en tiempo real. En el aprendizaje offline, el agente aprende a partir de un conjunto de experiencias previamente recolectadas.
+
+3. **On-policy vs Off-policy:** En los métodos on-policy, el agente aprende el valor de la política que está siguiendo actualmente. En los métodos off-policy, el agente aprende el valor de una política diferente a la que está siguiendo.
+
+4. **Tabular vs Function Approximation:** En los métodos tabulares, el agente mantiene una tabla separada de valores para cada estado o par estado-acción. En los métodos de aproximación de funciones, el agente utiliza una función parametrizada para aproximar los valores de estado o estado-acción.
+
+5. **Single-agent vs Multi-agent:** En los entornos de un solo agente, un único agente aprende a optimizar su comportamiento. En los entornos multiagente, varios agentes aprenden simultáneamente, y la política óptima para un agente puede depender del comportamiento de los otros agentes.
+
+6. **Deterministic vs Stochastic:** En los entornos deterministas, la transición de estado y la función de recompensa son fijas y deterministas. En los entornos estocásticos, las transiciones de estado y las recompensas tienen alguna cantidad de aleatoriedad.
+
+Estas categorías no son mutuamente excluyentes y, de hecho, un método de aprendizaje por refuerzo puede caer en varias categorías. Por ejemplo, un método puede ser model-free, online, off-policy y usar aproximación de funciones.
+
+Existen muchas otras formas de categorizar los enfoques en el aprendizaje por refuerzo. Algunas de las más importantes incluyen:
+
+1. **Temporal-Difference (TD) Learning vs Monte Carlo (MC) Methods:** En los métodos TD, el agente actualiza sus estimaciones de la función de valor en cada paso, mientras que en los métodos de Monte Carlo, el agente espera hasta el final de un episodio para actualizar sus estimaciones.
+
+2. **Value-Based vs Policy-Based:** En los métodos basados en valor, el agente busca aprender la función de valor óptima y deriva una política a partir de ella. En los métodos basados en políticas, el agente busca aprender directamente la política óptima.
+
+3. **Bootstrapping vs Non-Bootstrapping:** Bootstrapping implica actualizar las estimaciones de la función de valor basándose en otras estimaciones actuales de la función de valor. Los métodos de no bootstrapping, como Monte Carlo, sólo utilizan recompensas reales y no estimaciones para las actualizaciones.
+
 
 # Aprendizaje por refuerzo vs aprendizaje supervisado 
 > [!quote]
@@ -12,11 +38,13 @@ El aprendizaje por refuerzo y el aprendizaje supervisado son dos enfoques difere
 1.  Retroalimentación:
 
 -   Aprendizaje supervisado: El algoritmo recibe un conjunto de datos etiquetado, que incluye entradas y las respuestas correctas (etiquetas) para cada entrada. El objetivo es aprender un modelo que pueda predecir las etiquetas correctas para nuevas entradas no vistas previamente.
+  
 -   Aprendizaje por refuerzo: El agente aprende a través de la interacción con el entorno y no tiene acceso a las respuestas correctas. En su lugar, recibe recompensas o castigos como retroalimentación, que le permite aprender cuáles acciones son beneficiosas y cuáles no.
 
 2.  Tipo de problema:
 
 -   Aprendizaje supervisado: Se utiliza generalmente para problemas de clasificación y regresión, donde el objetivo es predecir una etiqueta o valor para una entrada dada.
+  
 -   Aprendizaje por refuerzo: Se aplica a problemas de toma de decisiones secuenciales y optimización, donde el agente debe aprender una [[Política]] que le permita tomar decisiones óptimas en una secuencia de pasos o acciones.
 
 3.  Evaluación del rendimiento:
@@ -27,6 +55,7 @@ El aprendizaje por refuerzo y el aprendizaje supervisado son dos enfoques difere
 4.  Generalización:
 
 -   Aprendizaje supervisado: La generalización se basa en la calidad y cantidad de datos etiquetados disponibles y en cómo de bien el modelo pueda aprender a partir de ellos. Los modelos de aprendizaje supervisado pueden sufrir de sobreajuste si se entrenan demasiado en datos de entrenamiento ruidosos o limitados.
+  
 -   Aprendizaje por refuerzo: La generalización en el aprendizaje por refuerzo depende de la capacidad del agente para explorar y aprender de diferentes estados y situaciones en el entorno. El agente debe equilibrar la [[Exploración]] de nuevas acciones con la [[Explotación]] de las acciones conocidas para maximizar las recompensas.
 
 # Exploracion vs Explotacion

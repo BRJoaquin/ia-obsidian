@@ -19,6 +19,5 @@ Además de la "esperanza" y el "valor esperado", que son los términos más com�
 
 -   Media de probabilidad
 -   Promedio ponderado
--   Valor medio / Media
 -   Valor medio esperado
 -   Promedio esperado

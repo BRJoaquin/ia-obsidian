@@ -26,7 +26,7 @@ Para evaluar la capacidad de generalización del modelo, lo probamos en el conju
 
 # Minimización del Riesgo Empírico (ERM) en Machine Learning
 
-La **Minimización del Riesgo Empírico** (ERM, por sus siglas en inglés) es un principio en el aprendizaje de máquinas que sostiene que la hipótesis (modelo) que minimiza la pérdida en el conjunto de entrenamiento es la mejor elección. En otras palabras, ERM se refiere a encontrar la hipótesis que tiene el menor riesgo empírico (o error promedio) en el conjunto de entrenamiento.
+La **Minimización del Riesgo Empírico** (ERM, por sus siglas en inglés) es un principio en el aprendizaje de máquinas que sostiene que la [[Modelo (Hipotesis)]] que minimiza la pérdida en el conjunto de entrenamiento es la mejor elección. En otras palabras, ERM **se refiere a encontrar la hipótesis que tiene el menor riesgo empírico** (o error promedio) en el conjunto de entrenamiento.
 
 Formalmente, si tenemos un conjunto de hipótesis $\mathcal{H}$ y una función de pérdida $L$, el objetivo del ERM es encontrar la hipótesis $h \in \mathcal{H}$ que minimiza la pérdida promedio en el conjunto de entrenamiento. Esto se puede escribir como:
 
@@ -37,6 +37,7 @@ Donde:
 - $N$ es el número de instancias en el conjunto de datos de entrenamiento.
 - $L(h(x_i), y_i)$ es la pérdida incurrida al predecir $h(x_i)$ cuando el verdadero valor es $y_i$.
 - $(x_i, y_i)$ es la i-ésima instancia del conjunto de entrenamiento.
+
 ![[Pasted image 20230707113725.png]]
 
-El objetivo del aprendizaje de máquinas es encontrar una hipótesis (o modelo) que tenga un buen rendimiento no sólo en los datos de entrenamiento, sino también en los nuevos datos. Aunque el ERM proporciona un método para encontrar un modelo que se ajuste bien a los datos de entrenamiento, no garantiza que el modelo vaya a generalizar bien a nuevos datos. Por lo tanto, a menudo se utilizan técnicas como la regularización y la validación cruzada para ayudar a garantizar una buena generalización.
+El objetivo del aprendizaje de máquinas es encontrar una hipótesis (o modelo) que tenga un buen rendimiento no sólo en los datos de entrenamiento, sino también en los nuevos datos. Aunque el ERM proporciona un método para encontrar un modelo que se ajuste bien a los datos de entrenamiento, no garantiza que el modelo vaya a generalizar bien a nuevos datos. Por lo tanto, a menudo se utilizan técnicas como la [[Regularización]] y la [[Validación cruzada (Cross-validation)]] para ayudar a garantizar una buena [[Generalización (inferencia)]].

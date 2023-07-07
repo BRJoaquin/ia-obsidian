@@ -7,9 +7,9 @@
 - [Clase 1 - Aprendizaje inductivo](https://aulas.ort.edu.uy/mod/resource/view.php?id=443666)
     
     - [[Aprendizaje inductivo]]
-    - Aprendizaje de conceptos
-    - Minimización del riesgo empírico
-    - Generalización
+    - [[Aprendizaje de conceptos]]
+    - [[Riesgo Empírico#Minimización del Riesgo Empírico (ERM) en Machine Learning]]
+    - [[Generalización (inferencia)]]
 
 - [Clase 2 - Probabilidad para ML](https://aulas.ort.edu.uy/mod/resource/view.php?id=444924)
     

@@ -25,7 +25,7 @@
     
 - [Clase 4 - Regresión: primeros ejemplos](https://aulas.ort.edu.uy/mod/resource/view.php?id=447929)
     
-    - Marco general para un problema de aprendizaje
+    - [[Marco general para un problema de aprendizaje]]
     - El problema de regresión
     - Regresión lineal
     

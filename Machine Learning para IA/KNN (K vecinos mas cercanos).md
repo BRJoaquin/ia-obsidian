@@ -18,7 +18,7 @@ Sin embargo, KNN también tiene algunas desventajas. En primer lugar, puede ser 
 
 # Elección de K en KNN
 
-La elección del valor de k en KNN es crucial. Un valor de k demasiado pequeño puede hacer que el algoritmo sea sensible al ruido y a los valores atípicos, lo que puede llevar al sobreajuste. Por otro lado, un valor de k demasiado grande puede hacer que el algoritmo sea insensible a las características locales de los datos, lo que puede llevar al subajuste. La elección de k suele hacerse a través de la validación cruzada.
+La elección del valor de k en KNN es crucial. Un valor de k demasiado pequeño puede hacer que el algoritmo sea sensible al [[Ruido]] y a los valores atípicos ([[Outlier]], lo que puede llevar al sobreajuste. Por otro lado, un valor de k demasiado grande puede hacer que el algoritmo sea insensible a las características locales de los datos, lo que puede llevar al subajuste. La elección de k suele hacerse a través de la validación cruzada.
 
 # Aplicaciones de KNN
 

@@ -20,7 +20,7 @@
 - [Clase 3 - Estadística para ML](https://aulas.ort.edu.uy/mod/resource/view.php?id=446288)
     
     - Modelos estadísticos
-    - Modelos paramétricos y no paramétricos
+    - [[Modelo parametrico]]
     -[[Máxima Verosimilitud]]
     
 - [Clase 4 - Regresión: primeros ejemplos](https://aulas.ort.edu.uy/mod/resource/view.php?id=447929)

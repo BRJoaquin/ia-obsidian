@@ -23,7 +23,7 @@ y = \beta_0 + \beta_1x_1 + \beta_2x_2 + ... + \beta_nx_n + \epsilon$$
 
 donde ahora hay n términos $\beta_ix_i$ para n variables de entrada $x_i$.
 
-# Regresion Polinomial
+# Regresión Polinomial
 
 Cuando la relación entre las variables de entrada y la variable de salida no es lineal, se puede usar la regresión polinomial para modelar la relación. En la regresión polinomial, transformamos nuestras variables de entrada elevándolas a una potencia (por ejemplo, si nuestra variable de entrada es $x$, podríamos usar $x^2$, $x^3$, etc. como nuevas variables de entrada). Esto permite modelar relaciones curvilíneas entre las variables de entrada y la variable de salida.
 

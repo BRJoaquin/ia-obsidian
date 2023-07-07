@@ -2,7 +2,7 @@ La regresión lineal es un algoritmo de aprendizaje supervisado que se utiliza e
 
 La regresión lineal asume una relación lineal entre las variables de entrada y la variable objetivo. En otras palabras, se puede representar matemáticamente como:
 
-$$
+$$ \Large
 y = a + b*X
 $$
 Aquí:
@@ -19,33 +19,6 @@ $$\large
 y = a + b1*X1 + b2*X2 + ... + bn*Xn
 $$
 La regresión lineal es una técnica simple pero poderosa que se usa ampliamente tanto en estadísticas como en machine learning. Es particularmente útil cuando tienes una relación lineal clara entre las variables de entrada y la variable objetivo.
-
-
-# Estimación de coeficientes
-
-La regresión lineal simple tiene la siguiente forma:
-
-$$\Large
-y = a + bX + \epsilon
-$$
-
-Donde:
-- $y$ es la variable objetivo (la que intentamos predecir).
-- $X$ es la variable predictora (la que usamos para hacer la predicción).
-- $a$ es la intercepción o coeficiente de sesgo. Es el valor de $y$ cuando $X$ es 0.
-- $b$ es el coeficiente de la variable predictora $X$. Representa la pendiente de la línea, es decir, cuánto cambia $y$ por cada cambio unitario en $X$.
-- $\epsilon$ es el error, que es la diferencia entre la predicción del modelo y el valor real.
-
-La idea es encontrar los valores de $a$ y $b$ que minimizan la suma de los cuadrados de los errores ($\epsilon$). Esto se conoce como el método de [[Mínimos Cuadrados Ordinarios]](Ordinary Least Squares, OLS).
-
-En un modelo de regresión lineal múltiple, donde hay más de una variable predictora, la ecuación se expande para incluir todos los predictores, pero la idea general sigue siendo la misma:
-
-$$\Large
-y = a + b_1X_1 + b_2X_2 + ... + b_nX_n + \epsilon
-$$
-
-Aquí, $X_1, X_2, ..., X_n$ son las variables predictoras y $b_1, b_2, ..., b_n$ son sus coeficientes respectivos.
-
 
 # Regresión lineal vs Regresión logística
 

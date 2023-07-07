@@ -5,3 +5,5 @@ Dado que no es posible calcular el riesgo verdadero directamente, ya que no tene
 El objetivo en el aprendizaje automático es encontrar un modelo con un riesgo verdadero bajo, lo que significa que el modelo es capaz de hacer buenas predicciones en datos no vistos. Sin embargo, como mencioné antes, el riesgo verdadero es inobservable. Por lo tanto, se utilizan técnicas de validación y regularización para evitar el [[Sobreajuste (Overfitting)]] y mejorar la capacidad de generalización del modelo, lo que nos ayuda a acercarnos a un riesgo verdadero bajo.
 
 En resumen, el riesgo empírico se refiere al error promedio en el conjunto de datos de entrenamiento, mientras que el riesgo verdadero es una medida **teórica** del error promedio en toda la población posible de instancias. El objetivo en el aprendizaje automático es minimizar el riesgo verdadero, aunque solo podemos estimarlo y no observarlo directamente.
+
+![[Pasted image 20230707125731.png]]

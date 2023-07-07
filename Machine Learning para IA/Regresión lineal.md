@@ -1,24 +1,52 @@
-La regresión lineal es un algoritmo de aprendizaje supervisado que se utiliza en machine learning y estadísticas. Su objetivo es predecir una variable objetivo (también conocida como variable dependiente) basándose en una o más variables de entrada (también conocidas como variables independientes o predictores).
+La **regresión lineal** es un algoritmo de [[Aprendizaje supervisado]] que se utiliza en [[Machine Learning]] y en estadística para predecir un valor de salida continuo a partir de una o más variables de entrada. Es un algoritmo de aprendizaje muy versátil, fácil de entender y tiene una amplia gama de aplicaciones.
 
-La regresión lineal asume una relación lineal entre las variables de entrada y la variable objetivo. En otras palabras, se puede representar matemáticamente como:
+# Regresión Lineal Simple y Múltiple
 
-$$ \Large
-y = a + b*X
-$$
-Aquí:
+La regresión lineal se divide en dos tipos: **simple** y **múltiple**, dependiendo del número de variables de entrada utilizadas.
 
-- 'y' es la variable objetivo que estamos tratando de predecir o estimar.
-- 'X' representa las variables de entrada.
-- 'a' es el término de intercepción, es decir, el valor de 'y' cuando 'X' es 0.
-- 'b' es el coeficiente de la variable de entrada, representa la pendiente de la línea, es decir, el cambio en 'y' por cada cambio unitario en 'X'.
+La **regresión lineal simple** usa una sola variable de entrada para predecir una variable de salida. El objetivo de la regresión lineal simple es encontrar una línea que mejor se ajuste a los datos. Esta línea es representada por la ecuación:
 
-El algoritmo de regresión lineal aprende los parámetros 'a' y 'b' de los datos de entrenamiento. Lo hace minimizando el error cuadrático medio ([[MSE]]), que es la diferencia cuadrada media entre las predicciones del modelo y los valores reales. En otras palabras, intenta trazar una línea a través de los datos de entrada que minimiza la suma de los cuadrados de los errores.
+$$\Large
+y = \beta_0 + \beta_1x + \epsilon$$
 
-En el caso de múltiples variables de entrada, esto se conoce como regresión lineal múltiple. En este caso, la ecuación se expande para incluir todos los predictores:
-$$\large
-y = a + b1*X1 + b2*X2 + ... + bn*Xn
-$$
-La regresión lineal es una técnica simple pero poderosa que se usa ampliamente tanto en estadísticas como en machine learning. Es particularmente útil cuando tienes una relación lineal clara entre las variables de entrada y la variable objetivo.
+donde:
+- $y$ es la variable de salida que queremos predecir,
+- $x$ es la variable de entrada,
+- $\beta_0$ es la ordenada en el origen o el punto de intersección de la línea con el eje y,
+- $\beta_1$ es la pendiente de la línea, y
+- $\epsilon$ es el error aleatorio.
+
+La **regresión lineal múltiple** extiende la regresión lineal simple al usar dos o más variables de entrada para predecir una variable de salida. La ecuación es:
+
+$$\Large
+y = \beta_0 + \beta_1x_1 + \beta_2x_2 + ... + \beta_nx_n + \epsilon$$
+
+donde ahora hay n términos $\beta_ix_i$ para n variables de entrada $x_i$.
+
+# MLE, NLL y MSE en Regresión Lineal Simple
+
+Para encontrar los coeficientes $\beta$ en la regresión lineal, necesitamos algún criterio que nos permita determinar qué tan bien nuestra línea se ajusta a los datos. Esto nos lleva a los conceptos de Máxima Verosimilitud (MLE), Logaritmo Negativo de Verosimilitud (NLL) y Error Cuadrático Medio (MSE).
+
+El **Método de Máxima Verosimilitud (MLE)** busca los coeficientes que maximizan la verosimilitud de los datos observados, dado el modelo.
+
+En la práctica, es común minimizar el **Logaritmo Negativo de Verosimilitud (NLL)**, que es simplemente el negativo del logaritmo de la función de verosimilitud. En el caso de la regresión lineal, minimizar el NLL es equivalente a minimizar el **Error Cuadrático Medio (MSE)**, que es una medida comúnmente utilizada para evaluar el rendimiento de los modelos de regresión.
+
+El MSE se calcula como:
+
+$$\Large MSE = \frac{1}{n}\sum_{i=1}^{n}(y_i - \hat{y}_i)^2$$
+
+donde $y_i$ son los valores observados, $\hat{y}_i$ son los valores predichos y $n$ es el número de observaciones.
+
+# Atributos Categóricos: One-hot Encoding y Label Encoding
+
+En la regresión lineal, nuestras variables de entrada deben ser numéricas. Sin embargo, a menudo nos encontramos con **atributos categóricos**, es decir, variables que toman un número limitado de categorías en lugar de valores numéricos. Para poder usar estos atributos en la regresión lineal, necesitamos convertirlos en una forma numérica. Dos técnicas comunes para esto son el **one-hot encoding** y el **label encoding**.
+
+El **One-hot encoding** implica convertir cada categoría de una variable categórica en una nueva variable binaria (0 o 1). Por ejemplo, si tenemos una variable categórica "color" con categorías "rojo", "verde" y "azul", el one-hot encoding crearía tres nuevas variables binarias: "es_rojo", "es_verde" y "es_azul".
+
+El **Label encoding**, por otro lado, simplemente asigna un número entero único a cada categoría. Por ejemplo, podríamos asignar 1 a "rojo", 2 a "verde" y 3 a "azul". Sin embargo, hay que tener cuidado con el label encoding, ya que puede introducir un orden artificial en las categorías que puede no ser adecuado.
+
+En resumen, la regresión lineal es un algoritmo fundamental en Machine Learning y estadística que proporciona una introducción sólida a los conceptos de aprendizaje supervisado. A pesar de su simplicidad, la regresión lineal puede ser sorprendentemente poderosa y es una herramienta útil en el arsenal de cualquier científico de datos.
+
 
 # Regresión lineal vs Regresión logística
 
@@ -27,3 +55,20 @@ La regresión lineal se utiliza para predecir valores continuos mientras que la 
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/k964_uNn3l0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+
+
+- **Regresión polinomial**: Cuando la relación entre las variables de entrada y la variable de salida no es lineal, se puede usar la regresión polinomial para modelar la relación. En la regresión polinomial, transformamos nuestras variables de entrada elevándolas a una potencia (por ejemplo, si nuestra variable de entrada es $x$, podríamos usar $x^2$, $x^3$, etc. como nuevas variables de entrada). Esto permite modelar relaciones curvilíneas entre las variables de entrada y la variable de salida.
+
+Un ejemplo de una regresión polinomial sería:
+
+$$y = \beta_0 + \beta_1x + \beta_2x^2 + \epsilon$$
+
+Es importante tener en cuenta que la regresión polinomial puede ser propensa al sobreajuste si se elige un grado demasiado alto para el polinomio.
+
+- **Regresión regularizada**: Cuando tenemos muchas variables de entrada, podemos tener el problema de la multicolinealidad y el sobreajuste. Para combatir esto, se pueden utilizar técnicas de regularización como Ridge, Lasso y Elastic Net que añaden un término de penalización a la función de coste que reduce los coeficientes de las variables de entrada. Esto ayuda a prevenir el sobreajuste y puede mejorar la interpretabilidad del modelo al reducir la cantidad de variables de entrada que se utilizan.
+
+- **Regresión logística**: Cuando la variable de salida es binaria (por ejemplo, sí/no o 0/1), podemos utilizar la regresión logística. Aunque no es una extensión de la regresión lineal en el sentido estricto, la regresión logística se basa en muchos de los mismos conceptos y es un método importante en la caja de herramientas de cualquier científico de datos.
+
+Espero que este resumen te haya proporcionado una sólida introducción a la regresión lineal y sus conceptos relacionados. ¡Buena suerte con tu aprendizaje!

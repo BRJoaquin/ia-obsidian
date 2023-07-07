@@ -32,11 +32,11 @@
 - [Clase 5 - Regresión: knn](https://aulas.ort.edu.uy/mod/resource/view.php?id=449973)
     
     - [[KNN (K vecinos mas cercanos)]]
-    - Curse of dimensionality
+    - [[KNN (K vecinos mas cercanos)#Maldición de la dimensionalidad]]
     
 - [Clase 5 - Regresión: árboles de decisión](https://aulas.ort.edu.uy/mod/resource/view.php?id=449975)
     
-    - Árboles de decisión
+    - [[Árbol de decisión]]
     
 - [Clase 6 - Clasificación: knn](https://aulas.ort.edu.uy/mod/resource/view.php?id=451426)
     

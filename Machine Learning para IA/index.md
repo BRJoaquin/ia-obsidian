@@ -6,7 +6,7 @@
 
 - [Clase 1 - Aprendizaje inductivo](https://aulas.ort.edu.uy/mod/resource/view.php?id=443666)
     
-    - Aprendizaje inductivo
+    - [[Aprendizaje inductivo]]
     - Aprendizaje de conceptos
     - Minimización del riesgo empírico
     - Generalización

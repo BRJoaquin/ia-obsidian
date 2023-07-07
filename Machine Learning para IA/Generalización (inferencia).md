@@ -1,0 +1,6 @@
+
+La **generalización** es la capacidad de un modelo de Machine Learning para ser efectivo en datos no vistos durante la fase de entrenamiento. En otras palabras, un modelo generaliza bien si el rendimiento en los datos de entrenamiento (es decir, los datos que se utilizaron para entrenar el modelo) es similar al rendimiento en los datos de prueba (es decir, nuevos datos que el modelo no ha visto antes).
+
+Por ejemplo, considera un modelo que se entrena para clasificar imágenes de gatos y perros. Durante el entrenamiento, se le presentan muchas imágenes de gatos y perros y se le enseña a reconocer las características que distinguen a los gatos de los perros. Si el modelo puede luego clasificar correctamente nuevas imágenes de gatos y perros que no se utilizaron durante el entrenamiento, podemos decir que el modelo ha "generalizado" bien a partir de su experiencia de entrenamiento.
+
+La capacidad de generalización es fundamental para cualquier modelo de Machine Learning, ya que el objetivo de estos modelos es hacer predicciones precisas en datos no vistos, no sólo en los datos de entrenamiento. Para evaluar la capacidad de generalización de un modelo, se utilizan técnicas como la [[Validación cruzada (Cross-validation)]]y los conjuntos de entrenamiento y prueba separados. vease: [[Error de generalización]]

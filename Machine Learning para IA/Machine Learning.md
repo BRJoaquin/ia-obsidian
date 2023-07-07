@@ -33,12 +33,12 @@ Existen diversas formas de categorizar los tipos de aprendizaje en el Machine Le
    - **Distribución**: Los modelos pueden asumir una distribución particular de los datos (por ejemplo, normal).
    - **Función de pérdida**: Esta es una medida de qué tan mal el modelo predice el resultado. Diferentes tipos de tareas pueden requerir diferentes funciones de pérdida. vease [[Función de pérdida]]
    - **Error empírico**: Este es el error que el modelo comete en el conjunto de entrenamiento. vease [[Error empírico]]
-   - **Generalización/Inferencia**: Se refiere a la capacidad del modelo de funcionar bien en datos nuevos, no vistos durante el entrenamiento. [[Generalización]]
+   - **Generalización/Inferencia**: Se refiere a la capacidad del modelo de funcionar bien en datos nuevos, no vistos durante el entrenamiento. [[Generalización (inferencia)]]
 
 4. **Según la propiedad de los datos disponibles y pregunta a responder**:
 
-   - **Supervisado**: El modelo aprende de un conjunto de datos etiquetado (es decir, cada ejemplo de entrenamiento tiene una salida objetivo asociada).
-   - **No supervisado**: El modelo aprende de un conjunto de datos no etiquetado (es decir, no hay salidas objetivo).
+   - **Supervisado**: El modelo aprende de un conjunto de datos etiquetado (es decir, cada ejemplo de entrenamiento tiene una salida objetivo asociada). vease [[Aprendizaje supervisado]]
+   - **No supervisado**: El modelo aprende de un conjunto de datos no etiquetado (es decir, no hay salidas objetivo). vease [[Aprendizaje no supervisado]]
 
 5. **Según participantes y roles**:
 
@@ -51,7 +51,6 @@ Existen diversas formas de categorizar los tipos de aprendizaje en el Machine Le
    - **Online**: El modelo se entrena y actualiza a medida que llegan nuevos datos.
    - **Offline**: El modelo se entrena con un conjunto de datos fijo y luego se utiliza sin cambios.
    - **Combinado**: Combinación de los dos enfoques anteriores, por ejemplo, entrenamiento offline inicial seguido de refinamiento online.
-
 
 
 # Video 

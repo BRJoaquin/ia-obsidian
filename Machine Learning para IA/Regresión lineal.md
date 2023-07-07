@@ -61,14 +61,11 @@ donde $y_i$ son los valores observados, $\hat{y}_i$ son los valores predichos y 
 
 # Atributos Categóricos: One-hot Encoding y Label Encoding
 
-En la regresión lineal, nuestras variables de entrada deben ser numéricas. Sin embargo, a menudo nos encontramos con **atributos categóricos**, es decir, variables que toman un número limitado de categorías en lugar de valores numéricos. Para poder usar estos atributos en la regresión lineal, necesitamos convertirlos en una forma numérica. Dos técnicas comunes para esto son el **one-hot encoding** y el **label encoding**.
+En la regresión lineal, nuestras variables de entrada deben ser numéricas. Sin embargo, a menudo nos encontramos con **atributos categóricos**, es decir, variables que toman un número limitado de categorías en lugar de valores numéricos. Para poder usar estos atributos en la regresión lineal, necesitamos convertirlos en una forma numérica. Dos técnicas comunes para esto son el [[One-hot encoding]] y el [[Label encoding]].
 
 El **One-hot encoding** implica convertir cada categoría de una variable categórica en una nueva variable binaria (0 o 1). Por ejemplo, si tenemos una variable categórica "color" con categorías "rojo", "verde" y "azul", el one-hot encoding crearía tres nuevas variables binarias: "es_rojo", "es_verde" y "es_azul".
 
 El **Label encoding**, por otro lado, simplemente asigna un número entero único a cada categoría. Por ejemplo, podríamos asignar 1 a "rojo", 2 a "verde" y 3 a "azul". Sin embargo, hay que tener cuidado con el label encoding, ya que puede introducir un orden artificial en las categorías que puede no ser adecuado.
-
-En resumen, la regresión lineal es un algoritmo fundamental en Machine Learning y estadística que proporciona una introducción sólida a los conceptos de aprendizaje supervisado. A pesar de su simplicidad, la regresión lineal puede ser sorprendentemente poderosa y es una herramienta útil en el arsenal de cualquier científico de datos.
-
 
 # Regresión lineal vs Regresión logística
 

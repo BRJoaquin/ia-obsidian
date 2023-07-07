@@ -31,7 +31,7 @@
     
 - [Clase 5 - Regresión: knn](https://aulas.ort.edu.uy/mod/resource/view.php?id=449973)
     
-    - knn: k vecinos más cercanos
+    - [[KNN (K vecinos mas cercanos)]]
     - Curse of dimensionality
     
 - [Clase 5 - Regresión: árboles de decisión](https://aulas.ort.edu.uy/mod/resource/view.php?id=449975)

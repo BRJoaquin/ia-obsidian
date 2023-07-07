@@ -18,13 +18,41 @@ Sin embargo, KNN también tiene algunas desventajas. En primer lugar, puede ser 
 
 # Elección de K en KNN
 
-La elección del valor de k en KNN es crucial. Un valor de k demasiado pequeño puede hacer que el algoritmo sea sensible al [[Ruido]] y a los valores atípicos ([[Outlier]], lo que puede llevar al sobreajuste. Por otro lado, un valor de k demasiado grande puede hacer que el algoritmo sea insensible a las características locales de los datos, lo que puede llevar al subajuste. La elección de k suele hacerse a través de la validación cruzada.
+La elección del valor de k en KNN es crucial. Un valor de k demasiado pequeño puede hacer que el algoritmo sea sensible al [[Ruido]] y a los valores atípicos ([[Outlier]], lo que puede llevar al sobreajuste. Por otro lado, un valor de k demasiado grande puede hacer que el algoritmo sea insensible a las características locales de los datos, lo que puede llevar al subajuste. La elección de k suele hacerse a través de la [[Validación cruzada (Cross-validation)]].
+
+![[Pasted image 20230707162403.png]]
 
 # Aplicaciones de KNN
 
 KNN se utiliza en una variedad de aplicaciones, como la recomendación de productos, la clasificación de documentos, el reconocimiento de patrones, la detección de anomalías y la imputación de datos faltantes. Aunque es un algoritmo relativamente simple, su flexibilidad y facilidad de uso hacen que sea una herramienta valiosa para cualquier científico de datos.
 
 El algoritmo de los k-vecinos más cercanos (KNN, por sus siglas en inglés) es una técnica de aprendizaje supervisado comúnmente asociada con problemas de clasificación. Sin embargo, KNN también puede utilizarse para resolver problemas de regresión, es decir, cuando la variable objetivo es continua en lugar de categórica. En este contexto, KNN se utiliza para predecir un valor numérico a partir de los valores numéricos de los vecinos más cercanos.
+
+# Rendimiento
+
+Los K-Vecinos más Cercanos (KNN) es un algoritmo computacionalmente costoso debido a que requiere calcular las distancias a todas las muestras en el conjunto de datos para cada predicción. Específicamente, KNN tiene un tiempo de ejecución de $O(DN)$, donde $D$ es la dimensión de los datos (el número de características) y $N$ es el número de muestras en el conjunto de datos. Como resultado, KNN puede ser lento para grandes conjuntos de datos y/o datos de alta dimensión.
+
+Para mejorar la eficiencia, se han desarrollado estructuras de datos especiales, como los árboles Ball y KD, que permiten realizar búsquedas más rápidas de los vecinos más cercanos.
+
+## Ball-Tree y KD-Tree
+
+Un **Ball-Tree** es una estructura de datos de árbol binario que particiona los datos en una serie de nodos hiperesféricos o "bolas". Cada nodo en el árbol representa una "bola", que contiene un subconjunto de los puntos de los datos. El Ball-Tree acelera las búsquedas de los vecinos más cercanos al eliminar rápidamente las bolas que están demasiado lejos para contener los vecinos más cercanos.
+
+Un **KD-Tree** (árbol de k-dimensional) es otro tipo de estructura de árbol binario que particiona los datos a lo largo de los ejes de las características. Al igual que el Ball-Tree, el KD-Tree permite realizar búsquedas de los vecinos más cercanos de manera más eficiente al eliminar rápidamente las regiones del espacio de características que están demasiado lejos para contener los vecinos más cercanos.
+
+Ambos árboles, Ball y KD, pueden acelerar considerablemente las consultas de los vecinos más cercanos en datos de baja a moderada dimensión. Sin embargo, su rendimiento tiende a degradarse a medida que la dimensión de los datos aumenta, lo que nos lleva a la maldición de la dimensionalidad.
+
+## Maldición de la dimensionalidad
+
+La maldición de la dimensionalidad se refiere al fenómeno por el cual la dificultad para manejar, procesar y generalizar datos aumenta exponencialmente con cada dimensión adicional en el conjunto de datos. En el caso de KNN, la maldición de la dimensionalidad se manifiesta de varias maneras.
+
+Primero, a medida que la dimensión de los datos aumenta, la distancia entre cualquier par de puntos tiende a ser más similar, lo que hace que la noción de "cercanía" sea menos útil. Esto puede hacer que KNN sea menos efectivo en datos de alta dimensión.
+
+Segundo, debido a la creciente similitud en las distancias, se requieren más datos para mantener la misma densidad de muestras en un espacio de alta dimensión, lo que puede hacer que KNN sea ineficaz en conjuntos de datos de alta dimensión con un número limitado de muestras.
+
+Tercero, el costo computacional de calcular las distancias en un espacio de alta dimensión puede ser considerable. Aunque las estructuras de datos como los árboles Ball y KD pueden ayudar, su eficacia se reduce a medida que la dimensión de los datos aumenta.
+
+En resumen, aunque KNN puede ser un algoritmo de aprendizaje automático útil, es importante tener en cuenta sus limitaciones y desafíos, especialmente cuando se trabaja con datos de alta dimensión.
 
 
 # KNN en regresión

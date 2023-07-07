@@ -28,7 +28,7 @@ KNN se utiliza en una variedad de aplicaciones, como la recomendación de produc
 
 El algoritmo de los k-vecinos más cercanos (KNN, por sus siglas en inglés) es una técnica de aprendizaje supervisado comúnmente asociada con problemas de clasificación. Sin embargo, KNN también puede utilizarse para resolver problemas de regresión, es decir, cuando la variable objetivo es continua en lugar de categórica. En este contexto, KNN se utiliza para predecir un valor numérico a partir de los valores numéricos de los vecinos más cercanos.
 
-# Rendimiento
+# Costo computacional
 
 Los K-Vecinos más Cercanos (KNN) es un algoritmo computacionalmente costoso debido a que requiere calcular las distancias a todas las muestras en el conjunto de datos para cada predicción. Específicamente, KNN tiene un tiempo de ejecución de $O(DN)$, donde $D$ es la dimensión de los datos (el número de características) y $N$ es el número de muestras en el conjunto de datos. Como resultado, KNN puede ser lento para grandes conjuntos de datos y/o datos de alta dimensión.
 
@@ -54,6 +54,73 @@ Tercero, el costo computacional de calcular las distancias en un espacio de alta
 
 En resumen, aunque KNN puede ser un algoritmo de aprendizaje automático útil, es importante tener en cuenta sus limitaciones y desafíos, especialmente cuando se trabaja con datos de alta dimensión.
 
+# Distancias 
+
+En el algoritmo de los k-vecinos más cercanos (KNN), la elección de la medida de distancia puede tener un impacto significativo en los resultados. Aquí describiremos algunas de las medidas de distancia más comúnmente utilizadas en KNN.
+
+![[Pasted image 20230707163148.png]]
+
+## Distancia de Manhattan
+
+La distancia de Manhattan, también conocida como distancia $L1$ o norma $L1$, es la suma de las diferencias absolutas de las coordenadas entre dos puntos. En un espacio de dimensiones, la distancia de Manhattan entre dos puntos $P(x_1, y_1, ..., z_1)$ y $Q(x_2, y_2, ..., z_2)$ se calcula como:
+
+$$
+d(P,Q) = |x_2 - x_1| + |y_2 - y_1| + ... + |z_2 - z_1|
+$$
+
+## Distancia Euclídea
+
+La distancia euclídea, o norma $L2$, es la raíz cuadrada de la suma de las diferencias al cuadrado entre las coordenadas de dos puntos. Para los puntos $P$ y $Q$ definidos como antes, la distancia euclídea se calcula como:
+
+$$
+d(P,Q) = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2 + ... + (z_2 - z_1)^2}
+$$
+
+## Distancia de Minkowski
+
+La distancia de Minkowski es una generalización de las distancias de Manhattan y Euclídea. Incluye un parámetro $p$ que determina la potencia a la que se elevan las diferencias de las coordenadas antes de sumarlas. Para los puntos $P$ y $Q$ definidos como antes, la distancia de Minkowski se calcula como:
+
+$$
+d(P,Q) = \left[ |x_2 - x_1|^p + |y_2 - y_1|^p + ... + |z_2 - z_1|^p \right]^{1/p}
+$$
+
+Cuando $p=1$, la distancia de Minkowski es igual a la distancia de Manhattan. Cuando $p=2$, es igual a la distancia Euclídea.
+
+## Distancia del Infinito
+
+La distancia del infinito, también conocida como norma $L\infty$, es el máximo de las diferencias absolutas entre las coordenadas de dos puntos. Para los puntos $P$ y $Q$ definidos como antes, la distancia del infinito se calcula como:
+
+$$
+d(P,Q) = max\left( |x_2 - x_1|, |y_2 - y_1|, ..., |z_2 - z_1| \right)
+$$
+
+## Distancia de Mahalanobis
+
+La distancia de Mahalanobis es una medida de distancia que tiene en cuenta la correlación entre las variables. Esta distancia es especialmente útil cuando las variables no están distribuidas uniformemente o están correlacionadas. La distancia de Mahalanobis entre dos puntos $P(x_1, y_1, ..., z_1)$ y $Q(x_2, y_2, ..., z_2)$ se calcula como:
+
+$$
+d(P,Q) = \sqrt{ (P-Q)^T S^{-1} (P-Q) }
+$$
+
+donde $S$ es la matriz de covarianza de las variables.
+
+La elección de la medida de distancia en KNN debe basarse en el conocimiento del dominio y en la naturaleza de los datos.
+
+# Efecto escala
+
+El efecto de escala es un problema común en KNN y en muchos otros algoritmos de aprendizaje automático que utilizan medidas de distancia para comparar instancias de datos. 
+
+![[Pasted image 20230707163259.png]]
+
+En KNN, la distancia entre las muestras se utiliza para encontrar las muestras más "cercanas" o "similares". Si una característica tiene una escala de valores mucho mayor que otra, su efecto en la medida de la distancia será proporcionalmente mayor. Esto significa que esa característica tendrá mucho más peso en la decisión de cuáles son las muestras "cercanas", incluso si la otra característica es igualmente o más importante para determinar la similitud.
+
+Por ejemplo, supongamos que estamos utilizando KNN para hacer recomendaciones de películas basadas en la edad del usuario y la calificación promedio de la película. Si no escalamos las características, la diferencia de edad (que puede ser de hasta 100) dominará sobre la diferencia en las calificaciones de las películas (que puede variar entre 1 y 5). En este caso, dos usuarios de la misma edad recibirán recomendaciones de películas similares, independientemente de sus calificaciones de películas.
+
+Para lidiar con el efecto de escala, es común reescalar o normalizar (vease [[Noramalización]]) las características para que todas tengan el mismo rango de valores, por ejemplo, de 0 a 1. Un método común de reescalado es la normalización min-max, que reescala las características al restar el valor mínimo y dividir por el rango (el valor máximo menos el mínimo). Otra opción es la normalización z-score, que reescala las características para tener una media de 0 y una desviación estándar de 1.
+
+En resumen, el efecto de escala es un problema en KNN porque este algoritmo utiliza medidas de distancia para determinar la similitud entre las muestras. Es importante tratar este problema **antes de entrenar** un modelo KNN para asegurarse de que todas las características sean consideradas equitativamente.
+
+![[Pasted image 20230707163724.png]]
 
 # KNN en regresión
 

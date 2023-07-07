@@ -23,6 +23,28 @@ y = \beta_0 + \beta_1x_1 + \beta_2x_2 + ... + \beta_nx_n + \epsilon$$
 
 donde ahora hay n términos $\beta_ix_i$ para n variables de entrada $x_i$.
 
+# Regresion Polinomial
+
+Cuando la relación entre las variables de entrada y la variable de salida no es lineal, se puede usar la regresión polinomial para modelar la relación. En la regresión polinomial, transformamos nuestras variables de entrada elevándolas a una potencia (por ejemplo, si nuestra variable de entrada es $x$, podríamos usar $x^2$, $x^3$, etc. como nuevas variables de entrada). Esto permite modelar relaciones curvilíneas entre las variables de entrada y la variable de salida.
+
+Un ejemplo de una regresión polinomial sería:
+
+$$\Large
+y = \beta_0 + \beta_1x + \beta_2x^2 + \epsilon$$
+
+Es importante tener en cuenta que la regresión polinomial puede ser propensa al sobreajuste si se elige un grado demasiado alto para el polinomio.
+
+Aunque puede parecer contradictorio, la regresión polinomial **se considera una forma de regresión lineal**. Aunque la relación entre las variables independientes y la variable dependiente es polinomial (o no lineal), se llama "regresión lineal" porque los coeficientes de la ecuación de regresión se estiman de manera lineal.
+
+En otras palabras, el término "lineal" en "regresión lineal" no se refiere a la forma de la ecuación de regresión, sino a cómo se estiman los coeficientes $\beta$ de la ecuación. En la regresión lineal (incluyendo la regresión polinomial), estos coeficientes se estiman de manera lineal a partir de las variables independientes. 
+
+Así, una regresión polinomial de grado 2 podría tener la siguiente forma:
+
+$$y = \beta_0 + \beta_1x + \beta_2x^2 + \epsilon$$
+
+Aunque $x^2$ es una relación no lineal con $y$, la relación entre los coeficientes ($\beta_0$, $\beta_1$, $\beta_2$) y las variables independientes ($1$, $x$, $x^2$) es lineal, por lo que se considera regresión lineal.
+
+
 # MLE, NLL y MSE en Regresión Lineal Simple
 
 Para encontrar los coeficientes $\beta$ en la regresión lineal, necesitamos algún criterio que nos permita determinar qué tan bien nuestra línea se ajusta a los datos. Esto nos lleva a los conceptos de Máxima Verosimilitud (MLE), Logaritmo Negativo de Verosimilitud (NLL) y Error Cuadrático Medio (MSE).
@@ -59,14 +81,14 @@ La regresión lineal se utiliza para predecir valores continuos mientras que la 
 
 
 
-- **Regresión polinomial**: Cuando la relación entre las variables de entrada y la variable de salida no es lineal, se puede usar la regresión polinomial para modelar la relación. En la regresión polinomial, transformamos nuestras variables de entrada elevándolas a una potencia (por ejemplo, si nuestra variable de entrada es $x$, podríamos usar $x^2$, $x^3$, etc. como nuevas variables de entrada). Esto permite modelar relaciones curvilíneas entre las variables de entrada y la variable de salida.
+- **Regresión polinomial**: 
+Cuando la relación entre las variables de entrada y la variable de salida no es lineal, se puede usar la regresión polinomial para modelar la relación. En la regresión polinomial, transformamos nuestras variables de entrada elevándolas a una potencia (por ejemplo, si nuestra variable de entrada es $x$, podríamos usar $x^2$, $x^3$, etc. como nuevas variables de entrada). Esto permite modelar relaciones curvilíneas entre las variables de entrada y la variable de salida.
 
 Un ejemplo de una regresión polinomial sería:
 
 $$y = \beta_0 + \beta_1x + \beta_2x^2 + \epsilon$$
 
 Es importante tener en cuenta que la regresión polinomial puede ser propensa al sobreajuste si se elige un grado demasiado alto para el polinomio.
-
 - **Regresión regularizada**: Cuando tenemos muchas variables de entrada, podemos tener el problema de la multicolinealidad y el sobreajuste. Para combatir esto, se pueden utilizar técnicas de regularización como Ridge, Lasso y Elastic Net que añaden un término de penalización a la función de coste que reduce los coeficientes de las variables de entrada. Esto ayuda a prevenir el sobreajuste y puede mejorar la interpretabilidad del modelo al reducir la cantidad de variables de entrada que se utilizan.
 
 - **Regresión logística**: Cuando la variable de salida es binaria (por ejemplo, sí/no o 0/1), podemos utilizar la regresión logística. Aunque no es una extensión de la regresión lineal en el sentido estricto, la regresión logística se basa en muchos de los mismos conceptos y es un método importante en la caja de herramientas de cualquier científico de datos.

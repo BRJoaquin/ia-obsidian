@@ -59,3 +59,4 @@ Existen diversas formas de categorizar los tipos de aprendizaje en el Machine Le
 
 
 
+![[Pasted image 20230707124515.png]]

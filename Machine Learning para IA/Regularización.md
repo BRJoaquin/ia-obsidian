@@ -1,6 +1,6 @@
-La regularización es un conjunto de técnicas que se utilizan para prevenir el [[Sobreajuste (Overfitting)]] en los modelos de [[Machine Learning]]. El sobreajuste ocurre cuando un modelo aprende demasiado bien los datos de entrenamiento y pierde la capacidad de generalizar sobre nuevos datos desconocidos. Esencialmente, la regularización agrega una penalización a los parámetros del modelo para reducir su complejidad y hacer que el modelo sea más robusto a las fluctuaciones en los datos de entrenamiento.
+La regularización es un conjunto de técnicas que se utilizan para prevenir el [[Sobreajuste (Overfitting)]] en los modelos de [[Machine Learning]]. El sobreajuste ocurre cuando un modelo aprende demasiado bien los datos de entrenamiento y pierde la capacidad de generalizar sobre nuevos datos desconocidos. Esencialmente, la regularización **agrega una penalización a los parámetros del modelo para reducir su complejidad** y hacer que el modelo sea más robusto a las fluctuaciones en los datos de entrenamiento.
 
-En términos más formales, la regularización modifica la función de pérdida que se está minimizando al agregar un término adicional que penaliza la complejidad del modelo. Esto a menudo implica restringir los valores de los parámetros del modelo (como los pesos en una red neuronal). La idea es que al agregar esta penalización, se puede equilibrar el trade-off entre sesgo y varianza.
+En términos más formales, la regularización **modifica la función de pérdida que se está minimizando al agregar un término adicional que penaliza la complejidad del modelo**. Esto a menudo implica restringir los valores de los parámetros del modelo (como los pesos en una red neuronal). La idea es que al agregar esta penalización, se puede equilibrar el trade-off entre [[Sesgo]] y [[Probablidad/Varianza|Varianza]].
 
 Existen varios métodos de regularización, pero los más comunes son la regularización L1 y L2.
 
@@ -20,14 +20,29 @@ $$ L2 = \lambda \sum_{i=1}^{n} w_i^2 $$
 
 Al igual que con L1, $\lambda$ controla la cantidad de regularización a aplicar. La regularización L2 tiene la propiedad de reducir los valores de los parámetros, pero a diferencia de L1, no los hace exactamente cero. Esto es útil cuando se cree que todas las características son relevantes para la tarea.
 
-## Regularización Elastic Net
-
-Elastic Net es una combinación de L1 y L2. En este método, tanto la suma de los valores absolutos como la suma de los cuadrados se agregan a la función de pérdida. Elastic Net tiene la ventaja de que puede generar soluciones dispersas (como L1) mientras reduce los valores de los parámetros (como L2). 
-
-$$ ElasticNet = \lambda (\alpha \sum_{i=1}^{n} |w_i| + (1-\alpha) \sum_{i=1}^{n} w_i^2) $$
-
-Aquí, $\alpha$ es un parámetro adicional que controla la combinación de L1 y L2.
-
-La elección de la técnica de regularización y los valores para los parámetros de regularización ($\lambda$ y $\alpha$ en el caso de Elastic Net) dependen del problema específico y a menudo se determinan mediante validación cruzada.
 
 Finalmente, es importante destacar que la regularización es una herramienta para manejar la complejidad del modelo y ayudar a prevenir el sobreajuste, pero no es un sustituto de tener buenos datos de entrenamiento. Ninguna cantidad de regularización puede compensar datos de entrenamiento de mala calidad o insuficientes.
+
+# Ejemplo
+
+Veamos algunos ejemplos para entender mejor cómo funcionan las regularizaciones L1 y L2.
+
+Supongamos que estamos desarrollando un modelo de regresión lineal para predecir el precio de las casas en función de una serie de características como el tamaño de la casa, la cantidad de habitaciones, la edad de la casa, la ubicación, etc. Sin embargo, encontramos que nuestro modelo está sobreajustando los datos de entrenamiento. Para evitar este [[Subajuste (Underfitting)]], podemos agregar una regularización.
+
+## Regularización L1 (Lasso)
+
+La regularización L1, también conocida como Lasso (Least Absolute Shrinkage and Selection Operator), agrega una penalidad al costo del modelo igual al valor absoluto de la magnitud de los coeficientes. Matemáticamente, la regularización L1 se puede expresar de la siguiente manera:
+
+$$\Large \text{Costo} = \text{MSE} + \alpha\sum_{i=1}^n |\beta_i| $$
+
+donde $\alpha$ es un hiperparámetro que controla la fuerza de la regularización y $\beta_i$ son los coeficientes del modelo. Un valor más grande de $\alpha$ aumenta la regularización y simplifica el modelo.
+
+La regularización L1 puede resultar en modelos con características dispersas, donde algunos coeficientes se hacen cero, es decir, algunos de los atributos son completamente ignorados por el modelo. Esto puede ser beneficioso en casos donde tenemos muchas características y queremos seleccionar solo las más importantes.
+
+## Regularización L2 (Ridge)
+
+La regularización L2, también conocida como Ridge, añade una penalidad al costo del modelo igual al cuadrado de la magnitud de los coeficientes. Matemáticamente, la regularización L2 se puede expresar de la siguiente manera:
+
+$$\Large \text{Costo} = \text{MSE} + \alpha\sum_{i=1}^n \beta_i^2 $$
+
+Al igual que con L1, $\alpha$ es un hiperparámetro que controla la fuerza de la regularización y $\beta_i$ son los coeficientes del modelo. A diferencia de L1, la regularización L2 no hace que los coeficientes se reduzcan a cero. En cambio, distribuye la magnitud de los coeficientes de manera más uniforme a través de las características. Por lo tanto, Ridge puede ser una mejor opción cuando todas las características son importantes.

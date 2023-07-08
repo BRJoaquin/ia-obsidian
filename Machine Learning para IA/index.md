@@ -66,6 +66,8 @@
 - [Clase 11 - Métricas de clasificación](https://aulas.ort.edu.uy/mod/resource/view.php?id=457514)
     
     -  [[Métricas de clasificación]]
+    - [[Curva ROC]]
+    - [[AUC-ROC]]
     
 - [Clase 11 - Regularización](https://aulas.ort.edu.uy/mod/resource/view.php?id=457515)
     

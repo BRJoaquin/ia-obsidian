@@ -59,3 +59,16 @@ Para ejemplificar las métricas, consideremos el siguiente conjunto de prediccio
 
 El AUC-ROC es más complicado de calcular a partir de valores específicos ya que requiere cambiar los umbrales de decisión y medir la tasa de verdaderos positivos y la tasa de falsos positivos.
 
+# Importancia
+
+En la elección de la métrica de evaluación adecuada, se debe tener en cuenta el objetivo de la aplicación y el coste de los errores de clasificación. Dependiendo de la aplicación, diferentes errores tendrán diferentes costes. Aquí algunos ejemplos:
+
+1. **Detección de cáncer**: En este caso, queremos minimizar el número de falsos negativos (FN), ya que no detectar un caso de cáncer puede tener graves consecuencias. Por lo tanto, querríamos maximizar el `Recall` (Sensibilidad), que es la proporción de verdaderos positivos entre todos los valores que son realmente positivos. Un modelo con un alto recall asegura que la mayoría de los pacientes con cáncer serán correctamente identificados, aunque a costa de una mayor cantidad de falsos positivos (personas saludables incorrectamente identificadas como enfermas).
+
+2. **Detectar si un correo electrónico es spam**: En este caso, podríamos estar más interesados en minimizar el número de falsos positivos (FP), ya que clasificar un correo electrónico legítimo como spam podría hacer que el destinatario se pierda información importante. Aquí querríamos maximizar la `Precisión`, que es la proporción de verdaderos positivos entre todas las predicciones positivas. Un modelo con alta precisión asegura que la mayoría de los correos identificados como spam realmente lo sean, aunque a costa de no marcar algunos correos spam (falsos negativos).
+
+3. **Recomendaciones de películas**: En un sistema de recomendación, podríamos estar interesados en una combinación de alta precisión y recall, ya que tanto recomendar malas películas (FP) como no recomendar buenas películas (FN) podrían afectar la experiencia del usuario. Aquí podríamos utilizar la métrica `F1-Score`, que combina precisión y recall.
+
+4. **Clasificación de fraude en transacciones bancarias**: En este caso, tanto los falsos positivos (transacciones legítimas marcadas como fraudulentas) como los falsos negativos (transacciones fraudulentas no detectadas) pueden tener un alto costo. Aquí, la elección de la métrica dependerá de cuál de estos errores se considere más costoso.
+
+La elección de la métrica de evaluación debe hacerse teniendo en cuenta el contexto de la aplicación y los costos asociados a los diferentes tipos de errores.

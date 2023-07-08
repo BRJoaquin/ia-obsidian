@@ -53,9 +53,7 @@ Una vez completado el proceso de repetición, se selecciona el modelo con el mej
 
 La principal ventaja del método Repeated Holdout es que reduce la varianza en la estimación del rendimiento del modelo en comparación con la técnica de Holdout. Sin embargo, tiene la desventaja de que requiere más tiempo y recursos computacionales debido a las múltiples ejecuciones.
 
-
-
-
+![[Pasted image 20230708141419.png]]
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1whfIOoPTlk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -71,7 +69,3 @@ La principal ventaja del método Repeated Holdout es que reduce la varianza en l
 
 
 
-
-
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/KKErl_UtF2M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

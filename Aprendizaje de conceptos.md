@@ -18,7 +18,3 @@ Un **concepto** en el aprendizaje de conceptos es una función booleana que quer
 Retomando el ejemplo anterior, el concepto "es un perro" sería la función que podemos aplicar a una nueva imagen para determinar si es o no una imagen de un perro. 
 
 ![[Pasted image 20230707115036.png]]
-
-
-# Esto es una prueba de GPT
-

@@ -58,33 +58,28 @@ La principal ventaja del método Repeated Holdout es que reduce la varianza en l
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1whfIOoPTlk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-## Algoritmo
-
-
-
-
 # Criterios De Información
 
-Los **criterios de información** son métodos estadísticos utilizados para comparar y seleccionar modelos basándose en su capacidad para explicar los datos dados ciertas suposiciones. Los dos criterios más comunes son:
+Los **Criterios de Información** son una clase de métodos para la selección de modelos que equilibran la calidad del ajuste del modelo con la complejidad del modelo, intentando encontrar el modelo "más simple" que se ajusta suficientemente bien a los datos. 
 
-- **Criterio De Informacion De Akaike (AIC)**: Este criterio asume que cuanto más pequeño es el valor AIC, mejor es el ajuste del modelo a los datos. AIC penaliza a los modelos complejos (es decir, aquellos con más parámetros), favoreciendo así a los modelos más simples.
+Estos criterios intentan penalizar la sobreajuste agregando un término a la función de pérdida que está relacionado con la complejidad del modelo (como el número de parámetros). Por lo tanto, un modelo con más parámetros no necesariamente será seleccionado a menos que proporcione una mejora significativa en el ajuste a los datos.
 
-- **Criterio De Informacion Bayesiano (BIC)**: Similar al AIC, pero penaliza aún más a los modelos complejos. Por lo tanto, BIC tiende a favorecer aún más a los modelos simples que AIC.
+Dos de los criterios de información más utilizados son:
 
-Estos criterios pueden ser útiles cuando se comparan diferentes tipos o configuraciones de modelos y se desea equilibrar entre ajuste a los datos y complejidad del modelo (para evitar sobreajuste). Sin embargo, estos criterios sólo proporcionan una medida relativa del rendimiento del modelo y no deben utilizarse como única herramienta para seleccionar un modelo.
+1. **Criterio de Información de Akaike (AIC)**: AIC se define como $2k - 2\log(L)$, donde $k$ es el número de parámetros en el modelo y $L$ es la verosimilitud máxima del modelo. AIC asume que los errores siguen una distribución normal y está diseñado para seleccionar modelos que minimicen la información perdida (es decir, la divergencia de Kullback-Leibler entre el modelo verdadero y el modelo propuesto).
 
-# Conclusion
+2. **Criterio de Información Bayesiana (BIC)**: BIC se define como $k\log(n) - 2\log(L)$, donde $n$ es el número de observaciones. BIC también penaliza modelos con más parámetros, pero lo hace más severamente que AIC, especialmente cuando el número de observaciones es grande.
 
-La selección del modelo adecuado es crucial para obtener buenos resultados en aprendizaje automático. Existen varias técnicas para hacerlo, desde métodos sencillos como Holdout hasta métodos más sofisticados como validación cruzada y criterios informativos. La elección depende tanto del problema específico como del tiempo y recursos disponibles.
+Tanto AIC como BIC se utilizan de manera similar: ajustas varios modelos, calculas el AIC (o BIC) para cada uno, y el modelo con el AIC (o BIC) más bajo es el que se elige.
 
 
 # Validación cruzada
 
 vease [[Validación cruzada (Cross-validation)]]
 
+# Conclusión
 
-
-
+La selección del modelo adecuado es crucial para obtener buenos resultados en aprendizaje automático. Existen varias técnicas para hacerlo, desde métodos sencillos como Holdout hasta métodos más sofisticados como validación cruzada y criterios informativos. La elección depende tanto del problema específico como del tiempo y recursos disponibles.
 
 
 

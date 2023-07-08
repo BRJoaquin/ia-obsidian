@@ -61,11 +61,7 @@
     
 - [Clase 10 - Error esperado: seleccionar el sesgo inductivo](https://aulas.ort.edu.uy/mod/resource/view.php?id=456279)
     
-    - Repaso: Model Evaluation vs Model Selection
-    - Model Evaluation con Holdout: Train + Test
-    - Model Selection con Holdout: Train + Val + Test
-    - Model Selection con Repeated Holdout
-    - Model Selection con Cross-Validation
+    - [[Selección de modelo]]
     
 - [Clase 11 - Métricas de clasificación](https://aulas.ort.edu.uy/mod/resource/view.php?id=457514)
     

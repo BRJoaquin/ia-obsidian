@@ -80,6 +80,7 @@ Es importante tener en cuenta que el sesgo pesimista es solo una estimación, y 
 
 ![[Pasted image 20230708122738.png]]
 
-# Conclusión
+<iframe width="560" height="315" src="https://www.youtube.com/embed/miq_7lZgguE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-![[Pasted image 20230708122902.png]]
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KKErl_UtF2M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+

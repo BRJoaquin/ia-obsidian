@@ -20,27 +20,13 @@ La dependencia del sesgo inductivo con el dataset viene de que si el sesgo induc
 
 # Error esperado
 
-El error esperado de un modelo es la diferencia promedio que se espera entre las predicciones del modelo y la verdad subyacente. Esencialmente, es una medida de cuánto espera que se equivoque su modelo en promedio.
 
-![[Pasted image 20230708125021.png]]
-![[Pasted image 20230708124826.png]]
-# Error irreducible
-
-El error irreducible se refiere al error que no se puede reducir sin importar qué tan bien se ajuste el modelo a los datos. Este error proviene de factores fuera del control del algoritmo, como el ruido en los datos de entrenamiento.
-
-# Descomposición del error
-
-El error total de un modelo se puede descomponer en tres términos: sesgo, varianza y error irreducible. Esta descomposición nos permite entender mejor el compromiso entre sesgo y varianza.
-
-**Error Total = Sesgo + Varianza + Error Irreducible**
-
-![[Pasted image 20230708125203.png]]
-
-# Error esperado en regresión
-
-En regresión, el error esperado de un modelo es la diferencia promedio que se espera entre las predicciones del modelo y los valores verdaderos. Se puede cuantificar a través de medidas como el error cuadrático medio (MSE). Un modelo perfecto tendría un error esperado de cero, lo que significa que siempre predice el valor correcto. Sin embargo, en la práctica, esto es raramente (si acaso) posible debido a la presencia de error irreducible.
 
 
 # Video
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/r25dWiyDPQA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/R13lpnXVtXo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IvHZ4-yd5is" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

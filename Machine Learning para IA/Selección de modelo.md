@@ -58,9 +58,29 @@ La principal ventaja del método Repeated Holdout es que reduce la varianza en l
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1whfIOoPTlk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+## Algoritmo
 
 
-# Validacion cruzada
+
+
+# Criterios De Información
+
+Los **criterios de información** son métodos estadísticos utilizados para comparar y seleccionar modelos basándose en su capacidad para explicar los datos dados ciertas suposiciones. Los dos criterios más comunes son:
+
+- **Criterio De Informacion De Akaike (AIC)**: Este criterio asume que cuanto más pequeño es el valor AIC, mejor es el ajuste del modelo a los datos. AIC penaliza a los modelos complejos (es decir, aquellos con más parámetros), favoreciendo así a los modelos más simples.
+
+- **Criterio De Informacion Bayesiano (BIC)**: Similar al AIC, pero penaliza aún más a los modelos complejos. Por lo tanto, BIC tiende a favorecer aún más a los modelos simples que AIC.
+
+Estos criterios pueden ser útiles cuando se comparan diferentes tipos o configuraciones de modelos y se desea equilibrar entre ajuste a los datos y complejidad del modelo (para evitar sobreajuste). Sin embargo, estos criterios sólo proporcionan una medida relativa del rendimiento del modelo y no deben utilizarse como única herramienta para seleccionar un modelo.
+
+# Conclusion
+
+La selección del modelo adecuado es crucial para obtener buenos resultados en aprendizaje automático. Existen varias técnicas para hacerlo, desde métodos sencillos como Holdout hasta métodos más sofisticados como validación cruzada y criterios informativos. La elección depende tanto del problema específico como del tiempo y recursos disponibles.
+
+
+# Validación cruzada
+
+vease [[Validación cruzada (Cross-validation)]]
 
 
 

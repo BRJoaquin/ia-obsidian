@@ -49,3 +49,17 @@ print("Average cross-validation score: ", scores.mean())
 
 # Desventajas
 
+A pesar de sus ventajas, la validación cruzada también tiene algunas desventajas:
+
+- **Costo computacional**: Como se mencionó anteriormente, la validación cruzada puede ser costosa en términos de tiempo y recursos computacionales. Esto es especialmente cierto para los conjuntos de datos grandes y los modelos complejos, donde cada entrenamiento y validación puede llevar mucho tiempo.
+
+- **No es adecuada para todos los tipos de datos**: La validación cruzada asume que los datos son independientes e idénticamente distribuidos (i.i.d.). Sin embargo, esto no siempre es cierto. Por ejemplo, en las series temporales o los datos geoespaciales, las observaciones cercanas pueden estar correlacionadas. En estos casos, una simple división aleatoria de los datos puede resultar en un sesgo en las estimaciones del rendimiento del modelo.
+
+- **Riesgo de sobreajuste a la validación cruzada**: Si se utiliza la validación cruzada para seleccionar hiperparámetros o características del modelo, existe el riesgo de sobreajustar a la validación cruzada. Esto significa que el modelo podría funcionar bien en la validación cruzada pero mal en datos nuevos e independientes.
+
+- **Varianza alta**: Aunque la validación cruzada proporciona una estimación más robusta del rendimiento del modelo que una única división de entrenamiento/prueba, todavía puede tener una varianza alta, especialmente si el número de folds (K) es pequeño. Esto significa que las estimaciones del rendimiento del modelo pueden variar mucho dependiendo de cómo se dividan exactamente los datos.
+
+A pesar de estas desventajas, la validación cruzada sigue siendo una herramienta valiosa para evaluar y mejorar el rendimiento del modelo en muchas situaciones.
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6dbrR-WymjI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

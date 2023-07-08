@@ -20,10 +20,10 @@ Sin embargo, los árboles de decisión también tienen sus desventajas. **Son pr
 
 Además, los árboles de decisión pueden ser inestables, en el sentido de que pequeños cambios en los datos pueden provocar grandes cambios en la estructura del árbol. Esto también se puede mitigar con métodos de conjunto.
 
-En resumen, los árboles de decisión son un algoritmo de aprendizaje supervisado versátil y fácilmente interpretable, aunque pueden ser propensos al sobreajuste y la inestabilidad. A pesar de estas desventajas, son una herramienta valiosa en la caja de herramientas de cualquier científico de datos.
+En resumen, los árboles de decisión son un algoritmo de aprendizaje supervisado versátil y fácilmente interpretable, aunque pueden ser propensos al [[Sobreajuste (Overfitting)]] y la inestabilidad. A pesar de estas desventajas, son una herramienta valiosa en la caja de herramientas de cualquier científico de datos.
 
 
-# Regresion
+# Regresión
 
 Los árboles de decisión no sólo se utilizan para problemas de clasificación, sino que también se pueden utilizar para problemas de regresión. En lugar de predecir una clase en cada nodo de hoja, en un problema de regresión, cada nodo de hoja predice un valor numérico. El objetivo de un árbol de decisión de regresión es minimizar la suma de los errores cuadrados.
 
@@ -43,7 +43,7 @@ El algoritmo de construcción del árbol de decisión intenta minimizar este err
 
 ## Predicción con un árbol de decisión de regresión
 
-Una vez que se ha construido el árbol de decisión de regresión, se puede utilizar para hacer predicciones. Para predecir el valor de una nueva instancia, se recorre el árbol de decisión, empezando por la raíz y siguiendo la rama correspondiente a los valores de los atributos de la instancia, hasta que se llega a un nodo de hoja. El valor predicho es el valor medio de las instancias del nodo de hoja.
+Una vez que se ha construido el árbol de decisión de regresión, se puede utilizar para hacer predicciones. Para predecir el valor de una nueva instancia, se recorre el árbol de decisión, empezando por la raíz y siguiendo la rama correspondiente a los valores de los atributos de la instancia, hasta que se llega a un nodo de hoja. **El valor predicho es el valor medio de las instancias del nodo de hoja**.
 
 ## Ventajas y desventajas
 

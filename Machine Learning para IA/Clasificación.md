@@ -48,7 +48,7 @@ El sesgo inductivo se refiere a las suposiciones realizadas por el modelo para h
 
 ## Función de Pérdida
 
-La función de pérdida cuantifica cuánto "duele" cuando las predicciones del modelo no coinciden con las etiquetas. En un problema de clasificación, una función de pérdida comúnmente utilizada es la pérdida logarítmica (también conocida como cross-entropy, vease [[Entropía Cruzada binaria (log loss)]]), que es muy sensible a las predicciones que están confiadamente equivocadas.
+La función de pérdida cuantifica cuánto "duele" cuando las predicciones del modelo no coinciden con las etiquetas. En un problema de clasificación, una función de pérdida comúnmente utilizada es la pérdida logarítmica (también conocida como cross-entropy, vease [[Entropía Cruzada binaria (log loss o NLL)]]), que es muy sensible a las predicciones que están confiadamente equivocadas.
 
 El **proceso de aprendizaje** implica el uso de un algoritmo para ajustar los parámetros del modelo de manera que minimice la función de pérdida en un conjunto de datos de entrenamiento. En otras palabras, el modelo "aprende" de los ejemplos en el conjunto de entrenamiento ajustando sus parámetros para hacer predicciones que están lo más cerca posible de las etiquetas verdaderas, según la medida de la función de pérdida.
 

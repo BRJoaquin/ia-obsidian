@@ -45,6 +45,6 @@ La elección de la función de pérdida en un MLP depende del tipo de problema q
 
 - **Error Cuadrático Medio (MSE)**: Se utiliza comúnmente para problemas de regresión. Esta función de pérdida calcula la media de los cuadrados de las diferencias entre las predicciones del modelo y los valores reales. vease [[MSE]]
 
-- **Entropía Cruzada Binaria**: Se utiliza para problemas de clasificación binaria. Esta función de pérdida mide qué tan diferente es la distribución de probabilidad predicha por el modelo de la distribución de probabilidad real (que en este caso es una distribución de Bernoulli). vease [[Entropía Cruzada binaria (log loss)]]
+- **Entropía Cruzada Binaria**: Se utiliza para problemas de clasificación binaria. Esta función de pérdida mide qué tan diferente es la distribución de probabilidad predicha por el modelo de la distribución de probabilidad real (que en este caso es una distribución de Bernoulli). vease [[Entropía Cruzada binaria (log loss o NLL)]]
 
 - **Entropía Cruzada Categórica**: Se utiliza para problemas de clasificación multiclase. Al igual que la entropía cruzada binaria, mide la diferencia entre la distribución de probabilidad predicha por el modelo y la distribución de probabilidad real, pero en este caso, la distribución real puede ser una distribución multinomial. vease [[Entropía Cruzada Categórica]]

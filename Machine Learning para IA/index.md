@@ -53,7 +53,7 @@
     
 - [Clase 9 - Error de generalización](https://aulas.ort.edu.uy/mod/resource/view.php?id=455019)
     
-    -  [[Error de generalización]]
+    -  [[Error de generalización (model evaluation)]]
     
 - [Clase 9 - Error esperado: descomposición Sesgo-Varianza](https://aulas.ort.edu.uy/mod/resource/view.php?id=455020)
     

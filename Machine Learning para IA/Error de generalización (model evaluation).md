@@ -25,6 +25,7 @@ Hay varios factores que pueden influir en el error de generalización:
 
 En resumen, el error de generalización es un indicador clave de la capacidad de un modelo para realizar predicciones precisas sobre datos no vistos. Minimizar el error de generalización es un objetivo principal en el aprendizaje automático y requiere un equilibrio cuidadoso entre sesgo y varianza, y entre ajuste y complejidad del modelo.
 
+![[Pasted image 20230708134822.png]]
 
 # Estimación del Error de Generalización y Aprendizaje Probably Approximately Correct (PAC)
 

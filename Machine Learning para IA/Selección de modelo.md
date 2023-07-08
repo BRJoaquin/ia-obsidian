@@ -60,6 +60,8 @@ La principal ventaja del método Repeated Holdout es que reduce la varianza en l
 
 
 
+# Validacion cruzada
+
 
 
 

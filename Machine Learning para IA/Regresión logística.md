@@ -56,7 +56,7 @@ y queremos encontrar los valores de $b_0$ y $b_1$ que maximizan esta función. A
 
 ## Aprendizaje
 
-En la **Regresión Logística**, los pesos (o coeficientes) para las variables predictoras se ajustan durante el proceso de entrenamiento para minimizar la función de pérdida, que a menudo es la pérdida de [[Entropía Cruzada binaria (log loss o NLL)]] en este caso.
+En la **Regresión Logística**, los pesos (o coeficientes) para las variables predictoras se ajustan durante el proceso de entrenamiento para minimizar la función de pérdida, que a menudo es la pérdida de [[Entropía Cruzada binaria (log loss)]] en este caso.
 
 ![[Pasted image 20230708111531.png]]
 
@@ -149,12 +149,6 @@ Cabe destacar que, aunque el método OVR es intuitivo y fácil de implementar, p
 ![[Pasted image 20230708111438.png]]
 
 
-
-
-
-
-
-
 # Ventajas
 
 - Puede proporcionar probabilidades para las predicciones.
@@ -166,4 +160,26 @@ Cabe destacar que, aunque el método OVR es intuitivo y fácil de implementar, p
 - No es capaz de manejar relaciones complejas.
 - Tiene dificultades con las variables categóricas con múltiples niveles.
 - Es sensible a la colinealidad en los datos.
-  
+
+# Cálculo del error en Regresión Logística
+
+En la regresión logística, comúnmente se utiliza la [[Entropía Cruzada binaria (log loss)]] para calcular el error del modelo. Esta es una métrica adecuada porque la regresión logística es un modelo probabilístico que estima la probabilidad de que una instancia pertenezca a una clase particular.
+
+La pérdida logarítmica para una única instancia se calcula de la siguiente manera:
+
+$$ LogLoss = - [y \cdot \log(\hat{y}) + (1 - y) \cdot \log(1 - \hat{y})] $$
+
+Donde:
+* $y$ es la etiqueta verdadera (0 o 1).
+* $\hat{y}$ es la probabilidad predicha de que la etiqueta sea 1.
+
+Cuando calculamos el error para un conjunto de datos con múltiples instancias, tomamos el promedio de la pérdida logarítmica de todas las instancias. Así, la pérdida logarítmica para un conjunto de datos se calcula como sigue:
+
+$$ LogLoss = - \frac{1}{n} \sum_{i=1}^{n} [y_i \cdot \log(\hat{y}_i) + (1 - y_i) \cdot \log(1 - \hat{y}_i)] $$
+
+Donde:
+* $n$ es el número total de instancias en el conjunto de datos.
+* $y_i$ es la etiqueta verdadera de la $i$-ésima instancia.
+* $\hat{y}_i$ es la probabilidad predicha de que la $i$-ésima instancia pertenezca a la clase 1.
+
+Es importante tener en cuenta que la pérdida logarítmica penaliza fuertemente las predicciones incorrectas que están seguras de su resultado. Por ejemplo, si la etiqueta verdadera es 1 pero el modelo predice una probabilidad muy cercana a 0, la pérdida logarítmica será muy alta.

@@ -14,13 +14,7 @@ Este proceso se repite de forma recursiva hasta que todas las instancias de un s
 
 ## La pregunta
 
-En los árboles de decisión, la elección de la pregunta para dividir cada nodo se basa en un criterio que busca mejorar la pureza de los nodos hijos. En el caso de un árbol de decisión de regresión, este criterio se basa generalmente en el error cuadrático medio ([[MSE]], por sus siglas en inglés) o en la suma de los errores cuadrados ([[RSS]], por sus siglas en inglés).
-
-### Error cuadrático medio (MSE) y suma de los errores cuadrados (RSS)
-
-El MSE y el RSS son medidas del error en un modelo de regresión. El MSE se calcula como el promedio de los errores cuadrados, mientras que el RSS es simplemente la suma de los errores cuadrados. En el contexto de los árboles de decisión de regresión, el MSE y el RSS se utilizan para cuantificar cuánto varían los valores objetivo en un nodo dado del árbol.
-
-El objetivo de la división de un nodo es minimizar el MSE o el RSS en los nodos hijos. Para cada posible pregunta (es decir, para cada valor de cada atributo), se calculan el MSE y el RSS en los nodos hijos que resultarían de la división. La pregunta que da como resultado la mayor reducción del MSE o del RSS se selecciona para dividir el nodo.
+En los árboles de decisión, la elección de la pregunta para dividir cada nodo se basa en un criterio que busca mejorar la pureza de los nodos hijos. 
 
 ### Reducción de la varianza
 
@@ -57,10 +51,6 @@ Si una división propuesta no reduciría el error en al menos un umbral predefin
 En resumen, la división en un árbol de decisión se detiene cuando se alcanza un criterio de parada predefinido, lo que ayuda a prevenir el sobreajuste y a garantizar que el modelo sea lo suficientemente general como para hacer predicciones precisas en instancias no vistas.
 
 ![[Pasted image 20230708100052.png]]
-
-
-
-![[Pasted image 20230708100743.png]]
 
 
 # Ventajas y desventajas
@@ -114,3 +104,43 @@ La estructura de un árbol de decisión es similar a la de un flujo de decisione
 El proceso de construcción de un árbol de decisión implica seleccionar el mejor atributo para dividir el conjunto de datos en cada paso. La elección del "mejor" atributo puede hacerse de diferentes formas, pero a menudo se basa en medidas de impureza como la entropía o el índice Gini. La idea es que el mejor atributo es el que más reduce la impureza.
 
 ![[Pasted image 20230708113659.png]]
+
+
+
+# Cálculo de error en árboles de decisión
+
+El cálculo del error en un árbol de decisión depende de si estamos hablando de un problema de regresión o de clasificación.
+
+## Árboles de decisión de regresión
+
+En el caso de un árbol de decisión para regresión, el error se mide típicamente como el error cuadrático medio (MSE) o el error absoluto medio (MAE). 
+
+Para calcular el MSE, se toman las diferencias entre los valores observados y los predichos, se elevan al cuadrado, se suman y se dividen por el número de observaciones. En notación matemática:
+
+$$ MSE = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2 $$
+
+donde:
+* $y_i$ es el valor observado
+* $\hat{y}_i$ es el valor predicho
+* $n$ es el número total de observaciones
+
+![[Pasted image 20230708100743.png]]
+
+## Árboles de decisión de clasificación
+
+En el caso de un árbol de decisión para clasificación, el error se mide típicamente utilizando la tasa de error de clasificación (misclassification rate), la entropía cruzada o la pérdida logarítmica.
+
+La tasa de error de clasificación es simplemente la fracción de las predicciones que el modelo clasificó incorrectamente. Se calcula sumando el número de errores y dividiendo por el número total de observaciones.
+
+La entropía cruzada y la pérdida logarítmica se utilizan cuando las predicciones son probabilísticas. En lugar de predecir una clase única, el modelo predice una probabilidad para cada clase, y estas medidas evalúan cuán buenas son estas probabilidades.
+
+Por ejemplo, la pérdida logarítmica se calcula de la siguiente manera:
+
+$$ LogLoss = - \frac{1}{n} \sum_{i=1}^{n} [y_i \log(\hat{y}_i) + (1 - y_i) \log(1 - \hat{y}_i)] $$
+
+donde:
+* $y_i$ es el valor observado
+* $\hat{y}_i$ es el valor predicho
+* $n$ es el número total de observaciones
+
+Estas son solo algunas de las métricas que se pueden utilizar para evaluar el rendimiento de un árbol de decisión. La elección de la métrica dependerá del problema específico y de los objetivos del modelado.

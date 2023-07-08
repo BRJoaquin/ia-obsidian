@@ -1,36 +1,46 @@
-  
-La descomposición del sesgo-varianza es una forma de entender las fuentes del error en los modelos de aprendizaje automático y cómo las diferentes complejidades del modelo pueden afectar este error. La idea es que el error esperado generalizable de un modelo puede ser descompuesto en tres términos: sesgo, varianza y error irreducible.
-
-1.  **Sesgo (Bias)**: Este es el error debido a las suposiciones erróneas en el algoritmo de aprendizaje. Un alto sesgo puede causar que el algoritmo pierda relaciones relevantes entre las características de entrada y la variable objetivo (underfitting). Por lo general, los modelos sencillos, como la regresión lineal, tienen un alto sesgo.
-
-2.  **Varianza (Variance)**: Este es el error debido a la sensibilidad a las fluctuaciones en el conjunto de entrenamiento. Un alto valor de la varianza puede causar overfitting, que es un modelo que aprende demasiado bien el ruido del conjunto de datos de entrenamiento y funciona mal en datos nuevos. Los modelos complejos, como las redes neuronales profundas o los árboles de decisión, tienden a tener una alta varianza.
-
-3.  **Error irreducible (Irreducible Error)**: Este es el error debido al ruido en los datos. Es independiente del algoritmo de aprendizaje y siempre estará presente sin importar el algoritmo utilizado.
 
 
-La descomposición del error esperado, $E[(Y - f(X))^2]$, en términos de sesgo y varianza para un estimador de una función real $f(X)$ es:
-$$
-E[(Y - f(X))^2] = (E[f(X)] - f(X))^2 + E[(f(X) - E[f(X)])^2] + σ^2
-$$
-Donde:
+En machine learning, entender los conceptos de sesgo y varianza es fundamental para desarrollar modelos efectivos y para diagnosticar problemas como el sobreajuste y el subajuste. Estos dos conceptos representan dos tipos de errores que puede cometer un algoritmo de aprendizaje automático.
 
--   $(E[f(X)] - f(X))^2$ es el cuadrado del sesgo.
--   $E[(f(X) - E[f(X)])^2]$ es la varianza.
--   $σ^2$ es el error irreducible.
+# Definiciones básicas
 
-En la práctica, el objetivo de cualquier buen modelo de aprendizaje automático es encontrar el equilibrio correcto entre el sesgo y la varianza, para minimizar el error total. Esto a menudo se conoce como el compromiso sesgo-varianza (bias-variance trade-off).
+**Sesgo (Bias)**: El sesgo de un modelo es la diferencia entre la predicción esperada de nuestro modelo y los valores verdaderos que estamos tratando de predecir. Los modelos con alto sesgo simplifican demasiado los datos, lo que lleva a un error de predicción alto en el entrenamiento y en los datos de prueba. A este fenómeno se le conoce como subajuste.
 
-![[Pasted image 20230518213202.png]]
+**Varianza**: La varianza es la variabilidad de las predicciones del modelo para un dato dado. Los modelos con alta varianza prestan mucha atención a los datos de entrenamiento y no generalizan bien los datos no vistos. A este fenómeno se le conoce como sobreajuste.
+
+![[Pasted image 20230708124644.png]]
+
+# Sesgo inductivo y dependencia con el dataset
+
+El [[Sesgo inductivo]] se refiere a las suposiciones hechas por el modelo para hacer las predicciones. Cada algoritmo de aprendizaje automático tiene un sesgo inductivo, que es la colección de suposiciones (prejuicios) que el algoritmo hace para predecir la salida dado los datos de entrada. 
+
+La dependencia del sesgo inductivo con el dataset viene de que si el sesgo inductivo del modelo se alinea bien con la realidad de los datos, entonces el modelo será capaz de generalizar bien y tendrá un error bajo. Pero si las suposiciones del modelo no se alinean con los datos, entonces el modelo tendrá un error alto, ya que no podrá generalizar bien los datos.
+
+![[Pasted image 20230708124906.png]]
+
+# Error esperado
+
+El error esperado de un modelo es la diferencia promedio que se espera entre las predicciones del modelo y la verdad subyacente. Esencialmente, es una medida de cuánto espera que se equivoque su modelo en promedio.
+
+![[Pasted image 20230708125021.png]]
+![[Pasted image 20230708124826.png]]
+# Error irreducible
+
+El error irreducible se refiere al error que no se puede reducir sin importar qué tan bien se ajuste el modelo a los datos. Este error proviene de factores fuera del control del algoritmo, como el ruido en los datos de entrenamiento.
+
+# Descomposición del error
+
+El error total de un modelo se puede descomponer en tres términos: sesgo, varianza y error irreducible. Esta descomposición nos permite entender mejor el compromiso entre sesgo y varianza.
+
+**Error Total = Sesgo + Varianza + Error Irreducible**
+
+![[Pasted image 20230708125203.png]]
+
+# Error esperado en regresión
+
+En regresión, el error esperado de un modelo es la diferencia promedio que se espera entre las predicciones del modelo y los valores verdaderos. Se puede cuantificar a través de medidas como el error cuadrático medio (MSE). Un modelo perfecto tendría un error esperado de cero, lo que significa que siempre predice el valor correcto. Sin embargo, en la práctica, esto es raramente (si acaso) posible debido a la presencia de error irreducible.
 
 
-# Ejemplo practico
+# Video
 
-Claro, considera el problema de predecir la altura de una persona basada en su edad.
-
-1.  Decides comenzar con un modelo muy sencillo, una regresión lineal. Después de entrenar tu modelo, te das cuenta de que no se ajusta bien a tus datos de entrenamiento y se desempeña mal en los datos de prueba. Esto se debe a que la relación entre la edad y la altura no es exactamente lineal, especialmente durante las etapas de crecimiento acelerado en la infancia y la adolescencia. En este caso, tu modelo tiene un sesgo alto porque hizo suposiciones muy simplificadas (lineales) sobre la relación entre la edad y la altura.
-
-2.  Para mejorar tu modelo, decides aumentar su complejidad. Ahora utilizas un polinomio de grado 20 para capturar la relación entre la edad y la altura. Este modelo se ajusta casi perfectamente a tus datos de entrenamiento, pero cuando intentas usarlo en tus datos de prueba, se desempeña muy mal. En este caso, tu modelo tiene una alta varianza. Ha aprendido las peculiaridades y el ruido de tus datos de entrenamiento tan bien que no puede generalizar a nuevos datos.
-
-3.  Finalmente, decides utilizar un polinomio de grado 3. Este modelo no se ajusta tan perfectamente a los datos de entrenamiento como el polinomio de grado 20, pero se desempeña mucho mejor en los datos de prueba. Has encontrado un buen equilibrio entre el sesgo y la varianza.
- 
-Este ejemplo ilustra el trade-off entre sesgo y varianza. Los modelos demasiado simples pueden tener un alto sesgo, mientras que los modelos demasiado complejos pueden tener una alta varianza. La clave está en encontrar un equilibrio entre ambos.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/r25dWiyDPQA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

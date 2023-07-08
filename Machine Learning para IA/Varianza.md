@@ -2,3 +2,5 @@ En el contexto del [[Machine Learning]], la varianza se refiere a la sensibilida
 
 
 La diferencia clave entre la [[Función de pérdida]] y la varianza es que la función de pérdida mide el rendimiento del modelo en un conjunto de datos específico, mientras que la varianza se refiere a la variabilidad del rendimiento del modelo en diferentes conjuntos de datos de entrenamiento.
+
+![[Pasted image 20230708124715.png]]

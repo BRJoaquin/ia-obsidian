@@ -40,7 +40,7 @@
     
 - [Clase 6 - Clasificación: knn](https://aulas.ort.edu.uy/mod/resource/view.php?id=451426)
     
-    - El problema de clasificación
+    - El problema de [[Clasificación]]
     - k vecinos más cercanos
     
 - [Clase 7 - Clasificación: regresión logística](https://aulas.ort.edu.uy/mod/resource/view.php?id=452523)

@@ -58,6 +58,20 @@ En resumen, la división en un árbol de decisión se detiene cuando se alcanza 
 
 ![[Pasted image 20230708100052.png]]
 
+# MSE
+
+El Error Cuadrático Medio (MSE, por sus siglas en inglés) de un árbol de decisión de regresión se calcula de la siguiente manera:
+
+1. Para cada nodo terminal (hoja) del árbol, calcula el valor de predicción para ese nodo. En un árbol de decisión de regresión, este valor es simplemente el promedio de los valores objetivo de las instancias de entrenamiento que caen en ese nodo.
+
+2. Para cada instancia de entrenamiento, encuentra el nodo hoja que corresponde a esa instancia y toma el valor de predicción de ese nodo como la predicción del árbol para esa instancia.
+
+3. Calcula la diferencia entre la predicción del árbol y el valor objetivo real para cada instancia de entrenamiento. Eleva al cuadrado cada una de estas diferencias.
+
+4. Suma todas estas diferencias cuadradas y luego divide por el número de instancias de entrenamiento. Este valor es el MSE del árbol de decisión.
+
+![[Pasted image 20230708100743.png]]
+
 
 # Ventajas y desventajas
 

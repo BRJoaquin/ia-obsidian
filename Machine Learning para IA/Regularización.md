@@ -23,11 +23,13 @@ Al igual que con L1, $\lambda$ controla la cantidad de regularización a aplicar
 
 Finalmente, es importante destacar que la regularización es una herramienta para manejar la complejidad del modelo y ayudar a prevenir el sobreajuste, pero no es un sustituto de tener buenos datos de entrenamiento. Ninguna cantidad de regularización puede compensar datos de entrenamiento de mala calidad o insuficientes.
 
-# Ejemplo
+# Ejemplo: regresion lineal
 
 Veamos algunos ejemplos para entender mejor cómo funcionan las regularizaciones L1 y L2.
 
 Supongamos que estamos desarrollando un modelo de regresión lineal para predecir el precio de las casas en función de una serie de características como el tamaño de la casa, la cantidad de habitaciones, la edad de la casa, la ubicación, etc. Sin embargo, encontramos que nuestro modelo está sobreajustando los datos de entrenamiento. Para evitar este [[Subajuste (Underfitting)]], podemos agregar una regularización.
+
+![[Pasted image 20230708173246.png]]
 
 ## Regularización L1 (Lasso)
 
@@ -39,6 +41,8 @@ donde $\alpha$ es un hiperparámetro que controla la fuerza de la regularizació
 
 La regularización L1 puede resultar en modelos con características dispersas, donde algunos coeficientes se hacen cero, es decir, algunos de los atributos son completamente ignorados por el modelo. Esto puede ser beneficioso en casos donde tenemos muchas características y queremos seleccionar solo las más importantes.
 
+![[Pasted image 20230708173316.png]]
+
 ## Regularización L2 (Ridge)
 
 La regularización L2, también conocida como Ridge, añade una penalidad al costo del modelo igual al cuadrado de la magnitud de los coeficientes. Matemáticamente, la regularización L2 se puede expresar de la siguiente manera:
@@ -46,3 +50,29 @@ La regularización L2, también conocida como Ridge, añade una penalidad al cos
 $$\Large \text{Costo} = \text{MSE} + \alpha\sum_{i=1}^n \beta_i^2 $$
 
 Al igual que con L1, $\alpha$ es un hiperparámetro que controla la fuerza de la regularización y $\beta_i$ son los coeficientes del modelo. A diferencia de L1, la regularización L2 no hace que los coeficientes se reduzcan a cero. En cambio, distribuye la magnitud de los coeficientes de manera más uniforme a través de las características. Por lo tanto, Ridge puede ser una mejor opción cuando todas las características son importantes.
+
+![[Pasted image 20230708173325.png]]
+
+# Ejemplo: Regresión logística
+
+## Regularización L1 en Regresión Logística
+
+Al igual que con la regresión lineal, en la regresión logística también podemos aplicar la regularización L1, que se traduce en añadir un término de penalización al costo que es proporcional a la suma de los valores absolutos de los coeficientes.
+
+La función de costo de la regresión logística con regularización L1 se ve así:
+
+$$ \text{Costo} = -\frac{1}{m}\sum_{i=1}^{m}[y^{(i)}\log(h_{\theta}(x^{(i)})) + (1-y^{(i)})\log(1-h_{\theta}(x^{(i)}))] + \lambda\sum_{j=1}^{n}|\theta_j| $$
+
+Donde $\lambda$ es el parámetro de regularización.
+
+## Regularización L2 en Regresión Logística
+
+De manera similar, podemos aplicar la regularización L2 a la regresión logística. En este caso, añadimos un término de penalización al costo que es proporcional a la suma de los cuadrados de los coeficientes.
+
+La función de costo de la regresión logística con regularización L2 se ve así:
+
+$$ \text{Costo} = -\frac{1}{m}\sum_{i=1}^{m}[y^{(i)}\log(h_{\theta}(x^{(i)})) + (1-y^{(i)})\log(1-h_{\theta}(x^{(i)}))] + \lambda\sum_{j=1}^{n}\theta_j^2 $$
+
+La elección entre la regularización L1 y L2 depende del problema y de los datos a mano. La regularización L1 puede ser útil cuando sospechamos que solo un pequeño número de características son realmente importantes, ya que puede ayudar a hacer cero los coeficientes de las características menos importantes, efectivamente seleccionando un subconjunto más pequeño de características. La regularización L2, por otro lado, es menos "agresiva" y no fuerza a los coeficientes a ser exactamente cero, lo cual podría ser útil si creemos que todas las características aportan algo a la predicción, aunque sea un pequeño aporte.
+
+![[Pasted image 20230708173534.png]]

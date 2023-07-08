@@ -13,3 +13,5 @@ Aquí está el significado de cada término:
 - Falsos Negativos (FN): El modelo predijo incorrectamente que la clase era negativa (cuando en realidad era positiva).
 
 Estos cuatro valores se utilizan para calcular métricas que evalúan el rendimiento del modelo, como la [[Precisión]], el [[Recall]], el [[F1-score]] y el [[AUC-ROC]].
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/07dtryhNGms" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

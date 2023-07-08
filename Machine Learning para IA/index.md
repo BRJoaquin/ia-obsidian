@@ -72,8 +72,6 @@
 - [Clase 11 - Regularización](https://aulas.ort.edu.uy/mod/resource/view.php?id=457515)
 
 	[[Regularización]]
-    - Ridge regression
-    - Lasso regression
     
 - [Clase 12 - Ensemble](https://aulas.ort.edu.uy/mod/resource/view.php?id=458714)
     

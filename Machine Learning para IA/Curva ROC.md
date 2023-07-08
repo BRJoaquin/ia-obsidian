@@ -52,3 +52,4 @@ Estos dos extremos representan los casos ideales. En la práctica, la mayoría d
 
 Un clasificador perfecto tendrá un Área Bajo la Curva (AUC) de 1, mientras que un clasificador aleatorio tendrá un AUC de 0.5. Por lo tanto, cuando se evalúa la eficacia de un clasificador, se busca maximizar el AUC.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GdSEkiArM3k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

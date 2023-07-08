@@ -103,3 +103,8 @@ $$\text{Macro Average Recall} = \frac{1}{n} \sum_{i=1}^{n} \text{Recall}_i$$
 3. **Weighted Categorical Accuracy:** Esta es una versión ponderada de la precisión categórica. En esta métrica, la precisión de cada clase se calcula de forma independiente y luego se promedian, ponderando el promedio por el número de instancias verdaderas para cada clase. Esto ayuda a dar más importancia a las clases que son más prevalentes.
    
 ![[Pasted image 20230708171409.png]]
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yEw9oDdJkT0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eSo2wvx-gTc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

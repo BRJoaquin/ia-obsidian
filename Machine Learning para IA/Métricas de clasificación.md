@@ -22,7 +22,7 @@ En problemas de clasificación, existen varias métricas que nos permiten evalua
 
 5. **AUC-ROC**: El área bajo la curva de la característica operativa del receptor (AUC-ROC) es una métrica que nos permite evaluar el rendimiento de un clasificador binario. La curva ROC es un gráfico que muestra el rendimiento de un modelo de clasificación en todos los niveles de umbral de clasificación. vease [[AUC-ROC]]
 
-Además de estas métricas, la **matriz de confusión** es una herramienta útil que nos permite visualizar el rendimiento de un algoritmo de clasificación. Nos muestra los verdaderos positivos, verdaderos negativos, falsos positivos y falsos negativos.
+Además de estas métricas, la **matriz de confusión** es una herramienta útil que nos permite visualizar el rendimiento de un algoritmo de clasificación. Nos muestra los verdaderos positivos, verdaderos negativos, falsos positivos y falsos negativos. vease [[Matriz de confusión]]
 
 # Ejemplos de métricas de clasificación
 
@@ -72,3 +72,30 @@ En la elección de la métrica de evaluación adecuada, se debe tener en cuenta 
 4. **Clasificación de fraude en transacciones bancarias**: En este caso, tanto los falsos positivos (transacciones legítimas marcadas como fraudulentas) como los falsos negativos (transacciones fraudulentas no detectadas) pueden tener un alto costo. Aquí, la elección de la métrica dependerá de cuál de estos errores se considere más costoso.
 
 La elección de la métrica de evaluación debe hacerse teniendo en cuenta el contexto de la aplicación y los costos asociados a los diferentes tipos de errores.
+
+# Otras métricas
+
+## Metricas para problemas desbalanceados
+
+Los problemas de clasificación desbalanceados son aquellos en los que el número de observaciones en una clase es significativamente menor que las observaciones en otras clases. En este caso, usar una métrica de precisión simple puede ser engañoso. Aquí hay algunas métricas recomendadas:
+
+1. **Balanced Accuracy:** Esta métrica se usa cuando los datos de entrenamiento son desbalanceados. Es la media aritmética de la sensibilidad (recall) y la especificidad. 
+
+$$\text{Balanced Accuracy} = \frac{1}{2} (\frac{TP}{TP+FN} + \frac{TN}{TN+FP})$$
+
+2. **Balanced Accuracy con Pesos:** Esta es una versión ponderada de la precisión equilibrada. Los pesos pueden ser proporcionales a la cantidad de ejemplos en cada clase.
+   ![[Pasted image 20230708171127.png]]
+
+## Metricas de clasificación multiclase
+
+En problemas de clasificación multiclase, donde se tienen más de dos clases, hay algunas métricas importantes a considerar:
+
+1. **Recall:** En el contexto de clasificación multiclase, el recall se puede calcular para cada clase y luego tomar la media para obtener el recall global. 
+
+$$\text{Recall} = \frac{TP}{TP+FN}$$
+
+2. **Macro Average Recall:** Esta es la media no ponderada de los recalls para cada clase.
+
+$$\text{Macro Average Recall} = \frac{1}{n} \sum_{i=1}^{n} \text{Recall}_i$$
+
+3. **Weighted Categorical Accuracy:** Esta es una versión ponderada de la precisión categórica. En esta métrica, la precisión de cada clase se calcula de forma independiente y luego se promedian, ponderando el promedio por el número de instancias verdaderas para cada clase. Esto ayuda a dar más importancia a las clases que son más prevalentes.

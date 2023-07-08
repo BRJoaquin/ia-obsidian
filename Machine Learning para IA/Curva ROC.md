@@ -36,3 +36,19 @@ En la curva ROC, un clasificador perfecto se ubicará en la esquina superior izq
 Además de la curva en sí, a menudo se utiliza una medida llamada [[AUC-ROC]] para cuantificar el rendimiento del clasificador. Esta medida resume el rendimiento del clasificador a lo largo de todos los umbrales posibles, proporcionando una sola medida de efectividad del modelo. Un AUC de 1.0 indica un clasificador perfecto, mientras que un AUC de 0.5 sugiere un rendimiento no mejor que el azar.
 
 ![[Pasted image 20230708170017.png]]
+
+
+La curva ROC (Receiver Operating Characteristic) es una representación gráfica de la sensibilidad frente a la especificidad para un sistema clasificador binario según se varía el umbral de discriminación.
+
+1. Total Separación (Positivos y Negativos): En un escenario donde todos los ejemplos positivos y negativos se clasifican perfectamente, la curva ROC sería una línea que va desde el punto (0,0) hasta el punto (0,1) y luego se mueve horizontalmente hasta el punto (1,1). Esto se debe a que todos los ejemplos positivos tienen puntuaciones más altas que todos los ejemplos negativos, por lo que la Tasa de Verdaderos Positivos (TPR) es 1 (o 100%) y la Tasa de Falsos Positivos (FPR) es 0. La curva ROC en este caso también se conoce como "curva ROC perfecta".
+   ![[Pasted image 20230708170534.png]]
+
+2. Coinciden Plenamente: Si los positivos y negativos coinciden plenamente, significa que el clasificador no puede distinguir entre la clase positiva y la clase negativa. En este caso, la curva ROC sería una línea diagonal desde el punto (0,0) hasta el punto (1,1). Esto se conoce como "curva ROC aleatoria". En este caso, la TPR y la FPR son iguales sin importar cómo se establezca el umbral de clasificación.
+   ![[Pasted image 20230708170622.png]]
+
+Estos dos extremos representan los casos ideales. En la práctica, la mayoría de los clasificadores producen una curva ROC que se encuentra entre estas dos curvas.
+
+![[1_9700_D40R0AOqLkniWqipg.webp]]
+
+Un clasificador perfecto tendrá un Área Bajo la Curva (AUC) de 1, mientras que un clasificador aleatorio tendrá un AUC de 0.5. Por lo tanto, cuando se evalúa la eficacia de un clasificador, se busca maximizar el AUC.
+

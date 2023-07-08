@@ -1,21 +1,57 @@
+En problemas de clasificación, existen varias métricas que nos permiten evaluar el rendimiento de un modelo:
 
+1. **Exactitud (Accuracy)**: Es la proporción de predicciones correctas. Se calcula como el número de predicciones correctas dividido por el número total de predicciones.
 
-Las métricas de clasificación son herramientas estadísticas que se utilizan para evaluar la eficacia de un modelo de clasificación. Estas métricas proporcionan una visión detallada del rendimiento del modelo y ayudan a identificar áreas de mejora. Aquí hay algunas métricas comunes utilizadas en la clasificación:
+   $$\text{Accuracy} = \frac{\text{Número de predicciones correctas}}{\text{Número total de predicciones}}$$
 
-1. Precisión: Es la proporción de predicciones correctas entre el número total de casos. Es útil cuando todas las clases son igualmente importantes.
+2. **Precisión (Precision)**: Es la proporción de predicciones positivas que son realmente positivas. En otras palabras, es la proporción de verdaderos positivos (TP) entre todos los que fueron clasificados como positivos (TP + FP).
 
-2. Recall (Sensibilidad): Es la proporción de positivos verdaderos que se identificaron correctamente. Es útil en situaciones donde los falsos negativos son más preocupantes que los falsos positivos.
+   $$\text{Precision} = \frac{\text{TP}}{\text{TP} + \text{FP}}$$
 
-3. F1 Score: Es una medida que combina precisión y recall en un solo número, utilizando la media armónica en lugar de la media aritmética, dando más peso a los valores bajos.
+3. **Recall (Sensibilidad)**: Es la proporción de verdaderos positivos que se identificaron correctamente. Es la proporción de verdaderos positivos (TP) entre todos los que son realmente positivos (TP + FN).
 
-4. AUC-ROC (Área bajo la curva - Característica operativa del receptor): Esta métrica resume el trade-off entre la tasa positiva verdadera (TPR) y la tasa positiva falsa (FPR) para un modelo predictivo utilizando diferentes umbrales de probabilidad.
+   $$\text{Recall} = \frac{\text{TP}}{\text{TP} + \text{FN}}$$
 
-5. Matriz de confusión: Esta es una tabla que describe el rendimiento de un modelo de clasificación en un conjunto de datos para los cuales se conocen los valores verdaderos.
+4. **F1-Score**: Es una medida que combina precisión y recall en una sola métrica. Es la media armónica de precisión y recall, y su valor estará más cerca del valor más pequeño entre precisión y recall.
 
-6. Error absoluto medio (MAE): Esta es una medida del error promedio entre las predicciones del modelo y los valores reales.
+   $$F1 = 2 \times \frac{\text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}}$$
 
-7. Error cuadrático medio (MSE): Similar al MAE, pero penaliza más fuertemente los errores grandes.
+5. **AUC-ROC**: El área bajo la curva de la característica operativa del receptor (AUC-ROC) es una métrica que nos permite evaluar el rendimiento de un clasificador binario. La curva ROC es un gráfico que muestra el rendimiento de un modelo de clasificación en todos los niveles de umbral de clasificación.
 
-8. Log Loss: Mide el rendimiento de un modelo donde la salida prevista es una probabilidad entre 0 y 1.
+Además de estas métricas, la **matriz de confusión** es una herramienta útil que nos permite visualizar el rendimiento de un algoritmo de clasificación. Nos muestra los verdaderos positivos, verdaderos negativos, falsos positivos y falsos negativos.
 
-Estas métricas proporcionan diferentes perspectivas sobre el rendimiento del modelo, por lo que es importante seleccionar las métricas adecuadas según el problema específico y las necesidades comerciales.
+# Ejemplos de métricas de clasificación
+
+Para ejemplificar las métricas, consideremos el siguiente conjunto de predicciones para un problema de clasificación binaria:
+
+- Verdaderos Positivos (TP): 100
+- Falsos Positivos (FP): 20
+- Verdaderos Negativos (TN): 50
+- Falsos Negativos (FN): 30
+
+1. **Exactitud (Accuracy)**: Es la proporción de predicciones correctas (TP+TN) entre el total de predicciones.
+
+   $$\text{Accuracy} = \frac{100+50}{100+20+50+30} = 0.75$$
+
+   La exactitud de nuestro modelo es 0.75, o 75%.
+
+2. **Precisión (Precision)**: Es la proporción de verdaderos positivos entre todas las predicciones positivas.
+
+   $$\text{Precision} = \frac{100}{100+20} = 0.83$$
+
+   La precisión de nuestro modelo es 0.83, o 83%.
+
+3. **Recall (Sensibilidad)**: Es la proporción de verdaderos positivos entre todos los valores que son realmente positivos.
+
+   $$\text{Recall} = \frac{100}{100+30} = 0.77$$
+
+   La sensibilidad de nuestro modelo es 0.77, o 77%.
+
+4. **F1-Score**: Es la media armónica de precisión y recall.
+
+   $$F1 = 2 \times \frac{0.83 \times 0.77}{0.83 + 0.77} = 0.80$$
+
+   El F1-Score de nuestro modelo es 0.80, o 80%.
+
+El AUC-ROC es más complicado de calcular a partir de valores específicos ya que requiere cambiar los umbrales de decisión y medir la tasa de verdaderos positivos y la tasa de falsos positivos.
+

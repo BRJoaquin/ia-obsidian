@@ -1,16 +1,20 @@
+![[Pasted image 20230708161217.png]]
+
 En problemas de clasificación, existen varias métricas que nos permiten evaluar el rendimiento de un modelo:
 
 1. **Exactitud (Accuracy)**: Es la proporción de predicciones correctas. Se calcula como el número de predicciones correctas dividido por el número total de predicciones.
 
    $$\text{Accuracy} = \frac{\text{Número de predicciones correctas}}{\text{Número total de predicciones}}$$
 
-2. **Precisión (Precision)**: Es la proporción de predicciones positivas que son realmente positivas. En otras palabras, es la proporción de verdaderos positivos (TP) entre todos los que fueron clasificados como positivos (TP + FP).
+2. **Precisión (Precision)**: Es la proporción de predicciones positivas que son realmente positivas. En otras palabras, es la proporción de verdaderos positivos (TP) entre todos los que fueron clasificados como positivos (TP + FP). vease [[Precisión]]
 
    $$\text{Precision} = \frac{\text{TP}}{\text{TP} + \text{FP}}$$
+> ¿Cuan creıble soy cuando digo “positivo”?
 
-3. **Recall (Sensibilidad)**: Es la proporción de verdaderos positivos que se identificaron correctamente. Es la proporción de verdaderos positivos (TP) entre todos los que son realmente positivos (TP + FN).
+3. **Recall (Sensibilidad | Recuperacion)**: Es la proporción de verdaderos positivos que se identificaron correctamente. Es la proporción de verdaderos positivos (TP) entre todos los que son realmente positivos (TP + FN).
 
    $$\text{Recall} = \frac{\text{TP}}{\text{TP} + \text{FN}}$$
+> ¿Cuantos “positivos” logre detectar?
 
 4. **F1-Score**: Es una medida que combina precisión y recall en una sola métrica. Es la media armónica de precisión y recall, y su valor estará más cerca del valor más pequeño entre precisión y recall.
 

@@ -65,9 +65,7 @@
     
 - [Clase 11 - Métricas de clasificación](https://aulas.ort.edu.uy/mod/resource/view.php?id=457514)
     
-    - Accuracy, Precision, Recall, F1-score
-    - Curva ROC y AUC
-    - Macro average recall
+    -  [[Métricas de clasificación]]
     
 - [Clase 11 - Regularización](https://aulas.ort.edu.uy/mod/resource/view.php?id=457515)
     

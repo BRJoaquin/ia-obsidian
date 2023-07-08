@@ -88,7 +88,7 @@ Este umbral se puede ajustar para hacer que el modelo sea más conservador o má
 
 # Métricas de evaluación para la regresión logística
 
-Hay varias métricas que se pueden utilizar para evaluar la calidad de un modelo de regresión logística. Algunas de las más comunes son la precisión, el recall, el área bajo la curva ROC (AUC-ROC), la log-loss, entre otras. Cada una de estas métricas tiene sus propios puntos fuertes y debilidades, y la elección de la métrica de evaluación más adecuada depende del problema específico que se esté abordando.
+Hay varias métricas que se pueden utilizar para evaluar la calidad de un modelo de regresión logística. Algunas de las más comunes son la precisión, el recall, el área bajo la curva ROC (AUC-ROC), la log-loss, entre otras. Cada una de estas métricas tiene sus propios puntos fuertes y debilidades, y la elección de la métrica de evaluación más adecuada depende del problema específico que se esté abordando. vease [[Métricas de clasificación]]
 
 # La regresión logística es un modelo lineal
 

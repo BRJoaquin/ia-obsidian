@@ -10,21 +10,11 @@ Para construir un árbol de decisión, se utiliza un algoritmo de dividir y conq
 
 Este proceso se repite de forma recursiva hasta que todas las instancias de un subconjunto pertenezcan a la misma clase, o no se pueda mejorar más la homogeneidad. El resultado es un árbol donde cada hoja tiene una única etiqueta de clase.
 
-# Ventajas y desventajas
-
-Una de las principales ventajas de los árboles de decisión es su interpretabilidad. Los árboles de decisión pueden visualizarse y entenderse fácilmente, incluso por personas sin conocimientos de aprendizaje automático. Esto los convierte en una buena opción cuando la interpretabilidad es importante.
-
-Otra ventaja es que los árboles de decisión pueden manejar tanto datos numéricos como categóricos, y no requieren suposiciones sobre la distribución de los datos.
-
-Sin embargo, los árboles de decisión también tienen sus desventajas. **Son propensos al sobreajuste, especialmente cuando son muy profundos**. Para evitar esto, es común podar el árbol (eliminar ramas del árbol que aporten poca información) o utilizar métodos de conjunto como [[Random Forest]].
-
-Además, los árboles de decisión pueden ser inestables, en el sentido de que pequeños cambios en los datos pueden provocar grandes cambios en la estructura del árbol. Esto también se puede mitigar con métodos de conjunto.
-
-En resumen, los árboles de decisión son un algoritmo de aprendizaje supervisado versátil y fácilmente interpretable, aunque pueden ser propensos al [[Sobreajuste (Overfitting)]] y la inestabilidad. A pesar de estas desventajas, son una herramienta valiosa en la caja de herramientas de cualquier científico de datos.
+![[Pasted image 20230708095609.png]]
 
 ## La pregunta
 
-En los árboles de decisión, la elección de la pregunta para dividir cada nodo se basa en un criterio que busca mejorar la pureza de los nodos hijos. En el caso de un árbol de decisión de regresión, este criterio se basa generalmente en el error cuadrático medio (MSE, por sus siglas en inglés) o en la suma de los errores cuadrados (RSS, por sus siglas en inglés).
+En los árboles de decisión, la elección de la pregunta para dividir cada nodo se basa en un criterio que busca mejorar la pureza de los nodos hijos. En el caso de un árbol de decisión de regresión, este criterio se basa generalmente en el error cuadrático medio ([[MSE]], por sus siglas en inglés) o en la suma de los errores cuadrados ([[RSS]], por sus siglas en inglés).
 
 ### Error cuadrático medio (MSE) y suma de los errores cuadrados (RSS)
 
@@ -38,6 +28,8 @@ La reducción de la varianza se refiere a la disminución del MSE o del RSS que 
 
 La reducción de la varianza se calcula como la diferencia entre el MSE o el RSS en el nodo antes de la división y el MSE o el RSS ponderados en los nodos hijos después de la división. El objetivo es maximizar la reducción de la varianza.
 
+![[Pasted image 20230708095850.png]]
+
 ### Recursive Binary Splitting
 
 El Recursive Binary Splitting es el algoritmo utilizado para construir árboles de decisión. Es un algoritmo de tipo divide y conquista que opera de forma recursiva.
@@ -45,6 +37,39 @@ El Recursive Binary Splitting es el algoritmo utilizado para construir árboles 
 El algoritmo empieza en la raíz del árbol, con todas las instancias del conjunto de datos. A continuación, se busca la mejor pregunta para dividir las instancias en dos subconjuntos, utilizando el criterio de reducción de la varianza.
 
 Una vez que se ha encontrado la mejor pregunta, se divide el conjunto de datos y se repite el proceso en cada uno de los subconjuntos resultantes. Este proceso de dividir el conjunto de datos y buscar la mejor pregunta en cada subconjunto se repite de forma recursiva hasta que se alcanza un criterio de parada, como una profundidad máxima del árbol o un número mínimo de instancias por nodo de hoja.
+
+## Cuando para?
+
+La creación de un árbol de decisión se detiene según ciertos criterios de parada que se establecen para prevenir el sobreajuste del modelo. Los criterios de parada más comunes son los siguientes:
+
+### Profundidad máxima del árbol:
+
+Este es uno de los criterios más simples. Si el árbol alcanza una profundidad máxima predeterminada, se detiene la división, independientemente de cuánto podría mejorarse el modelo con divisiones adicionales. Este enfoque es una forma eficaz de prevenir el sobreajuste.
+
+### Número mínimo de instancias por nodo:
+
+Si un nodo tiene un número de instancias menor a un umbral predefinido, entonces ese nodo no se divide, independientemente de cuánto podría mejorarse el modelo con una división adicional. Este enfoque ayuda a garantizar que el modelo no se ajuste excesivamente a las instancias individuales en el conjunto de datos de entrenamiento.
+
+### Reducción mínima en el error:
+
+Si una división propuesta no reduciría el error (MSE o RSS) en al menos un umbral predefinido, entonces esa división no se realiza. Este enfoque ayuda a garantizar que el modelo solo se complica cuando esa complicación aporta una mejora significativa en el rendimiento.
+
+En resumen, la división en un árbol de decisión se detiene cuando se alcanza un criterio de parada predefinido, lo que ayuda a prevenir el sobreajuste y a garantizar que el modelo sea lo suficientemente general como para hacer predicciones precisas en instancias no vistas.
+
+![[Pasted image 20230708100052.png]]
+
+
+# Ventajas y desventajas
+
+Una de las principales ventajas de los árboles de decisión es su interpretabilidad. Los árboles de decisión pueden visualizarse y entenderse fácilmente, incluso por personas sin conocimientos de aprendizaje automático. Esto los convierte en una buena opción cuando la interpretabilidad es importante.
+
+Otra ventaja es que los árboles de decisión pueden manejar tanto datos numéricos como categóricos, y no requieren suposiciones sobre la distribución de los datos.
+
+Sin embargo, los árboles de decisión también tienen sus desventajas. **Son propensos al sobreajuste, especialmente cuando son muy profundos**. Para evitar esto, es común podar el árbol (eliminar ramas del árbol que aporten poca información) o utilizar métodos de conjunto como [[Random Forest]].
+
+Además, los árboles de decisión pueden ser inestables, en el sentido de que pequeños cambios en los datos pueden provocar grandes cambios en la estructura del árbol. Esto también se puede mitigar con métodos de conjunto.
+
+En resumen, los árboles de decisión son un algoritmo de aprendizaje supervisado versátil y fácilmente interpretable, aunque pueden ser propensos al [[Sobreajuste (Overfitting)]] y la inestabilidad. A pesar de estas desventajas, son una herramienta valiosa en la caja de herramientas de cualquier científico de datos.
 
 
 # Regresión

@@ -15,6 +15,10 @@ La **distribución** en el aprendizaje de conceptos, denotada por $D$, se refier
 
 Un **concepto** en el aprendizaje de conceptos es una función booleana que queremos aprender. Esta función toma una instancia como entrada y devuelve 'verdadero' (o 'positivo') si la instancia pertenece al concepto, y 'falso' (o 'negativo') de lo contrario. En otras palabras, un concepto es la regla de clasificación que estamos tratando de inferir a partir de nuestros ejemplos de entrenamiento.
 
-Retomando el ejemplo anterior, el concepto "es un perro" sería la función que podemos aplicar a una nueva imagen para determinar si es o no una imagen de un perro.
+Retomando el ejemplo anterior, el concepto "es un perro" sería la función que podemos aplicar a una nueva imagen para determinar si es o no una imagen de un perro. 
 
 ![[Pasted image 20230707115036.png]]
+
+
+# Esto es una prueba de GPT
+

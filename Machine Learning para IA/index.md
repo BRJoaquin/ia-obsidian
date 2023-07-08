@@ -57,10 +57,7 @@
     
 - [Clase 9 - Error esperado: descomposición Sesgo-Varianza](https://aulas.ort.edu.uy/mod/resource/view.php?id=455020)
     
-    - Definición de Sesgo y Varianza
-    - Error esperado en un sesgo inductivo
-    - Descomposición Sesgo-Varianza
-    - Experimento 
+    -  [[Descomposición del sesgo-varianza]]
     
 - [Clase 10 - Error esperado: seleccionar el sesgo inductivo](https://aulas.ort.edu.uy/mod/resource/view.php?id=456279)
     

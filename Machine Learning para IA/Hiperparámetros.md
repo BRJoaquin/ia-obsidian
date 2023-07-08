@@ -18,3 +18,6 @@ Los hiperparámetros pueden tener un impacto significativo en el rendimiento y l
 
 
 La selección de hiperparámetros es un aspecto crítico en el proceso de aprendizaje automático, ya que puede afectar significativamente el rendimiento del modelo. Hay varias técnicas para seleccionar y ajustar hiperparámetros, como la [[Validación cruzada (Cross-validation)]], la búsqueda de cuadrícula (grid search) y la búsqueda aleatoria (random search). Estos métodos implican entrenar y evaluar múltiples modelos con diferentes combinaciones de hiperparámetros para encontrar la configuración que produce el mejor rendimiento en un conjunto de datos de validación.
+
+
+# 

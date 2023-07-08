@@ -51,3 +51,35 @@ En resumen, el error de generalización es un indicador clave de la capacidad de
    Un resultado clave del aprendizaje PAC es que, dado suficientes datos de entrenamiento, es posible aprender una hipótesis que es probablemente aproximadamente correcta, asumiendo que la verdadera función objetivo está en la clase de hipótesis considerada.
 
    Es importante notar que mientras la estimación del error de generalización se centra en cómo de bien un modelo específico generaliza a nuevos datos, el aprendizaje PAC se centra en la capacidad de un algoritmo de aprendizaje para encontrar una buena hipótesis dada suficiente cantidad de datos.
+
+# Técnica de Holdout
+
+La técnica de holdout es un procedimiento sencillo para estimar el error de generalización de un modelo de aprendizaje automático. Consiste en dividir el conjunto de datos total en dos subconjuntos disjuntos: uno para entrenamiento y otro para prueba.
+
+- **Conjunto de entrenamiento**: Este conjunto se utiliza para entrenar el modelo. En el contexto de la regresión, por ejemplo, se usaría para ajustar los parámetros del modelo.
+
+- **Conjunto de prueba**: Este conjunto se utiliza para evaluar el rendimiento del modelo entrenado. Se calcula una métrica de error (como el error cuadrático medio en regresión, o la tasa de error de clasificación en clasificación) en este conjunto de datos para obtener una estimación del error de generalización.
+
+El proceso generalmente involucra seleccionar una proporción (por ejemplo, 70%) de los datos para el entrenamiento y el resto para la prueba. El tamaño específico del conjunto de entrenamiento y de prueba puede variar dependiendo del tamaño total del conjunto de datos y del modelo específico que se esté utilizando.
+
+Es importante destacar que los datos deben ser divididos aleatoriamente para evitar cualquier sesgo en la estimación del error de generalización. Además, la técnica de holdout asume que los datos de prueba son representativos de los datos futuros.
+
+La principal desventaja de la técnica de holdout es que la estimación del error de generalización puede ser muy variable, ya que depende de qué datos caen en el conjunto de entrenamiento y cuáles en el conjunto de prueba. Esto puede ser especialmente problemático si el conjunto de datos es pequeño. En estos casos, otras técnicas como la validación cruzada pueden proporcionar estimaciones más robustas.
+
+![[Pasted image 20230708122440.png]]
+
+## Pessimistic Bias en Holdout con N
+
+El sesgo pesimista (Pessimistic Bias) en la técnica de holdout se refiere a la tendencia de que el error de prueba calculado en el conjunto de holdout sea mayor que el verdadero error de generalización. 
+
+Este sesgo pesimista surge debido a que el modelo se entrena en un conjunto de datos más pequeño (el conjunto de entrenamiento) que el conjunto total de datos disponibles. Como resultado, el modelo puede no ajustarse tan bien a los datos como lo haría si se entrenara con todos los datos, lo que resulta en un mayor error en el conjunto de holdout.
+
+Este sesgo es particularmente notable cuando el tamaño del conjunto de datos de entrenamiento (N) es pequeño. Cuando N es pequeño, la variabilidad en el conjunto de entrenamiento es más alta, lo que puede llevar a un sobreajuste a las particularidades de ese conjunto de entrenamiento y a un rendimiento pobre en el conjunto de holdout.
+
+Es importante tener en cuenta que el sesgo pesimista es solo una estimación, y no una medida precisa del error de generalización. Sin embargo, puede ser útil para tener una idea de cómo de bien un modelo puede generalizar a partir de un conjunto de entrenamiento limitado.
+
+![[Pasted image 20230708122738.png]]
+
+# Conclusión
+
+![[Pasted image 20230708122902.png]]

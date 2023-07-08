@@ -49,13 +49,11 @@
     
 - [Clase 7 - Clasificación: árboles de decisión](https://aulas.ort.edu.uy/mod/resource/view.php?id=452524)
     
-    - Árboles de decisión para la clasificación
-    - Criterios de Gini y Entropía
+    - [[Árbol de decisión#Árboles de decisión de clasificación]]
     
 - [Clase 9 - Error de generalización](https://aulas.ort.edu.uy/mod/resource/view.php?id=455019)
     
-    - Error de generalización de una hipótesis
-    - Holdout: descompocisión Train + Test
+    -  [[Error de generalización]]
     
 - [Clase 9 - Error esperado: descomposición Sesgo-Varianza](https://aulas.ort.edu.uy/mod/resource/view.php?id=455020)
     

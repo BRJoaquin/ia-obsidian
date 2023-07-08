@@ -113,3 +113,4 @@ La estructura de un árbol de decisión es similar a la de un flujo de decisione
 
 El proceso de construcción de un árbol de decisión implica seleccionar el mejor atributo para dividir el conjunto de datos en cada paso. La elección del "mejor" atributo puede hacerse de diferentes formas, pero a menudo se basa en medidas de impureza como la entropía o el índice Gini. La idea es que el mejor atributo es el que más reduce la impureza.
 
+![[Pasted image 20230708113659.png]]

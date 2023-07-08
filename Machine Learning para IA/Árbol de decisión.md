@@ -144,3 +144,49 @@ donde:
 * $n$ es el número total de observaciones
 
 Estas son solo algunas de las métricas que se pueden utilizar para evaluar el rendimiento de un árbol de decisión. La elección de la métrica dependerá del problema específico y de los objetivos del modelado.
+
+## Tasa de clasificación errónea (Misclassification Rate)
+
+La tasa de clasificación errónea, también conocida como "misclassification rate", es una métrica utilizada para evaluar el rendimiento de un modelo de clasificación. Esencialmente, mide la proporción de predicciones que el modelo hizo incorrectamente.
+
+La tasa de clasificación errónea se calcula de la siguiente manera:
+
+$$ Misclassification Rate = \frac{1}{n} \sum_{i=1}^{n} I(y_i \neq \hat{y}_i) $$
+
+donde:
+* $n$ es el número total de observaciones.
+* $y_i$ es la etiqueta verdadera de la i-ésima observación.
+* $\hat{y}_i$ es la etiqueta predicha por el modelo para la i-ésima observación.
+* $I(.)$ es la función indicadora, que es 1 si la condición dentro del paréntesis es verdadera, y 0 si no lo es.
+
+Entonces, por cada observación, la función indicadora devolverá 1 si la etiqueta verdadera es diferente de la etiqueta predicha (es decir, el modelo hizo una predicción incorrecta), y 0 si las dos etiquetas son iguales (el modelo hizo una predicción correcta). Sumamos todos estos valores y luego los dividimos por el número total de observaciones para obtener la proporción total de predicciones incorrectas.
+
+Es importante tener en cuenta que la tasa de clasificación errónea puede ser una métrica engañosa si las clases están desbalanceadas. Por ejemplo, si el 95% de las observaciones pertenecen a la clase 0 y el 5% a la clase 1, un modelo que predice siempre la clase 0 tendrá una tasa de clasificación errónea del 5%, a pesar de que no es capaz de identificar ninguna observación de la clase 1.
+
+## Error ponderado en un árbol de decisión
+
+La expresión que has proporcionado es una manera de calcular el error de un árbol de decisión, donde el error en cada hoja se pondera por el número de observaciones que caen en esa hoja.
+
+La ecuación se puede desglosar de la siguiente manera:
+
+$$ Err(h) = \sum_{m \in \text{hojas}(h)} \frac{|S_m|}{|S|} Err(y; S_m) $$
+
+Aquí:
+
+- $Err(h)$ es el error total del árbol.
+- $S_m$ es el conjunto de observaciones que caen en la m-ésima hoja del árbol.
+- $|S_m|$ es el número de observaciones que caen en la m-ésima hoja.
+- $|S|$ es el número total de observaciones.
+- $\text{hojas}(h)$ es el conjunto de todas las hojas del árbol.
+- $Err(y; S_m)$ es el error de la m-ésima hoja.
+
+Esta ecuación calcula el error de cada hoja ($Err(y; S_m)$), lo pondera por la fracción de observaciones que caen en esa hoja ($\frac{|S_m|}{|S|}$), y luego suma estos errores ponderados en todas las hojas del árbol.
+
+Por ejemplo, si estás utilizando un árbol de decisión para la clasificación y calculas $Err(y; S_m)$ como la tasa de clasificación errónea en la m-ésima hoja, entonces $Err(h)$ será la tasa de clasificación errónea ponderada por hoja para todo el árbol. 
+
+Esta medida puede proporcionar una evaluación más precisa del rendimiento del árbol, ya que tiene en cuenta no solo cuántas observaciones se clasifican incorrectamente, sino también dónde ocurren estos errores en el árbol.
+
+![[Pasted image 20230708120954.png]]
+
+
+

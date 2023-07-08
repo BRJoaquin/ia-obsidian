@@ -11,7 +11,7 @@ En problemas de clasificación, existen varias métricas que nos permiten evalua
    $$\text{Precision} = \frac{\text{TP}}{\text{TP} + \text{FP}}$$
 > ¿Cuan creıble soy cuando digo “positivo”?
 
-3. **Recall (Sensibilidad | Recuperacion)**: Es la proporción de verdaderos positivos que se identificaron correctamente. Es la proporción de verdaderos positivos (TP) entre todos los que son realmente positivos (TP + FN).
+3. **Recall (Sensibilidad | Recuperacion)**: Es la proporción de verdaderos positivos que se identificaron correctamente. Es la proporción de verdaderos positivos (TP) entre todos los que son realmente positivos (TP + FN). vease [[Recall]]
 
    $$\text{Recall} = \frac{\text{TP}}{\text{TP} + \text{FN}}$$
 > ¿Cuantos “positivos” logre detectar?

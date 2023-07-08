@@ -190,3 +190,9 @@ Esta medida puede proporcionar una evaluación más precisa del rendimiento del 
 
 
 
+# Algunas notas
+https://sebastianraschka.com/pdf/lecture-notes/stat451fs20/06-trees__notes.pdf
+
+# Videos
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3vZo0ApLz0A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

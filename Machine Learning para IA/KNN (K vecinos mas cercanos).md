@@ -141,3 +141,12 @@ Sin embargo, KNN también tiene algunas limitaciones en el contexto de la regres
 ## Conclusión
 
 En resumen, aunque KNN es más conocido por su uso en problemas de clasificación, también puede ser una herramienta útil para los problemas de regresión. A pesar de su simplicidad, puede manejar relaciones complejas y no lineales entre las características y la variable objetivo. Sin embargo, su rendimiento puede verse afectado por la presencia de valores atípicos y la escala de las características, y la elección del número de vecinos puede requerir un ajuste fino. Como siempre, la eficacia de KNN en un problema de regresión dado dependerá de las características particulares del conjunto de datos y del problema en cuestión.
+
+
+# Videos
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zJH0qmrU-rA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9dawNcG_ue8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/563R7CUxNzA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

@@ -45,7 +45,7 @@ vease: [[Método de Máxima Verosimilitud]]
 
 # Evaluación
 
-El rendimiento de un modelo de Regresión Logística puede ser evaluado utilizando varias métricas, como la precisión, la [[Curva ROC]], el área bajo la curva ROC ([[AUC-ROC]]), la [[Matriz de confusion]], etc.
+El rendimiento de un modelo de Regresión Logística puede ser evaluado utilizando varias métricas, como la precisión, la [[Curva ROC]], el área bajo la curva ROC ([[AUC-ROC]]), la [[Matriz de confusión]], etc.
 
 # Ventajas
 

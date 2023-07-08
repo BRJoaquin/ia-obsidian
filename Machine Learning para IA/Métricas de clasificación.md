@@ -16,11 +16,11 @@ En problemas de clasificación, existen varias métricas que nos permiten evalua
    $$\text{Recall} = \frac{\text{TP}}{\text{TP} + \text{FN}}$$
 > ¿Cuantos “positivos” logre detectar?
 
-4. **F1-Score**: Es una medida que combina precisión y recall en una sola métrica. Es la media armónica de precisión y recall, y su valor estará más cerca del valor más pequeño entre precisión y recall.
+4. **F1-Score**: Es una medida que combina precisión y recall en una sola métrica. Es la media armónica de precisión y recall, y su valor estará más cerca del valor más pequeño entre precisión y recall. vease [[F1-score]]
 
    $$F1 = 2 \times \frac{\text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}}$$
 
-5. **AUC-ROC**: El área bajo la curva de la característica operativa del receptor (AUC-ROC) es una métrica que nos permite evaluar el rendimiento de un clasificador binario. La curva ROC es un gráfico que muestra el rendimiento de un modelo de clasificación en todos los niveles de umbral de clasificación.
+5. **AUC-ROC**: El área bajo la curva de la característica operativa del receptor (AUC-ROC) es una métrica que nos permite evaluar el rendimiento de un clasificador binario. La curva ROC es un gráfico que muestra el rendimiento de un modelo de clasificación en todos los niveles de umbral de clasificación. vease [[AUC-ROC]]
 
 Además de estas métricas, la **matriz de confusión** es una herramienta útil que nos permite visualizar el rendimiento de un algoritmo de clasificación. Nos muestra los verdaderos positivos, verdaderos negativos, falsos positivos y falsos negativos.
 

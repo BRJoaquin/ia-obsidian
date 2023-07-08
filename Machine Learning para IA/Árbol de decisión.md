@@ -22,6 +22,30 @@ Además, los árboles de decisión pueden ser inestables, en el sentido de que p
 
 En resumen, los árboles de decisión son un algoritmo de aprendizaje supervisado versátil y fácilmente interpretable, aunque pueden ser propensos al [[Sobreajuste (Overfitting)]] y la inestabilidad. A pesar de estas desventajas, son una herramienta valiosa en la caja de herramientas de cualquier científico de datos.
 
+## La pregunta
+
+En los árboles de decisión, la elección de la pregunta para dividir cada nodo se basa en un criterio que busca mejorar la pureza de los nodos hijos. En el caso de un árbol de decisión de regresión, este criterio se basa generalmente en el error cuadrático medio (MSE, por sus siglas en inglés) o en la suma de los errores cuadrados (RSS, por sus siglas en inglés).
+
+### Error cuadrático medio (MSE) y suma de los errores cuadrados (RSS)
+
+El MSE y el RSS son medidas del error en un modelo de regresión. El MSE se calcula como el promedio de los errores cuadrados, mientras que el RSS es simplemente la suma de los errores cuadrados. En el contexto de los árboles de decisión de regresión, el MSE y el RSS se utilizan para cuantificar cuánto varían los valores objetivo en un nodo dado del árbol.
+
+El objetivo de la división de un nodo es minimizar el MSE o el RSS en los nodos hijos. Para cada posible pregunta (es decir, para cada valor de cada atributo), se calculan el MSE y el RSS en los nodos hijos que resultarían de la división. La pregunta que da como resultado la mayor reducción del MSE o del RSS se selecciona para dividir el nodo.
+
+### Reducción de la varianza
+
+La reducción de la varianza se refiere a la disminución del MSE o del RSS que resulta de la división de un nodo. Cuanto mayor sea la reducción de la varianza, mejor será la pregunta para dividir el nodo.
+
+La reducción de la varianza se calcula como la diferencia entre el MSE o el RSS en el nodo antes de la división y el MSE o el RSS ponderados en los nodos hijos después de la división. El objetivo es maximizar la reducción de la varianza.
+
+### Recursive Binary Splitting
+
+El Recursive Binary Splitting es el algoritmo utilizado para construir árboles de decisión. Es un algoritmo de tipo divide y conquista que opera de forma recursiva.
+
+El algoritmo empieza en la raíz del árbol, con todas las instancias del conjunto de datos. A continuación, se busca la mejor pregunta para dividir las instancias en dos subconjuntos, utilizando el criterio de reducción de la varianza.
+
+Una vez que se ha encontrado la mejor pregunta, se divide el conjunto de datos y se repite el proceso en cada uno de los subconjuntos resultantes. Este proceso de dividir el conjunto de datos y buscar la mejor pregunta en cada subconjunto se repite de forma recursiva hasta que se alcanza un criterio de parada, como una profundidad máxima del árbol o un número mínimo de instancias por nodo de hoja.
+
 
 # Regresión
 

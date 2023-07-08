@@ -46,3 +46,6 @@ scores = cross_val_score(model, X, y, cv=5)
 print("Cross-validation scores: ", scores)
 print("Average cross-validation score: ", scores.mean())
 ```
+
+# Desventajas
+

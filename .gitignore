@@ -6,3 +6,6 @@
 !.obsidian/core-plugins.json
 !.obsidian/graph.json
 !.obsidian/hotkeys.json
+
+# Ignore Smart Connections folder because embeddings file is large and updated frequently
+.smart-connections

@@ -24,3 +24,7 @@ El error total de un modelo se puede descomponer en tres términos: sesgo, varia
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/R13lpnXVtXo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+# Links de interes
+
+https://towardsdatascience.com/the-bias-variance-tradeoff-8818f41e39e9 

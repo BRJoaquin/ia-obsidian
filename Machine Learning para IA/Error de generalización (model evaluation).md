@@ -81,6 +81,20 @@ Es importante tener en cuenta que el sesgo pesimista es solo una estimación, y 
 
 ![[Pasted image 20230708122738.png]]
 
+# Optimistic Bias
+
+El **Optimistic Bias** se refiere a la tendencia de un algoritmo de aprendizaje automático a subestimar el verdadero error de generalización. Este fenómeno es especialmente común cuando un modelo está siendo entrenado y evaluado en el mismo conjunto de datos.
+
+Por ejemplo, cuando un modelo se ajusta a un conjunto de datos de entrenamiento, puede aprender características específicas y ruido en esos datos, logrando un error de entrenamiento bajo. Sin embargo, cuando el modelo se prueba en nuevos datos, es probable que no realice tan bien, dando lugar a un error de generalización más alto. 
+
+Este sesgo optimista ocurre porque el modelo está "demasiado optimista" acerca de su capacidad para generalizar a partir del conjunto de datos de entrenamiento. A menudo es una señal de sobreajuste, donde el modelo ha aprendido tan bien los datos de entrenamiento que ha perdido su capacidad para generalizar bien a nuevos datos.
+
+En la práctica, es común mitigar este problema utilizando técnicas como la validación cruzada, que implican la división del conjunto de datos en múltiples subconjuntos y la realización de múltiples rondas de entrenamiento y prueba, cada una con diferentes subconjuntos de datos.
+
+
+# Videos
+
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/miq_7lZgguE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 

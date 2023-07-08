@@ -58,6 +58,8 @@ y queremos encontrar los valores de $b_0$ y $b_1$ que maximizan esta función. A
 
 En la **Regresión Logística**, los pesos (o coeficientes) para las variables predictoras se ajustan durante el proceso de entrenamiento para minimizar la función de pérdida, que a menudo es la pérdida de [[Entropía Cruzada binaria (log loss o NLL)]] en este caso.
 
+![[Pasted image 20230708111531.png]]
+
 El objetivo del ajuste de pesos es encontrar los valores que hacen que las predicciones del modelo se alineen lo más cerca posible de las etiquetas verdaderas de los datos de entrenamiento. 
 
 El ajuste de los pesos se realiza generalmente a través de un algoritmo de optimización, como el **descenso de gradiente**. En cada iteración del entrenamiento, el algoritmo de optimización calcula el gradiente de la función de pérdida con respecto a cada peso, y luego actualiza los pesos en la dirección que reduce la pérdida.
@@ -144,7 +146,7 @@ Para hacer una predicción para una nueva observación, simplemente aplicamos ca
 
 Cabe destacar que, aunque el método OVR es intuitivo y fácil de implementar, puede ser problemático cuando las clases están desequilibradas. Si una clase es mucho más común que las demás, entonces el modelo para esa clase puede dominar a los otros modelos, lo que lleva a predicciones sesgadas.
 
-
+![[Pasted image 20230708111438.png]]
 
 
 

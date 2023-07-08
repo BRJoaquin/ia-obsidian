@@ -52,23 +52,13 @@ Si un nodo tiene un número de instancias menor a un umbral predefinido, entonce
 
 ### Reducción mínima en el error:
 
-Si una división propuesta no reduciría el error (MSE o RSS) en al menos un umbral predefinido, entonces esa división no se realiza. Este enfoque ayuda a garantizar que el modelo solo se complica cuando esa complicación aporta una mejora significativa en el rendimiento.
+Si una división propuesta no reduciría el error en al menos un umbral predefinido, entonces esa división no se realiza. Este enfoque ayuda a garantizar que el modelo solo se complica cuando esa complicación aporta una mejora significativa en el rendimiento.
 
 En resumen, la división en un árbol de decisión se detiene cuando se alcanza un criterio de parada predefinido, lo que ayuda a prevenir el sobreajuste y a garantizar que el modelo sea lo suficientemente general como para hacer predicciones precisas en instancias no vistas.
 
 ![[Pasted image 20230708100052.png]]
 
-# MSE
 
-El Error Cuadrático Medio (MSE, por sus siglas en inglés) de un árbol de decisión de regresión se calcula de la siguiente manera:
-
-1. Para cada nodo terminal (hoja) del árbol, calcula el valor de predicción para ese nodo. En un árbol de decisión de regresión, este valor es simplemente el promedio de los valores objetivo de las instancias de entrenamiento que caen en ese nodo.
-
-2. Para cada instancia de entrenamiento, encuentra el nodo hoja que corresponde a esa instancia y toma el valor de predicción de ese nodo como la predicción del árbol para esa instancia.
-
-3. Calcula la diferencia entre la predicción del árbol y el valor objetivo real para cada instancia de entrenamiento. Eleva al cuadrado cada una de estas diferencias.
-
-4. Suma todas estas diferencias cuadradas y luego divide por el número de instancias de entrenamiento. Este valor es el MSE del árbol de decisión.
 
 ![[Pasted image 20230708100743.png]]
 

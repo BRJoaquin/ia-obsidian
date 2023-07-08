@@ -45,9 +45,7 @@
     
 - [Clase 7 - Clasificación: regresión logística](https://aulas.ort.edu.uy/mod/resource/view.php?id=452523)
     
-    - Logits, función sigmoidea y softmax
-    - Regresión logística binaria
-    - Regresión logística multiclase
+    - [[Regresión logística]]
     
 - [Clase 7 - Clasificación: árboles de decisión](https://aulas.ort.edu.uy/mod/resource/view.php?id=452524)
     

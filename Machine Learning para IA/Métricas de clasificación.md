@@ -86,16 +86,20 @@ $$\text{Balanced Accuracy} = \frac{1}{2} (\frac{TP}{TP+FN} + \frac{TN}{TN+FP})$$
 2. **Balanced Accuracy con Pesos:** Esta es una versión ponderada de la precisión equilibrada. Los pesos pueden ser proporcionales a la cantidad de ejemplos en cada clase.
    ![[Pasted image 20230708171127.png]]
 
-## Metricas de clasificación multiclase
+## Métricas de clasificación multiclase
 
 En problemas de clasificación multiclase, donde se tienen más de dos clases, hay algunas métricas importantes a considerar:
 
 1. **Recall:** En el contexto de clasificación multiclase, el recall se puede calcular para cada clase y luego tomar la media para obtener el recall global. 
 
 $$\text{Recall} = \frac{TP}{TP+FN}$$
+![[Pasted image 20230708171218.png]]
 
 2. **Macro Average Recall:** Esta es la media no ponderada de los recalls para cada clase.
 
 $$\text{Macro Average Recall} = \frac{1}{n} \sum_{i=1}^{n} \text{Recall}_i$$
+![[Pasted image 20230708171306.png]]
 
 3. **Weighted Categorical Accuracy:** Esta es una versión ponderada de la precisión categórica. En esta métrica, la precisión de cada clase se calcula de forma independiente y luego se promedian, ponderando el promedio por el número de instancias verdaderas para cada clase. Esto ayuda a dar más importancia a las clases que son más prevalentes.
+   
+![[Pasted image 20230708171409.png]]

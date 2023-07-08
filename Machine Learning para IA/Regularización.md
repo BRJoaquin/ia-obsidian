@@ -1,0 +1,33 @@
+La regularización es un conjunto de técnicas que se utilizan para prevenir el [[Sobreajuste (Overfitting)]] en los modelos de [[Machine Learning]]. El sobreajuste ocurre cuando un modelo aprende demasiado bien los datos de entrenamiento y pierde la capacidad de generalizar sobre nuevos datos desconocidos. Esencialmente, la regularización agrega una penalización a los parámetros del modelo para reducir su complejidad y hacer que el modelo sea más robusto a las fluctuaciones en los datos de entrenamiento.
+
+En términos más formales, la regularización modifica la función de pérdida que se está minimizando al agregar un término adicional que penaliza la complejidad del modelo. Esto a menudo implica restringir los valores de los parámetros del modelo (como los pesos en una red neuronal). La idea es que al agregar esta penalización, se puede equilibrar el trade-off entre sesgo y varianza.
+
+Existen varios métodos de regularización, pero los más comunes son la regularización L1 y L2.
+
+## Regularización L1 (Lasso)
+
+En la regularización L1, la penalización es la suma de los valores absolutos de los parámetros del modelo. 
+
+$$ L1 = \lambda \sum_{i=1}^{n} |w_i| $$
+
+donde $w_i$ son los parámetros del modelo y $\lambda$ es el parámetro de regularización que controla la cantidad de regularización que se desea aplicar. Esta forma de regularización tiene la propiedad de generar soluciones dispersas, lo que significa que puede hacer que algunos de los parámetros del modelo sean exactamente cero. Esto puede ser útil si se cree que solo un subconjunto de las características es relevante para la tarea, ya que la regularización L1 puede ayudar a realizar una selección automática de características.
+
+## Regularización L2 (Ridge)
+
+En la regularización L2, la penalización es la suma de los cuadrados de los parámetros del modelo. 
+
+$$ L2 = \lambda \sum_{i=1}^{n} w_i^2 $$
+
+Al igual que con L1, $\lambda$ controla la cantidad de regularización a aplicar. La regularización L2 tiene la propiedad de reducir los valores de los parámetros, pero a diferencia de L1, no los hace exactamente cero. Esto es útil cuando se cree que todas las características son relevantes para la tarea.
+
+## Regularización Elastic Net
+
+Elastic Net es una combinación de L1 y L2. En este método, tanto la suma de los valores absolutos como la suma de los cuadrados se agregan a la función de pérdida. Elastic Net tiene la ventaja de que puede generar soluciones dispersas (como L1) mientras reduce los valores de los parámetros (como L2). 
+
+$$ ElasticNet = \lambda (\alpha \sum_{i=1}^{n} |w_i| + (1-\alpha) \sum_{i=1}^{n} w_i^2) $$
+
+Aquí, $\alpha$ es un parámetro adicional que controla la combinación de L1 y L2.
+
+La elección de la técnica de regularización y los valores para los parámetros de regularización ($\lambda$ y $\alpha$ en el caso de Elastic Net) dependen del problema específico y a menudo se determinan mediante validación cruzada.
+
+Finalmente, es importante destacar que la regularización es una herramienta para manejar la complejidad del modelo y ayudar a prevenir el sobreajuste, pero no es un sustituto de tener buenos datos de entrenamiento. Ninguna cantidad de regularización puede compensar datos de entrenamiento de mala calidad o insuficientes.

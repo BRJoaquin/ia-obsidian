@@ -103,3 +103,13 @@ Una vez que se ha construido el árbol de decisión de regresión, se puede util
 Las ventajas y desventajas de los árboles de decisión de regresión son similares a las de los árboles de decisión de clasificación. Son fáciles de entender e interpretar, pueden manejar tanto datos numéricos como categóricos y no requieren suposiciones sobre la distribución de los datos. Sin embargo, son propensos al sobreajuste, especialmente si el árbol es muy profundo, y pueden ser inestables, en el sentido de que pequeños cambios en los datos pueden provocar grandes cambios en la estructura del árbol.
 
 En resumen, los árboles de decisión de regresión son una herramienta valiosa para la regresión, con la capacidad de proporcionar modelos interpretables y manejar una variedad de tipos de datos.
+
+
+# Clasificación
+
+Los árboles de decisión son algoritmos de aprendizaje supervisado que se utilizan tanto para tareas de regresión como de clasificación. En una tarea de clasificación, el árbol de decisión se utiliza para determinar la clase de una instancia dada. 
+
+La estructura de un árbol de decisión es similar a la de un flujo de decisiones, donde cada nodo representa una prueba en un atributo, cada rama representa el resultado de la prueba, y cada hoja representa una clase. La instancia se clasifica siguiendo el camino desde la raíz hasta una hoja basado en los valores de sus atributos.
+
+El proceso de construcción de un árbol de decisión implica seleccionar el mejor atributo para dividir el conjunto de datos en cada paso. La elección del "mejor" atributo puede hacerse de diferentes formas, pero a menudo se basa en medidas de impureza como la entropía o el índice Gini. La idea es que el mejor atributo es el que más reduce la impureza.
+

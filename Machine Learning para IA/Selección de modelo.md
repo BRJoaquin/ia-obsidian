@@ -9,23 +9,56 @@ La selección del sesgo inductivo es un paso crucial en la construcción de un m
 
 Hay varias formas de realizar la selección de modelos, que van desde métodos de búsqueda exhaustiva que evalúan todas las combinaciones posibles de parámetros hasta métodos más eficientes y sofisticados como la validación cruzada y los criterios de información.
 
-La **validación cruzada** es una técnica comúnmente utilizada para la selección de modelos. Implica dividir el conjunto de datos en varios subconjuntos, entrenar el modelo en algunos de estos subconjuntos (el conjunto de entrenamiento) y luego evaluar el modelo en los subconjuntos restantes (el conjunto de validación). Esto se repite varias veces con diferentes divisiones de los datos. Los resultados de las evaluaciones en los conjuntos de validación se promedian para obtener una estimación del rendimiento del modelo.
+# Selección de Modelos con Holdout (Entrenamiento + Validación + Prueba)
 
-Los **criterios de información** son otro método comúnmente utilizado para la selección de modelos. Estos criterios, como el Criterio de Información de Akaike (AIC) o el Criterio de Información Bayesiano (BIC), evalúan la calidad de los modelos basándose en su rendimiento en los datos y en la complejidad del modelo (número de parámetros). Estos criterios penalizan a los modelos más complejos para evitar el sobreajuste.
+El método **Holdout** es un enfoque común para la selección de modelos y la validación del modelo en aprendizaje automático. En este enfoque, el conjunto de datos se divide en tres conjuntos: conjunto de entrenamiento, conjunto de validación y conjunto de prueba.
 
-En resumen, la selección de modelos es un aspecto crucial en la construcción de un modelo de aprendizaje automático y la elección del sesgo inductivo apropiado puede tener un gran impacto en el rendimiento del modelo.
+- **Conjunto de Entrenamiento**: Este conjunto se utiliza para entrenar el modelo. El modelo aprende de los datos de este conjunto.
+
+- **Conjunto de Validación**: Este conjunto se utiliza para afinar el modelo y seleccionar el mejor modelo durante la fase de entrenamiento. No se utiliza para entrenar el modelo inicialmente, sino que se utiliza para probar el rendimiento del modelo en diferentes configuraciones (como diferentes hiperparámetros o diferentes tipos de modelos). En la selección de modelos, se elige el modelo que tiene el mejor rendimiento en el conjunto de validación.
+
+- **Conjunto de Prueba**: Este conjunto se mantiene completamente separado y sólo se utiliza al final del proceso de aprendizaje, una vez que el modelo ha sido seleccionado y completamente entrenado. Proporciona una medida de cómo el modelo seleccionado se desempeñará en datos no vistos anteriormente.
+
+Por lo tanto, el proceso completo se ve así:
+
+1. Entrenar varios modelos diferentes (o el mismo modelo con diferentes configuraciones) en el conjunto de entrenamiento.
+
+2. Evaluar cada modelo en el conjunto de validación.
+
+3. Seleccionar el modelo que mejor se desempeña en el conjunto de validación.
+
+4. Finalmente, probar el modelo seleccionado en el conjunto de prueba para obtener una estimación imparcial del rendimiento del modelo en datos no vistos.
+
+La principal ventaja de este método es su simplicidad y eficacia. Sin embargo, tiene la desventaja de que la evaluación del rendimiento del modelo puede variar mucho dependiendo de cómo se divida el conjunto de datos en los tres conjuntos. Esto se debe a que cada división proporciona una muestra diferente de los datos. La validación cruzada es una alternativa a la técnica de Holdout que aborda este problema.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KKErl_UtF2M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+# Selección de Modelos con Repeated Holdout
+
+El método **Repeated Holdout** es una mejora del método Holdout que se mencionó anteriormente. En lugar de dividir el conjunto de datos sólo una vez en entrenamiento, validación y prueba, el método Repeated Holdout repite este proceso varias veces con diferentes divisiones aleatorias de los datos. Este método busca abordar el problema de la variabilidad en las divisiones de datos, una limitación importante del método Holdout.
+
+En cada iteración del proceso:
+
+1. Se divide aleatoriamente el conjunto de datos en un conjunto de entrenamiento y un conjunto de validación/prueba.
+
+2. Se entrena el modelo en el conjunto de entrenamiento y se valida en el conjunto de validación.
+
+3. Se registra el rendimiento del modelo en el conjunto de validación.
+
+4. Se repite el proceso con una nueva división aleatoria de los datos.
+
+Finalmente, el rendimiento promedio de las múltiples ejecuciones proporciona una medida más robusta del rendimiento del modelo. Además, esto permite que cada dato tenga la oportunidad de ser parte del conjunto de validación y del conjunto de entrenamiento, lo que mejora la estimación del error de generalización del modelo.
+
+Una vez completado el proceso de repetición, se selecciona el modelo con el mejor rendimiento promedio en el conjunto de validación a través de todas las iteraciones. Ese modelo finalmente se prueba en el conjunto de prueba para obtener una medida de cómo el modelo seleccionado se desempeñará en datos no vistos.
+
+La principal ventaja del método Repeated Holdout es que reduce la varianza en la estimación del rendimiento del modelo en comparación con la técnica de Holdout. Sin embargo, tiene la desventaja de que requiere más tiempo y recursos computacionales debido a las múltiples ejecuciones.
 
 
 
 
 
 
-
-
-
-
-
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1whfIOoPTlk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
 

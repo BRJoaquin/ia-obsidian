@@ -7,7 +7,7 @@ El MDP se compone de cuatro elementos principales:
 3.  Transiciones: son las probabilidades de pasar de un estado a otro, dada una acción específica. Véase [[Transición]]
 4.  Recompensas: son los puntos o beneficios que el agente recibe al realizar acciones en el entorno. Véase [[Recompensa]]
 
-El agente toma decisiones basándose en su conocimiento actual del entorno y las recompensas asociadas a las acciones. El objetivo del agente es encontrar una política óptima ([[Política optima]]), que es una estrategia para seleccionar acciones en cada estado de manera que maximice el valor total de las recompensas a lo largo del tiempo.
+El agente toma decisiones basándose en su conocimiento actual del entorno y las recompensas asociadas a las acciones. El objetivo del agente es encontrar una política óptima ([[Política optima]]) o poder evaluar una política.
 
 Un aspecto clave de los MDP es que tienen **la propiedad de Markov**, lo que significa que **el estado actual del entorno contiene toda la información necesaria para decidir la acción óptima**, sin importar cómo llegamos a ese estado. En otras palabras, el pasado no importa y sólo necesitamos considerar el estado presente para tomar decisiones.
 
@@ -161,7 +161,7 @@ Una [[Política]], denotada comúnmente por $\pi$, es una regla que le dice al a
 
 En términos más sencillos, la política es como el "plan de acción" del agente. Una política podría ser tan simple como "siempre elige la misma acción" o tan compleja como "elige la acción que maximiza la suma esperada de las futuras recompensas, teniendo en cuenta las acciones anteriores y las recompensas recibidas".
 
-### Funciones de Valor en MDP
+# Funciones de Valor en MDP
 
 Una función de valor es una predicción del futuro valor esperado (recompensa a largo plazo) que se puede obtener desde un estado o desde una pareja estado-acción, bajo una política específica. 
 
@@ -193,48 +193,6 @@ El Aprendizaje Reforzado tiene distintos métodos para estimar v∗ y q∗, de m
 Si conocemos la función p(s' , r | s, a), podremos usar métodos basados en un modelo (model-based); ej.: [[Programación dinámica]]. 
 
 Si no conocemos p(s' , r | s, a), deberemos usar métodos sin modelo (model-free); ej.: [[Métodos Monte Carlo]] y [[Métodos de Diferencias temporales]].
-
-# Clasificaciones de algoritmos
-
-### 1. Tabulares y Aproximados
-
-Los métodos tabulares de aprendizaje por refuerzo son aquellos que asumen que se dispone de una tabla completa que mapea cada posible par estado-acción a su valor asociado. Esto significa que se requiere que el agente visite cada estado y cada acción varias veces para aprender el valor exacto de cada par estado-acción.
-
-> Los algoritmos que utilizan un enfoque tabular incluyen [[Q-learning]] y [[SARSA]] cuando se aplican a problemas con un espacio de estados y/o acciones discretos y suficientemente pequeños.
-
-Por otro lado, los métodos aproximados se usan cuando el espacio de estados y/o acciones es demasiado grande para manejar de manera tabular. En estos casos, se utiliza una función de aproximación para estimar los valores de estado-acción. Esta función puede ser lineal o no lineal, y se ajusta a medida que el agente explora el espacio de estados-acciones.
-
-> Los métodos que utilizan una aproximación funcional incluyen [[Deep Q-Network (DQN)]], donde se utiliza una red neuronal para aproximar la función Q, y los [[Métodos de Aproximación de Función de Valor]]
-
-### 2. Model-Free y Model-Based
-
-Los métodos de aprendizaje por refuerzo model-free no asumen ninguna información previa sobre el entorno. Estos métodos aprenden directamente de la experiencia del agente, lo cual los hace más flexibles pero generalmente más lentos para converger.
-
-> Los métodos model-free incluyen algoritmos como [[Q-learning]], [[SARSA]], [[Método Actor-Critic]]
-
-En contraste, los métodos model-based utilizan un modelo del entorno para planificar y mejorar la política del agente. Este modelo puede ser aprendido por el agente o ser proporcionado por el diseñador. Los métodos model-based pueden ser más eficientes que los model-free, pero requieren un modelo exacto o al menos aproximado del entorno.
-
-> Los algoritmos model-based incluyen el [[Iteración de Valor (value iteration)]], el [[Iteración de Política (policy iteration)]], y los [[Métodos de Planificación (planning)]].
-
-### 3. Value-Based y Policy-Based
-
-Los métodos value-based se centran en aprender el valor de cada estado o par estado-acción y derivar la política óptima a partir de estos valores.
-
-> Los algoritmos value-based incluyen [[Q-learning]], [[Iteración de Valor (value iteration)]] y [[SARSA]].
-
-Por otro lado, los métodos policy-based buscan directamente la política óptima sin necesidad de aprender primero los valores de los estados o pares estado-acción. Estos métodos pueden ser más efectivos en espacios de acciones continuas o cuando la política tiene una forma más simple que la función de valor.
-
-> Los algoritmos policy-based incluyen el [[Gradiente de Política]] y [[Método Actor-Critic]]
-
-### 4. On-Policy y Off-Policy
-
-Los métodos on-policy aprenden la política óptima basándose en la política que el agente está siguiendo actualmente. Estos métodos requieren que el agente explore suficientemente el espacio de acciones para asegurar una buena cobertura de los posibles estados y acciones.
-
-> Los algoritmos on-policy incluyen [[SARSA]] y [[Gradiente de Política]].
-
-Por otro lado, los métodos off-policy aprenden la política óptima utilizando datos generados por cualquier política, no necesariamente la política actual del agente. Esto permite utilizar datos de políticas antiguas o de políticas generadas por otros agentes. 
-
-> Los algoritmos off-policy incluyen [[Q-learning]] y [[Deep Q-Network (DQN)]].
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/B_lK-P68_Zc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

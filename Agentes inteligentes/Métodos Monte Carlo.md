@@ -123,6 +123,8 @@ Los métodos Monte Carlo ofrecen una manera simple y poderosa de aprender de la 
 
 ![[Pasted image 20230624162713.png]]
 
+![[Pasted image 20230709150413.png]]
+
 ![[Pasted image 20230624163243.png]]
 
 

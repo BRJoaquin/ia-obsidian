@@ -1,4 +1,4 @@
-Se refiere a una **secuencia completa** de interacciones de un [[Agente]] con su [[Entorno]], desde un estado inicial hasta un estado terminal. (vease [[Estado]]) 
+Se refiere a una **secuencia completa** de interacciones de un [[Agente]] con su [[Entorno (ambiente)]], desde un estado inicial hasta un estado terminal. (vease [[Estado]]) 
 
 Un episodio se compone de una secuencia de pasos, en cada uno de los cuales el agente observa el estado actual, elige y realiza una acción, y luego recibe una recompensa y observa el nuevo estado. 
 

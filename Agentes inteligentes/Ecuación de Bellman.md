@@ -60,3 +60,5 @@ Ahora bien, podrías preguntarte, ¿por qué es útil la ecuación de Bellman? B
 - **Proporciona un objetivo de aprendizaje para los algoritmos de aprendizaje por refuerzo**: En los algoritmos como el Q-learning y los métodos de Aprendizaje Profundo por Refuerzo, la ecuación de Bellman proporciona un objetivo de aprendizaje. Específicamente, estos algoritmos tratan de minimizar la "diferencia temporal" o "error de Bellman", que es la diferencia entre el valor actual de un estado (o par estado-acción) y el valor que se obtendría aplicando la ecuación de Bellman.
 
 Así que en resumen, la ecuación de Bellman es realmente una pieza fundamental en el aprendizaje por refuerzo, y entenderla bien es crucial para entender cómo funcionan los algoritmos en esta área.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_j6pvGEchWU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

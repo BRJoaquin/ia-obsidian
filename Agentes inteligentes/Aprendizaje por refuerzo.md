@@ -1,4 +1,4 @@
-El aprendizaje por refuerzo es un tipo de inteligencia artificial donde un [[Agente]] (como un programa de computadora o un robot) aprende a tomar decisiones en un [[Entorno]]
+El aprendizaje por refuerzo es un tipo de inteligencia artificial donde un [[Agente]] (como un programa de computadora o un robot) aprende a tomar decisiones en un [[Entorno (ambiente)]]
 al interactuar con él y recibir [[Recompensa]] o castigos según la calidad de sus [[Acción]]. El objetivo del agente es maximizar las recompensas a lo largo del tiempo, lo que le permite mejorar su comportamiento y tomar decisiones cada vez más efectivas en situaciones similares.
 
 # Características

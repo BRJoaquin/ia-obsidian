@@ -5,7 +5,7 @@ Los métodos Monte Carlo son una clase de algoritmos en el [[Aprendizaje por ref
 
 # Conceptos básicos
 
-En el contexto del aprendizaje por refuerzo, un experimento Monte Carlo implica la simulación de [[Episodio]]s de interacción con el [[Entorno]], a partir de los cuales se calculan las [[Recompensa]]s acumuladas (o retornos) para estimar las [[Función de valor]].
+En el contexto del aprendizaje por refuerzo, un experimento Monte Carlo implica la simulación de [[Episodio]]s de interacción con el [[Entorno (ambiente)]], a partir de los cuales se calculan las [[Recompensa]]s acumuladas (o retornos) para estimar las [[Función de valor]].
 
 **Los métodos Monte Carlo estiman el valor de un estado como el promedio de los retornos observados después de visitas a ese estado**.
 

@@ -5,7 +5,7 @@ En este capítulo, Sutton y Barto abordan el tema de cómo los agentes pueden ap
 
 ## Modelo
 
-En el contexto del aprendizaje por refuerzo, un modelo se utiliza para imitar el comportamiento del [[Entorno]]. Los agentes que usan un modelo para guiar su aprendizaje y tomar decisiones se conocen como agentes basados en modelos ([[Model based]]). **El proceso de usar un modelo para determinar cómo actuar se conoce como planificación**. 
+En el contexto del aprendizaje por refuerzo, un modelo se utiliza para imitar el comportamiento del [[Entorno (ambiente)]]. Los agentes que usan un modelo para guiar su aprendizaje y tomar decisiones se conocen como agentes basados en modelos ([[Model based]]). **El proceso de usar un modelo para determinar cómo actuar se conoce como planificación**. 
 
 Hay dos tipos principales de modelos: 
 

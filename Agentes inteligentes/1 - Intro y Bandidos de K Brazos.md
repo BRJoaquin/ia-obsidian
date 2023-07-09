@@ -1,7 +1,7 @@
 Puntos clave: 
 - [[Aprendizaje por refuerzo]]
 - [[Agente]]
-- [[Ambiente]]
+- [[Entorno (ambiente)]]
 - [[Recompensa]]
 - [[Aprendizaje supervisado]]
 - [[Aprendizaje no supervisado]]

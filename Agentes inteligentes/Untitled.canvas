@@ -1,0 +1,10 @@
+{
+	"nodes":[
+		{"type":"text","text":"Queremos aprender una función de valor?","id":"5d76ea094c8329b3","x":-260,"y":-440,"width":250,"height":60},
+		{"id":"fe24b234d8908869","x":-680,"y":-230,"width":400,"height":110,"type":"file","file":"Agentes inteligentes/Gradiente de Política.md"},
+		{"type":"text","text":"","id":"903aa69ff8f0be3f","x":120,"y":-230,"width":250,"height":60}
+	],
+	"edges":[
+		{"id":"a103b44f9c807fd0","fromNode":"5d76ea094c8329b3","fromSide":"bottom","toNode":"fe24b234d8908869","toSide":"top"}
+	]
+}

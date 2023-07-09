@@ -68,21 +68,21 @@ El aprendizaje por refuerzo y el aprendizaje supervisado son dos enfoques difere
   
 -   Aprendizaje por refuerzo: La generalización en el aprendizaje por refuerzo depende de la capacidad del agente para explorar y aprender de diferentes estados y situaciones en el entorno. El agente debe equilibrar la [[Exploración]] de nuevas acciones con la [[Explotación]] de las acciones conocidas para maximizar las recompensas.
 
-# Exploracion vs Explotacion
-
-> [!quote]
-> One of the challenges that arise in reinforcement learning, and not in other kinds of learning, is the trade-off between exploration and exploitation. To obtain a lot of reward, a reinforcement learning agent must prefer actions that it has tried in the past and found to be effective in producing reward. But to discover such actions, it has to try actions that it has not selected before. The agent has to exploit what it has already experienced in order to obtain reward, but it also has to explore in order to make better action selections in the future. The dilemma is that neither exploration nor exploitation can be pursued exclusively without failing at the task.
-
 # Elementos 
 
 > [!quote]
 > Beyond the agent and the environment, one can identify four main subelements of a reinforcement learning system: a policy, a reward signal, a value function, and, optionally, a model of the environment.
 
 - ver [[Política]]
-- ver [[Señal de recompensa]]
+- ver [[Recompensa]]
 - ver [[Función de valor]]
 - ver [[Modelo de ambiente]]
 
+# Mapa
+
+
+
+# Video
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/NFo9v_yKQXA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 

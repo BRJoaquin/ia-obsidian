@@ -6,7 +6,7 @@ Puntos clave:
 - [[Aprendizaje supervisado]]
 - [[Aprendizaje no supervisado]]
 - [[Política]]
-- [[Señal de recompensa]]
+- [[Recompensa]]
 - [[Función de valor]]
 - [[Modelo de ambiente]]
 - [[Bandidos de k brazos]]

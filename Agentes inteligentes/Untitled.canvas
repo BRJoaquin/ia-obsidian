@@ -3,16 +3,18 @@
 		{"type":"text","text":"Queremos aprender una función de valor?","id":"5d76ea094c8329b3","x":-260,"y":-440,"width":250,"height":60},
 		{"type":"file","file":"Agentes inteligentes/Gradiente de Política.md","id":"fe24b234d8908869","x":-760,"y":-225,"width":400,"height":305},
 		{"type":"file","file":"Agentes inteligentes/Value-Based (indirectos).md","id":"2425d39b4d171273","x":60,"y":-225,"width":400,"height":285},
-		{"type":"text","text":"Tenemos disponible el modelo del ambiente?","id":"da5718c7ae941def","x":496,"y":705,"width":250,"height":75},
 		{"type":"file","file":"Agentes inteligentes/Métodos de aproximación de la función de valor.md","id":"217f7e61734dae8a","x":-266,"y":420,"width":400,"height":285},
-		{"type":"file","file":"Agentes inteligentes/Métodos tabulares.md","id":"b3eb71e15dea121f","x":420,"y":420,"width":400,"height":180},
 		{"type":"text","text":"El espacio estado-accion puede entrar en una tabla?","id":"746f28c4f836da49","x":135,"y":140,"width":250,"height":101},
-		{"type":"text","text":"Queremos aprender el modelo?\n","id":"ea672e53d8a2ece9","x":252,"y":922,"width":250,"height":60},
-		{"type":"text","text":"Es un problema de control?","id":"92aea053cfe7f889","x":741,"y":925,"width":250,"height":57},
-		{"type":"file","file":"Agentes inteligentes/Dyna-Q.md","id":"9207136b60066400","x":-940,"y":1020,"width":400,"height":400},
-		{"type":"text","text":"Programación dinámica         (iteracion)","id":"a6bb7b743cb19138","x":583,"y":1091,"width":250,"height":60},
-		{"type":"file","file":"Agentes inteligentes/Iteración de Valor (value iteration).md","id":"cb0262c788bf40b9","x":300,"y":1240,"width":400,"height":311},
-		{"type":"file","file":"Agentes inteligentes/Iteración de Política (policy iteration).md","id":"1e04341a6a8733c4","x":740,"y":1240,"width":400,"height":317}
+		{"type":"text","text":"Es un problema de control?","id":"92aea053cfe7f889","x":1009,"y":935,"width":250,"height":57},
+		{"type":"text","text":"Programación dinámica         (iteracion)","id":"a6bb7b743cb19138","x":1331,"y":1112,"width":250,"height":60},
+		{"type":"file","file":"Agentes inteligentes/Iteración de Valor (value iteration).md","id":"cb0262c788bf40b9","x":1048,"y":1261,"width":400,"height":311},
+		{"type":"file","file":"Agentes inteligentes/Iteración de Política (policy iteration).md","id":"1e04341a6a8733c4","x":1488,"y":1261,"width":400,"height":317},
+		{"type":"file","file":"Agentes inteligentes/Iteración de Política (policy iteration).md","id":"84f9efff0987333f","x":570,"y":1266,"width":400,"height":308,"subpath":"#Evaluación de la Política"},
+		{"type":"file","file":"Agentes inteligentes/Métodos tabulares.md","id":"b3eb71e15dea121f","x":688,"y":430,"width":400,"height":180},
+		{"type":"text","text":"Tenemos disponible el modelo del ambiente?","id":"da5718c7ae941def","x":764,"y":715,"width":250,"height":75},
+		{"type":"text","text":"Queremos aprender el modelo?\n","id":"ea672e53d8a2ece9","x":9,"y":935,"width":250,"height":60},
+		{"type":"file","file":"Agentes inteligentes/Dyna-Q.md","id":"9207136b60066400","x":80,"y":1261,"width":400,"height":299,"subpath":"#Tabular Dyna-Q"},
+		{"id":"976fda6fb1f70fac","x":-610,"y":1201,"width":250,"height":60,"type":"text","text":"Cada cuanto queremos actualizar nuestra tabla?"}
 	],
 	"edges":[
 		{"id":"a103b44f9c807fd0","fromNode":"5d76ea094c8329b3","fromSide":"bottom","toNode":"fe24b234d8908869","toSide":"top","label":"no"},
@@ -25,6 +27,9 @@
 		{"id":"2a015ddf0bca12e4","fromNode":"da5718c7ae941def","fromSide":"bottom","toNode":"92aea053cfe7f889","toSide":"top","label":"si"},
 		{"id":"04e543e4cb741cbd","fromNode":"92aea053cfe7f889","fromSide":"bottom","toNode":"a6bb7b743cb19138","toSide":"top","label":"si"},
 		{"id":"1394c4d85cc2de84","fromNode":"a6bb7b743cb19138","fromSide":"bottom","toNode":"cb0262c788bf40b9","toSide":"top"},
-		{"id":"0ff3a3b8bba648e5","fromNode":"a6bb7b743cb19138","fromSide":"bottom","toNode":"1e04341a6a8733c4","toSide":"top"}
+		{"id":"0ff3a3b8bba648e5","fromNode":"a6bb7b743cb19138","fromSide":"bottom","toNode":"1e04341a6a8733c4","toSide":"top"},
+		{"id":"a5d59f25ceb18af9","fromNode":"92aea053cfe7f889","fromSide":"bottom","toNode":"84f9efff0987333f","toSide":"top","label":"no"},
+		{"id":"e978ad6c300a1a8d","fromNode":"ea672e53d8a2ece9","fromSide":"bottom","toNode":"9207136b60066400","toSide":"top","label":"si"},
+		{"id":"270bfc04d06afd44","fromNode":"ea672e53d8a2ece9","fromSide":"bottom","toNode":"976fda6fb1f70fac","toSide":"top"}
 	]
 }

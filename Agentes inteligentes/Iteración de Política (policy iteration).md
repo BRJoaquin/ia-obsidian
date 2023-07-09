@@ -2,8 +2,10 @@ La iteración de política es un método en el aprendizaje por refuerzo **para e
 
 El algoritmo de iteración de política se compone de dos pasos principales que se repiten hasta que la política no cambia entre iteraciones:
 
+# Evaluación de la Política
 1. **Evaluación de la Política**: Dada una política $\pi$, la evaluación de la política calcula la [[Función de valor de estado (V)]] $V^\pi$ para esa política. **Esto se hace resolviendo la ecuación de Bellman para la función de valor de estado.** En la práctica, esto se hace a menudo a través de una serie de actualizaciones iterativas de los valores de los estados.
 
+# Mejora de la Política
 2. **Mejora de la Política**: Dada la función de valor de estado calculada en el paso de evaluación de la política, la mejora de la política actualiza la política seleccionando, para cada estado, la acción que maximiza la suma de la recompensa inmediata y el valor del estado sucesor. Esto se hace utilizando la ecuación de Bellman óptima (vease [[Ecuación de Bellman#Ecuación de Bellman óptima]]).
 
 En resumen, el algoritmo de iteración de política comienza con una política inicial (que puede ser aleatoria), luego alterna entre la evaluación de la política y la mejora de la política hasta que la política converge.

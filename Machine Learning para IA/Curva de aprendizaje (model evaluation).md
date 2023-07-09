@@ -10,7 +10,7 @@ Existen dos tipos comunes de curvas de aprendizaje:
 
 2. **Curvas de validación**: Estas curvas muestran cómo cambia el rendimiento del modelo en el conjunto de entrenamiento y en el conjunto de validación a medida que varía algún hiperparámetro del modelo. Las curvas de validación ayudan a identificar el punto óptimo para el hiperparámetro en cuestión, donde la generalización del modelo es mejor (es decir, el rendimiento en el conjunto de validación es máximo).
 
-Las curvas de aprendizaje son una herramienta útil para la selección y ajuste de modelos, ya que ayudan a identificar problemas como el sobreajuste (overfitting) y el subajuste (underfitting). 
+Las curvas de aprendizaje son una herramienta útil para la selección y ajuste de modelos, ya que ayudan a identificar problemas como el [[sobreajuste (overfitting)]] y el subajuste (underfitting). 
 
 - **Sobreajuste (Overfitting)**: Ocurre cuando el modelo se ajusta demasiado bien a los datos de entrenamiento y pierde capacidad para generalizar a nuevos datos. En una curva de aprendizaje, esto puede observarse cuando el rendimiento en el conjunto de entrenamiento es muy bueno, pero el rendimiento en el conjunto de validación es significativamente peor.
 

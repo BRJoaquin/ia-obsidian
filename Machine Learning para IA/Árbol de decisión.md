@@ -16,14 +16,6 @@ Este proceso se repite de forma recursiva hasta que todas las instancias de un s
 
 En los árboles de decisión, la elección de la pregunta para dividir cada nodo se basa en un criterio que busca mejorar la pureza de los nodos hijos. 
 
-### Reducción de la varianza
-
-La reducción de la varianza se refiere a la disminución del MSE o del RSS que resulta de la división de un nodo. Cuanto mayor sea la reducción de la varianza, mejor será la pregunta para dividir el nodo.
-
-La reducción de la varianza se calcula como la diferencia entre el MSE o el RSS en el nodo antes de la división y el MSE o el RSS ponderados en los nodos hijos después de la división. El objetivo es maximizar la reducción de la varianza.
-
-![[Pasted image 20230708095850.png]]
-
 ### Recursive Binary Splitting
 
 El Recursive Binary Splitting es el algoritmo utilizado para construir árboles de decisión. Es un algoritmo de tipo divide y conquista que opera de forma recursiva.
@@ -65,7 +57,6 @@ Además, los árboles de decisión pueden ser inestables, en el sentido de que p
 
 En resumen, los árboles de decisión son un algoritmo de aprendizaje supervisado versátil y fácilmente interpretable, aunque pueden ser propensos al [[Sobreajuste (Overfitting)]] y la inestabilidad. A pesar de estas desventajas, son una herramienta valiosa en la caja de herramientas de cualquier científico de datos.
 
-
 # Regresión
 
 Los árboles de decisión no sólo se utilizan para problemas de clasificación, sino que también se pueden utilizar para problemas de regresión. En lugar de predecir una clase en cada nodo de hoja, en un problema de regresión, cada nodo de hoja predice un valor numérico. El objetivo de un árbol de decisión de regresión es minimizar la suma de los errores cuadrados.
@@ -79,6 +70,7 @@ La construcción de un árbol de decisión de regresión es similar a la constru
 El algoritmo de construcción del árbol de decisión intenta minimizar este error de las siguientes maneras:
 
 1. Para cada atributo en el conjunto de datos, el algoritmo intenta encontrar un punto de división que minimice la suma de los errores cuadrados para los subconjuntos resultantes. Para hacer esto, el algoritmo prueba todos los posibles puntos de división y selecciona el que da como resultado la menor suma de los errores cuadrados.
+   ![[Pasted image 20230708194412.png]]
 
 2. Una vez que se ha encontrado el mejor punto de división para cada atributo, el algoritmo selecciona el atributo que da como resultado la menor suma de los errores cuadrados y divide los datos según el mejor punto de división para ese atributo.
 
@@ -94,7 +86,6 @@ Las ventajas y desventajas de los árboles de decisión de regresión son simila
 
 En resumen, los árboles de decisión de regresión son una herramienta valiosa para la regresión, con la capacidad de proporcionar modelos interpretables y manejar una variedad de tipos de datos.
 
-
 # Clasificación
 
 Los árboles de decisión son algoritmos de aprendizaje supervisado que se utilizan tanto para tareas de regresión como de clasificación. En una tarea de clasificación, el árbol de decisión se utiliza para determinar la clase de una instancia dada. 
@@ -104,7 +95,6 @@ La estructura de un árbol de decisión es similar a la de un flujo de decisione
 El proceso de construcción de un árbol de decisión implica seleccionar el mejor atributo para dividir el conjunto de datos en cada paso. La elección del "mejor" atributo puede hacerse de diferentes formas, pero a menudo se basa en medidas de impureza como la entropía o el índice Gini. La idea es que el mejor atributo es el que más reduce la impureza.
 
 ![[Pasted image 20230708113659.png]]
-
 
 
 # Cálculo de error en árboles de decisión

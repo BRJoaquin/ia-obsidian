@@ -44,7 +44,7 @@ El aprendizaje en este caso implica ajustar los pesos $w$ para minimizar la dife
 
 En cada paso del SGD, se calcula el gradiente del error con respecto a los pesos, y se actualizan los pesos en la dirección opuesta al gradiente. En el caso de una función lineal, el gradiente es simplemente el vector de características, por lo que la actualización de los pesos es:
 
-$$w \leftarrow w + \alpha (U_t - \hat{v}(s_t; w)) \nabla{\hat{v}}(s_t,w)$$
+$$\Large w \leftarrow w + \alpha (U_t - \hat{v}(s_t; w)) \nabla{\hat{v}}(s_t,w)$$
 donde:
 
 - $w$ es el vector de pesos.

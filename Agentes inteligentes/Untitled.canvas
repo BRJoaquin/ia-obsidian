@@ -1,10 +1,23 @@
 {
 	"nodes":[
 		{"type":"text","text":"Queremos aprender una función de valor?","id":"5d76ea094c8329b3","x":-260,"y":-440,"width":250,"height":60},
-		{"id":"fe24b234d8908869","x":-680,"y":-230,"width":400,"height":110,"type":"file","file":"Agentes inteligentes/Gradiente de Política.md"},
-		{"type":"text","text":"","id":"903aa69ff8f0be3f","x":120,"y":-230,"width":250,"height":60}
+		{"type":"file","file":"Agentes inteligentes/Gradiente de Política.md","id":"fe24b234d8908869","x":-760,"y":-225,"width":400,"height":305},
+		{"type":"file","file":"Agentes inteligentes/Value-Based (indirectos).md","id":"2425d39b4d171273","x":60,"y":-225,"width":400,"height":285},
+		{"id":"da5718c7ae941def","x":496,"y":705,"width":250,"height":75,"type":"text","text":"Tenemos disponible el modelo del ambiente?"},
+		{"type":"file","file":"Agentes inteligentes/Métodos de aproximación de la función de valor.md","id":"217f7e61734dae8a","x":-266,"y":420,"width":400,"height":285},
+		{"id":"dcdd26651cd00039","x":737,"y":920,"width":400,"height":320,"type":"file","file":"Agentes inteligentes/Model based.md"},
+		{"id":"d81865e473cae970","x":126,"y":924,"width":400,"height":276,"type":"file","file":"Agentes inteligentes/Model free.md"},
+		{"id":"b3eb71e15dea121f","x":420,"y":420,"width":400,"height":180,"type":"file","file":"Agentes inteligentes/Métodos tabulares.md"},
+		{"type":"text","text":"El espacio estado-accion puede entrar en una tabla?","id":"746f28c4f836da49","x":135,"y":140,"width":250,"height":101}
 	],
 	"edges":[
-		{"id":"a103b44f9c807fd0","fromNode":"5d76ea094c8329b3","fromSide":"bottom","toNode":"fe24b234d8908869","toSide":"top"}
+		{"id":"a103b44f9c807fd0","fromNode":"5d76ea094c8329b3","fromSide":"bottom","toNode":"fe24b234d8908869","toSide":"top","label":"no"},
+		{"id":"7fe9df449a31e369","fromNode":"5d76ea094c8329b3","fromSide":"bottom","toNode":"2425d39b4d171273","toSide":"top","label":"si"},
+		{"id":"241f06170369409c","fromNode":"2425d39b4d171273","fromSide":"bottom","toNode":"746f28c4f836da49","toSide":"top"},
+		{"id":"b24eb0c2556c8b8d","fromNode":"746f28c4f836da49","fromSide":"bottom","toNode":"217f7e61734dae8a","toSide":"top","label":"no"},
+		{"id":"2b2680db7089894d","fromNode":"746f28c4f836da49","fromSide":"bottom","toNode":"b3eb71e15dea121f","toSide":"top","label":"si"},
+		{"id":"926728dc9354a29b","fromNode":"b3eb71e15dea121f","fromSide":"bottom","toNode":"da5718c7ae941def","toSide":"top"},
+		{"id":"1b48e628e7c94dd1","fromNode":"da5718c7ae941def","fromSide":"bottom","toNode":"d81865e473cae970","toSide":"top","label":"no"},
+		{"id":"56d1b7571a0e8560","fromNode":"da5718c7ae941def","fromSide":"bottom","toNode":"dcdd26651cd00039","toSide":"top"}
 	]
 }

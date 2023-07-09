@@ -104,8 +104,6 @@ Libro:
 Los métodos Monte Carlo ofrecen una manera simple y poderosa de aprender de la interacción con el entorno sin requerir un modelo completo de las dinámicas del entorno. **Sin embargo, como requieren la finalización de episodios para realizar actualizaciones, pueden ser ineficientes o inaplicables en entornos con episodios muy largos o infinitos.**
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/bpUszPiWM7o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
 
 # Ventajas
 
@@ -127,5 +125,11 @@ Los métodos Monte Carlo ofrecen una manera simple y poderosa de aprender de la 
 
 ![[Pasted image 20230624163243.png]]
 
+
+
+# Videos
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bpUszPiWM7o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/C3p2wI4RAi8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

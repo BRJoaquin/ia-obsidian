@@ -3,3 +3,6 @@ En el [[Aprendizaje por refuerzo]], off-policy se refiere a métodos de aprendiz
 Por ejemplo, en el caso del algoritmo [[Q-learning]], el agente puede aprender la política óptima mediante la exploración de diferentes acciones y estados, incluso si estas acciones y estados no forman parte de la política que está siguiendo actualmente. Esto permite que el agente aprenda de una gama más amplia de experiencias y, **en teoría, puede ayudarlo a encontrar una política óptima más rápidamente.**
 
 Contrástese esto con los métodos "en política" ([[On-Policy]]), como [[SARSA]], donde el agente solo aprende a partir de las acciones que forman parte de su política actual.
+
+
+![[Pasted image 20230709150024.png]]

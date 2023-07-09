@@ -16,7 +16,7 @@ En resumen, el algoritmo de iteración de política comienza con una política i
 
 > Una seria desventaja de Policy Iteration es que hacer una evaluacion completa de $π_k$ en cada paso demora mucho tiempo.
 
-### Ejemplo Sencillo
+# Ejemplo Sencillo
 
 Consideremos un MDP muy simple con tres estados (A, B y C) y dos posibles acciones en cada estado (1 y 2). Supongamos que las recompensas son 0 para todas las transiciones excepto para la acción 1 en el estado B, que tiene una recompensa de 1. Supongamos además que todas las acciones llevan al agente al estado C, excepto la acción 1 en el estado A, que lleva al agente al estado B.
 

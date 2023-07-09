@@ -82,7 +82,8 @@ Para cada episodio:
         $N(S_t, A_t) \leftarrow N(S_t, A_t) + 1$
         $Q(S_t, A_t) \leftarrow Q(S_t, A_t) + (1/N(S_t, A_t)) * (G - Q(S_t, A_t))$
 
-> No es necesario usar 1/N, tambien se puede usar un $\alpha$  entre 0-1. Esto se llama: constant-$\alpha$ 
+> No es necesario usar 1/N, tambien se puede usar un $\alpha$  entre 0-1. Esto se llama: constant-$\alpha$ MC
+> ![[Pasted image 20230709144428.png]]
 
 
 # Métodos Monte Carlo de Control

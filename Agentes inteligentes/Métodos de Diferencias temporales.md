@@ -1,4 +1,4 @@
-Diferencias Temporales (TD Learning) es una combinación de [[Métodos Monte Carlo]] e [[Iteración de Valor (value iteration)]]. Al igual que la Iteración de Valor, los métodos de Diferencias Temporales **están basados en la actualización de las estimaciones basadas en otras estimaciones**. Al igual que en los métodos de Monte Carlo, **las diferencias temporales pueden aprender directamente de la experiencia sin requerir un modelo de medio ambiente**.
+Diferencias Temporales (TD Learning) es una combinación de [[Métodos Monte Carlo]] e [[Iteración de Valor (value iteration)]]. Al igual que la Iteración de Valor, los métodos de Diferencias Temporales **están basados en la actualización de las estimaciones basadas en otras estimaciones** ([[Bootstrapping]]. Al igual que en los métodos de Monte Carlo, **las diferencias temporales pueden aprender directamente de la experiencia sin requerir un modelo de medio ambiente**.
 
 # Primer acercamiento
 
@@ -8,7 +8,7 @@ Los métodos de Diferencias Temporales utilizan la idea de que la estimación de
 
 # Ventajas de Diferencias Temporales
 
-Las Diferencias Temporales tienen varias ventajas sobre los métodos de Monte Carlo. La más obvia es que las diferencias temporales pueden aprender en línea después de cada paso, mientras que Monte Carlo debe esperar hasta el final de un episodio. Esto es muy útil en situaciones donde los episodios pueden ser muy largos o incluso infinitos. 
+Las Diferencias Temporales tienen varias ventajas sobre los métodos de Monte Carlo. La más obvia es que las diferencias temporales pueden aprender **en línea** (online) después de cada paso, mientras que Monte Carlo debe esperar hasta el final de un episodio. Esto es muy útil en situaciones donde los **episodios pueden ser muy largos o incluso infinitos**. 
 
 **Aprendizaje en línea (Online Learning)** se refiere a un tipo de aprendizaje automático donde el modelo se entrena y se actualiza continuamente a medida que llegan nuevos datos. En el contexto del aprendizaje por refuerzo, "aprendizaje en línea" generalmente se refiere a la capacidad del agente de aprender y mejorar su política **mientras interactúa con el entorno**.
 

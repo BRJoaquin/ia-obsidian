@@ -1,5 +1,5 @@
 El aprendizaje por refuerzo es un tipo de inteligencia artificial donde un [[Agente]] (como un programa de computadora o un robot) aprende a tomar decisiones en un [[Entorno (ambiente)]]
-al interactuar con él y recibir [[Recompensa]] o castigos según la calidad de sus [[Acción]]. El objetivo del agente es maximizar las recompensas a lo largo del tiempo, lo que le permite mejorar su comportamiento y tomar decisiones cada vez más efectivas en situaciones similares.
+Al interactuar con él y recibir [[Recompensa]] o castigos según la calidad de sus [[Acción|acciones]]. El objetivo del agente es maximizar las recompensas a lo largo del tiempo, lo que le permite mejorar su comportamiento y tomar decisiones cada vez más efectivas en situaciones similares.
 
 # Características
 
@@ -9,7 +9,7 @@ En el aprendizaje por refuerzo, los enfoques pueden categorizarse en varias dime
 
 2. **Online vs Offline:** En el aprendizaje online, el agente aprende mientras interactúa con el entorno en tiempo real. En el aprendizaje offline, el agente aprende a partir de un conjunto de experiencias previamente recolectadas.
    
-	- **Aprendizaje Online:** En el aprendizaje online, el agente aprende directamente de las interacciones con el entorno. A medida que el agente interactúa con el entorno, recopila nuevas experiencias (transiciones de estado, acción, recompensa) y las usa para actualizar sus estimaciones de la función de valor o la política. En el contexto de los modelos, un agente puede construir un modelo a partir de sus experiencias online y luego usar este modelo para la planificación.
+	- **Aprendizaje Online:** En el aprendizaje online, el agente aprende directamente de las interacciones con el entorno. A medida que el agente interactúa con el entorno, recopila nuevas experiencias (transiciones de estado, acción, recompensa) y las usa para actualizar sus estimaciones de la función de valor o la política. En el contexto de los modelos, un agente puede construir un modelo a partir de sus experiencias online y luego usar este modelo para la [[Métodos de Planificación (planning)|planificación]].
 
 	- **Aprendizaje Offline:** En el aprendizaje offline, el agente aprende a partir de un conjunto de datos de experiencias previamente recopiladas, no directamente de sus interacciones actuales con el entorno. El conjunto de datos podría haber sido recopilado por el propio agente en interacciones anteriores con el entorno, o por otros agentes. Los modelos pueden ser particularmente útiles en el aprendizaje offline, ya que permiten al agente realizar "inferencia de trayectoria", es decir, aprender sobre secuencias de estados y acciones que no aparecen explícitamente en el conjunto de datos.
 

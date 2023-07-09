@@ -63,8 +63,6 @@ La principal ventaja de la aproximación lineal es su simplicidad. Es fácil de 
 
 Las desventajas son que puede no ser capaz de representar funciones de valor que no sean lineales en las características, y que la elección de las características puede tener un gran impacto en la calidad de la aproximación.
 
-
-
 # Método de Montecarlo con Descenso de Gradiente Estocástico (SGD)
 
 > es importante de que este metodo es ortogonal, podemos combinarlo con otros metodos como MC y TD

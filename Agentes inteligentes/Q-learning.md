@@ -38,8 +38,6 @@ Sin embargo, el Q-Learning también tiene desventajas. Por ejemplo, **puede ser 
 
 Un desafío en el Q-learning es que la tabla Q puede volverse muy grande si hay muchos estados o acciones posibles, lo que puede dificultar el almacenamiento y la actualización de la tabla. Para manejar este problema, se pueden utilizar métodos de aproximación de funciones, como las redes neuronales, para representar la función Q. Esto se conoce como Q-learning profundo, que es la base de muchas técnicas modernas de aprendizaje por refuerzo, como el [[Deep Q-Network (DQN)]].
 
-
-
 # Double Q-learning
 
 Double Q-learning es una mejora del algoritmo de Q-learning estándar, que fue propuesto para abordar un problema de sobreestimación en Q-learning. En el Q-learning, se utilizan los valores Q estimados para seleccionar tanto la mejor acción como para calcular la recompensa estimada de esa acción. **Este procedimiento puede llevar a sobreestimaciones sistemáticas de los valores Q, lo que a su vez puede conducir a una política subóptima**.

@@ -8,7 +8,8 @@
 		{"id":"dcdd26651cd00039","x":737,"y":920,"width":400,"height":320,"type":"file","file":"Agentes inteligentes/Model based.md"},
 		{"id":"d81865e473cae970","x":126,"y":924,"width":400,"height":276,"type":"file","file":"Agentes inteligentes/Model free.md"},
 		{"id":"b3eb71e15dea121f","x":420,"y":420,"width":400,"height":180,"type":"file","file":"Agentes inteligentes/Métodos tabulares.md"},
-		{"type":"text","text":"El espacio estado-accion puede entrar en una tabla?","id":"746f28c4f836da49","x":135,"y":140,"width":250,"height":101}
+		{"type":"text","text":"El espacio estado-accion puede entrar en una tabla?","id":"746f28c4f836da49","x":135,"y":140,"width":250,"height":101},
+		{"id":"9207136b60066400","x":460,"y":1540,"width":400,"height":400,"type":"file","file":"Agentes inteligentes/Dyna-Q.md"}
 	],
 	"edges":[
 		{"id":"a103b44f9c807fd0","fromNode":"5d76ea094c8329b3","fromSide":"bottom","toNode":"fe24b234d8908869","toSide":"top","label":"no"},

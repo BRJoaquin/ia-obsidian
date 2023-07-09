@@ -6,7 +6,6 @@
 		{"type":"file","file":"Agentes inteligentes/Métodos de aproximación de la función de valor.md","id":"217f7e61734dae8a","x":-266,"y":420,"width":400,"height":285},
 		{"type":"text","text":"El espacio estado-accion puede entrar en una tabla?","id":"746f28c4f836da49","x":135,"y":140,"width":250,"height":101},
 		{"type":"text","text":"Es un problema de control?","id":"92aea053cfe7f889","x":1009,"y":935,"width":250,"height":57},
-		{"type":"text","text":"Programación dinámica         (iteracion)","id":"a6bb7b743cb19138","x":1331,"y":1112,"width":250,"height":60},
 		{"type":"file","file":"Agentes inteligentes/Iteración de Valor (value iteration).md","id":"cb0262c788bf40b9","x":1048,"y":1261,"width":400,"height":311},
 		{"type":"file","file":"Agentes inteligentes/Iteración de Política (policy iteration).md","id":"1e04341a6a8733c4","x":1488,"y":1261,"width":400,"height":317},
 		{"type":"file","file":"Agentes inteligentes/Iteración de Política (policy iteration).md","subpath":"#Evaluación de la Política","id":"84f9efff0987333f","x":570,"y":1266,"width":400,"height":308},
@@ -15,9 +14,9 @@
 		{"type":"text","text":"Queremos aprender el modelo?\n","id":"ea672e53d8a2ece9","x":9,"y":935,"width":250,"height":60},
 		{"type":"file","file":"Agentes inteligentes/Dyna-Q.md","subpath":"#Tabular Dyna-Q","id":"9207136b60066400","x":80,"y":1261,"width":400,"height":299},
 		{"type":"text","text":"Monte Carlo","id":"23528b6258d8216d","x":-266,"y":1456,"width":250,"height":59},
-		{"id":"01034729b0a7e81f","x":-341,"y":1787,"width":400,"height":400,"type":"file","file":"Agentes inteligentes/Métodos Monte Carlo.md"},
+		{"type":"file","file":"Agentes inteligentes/Métodos Monte Carlo.md","id":"01034729b0a7e81f","x":-341,"y":1787,"width":400,"height":400},
 		{"type":"text","text":"bootrapping de N pasos","id":"d69c99eb3344f480","x":-770,"y":1444,"width":250,"height":60},
-		{"id":"328429ea97fbddab","x":-845,"y":1787,"width":400,"height":400,"type":"file","file":"Agentes inteligentes/Bootstrapping de n pasos.md"},
+		{"type":"file","file":"Agentes inteligentes/Bootstrapping de n pasos.md","id":"328429ea97fbddab","x":-845,"y":1787,"width":400,"height":400},
 		{"type":"text","text":"TD(0)","id":"2c7205270850c1dc","x":-1500,"y":1442,"width":250,"height":60},
 		{"type":"text","text":"On-policy o off-policy?","id":"f2bb74034baafc51","x":-1501,"y":1607,"width":250,"height":60},
 		{"type":"file","file":"Agentes inteligentes/Q-learning.md","id":"f2d25154d4dece50","x":-1350,"y":1785,"width":400,"height":400},
@@ -33,9 +32,6 @@
 		{"id":"926728dc9354a29b","fromNode":"b3eb71e15dea121f","fromSide":"bottom","toNode":"da5718c7ae941def","toSide":"top"},
 		{"id":"9a85db3d3d1f546e","fromNode":"da5718c7ae941def","fromSide":"bottom","toNode":"ea672e53d8a2ece9","toSide":"top","label":"no"},
 		{"id":"2a015ddf0bca12e4","fromNode":"da5718c7ae941def","fromSide":"bottom","toNode":"92aea053cfe7f889","toSide":"top","label":"si"},
-		{"id":"04e543e4cb741cbd","fromNode":"92aea053cfe7f889","fromSide":"bottom","toNode":"a6bb7b743cb19138","toSide":"top","label":"si"},
-		{"id":"1394c4d85cc2de84","fromNode":"a6bb7b743cb19138","fromSide":"bottom","toNode":"cb0262c788bf40b9","toSide":"top"},
-		{"id":"0ff3a3b8bba648e5","fromNode":"a6bb7b743cb19138","fromSide":"bottom","toNode":"1e04341a6a8733c4","toSide":"top"},
 		{"id":"a5d59f25ceb18af9","fromNode":"92aea053cfe7f889","fromSide":"bottom","toNode":"84f9efff0987333f","toSide":"top","label":"no"},
 		{"id":"e978ad6c300a1a8d","fromNode":"ea672e53d8a2ece9","fromSide":"bottom","toNode":"9207136b60066400","toSide":"top","label":"si"},
 		{"id":"270bfc04d06afd44","fromNode":"ea672e53d8a2ece9","fromSide":"bottom","toNode":"976fda6fb1f70fac","toSide":"top","label":"no"},
@@ -46,6 +42,8 @@
 		{"id":"135b8d6d1c9217ac","fromNode":"f2bb74034baafc51","fromSide":"bottom","toNode":"4db3cb5ffbeb7ba9","toSide":"top","label":"on-policy"},
 		{"id":"b62badca97ee2489","fromNode":"f2bb74034baafc51","fromSide":"bottom","toNode":"f2d25154d4dece50","toSide":"top","label":"off-policy"},
 		{"id":"b4512702668836e7","fromNode":"d69c99eb3344f480","fromSide":"bottom","toNode":"328429ea97fbddab","toSide":"top"},
-		{"id":"5c6aa1c2563c9994","fromNode":"23528b6258d8216d","fromSide":"bottom","toNode":"01034729b0a7e81f","toSide":"top"}
+		{"id":"5c6aa1c2563c9994","fromNode":"23528b6258d8216d","fromSide":"bottom","toNode":"01034729b0a7e81f","toSide":"top"},
+		{"id":"3d6eb25ea6b0b720","fromNode":"92aea053cfe7f889","fromSide":"bottom","toNode":"1e04341a6a8733c4","toSide":"top","label":"si"},
+		{"id":"0e46a512251a9e46","fromNode":"92aea053cfe7f889","fromSide":"bottom","toNode":"cb0262c788bf40b9","toSide":"top","label":"si"}
 	]
 }

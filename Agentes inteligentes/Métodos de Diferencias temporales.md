@@ -22,7 +22,7 @@ Existen varios algoritmos de Diferencias Temporales. Algunos de los más conocid
 
 1. **TD(0)**: Este es el método más básico de Diferencias Temporales. TD(0) actualiza las estimaciones de valor después de cada paso de tiempo utilizando la recompensa inmediata y la estimación de valor del estado siguiente. vease [[TD(0)]]
 2. **N-steps TD**. vease [[N-stesarsaps TD]]
-3. **SARSA**: Este es un algoritmo de control (para aprender políticas) basado en Diferencias Temporales. SARSA es un acrónimo que representa los elementos utilizados en la actualización: estado (S), acción (A), recompensa (R), estado siguiente (S') y acción siguiente (A'). vease [[SARSA]]
+3. **SARSA**: Este es un algoritmo de [[Control|control]] (para mejorar políticas) basado en Diferencias Temporales. SARSA es un acrónimo que representa los elementos utilizados en la actualización: estado (S), acción (A), recompensa (R), estado siguiente (S') y acción siguiente (A'). vease [[SARSA]]
 4. **Q-Learning**: Al igual que SARSA, Q-Learning es un algoritmo de control basado en Diferencias Temporales, pero se diferencia en que utiliza la acción que maximiza el valor estimado para el estado siguiente, en lugar de la acción que la política actual sugeriría tomar. vease [[Q-learning]]
 
 Recuerda que en los algoritmos de diferencias temporales, al igual que en los métodos de Monte Carlo, se puede usar el muestreo para seleccionar acciones, y se pueden usar políticas ε-soft para asegurar la exploración continua.

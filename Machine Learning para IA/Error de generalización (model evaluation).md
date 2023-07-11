@@ -9,7 +9,7 @@ $$\LARGE \text{Error de Generalización} = E_{out} - E_{in} $$
 donde:
 
 - $E_{in}$ es el error en el **conjunto de entrenamiento**, también conocido como error de entrenamiento o error empírico.
-- $E_{out}$ es el error esperado en el **conjunto de prueba**, también conocido como error de prueba o error de generalización.
+- $E_{out}$ es el error esperado en el **conjunto de prueba**, también conocido como error de prueba.
 
 En términos prácticos, el error de generalización se estima a menudo utilizando un conjunto de validación o un conjunto de prueba separado del conjunto de entrenamiento. Este conjunto de datos no se utiliza en absoluto durante el entrenamiento del modelo y, por lo tanto, proporciona una estimación no sesgada del error de generalización.
 

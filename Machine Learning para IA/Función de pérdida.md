@@ -39,7 +39,7 @@ Donde $y_i$ es la etiqueta real (-1 o 1) y $ŷ_i$ es la predicción del modelo.
 
 4. **La función de pérdida 0-1**: también conocida como pérdida de clasificación errónea, es una función de pérdida utilizada en problemas de [[Clasificación]]. Esta función de pérdida asigna un valor de 1 cuando la predicción del modelo es incorrecta y un valor de 0 cuando la predicción es correcta.
    
-5.  **RSS (Residual Sum of Squares)**: La suma de los cuadrados de los residuos es una medida de la discrepancia entre los valores predichos por el modelo y los valores reales. Es la suma de las diferencias al cuadrado entre las predicciones del modelo y los valores reales.   vease 
+5.  **RSS (Residual Sum of Squares)**: La suma de los cuadrados de los residuos es una medida de la discrepancia entre los valores predichos por el modelo y los valores reales. Es la suma de las diferencias al cuadrado entre las predicciones del modelo y los valores reales.   vease [[RSS]]
    $$\Large RSS = Σ(y_i - ŷ_i)^2$$donde $y_i$ es el valor real, $ŷ_i$ es la predicción del modelo y la suma se realiza sobre todos los ejemplos en el conjunto de datos.
    
 6. **RMSE (Root Mean Squared Error)**: El error cuadrático medio es otra medida de la discrepancia entre las predicciones del modelo y los valores reales. Es la raíz cuadrada del promedio de las diferencias al cuadrado entre las predicciones del modelo y los valores reales.

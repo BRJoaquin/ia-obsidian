@@ -5,7 +5,7 @@ La Entropía Cruzada Categórica mide la similitud entre dos distribuciones de p
 En forma de ecuación, la Entropía Cruzada Categórica se puede expresar como:
 
 $$\Large
-H(y, \hat{y}) = - \sum_{i} y_{i} \log(\hat{y}_{i})
+\text{CE} = - \sum_{i=1}^n \sum_{j=1}^c y_{ij} \log(\hat{y}_{ij})
 $$
 
 donde $y$ es el vector de etiquetas verdaderas en codificación one-hot, $\hat{y}$ es el vector de predicciones del modelo y $i$ recorre todas las clases.

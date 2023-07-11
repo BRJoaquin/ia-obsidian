@@ -47,7 +47,7 @@ Aunque $x^2$ es una relación no lineal con $y$, la relación entre los coeficie
 
 # MLE, NLL y MSE en Regresión Lineal Simple
 
-Para encontrar los coeficientes $\beta$ en la regresión lineal, necesitamos algún criterio que nos permita determinar qué tan bien nuestra línea se ajusta a los datos. Esto nos lleva a los conceptos de Máxima Verosimilitud (MLE), Logaritmo Negativo de Verosimilitud (NLL) y Error Cuadrático Medio (MSE).
+Para encontrar los coeficientes $\beta$ en la regresión lineal, necesitamos algún criterio que nos permita determinar qué tan bien nuestra línea se ajusta a los datos. Esto nos lleva a los conceptos de [[Máxima Verosimilitud (MLE)]], [[Negative Log-Likelihood (NLL)]] y [[MSE]].
 
 El **Método de Máxima Verosimilitud (MLE)** busca los coeficientes que maximizan la verosimilitud de los datos observados, dado el modelo.
 

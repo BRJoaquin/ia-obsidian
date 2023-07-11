@@ -6,6 +6,10 @@ Una función de pérdida, también conocida como función de costo o de error, e
 >
 > La diferencia entre $y_i$ y $ŷ_i$ se utiliza en las funciones de pérdida para evaluar el rendimiento de un modelo de aprendizaje automático.
 
+![[Pasted image 20230711111027.png]]
+
+![[Pasted image 20230711111051.png]]
+
 La elección de la función de pérdida adecuada depende del tipo de problema y del objetivo específico. Algunas funciones de pérdida comunes incluyen:
 
 1.  **Error cuadrático medio (MSE)**: Es una función de pérdida comúnmente utilizada para problemas de regresión. Mide la suma de las diferencias al cuadrado entre las predicciones del modelo y los valores reales. Un valor menor de MSE indica un mejor ajuste del modelo a los datos. vease [[MSE]]

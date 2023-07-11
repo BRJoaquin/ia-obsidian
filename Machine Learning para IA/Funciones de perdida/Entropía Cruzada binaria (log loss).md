@@ -6,7 +6,7 @@ La entropía cruzada mide la disimilitud entre la distribución de probabilidad 
 La fórmula para la pérdida de entropía cruzada en clasificación binaria es:
 
 $$\Large
-L = -\frac{1}{N} \sum_{i=1}^{N} [y_i log(\hat{y}_i) + (1 - y_i) log(1 - \hat{y}_i)]
+L = - y_i log(\hat{y}_i) + (1 - y_i) log(1 - \hat{y}_i)
 $$
 
 donde:

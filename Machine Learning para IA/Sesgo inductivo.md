@@ -19,7 +19,7 @@ Es importante tener en cuenta el sesgo inductivo al seleccionar y ajustar algori
 
 # Ejemplo
 
-Claro, consideremos un problema de clasificación muy simple con dos características y dos clases. Imagina que tenemos un conjunto de datos que consta de puntos en un plano bidimensional, y nuestro objetivo es entrenar un modelo para clasificar nuevos puntos en una de las dos clases.
+Consideremos un problema de clasificación muy simple con dos características y dos clases. Imagina que tenemos un conjunto de datos que consta de puntos en un plano bidimensional, y nuestro objetivo es entrenar un modelo para clasificar nuevos puntos en una de las dos clases.
 
 Supongamos que tenemos dos algoritmos de aprendizaje automático para resolver este problema: la regresión logística y un árbol de decisión.
 

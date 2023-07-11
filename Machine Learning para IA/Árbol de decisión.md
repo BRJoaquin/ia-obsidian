@@ -6,23 +6,38 @@ La idea es crear un árbol que minimice el costo de clasificar una nueva instanc
 
 # Construcción de un árbol de decisión
 
-Para construir un árbol de decisión, se utiliza un algoritmo de dividir y conquistar. Se elige un atributo para dividir el conjunto de datos en subconjuntos que contengan instancias que sean lo más homogéneas posible según la etiqueta de clase. El atributo que mejor separe las instancias se elige utilizando una medida de impureza o diversidad como la [[Entropía]], la ganancia de información, el índice [[Gini]], etc.
+Para construir un árbol de decisión, se utiliza un algoritmo de dividir y conquistar. Se elige un atributo para dividir el conjunto de datos en subconjuntos que contengan instancias que sean lo más homogéneas posible según la etiqueta de clase. El atributo que mejor separe las instancias se elige utilizando una medida de impureza o diversidad como la [[Entropía]], la ganancia de información, el índice [[Gini]], en casos de calificación, y en casos de regresión,
+el error cuadrático medio. 
 
-Este proceso se repite de forma recursiva hasta que todas las instancias de un subconjunto pertenezcan a la misma clase, o no se pueda mejorar más la homogeneidad. El resultado es un árbol donde cada hoja tiene una única etiqueta de clase.
+El proceso se repite de manera recursiva en cada subconjunto hasta que se cumpla una condición de parada, como que todas las instancias en un subconjeto pertenezcan a la misma clase, que se haya alcanzado una profundidad máxima del árbol o que el número de instancias en un subconjunto sea menor a un umbral predefinido.
+
+Una vez construido el árbol, para clasificar una nueva instancia, se comienza en la raíz del árbol y se va descendiendo por las ramas según los valores de los atributos de la instancia hasta llegar a un nodo hoja. La clase asignada a la instancia será la clase mayoritaria en ese nodo hoja.
+
+El árbol de decisión es un modelo interpretable ya que permite entender el proceso de toma de decisiones. Sin embargo, es susceptible al sobreajuste si no se controla su crecimiento y puede ser inestable ante pequeñas variaciones en los datos.
 
 ![[Pasted image 20230708095609.png]]
 
 ## La pregunta
 
-En los árboles de decisión, la elección de la pregunta para dividir cada nodo se basa en un criterio que busca mejorar la pureza de los nodos hijos. 
+En los árboles de decisión, la elección de la pregunta para dividir cada nodo se basa en un criterio que busca **mejorar la pureza de los nodos hijos**. 
 
-### Recursive Binary Splitting
+### Árboles de decisión para clasificación
 
-El Recursive Binary Splitting es el algoritmo utilizado para construir árboles de decisión. Es un algoritmo de tipo divide y conquista que opera de forma recursiva.
+El objetivo de los árboles de decisión para clasificación es dividir los datos de tal manera que cada grupo resultante sea lo más homogéneo posible en términos de la variable objetivo (la variable que estamos tratando de predecir). Para encontrar la mejor característica y el valor para dividir en cada nodo, los árboles de decisión utilizan una medida de impureza. Las dos más comunes son la [[Entropía]] y el índice [[Gini]].
 
-El algoritmo empieza en la raíz del árbol, con todas las instancias del conjunto de datos. A continuación, se busca la mejor pregunta para dividir las instancias en dos subconjuntos, utilizando el criterio de reducción de la varianza.
+1. **Entropía**: Esta medida viene de la teoría de la información. Para un conjunto de datos, su entropía es cero cuando todos sus elementos pertenecen a una misma clase. ver 
+    
+2. **Índice Gini**: Esta medida se deriva de la economía, donde se usa para medir la desigualdad. Un conjunto de datos tiene un índice Gini de cero cuando todos sus elementos pertenecen a una misma clase.
 
-Una vez que se ha encontrado la mejor pregunta, se divide el conjunto de datos y se repite el proceso en cada uno de los subconjuntos resultantes. Este proceso de dividir el conjunto de datos y buscar la mejor pregunta en cada subconjunto se repite de forma recursiva hasta que se alcanza un criterio de parada, como una profundidad máxima del árbol o un número mínimo de instancias por nodo de hoja.
+
+En cada nodo, el árbol de decisión considerará todas las posibles divisiones, calculando la impureza para cada una. Luego, elegirá la división que minimice la impureza.
+
+### Árboles de decisión para regresión
+
+En la regresión, el objetivo es predecir una variable continua en lugar de una categórica. En este caso, la impureza de un nodo se puede medir por el error cuadrático medio (MSE) o el error absoluto medio (MAE) de la variable objetivo en el nodo.
+
+**En cada nodo, el árbol de decisión considerará todas las posibles divisiones y calculará el MSE o MAE para cada una. Luego, elegirá la división que minimice ese error.**
+
 
 ## Cuando para?
 

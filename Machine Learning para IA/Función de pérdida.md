@@ -20,7 +20,7 @@ Donde $y_i$ es el valor real, $ŷ_i$ es la predicción del modelo y $n$ es el n�
 
 Para la clasificación binaria: 
 $$\Large
-	\text{CE} = - \sum_{i=1}^n \left( y_i \log(\hat{y}_i) + (1 - y_i) \log(1 - \hat{y}_i) \right)
+	\text{BCE} = - \sum_{i=1}^n \left( y_i \log(\hat{y}_i) + (1 - y_i) \log(1 - \hat{y}_i) \right)
 $$
 
 Para la clasificación multiclase: 

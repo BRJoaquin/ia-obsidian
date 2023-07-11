@@ -21,7 +21,7 @@
     
     - Modelos estadísticos
     - [[Modelo parametrico]]
-    -[[Máxima Verosimilitud]]
+    -[[Máxima Verosimilitud (MLE)]]
     
 - [Clase 4 - Regresión: primeros ejemplos](https://aulas.ort.edu.uy/mod/resource/view.php?id=447929)
     

@@ -1,6 +1,6 @@
 La Negative Log-Likelihood (NLL) es una métrica usada frecuentemente en estadística y aprendizaje automático para evaluar la bondad de ajuste de un modelo a los datos. En el contexto de la [[Regresión lineal]], a menudo se utiliza como una función de pérdida para ajustar los parámetros del modelo.
 
-La verosimilitud ([[Máxima Verosimilitud]]) de un modelo dado es una medida de qué tan probable es que los datos observados se generen dada la distribución de probabilidad especificada por el modelo. Cuando trabajamos con verosimilitudes, a menudo es más conveniente trabajar con el logaritmo de la verosimilitud (log-likelihood) en lugar de la verosimilitud misma, principalmente porque los logaritmos convierten los productos en sumas, lo que simplifica el cálculo.
+La verosimilitud ([[Máxima Verosimilitud (MLE)]]) de un modelo dado es una medida de qué tan probable es que los datos observados se generen dada la distribución de probabilidad especificada por el modelo. Cuando trabajamos con verosimilitudes, a menudo es más conveniente trabajar con el logaritmo de la verosimilitud (log-likelihood) en lugar de la verosimilitud misma, principalmente porque los logaritmos convierten los productos en sumas, lo que simplifica el cálculo.
 
 La negative log-likelihood (NLL) simplemente es el negativo del logaritmo de la verosimilitud:
 

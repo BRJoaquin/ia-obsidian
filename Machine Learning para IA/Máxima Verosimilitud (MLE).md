@@ -14,6 +14,10 @@ $$\Large \hat{\theta}_{MLE} = \arg\max_{\theta} L(\theta; D)$$
 En el aprendizaje de máquinas, el método de máxima verosimilitud se utiliza comúnmente para ajustar modelos, encontrando los parámetros que maximizan la verosimilitud de los datos de entrenamiento dados los parámetros del modelo.
 ![[Pasted image 20230707123513.png]]
 
+# MLE vs NLL
+
+ver [[Negative Log-Likelihood (NLL)]]
+
 # Para humanos
 
 El principio de máxima verosimilitud es un concepto importante en estadística y teoría de la probabilidad. Aunque su formulación matemática puede resultar compleja, puedo explicarte el principio de máxima verosimilitud de una manera más accesible para no matemáticos.

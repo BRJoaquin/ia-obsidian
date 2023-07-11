@@ -6,17 +6,46 @@
   "hideUnresolved": false,
   "showOrphans": true,
   "collapse-color-groups": false,
-  "colorGroups": [],
+  "colorGroups": [
+    {
+      "query": "path:\"Machine Learning para IA\"",
+      "color": {
+        "a": 1,
+        "rgb": 14701138
+      }
+    },
+    {
+      "query": "path:\"Agentes inteligentes\"",
+      "color": {
+        "a": 1,
+        "rgb": 14725458
+      }
+    },
+    {
+      "query": "path:Probablidad",
+      "color": {
+        "a": 1,
+        "rgb": 11657298
+      }
+    },
+    {
+      "query": "path:Matematica",
+      "color": {
+        "a": 1,
+        "rgb": 5431378
+      }
+    }
+  ],
   "collapse-display": false,
-  "showArrow": false,
-  "textFadeMultiplier": -0.4,
-  "nodeSizeMultiplier": 0.954947916666667,
+  "showArrow": true,
+  "textFadeMultiplier": -1.6,
+  "nodeSizeMultiplier": 0.929427083333333,
   "lineSizeMultiplier": 0.82734375,
   "collapse-forces": false,
   "centerStrength": 0.497395833333333,
   "repelStrength": 10.15625,
   "linkStrength": 1,
-  "linkDistance": 203,
-  "scale": 0.1247569848726,
-  "close": false
+  "linkDistance": 217,
+  "scale": 0.5298143221576399,
+  "close": true
 }

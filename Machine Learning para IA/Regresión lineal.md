@@ -74,20 +74,3 @@ La regresión lineal se utiliza para predecir valores continuos mientras que la 
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/k964_uNn3l0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-
-
-
-- **Regresión polinomial**: 
-Cuando la relación entre las variables de entrada y la variable de salida no es lineal, se puede usar la regresión polinomial para modelar la relación. En la regresión polinomial, transformamos nuestras variables de entrada elevándolas a una potencia (por ejemplo, si nuestra variable de entrada es $x$, podríamos usar $x^2$, $x^3$, etc. como nuevas variables de entrada). Esto permite modelar relaciones curvilíneas entre las variables de entrada y la variable de salida.
-
-Un ejemplo de una regresión polinomial sería:
-
-$$y = \beta_0 + \beta_1x + \beta_2x^2 + \epsilon$$
-
-Es importante tener en cuenta que la regresión polinomial puede ser propensa al sobreajuste si se elige un grado demasiado alto para el polinomio.
-- **Regresión regularizada**: Cuando tenemos muchas variables de entrada, podemos tener el problema de la multicolinealidad y el sobreajuste. Para combatir esto, se pueden utilizar técnicas de regularización como Ridge, Lasso y Elastic Net que añaden un término de penalización a la función de coste que reduce los coeficientes de las variables de entrada. Esto ayuda a prevenir el sobreajuste y puede mejorar la interpretabilidad del modelo al reducir la cantidad de variables de entrada que se utilizan.
-
-- **Regresión logística**: Cuando la variable de salida es binaria (por ejemplo, sí/no o 0/1), podemos utilizar la regresión logística. Aunque no es una extensión de la regresión lineal en el sentido estricto, la regresión logística se basa en muchos de los mismos conceptos y es un método importante en la caja de herramientas de cualquier científico de datos.
-
-Espero que este resumen te haya proporcionado una sólida introducción a la regresión lineal y sus conceptos relacionados. ¡Buena suerte con tu aprendizaje!

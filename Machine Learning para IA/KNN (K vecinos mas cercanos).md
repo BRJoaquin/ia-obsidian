@@ -12,13 +12,13 @@ La "distancia" entre las observaciones se mide normalmente mediante la distancia
 
 # Ventajas y desventajas de KNN
 
-Una de las ventajas de KNN es su simplicidad. No requiere ningún entrenamiento, lo que lo hace muy rápido para agregar nuevas observaciones a los datos. Además, KNN es un algoritmo no paramétrico, lo que significa que no hace supuestos sobre la distribución de los datos subyacentes.
+Una de las ventajas de KNN es su simplicidad. No requiere ningún entrenamiento, lo que lo hace muy rápido para agregar nuevas observaciones a los datos. Además, KNN es un algoritmo [[Modelo parametrico#Modelos no paramétricos|no paramétrico]], lo que significa que no hace supuestos sobre la distribución de los datos subyacentes.
 
 Sin embargo, KNN también tiene algunas desventajas. En primer lugar, puede ser computacionalmente costoso en términos de memoria y tiempo de cálculo, especialmente cuando se trata de conjuntos de datos grandes con muchas características, ya que cada predicción requiere el cálculo de la distancia a todas las observaciones en los datos de entrenamiento. En segundo lugar, KNN puede ser sensible a la escala de las características, lo que significa que las características con rangos de valores más grandes pueden dominar en la medida de la distancia. Para mitigar esto, es importante escalar las características antes de usar KNN. Finalmente, elegir el valor correcto de k puede ser un desafío y puede requerir pruebas y ajustes.
 
 # Elección de K en KNN
 
-La elección del valor de k en KNN es crucial. Un valor de k demasiado pequeño puede hacer que el algoritmo sea sensible al [[Ruido]] y a los valores atípicos ([[Outlier]], lo que puede llevar al sobreajuste. Por otro lado, un valor de k demasiado grande puede hacer que el algoritmo sea insensible a las características locales de los datos, lo que puede llevar al subajuste. La elección de k suele hacerse a través de la [[Validación cruzada (Cross-validation)]].
+La elección del valor de k en KNN es crucial. Un valor de k demasiado pequeño puede hacer que el algoritmo sea sensible al [[Ruido]] y a los valores atípicos ([[Outlier]], lo que puede llevar al [[Sobreajuste (Overfitting)]]. Por otro lado, un valor de k demasiado grande puede hacer que el algoritmo sea insensible a las características locales de los datos, lo que puede llevar al [[Subajuste (Underfitting)]]. La elección de k suele hacerse a través de la [[Validación cruzada (Cross-validation)]].
 
 ![[Pasted image 20230707162403.png]]
 

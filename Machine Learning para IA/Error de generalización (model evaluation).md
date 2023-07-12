@@ -53,6 +53,8 @@ En resumen, el error de generalización es un indicador clave de la capacidad de
 
    Es importante notar que mientras la estimación del error de generalización se centra en cómo de bien un modelo específico generaliza a nuevos datos, el aprendizaje PAC se centra en la capacidad de un algoritmo de aprendizaje para encontrar una buena hipótesis dada suficiente cantidad de datos.
 
+![[Pasted image 20230712104905.png]]
+
 # Técnica de Holdout
 
 La técnica de holdout es un procedimiento sencillo para estimar el error de generalización de un modelo de aprendizaje automático. Consiste en dividir el conjunto de datos total en dos subconjuntos disjuntos: uno para entrenamiento y otro para prueba.
@@ -67,7 +69,7 @@ Es importante destacar que los datos deben ser divididos aleatoriamente para evi
 
 La principal desventaja de la técnica de holdout es que la estimación del error de generalización puede ser muy variable, ya que depende de qué datos caen en el conjunto de entrenamiento y cuáles en el conjunto de prueba. Esto puede ser especialmente problemático si el conjunto de datos es pequeño. En estos casos, otras técnicas como la validación cruzada pueden proporcionar estimaciones más robustas.
 
-![[Pasted image 20230708122440.png]]
+![[Pasted image 20230712111150.png]]
 
 ## Pessimistic Bias en Holdout con N
 
@@ -82,6 +84,8 @@ Es importante tener en cuenta que el sesgo pesimista es solo una estimación, y 
 ![[Pasted image 20230708122738.png]]
 
 # Optimistic Bias
+
+![[Pasted image 20230712104826.png]]
 
 El **Optimistic Bias** se refiere a la tendencia de un algoritmo de aprendizaje automático a subestimar el verdadero error de generalización. Este fenómeno es especialmente común cuando un modelo está siendo entrenado y evaluado en el mismo conjunto de datos.
 

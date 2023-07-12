@@ -9,3 +9,5 @@ Esto puede ayudarte a entender cómo cambia la función de costo con respecto a 
 Otra aplicación podría ser en la visualización de la función de decisión de un clasificador. Por ejemplo, en un clasificador SVM o en un modelo de regresión logística, las curvas de nivel pueden usarse para visualizar las regiones de decisión (o límites de decisión) en el espacio de las características.
 
 En resumen, las curvas de nivel en aprendizaje automático te proporcionan una herramienta poderosa para visualizar y entender cómo funcionan tus modelos y algoritmos de optimización.
+
+![[Pasted image 20230711180455.png]]

@@ -75,13 +75,13 @@
     
 - [Clase 12 - Ensemble](https://aulas.ort.edu.uy/mod/resource/view.php?id=458714)
     
-    - Bagging
-    - Random Forest
-    - Adaptive Boosting
-    - Gradient Boosting
+    - [[Bagging]]
+    - [[Random Forest]]
+    - [[AdaBoost]]
+    - [[Gradient Boosting]]
     
 - [Clase 13- Stacking](https://aulas.ort.edu.uy/mod/resource/view.php?id=460764)
     
-    - Combinación de modelos
+    - [[Stacking]]
     - Extensión de cross-validation
     - Mejora de un modelo dado

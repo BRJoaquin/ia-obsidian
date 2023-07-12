@@ -26,8 +26,12 @@ Por lo tanto, el proceso completo se ve así:
 2. Evaluar cada modelo en el conjunto de validación.
 
 3. Seleccionar el modelo que mejor se desempeña en el conjunto de validación.
+   
+   > Acá volvemos a entrenar con los mismos hyperparametros: train + val? claro que si
 
 4. Finalmente, probar el modelo seleccionado en el conjunto de prueba para obtener una estimación imparcial del rendimiento del modelo en datos no vistos.
+
+![[Pasted image 20230712111321.png]]
 
 La principal ventaja de este método es su simplicidad y eficacia. Sin embargo, tiene la desventaja de que la evaluación del rendimiento del modelo puede variar mucho dependiendo de cómo se divida el conjunto de datos en los tres conjuntos. Esto se debe a que cada división proporciona una muestra diferente de los datos. La validación cruzada es una alternativa a la técnica de Holdout que aborda este problema.
 
@@ -51,27 +55,16 @@ Finalmente, el rendimiento promedio de las múltiples ejecuciones proporciona un
 
 Una vez completado el proceso de repetición, se selecciona el modelo con el mejor rendimiento promedio en el conjunto de validación a través de todas las iteraciones. Ese modelo finalmente se prueba en el conjunto de prueba para obtener una medida de cómo el modelo seleccionado se desempeñará en datos no vistos.
 
-La principal ventaja del método Repeated Holdout es que reduce la varianza en la estimación del rendimiento del modelo en comparación con la técnica de Holdout. Sin embargo, tiene la desventaja de que requiere más tiempo y recursos computacionales debido a las múltiples ejecuciones.
+**La principal ventaja del método Repeated Holdout es que reduce la varianza en la estimación del rendimiento del modelo en comparación con la técnica de Holdout. Sin embargo, tiene la desventaja de que requiere más tiempo y recursos computacionales debido a las múltiples ejecuciones**.
 
 ![[Pasted image 20230708141419.png]]
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1whfIOoPTlk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-# Criterios De Información
+# Curva de aprendizaje
 
-Los **Criterios de Información** son una clase de métodos para la selección de modelos que equilibran la calidad del ajuste del modelo con la complejidad del modelo, intentando encontrar el modelo "más simple" que se ajusta suficientemente bien a los datos. 
-
-Estos criterios intentan penalizar la sobreajuste agregando un término a la función de pérdida que está relacionado con la complejidad del modelo (como el número de parámetros). Por lo tanto, un modelo con más parámetros no necesariamente será seleccionado a menos que proporcione una mejora significativa en el ajuste a los datos.
-
-Dos de los criterios de información más utilizados son:
-
-1. **Criterio de Información de Akaike (AIC)**: AIC se define como $2k - 2\log(L)$, donde $k$ es el número de parámetros en el modelo y $L$ es la verosimilitud máxima del modelo. AIC asume que los errores siguen una distribución normal y está diseñado para seleccionar modelos que minimicen la información perdida (es decir, la divergencia de Kullback-Leibler entre el modelo verdadero y el modelo propuesto).
-
-2. **Criterio de Información Bayesiana (BIC)**: BIC se define como $k\log(n) - 2\log(L)$, donde $n$ es el número de observaciones. BIC también penaliza modelos con más parámetros, pero lo hace más severamente que AIC, especialmente cuando el número de observaciones es grande.
-
-Tanto AIC como BIC se utilizan de manera similar: ajustas varios modelos, calculas el AIC (o BIC) para cada uno, y el modelo con el AIC (o BIC) más bajo es el que se elige.
-
+vease [[Curva de aprendizaje (model evaluation)]]
 
 # Validación cruzada
 

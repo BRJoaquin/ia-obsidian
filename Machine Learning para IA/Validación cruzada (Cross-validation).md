@@ -10,7 +10,7 @@ El proceso de validación cruzada consta de los siguientes pasos:
 
 3.  **Rendimiento promedio**: Después de completar las K iteraciones, se calcula la métrica de rendimiento promedio (como precisión, error cuadrático medio, etc.) en todos los conjuntos de validación. Este valor promedio proporciona una estimación más robusta del rendimiento del modelo en datos no vistos en comparación con la evaluación en un único conjunto de validación.
 
-![[Pasted image 20230708142726.png]]
+![[Pasted image 20230712114624.png]]
 
 La validación cruzada ofrece varias ventajas:
 

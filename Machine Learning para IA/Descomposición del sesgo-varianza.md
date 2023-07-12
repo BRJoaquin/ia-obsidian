@@ -20,6 +20,13 @@ La dependencia del sesgo inductivo con el dataset viene de que si el sesgo induc
 
 # Error esperado
 
+![[Pasted image 20230712105937.png]]
+
+# Descomposición del error
+
+![[Pasted image 20230712105521.png]]
+
+![[Pasted image 20230712105504.png]]
 
 
 

@@ -16,4 +16,4 @@ Por ejemplo, si tienes un conjunto de datos con 100 elementos, 60 de los cuales 
 
 $$ G(S) = 1 - \left( \left(\frac{60}{100}\right)^2 + \left(\frac{40}{100}\right)^2 \right) $$
 
-Por lo tanto, tanto la entropía como el índice Gini nos dan una medida de cuán impuro es un conjunto. Cuanto más bajo sea el valor, más "puro" (es decir, más uniforme en términos de la distribución de clase) es el conjunto.
+Por lo tanto, tanto la entropía como el índice Gini nos dan una medida de cuán impuro es un conjunto. Cuanto más bajo sea el valor, más "puro" (es decir, más uniforme en términos de la distribución de clase) es el conjunto. ver

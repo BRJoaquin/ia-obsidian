@@ -35,6 +35,8 @@ Este proceso se conoce como Stacking con validación cruzada fuera de la bolsa, 
 
 Cabe mencionar que este proceso puede ser computacionalmente intensivo, ya que requiere entrenar múltiples modelos de base para cada pliegue de los datos. Sin embargo, es una técnica valiosa para combinar modelos de manera efectiva y puede conducir a mejoras significativas en el rendimiento del modelo.
 
+![[Pasted image 20230713112621.png]]
+
 # Video
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8T2emza6g80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

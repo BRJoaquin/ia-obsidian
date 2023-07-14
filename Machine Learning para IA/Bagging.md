@@ -12,6 +12,8 @@ El proceso de bagging es el siguiente:
 2. Entrenar un modelo en cada uno de los $B$ conjuntos de datos.
 3. Para hacer una predicción, pasar la observación a través de cada uno de los $B$ modelos y combinar sus predicciones. En el caso de la regresión, la combinación suele ser la media de las predicciones. En el caso de la clasificación, la combinación puede ser un voto mayoritario.
 
+> Cada clasificacador puede ser entrenado en paralelo!
+
 El bagging puede mejorar la precisión de muchos algoritmos de aprendizaje automático y es particularmente **eficaz con los algoritmos que tienen alta varianza** (como los árboles de decisión).
 
 Formalmente, el bagging puede describirse de la siguiente manera:
@@ -45,7 +47,7 @@ El **"out-of-bag error"** (OOB error) es una medida de rendimiento que se calcul
 
 El **Out-Of-Bag (OOB) error** juega un papel fundamental en los métodos de bagging y [[Random Forest]] y se usa principalmente por dos razones:
 
-1. **Estimación de la precisión del modelo**: El OOB error es una forma eficiente de estimar la precisión de nuestro modelo. Cada árbol se entrena con un conjunto único de datos de entrenamiento. Por lo tanto, para cada árbol, una parte de los datos (los datos OOB) no se usa en el entrenamiento y puede ser utilizada como un conjunto de prueba. Las predicciones de cada árbol sobre sus datos OOB se pueden usar para estimar la precisión general del modelo, sin necesidad de separar un conjunto de datos de validación adicional. En cierto sentido, el OOB error proporciona una estimación "gratuita" del error de generalización del modelo.
+1. **Estimación de la precisión del modelo**: El OOB error es una forma eficiente de estimar la precisión de nuestro modelo. Cada árbol se entrena con un conjunto único de datos de entrenamiento. Por lo tanto, para cada árbol, una parte de los datos (los datos OOB) no se usa en el entrenamiento y puede ser utilizada como un conjunto de prueba. Las predicciones de cada árbol sobre sus datos OOB se pueden usar para estimar la precisión general del modelo, sin necesidad de separar un conjunto de datos de validación adicional. En cierto sentido, el OOB **error proporciona una estimación "gratuita" del error de generalización del modelo**.
 
 2. **Selección de variables**: El OOB error también puede ser utilizado para la selección de variables en random forests. Para esto, el método consiste en permutar los valores de una variable en los datos OOB y medir cuánto aumenta el error OOB. Si una variable es importante, permutar sus valores debería aumentar mucho el error OOB. Por el contrario, si una variable no es relevante para la predicción, permutar sus valores debería tener poco efecto sobre el error OOB. De esta manera, el OOB error permite identificar las variables más importantes en el modelo.
    
@@ -56,6 +58,9 @@ El **Out-Of-Bag (OOB) error** juega un papel fundamental en los métodos de bagg
 # Bagging + Arboles de decision = ❤️
 
 El bagging y los árboles de decisión suelen funcionar bien juntos porque los árboles de decisión son propensos al sobreajuste y a tener alta varianza, y el bagging puede ayudar a reducir esta varianza. Además, los árboles de decisión pueden capturar interacciones complejas en los datos, y el bagging puede ayudar a estabilizar estas estimaciones. Por último, los árboles de decisión son modelos no lineales y no paramétricos, lo que los hace flexibles y capaces de adaptarse a diferentes formas de los datos, lo que es beneficioso en el marco de bagging.
+vease [[Random Forest]]
+
+# Video
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pWSULhaZlQM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

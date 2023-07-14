@@ -43,7 +43,7 @@ El método **Repeated Holdout** es una mejora del método Holdout que se mencion
 
 En cada iteración del proceso:
 
-1. Se divide aleatoriamente el conjunto de datos en un conjunto de entrenamiento y un conjunto de validación/prueba.
+1. Se divide aleatoriamente el conjunto de datos en un conjunto de entrenamiento y un conjunto de prueba.
 
 2. Se entrena el modelo en el conjunto de entrenamiento y se valida en el conjunto de validación.
 

@@ -12,17 +12,7 @@ Los métodos de conjunto, o "Ensemble methods", son técnicas que crean múltipl
   
 ![[Pasted image 20230708184428.png]]
 
-# Combinación de hipótesis 
-
-## Regresión
-
-![[Pasted image 20230708184845.png]]
-
-En algunos algoritmos de aprendizaje automático, se utilizan múltiples modelos o hipótesis y las predicciones de cada uno se combinan de alguna manera para obtener una predicción final. Un método común de combinación de hipótesis es el promedio simple, donde las predicciones de cada modelo se suman y se dividen por el número de modelos. Esta es una forma de conjunto que puede reducir la varianza y mejorar la precisión de la predicción.
-
-![[Pasted image 20230708184955.png]]
-
-Otro método de combinación de hipótesis es la suma pesada, donde cada modelo tiene un peso asociado que refleja su importancia relativa o su rendimiento en el conjunto de entrenamiento. Los modelos que tienen un mejor rendimiento tendrán un peso más alto y tendrán una mayor influencia en la predicción final.
+# Propiedad fundamental de los ensemble 
 
 ![[Pasted image 20230708184855.png]]
 
@@ -32,11 +22,19 @@ Cuando las hipótesis son independientes, es menos probable que cometan los mism
 
 Si los sesgos de las hipótesis individuales son pequeños, entonces la combinación de hipótesis a través de promedios o sumas ponderadas puede reducir aún más el sesgo. Sin embargo, si los sesgos son grandes, la combinación de hipótesis puede no ser capaz de superar este sesgo y el rendimiento puede seguir siendo bajo.
 
-# **Navaja de Occam (Occam's razor)**
+# Combinación de hipótesis 
 
-![[Pasted image 20230708185219.png]]
+## Regresión
 
-Este es un principio de solución de problemas que sugiere que, entre las explicaciones competidoras, la más simple es la mejor. En términos de aprendizaje automático, esto sugiere que los modelos más simples que explican bien los datos son preferibles a los modelos más complejos. Esto se basa en la idea de que los modelos más simples son menos propensos a sobreajustar los datos y, por lo tanto, es más probable que generalicen bien a nuevos datos. Sin embargo, es importante tener en cuenta que la simplicidad y la complejidad de un modelo deben evaluarse en relación con los datos y la tarea en cuestión.
+![[Pasted image 20230708184845.png]]
+
+En algunos algoritmos de aprendizaje automático, se utilizan múltiples modelos o hipótesis y las predicciones de cada uno se combinan de alguna manera para obtener una predicción final. Un método común de combinación de hipótesis es el promedio simple, donde las predicciones de cada modelo se suman y se dividen por el número de modelos. Esta es una forma de conjunto que puede reducir la varianza y mejorar la precisión de la predicción.
+
+Otro método de combinación de hipótesis es la suma pesada, donde cada modelo tiene un peso asociado que refleja su importancia relativa o su rendimiento en el conjunto de entrenamiento. 
+
+![[Pasted image 20230708184955.png]]
+
+Los modelos que tienen un mejor rendimiento tendrán un peso más alto y tendrán una mayor influencia en la predicción final.
 
 ## Clasificación
 
@@ -62,6 +60,13 @@ Los algoritmos de conjunto son técnicas para combinar las predicciones de vario
 
    donde $p_{i,k}$ es la probabilidad predicha por el i-ésimo clasificador para la clase $k$.
 ![[Pasted image 20230708185958.png]]
+
+
+# **Navaja de Occam (Occam's razor)**
+
+![[Pasted image 20230708185219.png]]
+
+Este es un principio de solución de problemas que sugiere que, entre las explicaciones competidoras, la más simple es la mejor. En términos de aprendizaje automático, esto sugiere que los modelos más simples que explican bien los datos son preferibles a los modelos más complejos. Esto se basa en la idea de que los modelos más simples son menos propensos a sobreajustar los datos y, por lo tanto, es más probable que generalicen bien a nuevos datos. Sin embargo, es importante tener en cuenta que la simplicidad y la complejidad de un modelo deben evaluarse en relación con los datos y la tarea en cuestión.
 
 # Tipos
 

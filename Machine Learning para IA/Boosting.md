@@ -1,4 +1,3 @@
-
 El boosting es un método de aprendizaje automático que busca mejorar la precisión de las predicciones mediante la combinación de varias "hipótesis débiles" en una "hipótesis fuerte". Las hipótesis débiles se generan a través de una secuencia de modelos de aprendizaje que se entrenan en diferentes versiones de los datos de entrenamiento. Cada modelo se añade al conjunto con el objetivo de corregir los errores de predicción del conjunto actual.
 
 ![[Pasted image 20230708195107.png]]

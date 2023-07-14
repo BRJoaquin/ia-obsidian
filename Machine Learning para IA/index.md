@@ -75,6 +75,7 @@
     
 - [Clase 12 - Ensemble](https://aulas.ort.edu.uy/mod/resource/view.php?id=458714)
     
+    - [[Ensemble]]
     - [[Bagging]]
     - [[Random Forest]]
     - [[AdaBoost]]

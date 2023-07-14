@@ -17,6 +17,26 @@ El árbol de decisión es un modelo interpretable ya que permite entender el pro
 
 ![[Pasted image 20230708095609.png]]
 
+## Ganancia de información
+
+La ganancia de información es un concepto central en la creación de árboles de decisión en aprendizaje automático y ciencia de datos. Se utiliza para decidir qué atributo o característica debe usarse para dividir los datos en un punto específico del árbol.
+
+En términos simples, la ganancia de información se calcula como la diferencia en entropía antes y después de la división de un conjunto de datos en base a un atributo específico. La entropía es una medida de impureza, incertidumbre o desorden. En este contexto, una mayor entropía significa que es más difícil predecir el resultado basándose en los datos actuales.
+
+La fórmula general para calcular la ganancia de información (IG) es:
+
+IG(T, A) = Entropía(T) - Entropía(T | A)
+
+donde:
+
+- T es el conjunto total de datos.
+- A es un atributo en los datos.
+- IG(T, A) es la ganancia de información al dividir los datos T en base al atributo A.
+- Entropía(T) es la entropía del conjunto total de datos.
+- Entropía(T | A) es la entropía media de los subconjuntos de datos resultantes al dividir T en base a A.
+
+Al construir un árbol de decisión, se busca el atributo que proporciona la mayor ganancia de información para cada división, ya que este atributo será el más útil para hacer predicciones precisas.
+
 ## La pregunta
 
 En los árboles de decisión, la elección de la pregunta para dividir cada nodo se basa en un criterio que busca **mejorar la pureza de los nodos hijos**. 

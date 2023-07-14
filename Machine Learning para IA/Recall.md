@@ -33,6 +33,4 @@ El recall es especialmente útil en situaciones donde es importante identificar 
 
 - Detección de fraudes: En el ámbito financiero, es importante identificar correctamente las transacciones fraudulentas para evitar pérdidas económicas.
 
-- Detección de spam: En el correo electrónico o en plataformas de mensajería, es importante identificar correctamente los mensajes de spam para evitar que lleguen a la bandeja de entrada del usuario.
-
 En general, el recall se utiliza cuando se busca minimizar los falsos negativos y se prioriza la detección correcta de los casos positivos. Sin embargo, también es importante considerar otras métricas como la precisión para obtener una evaluación más completa del rendimiento del modelo o algoritmo.

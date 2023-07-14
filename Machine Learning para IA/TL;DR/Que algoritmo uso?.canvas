@@ -1,0 +1,39 @@
+{
+	"nodes":[
+		{"type":"text","text":"Que tipo de problema es?","id":"e20ac2b8713938f3","x":514,"y":124,"width":250,"height":60},
+		{"type":"file","file":"Machine Learning para IA/Regresión lineal.md","id":"c306ca38e64593cc","x":780,"y":360,"width":400,"height":280},
+		{"type":"file","file":"Machine Learning para IA/Regresión logística.md","subpath":"#Regresión logística","id":"138b9e1b34153af1","x":165,"y":360,"width":400,"height":344},
+		{"type":"text","text":"Alto numero de caracteristicas y datos?","id":"67e284b8949da07e","x":-420,"y":124,"width":250,"height":60},
+		{"type":"file","file":"Machine Learning para IA/Árbol de decisión.md","id":"6e82c245940f9b36","x":-260,"y":360,"width":400,"height":244},
+		{"type":"text","text":"Se presume alguna distribucion de los datos?\n","id":"9b29b9cb50f580ce","x":60,"y":-140,"width":250,"height":120},
+		{"type":"file","file":"Machine Learning para IA/KNN (K vecinos mas cercanos).md","id":"27897f48f507bb2b","x":-756,"y":360,"width":400,"height":325},
+		{"type":"file","file":"Machine Learning para IA/Ensemble.md","id":"3ce8c4c978f8719b","x":-2100,"y":-221,"width":400,"height":275},
+		{"type":"text","text":"Que quiero hacer con mis modelos base?","id":"5610be59b48d7531","x":-2025,"y":178,"width":250,"height":60},
+		{"type":"file","file":"Machine Learning para IA/Stacking.md","id":"c404d97c3b9e759c","x":-1280,"y":461,"width":400,"height":397},
+		{"type":"file","file":"Machine Learning para IA/Boosting.md","id":"1d61d885bfe23206","x":-2100,"y":604,"width":400,"height":355},
+		{"type":"file","file":"Machine Learning para IA/Bagging.md","id":"58174506225f9ee2","x":-2880,"y":461,"width":400,"height":355},
+		{"type":"text","text":"Los recursos computacionales son un problema?","id":"0af8aab038fc9005","x":-960,"y":-520,"width":305,"height":90},
+		{"type":"text","text":"Que tipo de problema es?","id":"ef14165fa8da90f4","x":-2025,"y":1040,"width":250,"height":60},
+		{"type":"file","file":"Machine Learning para IA/Gradient Boosting.md","id":"0d7f0bd3f0971b42","x":-1775,"y":1211,"width":400,"height":349},
+		{"type":"file","file":"Machine Learning para IA/AdaBoost.md","id":"0d8a6904ff1a68b6","x":-2380,"y":1211,"width":400,"height":400},
+		{"type":"file","file":"Machine Learning para IA/Random Forest.md","id":"d4016ea569e6ecc6","x":-2880,"y":1211,"width":400,"height":400}
+	],
+	"edges":[
+		{"id":"5dbd93f53c83834b","fromNode":"0af8aab038fc9005","fromSide":"bottom","toNode":"3ce8c4c978f8719b","toSide":"top","label":"si"},
+		{"id":"5469ad2ae94e970e","fromNode":"0af8aab038fc9005","fromSide":"bottom","toNode":"9b29b9cb50f580ce","toSide":"top","label":" no\n\n"},
+		{"id":"cafc4b00cfc7aa2c","fromNode":"9b29b9cb50f580ce","fromSide":"bottom","toNode":"e20ac2b8713938f3","toSide":"top","label":"si -> modelo parametrico"},
+		{"id":"5f64271ded7f426c","fromNode":"e20ac2b8713938f3","fromSide":"bottom","toNode":"c306ca38e64593cc","toSide":"top","label":"Regresión"},
+		{"id":"2a46bade5be007f6","fromNode":"e20ac2b8713938f3","fromSide":"bottom","toNode":"138b9e1b34153af1","toSide":"top","label":"Clasificación"},
+		{"id":"302d90002165eb92","fromNode":"67e284b8949da07e","fromSide":"bottom","toNode":"6e82c245940f9b36","toSide":"top","label":"si"},
+		{"id":"bbaa6dbb1f561246","fromNode":"9b29b9cb50f580ce","fromSide":"bottom","toNode":"67e284b8949da07e","toSide":"top","label":"no -> modelo no parametrico"},
+		{"id":"ee2d8920f03083a4","fromNode":"67e284b8949da07e","fromSide":"bottom","toNode":"27897f48f507bb2b","toSide":"top","label":"no"},
+		{"id":"e2c011fc51cb3889","fromNode":"3ce8c4c978f8719b","fromSide":"bottom","toNode":"5610be59b48d7531","toSide":"top"},
+		{"id":"f8763b606ea9f937","fromNode":"5610be59b48d7531","fromSide":"bottom","toNode":"58174506225f9ee2","toSide":"top","label":"reducir varianza \n(reducir sobreajuste)"},
+		{"id":"4194aad8dacf2a66","fromNode":"5610be59b48d7531","fromSide":"bottom","toNode":"1d61d885bfe23206","toSide":"top","label":"reducir sesgo y\nvarianza\n(reducir subajuste)"},
+		{"id":"560aebf21f1f8856","fromNode":"5610be59b48d7531","fromSide":"bottom","toNode":"c404d97c3b9e759c","toSide":"top","label":"individualmente son buenos,\ncombinados quizas mejor 😎"},
+		{"id":"e10ae0fa9d616b07","fromNode":"1d61d885bfe23206","fromSide":"bottom","toNode":"ef14165fa8da90f4","toSide":"top"},
+		{"id":"480cbfe83d3a0869","fromNode":"ef14165fa8da90f4","fromSide":"bottom","toNode":"0d7f0bd3f0971b42","toSide":"top","label":"Regresión"},
+		{"id":"f3074596d5511d41","fromNode":"ef14165fa8da90f4","fromSide":"bottom","toNode":"0d8a6904ff1a68b6","toSide":"top","label":"Clasificación"},
+		{"id":"170b5e79ab25e2cf","fromNode":"58174506225f9ee2","fromSide":"bottom","toNode":"d4016ea569e6ecc6","toSide":"top"}
+	]
+}

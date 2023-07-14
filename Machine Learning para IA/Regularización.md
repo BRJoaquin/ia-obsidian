@@ -12,6 +12,8 @@ $$ L1 = \lambda \sum_{i=1}^{n} |w_i| $$
 
 donde $w_i$ son los parámetros del modelo y $\lambda$ es el parámetro de regularización que controla la cantidad de regularización que se desea aplicar. Esta forma de regularización tiene la propiedad de generar soluciones dispersas, lo que significa que puede hacer que algunos de los parámetros del modelo sean exactamente cero. Esto puede ser útil si se cree que solo un subconjunto de las características es relevante para la tarea, ya que la regularización L1 puede ayudar a realizar una selección automática de características.
 
+> Basicamente de "yapa" tenemos seleccion de caracteristicas.
+
 ## Regularización L2 (Ridge)
 
 En la regularización L2, la penalización es la suma de los cuadrados de los parámetros del modelo. 
@@ -20,14 +22,13 @@ $$ L2 = \lambda \sum_{i=1}^{n} w_i^2 $$
 
 Al igual que con L1, $\lambda$ controla la cantidad de regularización a aplicar. La regularización L2 tiene la propiedad de reducir los valores de los parámetros, pero a diferencia de L1, no los hace exactamente cero. Esto es útil cuando se cree que todas las características son relevantes para la tarea.
 
-
 Finalmente, es importante destacar que la regularización es una herramienta para manejar la complejidad del modelo y ayudar a prevenir el sobreajuste, pero no es un sustituto de tener buenos datos de entrenamiento. Ninguna cantidad de regularización puede compensar datos de entrenamiento de mala calidad o insuficientes.
 
 # Ejemplo: regresion lineal
 
 Veamos algunos ejemplos para entender mejor cómo funcionan las regularizaciones L1 y L2.
 
-Supongamos que estamos desarrollando un modelo de regresión lineal para predecir el precio de las casas en función de una serie de características como el tamaño de la casa, la cantidad de habitaciones, la edad de la casa, la ubicación, etc. Sin embargo, encontramos que nuestro modelo está sobreajustando los datos de entrenamiento. Para evitar este [[Subajuste (Underfitting)]], podemos agregar una regularización.
+Supongamos que estamos desarrollando un modelo de regresión lineal para predecir el precio de las casas en función de una serie de características como el tamaño de la casa, la cantidad de habitaciones, la edad de la casa, la ubicación, etc. Sin embargo, encontramos que nuestro modelo está sobreajustando los datos de entrenamiento. Para evitar este [[Sobreajuste (Overfitting)]], podemos agregar una regularización.
 
 ![[Pasted image 20230708173246.png]]
 

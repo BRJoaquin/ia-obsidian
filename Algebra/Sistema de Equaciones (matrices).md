@@ -1,0 +1,2 @@
+
+Dentro del contexto del álgebra, un escalar es un valor simple, generalmente un número real o complejo, que se diferencia de otros conceptos matemáticos como [[Vector|vectores]] y [[Matriz|matrices]].

@@ -3,5 +3,6 @@
   "obsidian-icon-folder",
   "obsidian-git",
   "smart-connections",
-  "obsidian-textgenerator-plugin"
+  "obsidian-textgenerator-plugin",
+  "obsidian-linter"
 ]

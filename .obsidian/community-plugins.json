@@ -4,5 +4,6 @@
   "obsidian-git",
   "smart-connections",
   "obsidian-textgenerator-plugin",
-  "obsidian-linter"
+  "obsidian-linter",
+  "ollama"
 ]

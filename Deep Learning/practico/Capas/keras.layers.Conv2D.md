@@ -18,12 +18,12 @@ El número total de parámetros en una capa Conv2D se calcula con la fórmula:
 $$ \text{Número de parámetros} = (\text{kernel size}_\text{height} \times \text{kernel size}_\text{width} \times \text{input channels} + 1) \times \text{filters} $$
 
 ### Detalle de Cálculo
-- Cada filtro tiene una dimensión de $\text{kernel size}_\text{height} \times \text{kernel size}_\text{width} \times \text{input channels}$\)$.
+- Cada filtro tiene una dimensión de $\text{kernel size}_\text{height} \times \text{kernel size}_\text{width} \times \text{input channels}$.
 - El '+1' se debe al término de sesgo (bias) para cada filtro.
 - Multiplicamos por el número de filtros para obtener el total de parámetros.
 
 ### Ejemplo en Python
-Para ilustrar cómo se calcula, aquí hay un ejemplo de código en Python:
+
 ```python
 from keras.layers import Conv2D
 
@@ -32,6 +32,7 @@ conv_layer = Conv2D(filters=32, kernel_size=(3, 3), strides=(1, 1), padding='val
 
 # Calcular el número de parámetros
 num_params = (3 * 3 * 1 + 1) * 32
+# 3
 print(f"Número de parámetros: {num_params}")
 ```
 

@@ -14,11 +14,12 @@ vease [[keras.layers.Conv2D]]
 ## 3. MaxPooling2D
 - **Descripción**: Capa de agrupamiento máximo 2D que reduce la dimensionalidad espacial.
 - **Aplicaciones**: Se emplea en CNNs para reducir el sobreajuste y mejorar la eficiencia de cómputo.
+vease [[keras.layers.MaxPooling2D]]
 
 ## 4. Flatten
 - **Descripción**: Transforma los datos multidimensionales en un vector unidimensional.
 - **Aplicaciones**: Comúnmente usada antes de una capa Dense para aplanar la entrada.
-
+vease [[keras.layers.MaxPooling2D]]
 ## 5. Dropout
 - **Descripción**: Aplica la regularización de dropout, desactivando aleatoriamente un porcentaje de neuronas.
 - **Aplicaciones**: Ayuda a prevenir el sobreajuste en modelos de aprendizaje profundo.

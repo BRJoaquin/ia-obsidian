@@ -45,25 +45,21 @@ model.add(Dense(num_classes, activation='softmax'))
 - **Inicializadores y Regularizadores**: Elegirlos correctamente puede ayudar a evitar problemas como el sobreajuste o la no convergencia.
 - **Stacking de Capas Dense**: Apilar múltiples capas `Dense` puede aumentar la capacidad del modelo, pero también su complejidad y riesgo de sobreajuste.
 
-# Análisis Detallado de keras.layers.Dense con Cálculo de Parámetros
+## Cálculo de Parámetros
 
 La capa `Dense` de Keras es una pieza central en la construcción de redes neuronales. Además de su funcionamiento y aplicaciones, es crucial entender cómo calcular el número de parámetros que esta capa introduce en un modelo.
-
-## Cálculo de Parámetros en Dense
 
 El número total de parámetros en una capa `Dense` depende de las siguientes variables:
 - **Número de Entradas (Input Units)**: Cantidad de unidades/neuronas en la capa anterior.
 - **Número de Salidas (Output Units)**: Cantidad de unidades/neuronas en la capa `Dense`.
-
 ### Fórmula General
 
 La fórmula para calcular el número total de parámetros en una capa `Dense` es:
 
 Total de Parámetros = (Input Units * Output Units) + Output Units
-#### Desglose:
+
 - **(Input Units * Output Units)**: Representa los pesos conectando cada entrada con cada salida.
 - **Output Units**: Representa el vector de sesgo, uno por cada unidad de salida.
-
 ### Ejemplo Práctico
 
 Supongamos una capa `Dense` con 128 neuronas (`Output Units`) que recibe entradas de una capa con 256 neuronas (`Input Units`).

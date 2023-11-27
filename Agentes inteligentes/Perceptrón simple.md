@@ -1,5 +1,4 @@
 
-
 El **Perceptrón Simple** es uno de los algoritmos más simples de [[Machine Learning]], y es la base de las [[Redes Neuronales Artificiales]] y del [[Deep Learning]].
 
 ![[Pasted image 20230626085610.png]]

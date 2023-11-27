@@ -14,4 +14,4 @@ Puntos clave:
 - [[Inferencia]]
 - [[Generalización (inferencia)]]
 - [[Aprendizaje Representacional]]
-- [[Representacion composicional]]
+- [[Disciplinas de la Inteligencia Artificial]]

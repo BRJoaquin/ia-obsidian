@@ -5,9 +5,11 @@ Keras, una API de alto nivel para redes neuronales, ofrece una variedad de capas
 - **Descripción**: Capa de red neuronal totalmente conectada.
 - **Aplicaciones**: Usualmente usada en las capas finales para tareas de clasificación y regresión.
 vease [[keras.layers.Dense]]
+
 ## 2. Conv2D
 - **Descripción**: Capa de convolución 2D, fundamental en redes neuronales convolucionales (CNNs).
 - **Aplicaciones**: Ampliamente utilizada en el procesamiento de imágenes y visión por computadora.
+vease [[keras.layers.Conv2D]]
 
 ## 3. MaxPooling2D
 - **Descripción**: Capa de agrupamiento máximo 2D que reduce la dimensionalidad espacial.
@@ -29,14 +31,10 @@ vease [[keras.layers.Dense]]
 - **Descripción**: Normaliza las activaciones de la capa anterior, estabilizando y acelerando el entrenamiento.
 - **Aplicaciones**: Común en modelos profundos para mejorar el rendimiento y la estabilidad del entrenamiento.
 
-## 8. LSTM
-- **Descripción**: Capa de memoria a largo y corto plazo, un tipo de red neuronal recurrente (RNN).
-- **Aplicaciones**: Utilizada en el procesamiento de secuencias, como el procesamiento de lenguaje natural y series temporales.
-
-## 9. Embedding
+## 8. Embedding
 - **Descripción**: Convierte índices enteros en vectores densos de tamaño fijo.
 - **Aplicaciones**: Esencial en el procesamiento de texto para representar palabras o frases.
 
-## 10. Input
+## 9. Input
 - **Descripción**: Capa para definir la forma de entrada de un modelo.
 - **Aplicaciones**: Utilizada al inicio de un modelo para especificar el tamaño y tipo de los datos de entrada.

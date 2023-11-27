@@ -15,3 +15,4 @@ Puntos clave:
 - [[Generalización (inferencia)]]
 - [[Aprendizaje Representacional]]
 - [[Disciplinas de la Inteligencia Artificial]]
+- [[Perceptron]]

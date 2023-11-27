@@ -1,0 +1,1 @@
+Una **matriz** es un arreglo rectangular de números, símbolos o expresiones, dispuestos en filas y columnas. Permite representar transformaciones lineales y relaciones entre vectores. 

@@ -1,0 +1,1 @@
+Una **matriz identidad** es una matriz cuadrada en la que todos los elementos de la diagonal principal son unos y todos los demás elementos son ceros. 

@@ -11,4 +11,7 @@ Puntos clave:
 - [[Normas]]
 - [[Descomposición en valores singulares]]
 - [[Pseudoinverso de Moore-Penrose]]
-- 
+- [[Inferencia]]
+- [[Generalización (inferencia)]]
+- [[Aprendizaje Representacional]]
+- [[Representacion composicional]]

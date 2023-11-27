@@ -90,3 +90,7 @@ accuracy = model.evaluate(X_test, y_test)
 - **X_test, y_test:** Datos de prueba para evaluar el modelo.
 - **accuracy:** Devuelve la precisión del modelo en los datos de prueba.
 
+
+# Video
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/i8NETqtGHms?si=bv9w7ZmfqNHe8uW3&amp;start=87" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

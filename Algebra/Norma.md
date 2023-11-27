@@ -17,3 +17,6 @@ $$
 Donde $\lambda$ es un parámetro que controla cuánta importancia se le da a la regularización respecto al coste de pérdida original.
 
 En resumen, mientras que en matemáticas la norma se utiliza para medir la longitud de un vector, en Deep Learning se emplea para controlar la magnitud de los pesos de una red, contribuyendo a un entrenamiento más estable y a la prevención del sobreajuste.
+
+
+![[Pasted image 20231127153154.png]]

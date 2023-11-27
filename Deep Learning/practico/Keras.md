@@ -42,5 +42,27 @@ from keras.layers import Dense
 - **keras:** El módulo principal de Keras.
 - **Sequential:** Un modelo lineal de capas.
 - **Dense:** Una capa densa (o completamente conectada).
+## Paso 2: Crear el Modelo
 
+```python
+model = Sequential()
+```
 
+- **Sequential:** Inicializa un modelo lineal vacío.
+## Paso 3: Añadir Capas al Modelo
+
+```python
+model.add(Dense(12, input_dim=8, activation='relu'))
+model.add(Dense(1, activation='sigmoid'))
+```
+
+- **Dense(12, input_dim=8, activation='relu'):** Añade una capa densa con 12 neuronas, dimensiones de entrada de 8 y activación ReLU.
+- **Dense(1, activation='sigmoid'):** Añade una capa de salida con una neurona (para clasificación binaria) y activación sigmoide.
+
+vease https://keras.io/api/layers/core_layers/dense/
+
+## Paso 4: Compilar el Modelo
+
+```python
+model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
+```

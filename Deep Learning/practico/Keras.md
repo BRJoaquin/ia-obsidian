@@ -13,24 +13,19 @@
 
 ## Aplicaciones Comunes
 
-- **Visión por Computadora:** Utilizado en tareas como reconocimiento de imágenes y vídeo. [[Visión por Computadora|vease computer vision]]
-- **Procesamiento del Lenguaje Natural (PLN):** Ayuda en la creación de modelos para comprensión y generación de texto.
-- **Predicción y Análisis de Datos:** Aplicado en áreas como la predicción del tiempo, análisis de sentimientos, entre otros.
+- **Visión por Computadora:** Utilizado en tareas como reconocimiento de imágenes y vídeo. vease [[Visión por Computadora]]
+- **Procesamiento del Lenguaje Natural (PLN):** Ayuda en la creación de modelos para comprensión y generación de texto. vease [[Procesamiento del Lenguaje Natural (PLN)]]
+- **Predicción y Análisis de Datos:** Aplicado en áreas como la predicción del tiempo, análisis de sentimientos, entre otros. vease [[Regresión]] y [[Clasificación]]
 
 ## Ventajas de Keras
 
-- **Facilidad de Uso:** Ideal para principiantes por su simplicidad y documentación clara.
+- **Facilidad de Uso:** Ideal para principiantes por **su simplicidad y documentación clara**.
 - **Rápido Prototipado:** Permite crear prototipos de modelos de forma rápida y eficiente.
 - **Comunidad Amplia:** Cuenta con una gran comunidad de usuarios y desarrolladores, facilitando el acceso a soporte y recursos.
 
 ## Desventajas de Keras
 
-- **Rendimiento Optimizado:** En algunos casos, puede ser menos eficiente en términos de velocidad y rendimiento en comparación con otras bibliotecas más bajas.
-
-## Conclusión
-
-Keras se presenta como una herramienta fundamental en el mundo del aprendizaje profundo, brindando un equilibrio entre facilidad de uso y flexibilidad para la experimentación y desarrollo de modelos avanzados.
-
+- **Rendimiento Optimizado:** En algunos casos, puede ser menos eficiente en términos de velocidad y rendimiento en comparación con otras bibliotecas de mas bajo nivel como [[PyTorch]]
 
 # Ejemplo Básico en Keras: Red Neuronal para Clasificación
 

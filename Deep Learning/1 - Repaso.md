@@ -3,4 +3,12 @@ Puntos clave:
 - [[Escalar]]
 - [[Vector]]
 - [[Tensor]]
+- [[Matriz]]
+- [[Matriz Transpuesta]]
+- [[Producto Matricial]]
+- [[Matriz Identidad]]
+- [[Matriz Inversa]]
+- [[Normas]]
+- [[Descomposición en valores singulares]]
+- [[Pseudoinverso de Moore-Penrose]]
 - 

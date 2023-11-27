@@ -1,6 +1,7 @@
 ## Descripción General
-`keras.layers.Conv2D` es una de las capas más fundamentales en redes [[Redes Neuronales Convolucionales|neuronales convolucionales (CNNs)]] en [[Keras]], una biblioteca de Deep Learning en Python. Es utilizada para aplicar una convolución 2D sobre imágenes.
+`keras.layers.Conv2D` es una de las capas más fundamentales en redes [[Redes Neuronales Convolucionales|neuronales convolucionales (CNNs)]] en [[Keras]], una biblioteca de Deep Learning en Python. Es utilizada para aplicar una convolución 2D sobre imágenes. vease [[Convolucion]]
 
+Documentacion: https://keras.io/api/layers/convolution_layers/convolution2d/
 ## Parámetros Clave
 - `filters`: Número de filtros (kernels) en la [[Convolucion|convolución]].
 - `kernel_size`: Tamaño del filtro/kernel (por ejemplo, (3, 3)).
@@ -22,7 +23,7 @@ El número total de parámetros en una capa Conv2D se calcula con la fórmula:
 
 ### Ejemplo en Python
 Para ilustrar cómo se calcula, aquí hay un ejemplo de código en Python:
-"""
+```python
 from keras.layers import Conv2D
 
 # Crear una capa Conv2D
@@ -31,7 +32,7 @@ conv_layer = Conv2D(filters=32, kernel_size=(3, 3), strides=(1, 1), padding='val
 # Calcular el número de parámetros
 num_params = (3 * 3 * 1 + 1) * 32
 print(f"Número de parámetros: {num_params}")
-"""
+```
 
 ## Conclusión
 `keras.layers.Conv2D` es esencial para extraer características espaciales en imágenes, siendo un componente crítico en muchas arquitecturas de CNN. Entender cómo se calculan sus parámetros ayuda a diseñar y depurar modelos de manera más efectiva.

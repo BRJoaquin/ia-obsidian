@@ -32,7 +32,7 @@ max_pool_layer = MaxPooling2D(pool_size=(2, 2), strides=(2, 2), padding='valid')
 La dimensión de salida se puede calcular de manera similar a las capas convolucionales, utilizando la fórmula: 
 $$ O = \frac{I - P + 2 \times padding}{S} + 1 $$
 donde `I` es la dimensión de entrada, `P` es el `pool_size`, `padding` es el valor de padding y `S` son los `strides`.
-# Cálculo de Parámetros
+# Cálculo de Parámetros de la red
 
 Al ser una operación matemática fija no tiene parámetros en la red. 
 

@@ -9,7 +9,7 @@ Puntos clave:
 - [[Producto Matricial]]
 - [[Matriz Identidad]]
 - [[Matriz Inversa]]
-- [[Normas]]
+- [[Norma]]
 - [[Descomposición en valores singulares]]
 - [[Pseudoinverso de Moore-Penrose]]
 - [[Inferencia]]

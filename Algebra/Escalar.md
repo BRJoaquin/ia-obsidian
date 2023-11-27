@@ -1,0 +1,3 @@
+Un **escalar** es un elemento de un campo, generalmente representado como un número real o complejo. En matemáticas, un escalar es un valor singular que no tiene dirección ni dimensiones. 
+
+En Deep Learning, los escalares son utilizados como valores únicos, como puede ser un factor de aprendizaje (`learning rate`) o un término de regularización. Son fundamentales en operaciones como ajustes de pesos y medidas de rendimiento (ejemplo: precisión, pérdida).

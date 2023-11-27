@@ -66,3 +66,27 @@ vease https://keras.io/api/layers/core_layers/dense/
 ```python
 model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
 ```
+
+- **loss='binary_crossentropy':** Define la función de pérdida para clasificación binaria.
+- **optimizer='adam':** Especifica el optimizador (Adam en este caso).
+- **metrics=['accuracy']:** Determina la métrica de evaluación (exactitud).
+
+## Paso 5: Entrenamiento del Modelo
+
+```python
+model.fit(X_train, y_train, epochs=100, batch_size=10)
+```
+
+- **X_train, y_train:** Datos de entrenamiento.
+- **epochs=100:** Número de iteraciones sobre el conjunto de datos completo.
+- **batch_size=10:** Número de muestras por actualización del gradiente.
+
+## Paso 6: Evaluación del Modelo
+
+```python
+accuracy = model.evaluate(X_test, y_test)
+```
+
+- **X_test, y_test:** Datos de prueba para evaluar el modelo.
+- **accuracy:** Devuelve la precisión del modelo en los datos de prueba.
+

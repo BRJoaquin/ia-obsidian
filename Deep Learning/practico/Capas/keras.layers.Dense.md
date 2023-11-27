@@ -1,7 +1,7 @@
 
 La capa `Dense` es una de las más fundamentales y utilizadas en Keras. A continuación, se detalla su funcionamiento, características, y aplicaciones.
 
-Documentacion oficinal: https://keras.io/api/layers/core_layers/dense/
+Documentacion oficial: https://keras.io/api/layers/core_layers/dense/
 ## Funcionamiento Básico
 
 - **Descripción General**: La capa `Dense` representa una capa de red neuronal totalmente conectada. Cada neurona en una capa `Dense` recibe entradas de todas las neuronas de la capa anterior.

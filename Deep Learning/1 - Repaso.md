@@ -1,5 +1,6 @@
 Puntos clave:
-- [[Tensorflow - Keras]]
+- [[Keras]]
+- [[Tensorflow]]
 - [[Escalar]]
 - [[Vector]]
 - [[Tensor]]

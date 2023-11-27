@@ -32,7 +32,10 @@ conv_layer = Conv2D(filters=32, kernel_size=(3, 3), strides=(1, 1), padding='val
 
 # Calcular el número de parámetros
 num_params = (3 * 3 * 1 + 1) * 32
-# 3
+# 3 * 3: por el kernel_size=(3, 3)
+# * 1: por input_shape=(28, 28, 1)
+# + 1: es fijo (es el bias)
+# 
 print(f"Número de parámetros: {num_params}")
 ```
 

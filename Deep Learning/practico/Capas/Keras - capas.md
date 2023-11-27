@@ -4,6 +4,7 @@ Keras, una API de alto nivel para redes neuronales, ofrece una variedad de capas
 ## 1. Dense
 - **Descripción**: Capa de red neuronal totalmente conectada.
 - **Aplicaciones**: Usualmente usada en las capas finales para tareas de clasificación y regresión.
+vease [[keras.layers.Dense]]
 ## 2. Conv2D
 - **Descripción**: Capa de convolución 2D, fundamental en redes neuronales convolucionales (CNNs).
 - **Aplicaciones**: Ampliamente utilizada en el procesamiento de imágenes y visión por computadora.

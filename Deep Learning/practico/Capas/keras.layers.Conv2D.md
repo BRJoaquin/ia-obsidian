@@ -3,11 +3,12 @@
 
 Documentacion: https://keras.io/api/layers/convolution_layers/convolution2d/
 ## Parámetros Clave
-- `filters`: Número de filtros (kernels) en la [[Convolucion|convolución]].
-- `kernel_size`: Tamaño del filtro/kernel (por ejemplo, (3, 3)).
-- `strides`: Tamaño de los pasos del filtro durante la convolución.
-- `padding`: 'valid' (sin padding) o 'same' (con padding para que la salida tenga el mismo tamaño que la entrada).
-- `activation`: Función de activación, típicamente 'relu'.
+
+- `filters`: Número de [[Convolucion#Filtros (Kernels)|filtros]] (kernels) en la convolución.
+- `kernel_size`: [[Convolucion#Tamaño de Kernel|Tamaño del filtro/kernel]] (por ejemplo, (3, 3)).
+- `strides`: [[Convolucion#Strides|Tamaño de los pasos]] del filtro durante la convolución.
+- `padding`: 'valid' (sin padding) o 'same' (con [[Convolucion#Padding|padding]] para que la salida tenga el mismo tamaño que la entrada).
+- `activation`: [[Machine Learning para IA/Función de Activación|Función de activación]], típicamente '[[Función ReLu|relu]]'.
 - `input_shape`: Forma del tensor de entrada (solo necesario para la primera capa).
 
 ## Cálculo de Parámetros
@@ -15,6 +16,7 @@ Documentacion: https://keras.io/api/layers/convolution_layers/convolution2d/
 ### Número de Parámetros
 
 El número total de parámetros en una capa Conv2D se calcula con la fórmula:
+
 $$ \text{Número de parámetros} = (\text{kernel size}_\text{height} \times \text{kernel size}_\text{width} \times \text{input channels} + 1) \times \text{filters} $$
 
 ### Detalle de Cálculo

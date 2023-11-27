@@ -16,6 +16,8 @@ vease [[keras.layers.Conv2D]]
 - **Aplicaciones**: Se emplea en CNNs para reducir el sobreajuste y mejorar la eficiencia de cómputo.
 vease [[keras.layers.MaxPooling2D]]
 
+> También existe otro tipo de pooling como [MaxPooling3D layer](https://keras.io/api/layers/pooling_layers/max_pooling3d/) o [AveragePooling2D layer](https://keras.io/api/layers/pooling_layers/average_pooling2d/), para ver la lista completa: [lista](https://keras.io/api/layers/pooling_layers/)
+
 ## 4. Flatten
 - **Descripción**: Transforma los datos multidimensionales en un vector unidimensional.
 - **Aplicaciones**: Comúnmente usada antes de una capa Dense para aplanar la entrada.

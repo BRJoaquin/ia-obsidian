@@ -1,4 +1,4 @@
-El **Descenso de Gradiente Estocástico (SGD)** es una variante del algoritmo de [[Decenso de Gradiente]] que se utiliza comúnmente en el aprendizaje automático y las redes neuronales para optimizar una función objetivo que tiene la forma de una suma de otras funciones.
+El **Descenso de Gradiente Estocástico (SGD)** es una variante del algoritmo de [[Descenso de Gradiente]] que se utiliza comúnmente en el aprendizaje automático y las redes neuronales para optimizar una función objetivo que tiene la forma de una suma de otras funciones.
 
 ![[Pasted image 20230704131123.png]]
 

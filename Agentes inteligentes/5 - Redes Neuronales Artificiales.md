@@ -2,7 +2,7 @@ Puntos clave:
 - [[Deep Learning]]
 - [[Regresión lineal]]
 - [[Regresión logística]]
-- [[Decenso de Gradiente]]
+- [[Descenso de Gradiente]]
 - [[Perceptrón simple]]
 - [[Perceptrón Multicapa]]
 - [[Retropropagación del error]]

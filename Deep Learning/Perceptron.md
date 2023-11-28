@@ -57,3 +57,7 @@ Este código representa la inicialización de un perceptrón con pesos aleatorio
 ![[Pasted image 20231127162006.png]]
 
 ![[Pasted image 20231127162023.png]]
+
+
+# XOR
+

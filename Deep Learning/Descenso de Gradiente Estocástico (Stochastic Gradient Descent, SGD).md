@@ -15,7 +15,7 @@ El algoritmo SGD funciona de la siguiente manera:
 
 # Diferencias entre SGD y Descenso de Gradiente
 
-La diferencia principal entre SGD y el descenso de gradiente estándar es que SGD **utiliza un solo punto de datos en cada actualización de los parámetros**, mientras que el descenso de gradiente estándar utiliza todos los puntos de datos. Esto hace que SGD sea más ruidoso, pero también más rápido y más capaz de escapar de mínimos locales en problemas no convexos.
+La diferencia principal entre SGD y el descenso de gradiente estándar es que SGD **utiliza un solo punto de datos en cada actualización de los parámetros**, mientras que el descenso de gradiente estándar utiliza todos los puntos de datos (batch o minibatch). Esto hace que SGD sea más ruidoso, pero también más rápido y más capaz de escapar de mínimos locales en problemas no convexos.
 
 # Tasa de Aprendizaje
 

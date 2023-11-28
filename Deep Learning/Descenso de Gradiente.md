@@ -8,6 +8,8 @@ El descenso del gradiente es un algoritmo de optimización utilizado principalme
 - **Paso Iterativo:** El algoritmo da pasos iterativos en la dirección opuesta al gradiente.
 - **Tamaño del Paso:** Conocido como tasa de aprendizaje, determina la magnitud del paso en cada iteración.
 
+![[Pasted image 20231128112333.png]]
+
 ## Aplicación en Deep Learning
 - **Función de Costo:** El objetivo es minimizar esta función, que mide el error del modelo.
 - **Actualización de Parámetros:** Se ajustan los pesos y sesgos del modelo basándose en el gradiente de la función de costo.
@@ -18,6 +20,11 @@ El descenso del gradiente es un algoritmo de optimización utilizado principalme
 2. **Descenso del Gradiente Estocástico (Stochastic Gradient Descent - SGD):** Utiliza un solo ejemplo de entrenamiento por iteración. [[Descenso de Gradiente Estocástico (Stochastic Gradient Descent, SGD)]]
 3. **Descenso del Gradiente Mini-Lote (Mini-batch Gradient Descent):** Utiliza un subconjunto del conjunto de entrenamiento por iteración.
 
+![[Pasted image 20231128112425.png]]
+
+![[Pasted image 20231128112406.png]]
+
+![[Pasted image 20231128112615.png]]
 ## Ventajas y Desventajas
 ### Ventajas
 - **Universalidad:** Aplicable a una amplia gama de problemas.
@@ -28,29 +35,6 @@ El descenso del gradiente es un algoritmo de optimización utilizado principalme
 - **Dependencia de Inicialización:** El punto de partida puede afectar la convergencia.
 - **Mínimos Locales y Puntos de Silla:** Puede quedar atrapado en mínimos locales o puntos de silla en funciones no convexas.
 
-## Ejemplo en Python
-Un ejemplo básico utilizando Python para implementar el descenso del gradiente sería:
-
-```python
-def funcion_costo(x):
-    return x**2
-
-def gradiente(x):
-    return 2*x
-
-def descenso_gradiente(x_inicio, tasa_aprendizaje, n_iteraciones):
-    x = x_inicio
-    for i in range(n_iteraciones):
-        grad = gradiente(x)
-        x = x - tasa_aprendizaje * grad
-    return x
-
-x_inicio = 10
-tasa_aprendizaje = 0.1
-n_iteraciones = 100
-
-x_minimo = descenso_gradiente(x_inicio, tasa_aprendizaje, n_iteraciones)
-```
 
 https://blog.gopenai.com/understanding-of-gradient-descent-intuition-and-implementation-b1f98b3645ea
 

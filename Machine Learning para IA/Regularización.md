@@ -33,6 +33,14 @@ Finalmente, es importante destacar que la regularización es una herramienta par
 # Otras regularizaciones
 
 - [[Penalización del costo]]
+- [[Early Stopping]]
+- [[Dropout]]
+- [[Pruning]]
+- [[Aumento de datos (data augmentation)]]
+- [[Generacion de datos adversarios]]
+- [[Clipping del gradiente]]
+- [[Ruido (regularizacion)]]
+- [[Label Smoothing]]
 
 
 # Ejemplo: regresion lineal

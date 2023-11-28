@@ -1,6 +1,6 @@
 ## Contexto y Objetivo
 
-La generación de datos adversarios se refiere a la creación de ejemplos de entrada diseñados específicamente para engañar a un modelo de aprendizaje profundo, de manera que este falle al clasificarlos correctamente. A pesar de que estos datos pueden ser indistinguibles para un observador humano de sus contrapartes originales, pueden llevar a predicciones significativamente diferentes por parte del modelo. Esta técnica es utilizada como una forma de regularización para mejorar la robustez y generalización del modelo.
+La generación de datos adversarios se refiere a la creación de ejemplos de entrada diseñados específicamente para engañar a un modelo de aprendizaje profundo, de manera que este falle al clasificarlos correctamente. A pesar de que estos datos pueden ser indistinguibles para un observador humano de sus contrapartes originales, pueden llevar a predicciones significativamente diferentes por parte del modelo. Esta técnica es utilizada como una forma de [[Regularización|regularización]] para mejorar la robustez y generalización del modelo.
 
 ![[Pasted image 20231128154530.png]]
 
@@ -20,13 +20,6 @@ La generación de datos adversarios se refiere a la creación de ejemplos de ent
 
 1. **Mejora la Robustez del Modelo**: Hace que el modelo sea menos sensible a cambios pequeños e imperceptibles en los datos de entrada.
 2. **Generalización Mejorada**: Al entrenar con ejemplos que son difíciles para el modelo, se fomenta una mejor generalización.
-
-## Implicaciones y Aplicaciones
-
-- **Seguridad en IA**: Revela y aborda las vulnerabilidades potenciales en modelos de aprendizaje automático.
-- **Semi-Supervised Learning**: Utiliza ejemplos adversarios generados (ejemplos virtuales adversarios) para entrenar el clasificador, mejorando la robustez en datos no etiquetados.
-- **Investigación en Deep Learning**: Proporciona insights sobre la naturaleza de los modelos de aprendizaje profundo y cómo mejoran su resistencia a perturbaciones.
-
 ## Conclusión
 
 La generación de datos adversarios es una técnica avanzada en la regularización de modelos de aprendizaje profundo. Su aplicación no solo mejora la robustez de los modelos frente a perturbaciones pequeñas y adversarias, sino que también contribuye al entendimiento profundo de cómo los modelos procesan y reaccionan a diferentes tipos de datos. Esta técnica se ha convertido en un área de investigación significativa en la seguridad de la inteligencia artificial y el aprendizaje semi-supervisado.

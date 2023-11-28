@@ -15,3 +15,6 @@ La función sigmoide tiene una forma de "S" y se utiliza comúnmente en campos c
 3. Transformación no lineal: La función sigmoide permite transformar entradas lineales en salidas no lineales, lo cual es útil para modelar relaciones no lineales en problemas de clasificación y regresión.
 
 En el aprendizaje automático, la función sigmoide se utiliza a menudo como una función de activación en las [[Redes Neuronales Artificiales]], donde se aplica a la salida de cada neurona para introducir no linealidad en el modelo y producir probabilidades o valores de activación que van de 0 a 1. También se utiliza en modelos de [[Regresión logística]], donde se emplea para estimar probabilidades de pertenencia a una clase específica.
+
+
+![[Pasted image 20231128113423.png]]

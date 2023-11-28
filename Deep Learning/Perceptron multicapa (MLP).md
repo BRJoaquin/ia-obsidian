@@ -1,11 +1,11 @@
 ## Introducción
 
 ### Definición
-El Perceptrón Multicapa (MLP) es un tipo de [[Redes Neuronales Artificiales|red neuronal artificial]] organizada en múltiples capas. Es un modelo de aprendizaje profundo utilizado ampliamente para tareas de clasificación y regresión.
+El Perceptrón Multicapa (MLP) es un tipo de [[Redes Neuronales Artificiales|red neuronal artificial]] organizada en múltiples capas. Es un modelo de [[Machine Learning|aprendizaje profundo]] utilizado ampliamente para tareas de [[Clasificación|clasificación]] y [[Regresión|regresión]].
 
 ### Historia y Evolución
 - **Orígenes**: Basado en el perceptrón simple, desarrollado por Frank Rosenblatt en los años 50.
-- **Evolución**: La introducción del algoritmo de retropropagación en los años 80 permitió el entrenamiento eficiente de MLP.
+- **Evolución**: La introducción del algoritmo de [[Retropropagación del error|retropropagación]] en los años 80 permitió el entrenamiento eficiente de MLP.
 
 ## Arquitectura
 
@@ -14,12 +14,17 @@ El Perceptrón Multicapa (MLP) es un tipo de [[Redes Neuronales Artificiales|red
    - *Capa de Entrada*: Recibe los datos de entrada.
    - *Capas Ocultas*: Capas intermedias donde ocurre el procesamiento computacional.
    - *Capa de Salida*: Proporciona el resultado final del modelo.
+vease [[Capa (DL)]]
+
+![[Pasted image 20231128103359.jpg]]
 
 2. **Neuronas**:
    - Unidades de procesamiento que suman ponderadamente las entradas y aplican una función de activación.
+vease [[Neuronas Artificiales]]
 
 3. **Pesos y Sesgos**:
    - Elementos ajustables durante el entrenamiento que determinan la fuerza de las conexiones entre neuronas.
+![[Pasted image 20231128103703.jpg]]
 
 ### Funcionamiento
 - **Procesamiento de la Información**: Los datos pasan secuencialmente a través de las capas, transformándose en cada etapa.

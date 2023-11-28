@@ -1,7 +1,7 @@
 Puntos clave:
 - [[Error esperado]]
 - [[Regularización]]
-- [[Penalizacion del costo]]
+- [[Penalización del costo]]
 - [[Early Stopping]]
 - [[Dropout]]
 - [[Pruning]]

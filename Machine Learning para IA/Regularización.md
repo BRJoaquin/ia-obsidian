@@ -32,7 +32,7 @@ Finalmente, es importante destacar que la regularización es una herramienta par
 
 # Otras regularizaciones
 
-- [[Penalizacion del costo]]
+- [[Penalización del costo]]
 
 
 # Ejemplo: regresion lineal

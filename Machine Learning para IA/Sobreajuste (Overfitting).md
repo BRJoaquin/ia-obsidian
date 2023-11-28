@@ -15,3 +15,5 @@ Detectar y prevenir el sobreajuste es fundamental para garantizar que los modelo
 
 
 ![[Pasted image 20230518202102.png]]
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DEMmkFC6IGM?si=xoM_LtQAHVUZGD2C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

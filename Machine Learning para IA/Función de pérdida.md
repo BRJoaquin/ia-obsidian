@@ -62,3 +62,4 @@ Estas son solo algunas funciones de pérdida comunes, y hay muchas otras que se 
 ![[Pasted image 20230509113811.png]]
 
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Skc8nqJirJg?si=fX8TuaYqdvsNAueq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

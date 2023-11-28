@@ -17,3 +17,5 @@ Los conceptos clave en torno a las funciones de activación incluyen:
 - **Diferenciables**: Para que la [[Retropropagación del error]] funcione, que es el algoritmo que las redes neuronales usan para aprender de los errores que están cometiendo, las funciones de activación deben ser diferenciables.
     
 - **Rango de activación**: El rango de la función de activación (es decir, los valores que puede tomar la salida) también puede afectar al aprendizaje de la red. Funciones como la sigmoide y tanh tienen un rango limitado (entre 0 y 1, y -1 y 1 respectivamente), mientras que funciones como ReLU pueden producir valores en un rango más amplio.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/m0pIlLfpXWE?si=nOIwz5cbCNGnYTzm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

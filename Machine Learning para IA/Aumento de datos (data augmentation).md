@@ -59,3 +59,7 @@ data_gen = ImageDataGenerator(
 - **Visión por Computadora**: Ampliamente utilizado en tareas de reconocimiento de imágenes y video.
 - **Procesamiento de Audio y Lenguaje Natural**: Mejora la robustez frente a variaciones naturales en el audio y el texto.
 - **Investigación y Desarrollo de Modelos**: Fundamental en experimentación y pruebas de robustez de modelos.
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rfM4DaLTkMs?si=YKatUu1f6LwadJhZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+

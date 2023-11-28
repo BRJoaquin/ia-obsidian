@@ -11,3 +11,5 @@ Existen tres tipos principales de capas en una red neuronal:
 ![[Pasted image 20230704092258.png]]
 
 En general, cada capa de una red neuronal puede aprender a identificar diferentes características en los datos de entrada. Las primeras capas podrían aprender a identificar características de bajo nivel, como líneas o colores en imágenes, mientras que las capas más profundas pueden aprender a identificar conceptos más complejos a partir de las características identificadas por las capas anteriores.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FK77zZxaBoI?si=Xgcmbv1kxZgCHDuy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

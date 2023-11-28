@@ -17,3 +17,5 @@ Si α es muy pequeño (cerca de 0), el agente dará más importancia a la inform
 Por lo tanto, la elección de una buena tasa de aprendizaje es un equilibrio entre aprender rápidamente de la nueva información y no desestabilizar demasiado las estimaciones de valor existentes. La elección del valor de α puede ser fija, o puede adaptarse a lo largo del tiempo, dependiendo del problema y del enfoque de aprendizaje específico que se esté utilizando.
 
 ![[Pasted image 20230625100800.png]]
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jWT-AX9677k?si=e8paYzMiP7W0oIS0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

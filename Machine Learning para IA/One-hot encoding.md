@@ -9,3 +9,6 @@ En forma de vectores, 'rojo' se representaría como [1, 0, 0], 'verde' como [0, 
 La codificación one-hot es muy utilizada en el aprendizaje automático, especialmente para tratar los datos categóricos en modelos que requieren entradas numéricas, como las redes neuronales. Además, se utiliza para representar las etiquetas en problemas de clasificación multiclase, donde cada instancia puede pertenecer a una única clase de varias posibles.
 
 https://towardsdatascience.com/building-a-one-hot-encoding-layer-with-tensorflow-f907d686bf39
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/v_4KWmkwmsU?si=mGwV-r7gRM4VQWda" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

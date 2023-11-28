@@ -11,6 +11,7 @@ Data Augmentation, o aumento de datos, es una técnica de [[Regularización|regu
    - **Volteo Horizontal/Vertical**: Invertir imágenes horizontal o verticalmente.
    - **Ajustes de Color**: Modificar el brillo, el contraste o la saturación.
 
+![[Pasted image 20231128154118.png]]
 ### 2. Transformaciones de Audio
    - **Ruido de Fondo**: Añadir sonidos ambientales o ruido.
    - **Cambio de Tono**: Ajustar el tono del audio.

@@ -7,6 +7,8 @@ El ES funciona de la siguiente manera:
 3. Durante el entrenamiento, se monitorea la pertenencia del error de validación.
 4. Cuando el error de validación comienza a aumentar, se detiene el entrenamiento y se utiliza el modelo más reciente para hacer predicciones en el set prueba.
 
+![[Pasted image 20231128153910.png]]
+
 El ES tiene varios beneficios:
 
 * Previene el sobreajuste del modelo en los datos de prueba.
@@ -19,6 +21,8 @@ El ES también tiene varios desafíos:
 * El modelo puede tener una mala generalización incluso con ES si no es buenamente diseñado o si hay demasiados parámetros.
 
 En conclusión, el Early Stopping (ES) es una técnica de optimización para prevenir la sobre-apertura del modelo en los datos de prueba y mejora la generalización del modelo. El ES funciona monitorizando la pertenencia del error de validación durante el entrenamiento y deteniendo el entrenamiento cuando el error de validación comienza a aumentar.
+
+![[Pasted image 20231128154021.png]]
 
 ## Configuración
 

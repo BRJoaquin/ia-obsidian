@@ -40,5 +40,4 @@ modelo = tf.keras.Sequential([
 1. **Tiempo de entrenamiento**: Puede aumentar el tiempo de entrenamiento, ya que cada iteración utiliza una configuración diferente de neuronas.
 2. **Selección de hiperparámetros**: La elección de la probabilidad de dropout puede ser crítica y requiere ajuste fino.
 
-
-![[112801.gif]]
+![[Pasted image 20231128154042.png]]

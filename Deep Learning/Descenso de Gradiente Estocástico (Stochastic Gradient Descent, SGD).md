@@ -19,7 +19,7 @@ La diferencia principal entre SGD y el descenso de gradiente estándar es que SG
 
 # Tasa de Aprendizaje
 
-La tasa de aprendizaje es un [[Hiperparámetros|hiperparamentro]] importante en SGD. Una tasa de aprendizaje demasiado alta puede hacer que el algoritmo oscile alrededor del mínimo y nunca converja, mientras que una tasa de aprendizaje demasiado baja puede hacer que el algoritmo converja demasiado lentamente.
+La tasa de aprendizaje es un [[Hiperparámetro|hiperparamentro]] importante en SGD. Una tasa de aprendizaje demasiado alta puede hacer que el algoritmo oscile alrededor del mínimo y nunca converja, mientras que una tasa de aprendizaje demasiado baja puede hacer que el algoritmo converja demasiado lentamente.
 
 # Ejemplo: aproximación lineal de la función valor
 

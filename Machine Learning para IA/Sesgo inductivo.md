@@ -11,7 +11,7 @@ El sesgo inductivo puede manifestarse de varias formas, como:
 
 **El sesgo inductivo es un aspecto importante del aprendizaje automático porque determina cómo se selecciona el modelo a partir de los datos y cómo el algoritmo generaliza a datos no vistos**. Un sesgo inductivo apropiado puede mejorar la capacidad de generalización de un algoritmo y evitar problemas como el sobreajuste. **Sin embargo, un sesgo inductivo inadecuado puede conducir a un modelo que no se ajusta bien a los datos o que no puede capturar las relaciones subyacentes en los datos.**
 
-> A fines prácticos es elegir el modelo de aprendizaje (ejemplo KNN) y los [[Hiperparámetros]] para el modelo (ejemplo el K en KNN, o la profundidad en un árbol de decisión)
+> A fines prácticos es elegir el modelo de aprendizaje (ejemplo KNN) y los [[Hiperparámetro]] para el modelo (ejemplo el K en KNN, o la profundidad en un árbol de decisión)
 
 Es importante tener en cuenta el sesgo inductivo al seleccionar y ajustar algoritmos de aprendizaje automático para un problema específico. La elección del algoritmo adecuado y la comprensión de sus suposiciones y restricciones pueden ser fundamentales para lograr un buen rendimiento y una generalización efectiva en aplicaciones del mundo real.
 

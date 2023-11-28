@@ -15,23 +15,26 @@ $$ \tilde{J}(W) = J(W) + \lambda R(W), \quad \lambda > 0 $$
 ## Parámetros de Regularización
 
 - **$\lambda$**: Parámetro de _tuning_ o ajuste.
-  - Es un hiperparámetro que debe ser cuidadosamente seleccionado, típicamente a través de validación cruzada.
+  - Es un [[Hiperparámetro|hiperparámetro]] que debe ser cuidadosamente seleccionado, típicamente a través de [[Validación cruzada (Cross-validation)|validación cruzada]].
   - Al ser mayor que cero ($\lambda > 0$), asegura que la penalización es efectiva.
 
 ## Efectos de Ajustar $\lambda$
 
 - Al incrementar $\lambda$:
-  - **Aumenta el sesgo**: Conduce a un modelo menos flexible, pudiendo causar subajuste.
-  - **Disminuye la varianza**: Ayuda a prevenir el sobreajuste, limitando la complejidad del modelo.
+  - **Aumenta el sesgo**: Conduce a un modelo menos flexible, pudiendo causar [[Subajuste (Underfitting)|subajuste]].
+  - **Disminuye la varianza**: Ayuda a prevenir el [[Sobreajuste (Overfitting)|sobreajuste]], limitando la complejidad del [[Modelo (Hipotesis)|modelo]].
 
 ## Visualización del Error Cuadrático Medio
+
+![[Pasted image 20231128143404.png]]
 
 El gráfico adjunto ilustra la relación entre el error cuadrático medio (MSE) y el parámetro de regularización $\lambda$.
 
 - **Eje X**: Escala logarítmica de $\lambda$.
 - **Eje Y**: MSE, indicando el error del modelo.
 - **Curvas**:
-  - **Curva Rosa**: Representa el error de entrenamiento, que aumenta con $\lambda$.
+  - **Curva Rosa**: Representa el error de entrenamiento (sesgo + varianza).
+  - **Curva negra**: Representa el sesgo.
   - **Curva Verde**: Muestra el error de validación, que tiende a disminuir y luego aumentar conforme crece $\lambda$.
 
 El punto de cruce de las curvas indica un valor de $\lambda$ equilibrado que minimiza tanto el sesgo como la varianza.

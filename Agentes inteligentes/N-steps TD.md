@@ -13,7 +13,7 @@ Y la regla de actualización de valor se convierte en:
 
 $$V(S_t) = V(S_t) + \alpha[G_{t:t+n} - V(S_t)]$$
 
-Aquí, `n` es un parámetro que puedes elegir ([[Hiperparámetros]]). Cuando `n=1`, obtienes TD(0). Cuando `n` es igual a la longitud del episodio, obtienes el método de Monte Carlo. Así que puedes ver n-Steps TD Learning como un compromiso entre TD(0) y el método de Monte Carlo.
+Aquí, `n` es un parámetro que puedes elegir ([[Hiperparámetro]]). Cuando `n=1`, obtienes TD(0). Cuando `n` es igual a la longitud del episodio, obtienes el método de Monte Carlo. Así que puedes ver n-Steps TD Learning como un compromiso entre TD(0) y el método de Monte Carlo.
 
 **Una ventaja de n-Steps TD Learning es que te permite ajustar el equilibrio entre sesgo y varianza. Con un `n` más pequeño, tienes más sesgo pero menos varianza. Con un `n` más grande, tienes menos sesgo pero más varianza.**
 

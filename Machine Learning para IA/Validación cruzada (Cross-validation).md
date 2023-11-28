@@ -18,7 +18,7 @@ La validación cruzada ofrece varias ventajas:
   
 -   Ayuda a identificar si un modelo está sobreajustando los datos de entrenamiento, ya que el rendimiento del modelo en los conjuntos de validación puede ser significativamente peor que en el conjunto de entrenamiento.
   
--   Facilita la [[Selección de modelo]] y la elección de [[Hiperparámetros]] óptimos, ya que se pueden comparar las métricas de rendimiento promedio de diferentes modelos y configuraciones.
+-   Facilita la [[Selección de modelo]] y la elección de [[Hiperparámetro]] óptimos, ya que se pueden comparar las métricas de rendimiento promedio de diferentes modelos y configuraciones.
   
 -  Rendimiento más estable: Como cada punto de datos se usa tanto para entrenamiento como para validación, los resultados son menos sensibles a la forma en que se dividen los datos.
 

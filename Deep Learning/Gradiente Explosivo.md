@@ -1,0 +1,5 @@
+En el entrenamiento de redes neuronales, especialmente en aquellas con muchas capas o estructuras recurrentes, los gradientes pueden acumularse a través de las capas y aumentar exponencialmente. Esto lleva a actualizaciones de pesos muy grandes, que a su vez pueden causar la divergencia del modelo durante el entrenamiento, conocido como el problema del gradiente explosivo.
+
+El gradiente explosivo es particularmente problemático porque puede hacer que el entrenamiento sea inestable y a menudo lleva a un modelo que no converge o que aprende patrones poco fiables. Esto es especialmente cierto en tareas que involucran dependencias a largo plazo, donde el modelo necesita mantener información relevante a lo largo de secuencias largas, como es común en el procesamiento de lenguaje natural (PLN).
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qO_NLVjD6zE?si=qM4lnKvPi1OCVzxg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

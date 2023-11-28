@@ -10,3 +10,5 @@ Hay varios métodos de pooling, pero los más comunes son el max pooling y el av
 ![[Pasted image 20230704092715.png]]
 
 El proceso de pooling ayuda a hacer que la representación sea invariante a pequeñas traslaciones, lo que hace que la red sea más robusta a variaciones en la posición de las características en la imagen de entrada.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZjM_XQa5s6s?si=UcWBazYCiFXb77Ku" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

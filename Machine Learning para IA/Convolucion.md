@@ -95,3 +95,6 @@ donde:
 
 ## Conclusión
 El cálculo de dimensiones de salida con un valor específico de padding permite un mayor control sobre las dimensiones de los mapas de características resultantes en una red neuronal convolucional. Esto es crucial para el diseño y la comprensión detallada de las arquitecturas de CNN.
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vJiZqZRkIg8?si=pH2ST-Fu1-qP1S5T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

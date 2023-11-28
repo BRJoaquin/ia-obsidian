@@ -23,7 +23,7 @@ El Aprendizaje Representacional es una faceta del aprendizaje automático donde 
 
 - **Reconocimiento de Voz**: Donde las representaciones pueden capturar fonemas o características del habla.
 - **Reconocimiento de Imágenes**: Similar al ejemplo de la imagen proporcionada, donde se aprenden representaciones de diferentes aspectos visuales.
-- **Análisis de Texto**: En [[Procesamiento del Lenguaje Natural (PLN)|NLP]] para capturar la sintaxis y semántica del lenguaje.
+- **Análisis de Texto**: En [[Procesamiento del Lenguaje Natural (NLP)|NLP]] para capturar la sintaxis y semántica del lenguaje.
 
 ## Desafíos
 

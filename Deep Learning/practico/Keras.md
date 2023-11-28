@@ -14,7 +14,7 @@
 ## Aplicaciones Comunes
 
 - **Visión por Computadora:** Utilizado en tareas como reconocimiento de imágenes y vídeo. vease [[Visión por Computadora]]
-- **Procesamiento del Lenguaje Natural (PLN):** Ayuda en la creación de modelos para comprensión y generación de texto. vease [[Procesamiento del Lenguaje Natural (PLN)]]
+- **Procesamiento del Lenguaje Natural (PLN):** Ayuda en la creación de modelos para comprensión y generación de texto. vease [[Procesamiento del Lenguaje Natural (NLP)]]
 - **Predicción y Análisis de Datos:** Aplicado en áreas como la predicción del tiempo, análisis de sentimientos, entre otros. vease [[Regresión]] y [[Clasificación]]
 
 ## Ventajas de Keras

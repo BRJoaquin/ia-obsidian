@@ -61,3 +61,27 @@ Este código representa la inicialización de un perceptrón con pesos aleatorio
 
 # XOR
 
+## XOR y su Complejidad
+
+Es una operación lógica entre dos variables booleanas que devuelve verdadero solo si las variables tienen valores distintos.
+
+- **Tabla de Verdad para XOR**:
+  
+  | Input A | Input B | XOR Output |
+  |---------|---------|------------|
+  | 0       | 0       | 0          |
+  | 0       | 1       | 1          |
+  | 1       | 0       | 1          |
+  | 1       | 1       | 0          |
+
+**No Linealmente Separable**: La función XOR no es linealmente separable, lo que significa que no se puede dibujar una línea recta que separe las clases de salida (0 y 1) correctamente.
+
+## El Problema con el Perceptrón Simple
+
+- **Limitación**: El perceptrón simple solo puede resolver problemas linealmente separables.
+
+- **Incapacidad para el XOR**: Dado que la función XOR no es linealmente separable, un perceptrón simple no puede modelar esta función correctamente, no importa cuánto se ajusten los pesos y el umbral.
+
+- **Solución Teórica**:
+  - **Perceptrones Múltiples**: Se necesita una red de perceptrones, o lo que es lo mismo, una red neuronal multicapa, para resolver la función XOR. [[Perceptron multicapa (MLP)]]
+  - **Capas Ocultas**: Una red con al menos una capa oculta puede aprender funciones no lineales, incluyendo XOR.

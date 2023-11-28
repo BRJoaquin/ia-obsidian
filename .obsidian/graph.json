@@ -34,6 +34,13 @@
         "a": 1,
         "rgb": 5431378
       }
+    },
+    {
+      "query": "path:\"Deep Learning\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 5402336
+      }
     }
   ],
   "collapse-display": false,
@@ -46,6 +53,6 @@
   "repelStrength": 10.15625,
   "linkStrength": 1,
   "linkDistance": 217,
-  "scale": 0.263258075814309,
+  "scale": 0.37537172343799474,
   "close": true
 }

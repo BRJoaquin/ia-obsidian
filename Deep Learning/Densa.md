@@ -1,8 +1,10 @@
-# Concepto de Capa Densa
+# Concepto
 
 La capa densa, o completamente conectada, es una de las estructuras fundamentales en las redes neuronales. En la literatura y en la práctica del aprendizaje profundo, estas capas se utilizan para procesar las entradas aplicando una transformación lineal seguida de una no lineal.
 
 El [[Perceptron]] es un caso particular de capa densa. 
+
+![[Pasted image 20231128100312.png]]
 
 ## Definición Matemática
 
@@ -31,6 +33,7 @@ Algunas de las funciones de activación más comunes son:
 - Tangente Hiperbólica
 - Rectified Linear Unit (ReLU)
 
+![[Pasted image 20231128100404.png]]
 # Broadcasting en Matrices
 
 El concepto de broadcasting se refiere a la forma en que las operaciones de matrices se llevan a cabo, especialmente cuando se suman vectores a matrices:
@@ -42,7 +45,7 @@ El concepto de broadcasting se refiere a la forma en que las operaciones de matr
 - En la práctica, los shapes de las matrices y vectores deben ser compatibles para realizar operaciones de multiplicación de matrices y broadcasting de suma.
 - Para $XW + b$, los shapes deben ser $(n, m)$, $(m, k)$, y $(n, k)$ respectivamente.
 
-
+![[Pasted image 20231128100544.png]]
 
 
 vease tambien [[keras.layers.Dense]]

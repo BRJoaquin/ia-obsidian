@@ -17,4 +17,4 @@ Puntos clave:
 - [[Aprendizaje Representacional]]
 - [[Disciplinas de la Inteligencia Artificial]]
 - [[Perceptron]]
-- [[]]
+- [[Densa]]

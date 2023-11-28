@@ -1,0 +1,9 @@
+Puntos clave:
+- [[Perceptrón Multicapa]]
+	- [[Neuronas Artificiales]]
+	- [[Deep Learning/Función de Activación|Función de Activación]]
+	- [[Feedforward]]
+	- [[Función de pérdida]]
+	- [[Retropropagación del error]]
+- [[Descenso de Gradiente]]
+- [[Descenso de Gradiente Estocástico (Stochastic Gradient Descent, SGD)]]

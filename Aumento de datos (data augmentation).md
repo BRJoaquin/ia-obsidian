@@ -39,3 +39,22 @@ data_gen = ImageDataGenerator(
 )
 
 # Aplicar el generador a los datos de entrenamiento
+```
+
+## Ventajas
+
+1. **Mejora la Generalización**: Ayuda a que el modelo aprenda características invariantes y robustas.
+2. **Prevención del Sobreajuste**: Al aumentar la cantidad de datos, se reduce el riesgo de memorizar el conjunto de entrenamiento.
+3. **Versatilidad**: Aplicable a diferentes tipos de datos (imágenes, audio, texto).
+
+## Desventajas
+
+1. **Complejidad Computacional**: Puede aumentar el tiempo de entrenamiento.
+2. **Selección de Transformaciones**: Elegir transformaciones inapropiadas puede llevar a un aprendizaje ineficaz.
+3. **Balance entre Realismo y Variación**: Es crucial mantener un equilibrio entre la diversidad de los datos y su relevancia/practicidad.
+
+## Aplicaciones
+
+- **Visión por Computadora**: Ampliamente utilizado en tareas de reconocimiento de imágenes y video.
+- **Procesamiento de Audio y Lenguaje Natural**: Mejora la robustez frente a variaciones naturales en el audio y el texto.
+- **Investigación y Desarrollo de Modelos**: Fundamental en experimentación y pruebas de robustez de modelos.

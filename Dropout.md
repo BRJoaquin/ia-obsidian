@@ -1,0 +1,1 @@
+Dropout (DROPOUT) es una técnica de [[Regularización|regularización]] para evitar [[Sobreajuste (Overfitting)]] de modelos profundos ([[r]]) en los datos de prueba. DROPOUT se basa en eliminar un porcentaje de neuronas aleatorias durante el  entrenamiento y durante las predicciones.

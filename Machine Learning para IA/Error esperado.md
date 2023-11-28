@@ -9,14 +9,13 @@ El error irreducible se refiere al error que no se puede reducir sin importar qu
 
 # Descomposición del error
 
-El error total de un modelo se puede descomponer en tres términos: sesgo, varianza y error irreducible. Esta descomposición nos permite entender mejor el compromiso entre sesgo y varianza.
+El error total de un modelo se puede descomponer en tres términos: [[Sesgo|sesgo]], varianza y error irreducible. Esta descomposición nos permite entender mejor el compromiso entre sesgo y varianza.
 
 **Error esperado = Sesgo + Varianza + Error Irreducible**
 
 ![[Pasted image 20230708125203.png]]
 
 # Error esperado en regresión
-
 
 
 ![[Pasted image 20230708125930.png]]

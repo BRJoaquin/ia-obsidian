@@ -35,7 +35,7 @@ El gráfico adjunto ilustra la relación entre el error cuadrático medio (MSE) 
 - **Curvas**:
   - **Curva Rosa**: Representa el error de entrenamiento (sesgo + varianza).
   - **Curva negra**: Representa el sesgo.
-  - **Curva Verde**: Muestra el error de validación, que tiende a disminuir y luego aumentar conforme crece $\lambda$.
+  - **Curva Verde**: Representa la varianza.
 
 El punto de cruce de las curvas indica un valor de $\lambda$ equilibrado que minimiza tanto el sesgo como la varianza.
 

@@ -1,4 +1,4 @@
-Una capa en una [[Redes Neuronales Artificiales]] es un conjunto de [[Neuronas Artificiales]], también conocidas como nodos, que procesan diferentes partes de la información de entrada. Cada neurona en una capa toma un conjunto de entradas, las pondera según pesos previamente aprendidos o inicializados aleatoriamente, las suma y luego aplica una [[Machine Learning para IA/Función de Activación|Función de Activación]] a la suma para generar una salida.
+Una capa en una [[Redes Neuronales Artificiales]] es un conjunto de [[Neuronas Artificiales]], también conocidas como nodos, que procesan diferentes partes de la información de entrada. Cada neurona en una capa toma un conjunto de entradas, las pondera según pesos previamente aprendidos o inicializados aleatoriamente, las suma y luego aplica una [[Deep Learning/Función de Activación|Función de Activación]] a la suma para generar una salida.
 
 Existen tres tipos principales de capas en una red neuronal:
 

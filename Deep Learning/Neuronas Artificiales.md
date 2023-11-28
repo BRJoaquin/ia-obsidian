@@ -2,7 +2,7 @@ Las neuronas artificiales, también conocidas como nodos o unidades, son compone
 
 ![[Pasted image 20230704092521.png]]
 
-Una neurona artificial toma un conjunto de entradas, cada una de las cuales está asociada con un peso. Los pesos son parámetros que la red aprende a través del entrenamiento. A menudo también hay un término de sesgo que se suma a la combinación ponderada de las entradas. Este valor sumado se pasa luego a través de una [[Machine Learning para IA/Función de Activación|función de activación]] para producir la salida de la neurona. El proceso se puede resumir de la siguiente manera:
+Una neurona artificial toma un conjunto de entradas, cada una de las cuales está asociada con un peso. Los pesos son parámetros que la red aprende a través del entrenamiento. A menudo también hay un término de sesgo que se suma a la combinación ponderada de las entradas. Este valor sumado se pasa luego a través de una [[Deep Learning/Función de Activación|función de activación]] para producir la salida de la neurona. El proceso se puede resumir de la siguiente manera:
 
 1. La neurona recibe múltiples entradas y cada entrada se multiplica por su peso correspondiente. Los pesos son simplemente valores numéricos que la neurona ha aprendido durante su entrenamiento.
 

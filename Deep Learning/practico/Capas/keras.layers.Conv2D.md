@@ -8,7 +8,7 @@ Documentacion: https://keras.io/api/layers/convolution_layers/convolution2d/
 - `kernel_size`: [[Convolucion#Tamaño de Kernel|Tamaño del filtro/kernel]] (por ejemplo, (3, 3)).
 - `strides`: [[Convolucion#Strides|Tamaño de los pasos]] del filtro durante la convolución.
 - `padding`: 'valid' (sin padding) o 'same' (con [[Convolucion#Padding|padding]] para que la salida tenga el mismo tamaño que la entrada).
-- `activation`: [[Machine Learning para IA/Función de Activación|Función de activación]], típicamente '[[Función ReLu|relu]]'.
+- `activation`: [[Deep Learning/Función de Activación|Función de activación]], típicamente '[[Función ReLu|relu]]'.
 - `input_shape`: Forma del tensor de entrada (solo necesario para la primera capa). 
   
   > "**Input shape**

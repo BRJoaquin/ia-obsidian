@@ -4,7 +4,7 @@ El **Perceptrón Multicapa (MLP, por sus siglas en inglés)** es un **tipo**  de
 
 **A diferencia del Perceptrón Simple, que solo puede separar linealmente los datos, el MLP puede distinguir datos que no son linealmente separables, gracias a la inclusión de una o más capas ocultas.**
 
-La operación en cada nodo es la misma que en el Perceptrón Simple: se toma la suma ponderada de las entradas, se le añade un sesgo y luego se pasa el resultado a través de una [[Agentes inteligentes/Función de Activación]]. Sin embargo, en un MLP, la salida de los nodos en una capa sirve como entrada a los nodos de la siguiente capa.
+La operación en cada nodo es la misma que en el Perceptrón Simple: se toma la suma ponderada de las entradas, se le añade un sesgo y luego se pasa el resultado a través de una [[Deep Learning/Función de Activación|Función de Activación]]. Sin embargo, en un MLP, la salida de los nodos en una capa sirve como entrada a los nodos de la siguiente capa.
 
 En forma de ecuación, un nodo en un MLP se ve así:
 
@@ -35,13 +35,13 @@ El proceso general para la actualización de pesos es el siguiente:
 
 2. **Cálculo de la Pérdida**: Se calcula la función de pérdida utilizando las salidas de la red y los valores reales.
 
-3. **Backpropagation**: Se calculan las derivadas parciales de la función de pérdida con respecto a cada uno de los pesos en la red (es decir, el gradiente de la pérdida con respecto a los pesos). Este proceso se realiza retrocediendo a través de la red, comenzando con la capa de salida y yendo hacia las capas de entrada.
+3. **Backpropagation**: Se calculan las derivadas parciales de la función de pérdida con respecto a cada uno de los pesos en la red (es decir, el gradiente de la pérdida con respecto a los pesos). Este proceso se realiza retrocediendo a través de la red, comenzando con la capa de salida y yendo hacia las capas de entrada. vease [p]
 
 4. **Actualización de Pesos**: Los pesos se actualizan restando una fracción del gradiente calculado en el paso 3. La fracción se determina por la tasa de aprendizaje ([[Taza de aprendizaje]]), un parámetro que se establece antes de comenzar el entrenamiento.
 
 # Funciones de Pérdida
 
-La elección de la función de pérdida en un MLP depende del tipo de problema que se esté resolviendo. Aquí algunos ejemplos de funciones de pérdida comunes:
+La elección de la [[Función de pérdida|función de pérdida]] en un MLP depende del tipo de problema que se esté resolviendo. Aquí algunos ejemplos de funciones de pérdida comunes:
 
 - **Error Cuadrático Medio (MSE)**: Se utiliza comúnmente para problemas de regresión. Esta función de pérdida calcula la media de los cuadrados de las diferencias entre las predicciones del modelo y los valores reales. vease [[MSE]]
 

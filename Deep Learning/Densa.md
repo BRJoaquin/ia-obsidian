@@ -24,7 +24,7 @@ El [[Perceptron]] es un caso particular de capa densa.
 
 La función de activación $\text{act}$ es un componente crucial que introduce no linealidad en el modelo, lo que permite a la red aprender y modelar relaciones complejas entre los datos de entrada y la salida. 
 
-vease [[Machine Learning para IA/Función de Activación|Función de Activación]]
+vease [[Deep Learning/Función de Activación|Función de Activación]]
 
 Algunas de las funciones de activación más comunes son:
 

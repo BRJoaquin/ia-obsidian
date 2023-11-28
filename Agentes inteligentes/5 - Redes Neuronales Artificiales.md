@@ -6,7 +6,7 @@ Puntos clave:
 - [[Perceptrón simple]]
 - [[Perceptrón Multicapa]]
 - [[Retropropagación del error]]
-- [[Machine Learning para IA/Función de Activación]]
+- [[Deep Learning/Función de Activación]]
 - [[Redes Neuronales Artificiales]]
 - [[Redes Neuronales Convolucionales]]
 - [[Convolucion]]

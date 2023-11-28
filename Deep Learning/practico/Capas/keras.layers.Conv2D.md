@@ -20,7 +20,7 @@ Documentacion: https://keras.io/api/layers/convolution_layers/convolution2d/
 
 El número total de parámetros en una capa Conv2D se calcula con la fórmula:
 
-$$ \text{Número de parámetros} = (\text{kernel size}_\text{height} \times \text{kernel size}_\text{width} \times \text{input channels} + 1) \times \text{filters} $$
+$$ \text{Número de parámetros} = ((\text{kernel size}_\text{height} \times \text{kernel size}_\text{width} \times \text{input channels}) + 1) \times \text{filters} $$
 
 ### Detalle de Cálculo
 - Cada filtro tiene una dimensión de $\text{kernel size}_\text{height} \times \text{kernel size}_\text{width} \times \text{input channels}$.

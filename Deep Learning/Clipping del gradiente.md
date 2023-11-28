@@ -4,7 +4,7 @@ El Clipping del Gradiente es una técnica de optimización utilizada para estabi
 
 ## Entendiendo el Problema del Gradiente Explosivo
 
-
+ver [[Gradiente Explosivo]]
 
 ## Implementación del Clipping del Gradiente
 

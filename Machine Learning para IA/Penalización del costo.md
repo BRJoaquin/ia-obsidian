@@ -38,7 +38,6 @@ El gráfico adjunto ilustra la relación entre el error cuadrático medio (MSE) 
   - **Curva Verde**: Representa la varianza.
 
 El punto de cruce de las curvas indica un valor de $\lambda$ equilibrado que minimiza tanto el sesgo como la varianza.
-
 ## Conclusión
 
 La selección adecuada de $\lambda$ es crucial para el rendimiento del modelo, buscando un balance entre sesgo y varianza para una buena generalización.

@@ -17,6 +17,9 @@ donde $w_i$ son los parámetros del modelo y $\lambda$ es el parámetro de regul
 
 > Basicamente de "yapa" tenemos seleccion de caracteristicas.
 
+
+![[Pasted image 20231128141747.png]]
+
 ## Regularización L2 (Ridge)
 
 En la regularización L2, la penalización es la suma de los cuadrados de los parámetros del modelo. 
@@ -26,6 +29,11 @@ $$ L2 = \lambda \sum_{i=1}^{n} w_i^2 $$
 Al igual que con L1, $\lambda$ controla la cantidad de regularización a aplicar. La regularización L2 tiene la propiedad de reducir los valores de los parámetros, pero a diferencia de L1, no los hace exactamente cero. Esto es útil cuando se cree que todas las características son relevantes para la tarea.
 
 Finalmente, es importante destacar que la regularización es una herramienta para manejar la complejidad del modelo y ayudar a prevenir el sobreajuste, pero no es un sustituto de tener buenos datos de entrenamiento. Ninguna cantidad de regularización puede compensar datos de entrenamiento de mala calidad o insuficientes.
+
+# Otras regularizaciones
+
+- [[Penalizacion del costo]]
+
 
 # Ejemplo: regresion lineal
 

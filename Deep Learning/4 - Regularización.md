@@ -4,5 +4,9 @@ Puntos clave:
 - [[Penalizacion del costo]]
 - [[Early Stopping]]
 - [[Dropout]]
+- [[Pruning]]
 - [[Aumento de datos (data augmentation)]]
-- 
+- [[Generacion de datos adversarios]]
+- [[Clipping del gradiente]]
+- [[Ruido (regularizacion)]]
+- [[Label Smoothing]]

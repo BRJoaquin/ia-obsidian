@@ -18,3 +18,5 @@ $$
 
 Un valor de Entropía Cruzada Categórica más bajo significa que las predicciones del modelo están más cerca de las etiquetas verdaderas.
 
+![[Pasted image 20231128140945.png]]
+

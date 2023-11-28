@@ -16,7 +16,7 @@ Aunque el propósito principal de Batch Normalization es mejorar la estabilidad 
 
 ## Beneficios de Batch Normalization
 
-1. **Estabilidad del Entrenamiento**: Reduce problemas como el [[Desvanecimiento de gradiente|desvanecimiento]] y [[Explo|explosión]] de gradientes.
+1. **Estabilidad del Entrenamiento**: Reduce problemas como el [[Desvanecimiento de gradiente|desvanecimiento]] y [[Gradiente Explosivo|explosión]] de gradientes.
 2. **Permite Tasas de Aprendizaje Más Altas**: La normalización reduce la dependencia del gradiente en la escala de parámetros o su inicialización.
 3. **Reduce la Necesidad de Inicialización Cuidadosa**: Al normalizar las activaciones, se atenúan los efectos de malas inicializaciones.
 4. **Actúa como Regularizador**: Aunque no es su función principal, ayuda a reducir el sobreajuste.
@@ -39,3 +39,5 @@ modelo.add(BatchNormalization())
 ```
 
 En resumen, Batch Normalization es una técnica fundamental en el entrenamiento de redes neuronales modernas. No solo facilita y estabiliza el proceso de aprendizaje, sino que también ofrece beneficios de regularización, contribuyendo a la construcción de modelos más rápidos, estables y generalizables.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dXB-KQYkzNU?si=cqFVcJv2x8Coe_Oy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

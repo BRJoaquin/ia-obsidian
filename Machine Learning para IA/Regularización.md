@@ -73,4 +73,6 @@ Al igual que con L1, $\alpha$ es un hiperparámetro que controla la fuerza de la
 
 ![[Pasted image 20230708173325.png]]
 
-]]
+# Videos
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iuJgyiS7BKM?si=Qg6npVtDaROiSSQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

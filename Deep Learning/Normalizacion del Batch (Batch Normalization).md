@@ -41,3 +41,4 @@ modelo.add(BatchNormalization())
 En resumen, Batch Normalization es una técnica fundamental en el entrenamiento de redes neuronales modernas. No solo facilita y estabiliza el proceso de aprendizaje, sino que también ofrece beneficios de regularización, contribuyendo a la construcción de modelos más rápidos, estables y generalizables.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dXB-KQYkzNU?si=cqFVcJv2x8Coe_Oy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yXOMHOpbon8?si=m6ltYnjsdQ5J5467" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

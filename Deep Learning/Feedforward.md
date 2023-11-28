@@ -1,17 +1,6 @@
 ![[Pasted image 20231128105430.png]]
 
-## Definición y Conceptos Básicos
-- **Definición**: Feedforward es el proceso por el cual una red neuronal artificial procesa la información de entrada hacia adelante, desde la capa de entrada hasta la capa de salida.
-- **Funcionamiento**: En una red neuronal feedforward, las señales viajan en una sola dirección: de entrada a salida. No hay ciclos o bucles en este tipo de redes.
-  
-## Características Principales
-- **Capas de la Red**: 
-  - **Capa de Entrada**: Recibe los datos de entrada.
-  - **Capas Ocultas**: Realizan cálculos y transformaciones en los datos.
-  - **Capa de Salida**: Produce el resultado final de la red.
-- **Conexiones**: Cada neurona en una capa está conectada a todas las neuronas en la capa siguiente.
-- **Pesos y Sesgos**: Cada conexión tiene un peso, y cada neurona, un sesgo, que se ajustan durante el entrenamiento.
-- **Funciones de Activación**: Se utilizan para introducir no linealidades en el modelo, permitiendo a la red aprender patrones complejos.
+El Feedforward es un proceso fundamental en las redes neuronales profundas (CNN, RNN, etc.) que describe cómo las entradas fluyen a través de la red y cómo se propagan los valores a lo largo de las capas. En este proceso, las entradas se propagan en una sola dirección, de la capa de entrada hacia adelante a través de todas las capas ocultas hasta la capa de salida (capa output).
 
 ## Ejemplo de Código en Python
 

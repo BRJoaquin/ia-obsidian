@@ -1,5 +1,8 @@
 La regularización es un conjunto de técnicas que se utilizan para prevenir el [[Sobreajuste (Overfitting)]] en los modelos de [[Machine Learning]]. El sobreajuste ocurre cuando un modelo aprende demasiado bien los datos de entrenamiento y pierde la capacidad de generalizar sobre nuevos datos desconocidos. Esencialmente, la regularización **agrega una penalización a los parámetros del modelo para reducir su complejidad** y hacer que el modelo sea más robusto a las fluctuaciones en los datos de entrenamiento.
 
+![[Pasted image 20231128141403.png]]
+vease: [[Error esperado]]
+
 En términos más formales, la regularización **modifica la función de pérdida que se está minimizando al agregar un término adicional que penaliza la complejidad del modelo**. Esto a menudo implica restringir los valores de los parámetros del modelo (como los pesos en una red neuronal). La idea es que al agregar esta penalización, se puede equilibrar el trade-off entre [[Sesgo]] y [[Probablidad/Varianza|Varianza]].
 
 Existen varios métodos de regularización, pero los más comunes son la regularización L1 y L2.
@@ -54,26 +57,4 @@ Al igual que con L1, $\alpha$ es un hiperparámetro que controla la fuerza de la
 
 ![[Pasted image 20230708173325.png]]
 
-# Ejemplo: Regresión logística
-
-## Regularización L1 en Regresión Logística
-
-Al igual que con la regresión lineal, en la regresión logística también podemos aplicar la regularización L1, que se traduce en añadir un término de penalización al costo que es proporcional a la suma de los valores absolutos de los coeficientes.
-
-La función de costo de la regresión logística con regularización L1 se ve así:
-
-$$ \text{Costo} = -\frac{1}{m}\sum_{i=1}^{m}[y^{(i)}\log(h_{\theta}(x^{(i)})) + (1-y^{(i)})\log(1-h_{\theta}(x^{(i)}))] + \lambda\sum_{j=1}^{n}|\theta_j| $$
-
-Donde $\lambda$ es el parámetro de regularización.
-
-## Regularización L2 en Regresión Logística
-
-De manera similar, podemos aplicar la regularización L2 a la regresión logística. En este caso, añadimos un término de penalización al costo que es proporcional a la suma de los cuadrados de los coeficientes.
-
-La función de costo de la regresión logística con regularización L2 se ve así:
-
-$$ \text{Costo} = -\frac{1}{m}\sum_{i=1}^{m}[y^{(i)}\log(h_{\theta}(x^{(i)})) + (1-y^{(i)})\log(1-h_{\theta}(x^{(i)}))] + \lambda\sum_{j=1}^{n}\theta_j^2 $$
-
-La elección entre la regularización L1 y L2 depende del problema y de los datos a mano. La regularización L1 puede ser útil cuando sospechamos que solo un pequeño número de características son realmente importantes, ya que puede ayudar a hacer cero los coeficientes de las características menos importantes, efectivamente seleccionando un subconjunto más pequeño de características. La regularización L2, por otro lado, es menos "agresiva" y no fuerza a los coeficientes a ser exactamente cero, lo cual podría ser útil si creemos que todas las características aportan algo a la predicción, aunque sea un pequeño aporte.
-
-![[Pasted image 20230708173534.png]]
+]]

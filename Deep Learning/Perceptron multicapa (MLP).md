@@ -22,8 +22,12 @@ vease [[Capa (DL)]]
    - Unidades de procesamiento que suman ponderadamente las entradas y aplican una función de activación.
 vease [[Neuronas Artificiales]]
 
+![[Pasted image 20231128103736.png]]
+
+
 3. **Pesos y Sesgos**:
    - Elementos ajustables durante el entrenamiento que determinan la fuerza de las conexiones entre neuronas.
+
 ![[Pasted image 20231128103703.jpg]]
 
 ### Funcionamiento
@@ -36,11 +40,14 @@ vease [[Neuronas Artificiales]]
 - **Concepto**: Método para ajustar los pesos y sesgos mediante la minimización de un error.
 - **Gradiente Descendente**: Algoritmo utilizado para actualizar los pesos en la dirección que reduce el error.
 
+vease [[Retropropagación del error]]
+vease [[Decenso de Gradiente]]
+
 ### Entrenamiento
 - **Fases**: 
   1. Propagación hacia adelante: Cálculo de la salida.
-  2. Cálculo del error: Diferencia entre la salida obtenida y la esperada.
-  3. Propagación hacia atrás: Ajuste de pesos y sesgos.
+  2. Cálculo del error: Diferencia entre la salida obtenida y la esperada. vease [[Función de pérdida]]
+  3. Propagación hacia atrás: Ajuste de pesos y sesgos. vease [[Retropropagación del error]]
 
 ## Aplicaciones
 

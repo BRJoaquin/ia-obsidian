@@ -95,6 +95,46 @@ Transfer Learning es una técnica en el campo del Deep Learning que implica reut
 ---
 El uso de Transfer Learning se ha convertido en una práctica estándar en Deep Learning, permitiendo avances significativos en diversas áreas de aplicación. Su capacidad para reducir la cantidad de datos y tiempo necesario para entrenar modelos profundos lo hace especialmente valioso en la era actual de crecimiento exponencial de datos y computación.
 
+## Ejemplo de Feature Extraction
+
+```python
+### Paso 1: Cargar el Modelo Preentrenado (sin las Capas Superiores) 
+base_model = VGG16(weights='imagenet', include_top=False, input_shape=(224, 224, 3))
+### Paso 2: Congelar las Capas del Modelo Base
+for layer in base_model.layers:
+    layer.trainable = False
+### Paso 3: Añadir Nuevas Capas
+x = Flatten()(base_model.output)
+x = Dense(1024, activation='relu')(x)
+predictions = Dense(10, activation='softmax')(x)
+model = Model(inputs=base_model.input, outputs=predictions)
+### Paso 4: Compilar y Entrenar el Modelo
+model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
+# Entrenar el modelo con los datos de entrenamiento
+
+```
+
+## Ejemplo de Fine-Tuning
+
+```python
+### Paso 1: Cargar el Modelo Preentrenado (sin las Capas Superiores)
+base_model = VGG16(weights='imagenet', include_top=False, input_shape=(224, 224, 3))
+### Paso 2: Congelar algunas Capas del Modelo Base
+for layer in base_model.layers[:-4]: # (pueden ser todas)
+    layer.trainable = False
+### Paso 3: Añadir Nuevas Capas
+x = Flatten()(base_model.output)
+x = Dense(1024, activation='relu')(x)
+predictions = Dense(10, activation='softmax')(x)
+model = Model(inputs=base_model.input, outputs=predictions)
+### Paso 4: Compilar y Entrenar el Modelo
+model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
+# Entrenar el modelo con los datos de entrenamiento
+
+```
+
+# Videos y links
+
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5T-iXNNiwIs?si=LkJwUrUbo63wL343" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 

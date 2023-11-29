@@ -12,7 +12,7 @@ Batch Normalization (BN) es una técnica utilizada en redes neuronales para esta
 Aunque el propósito principal de Batch Normalization es mejorar la estabilidad y velocidad del entrenamiento, también tiene efectos de regularización:
 
 - **Reducción del Sobreajuste**: Al normalizar las activaciones en cada capa, BN puede reducir la necesidad de regularizadores como [[Dropout]].
-- **Ruido Implícito**: Cada mini-batch tiene diferentes estadísticas, lo que introduce una forma de ruido en el entrenamiento y puede ayudar a prevenir el sobreajuste. ver [[Ruido (regularizacion)]]
+- **Ruido Implícito**: Cada mini-batch tiene diferentes estadísticas, lo que introduce una forma de ruido en el entrenamiento y puede ayudar a prevenir el sobreajuste. ver [[Inyección de Ruido (regularización)]]
 
 ## Beneficios de Batch Normalization
 

@@ -6,4 +6,5 @@ Puntos clave:
 - [[Negative Log-Likelihood (NLL)]]
 - [[One-hot encoding]]
 - [[Entropía Cruzada Categórica]]
-- [[Función Softmax]]
+- [[Función Softmax]] <--
+- [[Función Sigmoide]] 

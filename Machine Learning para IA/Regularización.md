@@ -39,7 +39,7 @@ Finalmente, es importante destacar que la regularización es una herramienta par
 - [[Aumento de datos (data augmentation)]]
 - [[Generacion de datos adversarios]]
 - [[Clipping del gradiente]]
-- [[Ruido (regularizacion)]]
+- [[Inyección de Ruido (regularización)]]
 - [[Label Smoothing]]
 
 

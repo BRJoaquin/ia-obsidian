@@ -11,5 +11,5 @@ Puntos clave:
 - [[Aumento de datos (data augmentation)]]
 - [[Generacion de datos adversarios]]
 - [[Clipping del gradiente]]
-- [[Ruido (regularizacion)]]
+- [[Inyección de Ruido (regularización)]]
 - [[Label Smoothing]]

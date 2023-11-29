@@ -5,7 +5,6 @@ El Clipping del Gradiente es una técnica de optimización utilizada para estabi
 ## Entendiendo el Problema del Gradiente Explosivo
 
 ver [[Gradiente Explosivo]]
-
 ## Implementación del Clipping del Gradiente
 
 El Clipping del Gradiente aborda este problema limitando o "cortando" los gradientes a un valor máximo. Si el gradiente excede un umbral predefinido, se escala hacia abajo para que su magnitud no sobrepase este umbral. Esto previene los cambios drásticos en los pesos del modelo, lo que a su vez estabiliza el entrenamiento.

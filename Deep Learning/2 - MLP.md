@@ -7,3 +7,4 @@ Puntos clave:
 	- [[Retropropagación del error]]
 - [[Descenso de Gradiente]]
 - [[Descenso de Gradiente Estocástico (Stochastic Gradient Descent, SGD)]]
+- [[Batch]]

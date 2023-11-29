@@ -38,4 +38,4 @@ Un tensor es una entidad matemática y una generalización de conceptos más fam
 
 - **Flexibilidad**: Permite manejar datos de diversas formas y dimensiones.
 - **Eficiencia Computacional**: Optimizado para operaciones matemáticas rápidas, especialmente en GPUs.
-- **Compatibilidad con Herramientas**: Ampliamente soportado por frameworks de deep learning como TensorFlow y PyTorch.
+- **Compatibilidad con Herramientas**: Ampliamente soportado por frameworks de deep learning como [[Tensorflow]] y [[PyTorch]].

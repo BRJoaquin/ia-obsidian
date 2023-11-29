@@ -1,6 +1,3 @@
-
-# Transfer Learning en Deep Learning
-
 ## Concepto de Transfer Learning
 
 ### Definición

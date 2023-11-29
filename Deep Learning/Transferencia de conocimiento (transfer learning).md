@@ -41,6 +41,35 @@ Transfer Learning es una técnica en el campo del Deep Learning que implica reut
   2. Utilizar las salidas de una o varias capas intermedias como características.
   3. Entrenar un nuevo clasificador o modelo con estas características.
 
+
+### Diferencias entre Fine-Tuning y Feature Extraction en Transfer Learning
+
+
+| Aspecto               | Fine-Tuning                                  | Feature Extraction                           |
+|-----------------------|----------------------------------------------|----------------------------------------------|
+| **Uso de Capas**      | Ajusta parámetros de algunas o todas las capas preexistentes. | Usa las capas preexistentes como extractor fijo de características. |
+| **Entrenamiento**     | Entrena tanto las capas preexistentes como las nuevas añadidas. | Entrena solo las capas o clasificadores nuevos añadidos. |
+| **Flexibilidad**      | Mayor flexibilidad para adaptarse a la nueva tarea. | Menor flexibilidad, depende de la efectividad de las características extraídas. |
+| **Recursos Requeridos** | Generalmente requiere más recursos computacionales y datos. | Menos intensivo en recursos, adecuado para conjuntos de datos más pequeños. |
+| **Riesgo de Sobreajuste** | Mayor, especialmente si el conjunto de datos de la nueva tarea es pequeño. | Menor, ya que el modelo base no se ajusta a los nuevos datos. |
+| **Aplicabilidad**     | Preferible cuando las tareas son similares o cuando se dispone de suficientes datos. | Ideal cuando las tareas son significativamente diferentes o cuando los datos son limitados. |
+
+### Ejemplos en Contexto
+
+- **Fine-Tuning**: 
+  - Ajustar un modelo preentrenado en ImageNet para una tarea específica de clasificación de razas de perros.
+  - Requiere descongelar y reentrenar algunas de las capas del modelo preentrenado.
+
+- **Feature Extraction**: 
+  - Usar un modelo preentrenado en ImageNet para extraer características de imágenes y alimentar esas características a un clasificador simple.
+  - Las capas del modelo preentrenado permanecen fijas (no se reentrenan).
+
+### Consideraciones para la Elección
+
+- **Cantidad de Datos**: Fine-Tuning es más efectivo con conjuntos de datos más grandes.
+- **Similitud de las Tareas**: Si las tareas son muy diferentes, Feature Extraction puede ser más apropiado.
+- **Recursos Computacionales**: Fine-Tuning puede requerir más recursos y tiempo.
+
 ## Modelos Preentrenados Populares
 
 1. **Visión por Computadora**:

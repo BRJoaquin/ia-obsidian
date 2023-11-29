@@ -17,7 +17,7 @@ El Aprendizaje Representacional es una faceta del aprendizaje automático donde 
 
 - **Generalización**: Una buena representación puede mejorar la capacidad del modelo para generalizar a partir de los datos de entrenamiento a datos nuevos.
 - **Eficiencia en el Aprendizaje**: Las representaciones adecuadas pueden hacer que el aprendizaje sea más eficiente, requiriendo menos datos o menos recursos computacionales.
-- **Transferibilidad**: Las representaciones aprendidas en una tarea pueden transferirse y ser útiles en otra tarea diferente, facilitando el [[Transferencia|aprendizaje transferido]].
+- **Transferibilidad**: Las representaciones aprendidas en una tarea pueden transferirse y ser útiles en otra tarea diferente, facilitando el [[Transferencia de conocimiento (transfer learning)|aprendizaje transferido]].
 
 ## Aplicaciones
 

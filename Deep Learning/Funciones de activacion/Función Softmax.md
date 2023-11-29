@@ -10,3 +10,7 @@ La función softmax es utilizada comúnmente en problemas de [[Regresión logís
 La relación entre softmax y la regresión logística multinomial radica en que la función softmax permite asignar probabilidades a cada una de las categorías de salida en un problema de clasificación multinomial. Cada elemento del vector de salida softmax representa la probabilidad de pertenecer a una categoría específica, y la suma de todas las probabilidades es igual a 1.
 
 ![[Pasted image 20231129104548.jpg]]
+
+
+# Softmax vs Sigmoide
+

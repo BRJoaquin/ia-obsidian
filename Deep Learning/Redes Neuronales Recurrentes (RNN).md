@@ -6,6 +6,7 @@
 
 ![[What-is-Recurrent-Neural-Network.webp]]
 
+![[Pasted image 20231129201256.png]]
 ### Aplicaciones
 - **Procesamiento del Lenguaje Natural (NLP)**: Traducción automática, generación de texto. ver [[Procesamiento del Lenguaje Natural (NLP)]]
 - **Reconocimiento de Voz**: Transcripción de audio a texto.
@@ -59,10 +60,16 @@
 ### Many-to-One 
 - **Aplicaciones**: Análisis de sentimiento, clasificación de texto. 
 - **Funcionamiento**: Secuencia de entrada produce una única salida. 
+
+![[Pasted image 20231129201421.png]]
+
 ### Many-to-Many 
 - **Aplicaciones**: Traducción de idiomas, transcripción de voz a texto. 
 - **Funcionamiento**: Secuencia de entrada se mapea a secuencia de salida de longitud potencialmente diferente.
 
+![[Pasted image 20231129201435.png]]
+
+![[Pasted image 20231129201511.png]]
 
 ## Desafíos y Mejoras
 

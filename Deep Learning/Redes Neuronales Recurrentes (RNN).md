@@ -37,28 +37,36 @@
 ### RNN Básicas
 - **Modelo Simple**: Adecuado para secuencias cortas.
 
-![[Pasted image 20231129184110.png]]
+![[Pasted image 20231129184110.png|500]]
 ### LSTM (Long Short-Term Memory)
 - **Estructura Mejorada**: Resuelve el problema del desvanecimiento del gradiente.
 - **Puertas de Memoria**: Controlan el flujo de información, permitiendo retener o descartar datos.
 
+![[Pasted image 20231129184706.png|500]]
 ### GRU (Gated Recurrent Unit)
 - **Variante de LSTM**: Más simple y a menudo tan efectiva como LSTM.
 - **Menos Puertas**: Facilita y acelera el entrenamiento.
 
+![[Pasted image 20231129184720.png|500]]
 ## Variantes de RNN 
-## Variantes de RNN 
+
+![[Pasted image 20231129184330.png]]
 ### One-to-Many 
 - **Aplicaciones**: Generación de música, imágenes a partir de descripciones. 
 - **Funcionamiento**: Una única entrada produce una secuencia de salidas. 
-
 ### Many-to-One 
 - **Aplicaciones**: Análisis de sentimiento, clasificación de texto. 
 - **Funcionamiento**: Secuencia de entrada produce una única salida. 
- 
 ### Many-to-Many 
 - **Aplicaciones**: Traducción de idiomas, transcripción de voz a texto. 
 - **Funcionamiento**: Secuencia de entrada se mapea a secuencia de salida de longitud potencialmente diferente.
+
+### Dependencias a Largo Plazo 
+- **Problema**: Dificultad para conectar información a través de largas secuencias. 
+- **Soluciones**: Uso de LSTM o GRU para mejorar la retención de memoria. 
+### Eficiencia Computacional 
+- **Problema**: Alto costo computacional debido a la naturaleza secuencial del procesamiento.
+- **Soluciones**: Optimizaciones en hardware, paralelización de procesos.
 
 ## Desafíos y Mejoras
 
@@ -73,5 +81,9 @@
 
 Las RNN son una herramienta poderosa en el ámbito del aprendizaje automático, especialmente útil para datos secuenciales. Aunque enfrentan desafíos como el desvanecimiento del gradiente, las innovaciones como LSTM y GRU ofrecen soluciones efectivas. Su aplicación en campos como NLP y series temporales demuestra su versatilidad y potencial.
 
----
+
+# Links y videos
+
+- http://dprogrammer.org/rnn-lstm-gru
+- 
 

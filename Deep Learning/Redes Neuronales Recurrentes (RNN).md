@@ -81,7 +81,7 @@ Las RNN son una herramienta poderosa en el ámbito del aprendizaje automático, 
 # Links y videos
 
 - http://dprogrammer.org/rnn-lstm-gru
-- 
+- https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-recurrent-neural-networks#overview
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/y9PLF2GsD-c?si=MOR8W-6R17sBY4v9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

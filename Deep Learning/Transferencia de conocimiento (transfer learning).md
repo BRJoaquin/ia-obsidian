@@ -3,6 +3,8 @@
 ### Definición
 Transfer Learning es una técnica en el campo del Deep Learning que implica reutilizar un modelo preentrenado en una tarea y adaptarlo para una nueva tarea relacionada. Esta técnica es particularmente útil cuando se dispone de un conjunto de datos limitado para la nueva tarea.
 
+![[1_9GTEzcO8KxxrfutmtsPs3Q.webp]]
+
 ### Ventajas
 - **Eficiencia en el Aprendizaje**: Reduce el tiempo y los recursos computacionales necesarios para entrenar modelos profundos.
 - **Mejora de la Precisión**: Permite aprovechar datos y características aprendidas en tareas con grandes conjuntos de datos, mejorando la precisión en tareas con menos datos.
@@ -94,27 +96,9 @@ Transfer Learning es una técnica en el campo del Deep Learning que implica reut
 El uso de Transfer Learning se ha convertido en una práctica estándar en Deep Learning, permitiendo avances significativos en diversas áreas de aplicación. Su capacidad para reducir la cantidad de datos y tiempo necesario para entrenar modelos profundos lo hace especialmente valioso en la era actual de crecimiento exponencial de datos y computación.
 
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5T-iXNNiwIs?si=LkJwUrUbo63wL343" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DyPW-994t7w?si=nek7rhakhUD50Ttw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4NgPVGt67Es?si=Zdi5M8cvLbkBAEBq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 

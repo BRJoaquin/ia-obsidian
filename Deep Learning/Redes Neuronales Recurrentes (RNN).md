@@ -83,3 +83,9 @@ Las RNN son una herramienta poderosa en el ámbito del aprendizaje automático, 
 - http://dprogrammer.org/rnn-lstm-gru
 - 
 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/y9PLF2GsD-c?si=MOR8W-6R17sBY4v9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6niqTuYFZLQ?si=RWUBofW8ekiT0Zws" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+

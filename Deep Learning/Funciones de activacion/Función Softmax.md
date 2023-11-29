@@ -13,4 +13,17 @@ La relación entre softmax y la regresión logística multinomial radica en que 
 
 
 # Softmax vs Sigmoide
+ver [[Sigmoide]]
+### Diferencias Clave
 
+1. **Rango de Salida**:
+   - Sigmoid: Produce un valor entre 0 y 1 para cada entrada, adecuado para [[Clasificación|clasificación]] binaria.
+   - Softmax: Produce una distribución de probabilidad sobre múltiples clases, donde la suma de todas las probabilidades es 1.
+
+2. **Casos de Uso**:
+   - Sigmoid: Utilizado para tareas de clasificación binaria y en las capas ocultas de redes neuronales para la transformación de características.
+   - Softmax: Utilizado para la clasificación multi-clase para obtener probabilidades de clase.
+
+3. **Independencia**:
+   - Sigmoid: Aplica la función de manera independiente a cada elemento del vector de entrada.
+   - Softmax: Considera todo el vector y lo normaliza para producir una distribución de probabilidad.

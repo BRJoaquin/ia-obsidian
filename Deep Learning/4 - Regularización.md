@@ -1,9 +1,10 @@
 Puntos clave:
 - [[Error esperado]]
 - [[Regularización]]
-- [[Regularización#Regularización L1 (Lasso)]]
-- [[Regularización#Regularización L2 (Ridge)]]
+
 - [[Penalización del costo]]
+	- [[Regularización#Regularización L1 (Lasso)]]
+	- [[Regularización#Regularización L2 (Ridge)]]
 - [[Early Stopping]]
 - [[Dropout]]
 - [[Pruning]]

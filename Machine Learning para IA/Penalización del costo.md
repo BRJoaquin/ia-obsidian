@@ -2,6 +2,8 @@
 
 La regularización es una estrategia fundamental en aprendizaje automático para prevenir el sobreajuste, facilitando que el modelo generalice mejor a nuevos datos. Se implementa añadiendo un término de penalización al coste de la función de pérdida.
 
+Las dos mas conocidas son [[Regularización#Regularización L1 (Lasso)]] y [[Regularización#Regularización L2 (Ridge)]]
+
 ## Función de Coste con Regularización
 
 La función de coste con [[Regularización|regularización]] se expresa como:
@@ -38,6 +40,12 @@ El gráfico adjunto ilustra la relación entre el error cuadrático medio (MSE) 
   - **Curva Verde**: Representa la varianza.
 
 El punto de cruce de las curvas indica un valor de $\lambda$ equilibrado que minimiza tanto el sesgo como la varianza.
+
 ## Conclusión
 
 La selección adecuada de $\lambda$ es crucial para el rendimiento del modelo, buscando un balance entre sesgo y varianza para una buena generalización.
+
+
+
+
+

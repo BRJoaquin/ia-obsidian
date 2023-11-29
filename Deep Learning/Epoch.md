@@ -20,18 +20,18 @@ Una epoch en el contexto del deep learning y el entrenamiento de redes neuronale
 
 ### Aprendizaje Progresivo
 
-- Con cada epoch, la red neuronal ajusta progresivamente sus parámetros internos para mejorar el rendimiento en la tarea específica.
+- Con cada epoch, la red neuronal ajusta progresivamente sus [[Parametros aprendibles (Learnable Parameters)|parámetros internos]] para mejorar el rendimiento en la tarea específica.
 - Las epochs permiten que la red "vea" cada muestra múltiples veces, lo que es crucial para el aprendizaje efectivo.
 
 ### Balance Entre Aprendizaje y Sobreajuste
 
-- Demasiadas epochs pueden llevar a un sobreajuste, donde la red se desempeña bien en los datos de entrenamiento pero mal en datos nuevos.
-- Por otro lado, muy pocas epochs pueden resultar en un modelo subajustado, sin aprender suficientemente de los datos de entrenamiento.
+- Demasiadas epochs pueden llevar a un [[Sobreajuste (Overfitting)|sobreajuste]], donde la red se desempeña bien en los datos de entrenamiento pero mal en datos nuevos.
+- Por otro lado, muy pocas epochs pueden resultar en un modelo [[Subajuste (Underfitting)|subajustado]], sin aprender suficientemente de los datos de entrenamiento.
 
 ### Monitoreo y Ajuste
 
 - Durante el entrenamiento, se monitorea el rendimiento del modelo después de cada epoch, especialmente en el conjunto de validación.
-- Este monitoreo ayuda a ajustar hiperparámetros como la tasa de aprendizaje o a implementar técnicas como la detención temprana para evitar el sobreajuste.
+- Este monitoreo ayuda a ajustar [[Hiperparámetro|hiperparámetros]] como la [[Taza de aprendizaje|tasa de aprendizaje]] o a implementar técnicas como la [[Early Stopping|detención temprana]] para evitar el [[Sobreajuste (Overfitting)|sobreajuste]].
 
 ## Impacto en el Rendimiento del Modelo
 

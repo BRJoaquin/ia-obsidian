@@ -120,7 +120,7 @@ model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accur
 ### Paso 1: Cargar el Modelo Preentrenado (sin las Capas Superiores)
 base_model = VGG16(weights='imagenet', include_top=False, input_shape=(224, 224, 3))
 ### Paso 2: Congelar algunas Capas del Modelo Base
-for layer in base_model.layers[:-4]: # (pueden ser todas)
+for layer in base_model.layers[:-4]: # <-- (pueden ser todas)
     layer.trainable = False
 ### Paso 3: Añadir Nuevas Capas
 x = Flatten()(base_model.output)

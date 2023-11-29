@@ -36,6 +36,8 @@
 
 ### RNN Básicas
 - **Modelo Simple**: Adecuado para secuencias cortas.
+- **Problema**: Dificultad para conectar información a través de largas secuencias. 
+- **Soluciones**: Uso de LSTM o GRU para mejorar la retención de memoria. 
 
 ![[Pasted image 20231129184110.png|500]]
 ### LSTM (Long Short-Term Memory)
@@ -61,22 +63,16 @@
 - **Aplicaciones**: Traducción de idiomas, transcripción de voz a texto. 
 - **Funcionamiento**: Secuencia de entrada se mapea a secuencia de salida de longitud potencialmente diferente.
 
-### Dependencias a Largo Plazo 
-- **Problema**: Dificultad para conectar información a través de largas secuencias. 
-- **Soluciones**: Uso de LSTM o GRU para mejorar la retención de memoria. 
-### Eficiencia Computacional 
-- **Problema**: Alto costo computacional debido a la naturaleza secuencial del procesamiento.
-- **Soluciones**: Optimizaciones en hardware, paralelización de procesos.
 
 ## Desafíos y Mejoras
 
 ### Problemas Comunes
 - **Desvanecimiento y Explosión del Gradiente**: Afecta la capacidad de aprendizaje.
+- **Secuencialidad**: Alto costo computacional debido a la naturaleza secuencial del procesamiento.
 
 ### Técnicas de Mejora
-- **Recorte del Gradiente**: Mitiga la explosión del gradiente.
+- **Recorte del Gradiente**: Mitiga la explosión del gradiente. ver [[Clipping del gradiente]]
 - **Incorporación de Atención**: Mejora el manejo de secuencias largas.
-
 ## Conclusión
 
 Las RNN son una herramienta poderosa en el ámbito del aprendizaje automático, especialmente útil para datos secuenciales. Aunque enfrentan desafíos como el desvanecimiento del gradiente, las innovaciones como LSTM y GRU ofrecen soluciones efectivas. Su aplicación en campos como NLP y series temporales demuestra su versatilidad y potencial.

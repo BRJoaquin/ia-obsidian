@@ -8,3 +8,5 @@ $$
 La función softmax es utilizada comúnmente en problemas de [[Regresión logística#Regresión logística multinomial (Softmax)]] En la regresión logística multinomial, se busca clasificar una variable dependiente categórica con más de dos categorías utilizando una combinación lineal de variables independientes. La función softmax se aplica a la salida de la combinación lineal para obtener una distribución de probabilidad sobre las distintas categorías.
 
 La relación entre softmax y la regresión logística multinomial radica en que la función softmax permite asignar probabilidades a cada una de las categorías de salida en un problema de clasificación multinomial. Cada elemento del vector de salida softmax representa la probabilidad de pertenecer a una categoría específica, y la suma de todas las probabilidades es igual a 1.
+
+![[Pasted image 20231129104548.jpg]]

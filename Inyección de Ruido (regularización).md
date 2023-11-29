@@ -1,14 +1,12 @@
-# Inyección de Ruido en las Etiquetas de Salida para Regularización
-
 ## Concepto y Objetivo
 
-La inyección de ruido en las etiquetas de salida es una técnica de [[Regularización|regularización]] en deep learning que consiste en modificar intencionalmente las etiquetas de los datos de entrenamiento. Esta modificación se realiza asumiendo que algunas etiquetas pueden contener errores o no ser completamente precisas. El objetivo es prevenir el sobreajuste, especialmente en situaciones donde la maximización del logaritmo de la probabilidad condicional \( \log p(y | x) \) puede ser perjudicial debido a etiquetas incorrectas.
+La inyección de ruido en las etiquetas de salida es una técnica de [[Regularización|regularización]] en deep learning que consiste en modificar intencionalmente las etiquetas de los datos de entrenamiento. Esta modificación se realiza asumiendo que algunas etiquetas pueden contener errores o no ser completamente precisas. El objetivo es prevenir el [[Sobreajuste (Overfitting)|sobreajuste]], especialmente en situaciones donde la maximización del logaritmo de la [[Probabilidad condicional|probabilidad condicional]] $\log p(y | x)$ puede ser perjudicial debido a etiquetas incorrectas.
 
 ## Mecanismo y Ejemplo: Label Smoothing
 
 ### Label Smoothing
 
-- **Definición**: Regulariza modelos basados en softmax suavizando las etiquetas de clasificación.
+- **Definición**: Regulariza modelos basados en [[Función Softmax|softmax]] suavizando las etiquetas de clasificación.
 - **Implementación**: En lugar de utilizar etiquetas "duras" (0 o 1), se emplean objetivos "suaves", es decir, valores ligeramente ajustados hacia una distribución más uniforme.
 - **Ejemplo**: Para una clasificación con \( k \) categorías y una pequeña constante \( \epsilon \), una etiqueta correcta de 1 se reemplaza por \( 1 - \epsilon \), y una etiqueta incorrecta de 0 se reemplaza por \( \frac{\epsilon}{k - 1} \).
 

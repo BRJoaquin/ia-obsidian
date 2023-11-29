@@ -7,4 +7,4 @@ Puntos clave:
 - [[One-hot encoding]]
 - [[Entropía Cruzada Categórica]]
 - [[Función Softmax]] <--
-- [[Función Sigmoide]] 
+- [[Función Sigmoide]] <--  

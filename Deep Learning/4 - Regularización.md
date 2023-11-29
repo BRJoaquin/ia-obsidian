@@ -12,4 +12,4 @@ Puntos clave:
 - [[Generacion de datos adversarios]]
 - [[Clipping del gradiente]]
 - [[Inyección de Ruido (regularización)]]
-- [[Label Smoothing]]
+- [[Inyección de Ruido (regularización)#Label Smoothing]]

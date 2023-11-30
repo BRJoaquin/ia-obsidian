@@ -271,15 +271,50 @@ Los resultados son alentadores: en promedio, nuestro agente CFR-MCTS sostiene un
 ![[Pasted image 20231129223830.png]]
 
 La gráfica muestra la evolución de las recompensas promedio durante el entrenamiento del agente CFR-MCTS. Se observa que, después de un ascenso inicial, el agente mantiene un rendimiento consistente a lo largo de 10,000 iteraciones de entrenamiento, reafirmando la estabilidad de la estrategia aprendida frente a oponentes aleatorios.
-#### Reflexiones y Pasos a Seguir
-
-- **Análisis y Optimización de Parámetros**: Para futuras investigaciones, es crítico profundizar en la evaluación y ajuste de los parámetros de MCTS. Esto implicará un análisis exhaustivo de los resultados obtenidos y la experimentación con diversas configuraciones de parámetros, buscando optimizar aún más la estrategia del agente.
-
-- **Evolución de la Estrategia**: Será importante monitorear cómo evoluciona la estrategia del agente a lo largo de las iteraciones para comprender mejor las decisiones tácticas y ajustes estratégicos realizados por el agente.
-
-- **Comparación con Otras Técnicas**: Un paso clave será comparar el rendimiento de MCTS con otras técnicas de estimación de valor, como funciones de evaluación específicas, para evaluar de manera comprensiva la efectividad de MCTS en Leduc Poker.
 
 > Nota: Se recomienda precaución al intentar replicar este entrenamiento, debido al extenso tiempo y recursos computacionales que requiere.
 
+# Conclusión
+
+Este proyecto ha explorado la aplicación de técnicas avanzadas de aprendizaje por refuerzo en juegos de múltiples jugadores con información imperfecta, centrándose en el Counterfactual Regret Minimization (CFR) y Monte Carlo Tree Search (MCTS).
+
+## Principales Logros
+
+- **Implementación Exitosa de CFR**: La implementación de CFR y su extensión `EnhancedCounterFactualRegret` han demostrado la viabilidad de mejorar la eficiencia del algoritmo mediante la estimación de valor en profundidades específicas en el contexto de juegos como Kuhn Poker.
+
+- **Efectividad de MCTS en Leduc Poker**: MCTS ha probado ser una herramienta efectiva en Leduc Poker, un juego con mayor complejidad estratégica, superando consistentemente a los agentes con decisiones aleatorias.
+
+## Observaciones Clave
+
+- Las funciones de evaluación 'hardcodeadas' han mostrado un impacto significativo en la estrategia y toma de decisiones de los agentes.
+- Se destacó la importancia de un equilibrio entre exploración y explotación en MCTS, un reto crucial en juegos con espacios de estado amplios y elementos de incertidumbre.
+- Se identificaron retos específicos de la implementación en juegos de información imperfecta, ofreciendo insights sobre cómo superarlos.
+
+## Direcciones Futuras
+
+Para investigaciones futuras, se identifican caminos prometedores:
+
+1. **Contraste con Agentes Avanzados**: Contrastar el rendimiento de nuestros agentes con otros más avanzados proporcionará una comprensión más profunda del estado competitivo en juegos complejos.
+
+2. **Refinamiento de Algoritmos**: Hay un potencial considerable para el ajuste fino de los algoritmos, buscando optimizaciones a través de la variación de parámetros y técnicas.
+
+3. **Extensión a Nuevos Juegos**: Aplicar las técnicas desarrolladas a otros juegos de información imperfecta podría revelar más sobre la generalización y adaptabilidad de estas estrategias.
+
+En conclusión, hemos sentado una base sólida para la utilización de técnicas de aprendizaje por refuerzo avanzadas en juegos de estrategia de múltiples jugadores y hemos abierto la puerta a futuras exploraciones en el campo de la inteligencia artificial en juegos.
 
 
+# Descargo de Responsabilidad
+
+## Participación de la Inteligencia Artificial en la Composición del Texto
+
+Este documento incluye secciones cuya composición textual ha sido asistida por una Inteligencia Artificial (IA). Es importante destacar que, aunque la IA ha contribuido en la redacción de ciertas partes del texto para mejorar la claridad y estructura del mismo, los siguientes elementos son enteramente responsabilidad del alumno:
+
+- **Desarrollo del Código**: Todo el código presente en este trabajo ha sido desarrollado y escrito por el alumno, reflejando su comprensión y aplicación práctica de los conceptos aprendidos.
+
+- **Conclusiones**: Las conclusiones extraídas de la experimentación y análisis son fruto del criterio y razonamiento del alumno, basadas en los resultados obtenidos y las observaciones realizadas durante el desarrollo del proyecto.
+
+- **Decisiones Metodológicas y Conceptuales**: Todas las decisiones relacionadas con la metodología, enfoque del proyecto, y la interpretación de los conceptos teóricos son producto del trabajo independiente del alumno.
+
+## Propósito de la Asistencia de IA
+
+El uso de la IA se ha limitado a proporcionar asistencia en la redacción para facilitar una comunicación clara y efectiva. En ningún momento, la IA ha influido en las decisiones técnicas, analíticas o conceptuales que conforman la esencia y los resultados del proyecto.

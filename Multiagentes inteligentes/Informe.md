@@ -83,7 +83,7 @@ Podemos observar que la estrategia aprendida por el agente CFR es mucho más efe
 
 #### CFR vs CFR
 
-En una segunda fase, experimentamos enfrentando dos agentes que utilizan el algoritmo CFR. Los resultados de estos enfrentamientos apuntan a un interesante fenómeno en la teoría de juegos:
+En una segunda fase, experimentamos enfrentando dos agentes que utilizan el algoritmo CFR. Los resultados de estos enfrentamientos apuntan a un interesante fenómeno en la teoría de juegos.
 
 Podemos concluir que llegamos a un [Equilibrio de Nash](https://es.wikipedia.org/wiki/Equilibrio_de_Nash), donde el primer jugador (jugador 1) tiene una recompensa esperada de aproximadamente 1/18:
 
@@ -91,13 +91,33 @@ Podemos concluir que llegamos a un [Equilibrio de Nash](https://es.wikipedia.org
 
 Estos resultados son indicativos de la robustez y efectividad del algoritmo CFR en la búsqueda de estrategias óptimas en juegos de información imperfecta.
 
+![[Pasted image 20231129221138.png]]
+
 #### Conclusión de la Experimentación en Kuhn Poker con 2 Jugadores
 
 Tras las series de experimentaciones realizadas en el contexto del Kuhn Poker con 2 jugadores, podemos concluir satisfactoriamente que el algoritmo Counterfactual Regret Minimization alcanzó su objetivo. Los resultados indican que el agente CFR fue capaz de aprender y adaptarse eficientemente a las dinámicas del juego, superando significativamente a un oponente que toma decisiones de manera aleatoria.
 
 La parte más relevante de estos experimentos fue la confirmación de que el agente CFR, cuando se enfrenta a un oponente que también utiliza una estrategia basada en CFR, llega a un Equilibrio de Nash. Este resultado es un hito importante, ya que demuestra la capacidad del algoritmo CFR para encontrar estrategias que son óptimas en un sentido teórico y práctico, incluso en un entorno de juego tan simplificado y abstracto como el Kuhn Poker.
 
+### Kuhn Poker con 3 Jugadores
 
+La extensión de nuestro estudio al Kuhn Poker de tres jugadores representa un paso hacia un entorno de juego más complejo y desafiante. Este formato introduce una dinámica adicional y requiere estrategias más sofisticadas debido a la presencia de un tercer jugador. Esta variante nos permite examinar la adaptabilidad y el rendimiento del algoritmo CFR en un contexto más intrincado.
+
+#### CFR vs CFR vs CFR
+
+En esta etapa, llevamos a cabo un experimento donde tres agentes, cada uno operando con el algoritmo CFR, compitieron entre sí. 
+
+#### Hipótesis de Utilidad: \( u_1 < u_2 < u_3 \)
+
+Anticipamos una relación específica en las utilidades de los tres agentes, con el tercer jugador (\( u_3 \)) obteniendo la mayor utilidad, seguido por el segundo (\( u_2 \)) y el primero (\( u_1 \)). Esta hipótesis se basa en la ventaja del tercer jugador al actuar último en cada ronda, obteniendo así más información que los otros dos jugadores. Esta fase nos brinda insights valiosos sobre las dinámicas de juegos con información imperfecta y las estrategias óptimas en tales entornos.
+
+### Resultados de la Experimentación
+
+Los resultados confirman nuestra hipótesis inicial: el tercer jugador obtiene consistentemente la mayor utilidad, seguido por el segundo y luego el primer jugador.
+
+> "A family of Nash equilibria for 3-player Kuhn poker is known analytically, which makes it the largest game with more than two players with analytic solution. The family is parameterized using 4–6 parameters (depending on the chosen equilibrium). In all equilibria, player 1 has a fixed strategy, and he always checks as the first action; player 2's utility is constant, equal to –1/48 per hand. The discovered equilibrium profiles show an interesting feature: by adjusting a strategy parameter $\beta$ (between 0 and 1), player 2 can freely shift utility between the other two players while still remaining in equilibrium; player 1's utility is equal to $-\frac{1+2\beta}{48}$ (which is always worse than player 2's utility), player 3's utility is $\frac{1+\beta}{24}$." - [Wikipedia](https://en.wikipedia.org/wiki/Kuhn_poker#3-player_Kuhn_Poker)
+
+Estos hallazgos corroboran las teorías existentes y demuestran la consistencia del algoritmo CFR con las expectativas teóricas en juegos de múltiples jugadores.
 
 
 

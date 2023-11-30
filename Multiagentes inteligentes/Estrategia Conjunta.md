@@ -7,3 +7,6 @@ En el análisis de juegos, las estrategias conjuntas son cruciales para entender
 ![[Pasted image 20231130094053.png]]
 
 ![[Pasted image 20231130110956.png]]
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aa8USttcDoE?si=97ZIIhA9WzGpHnwE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

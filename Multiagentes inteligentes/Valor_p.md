@@ -1,0 +1,2 @@
+
+El valor para un jugador en una estrategia conjunta es el valor esperado de las recompensas que el jugador obtendrá al seguir esa estrategia. Matemáticamente, este valor, denotado por $V_p(\pi)$ para el jugador $p$ y la estrategia conjunta $\pi$, se calcula como sigue:

@@ -3,4 +3,4 @@
 - [[Estrategias Estocásticas (Mixtas)]]
 - [[Estrategia Conjunta]]
 - [[Soporte]]
-- 
+- [[Valor_p]]

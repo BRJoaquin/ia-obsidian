@@ -37,6 +37,8 @@ $$
 V_1(\pi) = \sum_{a \in A} \pi(a) R_1(a) = - \sum_{a \in A} \pi(a) R_2(a) = -V_2(\pi)
 $$
 
+![[Pasted image 20231130114120.png]]
+
 Para el juego "Matching Pennies", consideramos la estrategia mixta de jugador 2, $\pi_2 = (h_2, t_2) = (\frac{1}{3}, \frac{2}{3})$. La mejor respuesta de jugador 1, $\pi_1$, a esta estrategia sería aquella que maximiza su utilidad esperada $V_1(\pi_1, \pi_2)$.
 
 La utilidad esperada para jugador 1 se calcula como:
@@ -58,6 +60,7 @@ $$
 $$
 V_1(\pi_1, \pi_2) = -\frac{2}{3}h_1 + \frac{1}{3}
 $$
+![[Pasted image 20231130114200.png]]
 
 Para encontrar la mejor respuesta, buscamos el valor de $h_1$ que maximice $V_1(\pi_1, \pi_2)$. Dado que $V_1$ disminuye a medida que $h_1$ aumenta, la mejor respuesta para el jugador 1 es minimizar $h_1$, que es $h_1 = 0$. Entonces, la mejor respuesta de jugador 1, cuando jugador 2 juega $\pi_2$, es jugar "Tails" todo el tiempo (estrategia pura $t_1 = 1$).
 

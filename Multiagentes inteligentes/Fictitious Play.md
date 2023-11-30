@@ -45,6 +45,8 @@ El juego ficticio es un mecanismo de aprendizaje y una herramienta analítica qu
     
 4. **Estrategias Estacionarias**: El juego ficticio asume que los jugadores creen que los demás están jugando estrategias estacionarias, lo cual puede no ser cierto, especialmente en juegos dinámicos donde los jugadores pueden adaptar sus estrategias constantemente.
 
+![[Pasted image 20231130163624.png]]
+
 **¿Cómo se Aplica el Juego Ficticio?**
 
 El juego ficticio puede ser aplicado en juegos reales a medida que suceden, o en un entorno simulado para entrenar a los jugadores (o algoritmos) antes de jugar en un escenario real. En el primer caso, los jugadores actualizan sus creencias y estrategias sobre la marcha, basándose en la información recopilada durante el juego. En el segundo caso, se puede simular el juego muchas veces para que los jugadores o algoritmos aprendan las mejores respuestas a través de la experiencia antes de enfrentarse a situaciones reales.

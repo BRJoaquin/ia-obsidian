@@ -19,47 +19,15 @@ Si el jugador 1 elige la Estrategia X y el jugador 2 la Estrategia A, los pagos 
 
 El equilibrio de Nash se encuentra en una celda donde ninguno de los jugadores tiene incentivo para cambiar su estrategia. En este caso, la celda (3, 2) es un equilibrio de Nash.
 
-## Aplicaciones
-
-El concepto de equilibrio de Nash tiene aplicaciones en muchos campos como:
-
-- Economía
-- Biología
-- Política
-
-Puede proporcionar una forma de analizar cómo los individuos toman decisiones en situaciones estratégicas, teniendo en cuenta las acciones de los demás.
-
 # Equilibrio de Nash en Sistemas Multiagentes Inteligentes
 
-El equilibrio de Nash, originario de la **teoría de juegos**, encuentra aplicaciones en sistemas multiagentes inteligentes. En este contexto, los agentes inteligentes interactúan entre sí, y el equilibrio de Nash describe una situación en la que ninguno de los agentes tiene incentivo para cambiar su estrategia, dado lo que hacen los demás.
+El equilibrio de Nash, originario de la [[Teoría de Juegos|teoría de juegos]], encuentra aplicaciones en [[Sistema multiagente|sistemas multiagentes inteligentes]]. En este contexto, los agentes inteligentes interactúan entre sí, y el equilibrio de Nash describe una situación en la que ninguno de los agentes tiene incentivo para cambiar su estrategia, dado lo que hacen los demás.
 
-## Conceptos Clave
+El Equilibrio de Nash puede ser puro o mixto:
 
-### 1. Agentes Inteligentes
-Los agentes son entidades autónomas que toman decisiones basadas en información y reglas. En un sistema multiagente, los agentes interactúan y pueden colaborar o competir entre sí.
+- **Equilibrio de Nash Puro**: Cada jugador elige una estrategia específica y no cambia su elección a lo largo del tiempo. Esto es común en juegos estáticos donde los jugadores toman una decisión simultáneamente.
+    
+- **Equilibrio de Nash Mixto**: Los jugadores eligen una estrategia aleatoria según una distribución de probabilidad fija. Esto es relevante en juegos con un elemento de azar o incertidumbre, donde las estrategias mixtas pueden estabilizar el juego al hacer que las intenciones de los jugadores sean menos predecibles.
 
-### 2. Estrategias
-Las estrategias representan los planes de acción que los agentes seguirán. Pueden incluir algoritmos de aprendizaje automático, lógica difusa, o cualquier mecanismo de decisión.
 
-### 3. Interacciones
-Las interacciones entre agentes pueden modelarse como juegos. Esto permite utilizar conceptos de la teoría de juegos, como el equilibrio de Nash, para analizar y predecir el comportamiento del sistema.
-
-## Aplicación en Multiagentes
-
-### - Coordinación y Colaboración
-El equilibrio de Nash puede ayudar a coordinar las acciones de los agentes para alcanzar metas comunes o evitar conflictos.
-
-### - Competencia y Negociación
-En situaciones competitivas, el equilibrio de Nash puede describir cómo los agentes competirán de manera óptima. En la negociación, puede ayudar a alcanzar acuerdos estables.
-
-### - Aprendizaje y Adaptación
-Los agentes pueden utilizar técnicas de aprendizaje para alcanzar el equilibrio de Nash, adaptándose a las acciones de los demás agentes.
-
-## Ejemplo: Subasta
-
-En una subasta con varios agentes que pujan por un artículo, el equilibrio de Nash puede representar una situación en la que ninguno de los agentes tiene incentivo para cambiar su puja, dado lo que pujan los demás.
-
-## Conclusión
-
-El equilibrio de Nash en sistemas multiagentes inteligentes abre nuevas posibilidades en el diseño y análisis de sistemas complejos y dinámicos. Facilita la coordinación, colaboración, y adaptación en un entorno donde los agentes tienen objetivos y restricciones diversas.
-
+Sin embargo, el Equilibrio de Nash no necesariamente garantiza que el resultado sea óptimo desde el punto de vista del grupo o de la sociedad. A veces, el equilibrio puede llevar a un "equilibrio ineficiente" o a un "equilibrio subóptimo", donde los jugadores se asientan en un estado que no es socialmente óptimo, un fenómeno conocido como la "Tragedia de los Comunes".

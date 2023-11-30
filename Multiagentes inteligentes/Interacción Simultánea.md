@@ -1,0 +1,4 @@
+- En la interacción simultánea, todos los agentes en el sistema actúan al mismo tiempo durante cada ciclo de tiempo o ronda.
+- Esto significa que las decisiones de un agente se toman sin conocer las decisiones contemporáneas de los otros agentes.
+- Este tipo de interacción es común en entornos donde los eventos ocurren de manera paralela y continua, y donde la coordinación entre agentes requiere anticipar o reaccionar a las acciones de otros sin información directa y actualizada sobre esas acciones.
+- Ejemplos incluyen juegos estratégicos donde todos los jugadores mueven sus piezas al mismo tiempo, o mercados financieros donde múltiples traders realizan transacciones de manera concurrente.

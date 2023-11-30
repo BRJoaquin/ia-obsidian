@@ -1,0 +1,4 @@
+- En la interacción alternada, los agentes actúan uno después del otro, en un orden específico o aleatorio.
+- Cada agente tiene la oportunidad de observar y reaccionar a las acciones de los agentes que actuaron antes que él en cada ronda.
+- Este modo es típico en escenarios donde las acciones se suceden en turnos, permitiendo una adaptación y respuesta más directa a las acciones de los demás agentes.
+- Un ejemplo clásico serían los juegos de mesa como el ajedrez, donde los jugadores se mueven uno tras otro, adaptando sus estrategias basándose en los movimientos del oponente.

@@ -1,5 +1,8 @@
 Un sistema multiagente (MAS, por sus siglas en inglés) es un tipo de sistema compuesto por varios agentes inteligentes, autónomos y posiblemente heterogéneos. En el contexto de la inteligencia artificial, estos agentes son entidades computacionales que pueden percibir su entorno y actuar sobre él para alcanzar sus objetivos.
 
+![[Pasted image 20231130090528.png]]
+
+
 Características clave de los sistemas multiagente:
 
 1. **Autonomía**: Cada agente en el sistema tiene su propia capacidad para tomar decisiones basadas en su percepción del entorno, sus objetivos y su conocimiento.
@@ -25,3 +28,5 @@ Usos y aplicaciones de los sistemas multiagente:
     
 
 En tu campo de estudio y trabajo, los sistemas multiagente pueden ofrecer un enfoque interesante para resolver problemas complejos de manera distribuida, especialmente en entornos dinámicos y en aplicaciones de e-commerce y web, donde la interacción entre diferentes entidades (usuarios, servicios, recursos) es fundamental.
+
+![[Pasted image 20231130090542.png]]

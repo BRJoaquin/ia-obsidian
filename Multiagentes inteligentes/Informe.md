@@ -4,7 +4,7 @@
 
 # Introducción
 
-En este trabajo, exploramos la implementación y experimentación de algoritmos de aprendizaje avanzados en el contexto de juegos alternados de múltiples jugadores. Nos enfocamos específicamente en dos algoritmos clave: CFR (Counterfactual Regret Minimization) y MCTS (Monte Carlo Tree Search), aplicados a variantes de póker. Nuestro objetivo es no solo implementar estos algoritmos sino también investigar su rendimiento y efectividad en diferentes escenarios de juego.
+En este trabajo, exploramos la implementación y experimentación de algoritmos de aprendizaje avanzados en el contexto de juegos alternados de múltiples jugadores. Nos enfocamos específicamente en dos algoritmos clave: **CFR** (Counterfactual Regret Minimization) y **MCTS** (Monte Carlo Tree Search), aplicados a variantes de póker. Nuestro objetivo es no solo implementar estos algoritmos sino también investigar su rendimiento y efectividad en diferentes escenarios de juego.
 ## Objetivos del Trabajo
 
 El principal objetivo de este trabajo es profundizar en el entendimiento y aplicación práctica de los algoritmos CFR y MCTS en entornos de juego competitivos, así como explorar posibles extensiones y mejoras a estos métodos.
@@ -273,6 +273,12 @@ Los resultados son alentadores: en promedio, nuestro agente CFR-MCTS sostiene un
 La gráfica muestra la evolución de las recompensas promedio durante el entrenamiento del agente CFR-MCTS. Se observa que, después de un ascenso inicial, el agente mantiene un rendimiento consistente a lo largo de 10,000 iteraciones de entrenamiento, reafirmando la estabilidad de la estrategia aprendida frente a oponentes aleatorios.
 
 > Nota: Se recomienda precaución al intentar replicar este entrenamiento, debido al extenso tiempo y recursos computacionales que requiere.
+
+## Experimentación: CFR pesado
+
+Además de las metodologías y resultados ya discutidos, es importante mencionar investigaciones paralelas realizadas durante este proyecto. Una variante de CFR que incorpora pesos en los arrepentimientos —con el objetivo de acelerar la convergencia hacia el equilibrio de Nash— fue explorada. 
+
+A pesar de que esta alternativa prometía una convergencia más rápida, los experimentos no mostraron una mejora significativa. Al comparar esta versión con la implementación estándar de CFR, ambos alcanzaron un reward cercano a 1/18 (en Khun2) después de aproximadamente 250 iteraciones. Dada la ausencia de ventajas observables, se decidió **no incluir** esta variante en la implementación final de la notebook; sin embargo, se consideró relevante mencionar este esfuerzo en el informe para dar una imagen completa del proceso exploratorio y del rigor aplicado en la búsqueda de optimizaciones.
 
 # Conclusión
 

@@ -27,3 +27,4 @@ Un aspecto importante a considerar es que, mientras que el Equilibrio de Nash es
 
 ![[Pasted image 20231130110042.png]]
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/O8T9spKHVWQ?si=3fGjjCwouIbxQKTX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

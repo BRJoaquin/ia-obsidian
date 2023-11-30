@@ -28,12 +28,36 @@ En el contexto del regret matching, los jugadores ajustan sus estrategias con el
 2. **Dependencia de la Historia**: Aunque más simple que otros algoritmos, el regret matching todavía depende de mantener un registro histórico de utilidades y acciones, lo cual puede no ser factible o deseable en todos los contextos.
     
 3. **Necesidad de Repetición**: El regret matching está diseñado para juegos que se juegan repetidamente, y su aplicación en situaciones de una sola vez no es directa.
-    
-
 
 # FP vs RM
 
+**Fictitious Play (FP):**
 
+- En FP, cada agente es considerado como un observador ficticio que tiene un conocimiento completo del juego.
+- Los agentes observan y consideran todas las estrategias posibles de todos los agentes en el juego.
+- Tienen acceso a la matriz de recompensas completa del juego, lo que les permite conocer las recompensas de todas las acciones posibles para todos los jugadores.
+- A lo largo del tiempo, los agentes actualizan sus creencias sobre las estrategias de los oponentes basándose en las frecuencias de las acciones jugadas y eligen la mejor respuesta a estas estrategias supuestas.
+
+**Regret Matching (RM):**
+
+- RM considera agentes que son informados y observadores de su propio historial de juego.
+- Los agentes conocen su propia estrategia y tienen un registro de sus recompensas pasadas.
+- Observan el "vector de recompensas" dado una estrategia específica, que esencialmente es una lista de las recompensas obtenidas para cada acción posible en el pasado.
+- Utilizan esta información para calcular el "regret" por no haber jugado otras estrategias y ajustan su comportamiento en consecuencia, favoreciendo las estrategias que habrían dado mejores recompensas en el pasado.
+
+**Agente Naïve:**
+
+- Un agente naïve tiene una comprensión más limitada y básica de su entorno de juego.
+- Conoce su propia estrategia y observa las recompensas que obtiene, pero no necesariamente hace un análisis profundo del historial de juego o las estrategias de los oponentes.
+- Este agente puede no tener una estrategia para ajustar su comportamiento basado en el historial de juego y, en su lugar, podría tomar decisiones más simplistas o aleatorias.
+
+**Comparación entre FP y RM:**
+
+- **FP vs RM**: Mientras que FP se basa en el concepto de frecuencias y supone que los oponentes juegan estrategias estacionarias, RM se basa en el concepto de arrepentimiento y busca ajustar las estrategias basándose en las recompensas que se podrían haber obtenido. FP requiere una visión más global y estratégica del juego, mientras que RM es más reactivo y centrado en el historial individual de recompensas.
+    
+- **Convergencia**: Ambos procesos, bajo ciertas condiciones, pueden converger a un equilibrio de Nash, pero el camino hacia la convergencia y la velocidad pueden diferir significativamente entre los dos.
+    
+- **Complejidad de la Información**: FP requiere una comprensión más compleja y completa del juego, mientras que RM puede ser implementado con información más limitada y se enfoca en el desempeño individual a lo largo del tiempo.
 
 # Video
 

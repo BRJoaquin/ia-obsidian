@@ -10,8 +10,10 @@ Los "juegos ordinales de una jugada" o "juegos matriciales simultáneos" son un 
    
     ![[Pasted image 20231130091134.png]]
 
-Un ejemplo clásico de un juego matricial simultáneo es el "Dilema del Prisionero", donde cada prisionero (jugador) decide de manera independiente y simultánea si traiciona al otro o coopera, y los resultados (recompensas o castigos) dependen de la combinación de estas decisiones.
+Un ejemplo clásico de un juego matricial simultáneo es el "Dilema del Prisionero", donde cada prisionero (jugador) decide de manera independiente y simultánea si traiciona al otro o coopera, y los resultados (recompensas o castigos) dependen de la combinación de estas decisiones. ver [[Dilema del prisionero]]
 
 ![[Pasted image 20231130091055.png]]
 
 Estos juegos son importantes en el estudio de la teoría de juegos y la toma de decisiones estratégicas, ya que modelan situaciones en las que los agentes deben hacer elecciones en un entorno de incertidumbre sobre las acciones de los demás. En tu campo de interés, la inteligencia artificial y los sistemas multiagente, los juegos ordinales de una jugada pueden ser útiles para modelar y analizar cómo los agentes autónomos toman decisiones en entornos competitivos o colaborativos.
+
+

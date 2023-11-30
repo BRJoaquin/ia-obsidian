@@ -70,3 +70,5 @@ La mejor respuesta de jugador 1 a la estrategia mixta de jugador 2 es $BR(\pi_2)
 # Video
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VuDutyTs_r8?si=5-0-1Rn0pZhV1-nQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fvEQujUcPv4?si=SKF6L-RVgleOY_8q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

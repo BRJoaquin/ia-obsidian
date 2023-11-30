@@ -2,4 +2,3 @@ La "best response" (mejor respuesta) es una estrategia que produce el mejor resu
 
 ![[Pasted image 20231130102756.png]]
 
-![[Pasted image 20231130102807.png]]

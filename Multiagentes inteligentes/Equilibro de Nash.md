@@ -53,3 +53,8 @@ El subrayado generalmente se utiliza para resaltar la mejor respuesta en la matr
 # Ejemplo 3
 
 ![[Pasted image 20231130103620.png]]
+
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/stzPcqmyhI4?si=GsP3kN5mBN10hnRu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+

@@ -21,3 +21,5 @@ Un aspecto importante a considerar es que, mientras que el Equilibrio de Nash es
 
 ![[Pasted image 20231130105247.png]]
 
+![[Pasted image 20231130105926.png]]
+

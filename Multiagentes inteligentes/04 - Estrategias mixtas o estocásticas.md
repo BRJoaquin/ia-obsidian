@@ -1,4 +1,6 @@
 - [[Política]]
 - [[Estrategias Deterministas (Puras)]]
 - [[Estrategias Estocásticas (Mixtas)]]
+- [[Estrategia Conjunta]]
+- [[Soporte]]
 - 

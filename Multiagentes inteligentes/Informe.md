@@ -238,7 +238,7 @@ MCTS se basa en la construcción de un árbol de decisiones mediante simulacione
 
 - **Eficiencia y Ajustes**: Es crucial equilibrar la eficiencia computacional y la efectividad al ajustar parámetros como el número de simulaciones y rollouts.
 
-#### Implementación de MCTS para Evaluación y Acción
+### Implementación de MCTS para Evaluación y Acción
 
 ```python
 # Evaluación del juego con MCTS durante el entrenamiento
@@ -260,37 +260,26 @@ def mcts_action(game: AlternatingGame, agent: AgentID):
 > Nota: En el entorno PettingZoo, al clonar el juego se incluyen las cartas de los oponentes. Para evitar un conocimiento imposible en la realidad, limitamos el número de simulaciones.
 
 
+### Resultados del Entrenamiento de CFR-MCTS en Leduc Poker
+
+#### Evaluación del Desempeño del Agente
+
+Después de implementar y entrenar nuestro agente utilizando CFR y MCTS en Leduc Poker, se realizaron varias partidas contra un agente que selecciona acciones de manera aleatoria. 
+
+Los resultados son alentadores: en promedio, nuestro agente CFR-MCTS sostiene un balance positivo frente a estrategias no optimizadas. Este resultado sirve como indicador de la efectividad de nuestra implementación de MCTS en el contexto de Leduc Poker.
+
+![[Pasted image 20231129223830.png]]
+
+La gráfica muestra la evolución de las recompensas promedio durante el entrenamiento del agente CFR-MCTS. Se observa que, después de un ascenso inicial, el agente mantiene un rendimiento consistente a lo largo de 10,000 iteraciones de entrenamiento, reafirmando la estabilidad de la estrategia aprendida frente a oponentes aleatorios.
+#### Reflexiones y Pasos a Seguir
+
+- **Análisis y Optimización de Parámetros**: Para futuras investigaciones, es crítico profundizar en la evaluación y ajuste de los parámetros de MCTS. Esto implicará un análisis exhaustivo de los resultados obtenidos y la experimentación con diversas configuraciones de parámetros, buscando optimizar aún más la estrategia del agente.
+
+- **Evolución de la Estrategia**: Será importante monitorear cómo evoluciona la estrategia del agente a lo largo de las iteraciones para comprender mejor las decisiones tácticas y ajustes estratégicos realizados por el agente.
+
+- **Comparación con Otras Técnicas**: Un paso clave será comparar el rendimiento de MCTS con otras técnicas de estimación de valor, como funciones de evaluación específicas, para evaluar de manera comprensiva la efectividad de MCTS en Leduc Poker.
+
+> Nota: Se recomienda precaución al intentar replicar este entrenamiento, debido al extenso tiempo y recursos computacionales que requiere.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-# TODO
-
-### Estimación de Valor de Estados
-
-Dada la complejidad de algunos juegos, se utilizó la estimación de valor de estados para evaluar la calidad de los estados del juego en profundidades específicas. Se implementaron funciones de evaluación y se aplicó MCTS para manejar eficientemente juegos con un espacio de estado extenso.
-
-### CFR con Estimación de Valor y MCTS en Leduc Poker
-
-Se aplicó MCTS en Leduc Poker, un juego con mayor complejidad estratégica que Kuhn Poker. Los experimentos mostraron que el agente MCTS superó consistentemente a los agentes que toman decisiones aleatorias, demostrando la efectividad de MCTS en este contexto.
-
-### Conclusiones
-
-Este proyecto ha establecido una base sólida para el uso de técnicas avanzadas de aprendizaje por refuerzo en juegos alternados de múltiples jugadores. Los principales logros incluyen:
-
-- Implementación exitosa del algoritmo CFR en Kuhn Poker.
-- Demostración de la eficacia de MCTS en Leduc Poker.
-- Observaciones clave sobre la eficacia de las funciones de evaluación y la importancia de equilibrar la exploración y explotación en MCTS.
-
-Mirando hacia el futuro, hay varias direcciones emocionantes para continuar este trabajo, incluyendo la comparación con agentes más avanzados, la optimización de algoritmos y la aplicación en otros juegos de información imperfecta.

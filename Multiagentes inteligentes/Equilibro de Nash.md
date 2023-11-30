@@ -1,6 +1,6 @@
 El equilibrio de Nash es un concepto esencial en la [[Teoría de Juegos]]. Representa una situación en la que ningún jugador puede beneficiarse cambiando su estrategia, siempre y cuando los demás mantengan las suyas inalteradas. En términos matemáticos:
 
-$$
+$$\large
 \text{Si } s^* \text{ es un equilibrio de Nash, entonces } u_i(s^*) \geq u_i(s'_i, s^*_{-i}) \text{ para todo } s'_i \text{ y todo } i
 $$
 

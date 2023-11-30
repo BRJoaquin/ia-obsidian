@@ -1,4 +1,9 @@
 - [[Juegos ordinales de una jugada]]
 - [[Política]]
 - [[Política optima]]
+- [[Estrategia Conjunta]]
+- [[Dilema del prisionero]]
+- [[Dominancia]]
+- [[Equilibro de Nash]]
+- [[Mejor Respuesta (Best Response)]]
 - 

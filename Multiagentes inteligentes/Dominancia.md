@@ -47,5 +47,6 @@ En el juego presentado en la imagen, el análisis muestra que:
     
 - Al final, el Jugador 1 jugará D, porque es la respuesta óptima a la elección de C por parte del Jugador 2.
 
+![[Pasted image 20231130101120.png]]
 
 La idea subyacente del Equilibrio Dominante Iterado es que los jugadores racionales usarán su conocimiento común sobre la racionalidad para eliminar estrategias que no son óptimas. Esto puede llevar a una previsión más precisa de las acciones que los jugadores probablemente tomarán en el juego.

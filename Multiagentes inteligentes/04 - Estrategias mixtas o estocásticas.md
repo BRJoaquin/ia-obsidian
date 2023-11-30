@@ -1,0 +1,4 @@
+- [[Política]]
+- [[Estrategias Deterministas (Puras)]]
+- [[Estrategias Estocásticas (Mixtas)]]
+- 

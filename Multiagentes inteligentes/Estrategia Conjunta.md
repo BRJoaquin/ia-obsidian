@@ -5,3 +5,5 @@ Por ejemplo, en un juego con dos jugadores, si el Jugador 1 elige la estrategia 
 En el análisis de juegos, las estrategias conjuntas son cruciales para entender los posibles resultados y para identificar equilibrios como el [[Equilibro de Nash]], donde ningún jugador puede mejorar su resultado cambiando su estrategia de manera unilateral dada la estrategia del otro jugador. En un Equilibrio de Nash, cada jugador está haciendo lo mejor que puede dada la elección del otro jugador, de modo que la estrategia conjunta es estable y nadie tiene un incentivo para desviarse de ella.
 
 ![[Pasted image 20231130094053.png]]
+
+![[Pasted image 20231130110956.png]]

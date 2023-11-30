@@ -1,8 +1,8 @@
 En el contexto del aprendizaje por refuerzo, una política (también conocida como estrategia) es un conjunto de reglas o una función que define cómo el agente toma decisiones y elige acciones en diferentes estados del entorno. La política puede ser determinista o estocástica.
 
--   Política determinista: En este caso, la política asigna una acción específica para cada estado del entorno. Dado un estado, la política determinista siempre producirá la misma acción.
+-   Política determinista: En este caso, la política asigna una acción específica para cada estado del entorno. Dado un estado, la política determinista siempre producirá la misma acción. ver [[Estrategias Deterministas (Puras)]]
 
--   Política estocástica: En este caso, la política asigna una probabilidad a cada acción en cada estado del entorno. Dado un estado, la política estocástica selecciona una acción según las probabilidades asignadas a las acciones para ese estado en particular.
+-   Política estocástica: En este caso, la política asigna una probabilidad a cada acción en cada estado del entorno. Dado un estado, la política estocástica selecciona una acción según las probabilidades asignadas a las acciones para ese estado en particular. ver [[Estrategias Estocásticas (Mixtas)]]
 
 El objetivo en el aprendizaje por refuerzo es aprender una política óptima que maximice la recompensa acumulada a lo largo del tiempo. A medida que el agente interactúa con el entorno y adquiere experiencia, ajusta su política para mejorar su capacidad para tomar decisiones y alcanzar sus objetivos.
 

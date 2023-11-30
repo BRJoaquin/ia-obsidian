@@ -5,4 +5,4 @@
 - [[Soporte]]
 - [[Valor_p]]
 - [[Mejor Respuesta (Best Response)#Caso general (estrategia estocástica)]]
-- 
+- [[Juego de suma cero]]

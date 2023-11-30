@@ -1,2 +1,4 @@
 - [[Juegos ordinales de una jugada]]
+- [[Política]]
+- [[Política optima]]
 - 

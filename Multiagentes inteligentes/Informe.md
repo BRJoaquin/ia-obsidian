@@ -144,21 +144,61 @@ Estas metodologías nos permiten abordar de manera efectiva los retos presentado
 
 ### CFR Mejorado con Estimación de Valor
 
-Hemos avanzado en la implementación del algoritmo Counterfactual Regret Minimization, creando una versión mejorada llamada `EnhancedCounterFactualRegret`, ubicada en `agentes/counterfactualregretv2.py`. Esta versión introduce una innovación esencial: la estimación de valor a cierta profundidad en el árbol de juego. Las características clave de esta implementación son:
+Hemos desarrollado una versión avanzada del algoritmo Counterfactual Regret Minimization, denominada `EnhancedCounterFactualRegret`, presente en `agentes/counterfactualregretv2.py`. Esta variante incorpora un elemento crucial: la estimación de valor en profundidades limitadas del árbol de juego.
 
-1. **Estimación de Valor en Profundidad Limitada**: Se utiliza una función (`value_estimator`) para evaluar los estados del juego al alcanzar una profundidad máxima (`max_depth`), optimizando así el manejo de juegos con grandes espacios de estado.
+#### Características Clave
 
-2. **Recursión Modificada con Estimación de Valor**: La función `cfr_rec` se adapta para incorporar la estimación de valor cuando se alcanza la profundidad máxima, utilizando `estimate_value` para obtener una evaluación del estado actual.
+1. **Estimación de Valor en Profundidad Limitada**: En vez de explorar el árbol de juego en su totalidad, `EnhancedCounterFactualRegret` emplea una función de estimación de valor (`value_estimator`) al alcanzar una profundidad máxima (`max_depth`), optimizando el manejo de juegos con grandes espacios de estado.
 
-3. **Selección de Acciones Mejorada**: El método `action` se ha modificado para seleccionar una acción aleatoria si la lógica base de CFR falla, asegurando una toma de decisiones continua.
+2. **Recursión Modificada para la Estimación de Valor**: La función `cfr_rec` se adapta para incluir la lógica de estimación de valor cuando se llega a `max_depth`, utilizando `estimate_value` para evaluar el estado actual del juego.
 
-### Demostración con Kuhn Poker y Función de Evaluación "Dummy"
+3. **Selección de Acciones Mejorada**: En el método `action`, se añade una validación para verificar si la observación está almacenada. Si no es así, se invoca a `action_selection` para elegir una acción. En caso de no tener la observación, se opta por una acción aleatoria, asegurando así una continuidad en la toma de decisiones.
 
-Para ilustrar el impacto de las funciones de evaluación, seleccionamos Kuhn Poker (khun2) por su simplicidad y su naturaleza de información imperfecta. Hemos diseñado una función de evaluación "dummy" para khun2, que, aunque no busca optimizar el juego, sirve para demostrar cómo se valoran los diferentes estados del juego y cómo esto influye en las decisiones del agente. La función considera elementos como la carta en mano del agente y la última acción del oponente.
+### Implementación de Función de Evaluación "Dummy" en Kuhn Poker
 
+En el contexto de Kuhn Poker (khun2), hemos implementado una función de evaluación "dummy" para demostrar de forma práctica cómo se valoran los diferentes estados del juego. Esta función simplificada no busca optimizar el juego, sino ilustrar cómo se toman decisiones estratégicas basadas en la evaluación de los estados.
 
+#### Elección de Kuhn Poker para la Demostración
 
+Elegimos Kuhn Poker por su estructura simple y su naturaleza de información imperfecta, ideal para una demostración clara y visual de las evaluaciones en el juego.
 
+#### Construcción de la Función de Evaluación
+
+La función de evaluación "dummy" para khun2 se enfoca en:
+
+- La carta en mano del agente.
+- La última acción realizada por el oponente.
+
+Esta aproximación permite visualizar el impacto directo de la evaluación en la estrategia del agente.
+
+```python
+def evaluate_kuhn_state(game: AlternatingGame, agent: AgentID):
+    its_my_turn = game.agent_selection == agent
+    if game.done() or game.terminated():
+        return game.rewards[agent]
+    
+    observation = game.observe(agent)
+    value = 0
+
+    hand = observation[0]
+
+    if hand == '2':  # tengo K
+        value = 1
+    elif hand == '1': # tengo Q
+        value = 0
+    else: # tengo J
+        value -= 1
+
+    # veo la ultima accion del oponente
+    if len(observation) >= 2:
+        last_oponent_action = observation[-1 if its_my_turn else -2]
+        if last_oponent_action == 'b':
+            value -= 0.5
+        elif last_oponent_action == 'p':
+            value += 0.5
+
+    return value
+```
 
 
 

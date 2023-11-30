@@ -6,4 +6,3 @@
 - [[Dominancia]]
 - [[Equilibro de Nash]]
 - [[Mejor Respuesta (Best Response)]]
-- 

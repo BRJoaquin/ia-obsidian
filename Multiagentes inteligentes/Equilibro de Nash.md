@@ -32,11 +32,11 @@ El Equilibrio de Nash puede ser puro o mixto:
 
 Sin embargo, el Equilibrio de Nash no necesariamente garantiza que el resultado sea óptimo desde el punto de vista del grupo o de la sociedad. A veces, el equilibrio puede llevar a un "equilibrio ineficiente" o a un "equilibrio subóptimo", donde los jugadores se asientan en un estado que no es socialmente óptimo, un fenómeno conocido como la "Tragedia de los Comunes".
 
-# Ejemplo
+# Ejemplo 1
 
 ![[Pasted image 20231130102807.png]]
 
-Otro:
+# Ejemplo 2
 
 ![[Pasted image 20231130103337.png]]
 
@@ -49,3 +49,7 @@ El subrayado generalmente se utiliza para resaltar la mejor respuesta en la matr
 - La estrategia (D, C) es un equilibrio de Nash. Aquí, D es la mejor respuesta de Player 1 a la estrategia C de Player 2, y C es la mejor respuesta de Player 2 a la estrategia D de Player 1. Esto se indica con los números subrayados 3 en D y 6 en C.
     
 - De manera similar, (M, R) es un equilibrio de Nash. M es la mejor respuesta de Player 1 a R de Player 2, y R es la mejor respuesta de Player 2 a M de Player 1. Esto se señala con los números subrayados 4 en M y 5 en R.
+
+# Ejemplo 3
+
+![[Pasted image 20231130103620.png]]

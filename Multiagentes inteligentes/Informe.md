@@ -117,8 +117,28 @@ Los resultados confirman nuestra hipótesis inicial: el tercer jugador obtiene c
 
 > "A family of Nash equilibria for 3-player Kuhn poker is known analytically, which makes it the largest game with more than two players with analytic solution. The family is parameterized using 4–6 parameters (depending on the chosen equilibrium). In all equilibria, player 1 has a fixed strategy, and he always checks as the first action; player 2's utility is constant, equal to –1/48 per hand. The discovered equilibrium profiles show an interesting feature: by adjusting a strategy parameter $\beta$ (between 0 and 1), player 2 can freely shift utility between the other two players while still remaining in equilibrium; player 1's utility is equal to $-\frac{1+2\beta}{48}$ (which is always worse than player 2's utility), player 3's utility is $\frac{1+\beta}{24}$." - [Wikipedia](https://en.wikipedia.org/wiki/Kuhn_poker#3-player_Kuhn_Poker)
 
+![[Pasted image 20231129221258.png]]
+
 Estos hallazgos corroboran las teorías existentes y demuestran la consistencia del algoritmo CFR con las expectativas teóricas en juegos de múltiples jugadores.
 
+
+## Estimación de Valor de Estados en Juegos Complejos
+
+Una de las consideraciones críticas en la aplicación de inteligencia artificial en juegos es la gestión efectiva de la profundidad en los árboles de juego. En muchos casos, los juegos poseen un espacio de estado tan extenso que hace inviable explorar todas las posibles trayectorias del juego hasta su conclusión. Esta limitación impone la necesidad de emplear estrategias de estimación de valor de estados en ciertos niveles de profundidad, en lugar de optar por una exploración completa.
+
+### Profundidad del Árbol de Juego y Explosión Combinatoria
+
+La profundidad del árbol de juego se define por la cantidad de movimientos hacia adelante que el algoritmo analiza antes de tomar una decisión. En contextos de juegos complejos, esta profundidad puede incrementarse exponencialmente, dando lugar al fenómeno conocido como "explosión combinatoria". Esta situación resulta en un costo computacional elevado y, en muchas ocasiones, insostenible para una exploración completa y detallada.
+
+### Estrategias para la Estimación de Valor
+
+Para superar este desafío, implementamos estrategias específicas que nos permiten evaluar los estados del juego en profundidades particulares:
+
+1. **Funciones de Evaluación**: Estas funciones son esenciales para asignar valores numéricos a los estados del juego, basándose en sus características inherentes. Varían en complejidad, desde heurísticas basadas en reglas simples hasta modelos avanzados desarrollados mediante técnicas de aprendizaje automático.
+
+2. **Monte Carlo Tree Search (MCTS)**: El MCTS es una técnica clave que utiliza simulaciones aleatorias partiendo del estado actual para estimar el valor de los estados. Esta estrategia es especialmente valiosa en juegos con un vasto número de posibles estados futuros, ya que proporciona una manera eficiente de evaluar opciones sin la necesidad de una exploración exhaustiva del árbol de juego.
+
+Estas metodologías nos permiten abordar de manera efectiva los retos presentados por la complejidad y el tamaño de los juegos, mejorando significativamente la toma de decisiones en entornos de juego de alta profundidad y con gran cantidad de posibilidades.
 
 
 
@@ -144,18 +164,6 @@ Estos hallazgos corroboran las teorías existentes y demuestran la consistencia 
 
 
 # TODO
-
-### Experimentación con Kuhn Poker
-
-Se realizaron experimentos con Kuhn Poker, un juego de póker simplificado ideal para estudiar algoritmos de aprendizaje por refuerzo en juegos de información imperfecta. Se exploró tanto la versión clásica de dos jugadores como una variante de tres jugadores. Se utilizó CFR para desarrollar estrategias efectivas y analizar cómo los agentes aprenden y se adaptan a lo largo de múltiples juegos.
-
-#### Kuhn Poker con 2 Jugadores
-
-En la configuración de dos jugadores, se compararon los resultados del agente CFR contra un agente que elige acciones de manera aleatoria. Se observó que el agente CFR aprende a jugar de manera óptima en cada estado del juego, mostrando una efectividad superior a la estrategia aleatoria.
-
-#### Kuhn Poker con 3 Jugadores
-
-La extensión del experimento a tres jugadores introdujo una dinámica de juego adicional, requiriendo estrategias más sofisticadas. Los resultados confirmaron que el tercer jugador, al ser el último en actuar, obtenía la mayor utilidad, seguido del segundo jugador y finalmente el primer jugador.
 
 ### Estimación de Valor de Estados
 

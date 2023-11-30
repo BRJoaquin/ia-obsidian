@@ -23,3 +23,6 @@ Análisis:
 En términos de teoría de juegos, este es un juego no cooperativo de suma no cero (ver [[Juego de suma cero]]. La estrategia óptima para cada jugador en aislamiento es delatar, porque esta acción representa el mejor resultado posible para sí mismo, independientemente de lo que haga el otro jugador. Sin embargo, si ambos jugadores cooperaran (callaran), obtendrían un resultado colectivamente mejor.
 
 El Dilema del Prisionero muestra cómo en ciertas situaciones, la lógica individual puede llevar a un resultado peor para todos los involucrados en comparación con la cooperación mutua. Este juego es fundamental en el estudio de la toma de decisiones estratégica y tiene aplicaciones en economía, política, ética y, por supuesto, en la inteligencia artificial, especialmente en el diseño de estrategias para sistemas multiagente.
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DanTKx1FLY8?si=NDsU25eBkl2kr7z5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

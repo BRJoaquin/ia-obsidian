@@ -26,3 +26,6 @@ En este caso, para el jugador 1, la Estrategia X domina estrictamente la Estrate
 ## Importancia
 
 La dominancia estricta es útil para simplificar el análisis de un juego. Si una estrategia está estrictamente dominada, entonces nunca será una respuesta racional, y puede ser eliminada de consideración.
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DanTKx1FLY8?si=NDsU25eBkl2kr7z5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

@@ -67,3 +67,6 @@ Para encontrar la mejor respuesta, buscamos el valor de $h_1$ que maximice $V_1(
 La mejor respuesta de jugador 1 a la estrategia mixta de jugador 2 es $BR(\pi_2) = \{(0, 1)\}$, lo que significa que siempre elige "Tails" (T).
 
 
+# Video
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VuDutyTs_r8?si=5-0-1Rn0pZhV1-nQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

@@ -107,9 +107,9 @@ La extensión de nuestro estudio al Kuhn Poker de tres jugadores representa un p
 
 En esta etapa, llevamos a cabo un experimento donde tres agentes, cada uno operando con el algoritmo CFR, compitieron entre sí. 
 
-#### Hipótesis de Utilidad: \( u_1 < u_2 < u_3 \)
+#### Hipótesis de Utilidad: $u_1 < u_2 < u_3$
 
-Anticipamos una relación específica en las utilidades de los tres agentes, con el tercer jugador (\( u_3 \)) obteniendo la mayor utilidad, seguido por el segundo (\( u_2 \)) y el primero (\( u_1 \)). Esta hipótesis se basa en la ventaja del tercer jugador al actuar último en cada ronda, obteniendo así más información que los otros dos jugadores. Esta fase nos brinda insights valiosos sobre las dinámicas de juegos con información imperfecta y las estrategias óptimas en tales entornos.
+Anticipamos una relación específica en las utilidades de los tres agentes, con el tercer jugador $u_3$ obteniendo la mayor utilidad, seguido por el segundo $u_2$ y el primero $u_1$. Esta hipótesis se basa en la ventaja del tercer jugador al actuar último en cada ronda, obteniendo así más información que los otros dos jugadores. Esta fase nos brinda insights valiosos sobre las dinámicas de juegos con información imperfecta y las estrategias óptimas en tales entornos.
 
 #### Resultados de la Experimentación
 
@@ -152,7 +152,7 @@ Hemos desarrollado una versión avanzada del algoritmo Counterfactual Regret Min
 
 2. **Recursión Modificada para la Estimación de Valor**: La función `cfr_rec` se adapta para incluir la lógica de estimación de valor cuando se llega a `max_depth`, utilizando `estimate_value` para evaluar el estado actual del juego.
 
-3. **Selección de Acciones Mejorada**: En el método `action`, se añade una validación para verificar si la observación está almacenada. Si no es así, se invoca a `action_selection` para elegir una acción. En caso de no tener la observación, se opta por una acción aleatoria, asegurando así una continuidad en la toma de decisiones.
+3. **Selección de Acciones Mejorada**: En el método `action`, se añade una validación para verificar si la observación está almacenada. Si no es así, se invoca a `action_selection` para elegir una acción. Por ultimo, se opta por una acción aleatoria, asegurando así una continuidad en la toma de decisiones.
 
 ### Implementación de Función de Evaluación "Dummy" en Kuhn Poker
 

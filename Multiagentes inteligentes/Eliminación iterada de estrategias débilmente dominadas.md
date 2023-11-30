@@ -18,3 +18,6 @@ El resultado de IDWDS puede llevar a una predicción más precisa del comportami
 Sin embargo, la eliminación iterada de estrategias débilmente dominadas no siempre lleva a un único resultado como puede ser el caso con la eliminación de estrategias estrictamente dominadas. Esto se debe a que la eliminación de una estrategia débilmente dominada puede depender del orden en que se eliminan las estrategias, lo que puede llevar a múltiples subconjuntos finales de estrategias que no son comparables entre sí.
 
 Un aspecto importante a considerar es que, mientras que el Equilibrio de Nash es un concepto de equilibrio estable y no depende del orden de eliminación de estrategias, el resultado de IDWDS puede variar en función de este orden. Por lo tanto, IDWDS puede no llevar a un equilibrio en juegos donde la eliminación de estrategias débilmente dominadas depende del orden en que se lleve a cabo.
+
+![[Pasted image 20231130105247.png]]
+

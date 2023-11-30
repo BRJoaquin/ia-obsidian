@@ -17,3 +17,6 @@ La dominancia en estrategias se refiere a la comparación de la efectividad de d
 
 
 El concepto de dominancia es utilizado para simplificar el análisis de juegos identificando estrategias que son claramente subóptimas y pueden ser eliminadas del análisis. Por ejemplo, si una estrategia es estrictamente dominada, un jugador racional nunca la elegiría, ya que siempre hay una opción mejor disponible.
+
+![[Pasted image 20231130095508.png]]
+

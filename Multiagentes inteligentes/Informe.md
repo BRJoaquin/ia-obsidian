@@ -140,6 +140,21 @@ Para superar este desafío, implementamos estrategias específicas que nos permi
 
 Estas metodologías nos permiten abordar de manera efectiva los retos presentados por la complejidad y el tamaño de los juegos, mejorando significativamente la toma de decisiones en entornos de juego de alta profundidad y con gran cantidad de posibilidades.
 
+## Funciones de Evaluación
+
+### CFR Mejorado con Estimación de Valor
+
+Hemos avanzado en la implementación del algoritmo Counterfactual Regret Minimization, creando una versión mejorada llamada `EnhancedCounterFactualRegret`, ubicada en `agentes/counterfactualregretv2.py`. Esta versión introduce una innovación esencial: la estimación de valor a cierta profundidad en el árbol de juego. Las características clave de esta implementación son:
+
+1. **Estimación de Valor en Profundidad Limitada**: Se utiliza una función (`value_estimator`) para evaluar los estados del juego al alcanzar una profundidad máxima (`max_depth`), optimizando así el manejo de juegos con grandes espacios de estado.
+
+2. **Recursión Modificada con Estimación de Valor**: La función `cfr_rec` se adapta para incorporar la estimación de valor cuando se alcanza la profundidad máxima, utilizando `estimate_value` para obtener una evaluación del estado actual.
+
+3. **Selección de Acciones Mejorada**: El método `action` se ha modificado para seleccionar una acción aleatoria si la lógica base de CFR falla, asegurando una toma de decisiones continua.
+
+### Demostración con Kuhn Poker y Función de Evaluación "Dummy"
+
+Para ilustrar el impacto de las funciones de evaluación, seleccionamos Kuhn Poker (khun2) por su simplicidad y su naturaleza de información imperfecta. Hemos diseñado una función de evaluación "dummy" para khun2, que, aunque no busca optimizar el juego, sirve para demostrar cómo se valoran los diferentes estados del juego y cómo esto influye en las decisiones del agente. La función considera elementos como la carta en mano del agente y la última acción del oponente.
 
 
 

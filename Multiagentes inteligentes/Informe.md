@@ -111,7 +111,7 @@ En esta etapa, llevamos a cabo un experimento donde tres agentes, cada uno opera
 
 Anticipamos una relación específica en las utilidades de los tres agentes, con el tercer jugador (\( u_3 \)) obteniendo la mayor utilidad, seguido por el segundo (\( u_2 \)) y el primero (\( u_1 \)). Esta hipótesis se basa en la ventaja del tercer jugador al actuar último en cada ronda, obteniendo así más información que los otros dos jugadores. Esta fase nos brinda insights valiosos sobre las dinámicas de juegos con información imperfecta y las estrategias óptimas en tales entornos.
 
-### Resultados de la Experimentación
+#### Resultados de la Experimentación
 
 Los resultados confirman nuestra hipótesis inicial: el tercer jugador obtiene consistentemente la mayor utilidad, seguido por el segundo y luego el primer jugador.
 
@@ -200,8 +200,60 @@ def evaluate_kuhn_state(game: AlternatingGame, agent: AgentID):
     return value
 ```
 
+### Resultados del CFR Mejorado con Estimación de Valor
 
+Al enfrentar nuestro agente CFR mejorado, que incorpora estimación de valor, contra un agente que toma decisiones aleatorias, los resultados han sido  positivos. Como era de esperar, el agente CFR con estimación de valor mostró una ventaja significativa sobre el agente aleatorio, lo que refleja la eficacia de la estrategia de aprendizaje por refuerzo en juegos de información imperfecta.
 
+Un hallazgo sorprendente de estas experimentaciones es el aumento en el promedio de las recompensas obtenidas por el agente CFR con estimación de valor en comparación con el agente CFR standard (sin limitación de niveles) enfrentado al mismo tipo de oponente en experimentos anteriores. Esta observación sugiere que la introducción de la estimación de valor en profundidades limitadas del árbol de juego no solo mantiene la efectividad del algoritmo CFR, sino que en ciertos contextos, puede mejorar el rendimiento del agente. Pero eso queda a criterio del docente poder discutirlo.
+
+## Monte Carlo Tree Search
+
+### Importancia de la Estimación en Leduc Poker
+
+En juegos de información imperfecta como Leduc Poker, la estimación de valor adquiere una importancia crucial debido a la complejidad inherente de estos juegos. Leduc Poker, más complejo que Kuhn Poker, proporciona un escenario ideal para evaluar la efectividad de la técnica Monte Carlo Tree Search (MCTS).
+
+### Desafíos de Leduc Poker
+
+Leduc Poker presenta desafíos únicos, incluyendo rondas de apuestas y una fase de revelación, lo que añade complejidad y hace impráctica la exploración exhaustiva del árbol de juego. MCTS, con su enfoque en la exploración balanceada y la explotación mediante simulaciones aleatorias, es particularmente adecuado para este entorno.
+
+### Implementación y Estrategia de MCTS en Leduc Poker
+
+MCTS se basa en la construcción de un árbol de decisiones mediante simulaciones aleatorias, seleccionando posteriormente la mejor acción basada en estos resultados.
+
+1. **Exploración vs. Explotación**: MCTS encuentra un equilibrio entre explorar nuevas acciones y explotar las ya efectivas. Esto es vital en juegos como Leduc Poker, con un amplio espacio de decisiones.
+
+2. **Simulaciones Aleatorias**: MCTS maneja la incertidumbre y variabilidad en Leduc Poker, considerando una amplia gama de posibles escenarios futuros.
+
+3. **Selección de Acciones con UCB**: Utilizando la estrategia Upper Confidence Bound para árboles, MCTS perfecciona su elección de acciones, mejorando la toma de decisiones estratégicas a lo largo del juego.
+
+4. **Retropropagación**: Cada simulación aporta información valiosa para actualizar el árbol, enriqueciendo las decisiones futuras.
+
+5. **Implementación Específica para Leduc Poker**: MCTS es implementado considerando las peculiaridades de Leduc Poker, incluyendo rondas de apuestas e información oculta.
+
+### Consideraciones Clave
+
+- **Tiempo de Entrenamiento**: La complejidad de Leduc Poker puede requerir un tiempo considerable para simulaciones, afectando el tiempo de entrenamiento del algoritmo MCTS.
+
+- **Eficiencia y Ajustes**: Es crucial equilibrar la eficiencia computacional y la efectividad al ajustar parámetros como el número de simulaciones y rollouts.
+
+#### Implementación de MCTS para Evaluación y Acción
+
+```python
+# Evaluación del juego con MCTS durante el entrenamiento
+def mcts_evaluate(game: AlternatingGame, agent: AgentID):
+    if game.done() or game.terminated():
+        return game.rewards[agent]
+    else:
+        mcts = MonteCarloTreeSearch(game=game, agent=agent, simulations=100, rollouts=10)
+        return mcts.estimate()
+```
+
+```python 
+# Selección de acción utilizando MCTS
+def mcts_action(game: AlternatingGame, agent: AgentID):
+    mcts = MonteCarloTreeSearch(game=game, agent=agent, simulations=3, rollouts=1)
+    return mcts.action()
+```
 
 
 

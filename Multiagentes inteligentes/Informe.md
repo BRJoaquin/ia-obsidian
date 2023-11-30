@@ -225,6 +225,8 @@ MCTS se basa en la construcción de un árbol de decisiones mediante simulacione
 2. **Simulaciones Aleatorias**: MCTS maneja la incertidumbre y variabilidad en Leduc Poker, considerando una amplia gama de posibles escenarios futuros.
 
 3. **Selección de Acciones con UCB**: Utilizando la estrategia Upper Confidence Bound para árboles, MCTS perfecciona su elección de acciones, mejorando la toma de decisiones estratégicas a lo largo del juego.
+   
+   > nota: La implementación permite utilizar otro tipo de estrategia de selección de acciones.
 
 4. **Retropropagación**: Cada simulación aporta información valiosa para actualizar el árbol, enriqueciendo las decisiones futuras.
 
@@ -254,6 +256,9 @@ def mcts_action(game: AlternatingGame, agent: AgentID):
     mcts = MonteCarloTreeSearch(game=game, agent=agent, simulations=3, rollouts=1)
     return mcts.action()
 ```
+
+> Nota: En el entorno PettingZoo, al clonar el juego se incluyen las cartas de los oponentes. Para evitar un conocimiento imposible en la realidad, limitamos el número de simulaciones.
+
 
 
 

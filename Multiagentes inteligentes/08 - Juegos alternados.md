@@ -1,3 +1,4 @@
 - [[Juegos Alternados]]
 - [[Árbol de Juego]]
 - [[ExpectiMax]]
+- [[Minimax]]

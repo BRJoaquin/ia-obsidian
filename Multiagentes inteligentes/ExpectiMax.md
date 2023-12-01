@@ -34,6 +34,6 @@ Expectimax es una herramienta poderosa en la teoría de juegos y la inteligencia
 
 # Ejemplo
 
-Imagina que estás jugando un juego donde puedes elegir entre dos acciones: "A" y "B". Si eliges "A", lanzas un dado. Si sacas 1, 2 o 3, obtienes una recompensa de 10; si sacas 4, 5 o 6, obtienes una recompensa de 0. Si eliges "B", lanzas una moneda. Si sale cara, obtienes una recompensa de 5, y si sale cruz, obtienes una recompensa de 3.
+![[Pasted image 20231201110013.png]]
 
-Para construir un árbol de Expectimax para este juego:
+![[Pasted image 20231201110022.png]]

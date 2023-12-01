@@ -1,1 +1,3 @@
 - [[Juegos con Información imperfecta]]
+- [[Information set]]
+- [[]]

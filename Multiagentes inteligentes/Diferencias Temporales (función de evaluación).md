@@ -14,15 +14,15 @@ El aprendizaje TD se realiza a través de los siguientes pasos:
 2. **Actualización de Valor**:
    - Se actualiza el valor estimado de un estado utilizando la diferencia entre la recompensa observada y la recompensa predicha, ajustada por el valor del siguiente estado.
 
-La actualización de valor para un estado $s$con pesos $w$se realiza según:
+La actualización de valor para un estado $s$ con pesos $w$ se realiza según:
 
 $$\Large w = w + \eta \left( V(s; w) - (r + \gamma V(s'; w)) \right) \phi(s) $$
 
 donde:
 
 - $\eta$ es la tasa de aprendizaje.
-- $V(s; w)$es la predicción actual del valor del estado $s$.
-- $r$ es la recompensa observada después de realizar la acción $a $en el estado $s$.
+- $V(s; w)$ es la predicción actual del valor del estado $s$.
+- $r$ es la recompensa observada después de realizar la acción $a$ en el estado $s$.
 - $\gamma$ es el factor de descuento para el valor del siguiente estado $s'$.
 - $\phi(s)$ es el vector de características para el estado $s$.
 
@@ -38,7 +38,7 @@ donde:
 
 ## TD y Q-Learning
 
-El aprendizaje TD está relacionado con Q-Learning, un método de aprendizaje por refuerzo que busca aprender la función de valor de acción óptima, Q, que da el valor total de recompensas esperadas de tomar una acción $a $en un estado $s $y siguiendo la política óptima después.
+El aprendizaje TD está relacionado con Q-Learning, un método de aprendizaje por refuerzo que busca aprender la función de valor de acción óptima, Q, que da el valor total de recompensas esperadas de tomar una acción $a$ en un estado $s$ y siguiendo la política óptima después.
 
 La actualización en Q-Learning se realiza de acuerdo con:
 

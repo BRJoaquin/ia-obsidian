@@ -17,19 +17,14 @@ Las funciones de evaluación son componentes clave en la inteligencia artificial
 - En la IA para juegos, estas funciones se utilizan en combinación con algoritmos como Minimax o sus variantes para buscar movimientos que maximicen (o minimicen) el valor evaluado.
 - Durante el proceso de búsqueda, cuando se llega a una cierta profundidad, en lugar de seguir buscando hasta el final del juego, se utiliza la función de evaluación para estimar la "bondad" de la posición actual.
 
-**Ejemplos de Funciones de Evaluación:**
 
-1. **Ajedrez**: Una función de evaluación comúnmente considera el valor material de las piezas (peones, torres, alfiles, etc.), el control de espacios clave en el tablero, la seguridad del rey, la actividad de las piezas, entre otros.
+**Consideraciones al Diseñar una BUENA Funcion de Evaluación:**
+
+> Importante!!:
+
+1. **Consistencia con la Función de Utilidad Verdadera**: Una buena función de evaluación, `Eval`, debe reflejar el mismo orden de preferencia que la verdadera función de utilidad del juego. Esto significa que si un estado del juego es una victoria, debería tener una puntuación más alta que un empate, y un empate debería tener una puntuación más alta que una derrota. La consistencia es crucial para asegurar que la IA se comporte de manera alineada con los objetivos del juego. Si la función de evaluación no es coherente, podría llevar al agente a tomar decisiones que no maximizan las posibilidades de ganar.
+   $$Eval(\text{win}) > Eval(\text{draw}) > Eval(\text{loss})
+$$
+2. **Eficiencia en el Cálculo**: La función debe ser computacionalmente eficiente para permitir que el algoritmo de búsqueda evalúe rápidamente una gran cantidad de estados posibles. Una función de evaluación que es demasiado compleja o que tarda mucho en calcular puede no ser práctica, especialmente cuando se necesita tomar decisiones en tiempo real o cuando el espacio de búsqueda es extremadamente grande.
     
-2. **Go**: Puede incluir el número de territorios controlados, la solidez de las formaciones de piedras y la potencialidad de las áreas no desarrolladas.
-    
-
-**Consideraciones al Diseñar Funciones de Evaluación:**
-
-- **Generalidad vs. Especificidad**: Una función de evaluación debe ser lo suficientemente general para ser aplicable a una amplia gama de situaciones en el juego, pero lo suficientemente específica para proporcionar valoraciones útiles.
-- **Velocidad de Cómputo**: Dado que estas funciones pueden ser llamadas millones de veces en una partida de juego por IA, es crucial que sean rápidas de calcular.
-- **Adaptabilidad**: En algunos sistemas de IA, las funciones de evaluación pueden adaptarse o ajustarse con el tiempo a medida que el sistema aprende de más partidas jugadas.
-
-**Conclusión:**
-
-Las funciones de evaluación son esenciales para el desarrollo de IA fuertes en juegos de estrategia. Proporcionan un método para estimar la calidad de una posición o movimiento en situaciones donde no es factible una búsqueda completa. Estas funciones, aunque no perfectas, permiten que las IA tomen decisiones informadas y jueguen a un nivel alto en juegos complejos.
+3. **Correlación con las Posibilidades de Ganar**: Para estados no terminales, la función de evaluación debe estar fuertemente correlacionada con las posibilidades reales de ganar desde ese estado. Esto significa que `Eval(s)` debe ser un buen indicador de la probabilidad de éxito final en el juego. Cuanto más fuerte sea la correlación, más fiable será la función de evaluación al guiar la IA hacia movimientos que aumentan la probabilidad de ganar.

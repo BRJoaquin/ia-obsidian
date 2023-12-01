@@ -12,6 +12,8 @@ Expectiminimax es una variante del algoritmo Minimax que se utiliza para juegos 
 4. **Calculo de la Utilidad**: En Expectiminimax, la utilidad de los nodos se calcula de manera similar a Minimax, pero con la adición de tomar un promedio ponderado en los nodos de expectativa.
     
 
+![[Pasted image 20231201113526.png]]
+
 **Ventajas del Expectiminimax:**
 
 - **Manejo de Incertidumbre**: Es más realista para juegos que incluyen elementos de azar, como juegos de cartas o cualquier escenario donde las decisiones tienen resultados inciertos.
@@ -48,3 +50,10 @@ function expectiminimax(node, depth)
             α := α + (Probability[child] × expectiminimax(child, depth-1))
     return α
 ```
+
+
+# Ejemplo
+
+![[Pasted image 20231201113500.png]]
+
+![[Pasted image 20231201113511.png]]

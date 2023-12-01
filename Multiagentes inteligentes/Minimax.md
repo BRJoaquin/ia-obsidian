@@ -43,6 +43,10 @@ El algoritmo Minimax es una técnica fundamental en la [[Teoría de Juegos|teor�
 
 ![[Pasted image 20231201113234.png]]
 ![[Pasted image 20231201113250.png]]
+![[Pasted image 20231201113404.png]]
+
+![[Pasted image 20231201113741.png]]
+
 # Ejemplo
 
 ![[Pasted image 20231201113144.png]]

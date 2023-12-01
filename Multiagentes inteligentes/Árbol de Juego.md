@@ -27,8 +27,11 @@ Los árboles de juego son una herramienta fundamental en la teoría de juegos qu
     
 - **Equilibrios de Nash**: Los árboles de juego pueden ayudar a identificar los equilibrios de Nash en juegos secuenciales, donde las estrategias de los jugadores son mutuamente las mejores respuestas a las estrategias de los otros.
     
+# Valor de un juego
 
 ![[Pasted image 20231201103322.png]]
 
+
+# Video
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IwBUXH-L4yQ?si=xmI9NOxrzwrADCDB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

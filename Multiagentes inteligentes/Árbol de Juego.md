@@ -9,16 +9,16 @@ Los árboles de juego son una herramienta fundamental en la teoría de juegos qu
     - **Nodos de Decisión**: Representan puntos en el juego donde un jugador debe tomar una decisión.
     - **Nodos de Azar**: Representan puntos donde el resultado es determinado por el azar (por ejemplo, el lanzamiento de un dado).
       
-- **Aristas o Ramas**: Las líneas que conectan los nodos se llaman aristas o ramas y representan las acciones posibles o los movimientos que los jugadores pueden realizar desde un nodo de decisión.
+- **Aristas o Ramas**: Las líneas que conectan los nodos se llaman aristas o ramas y representan las [[Acción|acciones]] posibles o los movimientos que los jugadores pueden realizar desde un nodo de decisión.
     
-- **Nodos Terminales o Hojas**: Estos son los nodos al final de las ramas, donde el juego termina. Los nodos terminales suelen estar etiquetados con las utilidades o pagos para cada jugador, indicando el resultado de seguir ese camino específico a través del árbol.
+- **Nodos Terminales o Hojas**: Estos son los nodos al final de las ramas, donde el juego termina. Los nodos terminales suelen estar etiquetados con las [[Recompensa|utilidades]] o pagos para cada jugador, indicando el resultado de seguir ese camino específico a través del árbol.
     
-- **Información Perfecta vs. Imperfecta**: En un árbol de juego con información perfecta, cada nodo de decisión muestra claramente a qué jugador le toca mover, y todas las acciones anteriores son conocidas. En un árbol de información imperfecta, algunos nodos pueden agruparse en conjuntos de información que representan que el jugador no tiene información completa sobre las acciones previas.
-    
+- **Información Perfecta vs. Imperfecta**: En un árbol de [[Juegos con Información perfecta|juego con información perfecta]], cada nodo de decisión muestra claramente a qué jugador le toca mover, y todas las acciones anteriores son conocidas. En un árbol de [[Juegos con Información imperfecta| información imperfecta]], algunos nodos pueden agruparse en conjuntos de información que representan que el jugador no tiene información completa sobre las acciones previas.
+
 
 **Análisis de un Árbol de Juego:**
 
-- **Inducción hacia Atrás**: Es una técnica común para analizar árboles de juego con información perfecta. Comenzando desde los nodos terminales, los analistas calculan la mejor estrategia en cada nodo de decisión, "subiendo" por el árbol hasta el primer movimiento.
+- **Inducción hacia Atrás**: Es una técnica común para analizar árboles de juego **con información perfecta**. Comenzando desde los nodos terminales, los analistas calculan la mejor estrategia en cada nodo de decisión, "subiendo" por el árbol hasta el primer movimiento.
     
 - **Estrategias Óptimas**: Mediante el uso de árboles de juego, los jugadores pueden determinar estrategias óptimas que maximicen sus utilidades esperadas o minimicen sus pérdidas en función de las estrategias de los otros jugadores.
     

@@ -37,7 +37,6 @@ Expectimax es una herramienta poderosa en la teoría de juegos y la inteligencia
 # Links
 
 - https://www.geeksforgeeks.org/expectimax-algorithm-in-game-theory/
-- https://en.wikipedia.org/wiki/Expectiminimax
 
 
 # Ejemplo

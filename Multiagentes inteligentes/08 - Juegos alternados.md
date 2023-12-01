@@ -2,3 +2,4 @@
 - [[Árbol de Juego]]
 - [[ExpectiMax]]
 - [[Minimax]]
+- [[ExpectiMiniMax]]

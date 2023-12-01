@@ -1,3 +1,4 @@
 - [[Juegos con Información imperfecta]]
+- [[Historias]]
 - [[Information set]]
 - [[]]

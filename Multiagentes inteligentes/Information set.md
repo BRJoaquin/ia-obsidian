@@ -5,21 +5,7 @@ En la teoría de juegos, un infoset o conjunto de información es un conjunto de
 
 ## Definición
 
-- $H$ es el conjunto de todos los historiales posibles en un juego, y $I_p$ es el conjunto de todos los historiales en los que es el turno del jugador $p$.
-
-$$ H = \bigcup_{p} I_p $$
-
-- $I_p$ es el conjunto de historiales donde el jugador $p$ debe actuar.
-
-$$ I_p = \{ h \mid Agente(h) = p \} $$
-
-- Un infoset $I_p$ es un subconjunto de $I_p$ donde el jugador $p$ tiene exactamente la misma información. En otras palabras, el jugador no puede distinguir entre los historiales dentro del mismo infoset.
-
-- Para cualquier dos historiales $h, h'$ en el mismo infoset $I_p$, el conjunto de acciones posibles es el mismo.
-
-$$ \forall h, h' \in I_p, A(h) = A(h') $$
-
-- $A(I_p)$ es el conjunto de acciones posibles que el jugador puede tomar en el infoset $I_p$.
+![[Pasted image 20231201171851.png]]
 
 ## Importancia
 

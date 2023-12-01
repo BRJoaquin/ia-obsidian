@@ -1,1 +1,1 @@
-- [[Monte Carlo]]
+- [[Monte Carlo (funcion de evaluacion)]]

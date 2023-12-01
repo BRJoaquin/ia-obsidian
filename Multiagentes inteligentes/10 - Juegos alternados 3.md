@@ -1,4 +1,4 @@
-- [[Monte Carlo (funcion de evaluacion)]]
+- [[Monte Carlo (función de evaluación)]]
 - [[Rollout]]
 - [[Monte Carlo Tree Search]]
-- 
+- [[Diferencias Temporales (función de evaluación)]]

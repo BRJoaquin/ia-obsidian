@@ -1,5 +1,7 @@
 Los métodos de Monte Carlo en el contexto de las funciones de evaluación se utilizan para estimar el valor de los estados en juegos, especialmente cuando el cálculo directo es computacionalmente inviable debido a la complejidad del juego. La idea es realizar simulaciones aleatorias del juego para obtener una estimación estadística del valor esperado de un estado dado.
 
+![[Pasted image 20231201151917.png]]
+
 **Cómo Funcionan los Métodos de Monte Carlo para la Evaluación:**
 
 1. **Simulación de Juegos**: Se simulan múltiples juegos o episodios desde el estado en cuestión hasta el final del juego, utilizando estrategias aleatorias o alguna heurística para ambos jugadores.
@@ -36,4 +38,3 @@ Cada $V^j_{\pi_a,\pi_o}(s)$ es el valor observado para el episodio $j$, y $m$ es
 
 - **Eficiencia en Tiempo Real**: Puede ser computacionalmente costoso ejecutar suficientes simulaciones para obtener una estimación precisa, lo cual puede no ser práctico en tiempo real o para juegos muy complejos.
 
-En resumen, los métodos de Monte Carlo proporcionan una manera práctica y poderosa de estimar el valor de los estados en juegos de complejidad elevada, permitiendo a las IA y a los jugadores tomar decisiones informadas sin requerir una búsqueda exhaustiva del espacio de juego.

@@ -1,4 +1,4 @@
-El algoritmo Minimax es una técnica fundamental en la [[Teoría de Juegos|teoría de juegos]] y la inteligencia artificial para encontrar la mejor estrategia en [[Juego de suma cero|juegos de suma cero]] y de información perfecta, especialmente juegos de dos jugadores como el ajedrez o las damas. La idea central del Minimax es minimizar la pérdida máxima posible (de ahí el nombre) asumiendo que el oponente está jugando su mejor estrategia posible.
+El algoritmo Minimax es una técnica fundamental en la [[Teoría de Juegos|teoría de juegos]] y la inteligencia artificial para encontrar la mejor estrategia en [[Juego de suma cero|juegos de suma cero]] y de [[Juegos con Información perfecta|información perfecta]], especialmente juegos de dos jugadores como el ajedrez o las damas. La idea central del Minimax es **minimizar la pérdida máxima posible (de ahí el nombre) asumiendo que el oponente está jugando su mejor estrategia posible**.
 
 **Principios del Minimax:**
 
@@ -10,8 +10,10 @@ El algoritmo Minimax es una técnica fundamental en la [[Teoría de Juegos|teor�
     
 4. **Inducción hacia Atrás**: Minimax trabaja desde los nodos terminales del árbol hacia atrás (backward induction), calculando la utilidad de los nodos padre basándose en los valores óptimos de sus nodos hijos.
     
-5. **Podado Alfa-Beta**: Para mejorar la eficiencia del algoritmo Minimax y evitar la evaluación de movimientos irrelevantes, se puede utilizar la técnica de podado alfa-beta, que corta ramas del árbol que no influirán en la decisión final.
+5. **Podado Alfa-Beta**: Para mejorar la eficiencia del algoritmo Minimax y evitar la evaluación de movimientos irrelevantes, se puede utilizar la técnica de podado alfa-beta, que corta ramas del árbol que no influirán en la decisión final. ver [[Poda alpha-beta]]
     
+![[Pasted image 20231201113204.png]]
+
 
 **Ventajas del Minimax:**
 
@@ -38,3 +40,9 @@ El algoritmo Minimax es una técnica fundamental en la [[Teoría de Juegos|teor�
 - **Economía y Negocios**: Puede ayudar a modelar y resolver problemas de decisión estratégica donde las partes tienen intereses opuestos.
     
 - **Robótica y Control**: Minimax puede ser utilizado para la planificación de movimientos en entornos donde se conoce completamente el estado del sistema y las acciones de los adversarios o el entorno.
+
+![[Pasted image 20231201113234.png]]
+![[Pasted image 20231201113250.png]]
+# Ejemplo
+
+![[Pasted image 20231201113144.png]]

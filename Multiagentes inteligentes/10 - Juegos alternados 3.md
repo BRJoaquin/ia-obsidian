@@ -1,1 +1,4 @@
 - [[Monte Carlo (funcion de evaluacion)]]
+- [[Rollout]]
+- [[Monte Carlo Tree Search]]
+- 

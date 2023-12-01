@@ -1,4 +1,4 @@
 - [[Juegos con Información imperfecta]]
 - [[Historias]]
 - [[Information set]]
-- [[]]
+- [[Counterfactual regret minimization]]

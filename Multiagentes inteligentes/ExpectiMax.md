@@ -31,6 +31,14 @@ Expectimax es un algoritmo utilizado en la toma de decisiones bajo incertidumbre
 
 Expectimax es una herramienta poderosa en la teoría de juegos y la inteligencia artificial, proporcionando un marco para la toma de decisiones estratégicas en entornos inciertos y ayudando a los agentes a navegar complejas situaciones de decisión.
 
+> While Minimax assumes that the adversary(the minimizer) plays optimally, the Expectimax doesn’t. This is useful for modelling environments where adversary agents are not optimal, or their actions are based on chance.
+
+
+# Links
+
+- https://www.geeksforgeeks.org/expectimax-algorithm-in-game-theory/
+- https://en.wikipedia.org/wiki/Expectiminimax
+
 
 # Ejemplo
 

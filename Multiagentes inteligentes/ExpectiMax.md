@@ -24,7 +24,7 @@ Expectimax es un algoritmo utilizado en la toma de decisiones bajo incertidumbre
 
 - **Complejidad Computacional**: Al igual que Minimax, Expectimax puede sufrir de un crecimiento exponencial en la cantidad de cálculos a medida que aumenta la profundidad del árbol de decisión.
     
-- **Necesidad de Evaluación Heurística**: Para árboles muy grandes, a menudo es necesario aplicar funciones heurísticas para evaluar los nodos, ya que no es factible calcular la utilidad exacta en cada nodo debido a la complejidad del árbol.
+- **Necesidad de Evaluación Heurística**: Para árboles muy grandes, a menudo es necesario aplicar funciones heurísticas para evaluar los nodos, ya que no es factible calcular la utilidad exacta en cada nodo debido a la complejidad del árbol. ver [[Funciones de evaluación]]
     
 - **Dependencia en Probabilidades**: La efectividad del algoritmo depende en gran medida de cuán precisas sean las probabilidades asignadas a los resultados en los nodos de azar.
     

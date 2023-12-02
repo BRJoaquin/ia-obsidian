@@ -55,3 +55,8 @@ Estos conceptos forman la base sobre la cual se construyen las tareas de NLP, de
 ## Conclusión
 
 El NLP es un campo vibrante y en constante evolución que desempeña un papel crucial en la forma en que interactuamos con la tecnología y en la automatización de tareas relacionadas con el lenguaje. Continúa enfrentando desafíos importantes, pero sus avances tienen un impacto significativo en una variedad de aplicaciones prácticas.
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Tg1MjMIVArc?si=qusn15H8HKMx_CAQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RkYuH_K7Fx4?si=u9fLDia5R2TgBM2q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

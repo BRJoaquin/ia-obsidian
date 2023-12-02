@@ -11,7 +11,10 @@
 ## Proceso Durante la Inferencia
 - **Inicio con SOS**: El decoder comienza con el token de SOS.
 - **Autoregresión**: Utiliza sus propias predicciones (outputs) como entrada para el siguiente paso temporal.
-- **Finalización con EOS**: Continúa generando palabras hasta que produce un token de fin de secuencia (EOS) o alcanza un límite de longitud predefinido.
+- **Finalización con EOS**: Continúa generando palabras hasta que produce un token de fin de secuencia (EOS) o **alcanza un límite de longitud predefinido** (puede que no termine por si solo, por lo cual lo forzamos).
+
+![[Pasted image 20231202164830.png]]
+
 
 ## Diagrama del Decoder Durante el Entrenamiento
 
@@ -27,7 +30,7 @@
   - **Predicción de la Palabra Siguiente**: Selecciona el token con la mayor probabilidad como la siguiente palabra.
 
 ## Importancia del Decoder
-- **Generación Coherente**: La habilidad del decoder para generar una secuencia coherente y relevante es esencial para la efectividad del modelo Seq2Seq.
+- **Generación Coherente**: La habilidad del decoder para generar una secuencia coherente y relevante es esencial para la efectividad del modelo [[Sequence to Sequence (Seq2Seq)|Seq2Seq]].
 - **Interacción con el Contexto**: Debe ser capaz de interpretar correctamente el vector de contexto proporcionado por el encoder.
 
 ## Conclusiones

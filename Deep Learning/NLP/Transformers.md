@@ -1,5 +1,5 @@
 
-Los Transformers son un tipo de arquitectura de modelo de deep learning que ha revolucionado el campo del [[|procesamiento del lenguaje natural (NLP)]].
+Los Transformers son un tipo de arquitectura de modelo de deep learning que ha revolucionado el campo del [[Procesamiento del Lenguaje Natural (NLP)|procesamiento del lenguaje natural (NLP)]].
 
 ## Características Principales
 - **Estructura**: Compuesta por bloques de encoders y decoders apilados.
@@ -22,3 +22,7 @@ Los Transformers son un tipo de arquitectura de modelo de deep learning que ha r
 ## Conclusiones
 Los Transformers son actualmente el estándar de oro en muchas tareas de NLP y continúan impulsando avances en el campo.
 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aL-EmKuB078?si=0ogLWCOCQ9kSaenr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xi94v_jl26U?si=6Aa0rqd8NQkyXcMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

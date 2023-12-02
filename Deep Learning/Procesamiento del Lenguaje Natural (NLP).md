@@ -37,7 +37,7 @@ El Procesamiento del Lenguaje Natural (NLP) es una rama de la inteligencia artif
 - **Variedad de Formas**: Puede ser una frase, un párrafo, o un conjunto de párrafos como una reseña, un comentario, un tweet, etc.
 
 ## Palabras como Características
-- **Normalización**: Proceso de convertir palabras a una forma base ([[Lematización|lematización]]) o reducirlas a su raíz ([[Radicalización|radicalización]]), para que variaciones de una palabra sean tratadas como la misma entidad.
+- **Normalización**: Proceso de convertir palabras a una forma base ([[Lematización|lematización]]) o reducirlas a su raíz ([[Stemming|radicalización]]), para que variaciones de una palabra sean tratadas como la misma entidad.
 - **Posición en el Documento**: La ubicación de una palabra en el texto puede ser relevante para el análisis, especialmente en modelos como [[Bag-of-Words (BOW)]] que ignoran el orden.
 - **Frecuencia**: La cantidad de veces que aparece una palabra en un documento o corpus puede ser un indicativo de su importancia.
 

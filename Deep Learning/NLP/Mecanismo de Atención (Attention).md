@@ -12,6 +12,7 @@ Los mecanismos de atención son una técnica en el procesamiento del lenguaje na
 ## Componentes del Mecanismo de Atención
 - **Capas Lineales**: Transforman los estados ocultos para prepararlos para la atención.
 - **Multiplicación de Matrices**: Calcula la puntuación de atención entre el estado oculto del decoder y los estados ocultos del encoder.
+  ![[Pasted image 20231202174624.png]]
 - **Ponderación de la Información**: Los pesos de atención determinan la contribución de cada estado oculto del encoder al estado oculto actual del decoder.
 
 ![[Pasted image 20231202173233.png]]
@@ -21,6 +22,10 @@ Los mecanismos de atención son una técnica en el procesamiento del lenguaje na
 
 ## Conclusión
 El mecanismo de atención es una innovación clave que ha mejorado significativamente la capacidad de los modelos Seq2Seq para manejar secuencias largas y mantener la coherencia y relevancia en la generación de texto.
+
+# Links
+
+- https://medium.com/analytics-vidhya/seq2seq-models-french-to-english-translation-using-encoder-decoder-model-with-attention-9c05b2c09af8
 
 # Videos
 

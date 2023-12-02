@@ -11,3 +11,6 @@
 
 - [[Procesamiento del Lenguaje Natural (NLP)]]
 - [[Preprocesamiento del Lenguaje Natural]]
+- [[Stemming]]
+- [[Lematización]]
+- [[Vectorizacion de palabras]]

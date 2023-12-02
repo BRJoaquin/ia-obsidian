@@ -4,3 +4,6 @@
 - [[LeNet]]
 - [[AlexNet]]
 - [[VGGnet]]
+
+
+- [[Skip-Connection]]

@@ -1,3 +1,4 @@
+![[Pasted image 20231202101453.png]]
 ## Definición
 
 Las skip connections, también conocidas como **conexiones residuales**, son una técnica utilizada en arquitecturas de redes neuronales profundas. Permiten que la salida de una capa anterior sea utilizada como entrada adicional para una capa posterior, generalmente saltándose una o más capas intermedias.
@@ -40,6 +41,10 @@ ver [[Desvanecimiento de gradiente]]
 ## Conclusión
 
 Las skip connections son una técnica poderosa en deep learning, especialmente útil para construir redes neuronales profundas. Facilitan el entrenamiento y mejoran la capacidad de la red para aprender características complejas y variadas. Su aplicación en arquitecturas como ResNet ha demostrado mejoras significativas en tareas de visión por computador y otras áreas.
+
+# En CNN
+
+![[Pasted image 20231202101545.png]]
 
 # Y si son tan buenas por que no se usan siempre?
 

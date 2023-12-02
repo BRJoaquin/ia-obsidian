@@ -55,9 +55,10 @@ A medida que avanzamos en la red, los filtros pueden comenzar a reconocer caract
 
 ![[Pasted image 20231202095523.png]]
 
-# Lectura recomendada
+# Lectura recomendada / Links
 - https://towardsdatascience.com/a-comprehensive-guide-to-convolutional-neural-networks-the-eli5-way-3bd2b1164a53 
 - https://cs231n.github.io/convolutional-networks/
+- https://distill.pub/
 
 
 # Video

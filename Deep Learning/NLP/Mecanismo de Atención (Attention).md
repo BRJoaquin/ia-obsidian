@@ -14,9 +14,14 @@ Los mecanismos de atención son una técnica en el procesamiento del lenguaje na
 - **Multiplicación de Matrices**: Calcula la puntuación de atención entre el estado oculto del decoder y los estados ocultos del encoder.
 - **Ponderación de la Información**: Los pesos de atención determinan la contribución de cada estado oculto del encoder al estado oculto actual del decoder.
 
+![[Pasted image 20231202173233.png]]
+
 ## Limitaciones
 - **Definición de Tamaño Máximo**: Es necesario establecer un tamaño máximo para las secuencias debido a la naturaleza computacional de la atención.
 
 ## Conclusión
 El mecanismo de atención es una innovación clave que ha mejorado significativamente la capacidad de los modelos Seq2Seq para manejar secuencias largas y mantener la coherencia y relevancia en la generación de texto.
 
+# Videos
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fjJOgb-E41w?si=PZpwtxj5s6z3v0VX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

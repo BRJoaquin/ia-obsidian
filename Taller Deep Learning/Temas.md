@@ -15,3 +15,6 @@
 - [[Lematización]]
 - [[Vectorizacion de palabras]]
 - [[Embeding]]
+- [[Bag-of-Words (BOW)]]
+- [[Term Frequency - Inverse Document Frequency (TF - IDF)]]
+- 

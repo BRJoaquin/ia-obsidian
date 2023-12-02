@@ -12,10 +12,11 @@ Bag-of-Words (BOW) es un modelo de representación textual utilizado en [[Proces
 2. **Construcción del Diccionario**: Identifica todas las palabras únicas en todos los documentos para formar el diccionario.
 3. **Vectorización**: Crea un vector para cada documento, donde el valor en cada dimensión representa la frecuencia (o presencia/ausencia) de la palabra correspondiente en el documento.
 
+![[Pasted image 20231202112226.png]]
+
 ## Variantes de BOW
 
-- **Bolsa de Conteo**: Simplemente cuenta cuántas veces aparece cada palabra del diccionario en cada documento.
-- **TF-IDF**: Pondera las frecuencias de las palabras por la inversa de su frecuencia en los documentos del corpus para dar más importancia a las palabras menos frecuentes y potencialmente más significativas.
+**TF-IDF**: Pondera las frecuencias de las palabras por la inversa de su frecuencia en los documentos del corpus para dar más importancia a las palabras menos frecuentes y potencialmente más significativas. ver [[Term Frequency - Inverse Document Frequency (TF - IDF)]]
 
 ## Limitaciones de BOW
 
@@ -23,4 +24,4 @@ Bag-of-Words (BOW) es un modelo de representación textual utilizado en [[Proces
 - **Esparsidad**: Los vectores resultantes son típicamente dispersos (la mayoría de sus elementos son cero), especialmente con diccionarios grandes, lo que es ineficiente en términos de almacenamiento y cálculo.
 - **Sinónimos y Polisemia**: No maneja bien los sinónimos (palabras diferentes con significados similares) y la polisemia (una palabra que tiene múltiples significados).
 
-A pesar de sus limitaciones, BOW sigue siendo un método muy utilizado en varias aplicaciones de NLP, especialmente cuando el contexto y el orden de las palabras no son cruciales para la tarea.
+A pesar de sus limitaciones, BOW sigue siendo un método muy utilizado en varias aplicaciones de NLP, **especialmente cuando el contexto y el orden de las palabras no son cruciales para la tarea**.

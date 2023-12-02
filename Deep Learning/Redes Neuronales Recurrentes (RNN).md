@@ -85,9 +85,9 @@
 
 ![[Pasted image 20231202121432.png]]
 
-Backpropagation en tiempo real (BPTT) es una técnica para entrenar redes neuronales recurrentes (RNN) que utiliza una versión modificada del algoritmo de backpropagación común. La principal diferencia entre BPTT y el backpropagación común es que en BPTT se actualiza la red neuronal después de cada ejemplo, mientras que en el backpropagación común se actualiza la red neuronal después de procesar todo el conjunto de datos de entrada.
+Backpropagation en tiempo real (BPTT) es una técnica para entrenar redes neuronales recurrentes (RNN) que utiliza una versión modificada del algoritmo de backpropagación común. La principal diferencia entre BPTT y el backpropagación común es que en BPTT se actualiza la red neuronal después de cada ejemplo (o cada ciertos steps), mientras que en el backpropagación común se actualiza la red neuronal después de procesar todo el conjunto de datos de entrada.
 
-
+https://en.wikipedia.org/wiki/Backpropagation_through_time#:~:text=Backpropagation%20through%20time%20(BPTT)%20is,independently%20derived%20by%20numerous%20researchers.
 
 ## Conclusión
 

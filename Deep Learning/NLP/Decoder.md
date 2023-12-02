@@ -33,7 +33,16 @@
 - **Generación Coherente**: La habilidad del decoder para generar una secuencia coherente y relevante es esencial para la efectividad del modelo [[Sequence to Sequence (Seq2Seq)|Seq2Seq]].
 - **Interacción con el Contexto**: Debe ser capaz de interpretar correctamente el vector de contexto proporcionado por el encoder.
 
-## Conclusiones
-- **Interdependencia Encoder-Decoder**: El éxito de la decodificación está directamente vinculado a la calidad del contexto proporcionado por el encoder.
-- **Adaptabilidad**: La estructura del decoder permite que sea entrenado y utilizado en una variedad de tareas de generación de lenguaje.
+# Backpropagation
 
+![[Pasted image 20231202165325.png]]
+
+El entrenamiento de modelos Seq2Seq involucra el ajuste de parámetros tanto del encoder como del decoder de manera combinada mediante un proceso conocido como backpropagation a través del tiempo (BPTT).
+
+## Entrenamiento End-to-End
+- **Entrenamiento Conjunto**: Aunque el encoder y el decoder pueden tener arquitecturas diferentes, se entrenan juntos como una única red end-to-end.
+- **Ajuste de Parámetros**: Se utiliza el algoritmo de backpropagation para actualizar los pesos de la red en ambos módulos, encoder y decoder.
+
+## Cálculo del Error
+- **Error por Time-Step**: El error se calcula en cada paso temporal del decoder como la diferencia entre la predicción y el valor objetivo real.
+- **Costo Total**: El costo total es la suma de los errores de cada paso del decoder, lo cual proporciona una medida de qué tan bien el modelo completo está realizando la tarea.

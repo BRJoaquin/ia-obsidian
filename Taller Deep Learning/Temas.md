@@ -28,3 +28,4 @@
 	- [[Sequence to Sequence (Seq2Seq)]]
 		- [[Encoder]]
 		- [[Decoder]]
+		- [[Mecanismo de Atención (Attention)]]

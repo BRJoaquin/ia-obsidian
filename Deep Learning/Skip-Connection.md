@@ -60,6 +60,8 @@ Las conexiones residuales o skip connections son una técnica crucial en las red
 
 ## Suma Aditiva
 
+![[Pasted image 20231202104130.png]]
+
 ### Descripción
 - **Proceso**: La suma aditiva toma la salida de una capa anterior y la suma directamente con la salida de una capa posterior.
 - **Normalización**: A menudo se requiere que las dimensiones de las capas que se van a sumar sean idénticas, lo que puede implicar cambiar la dimensión de los canales a través de una operación de proyección, como una convolución 1x1.

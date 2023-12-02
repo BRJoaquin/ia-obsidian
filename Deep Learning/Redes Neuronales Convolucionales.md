@@ -46,6 +46,8 @@ Cada filtro en una capa convolucional puede aprender a reconocer un tipo especí
 
 A medida que avanzamos en la red, los filtros pueden comenzar a reconocer características más complejas, como formas y patrones específicos. 
 
+![[Pasted image 20231202095117.png]]
+
 # Lectura recomendada
 > https://towardsdatascience.com/a-comprehensive-guide-to-convolutional-neural-networks-the-eli5-way-3bd2b1164a53 
 

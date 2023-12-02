@@ -52,6 +52,27 @@ https://medium.com/@bdhuma/6-basic-things-to-know-about-convolution-daef5e1bc411
 - **Control de Dimensiones**: El padding permite controlar cómo cambian las dimensiones de los mapas de características después de cada capa convolucional.
 - **Conservación de Información**: El padding de 'same' asegura que la información en los bordes de la imagen no se pierda demasiado rápido a medida que la señal pasa por las capas convolucionales.
 
+# Convolución en Imágenes de Tres Canales
+
+La operación de convolución en imágenes con tres canales (como imágenes en color RGB) se puede realizar de distintas maneras, dependiendo del objetivo de la convolución y la arquitectura de la red neuronal utilizada. A continuación, se describen las dos formas más comunes de tratar las imágenes de tres canales durante la convolución.
+
+## Suma de Convoluciones Individuales
+
+- **Proceso**: Cada canal se convoluciona por separado con su propio kernel de convolución. Luego, los resultados de estos tres canales se suman para producir una única imagen de salida o mapa de características.
+  
+- **Uso Común**: Este enfoque se utiliza en ciertos tipos de procesamiento de imágenes y técnicas analíticas donde se requiere una fusión de información de todos los canales.
+
+![[Pasted image 20231202094934.png]]
+
+## Conservación de Canales Separados
+
+- **Proceso**: Se aplica un conjunto de filtros de convolución a la imagen completa de tres canales, donde cada filtro tiene la profundidad de tres. Esto permite que cada filtro interactúe con los tres canales al mismo tiempo. El resultado es un conjunto de mapas de características, cada uno correspondiente a un filtro aplicado.
+
+- **Uso Común**: Este enfoque es el estándar en redes neuronales convolucionales (CNNs) modernas, donde la salida de la convolución no se reduce a una sola capa, sino que se expande en múltiples capas para capturar una rica representación de características.
+
+## En Resumen
+
+En la práctica, la conservación de los canales separados en las CNNs permite aprender características más complejas y es la técnica predominante en la mayoría de las aplicaciones de visión por computadora.
 
 # Cálculo de Dimensiones
 

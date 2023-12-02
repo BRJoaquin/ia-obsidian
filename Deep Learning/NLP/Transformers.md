@@ -20,8 +20,38 @@ Los Transformers son un tipo de arquitectura de modelo de deep learning que ha r
 - **Traducción Automática**: Google y otros servicios de traducción utilizan Transformers para proporcionar traducciones rápidas y precisas.
 - **Generación de Texto**: GPT (Generative Pretrained Transformer) es capaz de generar texto coherente y relevante.
 
-## Conclusiones
-Los Transformers son actualmente el estándar de oro en muchas tareas de NLP y continúan impulsando avances en el campo.
+
+
+# Vectores Query, Key y Value en Transformers
+
+## Conceptos Básicos
+En la arquitectura Transformer, los vectores query (consulta), key (clave) y value (valor) son componentes centrales del mecanismo de atención.
+
+### Query
+- **Propósito**: Representar la palabra o elemento actual que está buscando información relevante en otras partes de la entrada.
+- **Uso**: Se utiliza para calcular la puntuación de atención con cada key.
+
+### Key
+- **Propósito**: Representar las palabras o elementos en la entrada que se compararán con el query.
+- **Uso**: Las keys interactúan con los queries para determinar el nivel de atención que cada elemento de la entrada debe recibir.
+
+### Value
+- **Propósito**: Contener la información real de cada elemento de la entrada que se quiere recuperar una vez que se han calculado las puntuaciones de atención.
+- **Uso**: Una vez que se establece la relevancia de las keys con respecto a un query, los corresponding values se ponderan y se combinan para producir la salida del mecanismo de atención.
+
+## Mecanismo de Atención
+- **Atención**: Se calcula una puntuación de atención utilizando los vectores query y key. 
+- **Ponderación de Values**: La puntuación de atención determina cómo se ponderan los values.
+- **Salida**: La combinación de los values ponderados se convierte en la salida de la capa de atención para ese query específico.
+
+## Importancia en Transformers
+- **Captura de Relaciones Contextuales**: Este sistema de vectores permite que el modelo capture relaciones complejas y dependencias a larga distancia entre palabras o subunidades en una secuencia.
+- **Dinamismo**: Los vectores query, key y value permiten un enfoque dinámico para extraer y resaltar información relevante de la entrada.
+
+## Conclusión
+Los vectores query, key y value son fundamentales para el funcionamiento de los mecanismos de atención en los Transformers, proporcionando una forma poderosa y flexible de modelar interacciones entre diferentes partes de la entrada.
+
+
 
 
 ver ademas:

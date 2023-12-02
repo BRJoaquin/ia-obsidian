@@ -28,8 +28,14 @@
 - **Flexibilidad en Longitud de Entrada**: Maneja secuencias de longitud variable.
 
 ### Desventajas
-- **Problema de Desvanecimiento del Gradiente**: Dificultad para aprender dependencias a largo plazo debido a la disminución exponencial del gradiente a través de capas.
+- **Problema de Desvanecimiento del Gradiente**: Dificultad para aprender dependencias a largo plazo debido a la disminución exponencial del gradiente a través de capas. ver [[Desvanecimiento de gradiente]]
+- **Exploding gradients**: gradientes que crecen exponencialmente. ver [[Gradiente Explosivo]]
 - **Complejidad Computacional**: Mayor tiempo y recursos necesarios para el entrenamiento.
+- Procesamiento secuencial de los inputs 
+	- No es paralelizable
+	- No hace buen uso de optimizaciones de GPU
+- Con inputs muy largos podemos olvidar información importante presente muchos
+pasos en el pasado
 
 ## Tipos de RNN
 
@@ -81,6 +87,7 @@
 - **Recorte del Gradiente**: Mitiga la explosión del gradiente. ver [[Clipping del gradiente]]
 - **Incorporación de Atención**: Mejora el manejo de secuencias largas.
 
+![[Pasted image 20231202123100.png]]
 ## Backprop through time
 
 ![[Pasted image 20231202121432.png]]

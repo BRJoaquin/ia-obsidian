@@ -20,4 +20,4 @@
 - [[One-hot (NLP)]]
 - [[Word2Vec]]
 
-- 
+- [[GAN]]

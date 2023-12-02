@@ -23,4 +23,7 @@
 - [[GAN]]
 
 - [[Modelos de Lenguaje (Language Models, LM)]]
+- [[Modelos de Lenguaje con ANN]]
+- [[Modelos de Lenguaje con RNN]]
+- [[Sequence to Sequence]]
 - 

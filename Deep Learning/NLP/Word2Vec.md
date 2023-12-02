@@ -23,6 +23,7 @@ Word2Vec es una técnica de procesamiento de lenguaje natural utilizada para apr
 - **Red Neuronal Shallow**: Word2Vec utiliza una red neuronal de una sola capa oculta para el aprendizaje de embeddings.
 - **Optimización**: Se utiliza descenso de gradiente estocástico y técnicas como negative sampling o hierarchical softmax para la eficiencia del entrenamiento.
 
+![[Pasted image 20231202120147.png]]
 ## Características de los Embeddings de Word2Vec
 
 ### Relaciones Semánticas
@@ -56,3 +57,61 @@ https://projector.tensorflow.org/
 - **Modelos Preentrenados**: Google y otros han publicado modelos Word2Vec preentrenados, que se pueden utilizar para iniciar proyectos de NLP.
 
 Word2Vec ha sido un avance fundamental en NLP, permitiendo avances significativos en la comprensión y modelado del lenguaje natural.
+
+
+# Ejemplo en Python utilizando la biblioteca Gensim para entrenar un modelo Word2Vec
+
+
+```python
+from gensim.models import Word2Vec
+from nltk.tokenize import word_tokenize
+import nltk
+nltk.download('punkt')
+
+# Supongamos que tenemos el siguiente corpus de texto
+corpus = [
+    "The quick brown fox jumps over the lazy dog",
+    "Word2Vec will convert words to vectors",
+    "Gensim is a great library for Word2Vec"
+]
+
+# Tokenizamos las frases del corpus
+tokenized_sentences = [word_tokenize(sentence.lower()) for sentence in corpus]
+
+# Entrenamos el modelo Word2Vec
+# size: dimensionality of the word vectors
+# window: maximum distance between the current and predicted word within a sentence
+# min_count: ignores all words with total frequency lower than this
+# workers: use these many worker threads to train the model
+model = Word2Vec(tokenized_sentences, vector_size=100, window=5, min_count=1, workers=4)
+
+# Usamos el modelo para obtener el vector de una palabra
+vector = model.wv['word2vec']  # Obtener el vector de la palabra 'word2vec'
+
+# Encontramos las palabras más similares a 'word2vec'
+similar_words = model.wv.most_similar('word2vec')
+
+# Imprimimos el vector y palabras similares
+print(vector)
+print(similar_words)
+```
+
+# Ejemplo en Python utilizando un modelo Word2Vec preentrenado con la biblioteca Gensim
+
+```python
+from gensim.models import KeyedVectors
+
+# Cargamos el modelo preentrenado de Word2Vec. Este ejemplo utiliza el modelo 'word2vec-google-news-300' que es grande y puede demorar en cargarse.
+# Asegúrese de tenerlo descargado previamente o ajuste el siguiente código para descargarlo automáticamente si es necesario.
+model = KeyedVectors.load_word2vec_format('word2vec-google-news-300.bin', binary=True)
+
+# Obtenemos el vector para una palabra específica
+vector = model['computer']  # Reemplazar 'computer' con la palabra de su elección
+
+# Calculamos palabras similares al término 'computer'
+similar_words = model.most_similar('computer', topn=5)  # Obtener las 5 palabras más similares
+
+# Imprimimos el vector y las palabras similares
+print(vector)
+print(similar_words)
+```

@@ -5,7 +5,9 @@ Los modelos de lenguaje Secuencia a Secuencia (Seq2Seq) son un tipo de modelo de
 ## Características Clave
 - **Transformación de Secuencias**: Convierten secuencias de un dominio (ej., texto en un idioma) a otro (ej., texto en otro idioma).
 - **Arquitectura de Red**: Típicamente consisten en dos partes principales: un codificador (encoder) y un decodificador (decoder).
-  
+
+![[Pasted image 20231202164142.png]]
+
   ### Codificador (Encoder)
   - **Función**: Procesa la secuencia de entrada y genera una representación intermedia (a menudo un vector de características).
   - **Tecnologías Comunes**: Redes Neuronales Recurrentes ([[Redes Neuronales Recurrentes (RNN)|RNN]]), LSTM (Long Short-Term Memory), GRU (Gated Recurrent Units).

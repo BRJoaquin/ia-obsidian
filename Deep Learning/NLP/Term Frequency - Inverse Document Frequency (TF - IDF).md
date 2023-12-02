@@ -10,6 +10,7 @@ TF-IDF es una técnica de ponderación utilizada en la recuperación de informac
 ### Inverse Document Frequency (IDF)
 - **Definición**: Mide la importancia de la palabra en el conjunto completo de documentos (corpus).
 - **Cálculo**: El logaritmo del número total de documentos en el corpus dividido por el número de documentos que contienen la palabra.
+![[Pasted image 20231202112715.png]]
 
 ## Fórmula de TF-IDF
 
@@ -17,6 +18,7 @@ La puntuación de TF-IDF para una palabra en un documento se calcula como:
 
 > TF-IDF = TF * IDF
 
+![[Pasted image 20231202112748.png]]
 ## Aplicaciones de TF-IDF
 
 - **Recuperación de Información**: Para ponderar y recuperar documentos relevantes en respuesta a una consulta.

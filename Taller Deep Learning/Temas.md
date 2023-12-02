@@ -21,3 +21,6 @@
 - [[Word2Vec]]
 
 - [[GAN]]
+
+- [[Modelos de Lenguaje (Language Models, LM)]]
+- 

@@ -1,7 +1,6 @@
 
 ![[Pasted image 20231202131939.jpg]]
 
-
 Las Redes Generativas Adversarias (GANs, por sus siglas en inglés de Generative Adversarial Networks) son una clase de métodos de aprendizaje automático no supervisado, introducidos por Ian Goodfellow y sus colegas en 2014. Las GANs se componen de dos redes neuronales que se entrenan simultáneamente mediante un proceso competitivo.
 
 ## Componentes de una GAN
@@ -35,10 +34,3 @@ El entrenamiento de una GAN es un [[Juego de suma cero|juego de suma cero]] entr
 - **Modo de Colapso (Mode Collapse)**: Situación donde el generador produce un rango limitado de respuestas.
 - **No Convergencia**: Las GANs pueden ser difíciles de entrenar debido a la dinámica compleja entre el generador y el discriminador.
 - **Ajuste de Hiperparámetros**: Requiere una cuidadosa selección de hiperparámetros para estabilizar el entrenamiento.
-
-## Avances en GANs
-
-- **Arquitecturas Mejoradas**: ProGAN, StyleGAN, BigGAN han mejorado la calidad y estabilidad de las muestras generadas.
-- **Técnicas de Entrenamiento**: Métodos como el entrenamiento progresivo, el uso de normalizaciones por lotes y la introducción de penalizaciones por gradiente han ayudado a abordar algunos desafíos.
-
-Las GANs son una herramienta poderosa en el arsenal del aprendizaje profundo, capaz de generar datos que son sorprendentemente similares a los reales, abriendo posibilidades en múltiples campos de aplicación.

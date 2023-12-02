@@ -58,3 +58,7 @@ La visión por computador es un campo de estudio que se centra en la capacidad d
 ## Conclusión
 
 La visión por computador es una rama avanzada y en rápida evolución de la inteligencia artificial y el aprendizaje automático. Tiene un amplio rango de aplicaciones prácticas que están transformando industrias y tiene el potencial de seguir avanzando significativamente en la manera en que las máquinas interactúan e interpretan nuestro mundo visual.
+
+
+ver tambien:
+- [[Feature Extraction]]

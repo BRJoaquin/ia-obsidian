@@ -18,3 +18,4 @@
 - [[Bag-of-Words (BOW)]]
 - [[Term Frequency - Inverse Document Frequency (TF - IDF)]]
 - [[One-hot (NLP)]]
+- [[Word2Vec]]

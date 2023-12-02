@@ -1,6 +1,6 @@
 ## Definición y Contexto
 
-Los embeddings son una técnica fundamental en el campo del [[Deep Learning|deep learning]] y el [[Procesamiento del Lenguaje Natural (NLP)|procesamiento del lenguaje natural (NLP)]]. Se utilizan para transformar datos de alta dimensionalidad y tipo categórico, como palabras o etiquetas, en vectores de baja dimensionalidad. Estos vectores contienen valores numéricos continuos. La idea principal detrás de los embeddings es representar datos complejos, como palabras, de una manera que las máquinas puedan procesar eficientemente.
+Los embeddings son una técnica fundamental en el campo del [[Deep Learning|deep learning]] y el [[Procesamiento del Lenguaje Natural (NLP)|procesamiento del lenguaje natural (NLP)]]. Se utilizan para transformar datos de alta dimensionalidad y tipo categórico, como palabras o etiquetas, en vectores de baja dimensionalidad. Estos vectores contienen valores numéricos continuos. La idea principal detrás de los embeddings es representar datos complejos, como palabras, de una manera que las máquinas puedan procesar eficientemente. ver [[Vectorizacion de palabras]]
 
 ## Características Principales
 

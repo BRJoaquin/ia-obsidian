@@ -1,15 +1,23 @@
 
 Word2Vec es una técnica de procesamiento de lenguaje natural utilizada para aprender representaciones vectoriales de palabras, llamadas [[Embeding|embeddings]]. Desarrollado por un equipo de investigadores liderados por Tomas Mikolov en Google, Word2Vec captura la esencia semántica de las palabras a través de su contexto en un corpus de texto.
 
+![[Pasted image 20231202115644.png]]
+
 ## Fundamentos de Word2Vec
+
+![[Pasted image 20231202115724.png]]
 
 ### Modelo Basado en Contexto
 - **Idea Central**: Las palabras que ocurren en contextos similares tienden a tener significados similares.
 - **Ventana de Contexto**: Word2Vec considera una "ventana" de palabras alrededor de cada palabra objetivo para aprender su representación.
 
+![[Pasted image 20231202115753.png]]
+
 ### Dos Arquitecturas Principales
 - **CBOW (Continuous Bag of Words)**: Predice la palabra actual basada en el contexto.
 - **Skip-Gram**: Predice el contexto a partir de una palabra dada.
+
+![[Pasted image 20231202115835.png]]
 
 ### Entrenamiento de Word2Vec
 - **Red Neuronal Shallow**: Word2Vec utiliza una red neuronal de una sola capa oculta para el aprendizaje de embeddings.
@@ -21,6 +29,9 @@ Word2Vec es una técnica de procesamiento de lenguaje natural utilizada para apr
 - **Palabras Similares**: Palabras semánticamente similares están cerca en el espacio vectorial.
 - **Analogías**: Capaz de capturar analogías (por ejemplo, "rey" es a "hombre" lo que "reina" es a "mujer").
 
+![[Pasted image 20231202115905.png]]
+
+https://projector.tensorflow.org/
 ### Dimensionalidad
 - **Tamaño del Vector**: Los embeddings típicamente tienen entre 100 y 300 dimensiones, dependiendo del tamaño del corpus y la diversidad del vocabulario.
 

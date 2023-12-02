@@ -2,24 +2,6 @@
 
 El Procesamiento del Lenguaje Natural (NLP) es una disciplina que combina la informática, la inteligencia artificial y la lingüística, y se centra en la interacción entre las computadoras y el lenguaje humano. Su objetivo es permitir que las máquinas comprendan, interpreten, manipulen y respondan al lenguaje humano de una manera útil y significativa.
 
-## Componentes Clave
-
-### Análisis de Texto
-
-- **Tokenización**: División de texto en oraciones, palabras o símbolos.
-- **Análisis Morfológico**: Estudio de las raíces y afijos de las palabras.
-- **Etiquetado de Partes del Habla**: Identificación de sustantivos, verbos, adjetivos, etc.
-
-### Comprensión y Generación
-
-- **Análisis de Sentimientos**: Determinar la actitud o emoción expresada en el texto.
-- **Generación de Lenguaje Natural**: Crear texto coherente y relevante en lenguaje humano.
-
-### Entendimiento Semántico
-
-- **Desambiguación de Sentido de Palabras**: Interpretar el significado correcto de las palabras en contexto.
-- **Representación de Conocimiento**: Modelar información y relaciones para comprender y generar lenguaje.
-
 ## Tecnologías y Técnicas
 
 ### Modelos de Aprendizaje Automático
@@ -55,8 +37,8 @@ El Procesamiento del Lenguaje Natural (NLP) es una rama de la inteligencia artif
 - **Variedad de Formas**: Puede ser una frase, un párrafo, o un conjunto de párrafos como una reseña, un comentario, un tweet, etc.
 
 ## Palabras como Características
-- **Normalización**: Proceso de convertir palabras a una forma base ([[Lematización|lematización]]) o reducirlas a su raíz (radicalización), para que variaciones de una palabra sean tratadas como la misma entidad.
-- **Posición en el Documento**: La ubicación de una palabra en el texto puede ser relevante para el análisis, especialmente en modelos como Bag-of-Words (BOW) que ignoran el orden.
+- **Normalización**: Proceso de convertir palabras a una forma base ([[Lematización|lematización]]) o reducirlas a su raíz ([[Radicalización|radicalización]]), para que variaciones de una palabra sean tratadas como la misma entidad.
+- **Posición en el Documento**: La ubicación de una palabra en el texto puede ser relevante para el análisis, especialmente en modelos como [[Bag-of-Words (BOW)]] que ignoran el orden.
 - **Frecuencia**: La cantidad de veces que aparece una palabra en un documento o corpus puede ser un indicativo de su importancia.
 
 ## Corpus
@@ -69,9 +51,6 @@ El Procesamiento del Lenguaje Natural (NLP) es una rama de la inteligencia artif
 - **Subset del Lenguaje**: No incluye todas las palabras posibles del lenguaje, sino las más relevantes para el problema en cuestión.
 
 Estos conceptos forman la base sobre la cual se construyen las tareas de NLP, desde el análisis de sentimientos hasta la traducción automática y la generación de texto.
-
-
-
 
 ## Conclusión
 

@@ -58,6 +58,18 @@ https://projector.tensorflow.org/
 
 Word2Vec ha sido un avance fundamental en NLP, permitiendo avances significativos en la comprensión y modelado del lenguaje natural.
 
+# Modelos Word2Vec: Preentrenados vs Entrenamiento Propio
+
+## Modelos Preentrenados
+- **Cuándo usar**: Para prototipos rápidos, tareas generales de NLP, o cuando se carece de recursos computacionales.
+- **Ventajas**: Ahorro de tiempo, calidad probada, entrenados en corpus grandes.
+
+## Entrenamiento Propio
+- **Cuándo usar**: Para textos de dominios específicos, datos actualizados o cuando se manejan términos especializados.
+- **Ventajas**: Personalización para necesidades específicas, actualización con lenguaje y términos recientes.
+
+## Decisión
+- **Basada en**: Naturaleza del texto, recursos disponibles, y especificidad del dominio.
 
 # Ejemplo en Python utilizando la biblioteca Gensim para entrenar un modelo Word2Vec
 

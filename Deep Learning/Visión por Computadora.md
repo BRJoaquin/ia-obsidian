@@ -61,4 +61,4 @@ La visión por computador es una rama avanzada y en rápida evolución de la int
 
 
 ver tambien:
-- [[Feature Extraction]]
+- [[Extracción de Características (Feature Extraction)]]

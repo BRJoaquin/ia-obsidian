@@ -1,2 +1,2 @@
 - [[Visión por Computadora]]
-- [[Feature Extraction]]
+- [[Extracción de Características (Feature Extraction)]]

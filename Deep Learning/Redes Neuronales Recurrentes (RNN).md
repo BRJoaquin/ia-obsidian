@@ -51,12 +51,21 @@ pasos en el pasado
 - **Estructura Mejorada**: Resuelve el problema del desvanecimiento del gradiente.
 - **Puertas de Memoria**: Controlan el flujo de información, permitiendo retener o descartar datos.
 
-![[Pasted image 20231129184706.png|500]]
+![[Pasted image 20231202123210.png]]
+
+![[Pasted image 20231202123138.png]]
+
+![[Pasted image 20231202123224.png]]
 ### GRU (Gated Recurrent Unit)
 - **Variante de LSTM**: Más simple y a menudo tan efectiva como LSTM.
 - **Menos Puertas**: Facilita y acelera el entrenamiento.
 
 ![[Pasted image 20231129184720.png|500]]
+
+![[Pasted image 20231202123251.png]]
+
+![[Pasted image 20231202123303.png]]
+
 ## Variantes de RNN 
 
 ![[Pasted image 20231129184330.png]]
@@ -69,6 +78,7 @@ pasos en el pasado
 
 ![[Pasted image 20231129201421.png]]
 
+![[Pasted image 20231202123351.png]]
 ### Many-to-Many 
 - **Aplicaciones**: Traducción de idiomas, transcripción de voz a texto. 
 - **Funcionamiento**: Secuencia de entrada se mapea a secuencia de salida de longitud potencialmente diferente.
@@ -76,6 +86,10 @@ pasos en el pasado
 ![[Pasted image 20231129201435.png]]
 
 ![[Pasted image 20231129201511.png]]
+
+### Apilamiento
+
+![[Pasted image 20231202123505.png]]
 
 ## Desafíos y Mejoras
 

@@ -3,7 +3,7 @@
 - [[Extracción de Características (Feature Extraction)]]
 - [[LeNet]]
 - [[AlexNet]]
-- [[VGGnet]]
+- [[VGGNet]]
 
 
 - [[Skip-Connection]]

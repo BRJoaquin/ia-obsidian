@@ -21,13 +21,6 @@ ver [[Desvanecimiento de gradiente]]
 - **Extracción de Características**: Ayudan a las capas profundas a aprender características complementarias a las aprendidas por capas anteriores.
 - **Diversidad en Aprendizaje**: Fomentan la diversidad en el aprendizaje de características en diferentes capas de la red.
 
-## Ejemplos en Arquitecturas de Red
-
-### Redes ResNet
-
-- **Uso Extensivo**: Las skip connections son un componente clave en las arquitecturas ResNet, ampliamente utilizadas en visión por computador.
-- **Bloques Residuales**: Cada bloque residuo en una ResNet tiene una skip connection que suma la entrada del bloque con su salida.
-
 ## Consideraciones y Limitaciones
 
 ### Complejidad de la Red
@@ -50,12 +43,15 @@ Las conexiones residuales o skip connections son una técnica crucial en las red
 
 ## Concatenación
 
+![[Pasted image 20231202104113.png]]
+
+
 ### Descripción
 - **Proceso**: La concatenación implica tomar las salidas de la capa anterior y unirlas con las salidas de la capa actual a lo largo de un eje especificado, generalmente el eje de los canales.
 - **Resultados**: Esto aumenta el número de canales de entrada a la siguiente capa.
   
 ### Aplicaciones
-- **Redes Densamente Conectadas (DenseNet)**: Es famosa por utilizar este tipo de skip connection, donde cada capa recibe como entrada las salidas concatenadas de todas las capas anteriores.
+- **Redes Densamente Conectadas (DenseNet)**: Es famosa por utilizar este tipo de skip connection, donde cada capa recibe como entrada las salidas concatenadas de todas las capas anteriores. ver [[DenseNet]]
 - **Mejora del Flujo de Información**: Permite que cada capa acceda directamente a los gradientes de la función de pérdida y a las entradas originales, mejorando la eficiencia del entrenamiento.
 
 ### Consideraciones

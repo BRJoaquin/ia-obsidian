@@ -1,12 +1,14 @@
 Los modelos de lenguaje Secuencia a Secuencia (Seq2Seq) son un tipo de modelo de Deep Learning diseñados para convertir secuencias de entrada en secuencias de salida. Son ampliamente utilizados en tareas como traducción automática, resumen de textos, y conversión de voz a texto.
 
+![[Pasted image 20231202163819.png]]
+
 ## Características Clave
 - **Transformación de Secuencias**: Convierten secuencias de un dominio (ej., texto en un idioma) a otro (ej., texto en otro idioma).
 - **Arquitectura de Red**: Típicamente consisten en dos partes principales: un codificador (encoder) y un decodificador (decoder).
   
   ### Codificador (Encoder)
   - **Función**: Procesa la secuencia de entrada y genera una representación intermedia (a menudo un vector de características).
-  - **Tecnologías Comunes**: Redes Neuronales Recurrentes (RNN), LSTM (Long Short-Term Memory), GRU (Gated Recurrent Units).
+  - **Tecnologías Comunes**: Redes Neuronales Recurrentes ([[Redes Neuronales Recurrentes (RNN)|RNN]]), LSTM (Long Short-Term Memory), GRU (Gated Recurrent Units).
 
   ### Decodificador (Decoder)
   - **Función**: Toma la representación intermedia y genera la secuencia de salida.
@@ -23,6 +25,7 @@ Los modelos de lenguaje Secuencia a Secuencia (Seq2Seq) son un tipo de modelo de
 - **Ambigüedades y Errores de Traducción**: En traducción automática, puede haber errores debido a diferencias culturales y lingüísticas.
 - **Necesidad de Grandes Cantidades de Datos de Entrenamiento**: Requieren grandes conjuntos de datos anotados para entrenamiento efectivo.
 
+![[Pasted image 20231202164003.png]]
 ## Avances Recientes
 - **Modelos de Atención**: Mejoran la capacidad del modelo para enfocarse en partes relevantes de la entrada durante la decodificación.
 - **Transformers**: Una arquitectura que ha superado a RNN/LSTM en muchas tareas de procesamiento de lenguaje natural.

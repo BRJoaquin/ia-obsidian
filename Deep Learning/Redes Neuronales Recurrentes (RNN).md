@@ -80,6 +80,15 @@
 ### Técnicas de Mejora
 - **Recorte del Gradiente**: Mitiga la explosión del gradiente. ver [[Clipping del gradiente]]
 - **Incorporación de Atención**: Mejora el manejo de secuencias largas.
+
+## Backprop through time
+
+![[Pasted image 20231202121432.png]]
+
+Backpropagation en tiempo real (BPTT) es una técnica para entrenar redes neuronales recurrentes (RNN) que utiliza una versión modificada del algoritmo de backpropagación común. La principal diferencia entre BPTT y el backpropagación común es que en BPTT se actualiza la red neuronal después de cada ejemplo, mientras que en el backpropagación común se actualiza la red neuronal después de procesar todo el conjunto de datos de entrada.
+
+
+
 ## Conclusión
 
 Las RNN son una herramienta poderosa en el ámbito del aprendizaje automático, especialmente útil para datos secuenciales. Aunque enfrentan desafíos como el desvanecimiento del gradiente, las innovaciones como LSTM y GRU ofrecen soluciones efectivas. Su aplicación en campos como NLP y series temporales demuestra su versatilidad y potencial.

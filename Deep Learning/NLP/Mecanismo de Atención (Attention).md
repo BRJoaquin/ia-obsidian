@@ -15,8 +15,6 @@ Los mecanismos de atención son una técnica en el procesamiento del lenguaje na
   ![[Pasted image 20231202174624.png]]
 - **Ponderación de la Información**: Los pesos de atención determinan la contribución de cada estado oculto del encoder al estado oculto actual del decoder.
 
-![[Pasted image 20231202173233.png]]
-
 ## Limitaciones
 - **Definición de Tamaño Máximo**: Es necesario establecer un tamaño máximo para las secuencias debido a la naturaleza computacional de la atención.
 

@@ -24,3 +24,6 @@ La extracción de características (Feature Extraction) es un proceso fundamenta
 - **Navegación de robots**: Interpretar el entorno visual para la navegación autónoma.
 - **Interfaz hombre-máquina**: Facilitar la interacción con las computadoras mediante la interpretación de gestos o movimientos.
 - **Seguridad y vigilancia**: Detección automática de actividades o entidades sospechosas.
+
+# Links
+https://distill.pub/2017/feature-visualization/

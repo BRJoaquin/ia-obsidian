@@ -31,13 +31,6 @@ El Procesamiento del Lenguaje Natural (NLP) es una disciplina que combina la inf
 
 - Uso de modelos preentrenados en grandes corpus de texto para aplicaciones específicas.
 
-## Aplicaciones
-
-- **Traducción Automática**: Conversión de texto o habla de un idioma a otro.
-- **Asistentes Virtuales**: Siri, Alexa, Google Assistant, que interpretan y responden a comandos de voz.
-- **Análisis de Texto en Redes Sociales**: Para entender tendencias, opiniones y comportamientos.
-- **Sistemas de Recomendación**: Personalización de contenido basada en el análisis de preferencias de texto.
-
 ## Desafíos y Consideraciones
 
 ### Ambigüedad y Complejidad del Lenguaje
@@ -47,6 +40,8 @@ El Procesamiento del Lenguaje Natural (NLP) es una disciplina que combina la inf
 ### Sesgo y Ética
 
 - Preocupaciones sobre el sesgo en los datos de entrenamiento y la ética en la generación y análisis automatizado de texto.
+
+![[Pasted image 20231202105102.png]]
 
 ### Requerimientos de Recursos
 

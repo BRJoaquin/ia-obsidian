@@ -7,3 +7,6 @@
 
 
 - [[Skip-Connection]]
+- [[DenseNet]]
+
+- [[Procesamiento del Lenguaje Natural (NLP)]]

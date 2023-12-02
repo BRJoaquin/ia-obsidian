@@ -24,7 +24,7 @@ Los Modelos de Lenguaje (LM) son modelos estadísticos o de aprendizaje profundo
 - **RNNs (Redes Neuronales Recurrentes)**: Modelos secuenciales para manejar dependencias a largo plazo. ver [[Redes Neuronales Recurrentes (RNN)]]
   ![[Pasted image 20231202155813.png]]
   ![[Pasted image 20231202155909.png]]
-- **LSTM/GRU (Long Short-Term Memory/Gated Recurrent Units)**: Variantes de RNN diseñadas para recordar información a lo largo de intervalos de tiempo más largos.
+- **LSTM/GRU (Long Short-Term Memory/Gated Recurrent Units)**: Variantes de RNN diseñadas para recordar información a lo largo de intervalos de tiempo más largos. ver [[Redes Neuronales Recurrentes (RNN)#Tipos de RNN#LSTM (Long Short-Term Memory)]]
 - **Transformers**: Arquitecturas basadas en atención que capturan contextos globales y relaciones entre palabras en secuencias largas. ver [[Transformers]]
 
 ## Modelos de Lenguaje Preentrenados

@@ -1,7 +1,28 @@
+![[Pasted image 20231202160912.png]]
 
+![[Pasted image 20231202160928.png]]
 
+Los Modelos de Lenguaje basados en Redes Neuronales Recurrentes (RNN) son una mejora significativa con respecto a los modelos de lenguaje basados en ventanas fijas de palabras. Las RNN están diseñadas para manejar secuencias de entrada de longitud variable y son capaces de mantener un estado o memoria a través de las secuencias, lo cual es esencial para entender el contexto en el lenguaje.
 
+## Cómo Funcionan los LM con RNN
 
+1. **Entrada Secuencial**: En cada paso de tiempo, una palabra (o su embedding correspondiente) se alimenta a la RNN.
+2. **Estado Oculto**: La RNN actualiza su estado oculto $ℎ_t$​ en función del estado oculto anterior ℎ�−1ht−1​ y la entrada actual.
+3. **Predicción de Palabras**: La salida del estado oculto en cada paso de tiempo se pasa a través de una capa softmax para obtener una distribución de probabilidad sobre el vocabulario.
+4. **Elección de Palabra**: La palabra con la mayor probabilidad en la distribución softmax se elige como la predicción para la siguiente palabra en la secuencia.
+
+## Ventajas de los LM con RNN
+
+- **Memoria a Largo Plazo**: Idealmente, las RNN pueden recordar información a lo largo de largas secuencias, lo que les permite mantener el contexto de lo que ha sido generado o visto anteriormente.
+- **Modelado de Dependencias**: Pueden capturar dependencias a largo plazo entre las palabras, lo que es crucial para la coherencia y la gramaticalidad en la generación de texto.
+- **Flexibilidad de Entrada y Salida**: Pueden manejar secuencias de entrada y salida de diferentes longitudes sin necesidad de una ventana de tamaño fijo.
+
+## Desafíos de los LM con RNN
+
+- **Desvanecimiento y Explosión de Gradientes**: En la práctica, las RNN estándar a menudo tienen dificultades para aprender dependencias a largo plazo debido a estos problemas técnicos durante el entrenamiento.
+- **Requerimientos Computacionales**: Pueden ser intensivas en términos de computación y memoria debido a la naturaleza secuencial de su entrenamiento.
+
+Para abordar algunos de estos desafíos, variantes de RNN como las LSTM (Long Short-Term Memory) y GRU (Gated Recurrent Units) introducen mecanismos de puertas que les permiten manejar mejor la información a lo largo del tiempo y facilitar el entrenamiento de redes más profundas y complejas. Estos avances han hecho de las RNN una herramienta poderosa para tareas como la generación de texto, la transcripción de voz a texto y la traducción automática.
 
 
 

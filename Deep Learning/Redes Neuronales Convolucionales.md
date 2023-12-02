@@ -12,9 +12,12 @@ Una CNN típica consiste en una serie de capas que transforman la imagen de entr
 
 3. **Capas completamente conectadas**: Al final de la red, una o más capas completamente conectadas se utilizan a menudo para realizar la clasificación final. Estas capas funcionan de la misma manera que en una Red Neuronal Artificial (ANN) normal.
 
+![[Pasted image 20231202095220.png]]
 # Funcionamiento de las CNN
 
-Las CNN funcionan propagando la imagen a través de la red, transformándola capa por capa hasta llegar a la salida. En cada capa convolucional, los filtros se aplican a la imagen para crear mapas de características. Estos mapas de características pasan por una función de activación, como ReLU, y luego pueden ser reducidos en tamaño por una capa de pooling.
+Las CNN funcionan propagando la imagen a través de la red, transformándola capa por capa hasta llegar a la salida. En cada capa [[Convolucion|convolucional]], los filtros se aplican a la imagen para crear mapas de características. Estos mapas de características pasan por una función de activación, como ReLU, y luego pueden ser reducidos en tamaño por una capa de pooling.
+
+
 
 # Aplicaciones de las CNN
 
@@ -48,8 +51,13 @@ A medida que avanzamos en la red, los filtros pueden comenzar a reconocer caract
 
 ![[Pasted image 20231202095117.png]]
 
+# Recap
+
+![[Pasted image 20231202095523.png]]
+
 # Lectura recomendada
-> https://towardsdatascience.com/a-comprehensive-guide-to-convolutional-neural-networks-the-eli5-way-3bd2b1164a53 
+- https://towardsdatascience.com/a-comprehensive-guide-to-convolutional-neural-networks-the-eli5-way-3bd2b1164a53 
+- https://cs231n.github.io/convolutional-networks/
 
 
 # Video

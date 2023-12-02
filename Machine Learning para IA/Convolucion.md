@@ -48,6 +48,8 @@ https://medium.com/@bdhuma/6-basic-things-to-know-about-convolution-daef5e1bc411
    - Útil para mantener la resolución espacial.
 3. **Numero especifico**: 
 
+![[Pasted image 20231202095329.png]]
+
 ### Importancia
 - **Control de Dimensiones**: El padding permite controlar cómo cambian las dimensiones de los mapas de características después de cada capa convolucional.
 - **Conservación de Información**: El padding de 'same' asegura que la información en los bordes de la imagen no se pierda demasiado rápido a medida que la señal pasa por las capas convolucionales.

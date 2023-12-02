@@ -14,3 +14,4 @@
 - [[Stemming]]
 - [[Lematización]]
 - [[Vectorizacion de palabras]]
+- [[Embeding]]

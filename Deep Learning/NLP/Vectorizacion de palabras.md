@@ -16,8 +16,8 @@ En el [[Procesamiento del Lenguaje Natural (NLP)|procesamiento del lenguaje natu
 ## Métodos de Word Embedding
 
 - **One-Hot Encoding**: Representación más simple pero ineficiente, donde cada palabra se representa como un vector con un "1" en la posición correspondiente a la palabra y "0" en todas las demás. ve [[One-hot encoding]]
-- **TF-IDF**: Pondera la frecuencia de una palabra en un documento contra su frecuencia inversa en el corpus, proporcionando importancia relativa.
-- **Word2Vec**: Utiliza redes neuronales para aprender representaciones de palabras a partir de grandes corpus de texto.
+- **TF-IDF**: Pondera la frecuencia de una palabra en un documento contra su frecuencia inversa en el corpus, proporcionando importancia relativa. ver [[Term Frequency - Inverse Document Frequency (TF - IDF)]]
+- **Word2Vec**: Utiliza redes neuronales para aprender representaciones de palabras a partir de grandes corpus de texto. ver [[Word2Vec]]
 - **GloVe**: Combina la factorización de la matriz de co-ocurrencia de palabras con el aprendizaje contextual de Word2Vec.
 - **BERT y ELMo**: Modelos de lenguaje contextuales que generan embeddings dinámicos basados en el uso específico de las palabras en un contexto.
 

@@ -20,6 +20,19 @@ Los Transformers son un tipo de arquitectura de modelo de deep learning que ha r
 - **Traducción Automática**: Google y otros servicios de traducción utilizan Transformers para proporcionar traducciones rápidas y precisas.
 - **Generación de Texto**: GPT (Generative Pretrained Transformer) es capaz de generar texto coherente y relevante.
 
+# Efectividad
+
+Los Transformers son más rápidos y permiten la paralelización en comparación con las RNN debido a cómo procesan la secuencia de datos:
+
+1. **Procesamiento Simultáneo**: Los Transformers tratan la secuencia completa al mismo tiempo, mientras que las RNN procesan un elemento a la vez, secuencialmente.
+
+2. **Ausencia de Estados Ocultos Dependientes**: En las RNN, cada paso depende del anterior, lo que impide calcularlos en paralelo. Los Transformers eliminan esta dependencia utilizando el mecanismo de atención, lo que permite que cada posición se procese simultáneamente.
+
+3. **Uso de la Atención**: Los Transformers usan mecanismos de atención para gestionar las dependencias entre las palabras, mientras que las RNN tienen que mantener un estado oculto a lo largo del tiempo para capturar estas dependencias.
+
+Estas diferencias hacen que los Transformers sean inherentemente más adecuados para aprovechar las GPUs, que son altamente paralelizables, reduciendo significativamente los tiempos de entrenamiento e inferencia.
+
+
 ver ademas:
 - [[Positional Encoding]]
 - [[Multi-Head Attention]]

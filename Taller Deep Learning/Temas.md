@@ -5,7 +5,6 @@
 - [[AlexNet]]
 - [[VGGNet]]
 
-
 - [[Skip-Connection]]
 - [[DenseNet]]
 

@@ -26,4 +26,17 @@ Multi-Head Attention es una técnica en la arquitectura [[Transformers]] que per
 - **Encoder**: Utiliza Multi-Head Attention para auto-relacionar la secuencia de entrada, lo que permite que cada posición de la secuencia tome en cuenta la información de todas las otras posiciones.
 - **Decoder**: Aplica Multi-Head Attention dos veces; primero para la auto-atención, asegurándose de que las predicciones futuras no influyan en las actuales, y luego para la atención entre el output del encoder y el estado actual del decoder.
 
-## 
+## # Mascaras
+
+Las máscaras en los Transformers sirven para controlar dónde debe enfocarse el mecanismo de atención durante el entrenamiento y la inferencia. Se utilizan principalmente para:
+1. Prevenir que el modelo vea información futura durante la generación de secuencias, manteniendo la autoregresividad en el decoder.
+2. Ignorar posiciones de relleno en secuencias que se han 'padded' para igualar su longitud.
+
+Al aplicar ceros en las puntuaciones de atención donde no queremos que el modelo preste atención (como los tokens de relleno o las futuras posiciones de una secuencia), las máscaras mejoran la calidad y la relevancia de las predicciones del modelo.
+
+La máscara se usa en el **decoder** de un Transformer por dos razones principales:
+
+1. **Autoregresividad**: Para mantener la naturaleza autoregresiva de la generación de la secuencia, donde cada salida se genera una a la vez y condicionada a las salidas anteriores. La máscara previene que el decoder tenga acceso a palabras futuras en la secuencia objetivo que aún no se han generado durante la inferencia.
+
+2. **Secuencialidad**: Diferente del encoder que procesa la secuencia de entrada completa y puede ver toda la secuencia a la vez, el decoder debe generar la salida paso a paso. La máscara asegura que en cada paso solo se utiliza la información hasta ese punto, preservando la secuencialidad del texto de salida.
+

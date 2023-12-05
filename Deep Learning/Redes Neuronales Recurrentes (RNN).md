@@ -1,4 +1,3 @@
-## Introducción a las RNN
 
 ### Definición
 - **Redes Neuronales Recurrentes (RNN)**: Tipo de red neuronal artificial diseñada para reconocer patrones en **secuencias de datos** como texto, genomas, series temporales, etc.

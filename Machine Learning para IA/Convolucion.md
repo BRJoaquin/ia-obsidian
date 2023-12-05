@@ -24,7 +24,6 @@ https://medium.com/@bdhuma/6-basic-things-to-know-about-convolution-daef5e1bc411
 ## Tamaño de Kernel
 ### Definición
 - **Tamaño**: El tamaño de un kernel (por ejemplo, 3x3, 5x5) define el área de la imagen de entrada que se utiliza para calcular una sola salida en el mapa de características.
-- 
 ![[Pasted image 20231202094531.png]]
 ### Consideraciones
 - **Kernels Pequeños (3x3, por ejemplo)**: Capturan características locales, como bordes finos.

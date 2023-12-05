@@ -67,7 +67,7 @@ Es una operación lógica entre dos variables booleanas que devuelve verdadero s
 
 - **Tabla de Verdad para XOR**:
   
-  | Input A | Input B | XOR Output |
+  |  Input A | Input B | XOR Output |
   |---------|---------|------------|
   | 0       | 0       | 0          |
   | 0       | 1       | 1          |

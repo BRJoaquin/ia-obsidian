@@ -1,2 +1,1 @@
 - [[Regret Matching]]
-- [[Fictitious Play]]

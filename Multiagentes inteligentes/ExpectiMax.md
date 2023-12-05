@@ -3,11 +3,11 @@ Expectimax es un algoritmo utilizado en la toma de decisiones bajo incertidumbre
 **Cómo Funciona Expectimax:**
 
 1. **Árbol de Decisión**: El algoritmo se basa en un árbol de decisión que alterna entre niveles de decisión y niveles de azar (o suerte). Los nodos de decisión representan los lugares donde un jugador toma una decisión, y los nodos de azar representan los resultados aleatorios de estas decisiones.
-    
+
 2. **Nodos de Decisión**: En los niveles de decisión, el algoritmo busca la acción que maximiza la utilidad esperada, similar al "max" en Minimax.
-    
+
 3. **Nodos de Azar**: En los niveles de azar, en lugar de tomar el mínimo como en Minimax, el algoritmo calcula un valor esperado basado en la probabilidad y la utilidad de cada posible resultado.
-    
+
 4. **Cálculo de Utilidad**: La utilidad de un nodo de decisión se calcula como el máximo de las utilidades esperadas de sus hijos, mientras que la utilidad de un nodo de azar es el promedio ponderado, tomando en cuenta las probabilidades de cada resultado.
     
 
@@ -18,7 +18,7 @@ Expectimax es un algoritmo utilizado en la toma de decisiones bajo incertidumbre
 - **Optimización de Estrategias**: Permite a los jugadores o agentes de inteligencia artificial optimizar sus estrategias cuando no todos los resultados son predecibles.
     
 - **Mejor que Minimax en Juegos con Azar**: En juegos con elementos aleatorios, [[Minimax]] puede ser demasiado pesimista porque asume que el oponente siempre jugará la estrategia óptima. Expectimax ofrece una evaluación más realista al considerar la aleatoriedad.
-    
+
 
 **Limitaciones de Expectimax:**
 

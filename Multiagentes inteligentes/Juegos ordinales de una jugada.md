@@ -1,6 +1,6 @@
 Los "juegos ordinales de una jugada" o "juegos matriciales simultáneos" son un concepto en la teoría de juegos, un campo que estudia la toma de decisiones estratégica entre agentes racionales. Estos juegos se caracterizan por las siguientes propiedades:
 
-1. **Simultaneidad**: Los jugadores toman sus decisiones al mismo tiempo, sin conocer las elecciones de los otros jugadores. Esto se diferencia de los juegos secuenciales, donde los jugadores toman turnos para jugar.
+1. **Simultaneidad**: Los jugadores toman sus decisiones al mismo tiempo, sin conocer las elecciones de los otros jugadores. Esto se diferencia de los juegos secuenciales, donde los jugadores toman turnos para jugar. ver [[Interacción Simultánea]]
     
 2. **Una Jugada**: Cada jugador toma una decisión o realiza una jugada, y el juego concluye. No hay rondas múltiples ni secuenciales.
     

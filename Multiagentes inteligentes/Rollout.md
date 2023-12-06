@@ -2,7 +2,6 @@ El método de rollout es una técnica de evaluación utilizada en la planificaci
 
 ![[Pasted image 20231201152246.png]]
 
-
 Rollout es un método de simulación utilizado para evaluar estados en juegos o situaciones de toma de decisiones. La idea es simular el juego varias veces desde un estado específico hasta un estado terminal, y luego promediar los resultados para obtener una estimación del valor de ese estado. Aquí está el proceso detallado:
 
 1. Repetir $m$ veces:

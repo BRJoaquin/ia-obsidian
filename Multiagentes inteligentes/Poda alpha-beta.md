@@ -1,5 +1,5 @@
 
-La poda alfa-beta (α-β) es una técnica de optimización utilizada junto con el algoritmo Minimax en la teoría de juegos y en la inteligencia artificial para juegos de dos jugadores de suma cero. El propósito principal de la poda alfa-beta es reducir el número de nodos que se evalúan en el árbol de juego de Minimax, lo que aumenta la eficiencia del algoritmo sin afectar el resultado final.
+La poda alfa-beta (α-β) es una técnica de optimización utilizada junto con el algoritmo [[Minimax|Minimax]] en la teoría de juegos y en la inteligencia artificial para juegos de dos jugadores de suma cero. El propósito principal de la poda alfa-beta es reducir el número de nodos que se evalúan en el árbol de juego de Minimax, lo que aumenta la eficiencia del algoritmo sin afectar el resultado final.
 
 **Principios Básicos de la Poda Alfa-Beta:**
 
@@ -31,7 +31,9 @@ La poda alfa-beta (α-β) es una técnica de optimización utilizada junto con e
 La poda alfa-beta se utiliza en programas de IA para juegos de tablero como el ajedrez, las damas y el go, donde se requiere calcular la mejor jugada posible dada una posición actual en el juego. Además, se aplica en cualquier situación de toma de decisiones secuencial donde se busca optimizar el rendimiento mientras se manejan recursos computacionales limitados.
 
 ![[Pasted image 20231201121613.png]]
+# Links y video
 
+https://www.geeksforgeeks.org/minimax-algorithm-in-game-theory-set-4-alpha-beta-pruning/?ref=header_search
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/I0y-TGehf-4?si=q9PmTqpq9Na9TWiN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

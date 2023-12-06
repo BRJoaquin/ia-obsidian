@@ -27,7 +27,12 @@ Expectimax es un algoritmo utilizado en la toma de decisiones bajo incertidumbre
 - **Necesidad de Evaluación Heurística**: Para árboles muy grandes, a menudo es necesario aplicar funciones heurísticas para evaluar los nodos, ya que no es factible calcular la utilidad exacta en cada nodo debido a la complejidad del árbol. ver [[Funciones de evaluación]]
     
 - **Dependencia en Probabilidades**: La efectividad del algoritmo depende en gran medida de cuán precisas sean las probabilidades asignadas a los resultados en los nodos de azar.
-
+  
+- Expectimax no es óptimo. Puede llevar al agente a perder (terminar en un estado con menor utilidad).
+  
+- Expectimax requiere que se explore todo el árbol de búsqueda. No hay ningún tipo de poda que se pueda hacer, ya que el valor de una sola utilidad no explorada puede cambiar el valor expectimax drásticamente. Por lo tanto, puede ser lento.
+  
+- Es sensible a las transformaciones monotónicas en los valores de utilidad. 
 
 Expectimax es una herramienta poderosa en la teoría de juegos y la inteligencia artificial, proporcionando un marco para la toma de decisiones estratégicas en entornos inciertos y ayudando a los agentes a navegar complejas situaciones de decisión.
 

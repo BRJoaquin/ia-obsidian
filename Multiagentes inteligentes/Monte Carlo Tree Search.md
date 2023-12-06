@@ -31,7 +31,7 @@ $$
 
 MCTS ha demostrado ser efectivo porque ajusta dinámicamente su estrategia basándose en los resultados de las simulaciones, concentrándose más en las partes del árbol de juego que son más prometedoras. Se utiliza en una variedad de aplicaciones, desde juegos de mesa hasta la planificación en robótica y muchas otras áreas de la inteligencia artificial.
 
-# Simulacion
+# Simulación
 https://vgarciasc.github.io/mcts-viz/
 
 # Videos

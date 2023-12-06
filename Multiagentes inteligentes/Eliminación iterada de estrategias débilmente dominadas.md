@@ -28,3 +28,20 @@ Un aspecto importante a considerar es que, mientras que el Equilibrio de Nash es
 ![[Pasted image 20231130110042.png]]
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/O8T9spKHVWQ?si=3fGjjCwouIbxQKTX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+```mermerid
+graph TD
+    A[P1: pasar/apostar] -->|pasar| B[P2: pasar/apostar]
+    A -->|apostar| C[P2: pasar/apostar]
+    B -->|pasar| D{Revelar cartas}
+    B -->|apostar| E[P1: pasar/apostar]
+    C -->|pasar| F{P1 pierde}
+    C -->|apostar| G{Revelar cartas}
+    E -->|pasar| H{P2 gana}
+    E -->|apostar| D
+    D --> I[P1 gana si tiene la carta más alta]
+    D --> J[P2 gana si tiene la carta más alta]
+    G --> K[P1 gana si tiene la carta más alta]
+    G --> L[P2 gana si tiene la carta más alta]
+
+```

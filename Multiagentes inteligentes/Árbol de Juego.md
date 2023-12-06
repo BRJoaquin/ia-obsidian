@@ -1,4 +1,4 @@
-Los árboles de juego son una herramienta fundamental en la teoría de juegos que se utiliza para representar de manera gráfica las decisiones secuenciales en juegos con turnos alternados. Estos árboles ayudan a los jugadores y analistas a visualizar cómo las interacciones y las decisiones se desarrollan a lo largo del tiempo en el juego.
+Los árboles de juego son una herramienta fundamental en la [[Teoría de Juegos|teoría de juegos]] que se utiliza para representar de manera gráfica las decisiones secuenciales en juegos con turnos alternados. Estos árboles ayudan a los jugadores y analistas a visualizar cómo las interacciones y las decisiones se desarrollan a lo largo del tiempo en el juego.
 
 ![[Pasted image 20231201101734.jpg]]
 

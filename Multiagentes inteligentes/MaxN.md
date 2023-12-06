@@ -18,6 +18,60 @@ El proceso de toma de decisiones en MaxN implica mirar hacia adelante en el árb
 
 ![[Pasted image 20231206075151.png]]
 
+1. Se asume que el juego tiene una suma constante de 9 para todos los jugadores en conjunto. Después de evaluar el subárbol izquierdo, se encuentra que el valor para el jugador 1 es al menos 3 (≥3), y para los jugadores 2 y 3 es menos de 6 (≤ C - 3 = 9 - 3 = 6) en el nodo "b".
+    
+2. Luego, se evalúa el nodo "g", y se obtiene que el valor para el jugador 2 es al menos 7 (≥7), y para los jugadores 1 y 3 es menos de 2 (≤ C - 7 = 9 - 7 = 2) en el nodo "f". Como el valor para el jugador 1 es menor a 3, que es el valor mínimo ya encontrado en el nodo "b", se puede podar el resto de este subárbol porque no se encontrará un valor mejor para el jugador 1.
+    
+3. Finalmente, se evalúa el nodo "h", y se encuentra que el valor para el jugador 2 es al menos 6 (≥6), y para los jugadores 1 y 3 es menos de 3 (≤ C - 6 = 9 - 6 = 3). Dado que el valor para el jugador 1 es igual al mínimo encontrado en el nodo "b" y el valor para el jugador 2 es menor que el mínimo encontrado en el nodo "f", se puede podar el resto de este subárbol.
+
+La poda superficial funciona en este contexto porque el juego tiene una suma constante, y se puede inferir que si un jugador tiene asegurado un cierto valor, los otros jugadores no pueden superar ciertos valores. Por ejemplo, si un jugador tiene asegurado al menos 3 puntos en una configuración de juego donde la suma total de puntos es 9, entonces se sabe que los otros dos jugadores juntos no pueden superar los 6 puntos restantes.
+
+La imagen muestra un árbol de juego con poda superficial utilizando el algoritmo MaxN. Aquí está la explicación detallada:
+
+1. La suma constante del juego es 9. Después de evaluar el subárbol izquierdo, el valor mínimo asegurado para el jugador 1 es 3 (≥3) y para los jugadores 2 y 3 es menos de 6 (≤ 6), en el nodo "b".
+
+2. Evaluando el nodo "g", se encuentra que el valor mínimo para el jugador 2 es 7 (≥7), y para los jugadores 1 y 3 es menos de 2 (≤ 2) en el nodo "f". Se realiza una poda ya que no se encontrará un valor mejor para el jugador 1 aquí.
+
+3. En el nodo "h", el valor para el jugador 2 es al menos 6 (≥6), y para los jugadores 1 y 3 es menos de 3 (≤ 3). Se poda el resto ya que el valor para el jugador 1 no mejora al mínimo encontrado en "b".
+
+Esta técnica de poda ayuda a mejorar la eficiencia del algoritmo al reducir el número de nodos que necesitan ser explorados.
+
+![[Pasted image 20231206075436.png]]
+
+La imagen muestra un pseudocódigo para la función `Shallow`, que parece ser una implementación de un algoritmo de poda en un árbol de juego para el algoritmo MaxN. Aquí está la traducción y explicación del pseudocódigo:
+
+```plaintext
+def Shallow(s, p, Bound):
+    # Bound: cota superior en el valor para p
+    # Sum: cota superior en la suma de los valores
+    
+    # Si s es un estado final del juego, devuelve su utilidad
+    if EsFinal(s) then
+        return Utilidad(s)
+    
+    # Evalúa el primer hijo del estado actual s para el jugador p
+    Best ← Shallow(p.child[0], p.next, Sum)
+    
+    # Itera a través del resto de los hijos
+    for c in p.child[1...]:
+        # Si el mejor valor actual es mayor o igual a la cota, poda el árbol
+        if Best[p] >= Bound then
+            return Best # Poda
+        
+        # Calcula el valor para el hijo actual
+        Current ← Shallow(c, p.next, Sum - Best[p])
+        
+        # Si el valor actual es mejor que el mejor valor conocido, actualiza Best
+        if Current[p] > Best[p] then
+            Best ← Current # Actualizar cota
+    
+    # Devuelve el mejor valor encontrado
+    return Best
+```
+
+Este pseudocódigo utiliza la técnica de poda superficial en árboles de juego donde `s` es el estado actual del juego, `p` es el jugador actual, y `Bound` es la cota superior para el valor del jugador `p`. La función `Shallow` evalúa los nodos del árbol de juego de manera recursiva para encontrar el mejor valor para el jugador `p`, realizando podas en el árbol cuando se encuentra que un nodo no puede producir un valor mejor que el mejor valor encontrado hasta el momento (`Bound`). La variable `Sum` representa la cota superior de la suma de los valores de los jugadores, que no está directamente presente en el pseudocódigo, pero se infiere por el comentario y es utilizada en la llamada recursiva para ajustar la cota superior durante la exploración del árbol.
+
+![[Pasted image 20231206075610.png]]
 
 
 ### Características de MaxN:

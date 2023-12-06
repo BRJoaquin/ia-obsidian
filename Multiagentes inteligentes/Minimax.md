@@ -50,3 +50,9 @@ El algoritmo Minimax es una técnica fundamental en la [[Teoría de Juegos|teor�
 # Ejemplo
 
 ![[Pasted image 20231201113144.png]]
+
+
+# Links
+
+https://www.geeksforgeeks.org/minimax-algorithm-in-game-theory-set-1-introduction/?ref=header_search
+

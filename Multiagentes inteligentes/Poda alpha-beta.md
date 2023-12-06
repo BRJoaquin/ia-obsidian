@@ -31,7 +31,9 @@ La poda alfa-beta (α-β) es una técnica de optimización utilizada junto con e
 La poda alfa-beta se utiliza en programas de IA para juegos de tablero como el ajedrez, las damas y el go, donde se requiere calcular la mejor jugada posible dada una posición actual en el juego. Además, se aplica en cualquier situación de toma de decisiones secuencial donde se busca optimizar el rendimiento mientras se manejan recursos computacionales limitados.
 
 ![[Pasted image 20231201121613.png]]
+# Links y video
 
+https://www.geeksforgeeks.org/minimax-algorithm-in-game-theory-set-4-alpha-beta-pruning/?ref=header_search
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/I0y-TGehf-4?si=q9PmTqpq9Na9TWiN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

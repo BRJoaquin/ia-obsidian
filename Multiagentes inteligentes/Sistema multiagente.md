@@ -2,7 +2,6 @@ Un sistema multiagente (MAS, por sus siglas en inglés) es un tipo de sistema co
 
 ![[Pasted image 20231130090528.png]]
 
-
 Características clave de los sistemas multiagente:
 
 1. **Autonomía**: Cada agente en el sistema tiene su propia capacidad para tomar decisiones basadas en su percepción del entorno, sus objetivos y su conocimiento.

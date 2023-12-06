@@ -26,7 +26,7 @@ El algoritmo Minimax es una técnica fundamental en la [[Teoría de Juegos|teor�
 
 **Desventajas del Minimax:**
 
-- **Complejidad Computacional**: Incluso con podado alfa-beta, el número de nodos a evaluar puede ser exponencial con respecto a la profundidad del árbol.
+- **Complejidad Computacional**: Incluso con [[Poda alpha-beta|podado alfa-beta]], el número de nodos a evaluar puede ser exponencial con respecto a la profundidad del árbol.
     
 - **No Apto para Incertidumbre**: Minimax no maneja bien los elementos de azar o la información imperfecta, ya que asume que todos los resultados de las decisiones son conocidos y predecibles.
     

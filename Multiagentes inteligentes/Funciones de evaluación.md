@@ -25,6 +25,8 @@ Las funciones de evaluación son componentes clave en la inteligencia artificial
 1. **Consistencia con la Función de Utilidad Verdadera**: Una buena función de evaluación, `Eval`, debe reflejar el mismo orden de preferencia que la verdadera función de utilidad del juego. Esto significa que si un estado del juego es una victoria, debería tener una puntuación más alta que un empate, y un empate debería tener una puntuación más alta que una derrota. La consistencia es crucial para asegurar que la IA se comporte de manera alineada con los objetivos del juego. Si la función de evaluación no es coherente, podría llevar al agente a tomar decisiones que no maximizan las posibilidades de ganar.
    $$Eval(\text{win}) > Eval(\text{draw}) > Eval(\text{loss})
 $$
+> en resumen, debe ordenar los estados **finales** del juego 
+
 2. **Eficiencia en el Cálculo**: La función debe ser computacionalmente eficiente para permitir que el algoritmo de búsqueda evalúe rápidamente una gran cantidad de estados posibles. Una función de evaluación que es demasiado compleja o que tarda mucho en calcular puede no ser práctica, especialmente cuando se necesita tomar decisiones en tiempo real o cuando el espacio de búsqueda es extremadamente grande.
     
 3. **Correlación con las Posibilidades de Ganar**: Para estados no terminales, la función de evaluación debe estar fuertemente correlacionada con las posibilidades reales de ganar desde ese estado. Esto significa que `Eval(s)` debe ser un buen indicador de la probabilidad de éxito final en el juego. Cuanto más fuerte sea la correlación, más fiable será la función de evaluación al guiar la IA hacia movimientos que aumentan la probabilidad de ganar.

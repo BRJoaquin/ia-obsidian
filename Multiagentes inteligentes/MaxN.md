@@ -73,6 +73,19 @@ Este pseudocódigo utiliza la técnica de poda superficial en árboles de juego 
 
 ![[Pasted image 20231206075610.png]]
 
+La imagen proporcionada discute la imposibilidad de realizar una poda profunda en el algoritmo MaxN, que es una extensión del algoritmo Minimax para juegos de múltiples jugadores. La poda profunda, que es efectiva en el contexto de Minimax (como en la [[Poda alpha-beta|poda alfa-beta]]), no es directamente aplicable a MaxN debido a la interacción entre las utilidades de varios jugadores. Aquí está la explicación detallada del texto y el árbol de juego que se muestra:
+
+1. **Suma Constante y Poda Profunda**: Se afirma que no es posible hacer poda profunda en juegos de suma constante con múltiples jugadores, donde la suma de las utilidades es igual a un valor constante `C = 9`.
+
+2. **Ejemplos de Cálculos de Utilidad**:
+   - Si el valor de `f` es `(2, 3, 4)`, entonces en `d` y `c` es `(2, 2, 5)`, y en `a` es `(5, 2, 2)`.
+   - Si el valor de `f` es `(3, 0, 6)`, entonces en `d` es `(3, 0, 6)`, en `c` es `(6, 1, 2)`, y en `a` es `(6, 1, 2)`.
+
+3. **Influencia del Valor de `f`**: Se menciona que el valor de `f` puede afectar el valor de `a`, lo que ilustra cómo las decisiones en un nodo pueden influir en la evaluación de otros nodos en el árbol de juego.
+
+La ilustración muestra un árbol de juego con las utilidades para tres jugadores en cada nodo terminal. Los números en los nodos representan el orden de movimiento de los jugadores, y los vectores representan las utilidades acumuladas para cada jugador en ese nodo. Por ejemplo, `<5, ≤4, ≤4>` en el nodo `a` significa que el jugador 1 tiene una utilidad de al menos 5, y los jugadores 2 y 3 tienen utilidades que no exceden 4.
+
+La imposibilidad de poda profunda se debe a que el valor de un nodo en MaxN depende de la utilidad acumulada de todos los jugadores, no solo del jugador actual, lo que hace que la poda basada en el valor de un solo jugador (como en Minimax) no sea aplicable.
 
 ### Características de MaxN:
 
@@ -83,6 +96,7 @@ Este pseudocódigo utiliza la técnica de poda superficial en árboles de juego 
 3. **Árbol de Juego**: Como en Minimax, MaxN explora un árbol de juego. Sin embargo, en lugar de alternar entre maximizar y minimizar, cada nivel del árbol corresponde a un jugador diferente, y el objetivo en cada nivel es maximizar la utilidad de ese jugador específico.
     
 4. **Estrategias Óptimas para Todos los Jugadores**: MaxN trata de encontrar la estrategia óptima para todos los jugadores, no solo para uno. En teoría, esto conduce a una solución más equilibrada y representativa de situaciones reales en juegos de múltiples jugadores.
+
 
 ### Consideraciones:
 

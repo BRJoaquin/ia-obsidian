@@ -13,7 +13,7 @@ Los árboles de juego son una herramienta fundamental en la [[Teoría de Juegos|
     
 - **Nodos Terminales o Hojas**: Estos son los nodos al final de las ramas, donde el juego termina. Los nodos terminales suelen estar etiquetados con las [[Recompensa|utilidades]] o pagos para cada jugador, indicando el resultado de seguir ese camino específico a través del árbol.
     
-- **Información Perfecta vs. Imperfecta**: En un árbol de [[Juegos con Información perfecta|juego con información perfecta]], cada nodo de decisión muestra claramente a qué jugador le toca mover, y todas las acciones anteriores son conocidas. En un árbol de [[Juegos con Información imperfecta| información imperfecta]], algunos nodos pueden agruparse en conjuntos de información que representan que el jugador no tiene información completa sobre las acciones previas.
+- **Información Perfecta vs. Imperfecta**: En un árbol de [[Juegos con Información perfecta|juego con información perfecta]], cada nodo de decisión muestra claramente a qué jugador le toca mover, y todas las acciones anteriores son conocidas. En un árbol de [[Juegos con Información imperfecta| información imperfecta]], algunos nodos pueden agruparse en [[Information set|conjuntos de información]] que representan que el jugador no tiene información completa sobre las acciones previas.
 
 
 ![[Pasted image 20231201103016.png]]

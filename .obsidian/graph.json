@@ -13,18 +13,46 @@
         "a": 1,
         "rgb": 14701138
       }
+    },
+    {
+      "query": "path:\"Agentes inteligentes\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 14725458
+      }
+    },
+    {
+      "query": "path:\"Deep Learning\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 11657298
+      }
+    },
+    {
+      "query": "path:Matematica  ",
+      "color": {
+        "a": 1,
+        "rgb": 5431378
+      }
+    },
+    {
+      "query": "path:\"Machine Learning para IA\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 5431473
+      }
     }
   ],
   "collapse-display": false,
   "showArrow": false,
-  "textFadeMultiplier": 0,
-  "nodeSizeMultiplier": 1,
-  "lineSizeMultiplier": 1,
+  "textFadeMultiplier": -0.1,
+  "nodeSizeMultiplier": 1.63463948567708,
+  "lineSizeMultiplier": 1.08474527994792,
   "collapse-forces": false,
   "centerStrength": 0.518713248970312,
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.8202141283849653,
+  "scale": 0.0078125,
   "close": true
 }

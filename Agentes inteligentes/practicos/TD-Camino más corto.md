@@ -8,6 +8,14 @@ Supongamos que tienes un agente que se mueve en una cuadrícula de 4x4. El objet
 
 Realiza una iteración de actualización para una secuencia de estados-acción-recompensa que elijas, comenzando desde el estado inicial.
 
+Asuma la siguiente secuencia de acciones:
+- Derecha (1, 2)
+- Derecha (1, 3)
+- Derecha (1, 4)
+- Abajo (2, 4)
+- Abajo (3, 4)
+- Abajo (4, 4)
+
 # Ejercicio 2: Q-Learning
 
 Utilizando el mismo escenario de la cuadrícula de 4x4 del ejercicio 1, aplica esta vez el algoritmo de Q-Learning para encontrar la política óptima. Al igual que antes, las recompensas son -1 por cada movimiento, y los movimientos posibles en cada estado son arriba, abajo, izquierda y derecha, con la misma regla para movimientos fuera de la cuadrícula.

@@ -7,13 +7,10 @@ Supongamos que tienes un agente que se mueve en una cuadrícula de 4x4. El objet
 
 Realiza **tres iteraciones** de actualización para una secuencia de estados-acción-recompensa que elijas, comenzando desde el estado inicial.
 
-Asuma la siguiente secuencia de acciones:
-- Derecha (1, 2)
-- Derecha (1, 3)
-- Derecha (1, 4)
-- Abajo (2, 4)
-- Abajo (3, 4)
-- Abajo (4, 4)
+Asuma los siguientes episodios:
+- **Episodio 1**: Derecha (D), Derecha (D), Derecha (D), Abajo (A), Abajo (A), Abajo (A)
+- **Episodio 2**: Derecha (D), Abajo (A), Abajo (A), Derecha (D), Derecha (D), Abajo (A)
+- **Episodio 3**: Abajo (A), Abajo (A), Derecha (D), Derecha (D), Derecha (D), Abajo (A)
 
 > Asuma que el valor $Q$ es cero inicialmente.
 # Ejercicio 2: Q-Learning

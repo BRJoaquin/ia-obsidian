@@ -10,9 +10,9 @@ Asuma que con una pólitica $\pi$ se generaron los siguientes episodios:
 - **Episodio 2**: Derecha (D), Abajo (A), Abajo (A), Derecha (D), Derecha (D), Abajo (A)
 - **Episodio 3**: Abajo (A), Abajo (A), Derecha (D), Derecha (D), Derecha (D), Abajo (A)
 
-Calcule el valor de $Q_{\pi}
+Calcule el valor de $Q_{\pi}$ luego de los episodios.
 
-> Asuma que el valor $Q$ es cero inicialmente.
+> Asuma que el valor $Q$ es cero para todos los pares estado-acción.
 # Ejercicio 2: Q-Learning
 
 Utilizando el mismo escenario de la cuadrícula de 4x4 del ejercicio 1, aplica esta vez el algoritmo de Q-Learning para encontrar la política óptima. Al igual que antes, las recompensas son -1 por cada movimiento, y los movimientos posibles en cada estado son arriba, abajo, izquierda y derecha, con la misma regla para movimientos fuera de la cuadrícula.

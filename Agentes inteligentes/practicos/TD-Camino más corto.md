@@ -4,9 +4,8 @@ Supongamos que tienes un agente que se mueve en una cuadrícula de 4x4. El objet
 
 - Tasa de aprendizaje ($\alpha$): 0.1
 - Factor de descuento ($\gamma$): 0.9
-- Política de elección de acciones: ε-greedy con $\epsilon = 0.1$
 
-Realiza una iteración de actualización para una secuencia de estados-acción-recompensa que elijas, comenzando desde el estado inicial.
+Realiza **tres iteraciones** de actualización para una secuencia de estados-acción-recompensa que elijas, comenzando desde el estado inicial.
 
 Asuma la siguiente secuencia de acciones:
 - Derecha (1, 2)
@@ -16,6 +15,7 @@ Asuma la siguiente secuencia de acciones:
 - Abajo (3, 4)
 - Abajo (4, 4)
 
+> Asuma que el valor $Q$ es cero inicialmente.
 # Ejercicio 2: Q-Learning
 
 Utilizando el mismo escenario de la cuadrícula de 4x4 del ejercicio 1, aplica esta vez el algoritmo de Q-Learning para encontrar la política óptima. Al igual que antes, las recompensas son -1 por cada movimiento, y los movimientos posibles en cada estado son arriba, abajo, izquierda y derecha, con la misma regla para movimientos fuera de la cuadrícula.
@@ -25,7 +25,7 @@ Utiliza los mismos parámetros:
 - Tasa de aprendizaje ($\alpha$): 0.1
 - Factor de descuento ($\gamma$): 0.9
 
-Sin embargo, esta vez, asume que siempre se selecciona la acción con el mayor Q-value (política greedy). Realiza una iteración de actualización para una secuencia de estados y acciones que elijas, comenzando desde cualquier estado.
+Sin embargo, esta vez, asume que siempre se selecciona la acción con el mayor Q-value (política greedy). Realiza **tres iteraciones** de actualización para una secuencia de estados y acciones que elijas, comenzando desde cualquier estado.
 
 # Ejercicio 3: Evitando el Abismo
 

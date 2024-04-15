@@ -5,12 +5,12 @@ Supongamos que tienes un agente que se mueve en una cuadrícula de 4x4. El objet
 - Tasa de aprendizaje ($\alpha$): 0.1
 - Factor de descuento ($\gamma$): 0.9
 
-Realiza **tres iteraciones** de actualización para una secuencia de estados-acción-recompensa que elijas, comenzando desde el estado inicial.
-
-Asuma los siguientes episodios:
+Asuma que con una pólitica $\pi$ se generaron los siguientes episodios:
 - **Episodio 1**: Derecha (D), Derecha (D), Derecha (D), Abajo (A), Abajo (A), Abajo (A)
 - **Episodio 2**: Derecha (D), Abajo (A), Abajo (A), Derecha (D), Derecha (D), Abajo (A)
 - **Episodio 3**: Abajo (A), Abajo (A), Derecha (D), Derecha (D), Derecha (D), Abajo (A)
+
+Calcule el valor de $Q_{\pi}
 
 > Asuma que el valor $Q$ es cero inicialmente.
 # Ejercicio 2: Q-Learning

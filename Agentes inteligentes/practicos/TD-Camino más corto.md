@@ -22,7 +22,7 @@ Utiliza los mismos parámetros:
 - Tasa de aprendizaje ($\alpha$): 0.1
 - Factor de descuento ($\gamma$): 0.9
 
-Sin embargo, esta vez, asume que siempre se selecciona la acción con el mayor Q-value (política greedy). Realiza **tres iteraciones** de actualización para una secuencia de estados y acciones que elijas, comenzando desde cualquier estado.
+Sin embargo, esta vez, asume que siempre se selecciona la acción con el mayor Q-value (política greedy).
 
 # Ejercicio 3: Evitando el Abismo
 
@@ -33,7 +33,7 @@ Utiliza la misma cuadrícula de 4x4 de los ejercicios anteriores, pero esta vez 
 Realiza una iteración de actualización del algoritmo SARSA teniendo en cuenta el abismo. Supongamos que la política inicial lleva al agente a una ruta que incluye el abismo:
 
 1. Describe el efecto esperado del abismo en la política aprendida con SARSA, considerando que SARSA es un algoritmo on-policy.
-2. Realiza y describe una iteración de actualización específica que involucre el abismo, usando los mismos parámetros ($\alpha = 0.1$, $\gamma = 0.9$, ε-greedy con $\epsilon = 0.1$).
+2. Realiza y describe una iteración de actualización específica que involucre el abismo, usando los mismos parámetros ($\alpha = 0.1$, $\gamma = 0.9$, ε-greedy con $\epsilon = 0$).
 
 ## Parte B: Q-Learning con Abismo
 

@@ -1,4 +1,4 @@
-# Ejercicio 1: SARSA
+# TD(0)
 
 Supongamos que tienes un agente que se mueve en una cuadrícula de 4x4. El objetivo del agente es llegar a la esquina inferior derecha partiendo de la esquina superior izquierda. Las recompensas son -1 por cada movimiento. Los movimientos posibles en cada estado son arriba, abajo, izquierda y derecha. Los movimientos que llevarían al agente fuera de la cuadrícula lo dejan en su posición actual. Utiliza el enfoque de SARSA para encontrar la política óptima, asumiendo una política inicial aleatoria y los siguientes parámetros:
 

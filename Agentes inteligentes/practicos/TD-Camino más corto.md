@@ -36,5 +36,5 @@ Se genera el siguiente episodio 💀: Derecha (D), Abajo (A), Derecha (D)
 - **Riesgo vs. Seguridad**: Piensa en cómo la presencia del abismo puede cambiar la estrategia de exploración del agente (teniendo $\epsilon>0$). ¿El agente se vuelve más cauteloso con SARSA en comparación con Q-Learning, o viceversa?
 
 Para más info:
-- Example 6.6: Cliff Walking (cap 6.5, Reinforcement Learning. An Introduction", R.S. Sutton & A.G. Barto (2018)
+- Example 6.6: Cliff Walking (cap 6.5, Reinforcement Learning. An Introduction", R.S. Sutton & A.G. Barto (2018))
 - [Temporal Difference Learning (including Q-Learning) | Reinforcement Learning Part 4](https://www.youtube.com/watch?v=AJiG3ykOxmY&pp=ygUkY2xpZmYgd2Fsa2luZyByZWluZm9yY2VtZW50IGxlYXJuaW5n)

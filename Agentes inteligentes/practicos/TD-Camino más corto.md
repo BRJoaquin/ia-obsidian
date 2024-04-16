@@ -23,20 +23,16 @@ Utilizando los mismos episodios anteriores genere una política $\pi_{2}$ utiliz
 
 # Ejercicio 3: Evitando el Abismo
 
-Utiliza la misma cuadrícula de 4x4 de los ejercicios anteriores, pero esta vez añade un "abismo" en la celda (2 3) (utilizando la notación (fila, columna) con base en 1). La recompensa de caer en el abismo es -10, y moverse incurre en una recompensa de -1 como antes. Las reglas de movimiento siguen siendo las mismas.
+Una vez jugando los episodios anteriores, derepende se añade un "abismo" en la celda (2, 3) (utilizando la notación (fila, columna) con base en 1). La recompensa de caer en el abismo es -10, y moverse incurre en una recompensa de -1 como antes. Las reglas de movimiento siguen siendo las mismas.
+
+Se genera el siguiente episodio 💀: Derecha (D), Derecha (D), Abajo (A), Derecha (D) 
+
+- Actualice la estimación $\pi$ utilizando SARSA.
+- 
 ## Parte A: SARSA con Abismo
 
 Realiza una iteración de actualización del algoritmo SARSA teniendo en cuenta el abismo. Supongamos que la política inicial lleva al agente a una ruta que incluye el abismo:
 
-1. Describe el efecto esperado del abismo en la política aprendida con SARSA, considerando que SARSA es un algoritmo on-policy.
-2. Realiza y describe una iteración de actualización específica que involucre el abismo, usando los mismos parámetros ($\alpha = 0.1$, $\gamma = 0.9$, ε-greedy con $\epsilon = 0$).
-
-## Parte B: Q-Learning con Abismo
-
-Ahora aplica el algoritmo Q-Learning teniendo en cuenta el abismo:
-
-1. Describe cómo el abismo afectaría la política aprendida con Q-Learning en comparación con SARSA, especialmente en términos de exploración y explotación.
-2. Realiza y describe una iteración de actualización específica que involucre el abismo, asumiendo una selección greedy de acciones basada en los Q-values, con los mismos parámetros de aprendizaje.
 
 ## Reflexión sobre el Abismo
 

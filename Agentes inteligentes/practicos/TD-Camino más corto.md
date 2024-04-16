@@ -1,5 +1,5 @@
 # TD(0)
-
+****
 Supongamos que tienes un agente que se mueve en una cuadrícula de 4x4. El objetivo del agente es llegar a la esquina inferior derecha (4,4) partiendo de la esquina superior izquierda (1,1). Las recompensas son -1 por cada movimiento. Los movimientos posibles en cada estado son abajo y derecha. 
 
 Asuma que con una política $\pi$ se generaron los siguientes episodios:
@@ -7,7 +7,7 @@ Asuma que con una política $\pi$ se generaron los siguientes episodios:
 - **Episodio 2**: Derecha (D), Abajo (A), Abajo (A), Derecha (D), Derecha (D), Abajo (A)
 - **Episodio 3**: Abajo (A), Abajo (A), Derecha (D), Derecha (D), Derecha (D), Abajo (A)
 
-Utilize el enfoque de SARSA para estimar $V_{\pi}(s)$ y $Q_{\pi}(s,a)$
+Utilize el enfoque de TD(0) para **estimar** $V_{\pi}(s)$ y $Q_{\pi}(s,a)$
 
 > Notas:
 > 	- Tasa de aprendizaje ($\alpha$): 0.1

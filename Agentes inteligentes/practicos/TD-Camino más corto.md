@@ -25,9 +25,9 @@ Utilizando los mismos episodios anteriores genere una política $\pi_{2}$ utiliz
 
 Una vez jugando los episodios anteriores, de repente se añade un "abismo" en la celda (2, 3) (utilizando la notación (fila, columna) con base en 1) y la recompensa de caer en el abismo es -10.
 
-Se genera el siguiente episodio 💀: Derecha (D), Abajo (A), Derecha (D) 
+En la siguiente iteración se observa el siguiente episodio 💀: Derecha (D), Abajo (A), Derecha (D) 
 
-- Actualice la estimación $\pi$ utilizando TD(0).
+- Actualice la estimación $\pi$ asumiendo que se estaba ejecutando 
 - Actualice la política $\pi_2$ usando Q-Learning. 
 
 ## Reflexión sobre el Abismo

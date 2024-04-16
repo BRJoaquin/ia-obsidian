@@ -1,16 +1,17 @@
 # TD(0)
 
-Supongamos que tienes un agente que se mueve en una cuadrícula de 4x4. El objetivo del agente es llegar a la esquina inferior derecha partiendo de la esquina superior izquierda. Las recompensas son -1 por cada movimiento. Los movimientos posibles en cada estado son arriba, abajo, izquierda y derecha. Los movimientos que llevarían al agente fuera de la cuadrícula lo dejan en su posición actual. Utiliza el enfoque de SARSA para encontrar la política óptima, asumiendo una política inicial aleatoria y los siguientes parámetros:
-
-- Tasa de aprendizaje ($\alpha$): 0.1
-- Factor de descuento ($\gamma$): 0.9
+Supongamos que tienes un agente que se mueve en una cuadrícula de 4x4. El objetivo del agente es llegar a la esquina inferior derecha (4,4) partiendo de la esquina superior izquierda (1,1). Las recompensas son -1 por cada movimiento. Los movimientos posibles en cada estado son abajo, arriba, izquierda y derecha. 
 
 Asuma que con una pólitica $\pi$ se generaron los siguientes episodios:
 - **Episodio 1**: Derecha (D), Derecha (D), Derecha (D), Abajo (A), Abajo (A), Abajo (A)
 - **Episodio 2**: Derecha (D), Abajo (A), Abajo (A), Derecha (D), Derecha (D), Abajo (A)
 - **Episodio 3**: Abajo (A), Abajo (A), Derecha (D), Derecha (D), Derecha (D), Abajo (A)
 
-Calcule el valor de $Q_{\pi}$ luego de los episodios.
+Utilize el enfoque de SARSA para estimar $V(s)$ y $Q(s,a)$
+
+Notas:
+- Tasa de aprendizaje ($\alpha$): 0.1
+- Factor de descuento ($\gamma$): 0.9
 
 > Asuma que el valor $Q$ es cero para todos los pares estado-acción.
 # Ejercicio 2: Q-Learning

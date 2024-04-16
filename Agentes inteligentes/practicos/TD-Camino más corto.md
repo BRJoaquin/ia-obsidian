@@ -7,21 +7,26 @@ Asuma que con una pólitica $\pi$ se generaron los siguientes episodios:
 - **Episodio 2**: Derecha (D), Abajo (A), Abajo (A), Derecha (D), Derecha (D), Abajo (A)
 - **Episodio 3**: Abajo (A), Abajo (A), Derecha (D), Derecha (D), Derecha (D), Abajo (A)
 
-Utilize el enfoque de SARSA para estimar $V(s)$ y $Q(s,a)$
+Utilize el enfoque de SARSA para estimar $V_{\pi}(s)$ y $Q_{\pi}(s,a)$
 
-Notas:
-- Tasa de aprendizaje ($\alpha$): 0.1
-- Factor de descuento ($\gamma$): 0.9
+> Notas:
+> 	- Tasa de aprendizaje ($\alpha$): 0.1
+> 	- Factor de descuento ($\gamma$): 0.9
+> 	- Asuma que el valor $Q$ es cero para todos los pares estado-acción.
 
-> Asuma que el valor $Q$ es cero para todos los pares estado-acción.
 # Ejercicio 2: Q-Learning
 
-Utilizando la estimación de $Q(s,a)$ del ejercicio anterior. Genere un episodio desde (2,2) greedy-mente, y en caso de que dos ó mas acciones tengan el mismo valor se prefieren tomar las acciones en este orden: derecha, abajo, izquierda, arriba.
+Utilizando la estimación de $Q(s,a)$ del ejercicio anterior. Genere un episodio desde (2,2) greedy-mente ($\epsilon=0$), y en caso de que dos ó mas acciones tengan el mismo valor se prefieren tomar las acciones en este orden: derecha, abajo, izquierda, arriba.
 
-Durante el episodio mejore la política con el algoritmo de Q-learning preservando los valores de $\alpha$ y $\gamma$.
+Durante el episodio mejore la política con el algoritmo de Q-learning.
+
+> Notas: 
+> 	- Se preservan los valores de $\alpha$ y $\gamma$.
 # Ejercicio 3: Evitando el Abismo
 
 Utiliza la misma cuadrícula de 4x4 de los ejercicios anteriores, pero esta vez añade un "abismo" en la celda (3, 2) (utilizando la notación (fila, columna) con base en 1). La recompensa de caer en el abismo es -10, y moverse incurre en una recompensa de -1 como antes. Las reglas de movimiento siguen siendo las mismas.
+
+> El agente ya jugo en las condiciones anteriores, el abismo es algo nuevo que apareció.
 
 ## Parte A: SARSA con Abismo
 

@@ -16,12 +16,8 @@ Notas:
 > Asuma que el valor $Q$ es cero para todos los pares estado-acción.
 # Ejercicio 2: Q-Learning
 
-Utilizando el mismo escenario de la cuadrícula de 4x4 del ejercicio 1, aplica esta vez el algoritmo de Q-Learning para encontrar la política óptima. Al igual que antes, las recompensas son -1 por cada movimiento, y los movimientos posibles en cada estado son arriba, abajo, izquierda y derecha, con la misma regla para movimientos fuera de la cuadrícula.
+Utilizando la estimación de $Q(s,a)$ del ejercicio anterior. Genere un episodio desde (1,1) greedymente, y en caso de que dos ó mas acciones tengan el mismo valor se prefieren tomar las acciones en este orden: derecha, abajo, izquierda, arriba.
 
-Utiliza los mismos parámetros:
-
-- Tasa de aprendizaje ($\alpha$): 0.1
-- Factor de descuento ($\gamma$): 0.9
 
 Sin embargo, esta vez, asume que siempre se selecciona la acción con el mayor Q-value (política greedy).
 

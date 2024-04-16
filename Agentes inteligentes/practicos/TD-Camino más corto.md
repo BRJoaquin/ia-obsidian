@@ -18,18 +18,12 @@ Utilize el enfoque de SARSA para estimar $V_{\pi}(s)$ y $Q_{\pi}(s,a)$
 
 Utilizando los mismos episodios anteriores genere una política $\pi_{2}$ utilizando Q-Learning.
 
-la estimación de $Q(s,a)$ del ejercicio anterior. Genere un episodio desde (2,2) greedy-mente ($\epsilon=0$), y en caso de que dos ó mas acciones tengan el mismo valor se prefieren tomar las acciones en este orden: derecha, abajo, izquierda, arriba.
+- Se puede decir que $\pi_2$ es mejor que $\pi$?
+- Si se generaran miles de episodios con una política random, que ocurre con $\pi_{2}$ utilizando Q-Learning?
 
-Durante el episodio mejore la política con el algoritmo de Q-learning.
-
-> Notas: 
-> 	- Se preservan los valores de $\alpha$ y $\gamma$.
 # Ejercicio 3: Evitando el Abismo
 
-Utiliza la misma cuadrícula de 4x4 de los ejercicios anteriores, pero esta vez añade un "abismo" en la celda (3, 2) (utilizando la notación (fila, columna) con base en 1). La recompensa de caer en el abismo es -10, y moverse incurre en una recompensa de -1 como antes. Las reglas de movimiento siguen siendo las mismas.
-
-> El agente ya jugo en las condiciones anteriores, el abismo es algo nuevo que apareció.
-
+Utiliza la misma cuadrícula de 4x4 de los ejercicios anteriores, pero esta vez añade un "abismo" en la celda (2 3) (utilizando la notación (fila, columna) con base en 1). La recompensa de caer en el abismo es -10, y moverse incurre en una recompensa de -1 como antes. Las reglas de movimiento siguen siendo las mismas.
 ## Parte A: SARSA con Abismo
 
 Realiza una iteración de actualización del algoritmo SARSA teniendo en cuenta el abismo. Supongamos que la política inicial lleva al agente a una ruta que incluye el abismo:

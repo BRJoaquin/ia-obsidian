@@ -6,5 +6,6 @@
   "obsidian-textgenerator-plugin",
   "obsidian-linter",
   "ollama",
-  "obsidian-pandoc"
+  "obsidian-pandoc",
+  "obsidian-enhancing-export"
 ]

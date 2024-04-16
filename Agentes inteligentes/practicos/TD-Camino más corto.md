@@ -12,7 +12,6 @@ Utilize el enfoque de SARSA para estimar $V_{\pi}(s)$ y $Q_{\pi}(s,a)$
 > Notas:
 > 	- Tasa de aprendizaje ($\alpha$): 0.1
 > 	- Factor de descuento ($\gamma$): 0.9
-> 	- Asuma que el valor $Q$ es cero para todos los pares estado-acción.
 
 # Ejercicio 2: Q-Learning
 
@@ -23,9 +22,9 @@ Utilizando los mismos episodios anteriores genere una política $\pi_{2}$ utiliz
 
 # Ejercicio 3: Evitando el Abismo
 
-Una vez jugando los episodios anteriores, derepende se añade un "abismo" en la celda (2, 3) (utilizando la notación (fila, columna) con base en 1). La recompensa de caer en el abismo es -10, y moverse incurre en una recompensa de -1 como antes. Las reglas de movimiento siguen siendo las mismas.
+Una vez jugando los episodios anteriores, de repente se añade un "abismo" en la celda (2, 3) (utilizando la notación (fila, columna) con base en 1) y la recompensa de caer en el abismo es -10.
 
-Se genera el siguiente episodio 💀: Derecha (D), Derecha (D), Abajo (A), Derecha (D) 
+Se genera el siguiente episodio 💀: Derecha (D), Abajo (A), Derecha (D) 
 
 - Actualice la estimación $\pi$ utilizando SARSA.
 - Actualice la política $\pi_2$ usando Q-Learning. 
@@ -34,7 +33,7 @@ Se genera el siguiente episodio 💀: Derecha (D), Derecha (D), Abajo (A), Derec
 
 - **Comparación de Estrategias**: Después de completar ambas partes, reflexiona sobre cómo el abismo afecta las decisiones de política en SARSA y Q-Learning. Considera cómo cada algoritmo se adapta a las recompensas negativas severas y qué esto puede decir sobre su uso en entornos con penalizaciones significativas.
 
-- **Riesgo vs. Seguridad**: Piensa en cómo la presencia del abismo puede cambiar la estrategia de exploración del agente. ¿El agente se vuelve más cauteloso con SARSA en comparación con Q-Learning, o viceversa?
+- **Riesgo vs. Seguridad**: Piensa en cómo la presencia del abismo puede cambiar la estrategia de exploración del agente (teniendo $\epsilon>0$). ¿El agente se vuelve más cauteloso con SARSA en comparación con Q-Learning, o viceversa?
 
 Para más info:
 - Example 6.6: Cliff Walking (cap 6.5, Reinforcement Learning. An Introduction", R.S. Sutton & A.G. Barto (2018)

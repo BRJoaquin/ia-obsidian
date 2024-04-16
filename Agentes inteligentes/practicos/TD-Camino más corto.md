@@ -27,14 +27,8 @@ Una vez jugando los episodios anteriores, de repente se añade un "abismo" en la
 
 En la siguiente iteración se observa el siguiente episodio 💀: Derecha (D), Abajo (A), Derecha (D) 
 
-- Actualice la estimación $\pi$ asumiendo que se estaba ejecutando 
-- Actualice la política $\pi_2$ usando Q-Learning. 
-
-## Reflexión sobre el Abismo
-
-- **Comparación de Estrategias**: Después de completar ambas partes, reflexiona sobre cómo el abismo afecta las decisiones de política en SARSA y Q-Learning. Considera cómo cada algoritmo se adapta a las recompensas negativas severas y qué esto puede decir sobre su uso en entornos con penalizaciones significativas.
-
-- **Riesgo vs. Seguridad**: Piensa en cómo la presencia del abismo puede cambiar la estrategia de exploración del agente (teniendo $\epsilon>0$). ¿El agente se vuelve más cauteloso con SARSA en comparación con Q-Learning, o viceversa?
+- Actualice la estimación $\pi$ asumiendo que se estaba ejecutando TD(0).
+- Actualice la política $\pi_2$ asumiendo que se estaba ejecutando Q-Learning. 
 
 Para más info:
 - Example 6.6: Cliff Walking (cap 6.5, Reinforcement Learning. An Introduction", R.S. Sutton & A.G. Barto (2018))

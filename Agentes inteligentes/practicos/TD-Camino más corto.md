@@ -16,11 +16,9 @@ Notas:
 > Asuma que el valor $Q$ es cero para todos los pares estado-acción.
 # Ejercicio 2: Q-Learning
 
-Utilizando la estimación de $Q(s,a)$ del ejercicio anterior. Genere un episodio desde (1,1) greedymente, y en caso de que dos ó mas acciones tengan el mismo valor se prefieren tomar las acciones en este orden: derecha, abajo, izquierda, arriba.
+Utilizando la estimación de $Q(s,a)$ del ejercicio anterior. Genere un episodio desde (2,2) greedy-mente, y en caso de que dos ó mas acciones tengan el mismo valor se prefieren tomar las acciones en este orden: derecha, abajo, izquierda, arriba.
 
-
-Sin embargo, esta vez, asume que siempre se selecciona la acción con el mayor Q-value (política greedy).
-
+Durante el episodio mejore la política con el algoritmo de Q-learning preservando los valores de $\alpha$ y $\gamma$.
 # Ejercicio 3: Evitando el Abismo
 
 Utiliza la misma cuadrícula de 4x4 de los ejercicios anteriores, pero esta vez añade un "abismo" en la celda (3, 2) (utilizando la notación (fila, columna) con base en 1). La recompensa de caer en el abismo es -10, y moverse incurre en una recompensa de -1 como antes. Las reglas de movimiento siguen siendo las mismas.

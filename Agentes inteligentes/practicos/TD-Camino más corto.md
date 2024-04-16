@@ -1,6 +1,6 @@
 # TD(0)
 
-Supongamos que tienes un agente que se mueve en una cuadrícula de 4x4. El objetivo del agente es llegar a la esquina inferior derecha (4,4) partiendo de la esquina superior izquierda (1,1). Las recompensas son -1 por cada movimiento. Los movimientos posibles en cada estado son abajo, arriba, izquierda y derecha. 
+Supongamos que tienes un agente que se mueve en una cuadrícula de 4x4. El objetivo del agente es llegar a la esquina inferior derecha (4,4) partiendo de la esquina superior izquierda (1,1). Las recompensas son -1 por cada movimiento. Los movimientos posibles en cada estado son abajo y derecha. 
 
 Asuma que con una pólitica $\pi$ se generaron los siguientes episodios:
 - **Episodio 1**: Derecha (D), Derecha (D), Derecha (D), Abajo (A), Abajo (A), Abajo (A)
@@ -16,7 +16,9 @@ Utilize el enfoque de SARSA para estimar $V_{\pi}(s)$ y $Q_{\pi}(s,a)$
 
 # Ejercicio 2: Q-Learning
 
-Utilizando la estimación de $Q(s,a)$ del ejercicio anterior. Genere un episodio desde (2,2) greedy-mente ($\epsilon=0$), y en caso de que dos ó mas acciones tengan el mismo valor se prefieren tomar las acciones en este orden: derecha, abajo, izquierda, arriba.
+Utilizando los mismos episodios anteriores genere una política $\pi_{2}$ utilizando Q-Learning.
+
+la estimación de $Q(s,a)$ del ejercicio anterior. Genere un episodio desde (2,2) greedy-mente ($\epsilon=0$), y en caso de que dos ó mas acciones tengan el mismo valor se prefieren tomar las acciones en este orden: derecha, abajo, izquierda, arriba.
 
 Durante el episodio mejore la política con el algoritmo de Q-learning.
 

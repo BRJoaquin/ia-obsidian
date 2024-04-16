@@ -7,7 +7,9 @@ Asuma que con una política $\pi$ se generaron los siguientes episodios:
 - **Episodio 2**: Derecha (D), Abajo (A), Abajo (A), Derecha (D), Derecha (D), Abajo (A)
 - **Episodio 3**: Abajo (A), Abajo (A), Derecha (D), Derecha (D), Derecha (D), Abajo (A)
 
-Utilize el enfoque de TD(0) para **estimar** $V_{\pi}(s)$ y $Q_{\pi}(s,a)$
+Se pide:
+- Utilize el enfoque de TD(0) para **estimar** $V_{\pi}(s)$ y $Q_{\pi}(s,a)$.
+- Si utilizamos el algoritmo de SARSA con dicha política $\pi$ fija, ¿cambiaría el resultado?
 
 > Notas:
 > 	- Tasa de aprendizaje ($\alpha$): 0.1
@@ -26,7 +28,7 @@ Una vez jugando los episodios anteriores, de repente se añade un "abismo" en la
 
 Se genera el siguiente episodio 💀: Derecha (D), Abajo (A), Derecha (D) 
 
-- Actualice la estimación $\pi$ utilizando SARSA.
+- Actualice la estimación $\pi$ utilizando TD(0).
 - Actualice la política $\pi_2$ usando Q-Learning. 
 
 ## Reflexión sobre el Abismo

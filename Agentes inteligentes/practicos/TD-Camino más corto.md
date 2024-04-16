@@ -2,7 +2,7 @@
 
 Supongamos que tienes un agente que se mueve en una cuadrícula de 4x4. El objetivo del agente es llegar a la esquina inferior derecha (4,4) partiendo de la esquina superior izquierda (1,1). Las recompensas son -1 por cada movimiento. Los movimientos posibles en cada estado son abajo y derecha. 
 
-Asuma que con una pólitica $\pi$ se generaron los siguientes episodios:
+Asuma que con una política $\pi$ se generaron los siguientes episodios:
 - **Episodio 1**: Derecha (D), Derecha (D), Derecha (D), Abajo (A), Abajo (A), Abajo (A)
 - **Episodio 2**: Derecha (D), Abajo (A), Abajo (A), Derecha (D), Derecha (D), Abajo (A)
 - **Episodio 3**: Abajo (A), Abajo (A), Derecha (D), Derecha (D), Derecha (D), Abajo (A)
@@ -18,8 +18,8 @@ Utilize el enfoque de SARSA para estimar $V_{\pi}(s)$ y $Q_{\pi}(s,a)$
 
 Utilizando los mismos episodios anteriores genere una política $\pi_{2}$ utilizando Q-Learning.
 
-- Se puede decir que $\pi_2$ es mejor que $\pi$?
-- Si se generaran miles de episodios con una política random, que ocurre con $\pi_{2}$ utilizando Q-Learning?
+- ¿Se puede decir que $\pi_2$ es mejor que $\pi$?
+- Si se generaran miles de episodios con una política random, ¿qué ocurre con $\pi_{2}$ utilizando Q-Learning?
 
 # Ejercicio 3: Evitando el Abismo
 
@@ -28,11 +28,7 @@ Una vez jugando los episodios anteriores, derepende se añade un "abismo" en la 
 Se genera el siguiente episodio 💀: Derecha (D), Derecha (D), Abajo (A), Derecha (D) 
 
 - Actualice la estimación $\pi$ utilizando SARSA.
-- 
-## Parte A: SARSA con Abismo
-
-Realiza una iteración de actualización del algoritmo SARSA teniendo en cuenta el abismo. Supongamos que la política inicial lleva al agente a una ruta que incluye el abismo:
-
+- Actualice la política $\pi_2$ usando Q-Learning. 
 
 ## Reflexión sobre el Abismo
 

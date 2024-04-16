@@ -20,7 +20,6 @@ Se pide:
 Utilizando los mismos episodios anteriores genere una política $\pi_{2}$ utilizando Q-Learning.
 
 - ¿Se puede decir que $\pi_2$ es mejor que $\pi$?
-- Si se generaran miles de episodios con una política random, ¿qué ocurre con $\pi_{2}$ utilizando Q-Learning?
 
 # Ejercicio 3: Evitando el Abismo
 

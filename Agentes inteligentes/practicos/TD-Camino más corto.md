@@ -22,17 +22,15 @@ Notas:
 
 Utilizando los mismos episodios anteriores genere una política $\pi_{2}$ utilizando Q-Learning.
 
-- ¿Se puede decir que $\pi_2$ es mejor que $\pi$?
+- ¿Se puede decir que **$\pi_2$ es mejor que $\pi$**?
 
 # Ejercicio 3: Evitando el Abismo
 
-Una vez jugando los episodios anteriores, de repente se añade un "abismo" en la celda (2, 3) (utilizando la notación (fila, columna) con base en 1) y la recompensa de caer en el abismo es -10.
+Una vez jugando los episodios anteriores, **de repente se añade un "abismo" en la celda (2, 3)** (utilizando la notación (fila, columna) con base en 1) y la recompensa de caer en el abismo es -10.
 
-En la siguiente iteración se observa el siguiente episodio: Derecha (D), Abajo (A), Derecha (D) 
+En la siguiente iteración se observa el siguiente episodio: Derecha (D), Abajo (A), Derecha (D).
 
 - Actualice la estimación $\pi$ asumiendo que se estaba ejecutando TD(0).
 - Actualice la política $\pi_2$ asumiendo que se estaba ejecutando Q-Learning. 
 
-Para más info:
-
-- Example 6.6: Cliff Walking (cap 6.5, Reinforcement Learning. An Introduction", R.S. Sutton & A.G. Barto (2018))
+**Bibliografía**: Example 6.6: Cliff Walking (cap 6.5, Reinforcement Learning. An Introduction", R.S. Sutton & A.G. Barto (2018))

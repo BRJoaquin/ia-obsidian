@@ -1,25 +1,22 @@
-Entendido, comenzaremos con tres ejemplos de redes feedforward con una complejidad creciente y luego pasaremos a las redes convolucionales.
 
-### Ejemplo 1: Red Feedforward Simple
-**Objetivo**: Calcular el número de pesos, sesgos y parámetros totales por capa, así como el número total de parámetros aprendibles en toda la red.
+**Objetivo**: Calcular el número de pesos, sesgos y parámetros totales por capa, así como el número total de parámetros aprendibles en toda la red para cada ejemplo a continuación
+## Ejemplo 1
 
 **Estructura de la Red**:
 - **Capa de Entrada**: 128 neuronas
 - **Capa Oculta 1**: 64 neuronas
-- **Capa de Salida**: 10 neuronas
+- **Capa de Salida**: 1 neuronas
 
 **Activación**: ReLU para las capas ocultas, Softmax para la salida.
 
-```markdown
 | Capa | # de Neuronas de Entrada | # de Neuronas de Salida | # de Pesos | # de Sesgos | # de Parámetros |
-|------|---------------------------|-------------------------|------------|-------------|----------------|
-| FC1  | 128                       | 64                      |            |             |                |
-| FC2  | 64                        | 10                      |            |             |                |
-|      |                           |                         | **Total**  |             |                |
-```
+| ---- | ------------------------ | ----------------------- | ---------- | ----------- | --------------- |
+| FC1  | 128                      | 64                      |            |             |                 |
+| FC2  | 64                       | 1                       |            |             |                 |
 
-### Ejemplo 2: Red Feedforward con Dos Capas Ocultas
-**Objetivo**: Calcular el número de pesos, sesgos y parámetros totales por capa, así como el número total de parámetros aprendibles en toda la red.
+Total de parámetros: 
+
+## Ejemplo 2
 
 **Estructura de la Red**:
 - **Capa de Entrada**: 256 neuronas

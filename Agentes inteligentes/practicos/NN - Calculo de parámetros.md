@@ -1,7 +1,10 @@
 **Objetivo**: Calcular el número de pesos, sesgos y parámetros totales por capa, así como el número total de parámetros aprendibles en toda la red para cada ejemplo a continuación
+
 ## Ejemplo 1
 
+
 **Estructura de la Red**:
+
 - **Capa de Entrada**: 128 neuronas
 - **Capa Oculta 1**: 64 neuronas
 - **Capa de Salida**: 1 neuronas

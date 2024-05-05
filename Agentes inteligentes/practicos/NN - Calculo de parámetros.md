@@ -67,7 +67,7 @@ Total de parámetros:
 
 | Capa  | Detalle                    | Out<br>Shape | # de Pesos | # de Sesgos | # de Parámetros |
 | ----- | -------------------------- | ------------ | ---------- | ----------- | --------------- |
-| Input |                            | (32,32,3)    |            |             |                 |
+| Input | (32, 32, 3)                | (32,32,3)    |            |             |                 |
 | CONV1 | f=5x5, s=1, p=2, 8 filtros |              |            |             |                 |
 | POOL1 | 2x2, s=2, max              |              |            |             |                 |
 | FC    | Softmax, 10 clases         | (10,1)       |            |             |                 |
@@ -91,7 +91,7 @@ Total de parámetros:
 
 | Capa  | Detalle                     | Out Shape   | # de Pesos | # de Sesgos | # de Parámetros |
 | ----- | --------------------------- | ----------- | ---------- | ----------- | --------------- |
-| Input |                             | (32, 32, 3) |            |             |                 |
+| Input | (32, 32, 3)                 | (32, 32, 3) |            |             |                 |
 | CONV1 | f=3x3, s=1, p=1, 16 filtros |             |            |             |                 |
 | POOL1 | 2x2, s=2, max               |             |            |             |                 |
 | CONV2 | f=3x3, s=1, p=1, 32 filtros |             |            |             |                 |

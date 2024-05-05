@@ -71,7 +71,7 @@ Total de parámetros:
 
 **Activación**: ReLU para la capa convolucional, Softmax para la salida.
 
-| Capa  | Detalle                    | Out<br>Shape | # de Pesos | # de Sesgos | # de Parámetros |
+| Capa  | Detalle                    | Out Shape | # de Pesos | # de Sesgos | # de Parámetros |
 | ----- | -------------------------- | ------------ | ---------- | ----------- | --------------- |
 | Input | (32, 32, 3)                | (32,32,3)    |            |             |                 |
 | CONV1 | f=5x5, s=1, p=2, 8 filtros |              |            |             |                 |
@@ -96,14 +96,14 @@ Total de parámetros:
 
 **Activación**: ReLU para las capas convolucionales y FC1, Softmax para la salida de FC2.
 
-| Capa  | Detalle                           | Out Shape   | # de Pesos | # de Sesgos | # de Parámetros |
-| ----- | --------------------------------- | ----------- | ---------- | ----------- | --------------- |
-| Input | (32, 32, 3)                       | (32, 32, 3) |            |             |                 |
-| CONV1 | f=3x3<br>s=1<br>p=1<br>16 filtros |             |            |             |                 |
-| POOL1 | 2x2<br>s=2<br>max                 |             |            |             |                 |
-| CONV2 | f=3x3<br>s=1<br>p=1<br>32 filtros |             |            |             |                 |
-| POOL2 | 2x2<br>s=2<br>max                 |             |            |             |                 |
-| FC1   | 128 neuronas                      |             |            |             |                 |
-| FC2   | Softmax, 10 clases                | (10, 1)     |            |             |                 |
+| Capa       | Detalle                     | Out Shape   | # de Pesos | # de Sesgos | # de Parámetros |
+| ---------- | --------------------------- | ----------- | -----      | ----- | ----- |
+| Input      | (32, 32, 3)                 | (32, 32, 3) |            |             |                 |
+| CONV1      | f=3x3, s=1, p=1, 16 filtros |             |            |             |                 |
+| POOL1      | 2x2, s=2,max                |             |            |             |                 |
+| CONV2      | f=3x3, s=1, p=1, 32 filtros |             |            |             |                 |
+| POOL2      | 2x2, s=2,max                |             |            |             |                 |
+| FC1        | 128 neuronas                |             |            |             |                 |
+| FC2        | Softmax, 10 clases          | (10, 1)     |            |             |                 |
 
 Total de parámetros: 

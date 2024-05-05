@@ -2,7 +2,9 @@
 
 La reciente situación de pandemia global ha obligado a varios negocios a adaptarse e incluir cada vez más trabajo remoto. Este es el caso de las carreras de autos, donde por ejemplo Fox ha comenzado a transmitir carreras virtuales.
 
-En este contexto, un piloto misterioso decide participar, pero con una salvedad, quiere que sus acciones sean controladas por código. Para ello decide iniciar desarrollando políticas a mano y luego probarlas. Para probar una de sus políticas plantea su problema de selección de acciones como un Markov Decision Process (MDP), de modo tal que partiendo de un cierto estado del motor, la pista y velocidad actual, ser capaz de ir subiendo y bajando la velocidad, a fin de maximizar la velocidad sin hacer sufrir al motor, y con esto lograr maximizar la velocidad media hasta la meta.
+En este contexto, un piloto misterioso decide participar, pero con una salvedad, quiere que sus acciones sean controladas por código. Para ello decide iniciar desarrollando políticas a mano y luego probarlas. 
+
+Para probar una de sus políticas plantea su problema de selección de acciones como un Markov Decision Process (MDP), de modo tal que partiendo de un cierto estado del motor, la pista y velocidad actual, ser capaz de ir subiendo y bajando la velocidad, a fin de maximizar la velocidad sin hacer sufrir al motor, y con esto lograr maximizar la velocidad media hasta la meta.
 
 Dados los siguientes episodios **observados**, ejecutados de acuerdo a una política arbitraria **desconocida**, calcule los valores $V_{\pi_d}(s)$ y $Q_{\pi_d}(s, a)$.
 
@@ -42,6 +44,6 @@ Asumiendo que está en el estado **(caliente, muy rápido)** y una estrategia ep
 2) $Q^{\pi}((caliente, muyrápido), acelerar)$ de acuerdo con QLearning.
 
 *Notas*:
-> Para ambas partes, $S' = (muy caliente, muy rápido)$ y $R = 120$.
- 
-> Los valores de $\gamma$ y $\alpha$ se asumen 1.
+
+- Para ambas partes, $S' = (muy caliente, muy rápido)$ y $R = 120$.
+- Los valores de $\gamma$ y $\alpha$ se asumen 1.

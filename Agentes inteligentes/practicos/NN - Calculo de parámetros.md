@@ -1,4 +1,3 @@
-
 **Objetivo**: Calcular el número de pesos, sesgos y parámetros totales por capa, así como el número total de parámetros aprendibles en toda la red para cada ejemplo a continuación
 ## Ejemplo 1
 
@@ -75,9 +74,7 @@ Total de parámetros:
 
 Total de parámetros: 
 
-Excelente, vamos a crear un ejemplo un poco más complejo con dos capas convolucionales, dos capas de pooling y dos capas completamente conectadas. Este tipo de estructura nos permite profundizar en el análisis de cómo las capas interactúan y transforman los datos a través de la red.
-
-### Ejemplo 5: CNN con Múltiples Capas Conv y Pooling
+## Ejemplo 5
 
 **Objetivo**: Calcular el número de pesos, sesgos y parámetros totales por capa, así como el shape de salida de cada capa (activation shape).
 
@@ -92,18 +89,14 @@ Excelente, vamos a crear un ejemplo un poco más complejo con dos capas convoluc
 
 **Activación**: ReLU para las capas convolucionales y FC1, Softmax para la salida de FC2.
 
-```markdown
-| Capa  | Detalle                       | Activation Shape | # de Pesos  | # de Sesgos | # de Parámetros |
-| ----- | ----------------------------- | ---------------- | ----------- | ----------- | --------------- |
-| Input |                               | (32, 32, 3)      | 0           | 0           | 0               |
-| CONV1 | f=3x3, s=1, p=1, 16 filtros   | (32, 32, 16)     | 3x3x3x16    | 16          | 3x3x3x16 + 16   |
-| POOL1 | 2x2, s=2, max                 | (16, 16, 16)     | 0           | 0           | 0               |
-| CONV2 | f=3x3, s=1, p=1, 32 filtros   | (16, 16, 32)     | 3x3x16x32   | 32          | 3x3x16x32 + 32  |
-| POOL2 | 2x2, s=2, max                 | (8, 8, 32)       | 0           | 0           | 0               |
-| FC1   | 128 neuronas                  | (128, 1)         | 8x8x32x128  | 128         | 8x8x32x128 + 128|
-| FC2   | Softmax, 10 clases            | (10, 1)          | 128x10      | 10          | 128x10 + 10     |
+| Capa  | Detalle                     | Out Shape   | # de Pesos | # de Sesgos | # de Parámetros |
+| ----- | --------------------------- | ----------- | ---------- | ----------- | --------------- |
+| Input |                             | (32, 32, 3) |            |             |                 |
+| CONV1 | f=3x3, s=1, p=1, 16 filtros |             |            |             |                 |
+| POOL1 | 2x2, s=2, max               |             |            |             |                 |
+| CONV2 | f=3x3, s=1, p=1, 32 filtros |             |            |             |                 |
+| POOL2 | 2x2, s=2, max               |             |            |             |                 |
+| FC1   | 128 neuronas                |             |            |             |                 |
+| FC2   | Softmax, 10 clases          | (10, 1)     |            |             |                 |
 
-Total de parámetros: \[CALCULAR AQUÍ\]
-```
-
-Esta tabla resume cada capa, mostrando la forma de activación después de cada operación, junto con el cálculo del número de pesos, sesgos y parámetros totales para cada capa. En el total de parámetros, simplemente sumarías los parámetros de todas las capas que contienen parámetros. Esta estructura proporciona una visión completa y permite entender cómo las dimensiones y parámetros cambian a través de la red. Si necesitas más detalles o un ajuste en los números, dime para adaptarlo a tus necesidades.
+Total de parámetros: 

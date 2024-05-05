@@ -5,6 +5,5 @@
   "smart-connections",
   "obsidian-textgenerator-plugin",
   "obsidian-linter",
-  "ollama",
-  "obsidian-pandoc"
+  "ollama"
 ]

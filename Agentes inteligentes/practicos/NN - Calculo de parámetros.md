@@ -55,21 +55,22 @@ Total de parámetros:
 Total de parámetros: 
 
 
-**Ejemplo 4**
+## Ejemplo 4
 
 * **Capa de Entrada**: 3 color channels (RGB), tamaño 28x28
 * **Capa Convolutional 1**: 32 filters, kernel size 5x5, stride 2x2
 * **Capa Convolutional 2**: 64 filters, kernel size 3x3, stride 1x1
 * **Capa de Salida**: 10 neurons
 
-| Capa   | # de Filas  | # de Columnas  | # de Filas en la Entrada  | # de Columnas en la Entrada  | # de Pesos  | # de Sesgos  | # de Parámetros |
-| -----  | -----------  |  -------------  |  ------------------------  |  -------------------------  | ----------  | -----------  |  ---------------  |
-| Conv1   | 32          | 28x28           | 3                         | 28                         | (5*5*3+1)*32 = 4800  | 32             | 4832            |
-| Conv2   | 64          | 14x14           | 32                        | 14                        | (3*3*32+1)*64 = 9216 | 64             | 9280             |
-| FC      | 1           | 10               | 256                       | 10                         | (256*10) + 10 = 2570  | 10             | 2580              |
-Total de parámetros: 4832 + 9280 + 2580 = **16692**
+| Capa  | # de Filas | # de Columnas | # de Filas en la Entrada | # de Columnas en la Entrada | # de Pesos | # de Sesgos | # de Parámetros |
+| ----- | ---------- | ------------- | ------------------------ | --------------------------- | ---------- | ----------- | --------------- |
+| Conv1 | 32         | 28x28         | 3                        | 28                          |            |             |                 |
+| Conv2 | 64         | 14x14         | 32                       | 14                          |            |             |                 |
+| FC    | 1          | 10            | 256                      | 10                          |            |             |                 |
 
-**Ejemplo 5**
+Total de parámetros: 
+
+## Ejemplo 5
 
 * **Capa de Entrada**: 1 color channel, tamaño 32x32
 * **Capa Convolutional 1**: 16 filters, kernel size 7x7, stride 3x3
@@ -83,7 +84,7 @@ Total de parámetros: 4832 + 9280 + 2580 = **16692**
 | FC      | 1           | 20               | 320                       | 20                         | (320*20) + 20 = 6640  | 20             | 6660              |
 Total de parámetros: 1136 + 5152 + 6660 = **12988**
 
-**Ejemplo 6**
+## Ejemplo 6
 
 * **Capa de Entrada**: 3 color channels (RGB), tamaño 224x224
 * **Capa Convolutional 1**: 64 filters, kernel size 11x11, stride 4x4

@@ -2,7 +2,6 @@
 
 ## Ejemplo 1
 
-
 **Estructura de la Red**:
 
 - **Capa de Entrada**: 128 neuronas
@@ -10,6 +9,7 @@
 - **Capa de Salida**: 1 neuronas
 
 **Activación**: ReLU para las capas ocultas, Softmax para la salida.
+
 
 | Capa | # de Neuronas de Entrada | # de Neuronas de Salida | # de Pesos | # de Sesgos | # de Parámetros |
 | ---- | ------------------------ | ----------------------- | ---------- | ----------- | --------------- |
@@ -21,6 +21,7 @@ Total de parámetros:
 ## Ejemplo 2
 
 **Estructura de la Red**:
+
 - **Capa de Entrada**: 256 neuronas
 - **Capa Oculta 1**: 128 neuronas
 - **Capa Oculta 2**: 64 neuronas
@@ -39,6 +40,7 @@ Total de parámetros:
 ## Ejemplo 3
 
 **Estructura de la Red**:
+
 - **Capa de Entrada**: 512 neuronas
 - **Capa Oculta 1**: 256 neuronas
 - **Capa Oculta 2**: 128 neuronas
@@ -61,6 +63,7 @@ Total de parámetros:
 **Objetivo**: Calcular el número de pesos, sesgos y parámetros totales por capa, así como el shape de salida.
 
 **Estructura de la Red**:
+
 - **Capa de Entrada**: Imágenes de tamaño 32x32 con 3 canales (RGB).
 - **CONV1**: Kernel de 5x5, 8 filtros, stride de 1, padding de 2 (zero-padding).
 - **POOL1**: Pooling 2x2, stride de 2, tipo 'max'.
@@ -82,6 +85,7 @@ Total de parámetros:
 **Objetivo**: Calcular el número de pesos, sesgos y parámetros totales por capa, así como el shape de salida de cada capa (activation shape).
 
 **Estructura de la Red**:
+
 - **Capa de Entrada**: Imágenes de tamaño 32x32 con 3 canales (RGB).
 - **CONV1**: Kernel de 3x3, 16 filtros, stride de 1, padding de 1 (zero-padding).
 - **POOL1**: Pooling 2x2, stride de 2, tipo 'max'.

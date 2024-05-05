@@ -7,7 +7,8 @@ En este contexto, un piloto misterioso decide participar, pero con una salvedad,
 Dados los siguientes episodios **observados**, ejecutados de acuerdo a una política arbitraria **desconocida**, calcule los valores $V_{\pi_d}(s)$ y $Q_{\pi_d}(s, a)$.
 
 *Notas*:
-> Los valores de $\gamma$ y $\alpha$ se asumen 1.
+Los valores de $\gamma$ y $\alpha$ se asumen 1.
+
 ## Episodio 1:
 
 | Estado (motor/velocidad) | Acción   | Recompensa | Estado siguiente    |

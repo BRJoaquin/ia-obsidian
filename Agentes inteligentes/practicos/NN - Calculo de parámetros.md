@@ -73,12 +73,13 @@ Activación: ReLU para las capas ocultas, Softmax para la salida.
 
 Activación: ReLU para la capa convolucional, Softmax para la salida.
 
-| Capa      | Detalle                    | Out Shape | # de Pesos | # de Sesgos | # de Parámetros |
-| --------- | -------------------------- | --------- | ---------- | ----------- | --------------- |
-| **Input** | (32, 32, 3)                | (32,32,3) |            |             |                 |
-| **CONV1** | f=5x5, s=1, p=2, 8 filtros |           |            |             |                 |
-| **POOL1** | 2x2, s=2, max              |           |            |             |                 |
-| **FC**    | Softmax, 10 clases         | (10,1)    |            |             |                 |
+| Capa        | Detalle                    | Out Shape | # de Pesos | # de Sesgos | # de Parámetros |
+| ----------- | -------------------------- | --------- | ---------- | ----------- | --------------- |
+| **Input**   | (32, 32, 3)                | (32,32,3) |            |             |                 |
+| **CONV1**   | f=5x5, s=1, p=2, 8 filtros |           |            |             |                 |
+| **POOL1**   | 2x2, s=2, max              |           |            |             |                 |
+| **Flatten** |                            |           |            |             |                 |
+| **FC**      | Softmax, 10 clases         | (10,1)    |            |             |                 |
 
 **Total de parámetros**: 
 
@@ -98,14 +99,15 @@ Activación: ReLU para la capa convolucional, Softmax para la salida.
 
 Activación: ReLU para las capas convolucionales y FC1, Softmax para la salida de FC2.
 
-| Capa       | Detalle                     | Out Shape   | # de Pesos | # de Sesgos | # de Parámetros |
-| ---------- | --------------------------- | ----------- | -------      | -------       | -------           |
-| **Input**      | (32, 32, 3)                 | (32, 32, 3) |            |             |                 |
-| **CONV1**      | f=3x3, s=1, p=1, 16 filtros |             |            |             |                 |
-| **POOL1**      | 2x2, s=2,max                |             |            |             |                 |
-| **CONV2**      | f=3x3, s=1, p=1, 32 filtros |             |            |             |                 |
-| **POOL2**      | 2x2, s=2,max                |             |            |             |                 |
-| **FC1**        | 128 neuronas                |             |            |             |                 |
-| **FC2**        | Softmax, 10 clases          | (10, 1)     |            |             |                 |
+| Capa        | Detalle                     | Out Shape   | # de Pesos | # de Sesgos | # de Parámetros |
+| ----------- | --------------------------- | ----------- | ---------- | ----------- | --------------- |
+| **Input**   | (32, 32, 3)                 | (32, 32, 3) |            |             |                 |
+| **CONV1**   | f=3x3, s=1, p=1, 16 filtros |             |            |             |                 |
+| **POOL1**   | 2x2, s=2,max                |             |            |             |                 |
+| **CONV2**   | f=3x3, s=1, p=1, 32 filtros |             |            |             |                 |
+| **POOL2**   | 2x2, s=2,max                |             |            |             |                 |
+| **Flatten** |                             |             |            |             |                 |
+| **FC1**     | 128 neuronas                |             |            |             |                 |
+| **FC2**     | Softmax, 10 clases          | (10, 1)     |            |             |                 |
 
 **Total de parámetros**: 

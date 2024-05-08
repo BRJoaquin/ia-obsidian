@@ -73,12 +73,12 @@ Activación: ReLU para las capas ocultas, Softmax para la salida.
 
 Activación: ReLU para la capa convolucional, Softmax para la salida.
 
-| Capa       | Detalle                     | Out Shape   | # de Pesos | # de Sesgos | # de Parámetros |
-| ---------- | --------------------------- | ----------- | -------    | -------     | -------         |
-| **Input**      | (32, 32, 3)                 | (32,32,3)   |            |             |                 |
-| **CONV1**      | f=5x5, s=1, p=2, 8 filtros  |             |            |             |                 |
-| **POOL1**      | 2x2, s=2, max               |             |            |             |                 |
-| **FC**         | Softmax, 10 clases          | (10,1)      |            |             |                 |
+| Capa      | Detalle                    | Out Shape | # de Pesos | # de Sesgos | # de Parámetros |
+| --------- | -------------------------- | --------- | ---------- | ----------- | --------------- |
+| **Input** | (32, 32, 3)                | (32,32,3) |            |             |                 |
+| **CONV1** | f=5x5, s=1, p=2, 8 filtros |           |            |             |                 |
+| **POOL1** | 2x2, s=2, max              |           |            |             |                 |
+| **FC**    | Softmax, 10 clases         | (10,1)    |            |             |                 |
 
 **Total de parámetros**: 
 

@@ -1,3 +1,54 @@
+¡Claro! Aquí tienes un resumen con solo las fórmulas utilizadas para cada cálculo:
+
+### Resumen de Fórmulas
+
+1. **Cálculo del Shape de Salida para Convolución**:
+   $$
+   H_{\text{out}} = \frac{(H_{\text{in}} - \text{kernel} + 2 \cdot \text{padding})}{\text{stride}} + 1
+   $$
+
+2. **Cálculo del Shape de Salida para Pooling**:
+   $$
+   H_{\text{out}} = \frac{H_{\text{in}} - \text{kernel}}{\text{stride}} + 1
+   $$
+
+3. **Número de Pesos para Convolución**:
+   $$
+   \text{Número de Pesos} = \text{kernel} \times \text{kernel} \times \text{canales de entrada} \times \text{número de filtros}
+   $$
+
+4. **Número de Sesgos para Convolución**:
+   $$
+   \text{Número de Sesgos} = \text{número de filtros}
+   $$
+
+5. **Total de Parámetros para Convolución**:
+   $$
+   \text{Total de Parámetros} = \text{Número de Pesos} + \text{Número de Sesgos}
+   $$
+
+6. **Shape de Salida para Flatten**:
+   $$
+   \text{Shape de Salida} = H_{\text{out}} \times W_{\text{out}} \times \text{número de filtros}
+   $$
+
+7. **Número de Pesos para Capa Fully Connected**:
+   $$
+   \text{Número de Pesos} = \text{neuronas de entrada} \times \text{neuronas de salida}
+   $$
+
+8. **Número de Sesgos para Capa Fully Connected**:
+   $$
+   \text{Número de Sesgos} = \text{neuronas de salida}
+   $$
+
+9. **Total de Parámetros para Capa Fully Connected**:
+   $$
+   \text{Total de Parámetros} = \text{Número de Pesos} + \text{Número de Sesgos}
+   $$
+
+Estas fórmulas son aplicables a las capas convolucionales, de pooling, y fully connected en la estructura de la red neuronal descrita.
+
 ### Ejemplo 1
 
 Para las capas totalmente conectadas (FC), la cantidad de pesos es igual al producto del número de neuronas de entrada por el número de neuronas de salida. El número de sesgos es igual al número de neuronas de salida. Los parámetros totales por capa son la suma de pesos y sesgos.

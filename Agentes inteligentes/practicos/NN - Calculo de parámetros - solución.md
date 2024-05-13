@@ -77,35 +77,35 @@ Claro, vamos a desglosar cada paso para calcular el número de pesos, sesgos y p
    - **Padding**: 2 (zero-padding)
 
    **Cálculo del Shape de Salida**:
-   \[
+   $
    H_{\text{out}} = \frac{(H_{\text{in}} - \text{kernel} + 2 \cdot \text{padding})}{\text{stride}} + 1
-   \]
+   $
    Donde \(H_{\text{in}}\) es la altura y anchura de entrada.
 
    Para **altura** y **anchura**:
-   \[
+   $
    H_{\text{out}} = \frac{(32 - 5 + 2 \cdot 2)}{1} + 1 = 32
-   \]
+   $
 
    - **Shape de Salida**: (32, 32, 8)
 
    **Número de Pesos**:
-   \[
+   $
    \text{Número de Pesos} = \text{kernel} \times \text{kernel} \times \text{canales de entrada} \times \text{número de filtros}
-   \]
-   \[
+   $
+   $
    \text{Número de Pesos} = 5 \times 5 \times 3 \times 8 = 600
-   \]
+   $
 
    **Número de Sesgos**:
-   \[
+   $
    \text{Número de Sesgos} = \text{número de filtros} = 8
-   \]
+   $
 
    **Total de Parámetros**:
-   \[
+   $
    \text{Total de Parámetros} = \text{Número de Pesos} + \text{Número de Sesgos} = 600 + 8 = 608
-   \]
+   $
 
 3. **POOL1**:
    - **Kernel de Pooling**: 2x2
@@ -113,12 +113,12 @@ Claro, vamos a desglosar cada paso para calcular el número de pesos, sesgos y p
    - **Tipo**: max
 
    **Cálculo del Shape de Salida**:
-   \[
+   $
    H_{\text{out}} = \frac{H_{\text{in}} - \text{kernel}}{\text{stride}} + 1
-   \]
-   \[
+   $
+   $
    H_{\text{out}} = \frac{32 - 2}{2} + 1 = 16
-   \]
+   $
 
    - **Shape de Salida**: (16, 16, 8)
 
@@ -130,19 +130,19 @@ Claro, vamos a desglosar cada paso para calcular el número de pesos, sesgos y p
    - **Número de Neuronas**: 10
 
    **Número de Pesos**:
-   \[
+   $$
    \text{Número de Pesos} = \text{neuronas de entrada} \times \text{neuronas de salida} = 2048 \times 10 = 20480
-   \]
+   $$
 
    **Número de Sesgos**:
-   \[
+   $$
    \text{Número de Sesgos} = \text{neuronas de salida} = 10
-   \]
+   $$
 
    **Total de Parámetros**:
-   \[
+   $$
    \text{Total de Parámetros} = \text{Número de Pesos} + \text{Número de Sesgos} = 20480 + 10 = 20490
-   \]
+   $$
 
 ### Resumen en la Tabla
 
@@ -173,35 +173,35 @@ Vamos a calcular los detalles para cada capa de la red propuesta.
    - **Padding**: 1 (zero-padding)
 
    **Cálculo del Shape de Salida**:
-   \[
+   $$
    H_{\text{out}} = \frac{(H_{\text{in}} - \text{kernel} + 2 \cdot \text{padding})}{\text{stride}} + 1
-   \]
-   Donde \(H_{\text{in}}\) es la altura y anchura de entrada.
+   $$
+   Donde $H_{\text{in}}$ es la altura y anchura de entrada.
 
    Para **altura** y **anchura**:
-   \[
+   $
    H_{\text{out}} = \frac{(32 - 3 + 2 \cdot 1)}{1} + 1 = 32
-   \]
+   $
 
    - **Shape de Salida**: (32, 32, 16)
 
    **Número de Pesos**:
-   \[
+   $
    \text{Número de Pesos} = \text{kernel} \times \text{kernel} \times \text{canales de entrada} \times \text{número de filtros}
-   \]
-   \[
+   $
+   $
    \text{Número de Pesos} = 3 \times 3 \times 3 \times 16 = 432
-   \]
+   $
 
    **Número de Sesgos**:
-   \[
+   $
    \text{Número de Sesgos} = \text{número de filtros} = 16
-   \]
+   $
 
    **Total de Parámetros**:
-   \[
+   $
    \text{Total de Parámetros} = \text{Número de Pesos} + \text{Número de Sesgos} = 432 + 16 = 448
-   \]
+   $
 
 3. **POOL1**:
    - **Kernel de Pooling**: 2x2
@@ -209,12 +209,12 @@ Vamos a calcular los detalles para cada capa de la red propuesta.
    - **Tipo**: max
 
    **Cálculo del Shape de Salida**:
-   \[
+   $
    H_{\text{out}} = \frac{H_{\text{in}} - \text{kernel}}{\text{stride}} + 1
-   \]
-   \[
+   $
+   $
    H_{\text{out}} = \frac{32 - 2}{2} + 1 = 16
-   \]
+   $
 
    - **Shape de Salida**: (16, 16, 16)
 
@@ -225,32 +225,32 @@ Vamos a calcular los detalles para cada capa de la red propuesta.
    - **Padding**: 1 (zero-padding)
 
    **Cálculo del Shape de Salida**:
-   \[
+   $
    H_{\text{out}} = \frac{(H_{\text{in}} - \text{kernel} + 2 \cdot \text{padding})}{\text{stride}} + 1
-   \]
-   \[
+   $
+   $
    H_{\text{out}} = \frac{(16 - 3 + 2 \cdot 1)}{1} + 1 = 16
-   \]
+   $
 
    - **Shape de Salida**: (16, 16, 32)
 
    **Número de Pesos**:
-   \[
+   $
    \text{Número de Pesos} = \text{kernel} \times \text{kernel} \times \text{canales de entrada} \times \text{número de filtros}
-   \]
-   \[
+   $
+   $
    \text{Número de Pesos} = 3 \times 3 \times 16 \times 32 = 4608
-   \]
+   $
 
    **Número de Sesgos**:
-   \[
+   $
    \text{Número de Sesgos} = \text{número de filtros} = 32
-   \]
+   $
 
    **Total de Parámetros**:
-   \[
+   $
    \text{Total de Parámetros} = \text{Número de Pesos} + \text{Número de Sesgos} = 4608 + 32 = 4640
-   \]
+   $
 
 5. **POOL2**:
    - **Kernel de Pooling**: 2x2
@@ -258,12 +258,12 @@ Vamos a calcular los detalles para cada capa de la red propuesta.
    - **Tipo**: max
 
    **Cálculo del Shape de Salida**:
-   \[
+   $
    H_{\text{out}} = \frac{H_{\text{in}} - \text{kernel}}{\text{stride}} + 1
-   \]
-   \[
+   $
+   $
    H_{\text{out}} = \frac{16 - 2}{2} + 1 = 8
-   \]
+   $
 
    - **Shape de Salida**: (8, 8, 32)
 
@@ -275,37 +275,37 @@ Vamos a calcular los detalles para cada capa de la red propuesta.
    - **Número de Neuronas**: 128
 
    **Número de Pesos**:
-   \[
+   $
    \text{Número de Pesos} = \text{neuronas de entrada} \times \text{neuronas de salida} = 2048 \times 128 = 262144
-   \]
+   $
 
    **Número de Sesgos**:
-   \[
+   $
    \text{Número de Sesgos} = \text{neuronas de salida} = 128
-   \]
+   $
 
    **Total de Parámetros**:
-   \[
+   $
    \text{Total de Parámetros} = \text{Número de Pesos} + \text{Número de Sesgos} = 262144 + 128 = 262272
-   \]
+   $
 
 8. **FC2**:
    - **Número de Neuronas**: 10
 
    **Número de Pesos**:
-   \[
+   $
    \text{Número de Pesos} = \text{neuronas de entrada} \times \text{neuronas de salida} = 128 \times 10 = 1280
-   \]
+   $
 
    **Número de Sesgos**:
-   \[
+   $
    \text{Número de Sesgos} = \text{neuronas de salida} = 10
-   \]
+   $
 
    **Total de Parámetros**:
-   \[
+   $
    \text{Total de Parámetros} = \text{Número de Pesos} + \text{Número de Sesgos} = 1280 + 10 = 1290
-   \]
+   $
 
 ### Resumen en la Tabla
 

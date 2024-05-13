@@ -69,6 +69,7 @@ Activación: ReLU para las capas ocultas, Softmax para la salida.
 - **Capa de Entrada**: Imágenes de tamaño 32x32 con 3 canales (RGB).
 - **CONV1**: Kernel de 5x5, 8 filtros, stride de 1, padding de 2 (zero-padding).
 - **POOL1**: Pooling 2x2, stride de 2, tipo 'max'.
+- **Flatten**
 - **Capa de Salida**: 10 neuronas (clasificación de 10 clases).
 
 Activación: ReLU para la capa convolucional, Softmax para la salida.
@@ -94,6 +95,7 @@ Activación: ReLU para la capa convolucional, Softmax para la salida.
 - **POOL1**: Pooling 2x2, stride de 2, tipo 'max'.
 - **CONV2**: Kernel de 3x3, 32 filtros, stride de 1, padding de 1 (zero-padding).
 - **POOL2**: Pooling 2x2, stride de 2, tipo 'max'.
+- **Flatten**
 - **FC1**: 128 neuronas.
 - **FC2**: 10 neuronas (clasificación de 10 clases).
 

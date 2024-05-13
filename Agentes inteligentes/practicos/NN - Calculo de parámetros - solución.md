@@ -63,59 +63,99 @@ Y lo mismo para la tercera red:
 
 ### Ejemplo 4
 
-**Capas Convolutivas y de Pooling:**
-Para capas convolutivas, el número de pesos es el producto del tamaño del kernel por el número de filtros, y el número de sesgos es igual al número de filtros. En capas de pooling no hay pesos ni sesgos.
+Claro, vamos a desglosar cada paso para calcular el número de pesos, sesgos y parámetros totales por capa, así como el shape de salida.
 
-- **CONV1**:
-  - **Tamaño del Kernel**: $5 \times 5$
-  - **Número de Filtros**: 8
-  - **# de Pesos**: $5 \times 5 \times 3 \times 8 = 600$ (incluyendo los canales de entrada RGB)
-  - **# de Sesgos**: $8$
-  - **# de Parámetros**: $600 + 8 = 608$
-  - **Out Shape**: Con stride de 1 y padding de 2, el output es igual al input, así que $32 \times 32 \times 8$.
+### Detalles del cálculo
 
-- **POOL1**:
-  - **Out Shape**: Con un pooling de 2x2 y stride de 2, el tamaño de cada dimensión se reduce a la mitad, así que $16 \times 16 \times 8$.
+1. **Capa de Entrada**:
+   - **Shape de Entrada**: (32, 32, 3)
 
-- **FC**:
-  - El output de POOL1 es un tensor de $16 \times 16 \times 8 = 2048$ elementos, que es la entrada de la capa FC.
-  - **# de Pesos**: $2048 \times 10 = 20480$
-  - **# de Sesgos**: $10$
-  - **# de Parámetros**: $20480 + 10 = 20490$
+2. **CONV1**:
+   - **Kernel**: 5x5
+   - **Número de Filtros**: 8
+   - **Stride**: 1
+   - **Padding**: 2 (zero-padding)
 
-- **Total de parámetros en la red**: $608 + 20490 = 21098$
+   **Cálculo del Shape de Salida**:
+   \[
+   H_{\text{out}} = \frac{(H_{\text{in}} - \text{kernel} + 2 \cdot \text{padding})}{\text{stride}} + 1
+   \]
+   Donde \(H_{\text{in}}\) es la altura y anchura de entrada.
+
+   Para **altura** y **anchura**:
+   \[
+   H_{\text{out}} = \frac{(32 - 5 + 2 \cdot 2)}{1} + 1 = 32
+   \]
+
+   - **Shape de Salida**: (32, 32, 8)
+
+   **Número de Pesos**:
+   \[
+   \text{Número de Pesos} = \text{kernel} \times \text{kernel} \times \text{canales de entrada} \times \text{número de filtros}
+   \]
+   \[
+   \text{Número de Pesos} = 5 \times 5 \times 3 \times 8 = 600
+   \]
+
+   **Número de Sesgos**:
+   \[
+   \text{Número de Sesgos} = \text{número de filtros} = 8
+   \]
+
+   **Total de Parámetros**:
+   \[
+   \text{Total de Parámetros} = \text{Número de Pesos} + \text{Número de Sesgos} = 600 + 8 = 608
+   \]
+
+3. **POOL1**:
+   - **Kernel de Pooling**: 2x2
+   - **Stride**: 2
+   - **Tipo**: max
+
+   **Cálculo del Shape de Salida**:
+   \[
+   H_{\text{out}} = \frac{H_{\text{in}} - \text{kernel}}{\text{stride}} + 1
+   \]
+   \[
+   H_{\text{out}} = \frac{32 - 2}{2} + 1 = 16
+   \]
+
+   - **Shape de Salida**: (16, 16, 8)
+
+4. **Flatten**:
+   - **Shape de Entrada**: (16, 16, 8)
+   - **Shape de Salida**: 16 \times 16 \times 8 = 2048
+
+5. **Capa de Salida**:
+   - **Número de Neuronas**: 10
+
+   **Número de Pesos**:
+   \[
+   \text{Número de Pesos} = \text{neuronas de entrada} \times \text{neuronas de salida} = 2048 \times 10 = 20480
+   \]
+
+   **Número de Sesgos**:
+   \[
+   \text{Número de Sesgos} = \text{neuronas de salida} = 10
+   \]
+
+   **Total de Parámetros**:
+   \[
+   \text{Total de Parámetros} = \text{Número de Pesos} + \text{Número de Sesgos} = 20480 + 10 = 20490
+   \]
+
+### Resumen en la Tabla
+
+
+| Capa        | Detalle                    | Out Shape   | # de Pesos | # de Sesgos | # de Parámetros |
+| ----------- | -------------------------- | ----------- | ---------- | ----------- | --------------- |
+| **Input**   | (32, 32, 3)                | (32, 32, 3) |            |             |                 |
+| **CONV1**   | f=5x5, s=1, p=2, 8 filtros | (32, 32, 8) | 600        | 8           | 608             |
+| **POOL1**   | 2x2, s=2, max              | (16, 16, 8) | 0          | 0           | 0               |
+| **Flatten** |                            | (2048, )    | 0          | 0           | 0               |
+| **FC**      | Softmax, 10 clases         | (10, )      | 20480      | 10          | 20490           |
+
+**Total de parámetros**: **21098**
 
 ### Ejemplo 5
 
-En el caso de múltiples capas convolucionales y de pooling, el cálculo sigue un patrón similar, considerando la reducción de dimensiones y el incremento de canales.
-
-- **CONV1**:
-  - **# de Pesos**: $3 \times 3 \times 3 \times 16 = 432$
-  - **# de Sesgos**: $16$
-  - **# de Parámetros**: $432 + 16 = 448$
-  - **Out Shape**: Con stride de 1 y padding de 1, mantiene $32 \times 32 \times 16$.
-
-- **POOL1**:
-  - **Out Shape**: Reduce a la mitad, $16 \times 16 \times 16$.
-
-- **CONV2**:
-  - **# de Pesos**: $3 \times 3 \times 16 \times 32 = 4608$
-  - **# de Sesgos**: $32$
-  - **# de Parámetros**: $4608 + 32 = 4640$
-  - **Out Shape**: Con stride de 1 y padding de 1, $16 \times 16 \times 32$.
-
-- **POOL2**:
-  - **Out Shape**: Reduce a la mitad, $8 \times 8 \times 32$.
-
-- **FC1**:
-  - **Entrada**: $8 \times 8 \times 32 = 2048$
-  - **# de Pesos**: $2048 \times 128 = 262144$
-  - **# de Sesgos**: $128$
-  - **# de Parámetros**: $262144 + 128 = 262272$
-
-- **FC2**:
-  - **# de Pesos**: $128 \times 10 = 1280$
-  - **# de Sesgos**: $10$
-  - **# de Parámetros**: $1280 + 10 = 1290$
-
-- **Total de parámetros en la red**: $448 + 4640 + 262272 + 1290 = 267650$

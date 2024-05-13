@@ -80,7 +80,7 @@ Activación: ReLU para la capa convolucional, Softmax para la salida.
 | **CONV1**   | f=5x5, s=1, p=2, 8 filtros |           |            |             |                 |
 | **POOL1**   | 2x2, s=2, max              |           |            |             |                 |
 | **Flatten** |                            |           |            |             |                 |
-| **FC**      | Softmax, 10 clases         | (10,1)    |            |             |                 |
+| **FC**      | Softmax, 10 clases         | (10,)     |            |             |                 |
 
 **Total de parámetros**: 
 
@@ -110,6 +110,6 @@ Activación: ReLU para las capas convolucionales y FC1, Softmax para la salida d
 | **POOL2**   | 2x2, s=2,max                |             |            |             |                 |
 | **Flatten** |                             |             |            |             |                 |
 | **FC1**     | 128 neuronas                |             |            |             |                 |
-| **FC2**     | Softmax, 10 clases          | (10, 1)     |            |             |                 |
+| **FC2**     | Softmax, 10 clases          | (10, )      |            |             |                 |
 
 **Total de parámetros**: 

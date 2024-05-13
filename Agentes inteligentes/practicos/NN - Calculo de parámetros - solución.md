@@ -159,6 +159,168 @@ Claro, vamos a desglosar cada paso para calcular el número de pesos, sesgos y p
 
 ### Ejemplo 5
 
+Vamos a calcular los detalles para cada capa de la red propuesta.
+
+### Detalles del cálculo
+
+1. **Capa de Entrada**:
+   - **Shape de Entrada**: (32, 32, 3)
+
+2. **CONV1**:
+   - **Kernel**: 3x3
+   - **Número de Filtros**: 16
+   - **Stride**: 1
+   - **Padding**: 1 (zero-padding)
+
+   **Cálculo del Shape de Salida**:
+   \[
+   H_{\text{out}} = \frac{(H_{\text{in}} - \text{kernel} + 2 \cdot \text{padding})}{\text{stride}} + 1
+   \]
+   Donde \(H_{\text{in}}\) es la altura y anchura de entrada.
+
+   Para **altura** y **anchura**:
+   \[
+   H_{\text{out}} = \frac{(32 - 3 + 2 \cdot 1)}{1} + 1 = 32
+   \]
+
+   - **Shape de Salida**: (32, 32, 16)
+
+   **Número de Pesos**:
+   \[
+   \text{Número de Pesos} = \text{kernel} \times \text{kernel} \times \text{canales de entrada} \times \text{número de filtros}
+   \]
+   \[
+   \text{Número de Pesos} = 3 \times 3 \times 3 \times 16 = 432
+   \]
+
+   **Número de Sesgos**:
+   \[
+   \text{Número de Sesgos} = \text{número de filtros} = 16
+   \]
+
+   **Total de Parámetros**:
+   \[
+   \text{Total de Parámetros} = \text{Número de Pesos} + \text{Número de Sesgos} = 432 + 16 = 448
+   \]
+
+3. **POOL1**:
+   - **Kernel de Pooling**: 2x2
+   - **Stride**: 2
+   - **Tipo**: max
+
+   **Cálculo del Shape de Salida**:
+   \[
+   H_{\text{out}} = \frac{H_{\text{in}} - \text{kernel}}{\text{stride}} + 1
+   \]
+   \[
+   H_{\text{out}} = \frac{32 - 2}{2} + 1 = 16
+   \]
+
+   - **Shape de Salida**: (16, 16, 16)
+
+4. **CONV2**:
+   - **Kernel**: 3x3
+   - **Número de Filtros**: 32
+   - **Stride**: 1
+   - **Padding**: 1 (zero-padding)
+
+   **Cálculo del Shape de Salida**:
+   \[
+   H_{\text{out}} = \frac{(H_{\text{in}} - \text{kernel} + 2 \cdot \text{padding})}{\text{stride}} + 1
+   \]
+   \[
+   H_{\text{out}} = \frac{(16 - 3 + 2 \cdot 1)}{1} + 1 = 16
+   \]
+
+   - **Shape de Salida**: (16, 16, 32)
+
+   **Número de Pesos**:
+   \[
+   \text{Número de Pesos} = \text{kernel} \times \text{kernel} \times \text{canales de entrada} \times \text{número de filtros}
+   \]
+   \[
+   \text{Número de Pesos} = 3 \times 3 \times 16 \times 32 = 4608
+   \]
+
+   **Número de Sesgos**:
+   \[
+   \text{Número de Sesgos} = \text{número de filtros} = 32
+   \]
+
+   **Total de Parámetros**:
+   \[
+   \text{Total de Parámetros} = \text{Número de Pesos} + \text{Número de Sesgos} = 4608 + 32 = 4640
+   \]
+
+5. **POOL2**:
+   - **Kernel de Pooling**: 2x2
+   - **Stride**: 2
+   - **Tipo**: max
+
+   **Cálculo del Shape de Salida**:
+   \[
+   H_{\text{out}} = \frac{H_{\text{in}} - \text{kernel}}{\text{stride}} + 1
+   \]
+   \[
+   H_{\text{out}} = \frac{16 - 2}{2} + 1 = 8
+   \]
+
+   - **Shape de Salida**: (8, 8, 32)
+
+6. **Flatten**:
+   - **Shape de Entrada**: (8, 8, 32)
+   - **Shape de Salida**: 8 \times 8 \times 32 = 2048
+
+7. **FC1**:
+   - **Número de Neuronas**: 128
+
+   **Número de Pesos**:
+   \[
+   \text{Número de Pesos} = \text{neuronas de entrada} \times \text{neuronas de salida} = 2048 \times 128 = 262144
+   \]
+
+   **Número de Sesgos**:
+   \[
+   \text{Número de Sesgos} = \text{neuronas de salida} = 128
+   \]
+
+   **Total de Parámetros**:
+   \[
+   \text{Total de Parámetros} = \text{Número de Pesos} + \text{Número de Sesgos} = 262144 + 128 = 262272
+   \]
+
+8. **FC2**:
+   - **Número de Neuronas**: 10
+
+   **Número de Pesos**:
+   \[
+   \text{Número de Pesos} = \text{neuronas de entrada} \times \text{neuronas de salida} = 128 \times 10 = 1280
+   \]
+
+   **Número de Sesgos**:
+   \[
+   \text{Número de Sesgos} = \text{neuronas de salida} = 10
+   \]
+
+   **Total de Parámetros**:
+   \[
+   \text{Total de Parámetros} = \text{Número de Pesos} + \text{Número de Sesgos} = 1280 + 10 = 1290
+   \]
+
+### Resumen en la Tabla
+
+
+| Capa        | Detalle                     | Out Shape    | # de Pesos | # de Sesgos | # de Parámetros |
+| ----------- | --------------------------- | ------------ | ---------- | ----------- | --------------- |
+| **Input**   | (32, 32, 3)                 | (32, 32, 3)  |            |             |                 |
+| **CONV1**   | f=3x3, s=1, p=1, 16 filtros | (32, 32, 16) | 432        | 16          | 448             |
+| **POOL1**   | 2x2, s=2,max                | (16, 16, 16) | 0          | 0           | 0               |
+| **CONV2**   | f=3x3, s=1, p=1, 32 filtros | (16, 16, 32) | 4608       | 32          | 4640            |
+| **POOL2**   | 2x2, s=2,max                | (8, 8, 32)   | 0          | 0           | 0               |
+| **Flatten** |                             | (2048, )     | 0          | 0           | 0               |
+| **FC1**     | 128 neuronas                | (128, )      | 262144     | 128         | 262272          |
+| **FC2**     | Softmax, 10 clases          | (10, )       | 1280       | 10          | 1290            |
+| **Total**   |                             |              |            |             | 268650          |
 
 
 - **Total de parámetros en la red**: $448 + 4640 + 262272 + 1290 = 267650$

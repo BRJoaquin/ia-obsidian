@@ -159,3 +159,6 @@ Claro, vamos a desglosar cada paso para calcular el número de pesos, sesgos y p
 
 ### Ejemplo 5
 
+
+
+- **Total de parámetros en la red**: $448 + 4640 + 262272 + 1290 = 267650$
